@@ -16,7 +16,6 @@ class Program
             }
 
             string sqpackPath = args[0]; // Assuming the first argument is the sqpack path
-            Console.WriteLine("Hello, World!");
             ExtractClassJobs(sqpackPath);
         }
 
@@ -42,8 +41,7 @@ class Program
         {
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             WriteIndented = true,
-            Converters = { new SeStringConverter(), new LazyRowConverterFactory() },
-            MaxDepth = 3
+            Converters = { new SeStringConverter(), new LazyRowConverterFactory() }
         };
 
         // Serialize the object
