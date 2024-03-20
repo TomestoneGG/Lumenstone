@@ -1,9 +1,8 @@
 ﻿namespace Lumenstone;
 
-using System.Net.Http.Json;
+using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Lumina.Excel.GeneratedSheets;
 
 class Program
 {
@@ -32,7 +31,22 @@ class Program
         
         var patch = args[1];
 
-        ExtractSheetForAllLanguages<ClassJob>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
+        // Get all types in the Lumina.Excel.GeneratedSheets namespace
+        var types = Assembly.GetAssembly(typeof(Lumina.Excel.GeneratedSheets2.Item)).GetTypes()
+            .Where(t => t.Namespace == "Lumina.Excel.GeneratedSheets2" && t.IsSubclassOf(typeof(Lumina.Excel.ExcelRow)));
+
+        MethodInfo generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
+        if (generic == null)
+            return;
+
+        // Call ExtractSheetForAllLanguages for each type
+        foreach (var type in types)
+        {
+            Console.WriteLine(type.Name);
+            
+            MethodInfo constructed = generic.MakeGenericMethod(type);
+            constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+        }
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
@@ -52,25 +66,38 @@ class Program
         if (sheet == null)
             return;
 
-        // Extract data and save as JSON
-        var sheetData = new List<T>();
-        foreach (var row in sheet)
-        {
-            sheetData.Add(row);
-        }
+        const int cPageSize = 1000;
+        string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), $"patches/{patch}/{lang}/{typeof(T).Name}");
 
-        // Serialize the object
-        string json = JsonSerializer.Serialize(sheetData, options);
-
-        string fileName = $"{typeof(T).Name}.json";
-        string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), $"patches/{patch}/{lang}/");
-
-        // Ensure the directory exists
         if (!Directory.Exists(directoryPath))
         {
             Directory.CreateDirectory(directoryPath);
         }
 
+        // Extract data and save as JSON
+        var sheetData = new List<T>();
+        int currentPage = 1;
+        foreach (var row in sheet)
+        {
+            sheetData.Add(row);
+            if (sheetData.Count() >= cPageSize) {
+                string jsonForPage = JsonSerializer.Serialize(sheetData, options);
+                string fileNameForPage = $"{currentPage}.json";
+                string filePathForPage = Path.Combine(directoryPath, fileNameForPage);
+                File.WriteAllText(filePathForPage, jsonForPage);
+                sheetData.Clear();
+                Console.WriteLine($"{typeof(T).Name} data extracted and saved to {fileNameForPage}");
+                currentPage++;
+            }
+        }
+
+        if (sheetData.Count() == 0)
+            return;
+
+        // Serialize the object
+        string json = JsonSerializer.Serialize(sheetData, options);
+        string fileName = $"{currentPage}.json";
+                
         string filePath = Path.Combine(directoryPath, fileName);
 
         File.WriteAllText(filePath, json);

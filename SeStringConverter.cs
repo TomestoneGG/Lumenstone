@@ -15,6 +15,8 @@ public class SeStringConverter : JsonConverter<SeString>
     public override void Write(Utf8JsonWriter writer, SeString value, JsonSerializerOptions options)
     {
         // Serialize the SeString object as a JSON string.
-        writer.WriteStringValue(value.RawString);
+        try { writer.WriteStringValue(value.RawString); } catch (Exception) {
+            writer.WriteNullValue();
+        }
     }
 }
