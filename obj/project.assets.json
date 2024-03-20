@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Lumina/3.16.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Lumina.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Lumina.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Lumina.Excel/6.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Lumina": "3.15.2"
+        },
+        "compile": {
+          "lib/net7.0/Lumina.Excel.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Lumina.Excel.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lumina/3.16.0": {
+      "sha512": "ZKTjc/0rKj+3NlkyWIZ5HnxjERrrEpEDG22AcGvD8zO1lMkAV7x7o5kjo2nbHU/M4tMLXsFKhUvxRWDoashLHw==",
+      "type": "package",
+      "path": "lumina/3.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/Lumina.dll",
+        "lib/net6.0/Lumina.xml",
+        "lib/net7.0/Lumina.dll",
+        "lib/net7.0/Lumina.xml",
+        "lumina.3.16.0.nupkg.sha512",
+        "lumina.nuspec"
+      ]
+    },
+    "Lumina.Excel/6.5.2": {
+      "sha512": "4bKX6ImW885rrgrasNve774FT3f0rjpsuoPltr0V0mxD3Ss5bFGwPQBvzgaio8sJyRNpFa25tMcwXTTKRNe+5g==",
+      "type": "package",
+      "path": "lumina.excel/6.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/Lumina.Excel.dll",
+        "lib/net6.0/Lumina.Excel.xml",
+        "lib/net7.0/Lumina.Excel.dll",
+        "lib/net7.0/Lumina.Excel.xml",
+        "lumina.excel.6.5.2.nupkg.sha512",
+        "lumina.excel.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Lumina >= 3.16.0",
+      "Lumina.Excel >= 6.5.2"
+    ]
+  },
+  "packageFolders": {
+    "/Users/tomestone/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/tomestone/Lumenstone/Lumenstone.csproj",
+      "projectName": "Lumenstone",
+      "projectPath": "/Users/tomestone/Lumenstone/Lumenstone.csproj",
+      "packagesPath": "/Users/tomestone/.nuget/packages/",
+      "outputPath": "/Users/tomestone/Lumenstone/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/tomestone/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Lumina": {
+            "target": "Package",
+            "version": "[3.16.0, )"
+          },
+          "Lumina.Excel": {
+            "target": "Package",
+            "version": "[6.5.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
