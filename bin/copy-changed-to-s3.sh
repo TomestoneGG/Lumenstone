@@ -9,7 +9,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 FROM_REF="${1:-"origin/main"}"
 
-S3_BUCKET="${S3_BUCKET:-"combatlogassets"}"
+S3_BUCKET="${S3_BUCKET:-"vapor-us-west-2-assets-1666567924"}"
 CP_ARGS="--cache-control 'public, max-age=31536000, immutable'"
 
 AWS_DRY_RUN="${AWS_DRY_RUN:-""}"
