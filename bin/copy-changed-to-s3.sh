@@ -7,7 +7,7 @@ set -o nounset
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-FROM_REF="${1:-"origin/master"}"
+FROM_REF="${1:-"origin/main"}"
 
 S3_BUCKET="${S3_BUCKET:-"combatlogassets"}"
 CP_ARGS="--cache-control 'public, max-age=31536000, immutable'"
