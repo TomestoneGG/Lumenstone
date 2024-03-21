@@ -55,9 +55,11 @@ class Program
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+
+            break;
         }
 
-        ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
+       /// ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
