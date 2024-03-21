@@ -24,7 +24,7 @@ jobs:
       - name: Preview Changed Files (on Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
         run: ./bin/changed-since.sh ${{ github.event.pull_request.base.sha }}
-
+ 
       - name: Configure AWS credentials
         if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' }}
         uses: aws-actions/configure-aws-credentials@v2
