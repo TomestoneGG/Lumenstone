@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lumenstone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfee0931331f41ed50b9d06c32c26e919d148ffd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+913570c0e31c974d398795b441d85007748ea211")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lumenstone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lumenstone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
