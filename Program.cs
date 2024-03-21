@@ -55,8 +55,6 @@ class Program
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
-
-            break;
         }
 
        /// ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
