@@ -51,15 +51,15 @@ class Program
             return;
 
         // Call ExtractSheetForAllLanguages for each type
-       /* foreach (var type in types)
+        foreach (var type in types)
         {
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
-        }*/
+        }
 
-        // ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
+        ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
         ExtractMaps(luminaEN, full);
     }
 
@@ -238,6 +238,40 @@ class Program
             if (idValue == null)
                 continue;
             var idString = ((SeString)idValue).RawString;
+
+            // Assuming idString is in the format "xxx/yyy"
+            string[] parts = idString.Split('/');
+            if (parts.Length != 2)
+                continue; // Ensure idString is in the expected format
+
+           
+            var outputFilePath = Path.Combine(directoryPath, parts[0] + "/" + parts[0] + "_" + parts[1] + ".jpg");
+        
+            if (fullImport || !File.Exists(outputFilePath)) {
+
+                 // Directly concatenate "ui" and "maps" with the rest of the path
+                string filePath = "ui/map/" + idString + "/" + parts[0] + parts[1] + "_m.tex";
+                
+                if (!lumina.FileExists(filePath))
+                    filePath = "ui/map/" + idString + "/" + parts[0] + parts[1] + "m_m.tex";
+                if (!lumina.FileExists(filePath))
+                    continue;
+
+                Console.WriteLine("Extracting data for map: " + idString);
+                
+                // Access the lumina data
+                var file = lumina.GetFile<TexFile>(filePath);
+
+                var folderPath = Path.Combine(directoryPath, parts[0]);
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                var image = GetImage(file);
+                image.SaveAsJpeg(outputFilePath);
+            
+            }
 
         }
 
