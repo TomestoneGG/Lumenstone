@@ -5,6 +5,8 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Lumina.Data.Files;
+using Lumina.Excel.GeneratedSheets2;
+using Lumina.Text;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing.Processors.Normalization;
@@ -49,15 +51,16 @@ class Program
             return;
 
         // Call ExtractSheetForAllLanguages for each type
-        foreach (var type in types)
+       /* foreach (var type in types)
         {
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
-        }
+        }*/
 
-       /// ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
+        // ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
+        ExtractMaps(luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
@@ -212,6 +215,32 @@ class Program
         }
 
         return image;
+    }
+
+    private static void ExtractMaps(Lumina.GameData lumina, bool fullImport)
+    {
+        var sheet = lumina.GetExcelSheet<Map>();
+        if (sheet == null)
+            return;
+
+        string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "maps");
+
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+        }
+
+        foreach (var map in sheet) {
+            var idProperty = typeof(Map).GetProperty("Id");
+            if (idProperty == null || idProperty.PropertyType != typeof(SeString))
+                continue;
+            var idValue = idProperty.GetValue(map);
+            if (idValue == null)
+                continue;
+            var idString = ((SeString)idValue).RawString;
+
+        }
+
     }
 }
 
