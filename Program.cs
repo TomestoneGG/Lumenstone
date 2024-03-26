@@ -61,6 +61,7 @@ class Program
 
         ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
         ExtractMaps(luminaEN, full);
+        ExtractLoadingImages(luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
@@ -275,6 +276,50 @@ class Program
 
         }
 
+    }
+
+    private static void ExtractLoadingImages(Lumina.GameData lumina, bool fullImport)
+    {
+        var sheet = lumina.GetExcelSheet<LoadingImage>();
+        if (sheet == null)
+            return;
+
+        string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "loadingimages");
+
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+        }
+
+        foreach (var loadingImage in sheet) {
+            var fileName = typeof(LoadingImage).GetProperty("Unknown0");
+            if (fileName == null || fileName.PropertyType != typeof(SeString))
+                continue;
+            var fileValue = fileName.GetValue(loadingImage);
+            if (fileValue == null)
+                continue;
+            var fileString = ((SeString)fileValue).RawString;
+
+            // FIXME: Comment back in if we ever figure out the correct paths. 
+           /* var outputFilePath = Path.Combine(directoryPath, fileString + ".jpg");
+        
+            if (fullImport || !File.Exists(outputFilePath)) {
+
+                 // Directly concatenate "ui" and "maps" with the rest of the path
+                string filePath = "ui/nowloading/nowloading" + fileString + ".tex";
+                
+                if (!lumina.FileExists(filePath))
+                    continue;
+
+                Console.WriteLine("Extracting data for loading image: " + fileString);
+                
+                // Access the lumina data
+                var file = lumina.GetFile<TexFile>(filePath);
+
+                var image = GetImage(file);
+                image.SaveAsJpeg(outputFilePath);
+            }*/
+        }
     }
 }
 
