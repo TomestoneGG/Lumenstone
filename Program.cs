@@ -51,7 +51,7 @@ class Program
             return;
 
         // Call ExtractSheetForAllLanguages for each type
-        foreach (var type in types)
+        /*foreach (var type in types)
         {
             Console.WriteLine(type.Name);
             
@@ -60,7 +60,7 @@ class Program
         }
 
         ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
-        ExtractMaps(luminaEN, full);
+        ExtractMaps(luminaEN, full);*/
         ExtractLoadingImages(luminaEN, full);
     }
 
@@ -300,14 +300,12 @@ class Program
                 continue;
             var fileString = ((SeString)fileValue).RawString;
 
-            // FIXME: Comment back in if we ever figure out the correct paths. 
-           /* var outputFilePath = Path.Combine(directoryPath, fileString + ".jpg");
+            var outputFilePath = Path.Combine(directoryPath, fileString + ".jpg");
         
             if (fullImport || !File.Exists(outputFilePath)) {
 
-                 // Directly concatenate "ui" and "maps" with the rest of the path
-                string filePath = "ui/nowloading/nowloading" + fileString + ".tex";
-                
+                string filePath = "ui/loadingimage/" + fileString + ".tex";
+            
                 if (!lumina.FileExists(filePath))
                     continue;
 
@@ -318,7 +316,7 @@ class Program
 
                 var image = GetImage(file);
                 image.SaveAsJpeg(outputFilePath);
-            }*/
+            }
         }
     }
 }
