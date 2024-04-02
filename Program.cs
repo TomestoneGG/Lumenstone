@@ -51,7 +51,7 @@ class Program
             return;
 
         // Call ExtractSheetForAllLanguages for each type
-        /*foreach (var type in types)
+        foreach (var type in types)
         {
             Console.WriteLine(type.Name);
             
@@ -60,7 +60,7 @@ class Program
         }
 
         ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
-        ExtractMaps(luminaEN, full);*/
+        ExtractMaps(luminaEN, full);
         ExtractLoadingImages(luminaEN, full);
     }
 
