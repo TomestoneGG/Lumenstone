@@ -246,7 +246,7 @@ class Program
                 continue; // Ensure idString is in the expected format
 
            
-            var outputFilePath = Path.Combine(directoryPath, parts[0] + "/" + parts[0] + "_" + parts[1] + ".jpg");
+            var outputFilePath = Path.Combine(directoryPath, parts[0] + "/" + parts[0] + "." + parts[1] + ".jpg");
         
             if (fullImport || !File.Exists(outputFilePath)) {
 
