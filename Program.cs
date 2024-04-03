@@ -81,7 +81,7 @@ class Program
         if (sheet == null)
             return;
 
-        const int cPageSize = 1000;
+        const int cPageSize = 500;
         string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), $"json/{patch}/{lang}/{typeof(T).Name}");
 
         if (!Directory.Exists(directoryPath))
