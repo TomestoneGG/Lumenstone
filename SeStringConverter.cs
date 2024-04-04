@@ -156,7 +156,11 @@ public class SeStringConverter : JsonConverter<SeString>
                     if (payloadTag == "if" && payload.Expressions.Count == 3) {
                         string expression1 = ConvertExpression(payload.Expressions.ElementAt(0));
                         string expression2 = ConvertExpression(payload.Expressions.ElementAt(1));
+                        if (expression2.Length == 0)
+                            expression2 = " ";
                         string expression3 = ConvertExpression(payload.Expressions.ElementAt(2));
+                        if (expression3.Length == 0)
+                            expression3 = " ";
                         return $"<If({expression1})>{expression2}<Else/>{expression3}</If>";
                     }
                     

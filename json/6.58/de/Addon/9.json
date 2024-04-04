@@ -245,7 +245,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zeit f\u00FCr die Erf\u00FCllung: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E1 Minute\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Minuten\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EStunde\u003CElse/\u003EStunden\u003C/If\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E1 Minute\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Minuten\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E[\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E. \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
+    "Text": "Zeit f\u00FCr die Erf\u00FCllung: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E1 Minute\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Minuten\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EStunde\u003CElse/\u003EStunden\u003C/If\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E1 Minute\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Minuten\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E[\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E. \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
     "RowId": 4581,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -441,7 +441,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ein Teil der Verg\u00FCtung geht verloren, da die Obergrenze erreicht ist. Dies betrifft:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n\u3000\u30FB Staatstaler\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u3000\u30FB Allagische Steine\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\u3000\u30FB Verbundenheit\u003CElse/\u003E\u003C/If\u003E\n\nTrotzdem fortfahren?",
+    "Text": "Ein Teil der Verg\u00FCtung geht verloren, da die Obergrenze erreicht ist. Dies betrifft:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n\u3000\u30FB Staatstaler\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u3000\u30FB Allagische Steine\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\u3000\u30FB Verbundenheit\u003CElse/\u003E \u003C/If\u003E\n\nTrotzdem fortfahren?",
     "RowId": 4609,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -518,7 +518,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Diesen Gegenstand entgegennehmen?\n\u003Csheetreferencede(Item,5,IntegerParameter(1),1,1,1)\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003CElse/\u003E\u00D7\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E\nDu kannst \u003CIf(Equal(IntegerParameter(2),1))\u003Eihn\u003CElse/\u003Esie\u003C/If\u003E dann nicht mehr zur\u00FCcklegen.",
+    "Text": "Diesen Gegenstand entgegennehmen?\n\u003Csheetreferencede(Item,5,IntegerParameter(1),1,1,1)\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003E\u00D7\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E\nDu kannst \u003CIf(Equal(IntegerParameter(2),1))\u003Eihn\u003CElse/\u003Esie\u003C/If\u003E dann nicht mehr zur\u00FCcklegen.",
     "RowId": 4620,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2212,7 +2212,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(PlayerParameter(78),99))\u003E/Touchpad\u003CElse/\u003E\u003C/If\u003EHUD-Element w\u00E4hlen",
+    "Text": "\u003CIf(Equal(PlayerParameter(78),99))\u003E/Touchpad\u003CElse/\u003E \u003C/If\u003EHUD-Element w\u00E4hlen",
     "RowId": 4881,
     "SubRowId": 0,
     "SheetName": "Addon",
