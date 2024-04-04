@@ -161,14 +161,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "WQHD\u003CIf(Equal(IntegerParameter(75),4))\u003E (4K hochskaliert: Standard/Balanciert\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(IntegerParameter(106),99))\u003E: Standard/Balanciert\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "WQHD\u003CIf(Equal(PlayerParameter(75),4))\u003E (4K hochskaliert: Standard/Balanciert\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(PlayerParameter(106),99))\u003E: Standard/Balanciert\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8750,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "4K: \u003CIf(Equal(IntegerParameter(75),4))\u003EFokus auf Bildqualit\u00E4t\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(IntegerParameter(75),5))\u003EFokus auf Bildqualit\u00E4t\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(IntegerParameter(75),6))\u003E\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur auf Xbox Series X verf\u00FCgbar.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "4K: \u003CIf(Equal(PlayerParameter(75),4))\u003EFokus auf Bildqualit\u00E4t\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(PlayerParameter(75),5))\u003EFokus auf Bildqualit\u00E4t\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(PlayerParameter(75),6))\u003E\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur auf Xbox Series X verf\u00FCgbar.\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8751,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -203,7 +203,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "300 %: \u003CIf(Equal(IntegerParameter(75),4))\u003Eempfohlen f\u00FCr 4K / nur wirksam bei 4K\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(IntegerParameter(75),5))\u003Eempfohlen f\u00FCr 4K / nur wirksam bei 4K\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(IntegerParameter(75),6))\u003E\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur auf Xbox Series X verf\u00FCgbar.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "300 %: \u003CIf(Equal(PlayerParameter(75),4))\u003Eempfohlen f\u00FCr 4K / nur wirksam bei 4K\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(PlayerParameter(75),5))\u003Eempfohlen f\u00FCr 4K / nur wirksam bei 4K\u003CElse/\u003E\u003C/If\u003E\u003CIf(Equal(PlayerParameter(75),6))\u003E\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur auf Xbox Series X verf\u00FCgbar.\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8756,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -224,14 +224,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "DualSense/DUALSHOCK 4\u003Cswitch(IntegerParameter(78), =\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003ENur DX11-Version,, \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur Windows-Version)\u003E",
+    "Text": "DualSense/DUALSHOCK 4\u003Cswitch(PlayerParameter(78), =\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003ENur DX11-Version,, \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur Windows-Version)\u003E",
     "RowId": 8759,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Optionale Einstellungen\u003Cswitch(IntegerParameter(78), =\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003ENur DX11-Version,, \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur Windows-Version)\u003E",
+    "Text": "Optionale Einstellungen\u003Cswitch(PlayerParameter(78), =\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003ENur DX11-Version,, \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur Windows-Version)\u003E",
     "RowId": 8760,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3241,7 +3241,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Gewinnzahl wird jeden \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00\u003C/If\u003E Uhr (Erdenzeit) gezogen.",
+    "Text": "Die Gewinnzahl wird jeden \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag)\u003E um \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)\u003E\u003CElse/\u003E0\u003C/If\u003E:00\u003C/If\u003E Uhr (Erdenzeit) gezogen.",
     "RowId": 9280,
     "SubRowId": 0,
     "SheetName": "Addon",

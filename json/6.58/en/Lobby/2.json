@@ -1428,7 +1428,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E left on your free trial. Proceed to \u003CIf(Equal(IntegerParameter(75),0))\u003Ethe Square Enix Online Store (https://sqex.to/Msp)\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003EPlayStation\u2122Store\u003CElse/\u003EMicrosoft Store\u003C/If\u003E\u003C/If\u003E to purchase the full version of FINAL FANTASY XIV and unlock all the game\u0027s features.",
+    "Text": "You have \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E left on your free trial. Proceed to \u003CIf(Equal(PlayerParameter(75),0))\u003Ethe Square Enix Online Store (https://sqex.to/Msp)\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003EPlayStation\u2122Store\u003CElse/\u003EMicrosoft Store\u003C/If\u003E\u003C/If\u003E to purchase the full version of FINAL FANTASY XIV and unlock all the game\u0027s features.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3876,7 +3876,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Load character creation data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E?",
+    "Text": "Load character creation data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4224,7 +4224,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Save a backup of local character settings, HUD layout, hotbars, gear sets, and more to the server.\n\u203BItem sort settings and inventory location data will not be saved.\u003CIf(Equal(IntegerParameter(78),99))\u003E\n\u203BOnly HUD size and layout will be saved for remote play.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Save a backup of local character settings, HUD layout, hotbars, gear sets, and more to the server.\n\u203BItem sort settings and inventory location data will not be saved.\u003CIf(Equal(PlayerParameter(78),99))\u003E\n\u203BOnly HUD size and layout will be saved for remote play.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4824,7 +4824,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Saves \u003CIf(Equal(IntegerParameter(75),0))\u003Emouse and gamepad\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003Ewireless controller\u003CElse/\u003Econtroller\u003C/If\u003E and mouse\u003C/If\u003E settings.\n\u203BInput device information will not be saved.",
+    "Text": "Saves \u003CIf(Equal(PlayerParameter(75),0))\u003Emouse and gamepad\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Ewireless controller\u003CElse/\u003Econtroller\u003C/If\u003E and mouse\u003C/If\u003E settings.\n\u203BInput device information will not be saved.",
     "Unknown0": "Input Device",
     "Unknown1": "",
     "TYPE": 0,
@@ -4860,7 +4860,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Saves visual alert and color filtering settings.\u003CIf(Equal(IntegerParameter(75),0))\u003E\u003CElse/\u003E\n\u203BNot applicable to \u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
+    "Text": "Saves visual alert and color filtering settings.\u003CIf(Equal(PlayerParameter(75),0))\u003E\u003CElse/\u003E\n\u203BNot applicable to \u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
     "Unknown0": "Accessibility",
     "Unknown1": "",
     "TYPE": 0,
@@ -5040,7 +5040,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Saves \u003CIf(GreaterThan(IntegerParameter(75),0))\u003Econtroller and mouse\u003CElse/\u003Egamepad and mouse\u003C/If\u003E mode settings.",
+    "Text": "Saves \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtroller and mouse\u003CElse/\u003Egamepad and mouse\u003C/If\u003E mode settings.",
     "Unknown0": "Character Config",
     "Unknown1": "",
     "TYPE": 0,
@@ -5292,7 +5292,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Restore \u003CIf(Equal(IntegerParameter(75),0))\u003EMacros\u003CElse/\u003ESettings\u003C/If\u003E",
+    "Text": "Restore \u003CIf(Equal(PlayerParameter(75),0))\u003EMacros\u003CElse/\u003ESettings\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5316,7 +5316,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Restore \u003CIf(Equal(IntegerParameter(75),0))\u003EShared Macros\u003CElse/\u003EClient Settings\u003C/If\u003E",
+    "Text": "Restore \u003CIf(Equal(PlayerParameter(75),0))\u003EShared Macros\u003CElse/\u003EClient Settings\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5340,7 +5340,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EUp to 100 shared macros can be restored.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EUp to 100 shared macros can be restored.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5352,7 +5352,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "If a problem occurred applying \u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003EClient Settings\u003C/span\u003E\u003C/span\u003E, you can use this feature to restore your \u003CIf(Equal(IntegerParameter(75),0))\u003Eshared macro \u003CElse/\u003E\u003C/If\u003Esettings to those automatically recorded at a previous date.",
+    "Text": "If a problem occurred applying \u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003EClient Settings\u003C/span\u003E\u003C/span\u003E, you can use this feature to restore your \u003CIf(Equal(PlayerParameter(75),0))\u003Eshared macro \u003CElse/\u003E\u003C/If\u003Esettings to those automatically recorded at a previous date.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5448,7 +5448,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Restore \u003CIf(Equal(IntegerParameter(75),0))\u003Eshared macro data\u003CElse/\u003EClient Settings\u003C/If\u003E for \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E?",
+    "Text": "Restore \u003CIf(Equal(PlayerParameter(75),0))\u003Eshared macro data\u003CElse/\u003EClient Settings\u003C/If\u003E for \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5472,7 +5472,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EShared macros\u003CElse/\u003EClient Settings\u003C/If\u003E successfully restored.",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EShared macros\u003CElse/\u003EClient Settings\u003C/If\u003E successfully restored.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5484,7 +5484,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to restore \u003CIf(Equal(IntegerParameter(75),0))\u003Eshared macros\u003CElse/\u003EClient Settings\u003C/If\u003E.",
+    "Text": "Unable to restore \u003CIf(Equal(PlayerParameter(75),0))\u003Eshared macros\u003CElse/\u003EClient Settings\u003C/If\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5544,7 +5544,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "This feature allows you to save backups of your Client and Character Configuration Settings to the FINAL FANTASY XIV servers, as well as import these backups to your \u003CIf(Equal(IntegerParameter(75),0))\u003Ehardware\u003CElse/\u003Esystem\u003C/If\u003E, thereby allowing you to easily carry over your preferences to a different play environment.\n\nIt is strongly recommended that you save your data locally before attempting a backup or download.\u003CIf(Equal(IntegerParameter(75),0))\u003E In addition to manually backing up your data, please select the CONFIG option found in the launcher and use the Backup Tool.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "This feature allows you to save backups of your Client and Character Configuration Settings to the FINAL FANTASY XIV servers, as well as import these backups to your \u003CIf(Equal(PlayerParameter(75),0))\u003Ehardware\u003CElse/\u003Esystem\u003C/If\u003E, thereby allowing you to easily carry over your preferences to a different play environment.\n\nIt is strongly recommended that you save your data locally before attempting a backup or download.\u003CIf(Equal(PlayerParameter(75),0))\u003E In addition to manually backing up your data, please select the CONFIG option found in the launcher and use the Backup Tool.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

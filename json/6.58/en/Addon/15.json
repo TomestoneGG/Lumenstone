@@ -245,7 +245,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE031 \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E Remaining  (\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E\u003C/If\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E)",
+    "Text": "\uE031 \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E Remaining  (\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E\u003C/If\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E)",
     "RowId": 8154,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -469,7 +469,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Source: \u003CIf(Equal(IntegerParameter(1),0))\u003ENormal Display (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003CElse/\u003ERemote Play Display\u003C/If\u003E\nDestination: \u003CIf(Equal(IntegerParameter(1),0))\u003ERemote Play Display\u003CElse/\u003ENormal Display  (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003C/If\u003E\nCurrent settings will be overwritten. Proceed?",
+    "Text": "Source: \u003CIf(Equal(IntegerParameter(1),0))\u003ENormal Display (\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003CElse/\u003ERemote Play Display\u003C/If\u003E\nDestination: \u003CIf(Equal(IntegerParameter(1),0))\u003ERemote Play Display\u003CElse/\u003ENormal Display  (\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003C/If\u003E\nCurrent settings will be overwritten. Proceed?",
     "RowId": 8194,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -490,7 +490,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Normal Display (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)",
+    "Text": "Normal Display (\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)",
     "RowId": 8197,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -511,7 +511,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EGamepad\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E\u003C/If\u003E Speaker Settings",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EGamepad\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E\u003C/If\u003E Speaker Settings",
     "RowId": 8201,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -777,7 +777,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Ground Targeting Settings (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Mode)",
+    "Text": "Ground Targeting Settings (\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Mode)",
     "RowId": 8250,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -910,7 +910,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),3))\u003EPS4\u2122 Standard: Play the game in Full HD with improved frame rate.\u003CElse/\u003EPS4\u2122 Standard: Play the game in Full HD.\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),3))\u003EPS4\u2122 Standard: Play the game in Full HD with improved frame rate.\u003CElse/\u003EPS4\u2122 Standard: Play the game in Full HD.\u003C/If\u003E",
     "RowId": 8270,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -959,7 +959,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),3))\u003EPS4\u2122Pro: WQHD display =4K upscaling.\u003CElse/\u003EPS4\u2122Pro: \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003EUnavailable with current console.\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),3))\u003EPS4\u2122Pro: WQHD display =4K upscaling.\u003CElse/\u003EPS4\u2122Pro: \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003EUnavailable with current console.\u003C/If\u003E",
     "RowId": 8277,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3248,7 +3248,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Enable expanded mouse functionality.\u003CIf(Equal(IntegerParameter(75),0))\u003E (Software Mouse Cursor)\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Enable expanded mouse functionality.\u003CIf(Equal(PlayerParameter(75),0))\u003E (Software Mouse Cursor)\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8671,
     "SubRowId": 0,
     "SheetName": "Addon",

@@ -1428,7 +1428,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Il ne vous reste plus que \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E jour\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003Es\u003C/If\u003E avant la fin de l\u0027essai gratuit.\nPour continuer \u00E0 jouer et b\u00E9n\u00E9ficier de toutes les fonctions de FINAL FANTASY XIV, procurez-vous la version compl\u00E8te du jeu sur \u003CIf(Equal(IntegerParameter(75),0))\u003Ela Boutique Square Enix (France) ou le Square Enix Store\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003Ele PlayStation\u2122Store\u003CElse/\u003Ele Microsoft Store\u003C/If\u003E\u003C/If\u003E.",
+    "Text": "Il ne vous reste plus que \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E jour\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003Es\u003C/If\u003E avant la fin de l\u0027essai gratuit.\nPour continuer \u00E0 jouer et b\u00E9n\u00E9ficier de toutes les fonctions de FINAL FANTASY XIV, procurez-vous la version compl\u00E8te du jeu sur \u003CIf(Equal(PlayerParameter(75),0))\u003Ela Boutique Square Enix (France) ou le Square Enix Store\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Ele PlayStation\u2122Store\u003CElse/\u003Ele Microsoft Store\u003C/If\u003E\u003C/If\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4224,7 +4224,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Sauvegardez sur le serveur les \u003Cspan uiForeground=\u0022569\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022570\u0022\u003Edonn\u00E9es du personnage\u003C/span\u003E\u003C/span\u003E, qui incluent entre autres la configuration du personnage, la configuration ATH, les barres et croix de raccourcis ainsi que les tenues.\n* Les r\u00E9glages du tri d\u0027objets et les donn\u00E9es d\u0027inventaire ne seront pas sauvegard\u00E9s.\u003CIf(Equal(IntegerParameter(78),99))\u003E\n* Pour la lecture \u00E0 distance, seules la disposition et la taille des \u00E9l\u00E9ments de l\u0027ATH seront sauvegard\u00E9es.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Sauvegardez sur le serveur les \u003Cspan uiForeground=\u0022569\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022570\u0022\u003Edonn\u00E9es du personnage\u003C/span\u003E\u003C/span\u003E, qui incluent entre autres la configuration du personnage, la configuration ATH, les barres et croix de raccourcis ainsi que les tenues.\n* Les r\u00E9glages du tri d\u0027objets et les donn\u00E9es d\u0027inventaire ne seront pas sauvegard\u00E9s.\u003CIf(Equal(PlayerParameter(78),99))\u003E\n* Pour la lecture \u00E0 distance, seules la disposition et la taille des \u00E9l\u00E9ments de l\u0027ATH seront sauvegard\u00E9es.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4824,7 +4824,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les param\u00E8tres \u003CIf(Equal(IntegerParameter(75),0))\u003Esouris et manette\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003Emanette sans fil\u003CElse/\u003Emanette sans fil Xbox\u003C/If\u003E et souris\u003C/If\u003E seront sauvegard\u00E9s.\n* Les informations sur les p\u00E9riph\u00E9riques utilis\u00E9s seront exclues.",
+    "Text": "Les param\u00E8tres \u003CIf(Equal(PlayerParameter(75),0))\u003Esouris et manette\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Emanette sans fil\u003CElse/\u003Emanette sans fil Xbox\u003C/If\u003E et souris\u003C/If\u003E seront sauvegard\u00E9s.\n* Les informations sur les p\u00E9riph\u00E9riques utilis\u00E9s seront exclues.",
     "Unknown0": "Souris/manette",
     "Unknown1": "",
     "TYPE": 0,
@@ -4860,7 +4860,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les r\u00E9glages de repr\u00E9sentation visuelle des sons, de perception des couleurs, etc., seront sauvegard\u00E9s.\u003CIf(Equal(IntegerParameter(75),0))\u003E\u003CElse/\u003E\n* Ces param\u00E8tres seront exclus dans la version \u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
+    "Text": "Les r\u00E9glages de repr\u00E9sentation visuelle des sons, de perception des couleurs, etc., seront sauvegard\u00E9s.\u003CIf(Equal(PlayerParameter(75),0))\u003E\u003CElse/\u003E\n* Ces param\u00E8tres seront exclus dans la version \u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
     "Unknown0": "Accessibilit\u00E9",
     "Unknown1": "",
     "TYPE": 0,
@@ -5292,7 +5292,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EMacros communes\u003CElse/\u003EDonn\u00E9es du client\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EMacros communes\u003CElse/\u003EDonn\u00E9es du client\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5316,7 +5316,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "RESTAURATION DES \u003CIf(Equal(IntegerParameter(75),0))\u003EMACROS COMMUNES\u003CElse/\u003EDONN\u00C9ES DU CLIENT\u003C/If\u003E",
+    "Text": "RESTAURATION DES \u003CIf(Equal(PlayerParameter(75),0))\u003EMACROS COMMUNES\u003CElse/\u003EDONN\u00C9ES DU CLIENT\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5340,7 +5340,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Cible\u003Cindent\u003E: \u003CIf(Equal(IntegerParameter(75),0))\u003E100 macros communes issues des \u003CElse/\u003E\u003C/If\u003E\u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003Edonn\u00E9es du client\u003C/span\u003E\u003C/span\u003E",
+    "Text": "Cible\u003Cindent\u003E: \u003CIf(Equal(PlayerParameter(75),0))\u003E100 macros communes issues des \u003CElse/\u003E\u003C/If\u003E\u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003Edonn\u00E9es du client\u003C/span\u003E\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5352,7 +5352,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "En cas de probl\u00E8me lors du t\u00E9l\u00E9chargement des donn\u00E9es du client, vous pouvez restaurer \u003CIf(Equal(IntegerParameter(75),0))\u003Eles macros communes\u003CElse/\u003Eces derni\u00E8res\u003C/If\u003E \u00E0 un \u00E9tat ant\u00E9rieur \u00E0 cette op\u00E9ration. Choisissez une sauvegarde \u00E0 restaurer.",
+    "Text": "En cas de probl\u00E8me lors du t\u00E9l\u00E9chargement des donn\u00E9es du client, vous pouvez restaurer \u003CIf(Equal(PlayerParameter(75),0))\u003Eles macros communes\u003CElse/\u003Eces derni\u00E8res\u003C/If\u003E \u00E0 un \u00E9tat ant\u00E9rieur \u00E0 cette op\u00E9ration. Choisissez une sauvegarde \u00E0 restaurer.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5448,7 +5448,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les \u003CIf(Equal(IntegerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E seront restaur\u00E9es \u00E0 partir de la sauvegarde du \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E. Continuer\u003Cindent\u003E?",
+    "Text": "Les \u003CIf(Equal(PlayerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E seront restaur\u00E9es \u00E0 partir de la sauvegarde du \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E. Continuer\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5472,7 +5472,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les \u003CIf(Equal(IntegerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E ont \u00E9t\u00E9 restaur\u00E9es.",
+    "Text": "Les \u003CIf(Equal(PlayerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E ont \u00E9t\u00E9 restaur\u00E9es.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5484,7 +5484,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "La restauration des \u003CIf(Equal(IntegerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E a \u00E9chou\u00E9.",
+    "Text": "La restauration des \u003CIf(Equal(PlayerParameter(75),0))\u003Emacros communes\u003CElse/\u003Edonn\u00E9es du client\u003C/If\u003E a \u00E9chou\u00E9.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5544,7 +5544,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Cette fonction permet de sauvegarder sur le serveur les donn\u00E9es de configuration actuellement stock\u00E9es sur votre \u003CIf(Equal(IntegerParameter(75),0))\u003Eplateforme de jeu\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,Xbox,Xbox)\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/If\u003E (incluant ATH, barres de raccourcis, etc.).\n\nAvant toute utilisation, nous vous recommandons fortement d\u0027effectuer une sauvegarde locale de vos donn\u00E9es.\u003CIf(Equal(IntegerParameter(75),0))\u003E Pour ce faire, retournez au programme de connexion, puis s\u00E9lectionnez \u201CConfiguration\u201D puis \u201CSauvegarde/Import des donn\u00E9es personnelles\u201D.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Cette fonction permet de sauvegarder sur le serveur les donn\u00E9es de configuration actuellement stock\u00E9es sur votre \u003CIf(Equal(PlayerParameter(75),0))\u003Eplateforme de jeu\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,Xbox,Xbox)\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/If\u003E (incluant ATH, barres de raccourcis, etc.).\n\nAvant toute utilisation, nous vous recommandons fortement d\u0027effectuer une sauvegarde locale de vos donn\u00E9es.\u003CIf(Equal(PlayerParameter(75),0))\u003E Pour ce faire, retournez au programme de connexion, puis s\u00E9lectionnez \u201CConfiguration\u201D puis \u201CSauvegarde/Import des donn\u00E9es personnelles\u201D.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

@@ -104,7 +104,7 @@ public class SeStringConverter : JsonConverter<SeString>
         return expression.ExpressionType switch
         {
             Lumina.Text.Expressions.ExpressionType.IntegerParameter => $"IntegerParameter({ConvertExpression(expression.Operand)})",
-            Lumina.Text.Expressions.ExpressionType.PlayerParameter => $"IntegerParameter({ConvertExpression(expression.Operand)})",
+            Lumina.Text.Expressions.ExpressionType.PlayerParameter => $"PlayerParameter({ConvertExpression(expression.Operand)})",
             Lumina.Text.Expressions.ExpressionType.StringParameter => $"StringParameter({ConvertExpression(expression.Operand)})",
             Lumina.Text.Expressions.ExpressionType.ObjectParameter => $"ObjectParameter({ConvertExpression(expression.Operand)})",
             _ => throw new NotImplementedException() // cannot reach, as this instance is immutable and this field is filtered from constructor

@@ -1428,7 +1428,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Deine restliche kostenlose Testspielzeit betr\u00E4gt\n\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ETag\u003CElse/\u003ETage\u003C/If\u003E. Wenn du FINAL FANTASY XIV nach Ablauf der Testspielzeit weiterspielen m\u00F6chtest, kannst du \u003CIf(Equal(IntegerParameter(75),0))\u003Ein der Mogry-Station (https://sqex.to/Msp)\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003Eim PlayStation\u2122Store\u003CElse/\u003Eim Microsoft Store\u003C/If\u003E\u003C/If\u003E die Vollversion erwerben und alle Funktionen des Spiels freischalten.",
+    "Text": "Deine restliche kostenlose Testspielzeit betr\u00E4gt\n\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ETag\u003CElse/\u003ETage\u003C/If\u003E. Wenn du FINAL FANTASY XIV nach Ablauf der Testspielzeit weiterspielen m\u00F6chtest, kannst du \u003CIf(Equal(PlayerParameter(75),0))\u003Ein der Mogry-Station (https://sqex.to/Msp)\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eim PlayStation\u2122Store\u003CElse/\u003Eim Microsoft Store\u003C/If\u003E\u003C/If\u003E die Vollversion erwerben und alle Funktionen des Spiels freischalten.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4224,7 +4224,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Speichere ein Backup mit lokalen Charaktereinstellungen, dem HUD-Layout, Kommandomen\u00FCs, Ausr\u00FCstungssets usw. auf dem Server.\n\u203B Einstellungen zur Sortierung von Gegenst\u00E4nden und Positionen im Inventar werden nicht gespeichert.\u003CIf(Equal(IntegerParameter(78),99))\u003E\n\u203B F\u00FCr Remote Play werden nur HUD-Gr\u00F6\u00DFe und -Layout gespeichert.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Speichere ein Backup mit lokalen Charaktereinstellungen, dem HUD-Layout, Kommandomen\u00FCs, Ausr\u00FCstungssets usw. auf dem Server.\n\u203B Einstellungen zur Sortierung von Gegenst\u00E4nden und Positionen im Inventar werden nicht gespeichert.\u003CIf(Equal(PlayerParameter(78),99))\u003E\n\u203B F\u00FCr Remote Play werden nur HUD-Gr\u00F6\u00DFe und -Layout gespeichert.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4824,7 +4824,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Speichert Einstellungen f\u00FCr \u003CIf(Equal(IntegerParameter(75),0))\u003EGamepad und Maus\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E und Maus\u003C/If\u003E.\n\u203B Informationen zum Eingabeger\u00E4t werden nicht gespeichert.",
+    "Text": "Speichert Einstellungen f\u00FCr \u003CIf(Equal(PlayerParameter(75),0))\u003EGamepad und Maus\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E und Maus\u003C/If\u003E.\n\u203B Informationen zum Eingabeger\u00E4t werden nicht gespeichert.",
     "Unknown0": "Eingabeger\u00E4t",
     "Unknown1": "",
     "TYPE": 0,
@@ -4860,7 +4860,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Speichert Einstellungen f\u00FCr visuelle Tondarstellung und Farbkorrekturen.\u003CIf(Equal(IntegerParameter(75),0))\u003E\u003CElse/\u003E\n\u203B Nicht zutreffend f\u00FCr \u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
+    "Text": "Speichert Einstellungen f\u00FCr visuelle Tondarstellung und Farbkorrekturen.\u003CIf(Equal(PlayerParameter(75),0))\u003E\u003CElse/\u003E\n\u203B Nicht zutreffend f\u00FCr \u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,Xbox Series X,Xbox Series S)\u003E\u003CElse/\u003E\u003C/If\u003E.\u003C/If\u003E",
     "Unknown0": "Barrierefreiheit",
     "Unknown1": "",
     "TYPE": 0,
@@ -5040,7 +5040,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Speichert die Einstellungen f\u00FCr \u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController und Maus\u003CElse/\u003EGamepad und Maus\u003C/If\u003E.",
+    "Text": "Speichert die Einstellungen f\u00FCr \u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController und Maus\u003CElse/\u003EGamepad und Maus\u003C/If\u003E.",
     "Unknown0": "Charakterkonfig.",
     "Unknown1": "",
     "TYPE": 0,
@@ -5292,7 +5292,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EMAKROS\u003CElse/\u003EEINSTELLUNGEN\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EMAKROS\u003CElse/\u003EEINSTELLUNGEN\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5316,7 +5316,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EMAKROS F\u00DCR ALLE CHARAKTERE\u003CElse/\u003ECLIENT-EINSTELLUNGEN\u003C/If\u003E WIEDERHERSTELLEN",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EMAKROS F\u00DCR ALLE CHARAKTERE\u003CElse/\u003ECLIENT-EINSTELLUNGEN\u003C/If\u003E WIEDERHERSTELLEN",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5340,7 +5340,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EEs k\u00F6nnen bis zu 100 Makros f\u00FCr alle Charaktere wiederhergestellt werden.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EEs k\u00F6nnen bis zu 100 Makros f\u00FCr alle Charaktere wiederhergestellt werden.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5352,7 +5352,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Falls ein Fehler bei der Anwendung der \u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003EClient-Einstellungen\u003C/span\u003E\u003C/span\u003E auftritt, kannst du diese Funktion nutzen, um deine \u003CIf(Equal(IntegerParameter(75),0))\u003EMakro-Einstellungen f\u00FCr alle Charaktere\u003CElse/\u003EEinstellungen\u003C/If\u003E aus den zuvor gespeicherten wiederherzustellen.\nWelche Sicherungsdaten m\u00F6chtest du verwenden?",
+    "Text": "Falls ein Fehler bei der Anwendung der \u003Cspan uiForeground=\u0022567\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022568\u0022\u003EClient-Einstellungen\u003C/span\u003E\u003C/span\u003E auftritt, kannst du diese Funktion nutzen, um deine \u003CIf(Equal(PlayerParameter(75),0))\u003EMakro-Einstellungen f\u00FCr alle Charaktere\u003CElse/\u003EEinstellungen\u003C/If\u003E aus den zuvor gespeicherten wiederherzustellen.\nWelche Sicherungsdaten m\u00F6chtest du verwenden?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5448,7 +5448,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E aus den Daten vom \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E Uhr wiederherstellen?",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E aus den Daten vom \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E Uhr wiederherstellen?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5472,7 +5472,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E wurden erfolgreich wiederhergestellt.",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E wurden erfolgreich wiederhergestellt.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5484,7 +5484,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E konnten nicht wiederhergestellt werden.",
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EClient-Einstellungen\u003CElse/\u003EMakros f\u00FCr alle Charaktere\u003C/If\u003E konnten nicht wiederhergestellt werden.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -5544,7 +5544,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Diese Funktion l\u00E4sst dich Backups von deinen Charakter- und Client-Einstellungen auf den Servern von FINAL FANTASY XIV erstellen. Sie erlaubt dir, nahtlos weiterzuspielen, auch wenn sich deine Spielumgebung \u00E4ndert.\n\nWir empfehlen eine lokale Sicherheitskopie deiner Einstellungsdaten zu erstellen, bevor du diese Funktion nutzt.\u003CIf(Equal(IntegerParameter(75),0))\u003E Dies kann manuell oder \u00FCber die KONFIGURATION im Launcher vorgenommen werden.\u003CElse/\u003E\u003C/If\u003E",
+    "Text": "Diese Funktion l\u00E4sst dich Backups von deinen Charakter- und Client-Einstellungen auf den Servern von FINAL FANTASY XIV erstellen. Sie erlaubt dir, nahtlos weiterzuspielen, auch wenn sich deine Spielumgebung \u00E4ndert.\n\nWir empfehlen eine lokale Sicherheitskopie deiner Einstellungsdaten zu erstellen, bevor du diese Funktion nutzt.\u003CIf(Equal(PlayerParameter(75),0))\u003E Dies kann manuell oder \u00FCber die KONFIGURATION im Launcher vorgenommen werden.\u003CElse/\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
