@@ -51,13 +51,10 @@ public class SeStringConverter : JsonConverter<SeString>
 
         // Eliminate uicolorborder ("UIGlow") as we don't bother representing it in any way.
         if (lowerType.StartsWith("<uicolorborder")) {
-            if (lowerType == "<uicolorborder>0</uicolorborder>")
-                return "</span>";
-            string pattern = @"<uicolorborder>(\d+)</uicolorborder>";
-            string replacement = @"<span uiGlow=""$1"">";
-            return Regex.Replace(lowerType, pattern, replacement);
+            return "";
         }
 
+        // Convert ui color fill to a span with a foreground color.
         if (lowerType.StartsWith("<uicolorfill")) {
             if (lowerType == "<uicolorfill>0</uicolorfill>")
                 return "</span>";
@@ -76,13 +73,12 @@ public class SeStringConverter : JsonConverter<SeString>
                         string hexValue = colorValue.ToString("x");
                         string paddedHexValue = hexValue.PadLeft(8, '0');
                         string firstSixChars = paddedHexValue.Substring(0, 6);
-                        colorAttr = " style=\"color: #" + firstSixChars + "\"";
+                        colorAttr = " style=\"color: #" + firstSixChars + ";\"";
                     }
                 }
             }
 
-            string replacement = $@"<span uiForeground=""$1""{colorAttr}>";
-            return Regex.Replace(lowerType, numPattern, replacement);
+            return $"<span{colorAttr}>";
         }
     
         return type;
