@@ -323,7 +323,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Schon wieder? \u003Cst\u00F6hn\u003E",
+    "Text": "Schon wieder? \\\u003Cst\u00F6hn\u003E",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -748,7 +748,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Uahrg ... Nun nehme ich dein Leben!",
+    "Text": "Uahrg ... Nun nehme ich \u003Ci\u003Edein\u003C/i\u003E Leben!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -1224,7 +1224,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Er ist \u003Ckeuch\u003E zu stark! \u003Ckeuch\u003E Bombattanten, wir ziehen uns zur\u00FCck!",
+    "Text": "Er ist \\\u003Ckeuch\u003E zu stark! \\\u003Ckeuch\u003E Bombattanten, wir ziehen uns zur\u00FCck!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -1343,7 +1343,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zeit f\u00FCr R\u00FCckspringen! Hazzu noch viel Spa\u00DF, Gro\u00DFwachsener!",
+    "Text": "Zeit f\u00FCr R\u00FCckspringen! Hazzu noch viel Spa\u00DF, Gro\u00DFwachsene\u003CIf(IntegerParameter(4))\u003E\u003CElse/\u003Er\u003C/If\u003E!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -1445,7 +1445,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist erschienen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist erschienen!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1462,7 +1462,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist irgendwohin verschwunden.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist irgendwohin verschwunden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1479,7 +1479,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist besiegt und Treasure ist erschienen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist besiegt und \u003Csheetreferencede(Treasure,1,IntegerParameter(2),1,1,1)\u003E ist erschienen!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1496,7 +1496,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist geflohen!BNpcName sind geflohen!",
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist geflohen!\u003CElse/\u003E\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),2,1,1)\u003E\u003C/Link\u003E sind geflohen!\u003C/If\u003E",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -2142,7 +2142,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003Cspuck\u003E Ugh...",
+    "Text": "\\\u003Cspuck\u003E Ugh...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -2788,7 +2788,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003Ckreisch\u003E Du kriegst mich nicht!",
+    "Text": "\\\u003Ckreisch\u003E Du kriegst mich nicht!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -3145,7 +3145,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dieser Weltensalon schlie\u00DFt in  Minuten. Wir bitten zu beachten, dass neue Partien nur bis  Minuten vor Schlie\u00DFung begonnen werden k\u00F6nnen.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass neue Partien nur bis \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Minuten vor Schlie\u00DFung begonnen werden k\u00F6nnen.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3162,7 +3162,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Da der Weltensalon in  Minuten schlie\u00DFt, k\u00F6nnen keine neuen Partien mehr begonnen werden. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
+    "Text": "Da der Weltensalon in \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003En\u003C/If\u003E schlie\u00DFt, k\u00F6nnen keine neuen Partien mehr begonnen werden. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3179,7 +3179,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dieser Weltensalon schlie\u00DFt in einer Minuten. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf(Equal(IntegerParameter(1),1))\u003Eeiner\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3196,7 +3196,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dieser Weltensalon schlie\u00DFt in einer Minuten. Neue Spieler werden nun nicht mehr eingelassen.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf(Equal(IntegerParameter(1),1))\u003Eeiner\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CElse/\u003En\u003C/If\u003E. Neue Spieler werden nun nicht mehr eingelassen.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3604,7 +3604,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wie? E-Exe...kutiert? \u003Cschluck\u003E",
+    "Text": "Wie? E-Exe...kutiert? \\\u003Cschluck\u003E",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4216,7 +4216,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Sei vorsichtig,  !",
+    "Text": "Sei vorsichtig, \u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4233,7 +4233,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003Czisch\u003E\nHier liegt ein fauler Gestank in der Luft!",
+    "Text": "\\\u003Czisch\u003E\nHier liegt ein fauler Gestank in der Luft!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4250,7 +4250,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Das verhei\u00DFt nichts Gutes...",
+    "Text": "Das verhei\u00DFt nichts Gutes\u003Cindent\u003E...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4573,7 +4573,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wenn ich das gewusst ... \u003Curks\u003E",
+    "Text": "Wenn ich das gewusst ... \\\u003Curks\u003E",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4828,7 +4828,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Oh nein ... Unsere kostbaren Mochi...",
+    "Text": "Oh nein ... Unsere kostbaren Mochi\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 3,
@@ -4913,7 +4913,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ich hab da noch ein Ass im \u00C4rmel...",
+    "Text": "Ich hab da noch ein Ass im \u00C4rmel\u003Cindent\u003E...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5253,7 +5253,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "So k\u00E4mpft ein Samurai!",
+    "Text": "\u003Ci\u003ESo\u003C/i\u003E k\u00E4mpft ein Samurai!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5593,7 +5593,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Das ist viel zu schwierig...",
+    "Text": "Das ist viel zu schwierig\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5712,7 +5712,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Moment... Das ist nicht hinten.",
+    "Text": "Moment\u003Cindent\u003E... Das ist nicht hinten.",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5729,7 +5729,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wir m\u00FCssen auch die Windrichtung ber\u00FCcksichtigen...",
+    "Text": "Wir m\u00FCssen auch die Windrichtung ber\u00FCcksichtigen\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5746,7 +5746,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wenn du es sagst...",
+    "Text": "Wenn du es sagst\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5780,7 +5780,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "So viel Blut ...\nMir ist der Appetit vergangen.",
+    "Text": "So viel Blut \u003Cindent\u003E...\nMir ist der Appetit vergangen.",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5831,7 +5831,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Mist! Entwischt...",
+    "Text": "Mist! Entwischt\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6120,7 +6120,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dem \u00C4thermessger\u00E4t zufolge muss es hier etliche Scherben geben...",
+    "Text": "Dem \u00C4thermessger\u00E4t zufolge muss es hier etliche Scherben geben\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6171,7 +6171,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Nun, an welchem Ort machen wir wohl am besten mit unserer Suche weiter...?",
+    "Text": "Nun, an welchem Ort machen wir wohl am besten mit unserer Suche weiter\u003Cindent\u003E...?",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6341,7 +6341,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ungh... Ich...",
+    "Text": "Ungh\u003Cindent\u003E... Ich\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6358,7 +6358,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "D-Das war knapp...",
+    "Text": "D-Das war knapp\u003Cindent\u003E...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6868,7 +6868,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003Chust\u003E Ich kann nichts sehen!",
+    "Text": "\\\u003Chust\u003E Ich kann nichts sehen!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7191,7 +7191,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003Chust\u003E Was ... Wie ...?",
+    "Text": "\\\u003Chust\u003E Was ... Wie ...?",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7803,7 +7803,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Eine wahre HeldinEin wahrer Held ...",
+    "Text": "\u003CIf(IntegerParameter(4))\u003EEine wahre Heldin\u003CElse/\u003EEin wahrer Held\u003C/If\u003E ...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -8279,7 +8279,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Frau AbenteurerinHerr Abenteurer! K\u00F6nntest du mir vielleicht helfen?",
+    "Text": "\u003CIf(IntegerParameter(4))\u003EFrau Abenteurerin\u003CElse/\u003EHerr Abenteurer\u003C/If\u003E! K\u00F6nntest du mir vielleicht helfen?",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 3,

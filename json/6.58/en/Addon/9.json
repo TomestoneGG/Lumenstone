@@ -7,7 +7,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CTwoDigitValue\u003Et_mon\u003C/TwoDigitValue\u003E/\u003CTwoDigitValue\u003Et_day\u003C/TwoDigitValue\u003E/\u003CTwoDigitValue\u003Et_year\u003C/TwoDigitValue\u003E",
     "RowId": 4544,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -98,7 +98,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CTwoDigitValue\u003Et_day\u003C/TwoDigitValue\u003E/\u003CTwoDigitValue\u003Et_mon\u003C/TwoDigitValue\u003E/\u003CTwoDigitValue\u003Et_year\u003C/TwoDigitValue\u003E",
     "RowId": 4557,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -245,7 +245,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Next Mission Allowance in  hourhours and  minuteminutes at : p.m.a.m. on / (Earth time).",
+    "Text": "Next Mission Allowance in \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E and \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E at \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E on \u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E (Earth time).",
     "RowId": 4581,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -273,14 +273,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ",",
+    "Text": "\u003Cformat(IntegerParameter(1),,)\u003E",
     "RowId": 4585,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Expert delivery missions are available upon attaining the rank of GCRankLimsaMaleTextGCRankGridaniaMaleTextGCRankUldahMaleText.",
+    "Text": "Expert delivery missions are available upon attaining the rank of \u003Cswitch(IntegerParameter(1),\u003Csheetreference(GCRankLimsaMaleText,IntegerParameter(2),0)\u003E,\u003Csheetreference(GCRankGridaniaMaleText,IntegerParameter(2),0)\u003E,\u003Csheetreference(GCRankUldahMaleText,IntegerParameter(2),0)\u003E)\u003E.",
     "RowId": 4586,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -322,7 +322,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "InstanceContent",
+    "Text": "\u003CLink\u003E\u003Csheetreference(InstanceContent,IntegerParameter(1),3)\u003E\u003C/Link\u003E",
     "RowId": 4592,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -336,7 +336,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " \uE031 : Remaining  (// :)",
+    "Text": " \uE031 \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E Remaining  (\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E\u003C/If\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E)",
     "RowId": 4594,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -441,7 +441,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Warning: You will not be able to receive all the following:\n\n  Company Seals\n  Allagan Tomestones\n  Reputation\n\nDo you still wish to proceed?",
+    "Text": "Warning: You will not be able to receive all the following:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n  Company Seals\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  Allagan Tomestones\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n  Reputation\u003CElse/\u003E\u003C/If\u003E\n\nDo you still wish to proceed?",
     "RowId": 4609,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -483,14 +483,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Slots available in inventory: ",
+    "Text": "Slots available in inventory: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4615,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Items being held: ",
+    "Text": "Items being held: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4616,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -518,7 +518,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Claim Item Item? Once claimed an item cannot be returned.",
+    "Text": "Claim \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E? Once claimed an item cannot be returned.",
     "RowId": 4620,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -546,7 +546,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Delivery Mission Items",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Delivery Mission Items",
     "RowId": 4624,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -728,7 +728,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Placing Item in the armoire will reset its spiritbond to 0%, as well as remove all customization. Gear with condition below 100% cannot be stored. Proceed?",
+    "Text": "Placing \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E in the armoire will reset its spiritbond to 0%, as well as remove all customization. Gear with condition below 100% cannot be stored. Proceed?",
     "RowId": 4650,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -770,14 +770,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ",\uE049",
+    "Text": "\u003Cformat(IntegerParameter(1),,)\u003E\uE049",
     "RowId": 4657,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Meld Item to Item for , gil?",
+    "Text": "Meld \u003Csheetreferenceen(Item,2,IntegerParameter(2),1,1)\u003E to \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E for \u003Cformat(IntegerParameter(3),,)\u003E gil?",
     "RowId": 4658,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -889,7 +889,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Remove Item from the armoire?",
+    "Text": "Remove \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E from the armoire?",
     "RowId": 4675,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -980,7 +980,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Requires completion of the duty \u201C.\u201DQuest requirements met.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003ERequires completion of the duty \u201C\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.\u201D\u003C/span\u003E\u003C/span\u003E\u003CElse/\u003E\u003Cspan uiForeground=\u0022502\u0022 color=\u0022#40bfff\u0022\u003E\u003Cspan uiGlow=\u0022503\u0022\u003EQuest requirements met.\u003C/span\u003E\u003C/span\u003E\u003C/If\u003E",
     "RowId": 4689,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1127,7 +1127,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Move  Rotate \uFF0B Zoom In/Out",
+    "Text": "\u003CIcon2\u003E20\u003C/Icon2\u003E Move \u003CIcon2\u003E25\u003C/Icon2\u003E Rotate \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E Zoom In/Out",
     "RowId": 4711,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1288,7 +1288,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Left in the Wolves\u0027 Den: m s",
+    "Text": "Time Left in the Wolves\u0027 Den: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Em \u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003Es",
     "RowId": 4734,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1302,14 +1302,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u2605\u3000ClawsFangs",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u2605\u003CElse/\u003E\u3000\u003C/If\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003EClaws\u003CElse/\u003E\u003CHighlight\u003EObjectParameter(81)\u003C/Highlight\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003EFangs\u003CElse/\u003E\u003CHighlight\u003EObjectParameter(82)\u003C/Highlight\u003E\u003C/If\u003E\u003C/If\u003E",
     "RowId": 4736,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "The GrandCompany isisare victorious!",
+    "Text": "The \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eis\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2))\u003Eis\u003CElse/\u003Eare\u003C/If\u003E\u003C/If\u003E victorious!",
     "RowId": 4737,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1323,7 +1323,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Time remaining in area: :",
+    "Text": "Time remaining in area: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E",
     "RowId": 4739,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1337,14 +1337,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Occupying ",
+    "Text": "Occupying \u003Cswitch(IntegerParameter(1),\u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E",
     "RowId": 4741,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Occupied ",
+    "Text": "Occupied \u003Cswitch(IntegerParameter(1),\u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E",
     "RowId": 4742,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1358,7 +1358,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u2605\u3000The GrandCompany\nTactical Rating",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u2605\u003CElse/\u003E\u3000\u003C/If\u003E\u003Cswitch(IntegerParameter(1),\u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003EThe \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E\nTactical Rating",
     "RowId": 4744,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1372,7 +1372,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Toggle Lists",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Toggle Lists",
     "RowId": 4746,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1428,7 +1428,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You are not a member of the GrandCompany.",
+    "Text": "You are not a member of the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E.",
     "RowId": 4754,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1575,35 +1575,35 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item\n(Collectability Rating: \uFF5E)",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E\n(Collectability Rating: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF5E)",
     "RowId": 4776,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "The GrandCompany",
+    "Text": "The \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E",
     "RowId": 4780,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " FCReputation",
+    "Text": "\u003Cuicolorfill\u003Eintegerparameter(2)\u003C/uicolorfill\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Csheetreference(FCReputation,IntegerParameter(1),4)\u003E\u003C/span\u003E",
     "RowId": 4781,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "EXP: ,/,",
+    "Text": "EXP: \u003Cformat(IntegerParameter(1),,)\u003E/\u003Cformat(IntegerParameter(2),,)\u003E",
     "RowId": 4782,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "FCRights\nRank ",
+    "Text": "\u003Csheetreference(FCRights,IntegerParameter(2),0)\u003E\nRank \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4783,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1771,7 +1771,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Scroll",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scroll",
     "RowId": 4807,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1974,7 +1974,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Requirement: FCRights",
+    "Text": "Requirement: \u003Csheetreference(FCRights,IntegerParameter(1),0)\u003E",
     "RowId": 4838,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2044,7 +2044,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Attempts (Max: )",
+    "Text": "Attempts (Max: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E)",
     "RowId": 4850,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2065,7 +2065,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BHQ materials will not improve item quality.",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003E\u203BHQ materials will not improve item quality.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 4853,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2086,7 +2086,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BQuick synthesis cannot be used to craft collectables.",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003E\u203BQuick synthesis cannot be used to craft collectables.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 4856,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2212,7 +2212,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Select HUD/Touch Pad",
+    "Text": "Select HUD\u003CIf(Equal(IntegerParameter(78),99))\u003E/Touch Pad\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 4881,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2394,7 +2394,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Rank: ",
+    "Text": "Rank: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4910,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2422,7 +2422,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Lv. ",
+    "Text": "Lv. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4914,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2436,21 +2436,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BuddyEquip",
+    "Text": "\u003Csheetreference(BuddyEquip,IntegerParameter(1),8)\u003E",
     "RowId": 4916,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "BuddyEquip",
+    "Text": "\u003Csheetreference(BuddyEquip,IntegerParameter(1),8)\u003E",
     "RowId": 4917,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "BuddyEquip",
+    "Text": "\u003Csheetreference(BuddyEquip,IntegerParameter(1),8)\u003E",
     "RowId": 4918,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2513,7 +2513,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Exchange , Item for Item, Item?",
+    "Text": "Exchange \u003Cformat(IntegerParameter(4),,)\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(3),IntegerParameter(4),1)\u003E for \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003Cformat(IntegerParameter(2),,)\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E\u003C/If\u003E?",
     "RowId": 4928,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2562,14 +2562,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Restore  Item to  Item?",
+    "Text": "Restore \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(3),IntegerParameter(4),1)\u003E to \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E?",
     "RowId": 4935,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "You cannot equip Item at your current PvP rank. Purchase it anyway?",
+    "Text": "You cannot equip \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E at your current PvP rank. Purchase it anyway?",
     "RowId": 4936,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2688,21 +2688,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BuddyAction",
+    "Text": "\u003Csheetreference(BuddyAction,IntegerParameter(1),0)\u003E",
     "RowId": 4956,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "ActStr",
+    "Text": "\u003Csheetreference(ActStr,IntegerParameter(1),0)\u003E",
     "RowId": 4957,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Trait",
+    "Text": "\u003Csheetreference(Trait,IntegerParameter(1),0)\u003E",
     "RowId": 4958,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2779,7 +2779,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "SP: ",
+    "Text": "SP: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4969,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2807,14 +2807,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Level ",
+    "Text": "Level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4973,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Spend  SP to acquire \u201C\u201D?",
+    "Text": "Spend \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E SP to acquire \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D?",
     "RowId": 4974,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2898,7 +2898,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Stain",
+    "Text": "\u003Csheetreference(Stain,IntegerParameter(1),3)\u003E",
     "RowId": 4986,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2919,7 +2919,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E",
     "RowId": 4989,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2989,7 +2989,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E",
     "RowId": 4999,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3052,14 +3052,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "deleteBackspace",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Edelete\u003CElse/\u003EBackspace\u003C/If\u003E",
     "RowId": 5008,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "tabTab",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Etab\u003CElse/\u003ETab\u003C/If\u003E",
     "RowId": 5009,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3087,7 +3087,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "enterEnter",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Eenter\u003CElse/\u003EEnter\u003C/If\u003E",
     "RowId": 5013,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3108,28 +3108,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "shiftShift",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E",
     "RowId": 5016,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "controlCtrl",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E",
     "RowId": 5017,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "optionAlt",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E",
     "RowId": 5018,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "F15Pause",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003EF15\u003CElse/\u003EPause\u003C/If\u003E",
     "RowId": 5019,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3185,7 +3185,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "escEsc",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Eesc\u003CElse/\u003EEsc\u003C/If\u003E",
     "RowId": 5027,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3220,35 +3220,35 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "spaceSpacebar",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Espace\u003CElse/\u003ESpacebar\u003C/If\u003E",
     "RowId": 5032,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "page upPage Up",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Epage up\u003CElse/\u003EPage Up\u003C/If\u003E",
     "RowId": 5033,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "page downPage Down",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Epage down\u003CElse/\u003EPage Down\u003C/If\u003E",
     "RowId": 5034,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "endEnd",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Eend\u003CElse/\u003EEnd\u003C/If\u003E",
     "RowId": 5035,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "homeHome",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Ehome\u003CElse/\u003EHome\u003C/If\u003E",
     "RowId": 5036,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3304,21 +3304,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "F13Print Screen",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003EF13\u003CElse/\u003EPrint Screen\u003C/If\u003E",
     "RowId": 5044,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "fnInsert",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Efn\u003CElse/\u003EInsert\u003C/If\u003E",
     "RowId": 5045,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "deleteDelete",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),3))\u003Edelete\u003CElse/\u003EDelete\u003C/If\u003E",
     "RowId": 5046,
     "SubRowId": 0,
     "SheetName": "Addon",

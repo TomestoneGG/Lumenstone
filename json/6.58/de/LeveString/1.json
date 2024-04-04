@@ -35,14 +35,14 @@
     "SheetLanguage": 3
   },
   {
-    "Objective": "Schw\u00E4che den Gegner und bes\u00E4nftige ihn mit dem Emote \u201EBeruhigen\u201Cmit EventItem",
+    "Objective": "Schw\u00E4che den Gegner und bes\u00E4nftige ihn \u003CIf(Equal(IntegerParameter(1),0))\u003Emit dem Emote \u201EBeruhigen\u201C\u003CElse/\u003Emit \u003Csheetreferencede(EventItem,5,IntegerParameter(1),2,3,1)\u003E\u003C/If\u003E",
     "RowId": 5,
     "SubRowId": 0,
     "SheetName": "LeveString",
     "SheetLanguage": 3
   },
   {
-    "Objective": "Greif anBenutze EventItem, um die Gegner zu enttarnen, und besiege sie",
+    "Objective": "\u003CIf(Equal(IntegerParameter(1),0))\u003EGreif an\u003CElse/\u003EBenutze \u003Csheetreferencede(EventItem,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E, um die Gegner zu enttarnen, und besiege sie",
     "RowId": 6,
     "SubRowId": 0,
     "SheetName": "LeveString",
@@ -63,7 +63,7 @@
     "SheetLanguage": 3
   },
   {
-    "Objective": "Geleite BNpcName zum Ziel",
+    "Objective": "Geleite \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,4,1)\u003E zum Ziel",
     "RowId": 9,
     "SubRowId": 0,
     "SheetName": "LeveString",
@@ -168,14 +168,14 @@
     "SheetLanguage": 3
   },
   {
-    "Objective": "Ringe BNpcName EventItem ab, um Monster zu enttarnen",
+    "Objective": "Ringe \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),2,3,1)\u003E \u003Csheetreferencede(EventItem,5,IntegerParameter(2),2,4,1)\u003E ab, um Monster zu enttarnen",
     "RowId": 24,
     "SubRowId": 0,
     "SheetName": "LeveString",
     "SheetLanguage": 3
   },
   {
-    "Objective": "Wenn BNpcName k. o. geht, scheitert die Mission",
+    "Objective": "Wenn \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E k. o. geht, scheitert die Mission",
     "RowId": 25,
     "SubRowId": 0,
     "SheetName": "LeveString",
@@ -196,7 +196,7 @@
     "SheetLanguage": 3
   },
   {
-    "Objective": "Finde den Gegner mit EventItem und besiege ihn",
+    "Objective": "Finde den Gegner mit \u003Csheetreferencede(EventItem,5,IntegerParameter(1),2,3,1)\u003E und besiege ihn",
     "RowId": 28,
     "SubRowId": 0,
     "SheetName": "LeveString",
@@ -224,21 +224,21 @@
     "SheetLanguage": 3
   },
   {
-    "Objective": "Besiege Gegner, die auf das /stups/schuld Emote reagieren und sammle EventItem auf.",
+    "Objective": "Besiege Gegner, die auf das \u003CIf(Equal(IntegerParameter(1),1))\u003E/stups\u003CElse/\u003E/schuld\u003C/If\u003E Emote reagieren und sammle \u003Csheetreferencede(EventItem,2,IntegerParameter(2),2,4,1)\u003E auf.",
     "RowId": 32,
     "SubRowId": 0,
     "SheetName": "LeveString",
     "SheetLanguage": 3
   },
   {
-    "Objective": "Mission misslingt, wenn alle BNpcName verloren gehen",
+    "Objective": "Mission misslingt, wenn alle \u003Csheetreferencede(BNpcName,5,IntegerParameter(1),2,1,1)\u003E verloren gehen",
     "RowId": 33,
     "SubRowId": 0,
     "SheetName": "LeveString",
     "SheetLanguage": 3
   },
   {
-    "Objective": "Benutze EventItem von BNpcName an EObj, um BNpcName anzulocken",
+    "Objective": "Benutze \u003Csheetreferencede(EventItem,2,IntegerParameter(2),2,4,1)\u003E von \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),2,3,1)\u003E an \u003Csheetreferencede(EObj,2,IntegerParameter(3),2,3,1)\u003E, um \u003Csheetreferencede(BNpcName,5,IntegerParameter(4),2,4,1)\u003E anzulocken",
     "RowId": 34,
     "SubRowId": 0,
     "SheetName": "LeveString",

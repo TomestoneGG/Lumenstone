@@ -1,6 +1,6 @@
 [
   {
-    "Text": "\u00A9 2010 -  SQUARE ENIX CO., LTD. Tous droits r\u00E9serv\u00E9s.",
+    "Text": "\u00A9 2010 - \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CElse/\u003E\u003CTime\u003E0\u003C/Time\u003E\u003CIf(LessThan(t_year,2013))\u003E2013\u003CElse/\u003E\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E SQUARE ENIX CO., LTD. Tous droits r\u00E9serv\u00E9s.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -516,7 +516,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Utiliser le g\u00E9n\u00E9rateur pour cr\u00E9er automatiquement un nom masculinf\u00E9minin dans la tradition de l\u0027ethnie choisie (TribeTribe).\nLe nom cr\u00E9\u00E9 sera bien s\u00FBr modifiable.",
+    "Text": "Utiliser le g\u00E9n\u00E9rateur pour cr\u00E9er automatiquement un nom \u003Cswitch(IntegerParameter(2),masculin,f\u00E9minin)\u003E dans la tradition de l\u0027ethnie choisie (\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E)\u003E).\nLe nom cr\u00E9\u00E9 sera bien s\u00FBr modifiable.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -528,7 +528,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Utiliser des donn\u00E9es de cr\u00E9ation sauvegard\u00E9es?",
+    "Text": "Utiliser des donn\u00E9es de cr\u00E9ation sauvegard\u00E9es\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -540,7 +540,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Vous avez choisi de jouer sur le Monde \u201C\u201D. Confirmer?",
+    "Text": "Vous avez choisi de jouer sur le Monde \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D. Confirmer\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1272,7 +1272,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Utiliser le g\u00E9n\u00E9rateur pour cr\u00E9er automatiquement un nom masculinf\u00E9minin dans la tradition de l\u0027ethnie choisie (TribeTribe).\nLe nom cr\u00E9\u00E9 sera bien s\u00FBr modifiable.",
+    "Text": "Utiliser le g\u00E9n\u00E9rateur pour cr\u00E9er automatiquement un nom \u003Cswitch(IntegerParameter(2),masculin,f\u00E9minin)\u003E dans la tradition de l\u0027ethnie choisie (\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E)\u003E).\nLe nom cr\u00E9\u00E9 sera bien s\u00FBr modifiable.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1764,7 +1764,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "\u201CExVersion\u201D est n\u00E9cessaire \u00E0 la lecture des donn\u00E9es d\u0027apparence du personnage Tribe \u2642Tribe \u2640 de l\u0027emplacement n\u00B0 cr\u00E9\u00E9es le .. \u00E0 h.",
+    "Text": "\u201C\u003Csheetreference(ExVersion,IntegerParameter(5),0)\u003E\u201D est n\u00E9cessaire \u00E0 la lecture des donn\u00E9es d\u0027apparence du personnage \u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E \u2640)\u003E de l\u0027emplacement n\u00B0\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E cr\u00E9\u00E9es le \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003Eh\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1920,7 +1920,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es de cr\u00E9ation de personnage \u201CTribe \u2642Tribe \u2640\u201D seront temporairement sauvegard\u00E9es dans l\u0027emplacement n\u00B0.",
+    "Text": "Les donn\u00E9es de cr\u00E9ation de personnage \u201C\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E \u2640)\u003E\u201D seront temporairement sauvegard\u00E9es dans l\u0027emplacement n\u00B0\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1968,7 +1968,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es du personnage Tribe \u2642Tribe \u2640 de l\u0027emplacement n\u00B0 cr\u00E9\u00E9es le .. \u00E0 h vont \u00EAtre charg\u00E9es.",
+    "Text": "Les donn\u00E9es du personnage \u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E \u2640)\u003E de l\u0027emplacement n\u00B0\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E cr\u00E9\u00E9es le \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003Eh\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E vont \u00EAtre charg\u00E9es.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2004,7 +2004,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es du personnage  (Tribe \u2642Tribe \u2640) qui se trouvait sur le Monde  de la version 1.0 vont \u00EAtre charg\u00E9es.",
+    "Text": "Les donn\u00E9es du personnage \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E (\u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E \u2640)\u003E) qui se trouvait sur le Monde \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E de la version 1.0 vont \u00EAtre charg\u00E9es.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2016,7 +2016,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es de personnage Tribe \u2642Tribe \u2640 de l\u0027emplacement temporaire n\u00B0 de la version 1.0 vont \u00EAtre charg\u00E9es.",
+    "Text": "Les donn\u00E9es de personnage \u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E \u2640)\u003E de l\u0027emplacement temporaire n\u00B0\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E de la version 1.0 vont \u00EAtre charg\u00E9es.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2028,7 +2028,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es du personnage Tribe \u2642Tribe \u2640 de l\u0027emplacement n\u00B0 cr\u00E9\u00E9es le .. \u00E0 h vont \u00EAtre \u00E9cras\u00E9es. Confirmer?",
+    "Text": "Les donn\u00E9es du personnage \u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E \u2640)\u003E de l\u0027emplacement n\u00B0\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E cr\u00E9\u00E9es le \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003Eh\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E vont \u00EAtre \u00E9cras\u00E9es. Confirmer\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2076,7 +2076,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Date: ..",
+    "Text": "Date\u003Cindent\u003E: \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2088,7 +2088,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Sauvegarde n\u00B0",
+    "Text": "Sauvegarde n\u00B0\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2100,7 +2100,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Tribe \u2642Tribe \u2640",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E \u2640)\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2112,7 +2112,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Sauvegarder les donn\u00E9es de cr\u00E9ation de personnage avant de continuer?\nVous pourrez ainsi entamer la cr\u00E9ation d\u0027un autre personnage en utilisant les m\u00EAmes param\u00E8tres.",
+    "Text": "Sauvegarder les donn\u00E9es de cr\u00E9ation de personnage avant de continuer\u003Cindent\u003E?\nVous pourrez ainsi entamer la cr\u00E9ation d\u0027un autre personnage en utilisant les m\u00EAmes param\u00E8tres.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2172,7 +2172,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es de l\u0027emplacement choisi vont \u00EAtre charg\u00E9es.\nLes donn\u00E9es de la cr\u00E9ation en cours seront alors perdues. Continuer?",
+    "Text": "Les donn\u00E9es de l\u0027emplacement choisi vont \u00EAtre charg\u00E9es.\nLes donn\u00E9es de la cr\u00E9ation en cours seront alors perdues. Continuer\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2244,7 +2244,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Voulez-vous sauvegarder les donn\u00E9es actuelles? Les donn\u00E9es pourront \u00EAtre charg\u00E9es ult\u00E9rieurement depuis le menu Cr\u00E9ation de personnage. Il sera \u00E9galement possible de les charger dans la version commerciale de FINAL FANTASY XIV.",
+    "Text": "Voulez-vous sauvegarder les donn\u00E9es actuelles\u003Cindent\u003E? Les donn\u00E9es pourront \u00EAtre charg\u00E9es ult\u00E9rieurement depuis le menu Cr\u00E9ation de personnage. Il sera \u00E9galement possible de les charger dans la version commerciale de FINAL FANTASY XIV.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2268,7 +2268,7 @@
     "SheetLanguage": 4
   },
   {
-    "Text": "Les donn\u00E9es de cr\u00E9ation de l\u0027emplacement n\u00B0 cr\u00E9\u00E9es le .. \u00E0 h ne sont pas prises en charge par cette version du programme et vont \u00EAtre \u00E9cras\u00E9es. Confirmer?",
+    "Text": "Les donn\u00E9es de cr\u00E9ation de l\u0027emplacement n\u00B0\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E cr\u00E9\u00E9es le \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u00E0 \u003CValue\u003Et_hour\u003C/Value\u003Eh\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E ne sont pas prises en charge par cette version du programme et vont \u00EAtre \u00E9cras\u00E9es. Confirmer\u003Cindent\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

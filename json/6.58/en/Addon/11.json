@@ -21,14 +21,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Deadline:  // : p.m.a.m.",
+    "Text": "Deadline:  \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E",
     "RowId": 5602,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Complete the following duty:\n\n (Second Chance Bonus:  Points)Complete the following duty:\n",
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EComplete the following duty:\n\u003CHighlight\u003EStringParameter(0)\u003C/Highlight\u003E\n (Second Chance Bonus: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Points)\u003CElse/\u003EComplete the following duty:\n\u003CHighlight\u003EStringParameter(0)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 5603,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -105,7 +105,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "x ",
+    "Text": "x \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5614,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -133,7 +133,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u002B",
+    "Text": "\u002B\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5618,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -154,28 +154,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Complete the following duty:\n\n (Second Chance Bonus:  Points)Complete the following duty:\n",
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EComplete the following duty:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n (Second Chance Bonus: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Points)\u003CElse/\u003EComplete the following duty:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 5621,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Commence a dungeon in the following category:\n\n (Second Chance Bonus:  Points)Commence a dungeon in the following category:\n",
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003ECommence a dungeon in the following category:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n (Second Chance Bonus: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Points)\u003CElse/\u003ECommence a dungeon in the following category:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 5622,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Participate in the following:\n\n (Second Chance Bonus:  Points)Participate in the following:\n",
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EParticipate in the following:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n (Second Chance Bonus: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Points)\u003CElse/\u003EParticipate in the following:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 5623,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Complete a duty in the following category:\n\n (Second Chance Bonus:  Points)Complete a duty in the following category:\n",
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EComplete a duty in the following category:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n (Second Chance Bonus: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Points)\u003CElse/\u003EComplete a duty in the following category:\n\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 5624,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -189,7 +189,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Second Chance Points: /9",
+    "Text": "Second Chance Points: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/9",
     "RowId": 5626,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -273,7 +273,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Level ",
+    "Text": "Level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5638,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -399,7 +399,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Select from where you wish to resume the duty.",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ESelect from where you wish to resume the duty.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 5662,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -441,7 +441,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Select difficulty.",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ESelect difficulty.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 5668,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -476,7 +476,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Confirm Destination",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Confirm Destination",
     "RowId": 5674,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -497,21 +497,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Pledge your allegiance to a Grand Company.\nAllegiance can be changed at a later date.Select the path you wish to take through the main scenario. The quest you did not select can be played at a later time.",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),5678))\u003EPledge your allegiance to a Grand Company.\nAllegiance can be changed at a later date.\u003CElse/\u003ESelect the path you wish to take through the main scenario. The quest you did not select can be played at a later time.\u003C/If\u003E",
     "RowId": 5677,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Select a Grand Company",
+    "Text": "\u003CColorFill\u003E-15523537\u003C/ColorFill\u003E\u003CColorBorder\u003E-5129523\u003C/ColorBorder\u003ESelect a Grand Company\u003CColorBorder\u003Estackcolor\u003C/ColorBorder\u003E\u003CColorFill\u003Estackcolor\u003C/ColorFill\u003E",
     "RowId": 5678,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Select a Path",
+    "Text": "\u003CColorFill\u003E-15523537\u003C/ColorFill\u003E\u003CColorBorder\u003E-5129523\u003C/ColorBorder\u003ESelect a Path\u003CColorBorder\u003Estackcolor\u003C/ColorBorder\u003E\u003CColorFill\u003Estackcolor\u003C/ColorFill\u003E",
     "RowId": 5679,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -609,7 +609,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5706,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -623,14 +623,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE03D",
+    "Text": "\uE03D\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5708,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Custom Deliveries ()",
+    "Text": "Custom Deliveries (\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E)",
     "RowId": 5709,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -644,14 +644,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uFF5E",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CIf(Equal(IntegerParameter(2),IntegerParameter(1)))\u003E\u003CElse/\u003E\uFF5E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E",
     "RowId": 5711,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Remaining: h m [/ :]",
+    "Text": "Time Remaining: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Eh \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003Em \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E[\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
     "RowId": 5712,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -686,21 +686,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 5717,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Deliveries/Week: ",
+    "Text": "Deliveries/Week: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5718,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to receive the following items:\n\n Item\n Item\n\nProceed?",
+    "Text": "Unable to receive the following items:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n \u003Csheetreference(Item,IntegerParameter(2),9)\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n \u003Csheetreference(Item,IntegerParameter(4),9)\u003E\u003CElse/\u003E\u003C/If\u003E\n\nProceed?",
     "RowId": 5719,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -714,7 +714,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 5721,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -735,7 +735,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E",
     "RowId": 5724,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -756,7 +756,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 5727,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -889,7 +889,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to apply glamours. Insufficient prisms.",
+    "Text": "\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003EUnable to apply glamours. Insufficient prisms.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 5746,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -910,7 +910,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Fishing HoleSpearfishing Area\nDeliver to: ENpcResident",
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003EFishing Hole\u003CElse/\u003ESpearfishing Area\u003C/If\u003E\nDeliver to: \u003Csheetreference(ENpcResident,IntegerParameter(1),0)\u003E",
     "RowId": 5749,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1127,7 +1127,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 5783,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1141,7 +1141,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "%",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%",
     "RowId": 5785,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1183,7 +1183,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 5791,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1477,21 +1477,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You are unable to receive rewards due to the following:\n  You are not a Disciple of War or Magic.\n  You are currently playing a limited job.",
+    "Text": "\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003EYou are unable to receive rewards due to the following:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E  You are not a Disciple of War or Magic.\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  You are currently playing a limited job.\u003CElse/\u003E\u003C/If\u003E\u003C/span\u003E\u003C/span\u003E",
     "RowId": 5840,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "You will be unable to receive all of the following rewards: \n\n  Experience Points\n  Allagan Tomestones\n\nDo you still wish to proceed?",
+    "Text": "You will be unable to receive all of the following rewards: \n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n  Experience Points\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  Allagan Tomestones\u003CElse/\u003E\u003C/If\u003E\n\nDo you still wish to proceed?",
     "RowId": 5841,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "You already possess the following minion:\n\n  ActStr\n  ActStr\n  ActStr\n  ActStr\nDo you still wish to proceed?",
+    "Text": "You already possess the following minion:\n\u003C45\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n  \u003Csheetreference(ActStr,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  \u003Csheetreference(ActStr,IntegerParameter(2),0)\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n  \u003Csheetreference(ActStr,IntegerParameter(3),0)\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\n  \u003Csheetreference(ActStr,IntegerParameter(4),0)\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/45\u003E\nDo you still wish to proceed?",
     "RowId": 5842,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1519,7 +1519,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Quantity: ",
+    "Text": "Quantity: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5861,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1554,7 +1554,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 5866,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1575,14 +1575,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE052Drag: Rotate Camera\n\uE057: Zoom\n\uE051Click: Execute Snipe: Rotate Camera\n\uFF0B/: Zoom (: Quick Zoom)\n/: Execute Snipe",
+    "Text": "\u003CIf(Equal(IntegerParameter(80),0))\u003E\uE052Drag: Rotate Camera\n\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E\uE057: Zoom\n\u003C/If\u003E\uE051Click: Execute \u003Csheetreference(Snipe,IntegerParameter(1),104)\u003E\u003CElse/\u003E\u003CIcon2\u003E23\u003C/Icon2\u003E: Rotate Camera\n\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E\u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E/\u003CIcon2\u003E21\u003C/Icon2\u003E: Zoom (\u003CIcon2\u003E5\u003C/Icon2\u003E: Quick Zoom)\n\u003C/If\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E/\u003CIcon2\u003E8\u003C/Icon2\u003E: Execute \u003Csheetreference(Snipe,IntegerParameter(1),104)\u003E\u003C/If\u003E",
     "RowId": 5880,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " /",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CIf(GreaterThan(IntegerParameter(3),1))\u003E \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 5881,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1603,7 +1603,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Magnification: ",
+    "Text": "Magnification: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 5884,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1659,7 +1659,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Value (f/)",
+    "Text": "Value (f/\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E)",
     "RowId": 5907,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1743,63 +1743,63 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Face Camera:\nKeyboard: Not Set\n Default: Jump\nControllerGamepad:  Button",
+    "Text": "Face Camera:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Jump\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E11\u003C/Icon2\u003E Button",
     "RowId": 5920,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: Not Set\n Default: Target Filters\nControllerGamepad:  Button",
+    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Target Filters\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button",
     "RowId": 5921,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Disable/Enable Target Motion\nKeyboard: Not Set\n#1 - Slot [#2]\nControllerGamepad:  Button",
+    "Text": "Disable/Enable Target Motion\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n#1 - Slot [#2]\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E15\u003C/Icon2\u003E Button",
     "RowId": 5922,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Disable/Enable All Motion\nKeyboard: Not Set\n#1 - Slot [#1]\nControllerGamepad:  Button",
+    "Text": "Disable/Enable All Motion\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n#1 - Slot [#1]\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E14\u003C/Icon2\u003E Button",
     "RowId": 5923,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Disable/Enable Camera Angle Toggle:\nMouse: \uE051 Left Click\nKeyboard: Not Set\n Default: Confirm\nControllerGamepad:  Button",
+    "Text": "Disable/Enable Camera Angle Toggle:\nMouse: \uE051 Left Click\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Confirm\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E8\u003C/Icon2\u003E Button",
     "RowId": 5924,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Toggle Camera Angle:\nKeyboard: Not Set\n Default: Cycle Tabs =Forward\nGamepadController:  D-padDirectional Buttons",
+    "Text": "Toggle Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Cycle Tabs =Forward\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(Equal(IntegerParameter(75),0))\u003EGamepad\u003CElse/\u003EController\u003C/If\u003E: \u003CIcon2\u003E6\u003C/Icon2\u003E \u003CIf(Equal(IntegerParameter(106),99))\u003ED-pad\u003CElse/\u003EDirectional Buttons\u003C/If\u003E",
     "RowId": 5925,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Reset Camera Angle:\nKeyboard: Not Set\n Default: Draw/Sheathe Weapon\nControllerGamepad:  Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\nControllerGamepad:  Stick",
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CBitmapFontIcon\u003E16\u003C/BitmapFontIcon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick",
     "RowId": 5926,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Reset Camera Angle:\nKeyboard: Not Set\n Default: Draw/Sheathe Weapon\nControllerGamepad:  Button\nCamera Controls:\nKeyboard: Movement Keys\nControllerGamepad:  Stick",
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CBitmapFontIcon\u003E16\u003C/BitmapFontIcon\u003E Button\nCamera Controls:\nKeyboard: Movement Keys\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick",
     "RowId": 5927,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Reset Camera Angle:\nKeyboard: Not Set\n Default: Draw/Sheathe Weapon\nControllerGamepad:  Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\nControllerGamepad:  Stick",
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CBitmapFontIcon\u003E16\u003C/BitmapFontIcon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick",
     "RowId": 5928,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1904,7 +1904,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: Not Set\n Default: Target Filters\nControllerGamepad:  Button",
+    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Target Filters\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button",
     "RowId": 5943,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2387,7 +2387,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Directional ButtonsD-pad",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E",
     "RowId": 6012,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2408,175 +2408,175 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E1\u003C/BitmapFontIcon\u003E",
     "RowId": 6020,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E2\u003C/BitmapFontIcon\u003E",
     "RowId": 6021,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E3\u003C/BitmapFontIcon\u003E",
     "RowId": 6022,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E4\u003C/BitmapFontIcon\u003E",
     "RowId": 6023,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E5\u003C/BitmapFontIcon\u003E",
     "RowId": 6024,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E6\u003C/BitmapFontIcon\u003E",
     "RowId": 6025,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E7\u003C/BitmapFontIcon\u003E",
     "RowId": 6026,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E8\u003C/BitmapFontIcon\u003E",
     "RowId": 6027,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E9\u003C/BitmapFontIcon\u003E",
     "RowId": 6028,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E10\u003C/BitmapFontIcon\u003E",
     "RowId": 6029,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E11\u003C/BitmapFontIcon\u003E",
     "RowId": 6030,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E12\u003C/BitmapFontIcon\u003E",
     "RowId": 6031,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E",
     "RowId": 6032,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E14\u003C/BitmapFontIcon\u003E",
     "RowId": 6033,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E15\u003C/BitmapFontIcon\u003E",
     "RowId": 6034,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E16\u003C/BitmapFontIcon\u003E",
     "RowId": 6035,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E17\u003C/BitmapFontIcon\u003E",
     "RowId": 6036,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E18\u003C/BitmapFontIcon\u003E",
     "RowId": 6037,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E19\u003C/BitmapFontIcon\u003E",
     "RowId": 6038,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E",
     "RowId": 6039,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E21\u003C/BitmapFontIcon\u003E",
     "RowId": 6040,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E22\u003C/BitmapFontIcon\u003E",
     "RowId": 6041,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E23\u003C/BitmapFontIcon\u003E",
     "RowId": 6042,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E24\u003C/BitmapFontIcon\u003E",
     "RowId": 6043,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E25\u003C/BitmapFontIcon\u003E",
     "RowId": 6044,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2667,7 +2667,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Directional ButtonsD-pad",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E",
     "RowId": 6062,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2807,42 +2807,42 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Client Settings Backup Data ",
+    "Text": "Client Settings Backup Data \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 6088,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Created\n// ::",
+    "Text": "Created\n\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E:\u003CTwoDigitValue\u003Et_sec\u003C/TwoDigitValue\u003E",
     "RowId": 6089,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Backup Data ",
+    "Text": "\u003C45\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/45\u003E Backup Data \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 6090,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Created\n// ::",
+    "Text": "Created\n\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E:\u003CTwoDigitValue\u003Et_sec\u003C/TwoDigitValue\u003E",
     "RowId": 6091,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Duty Record #",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E Duty Record #\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 6092,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "InstanceContent\n// ::",
+    "Text": "\u003CLink\u003E\u003Csheetreference(InstanceContent,IntegerParameter(1),3)\u003E\u003C/Link\u003E\n\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E:\u003CTwoDigitValue\u003Et_sec\u003C/TwoDigitValue\u003E",
     "RowId": 6093,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2877,14 +2877,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 6098,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Lv.  ClassJob\nArea: PlaceName\nWorld: ",
+    "Text": "Lv. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CLink\u003E\u003Csheetreference(ClassJob,IntegerParameter(2),0)\u003E\u003C/Link\u003E\nArea: \u003Csheetreference(PlaceName,IntegerParameter(3),0)\u003E\nWorld: \u003CHighlight\u003EStringParameter(4)\u003C/Highlight\u003E",
     "RowId": 6099,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2898,7 +2898,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional  bytesKBMBGB of space is required.\nOpen the hard drive utility?",
+    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Cswitch(IntegerParameter(2),bytes,KB,MB,GB)\u003E of space is required.\nOpen the hard drive utility?",
     "RowId": 6101,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2940,21 +2940,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 6107,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Lv.  ClassJob\nArea: PlaceName\nWorld: ",
+    "Text": "Lv. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Csheetreference(ClassJob,IntegerParameter(2),0)\u003E\nArea: \u003Csheetreference(PlaceName,IntegerParameter(3),0)\u003E\nWorld: \u003CHighlight\u003EStringParameter(4)\u003C/Highlight\u003E",
     "RowId": 6108,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional  bytesKBMBGB of space is required.",
+    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Cswitch(IntegerParameter(2),bytes,KB,MB,GB)\u003E of space is required.",
     "RowId": 6109,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2982,7 +2982,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "PlayStation\u00AE3PlayStation\u00AE4PlayStation\u00AE4PlayStation\u00AE5 users can adjust the game\u0027s display area to match the TV screen under Display Area Settings.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,,)\u003E\u003CElse/\u003E\u003C/If\u003E users can adjust the game\u0027s display area to match the TV screen under Display Area Settings.",
     "RowId": 6115,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3038,14 +3038,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Thank you for your report. A representative will review it shortly.\n\nNotification of a reply will be displayed in Recent Replies \u0026 Notices located under the Information tab. Depending on the issue, the representative may request further information. All queries and replies can be viewed under the History tab. ",
+    "Text": "Thank you for your report. A representative will review it shortly.\n\nNotification of a reply will be displayed in \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ERecent Replies \u0026 Notices\u003C/span\u003E\u003C/span\u003E located under the \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EInformation\u003C/span\u003E\u003C/span\u003E tab. Depending on the issue, the representative may request further information. All queries and replies can be viewed under the \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EHistory\u003C/span\u003E\u003C/span\u003E tab. ",
     "RowId": 6127,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Thank you for your report. A representative will review it shortly.\n\nNotification of a reply will be displayed in Recent Replies \u0026 Notices located under the Information tab. Depending on the issue, the representative may request further information. All queries and replies can be viewed under the History tab. ",
+    "Text": "Thank you for your report. A representative will review it shortly.\n\nNotification of a reply will be displayed in \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ERecent Replies \u0026 Notices\u003C/span\u003E\u003C/span\u003E located under the \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EInformation\u003C/span\u003E\u003C/span\u003E tab. Depending on the issue, the representative may request further information. All queries and replies can be viewed under the \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EHistory\u003C/span\u003E\u003C/span\u003E tab. ",
     "RowId": 6128,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3199,7 +3199,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " of  Complete",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Complete",
     "RowId": 6161,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3227,14 +3227,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 6165,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "h mmless than one minute",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Eh \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003Em\u003CElse/\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003Em\u003CElse/\u003Eless than one minute\u003C/If\u003E\u003C/If\u003E",
     "RowId": 6166,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3332,7 +3332,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Voyages completed:  (/ remaining)",
+    "Text": "Voyages completed: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E (\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E remaining)",
     "RowId": 6180,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3360,14 +3360,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E",
     "RowId": 6184,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " daydays,  hourhours, and  minuteminutes and less than 1 minute hourhours and  minuteminutes and less than 1 minuteLess than 1 minute",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E, \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E,\u003CElse/\u003E\u003C/If\u003E and \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E and less than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E\u003C/If\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eless than 1 minute\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "RowId": 6185,
     "SubRowId": 0,
     "SheetName": "Addon",

@@ -1148,7 +1148,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Hier wirst du dein Ende finden, DienerinDiener des Lichts.",
+    "Text": "Hier wirst du dein Ende finden, \u003CIf(IntegerParameter(4))\u003EDienerin\u003CElse/\u003EDiener\u003C/If\u003E des Lichts.",
     "RowId": 8630,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -1407,21 +1407,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\nKlasse BKlasse AKlasse S\nUnbesetztErobert  Erobert  Erobert  \nVerbleibende Daten: %",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(2),Klasse B,Klasse A,Klasse S)\u003E\n\u003Cswitch(IntegerParameter(3),Unbesetzt,Erobert  \u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,Erobert  \u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,Erobert  \u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E\nVerbleibende Daten: \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E\u003Cindent\u003E%",
     "RowId": 8900,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "\nNeutralErobert von Erobert von Erobert von ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(2),Neutral,Erobert von \u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,Erobert von \u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,Erobert von \u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E",
     "RowId": 8901,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "\nRuhezustand: bis ReaktivierungEisst\u00E4rke: %",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(3),Ruhezustand,\u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(5)\u003C/TwoDigitValue\u003E bis Reaktivierung,Eisst\u00E4rke: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003Cindent\u003E%)\u003E",
     "RowId": 8902,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -1435,7 +1435,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\n: bis ErscheinenLP: % ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(2),\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(4)\u003C/TwoDigitValue\u003E bis Erscheinen,LP: \u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E\u003Cindent\u003E%)\u003E ",
     "RowId": 8910,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2646,7 +2646,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Unsere Gegner sind nicht zu untersch\u00E4tzen.\n , besch\u00FCtze Lucia!",
+    "Text": "Unsere Gegner sind nicht zu untersch\u00E4tzen.\n\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E, besch\u00FCtze Lucia!",
     "RowId": 10403,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2737,7 +2737,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Es gibt neue Hauptziele!\n  und Raubahn!",
+    "Text": "Es gibt neue Hauptziele!\n\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E und Raubahn!",
     "RowId": 10416,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2786,7 +2786,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " !\nLos, schnappen wir uns das Hauptziel!",
+    "Text": "\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E!\nLos, schnappen wir uns das Hauptziel!",
     "RowId": 10423,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2835,7 +2835,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Keine Sorge!   schafft das schon!\nWir m\u00FCssen auch weiterk\u00E4mpfen!",
+    "Text": "Keine Sorge! \u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E schafft das schon!\nWir m\u00FCssen auch weiterk\u00E4mpfen!",
     "RowId": 10430,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2856,14 +2856,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " , jetzt h\u00E4ngt alles von dir ab!",
+    "Text": "\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E, jetzt h\u00E4ngt alles von dir ab!",
     "RowId": 10433,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "Nicht schlecht,  .\nAber der Bulle von Ala Mhigo hat noch seine H\u00F6rner!",
+    "Text": "Nicht schlecht, \u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E.\nAber der Bulle von Ala Mhigo hat noch seine H\u00F6rner!",
     "RowId": 10434,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2877,7 +2877,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "  steht noch?\nDann los, bringen wir es zu Ende!!!",
+    "Text": "\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E steht noch?\nDann los, bringen wir es zu Ende!!!",
     "RowId": 10436,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3381,7 +3381,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wichtig daf\u00FCr ist folgende Kombination: erst Action, dann Action.",
+    "Text": "Wichtig daf\u00FCr ist folgende Kombination: erst \u003Csheetreference(Action,9,0)\u003E, dann \u003Csheetreference(Action,15,0)\u003E.",
     "RowId": 10702,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3416,21 +3416,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du machst es falsch! Erst Action, dann Action!",
+    "Text": "Du machst es falsch! Erst \u003Csheetreference(Action,9,0)\u003E, dann \u003Csheetreference(Action,15,0)\u003E!",
     "RowId": 10707,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "Du machst es falsch! Erst Action, dann Action!",
+    "Text": "Du machst es falsch! Erst \u003Csheetreference(Action,31,0)\u003E, dann \u003Csheetreference(Action,37,0)\u003E!",
     "RowId": 10708,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "Du machst es falsch! Erst Action, dann Action!",
+    "Text": "Du machst es falsch! Erst \u003Csheetreference(Action,3617,0)\u003E, dann \u003Csheetreference(Action,3623,0)\u003E!",
     "RowId": 10709,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3444,21 +3444,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Greif die Holzpuppe zuerst mit Action und dann mit Action an!",
+    "Text": "Greif die Holzpuppe zuerst mit \u003Csheetreference(Action,9,0)\u003E und dann mit \u003Csheetreference(Action,15,0)\u003E an!",
     "RowId": 10711,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "Greif die Holzpuppe zuerst mit Action und dann mit Action an!",
+    "Text": "Greif die Holzpuppe zuerst mit \u003Csheetreference(Action,31,0)\u003E und dann mit \u003Csheetreference(Action,37,0)\u003E an!",
     "RowId": 10712,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "Greif die Holzpuppe zuerst mit Action und dann mit Action an!",
+    "Text": "Greif die Holzpuppe zuerst mit \u003Csheetreference(Action,3617,0)\u003E und dann mit \u003Csheetreference(Action,3623,0)\u003E an!",
     "RowId": 10713,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3486,14 +3486,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "F\u00FChre erst Action und dann Action aus, um die Feindseligkeit auf dich zu ziehen.",
+    "Text": "F\u00FChre erst \u003Csheetreference(Action,31,0)\u003E und dann \u003Csheetreference(Action,37,0)\u003E aus, um die Feindseligkeit auf dich zu ziehen.",
     "RowId": 10717,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 3
   },
   {
-    "Text": "F\u00FChre erst Action und dann Action aus, um die Feindseligkeit auf dich zu ziehen.",
+    "Text": "F\u00FChre erst \u003Csheetreference(Action,3617,0)\u003E und dann \u003Csheetreference(Action,3623,0)\u003E aus, um die Feindseligkeit auf dich zu ziehen.",
     "RowId": 10718,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",

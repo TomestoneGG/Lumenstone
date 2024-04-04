@@ -42,21 +42,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Innenausstattung der Kapelle.\n\u203B Wir lassen die Kapelle in nat\u00FCrlichem Licht erstrahlenDas Paar kann sich f\u00FCr eine nat\u00FCrliche oder romantische Beleuchtung der Kapelle entscheidenDas Paar kann sich f\u00FCr eine nat\u00FCrliche oder romantische Beleuchtung der Kapelle entscheiden.\n\u203B Die Farbe des Teppichs und der Blumendekoration w\u00E4hlen wir gerne f\u00FCr das Paar auskann aus je drei verschiedenen Farben gew\u00E4hlt werdenkann aus je f\u00FCnf verschiedenen Farben gew\u00E4hlt werden.\n\u203B Dekorstoffe werden nicht verwendetDie Farbe der Dekorstoffe kann aus drei verschiedenen Farben gew\u00E4hlt werdenDie Farbe der Dekorstoffe kann aus f\u00FCnf verschiedenen Farben gew\u00E4hlt werden.",
+    "Text": "Die Innenausstattung der Kapelle.\n\u203B \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),Wir lassen die Kapelle in nat\u00FCrlichem Licht erstrahlen,Das Paar kann sich f\u00FCr eine nat\u00FCrliche oder romantische Beleuchtung der Kapelle entscheiden,Das Paar kann sich f\u00FCr eine nat\u00FCrliche oder romantische Beleuchtung der Kapelle entscheiden)\u003E\u003CElse/\u003E\u003C/If\u003E.\n\u203B Die Farbe des Teppichs und der Blumendekoration \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),w\u00E4hlen wir gerne f\u00FCr das Paar aus,kann aus je drei verschiedenen Farben gew\u00E4hlt werden,kann aus je f\u00FCnf verschiedenen Farben gew\u00E4hlt werden)\u003E\u003CElse/\u003E\u003C/If\u003E.\n\u203B \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),Dekorstoffe werden nicht verwendet,Die Farbe der Dekorstoffe kann aus drei verschiedenen Farben gew\u00E4hlt werden,Die Farbe der Dekorstoffe kann aus f\u00FCnf verschiedenen Farben gew\u00E4hlt werden)\u003E\u003CElse/\u003E\u003C/If\u003E.",
     "RowId": 1543,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Das Paar schreitet gemeinsam vom Eingang der Kapelle bis zum Altar.Das Paar kann gemeinsam vom Eingang zum Altar schreiten oder sich auf einer von drei w\u00E4hlbaren Gondelneiner Gondel hereintragen lassen.",
+    "Text": "\u003CIf(LessThan(IntegerParameter(1),2))\u003EDas Paar schreitet gemeinsam vom Eingang der Kapelle bis zum Altar.\u003CElse/\u003EDas Paar kann gemeinsam vom Eingang zum Altar schreiten oder sich auf \u003CIf(GreaterThan(IntegerParameter(1),2))\u003Eeiner von drei w\u00E4hlbaren Gondeln\u003CElse/\u003Eeiner Gondel\u003C/If\u003E hereintragen lassen.\u003C/If\u003E",
     "RowId": 1544,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Das Paar schreitet Seite an Seite aus der Kapellekann Seite an Seite aus der Kapelle schreiten oder sich von einem Chocobo hinaustragen lassen.",
+    "Text": "Das Paar \u003CIf(LessThan(IntegerParameter(1),2))\u003Eschreitet Seite an Seite aus der Kapelle\u003CElse/\u003Ekann Seite an Seite aus der Kapelle schreiten oder sich von einem Chocobo hinaustragen lassen\u003C/If\u003E.",
     "RowId": 1545,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -70,7 +70,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Wartezeit vor dem Einzug des Paars und nach dem Eid werden von stimmungsvoller Musik untermalt.\n\nDer Veranstalter erlaubt sich, passende St\u00FCcke f\u00FCr das Paar auszuw\u00E4hlen.Das Paar kann f\u00FCr beides aus je  St\u00FCcken w\u00E4hlen.",
+    "Text": "Die Wartezeit vor dem Einzug des Paars und nach dem Eid werden von stimmungsvoller Musik untermalt.\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EDer Veranstalter erlaubt sich, passende St\u00FCcke f\u00FCr das Paar auszuw\u00E4hlen.\u003CElse/\u003EDas Paar kann f\u00FCr beides aus je \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E St\u00FCcken w\u00E4hlen.\u003C/If\u003E",
     "RowId": 1547,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -98,7 +98,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "..",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E",
     "RowId": 1551,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -119,7 +119,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ".. um :00 Uhr Uhr",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E um \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CIf(Equal(t_min,0))\u003E00 Uhr\u003CElse/\u003E\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E Uhr\u003C/If\u003E",
     "RowId": 1554,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -140,7 +140,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "noch  weitere",
+    "Text": "noch \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E weitere",
     "RowId": 1557,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -511,7 +511,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u002B %",
+    "Text": "\u002B\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E %",
     "RowId": 1618,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -553,91 +553,91 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " y",
+    "Text": "\u003CBitmapFontIcon\u003E105\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E y",
     "RowId": 1626,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " y",
+    "Text": "\u003CBitmapFontIcon\u003E106\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E y",
     "RowId": 1627,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " oben",
+    "Text": "\u003CBitmapFontIcon\u003E105\u003C/BitmapFontIcon\u003E oben",
     "RowId": 1628,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " unten",
+    "Text": "\u003CBitmapFontIcon\u003E106\u003C/BitmapFontIcon\u003E unten",
     "RowId": 1629,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "X:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Y:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080",
+    "Text": "X:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E",
     "RowId": 1630,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "X:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Y:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Z:-\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080",
+    "Text": "X:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Z:\u003CIf(LessThan(IntegerParameter(7),0))\u003E-\u003CElse/\u003E\u003C/If\u003E\u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(6))\u003E\u003Cswitch(IntegerParameter(6),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E",
     "RowId": 1631,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "X:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Y:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080",
+    "Text": "X:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E",
     "RowId": 1632,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " ( ., . )",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E ( \u003C38(IntegerParameter(2),10,.)\u003E, \u003C38(IntegerParameter(3),10,.)\u003E )",
     "RowId": 1635,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " ( ., ., -. )",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E ( \u003C38(IntegerParameter(2),10,.)\u003E, \u003C38(IntegerParameter(3),10,.)\u003E, \u003CIf(LessThan(IntegerParameter(5),0))\u003E-\u003CElse/\u003E\u003C/If\u003E\u003C38(IntegerParameter(4),10,.)\u003E )",
     "RowId": 1636,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\n ( . , . )",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n ( \u003C38(IntegerParameter(2),10,.)\u003E , \u003C38(IntegerParameter(3),10,.)\u003E )",
     "RowId": 1637,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003EStringParameter(1)\u003C/Link\u003E",
     "RowId": 1640,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ":",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 1643,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ":\uE06E\uE06D",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003E\uE06E\u003CElse/\u003E\uE06D\u003C/If\u003E",
     "RowId": 1644,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -693,7 +693,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Materialverwertung: ,00 (ClassJob)\u00D7",
+    "Text": "Materialverwertung: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E,00 (\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E)\u003CElse/\u003E\u00D7\u003C/If\u003E",
     "RowId": 1659,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -756,7 +756,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Kreis ",
+    "Text": "Kreis \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 1668,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -861,7 +861,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " TagTagen",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ETag\u003CElse/\u003ETagen\u003C/If\u003E",
     "RowId": 1683,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -882,7 +882,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Gib einen Namen f\u00FCr Gruppe  ein.",
+    "Text": "Gib einen Namen f\u00FCr \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003EGruppe \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E ein.",
     "RowId": 1686,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -910,14 +910,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 1690,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Raffination, wenn Sammlerst\u00FCck: \u2713\u2613",
+    "Text": "Raffination, wenn Sammlerst\u00FCck: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u2713\u003CElse/\u003E\u2613\u003C/If\u003E",
     "RowId": 1691,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -931,28 +931,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "H\u00E4ndlerpreis (NQ): .\uE049",
+    "Text": "H\u00E4ndlerpreis\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CElse/\u003E (NQ)\u003C/If\u003E: \u003Cformat(IntegerParameter(1),.)\u003E\uE049",
     "RowId": 1693,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "H\u00E4ndlerpreis (NQ): .\uE049 (unterliegt Bedingungen)",
+    "Text": "H\u00E4ndlerpreis\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CElse/\u003E (NQ)\u003C/If\u003E: \u003Cformat(IntegerParameter(1),.)\u003E\uE049 (unterliegt Bedingungen)",
     "RowId": 1694,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Angezeigt: ",
+    "Text": "Angezeigt: \u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 1695,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Freunde in dieser Gruppe: ",
+    "Text": "Freunde in dieser Gruppe: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 1696,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1078,21 +1078,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "99\u002B",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 1716,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "/\uE03C99\u002B",
+    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 1717,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "9999\u002B.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003Cformat(IntegerParameter(1),.)\u003E\u003C/If\u003E",
     "RowId": 1718,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1155,14 +1155,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "9999\u002B",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 1727,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "/\uE03C9999\u002B",
+    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 1728,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1176,14 +1176,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zur Merkliste hinzuf\u00FCgen \uFF08/\uFF09",
+    "Text": "Zur Merkliste hinzuf\u00FCgen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF09",
     "RowId": 1730,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Von Merkliste l\u00F6schen \uFF08/\uFF09",
+    "Text": "Von Merkliste l\u00F6schen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF09",
     "RowId": 1731,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1274,7 +1274,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wird bei der Steuerung mit dem Controllerm Anlegen im Kreuz-Kommandomen\u00FC der Steuerung mit dem Controller verwendet.",
+    "Text": "Wird bei\u003CIf(GreaterThan(IntegerParameter(75),1))\u003E der Steuerung mit dem Controller\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(75),1))\u003Em Anlegen im Kreuz-Kommandomen\u00FC\u003CElse/\u003E der Steuerung mit dem Controller\u003C/If\u003E\u003C/If\u003E verwendet.",
     "RowId": 1760,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1554,7 +1554,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zum \u00C4theryten PlaceNameAetheryte teleportieren lassen?",
+    "Text": "Zum \u00C4theryten \u003Csheetreference(PlaceName,\u003Csheetreference(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E teleportieren lassen?",
     "RowId": 1800,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1589,7 +1589,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceNameAetheryte",
+    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E",
     "RowId": 1805,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1631,7 +1631,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dr\u00FCcke \u201ESenden\u201C, um k\u00FCrzlich erworbene Gegenst\u00E4nde (z. B. Veteranen-Belohnungen oder im Kiosk gekaufte Gegenst\u00E4nde) anzufordern. Der Gegenstand wird an den Posteingang \u201EBonus- und Kiosk-Gegenst\u00E4nde\u201C geliefert. Die Anfrage kann erst nach einer gewissen Zeit erneut gesendet werden.\nSchlie\u00DFe das Fenster und sprich erneut mit dem Mogry-Postboten, um den Posteingang zu aktualisieren.",
+    "Text": "Dr\u00FCcke \u201ESenden\u201C, um k\u00FCrzlich erworbene Gegenst\u00E4nde (z. B. Veteranen-Belohnungen oder im Kiosk gekaufte Gegenst\u00E4nde) anzufordern. Der Gegenstand wird an den Posteingang \u201EBonus- und Kiosk-Gegenst\u00E4nde\u201C geliefert. Die Anfrage kann erst nach einer gewissen Zeit erneut gesendet werden.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ESchlie\u00DFe das Fenster und sprich erneut mit dem Mogry-Postboten, um den Posteingang zu aktualisieren.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 1811,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1652,7 +1652,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 1814,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1736,7 +1736,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ", %",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E %",
     "RowId": 1826,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1827,21 +1827,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Item ist momentan angelegt. Wirklich verwerten?",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist momentan angelegt. Wirklich verwerten?",
     "RowId": 1839,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ClassJob",
+    "Text": "\u003CLink\u003E\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/Link\u003E",
     "RowId": 1840,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "St. ",
+    "Text": "St. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 1841,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1855,7 +1855,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ",",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E",
     "RowId": 1843,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1876,7 +1876,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Das Verwertungsgeschick der Klasse ClassJob wird zur\u00FCckgesetzt. Fortfahren?",
+    "Text": "Das Verwertungsgeschick der Klasse \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E wird zur\u00FCckgesetzt. Fortfahren?",
     "RowId": 1846,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1890,7 +1890,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "(Empfohlenes Verwertungsgeschick: ,00)",
+    "Text": "(Empfohlenes Verwertungsgeschick: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,00)",
     "RowId": 1848,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1904,21 +1904,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 1850,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC\u3000 Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC\u3000\u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 1851,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC\u3000 Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC\u3000\u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 1852,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1974,14 +1974,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Annehmen\u3000Archiv \u00F6ffnen   Scrollen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003EAnnehmen\u3000\u003CIcon2\u003E11\u003C/Icon2\u003EArchiv \u00F6ffnen  \u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 1860,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Annehmen\u3000Archiv \u00F6ffnen   Scrollen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003EAnnehmen\u3000\u003CIcon2\u003E11\u003C/Icon2\u003EArchiv \u00F6ffnen  \u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 1861,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2058,7 +2058,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName, PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E, \u003Csheetreference(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 1872,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2079,35 +2079,35 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Alle anzeigenNur ErledigteNur Unerledigte",
+    "Text": "\u003Cswitch(IntegerParameter(1),Alle anzeigen,Nur Erledigte,Nur Unerledigte)\u003E",
     "RowId": 1875,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 1876,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Rang ",
+    "Text": "Rang \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 1877,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 1878,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 1879,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2191,35 +2191,35 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "ClassJob Rang ",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E Rang \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 1891,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "GrandCompany Rang ",
+    "Text": "\u003Csheetreferencede(GrandCompany,5,IntegerParameter(1),1,1,1)\u003E Rang \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 1892,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Bedingungen f\u00FCr Rang :",
+    "Text": "Bedingungen f\u00FCr Rang \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:",
     "RowId": 1893,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Rang  vollst\u00E4ndig",
+    "Text": "Rang \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E vollst\u00E4ndig",
     "RowId": 1894,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Min. Stufe 0",
+    "Text": "Min. Stufe \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E0",
     "RowId": 1895,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2520,7 +2520,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Suche ausf\u00FChren",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Suche ausf\u00FChren",
     "RowId": 1938,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2590,14 +2590,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Letztes ErgebnisN\u00E4chste  Ergebnisse anzeigen",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003ELetztes Ergebnis\u003CElse/\u003EN\u00E4chste \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Ergebnisse\u003C/If\u003E anzeigen",
     "RowId": 1948,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Vorige  Ergebnisse anzeigen",
+    "Text": "Vorige \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Ergebnisse anzeigen",
     "RowId": 1949,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2653,14 +2653,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Niedrigster Preis bisher: \uE049",
+    "Text": "Niedrigster Preis bisher: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE049",
     "RowId": 1957,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " ErgebnisErgebnisse",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EErgebnis\u003CElse/\u003EErgebnisse\u003C/If\u003E",
     "RowId": 1958,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2695,14 +2695,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Item f\u00FCr . Gil kaufen? (.\uE049 an Geb\u00FChren enthalten)",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E\u003C/Link\u003E f\u00FCr \u003Cformat(IntegerParameter(3),.)\u003E Gil kaufen? \u003CIf(GreaterThan(IntegerParameter(4),0))\u003E(\u003Cformat(IntegerParameter(4),.)\u003E\uE049 an Geb\u00FChren enthalten)\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 1963,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item f\u00FCr . Gil kaufen? (.\uE049 an Geb\u00FChren enthalten)",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,1,IntegerParameter(1),1,4,1)\u003E\u003C/Link\u003E f\u00FCr \u003Cformat(IntegerParameter(3),.)\u003E Gil kaufen? \u003CIf(GreaterThan(IntegerParameter(4),0))\u003E(\u003Cformat(IntegerParameter(4),.)\u003E\uE049 an Geb\u00FChren enthalten)\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 1964,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2856,7 +2856,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Tipp die ersten Buchstaben des Gegenstands ein und klick auf \u201ESuche\u201C.\nBei weniger als 3 Buchstaben werden maximal 20 Ergebnisse angezeigt, sonst alle.\nMit den Oben-/Unten-Tasten oder  lassen sich vergangene Eingaben anzeigen.",
+    "Text": "Tipp die ersten Buchstaben des Gegenstands ein und klick auf \u201ESuche\u201C.\nBei weniger als 3 Buchstaben werden maximal 20 Ergebnisse angezeigt, sonst alle.\nMit den Oben-/Unten-Tasten oder \u003CIcon2\u003E5\u003C/Icon2\u003E lassen sich vergangene Eingaben anzeigen.",
     "RowId": 1986,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2891,42 +2891,42 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Materia eingesetzt",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Materia eingesetzt",
     "RowId": 1991,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".\uE049",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E\uE049",
     "RowId": 1992,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".\uE049",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E\uE049",
     "RowId": 1993,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E",
     "RowId": 1994,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".-.",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E-\u003Cformat(IntegerParameter(2),.)\u003E",
     "RowId": 1995,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".. :",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E. \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 1996,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3052,56 +3052,56 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "ItemItem",
+    "Text": "\u003CIf(IntegerParameter(2))\u003E\u003Cspan uiForeground=\u0022573\u0022 color=\u0022#f9e846\u0022\u003E\u003Cspan uiGlow=\u0022574\u0022\u003E\u003Ci\u003E\u003Csheetreference(Item,IntegerParameter(1),9)\u003E\u003C/i\u003E\u003C/span\u003E\u003C/span\u003E\u003CElse/\u003E\u003Csheetreference(Item,IntegerParameter(1),9)\u003E\u003C/If\u003E",
     "RowId": 2020,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E",
     "RowId": 2021,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item",
+    "Text": "\u003CLink\u003E\u003Csheetreference(Item,IntegerParameter(1),9)\u003E\u003C/Link\u003E",
     "RowId": 2022,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ClassJob",
+    "Text": "\u003CLink\u003E\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/Link\u003E",
     "RowId": 2023,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 2024,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ObjStr",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(ObjStr,5,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E",
     "RowId": 2025,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ActStr",
+    "Text": "\u003Csheetreference(ActStr,IntegerParameter(1),0)\u003E",
     "RowId": 2026,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 2027,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3115,14 +3115,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 2029,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE061\uE062\uE063\uE064\uE065\uE066\uE067",
+    "Text": "\u003Cswitch(IntegerParameter(1),\uE061,\uE062,\uE063,\uE064,\uE065,\uE066,\uE067)\u003E",
     "RowId": 2030,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3136,21 +3136,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ",
+    "Text": "\u003C45\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003C/45\u003E",
     "RowId": 2032,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "GrandCompany",
+    "Text": "\u003Csheetreferencede(GrandCompany,5,IntegerParameter(1),1,1,1)\u003E",
     "RowId": 2033,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE06B ",
+    "Text": "\uE06B \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003Cindent\u003E",
     "RowId": 2034,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3164,7 +3164,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " \u00AB\u00BB",
+    "Text": " \u00AB\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u00BB",
     "RowId": 2036,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3185,14 +3185,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE03A",
+    "Text": "\uE03A\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003Cindent\u003E",
     "RowId": 2039,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "x",
+    "Text": "x\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 2041,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3213,14 +3213,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 2044,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE06B \uE06B ",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\uE06B \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E\u003CElse/\u003E\uE06B \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 2045,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3234,21 +3234,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " //",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/i\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 2047,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " % %",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E %\u003C/i\u003E\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E %\u003C/If\u003E",
     "RowId": 2048,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE03A\uE03A",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\uE03A\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E\u003CElse/\u003E\uE03A\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/If\u003E",
     "RowId": 2049,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3304,28 +3304,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ", %, %",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E %\u003C/i\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E %\u003C/If\u003E",
     "RowId": 2057,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "-",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E-\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 2058,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Rang  vollst\u00E4ndig",
+    "Text": "Rang \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E vollst\u00E4ndig",
     "RowId": 2060,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Mindestrang GCRankLimsaFemaleTextGCRankGridaniaFemaleTextGCRankUldahFemaleTextGCRankLimsaMaleTextGCRankGridaniaMaleTextGCRankUldahMaleText\n(Aktuell: GCRankLimsaFemaleTextGCRankLimsaMaleTextGCRankGridaniaFemaleTextGCRankGridaniaMaleTextGCRankUldahFemaleTextGCRankUldahMaleText)",
+    "Text": "Mindestrang \u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahFemaleText,IntegerParameter(3),0)\u003E)\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahMaleText,IntegerParameter(3),0)\u003E)\u003E\u003C/If\u003E\n(Aktuell: \u003CIf(GreaterThan(IntegerParameter(52),0))\u003E\u003CIf(IntegerParameter(4))\u003E\u003Csheetreference(GCRankLimsaFemaleText,IntegerParameter(52),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankLimsaMaleText,IntegerParameter(52),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(53),0))\u003E\u003CIf(IntegerParameter(4))\u003E\u003Csheetreference(GCRankGridaniaFemaleText,IntegerParameter(53),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankGridaniaMaleText,IntegerParameter(53),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(54),0))\u003E\u003CIf(IntegerParameter(4))\u003E\u003Csheetreference(GCRankUldahFemaleText,IntegerParameter(54),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankUldahMaleText,IntegerParameter(54),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E)",
     "RowId": 2061,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3346,28 +3346,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "In diese Liste kannst du bis zu zehn Gegenst\u00E4nde deines Interesses aufnehmen. Die Liste kann von anderen Spielern nicht eingesehen werden, ihr Inhalt wird aber statistisch erfasst und die Nachfrage nach bestimmten Gegenst\u00E4nden in den Suchergebnissen angezeigt.\n\n\u203B Die Daten der Wunschliste werden bei Server-Wartungen zur\u00FCckgesetzt.",
+    "Text": "In diese Liste kannst du bis zu zehn Gegenst\u00E4nde deines Interesses aufnehmen. Die Liste kann von anderen Spielern nicht eingesehen werden, ihr Inhalt wird aber statistisch erfasst und die Nachfrage nach bestimmten Gegenst\u00E4nden in den Suchergebnissen angezeigt.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Die Daten der Wunschliste werden bei Server-Wartungen zur\u00FCckgesetzt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 2072,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Angebote  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E8\u003C/Icon2\u003E Angebote \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 2073,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Auf Wunschliste setzen \uFF08/\uFF09",
+    "Text": "Auf Wunschliste setzen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF09",
     "RowId": 2074,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Von Wunschliste entfernen \uFF08/\uFF09",
+    "Text": "Von Wunschliste entfernen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF09",
     "RowId": 2075,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3388,7 +3388,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Angebote  Zur\u00FCck  Umbl\u00E4ttern",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E8\u003C/Icon2\u003E Angebote \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Umbl\u00E4ttern",
     "RowId": 2078,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3416,14 +3416,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zur Merkliste hinzuf\u00FCgen \uFF08/\uFF09",
+    "Text": "Zur Merkliste hinzuf\u00FCgen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\uFF09",
     "RowId": 2082,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Von Merkliste l\u00F6schen \uFF08/",
+    "Text": "Von Merkliste l\u00F6schen \uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 2083,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3458,7 +3458,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Um das Zielgebiet \u201EPlaceNameTerritoryType\u201C zu entlasten, wurde es in mehrere Instanzen gleichen Inhalts aufgeteilt.\nW\u00E4hle eine Instanz aus.",
+    "Text": "Um das Zielgebiet \u201E\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E\u201C zu entlasten, wurde es in mehrere Instanzen gleichen Inhalts aufgeteilt.\nW\u00E4hle eine Instanz aus.",
     "RowId": 2090,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3472,7 +3472,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceNameTerritoryType A\uE0B1\uE0B2\uE0B3\uE0B4\uE0B5\uE0B6\uE0B7\uE0B8\uE0B9 (.)",
+    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),9))\u003EA\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\uE0B1,\uE0B2,\uE0B3,\uE0B4,\uE0B5,\uE0B6,\uE0B7,\uE0B8,\uE0B9)\u003E\u003C/If\u003E\u003CElse/\u003E0\u003C/If\u003E (\u003Cformat(IntegerParameter(3),.)\u003E)",
     "RowId": 2092,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3486,14 +3486,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "FCAuthority",
+    "Text": "\u003Csheetreference(FCAuthority,43,0)\u003E",
     "RowId": 2101,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "FCAuthority",
+    "Text": "\u003Csheetreference(FCAuthority,44,0)\u003E",
     "RowId": 2102,
     "SubRowId": 0,
     "SheetName": "Addon",

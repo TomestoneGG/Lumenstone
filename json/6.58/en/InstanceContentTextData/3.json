@@ -1407,21 +1407,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\nRank BRank ARank S\nUnoccupiedOccupied Occupied Occupied \nData Remaining: %",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(2),Rank B,Rank A,Rank S)\u003E\n\u003Cswitch(IntegerParameter(3),Unoccupied,Occupied \u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,Occupied \u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,Occupied \u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E\nData Remaining: \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E%",
     "RowId": 8900,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "UnoccupiedOccupied Occupied Occupied ",
+    "Text": "\u003Cswitch(IntegerParameter(3),Unoccupied,Occupied \u003CBitmapFontIcon\u003E51\u003C/BitmapFontIcon\u003E,Occupied \u003CBitmapFontIcon\u003E52\u003C/BitmapFontIcon\u003E,Occupied \u003CBitmapFontIcon\u003E53\u003C/BitmapFontIcon\u003E)\u003E",
     "RowId": 8901,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "\nDeactivatedActivation in: :Ice Strength: % ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(3),Deactivated,Activation in: \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(5)\u003C/TwoDigitValue\u003E,Ice Strength: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E%)\u003E ",
     "RowId": 8902,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -1435,7 +1435,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\nSpawns in: :HP: % ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003Cswitch(IntegerParameter(2),Spawns in: \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(4)\u003C/TwoDigitValue\u003E,HP: \u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E%)\u003E ",
     "RowId": 8910,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2086,7 +2086,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "It\u0027s...it\u0027s not easy being... \u003Ccroak\u003E",
+    "Text": "It\u0027s...it\u0027s not easy being... \\\u003Ccroak\u003E",
     "RowId": 9804,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2786,7 +2786,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " , Lord Emmanellain\u2500attend to the marked ones!",
+    "Text": "\u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E, Lord Emmanellain\u2500attend to the marked ones!",
     "RowId": 10423,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2856,7 +2856,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You hear me, old girlboy!? Don\u0027t you dare lose!",
+    "Text": "You hear me, old \u003CIf(IntegerParameter(4))\u003Egirl\u003CElse/\u003Eboy\u003C/If\u003E!? Don\u0027t you dare lose!",
     "RowId": 10433,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2877,7 +2877,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Strength,  , strength! Now is your chance!",
+    "Text": "Strength, \u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E, strength! Now is your chance!",
     "RowId": 10436,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -2982,7 +2982,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Keep it up, lasslad!\nYer almost at the end of it!",
+    "Text": "Keep it up, \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\nYer almost at the end of it!",
     "RowId": 10511,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3388,21 +3388,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "In yer case, I\u0027d start out with a Action, an\u0027 follow it up with a Action!",
+    "Text": "In yer case, I\u0027d start out with a \u003Csheetreference(Action,9,0)\u003E, an\u0027 follow it up with a \u003Csheetreference(Action,15,0)\u003E!",
     "RowId": 10703,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "In yer case, I\u0027d start out with a Action, an\u0027 follow it up with a Action!",
+    "Text": "In yer case, I\u0027d start out with a \u003Csheetreference(Action,31,0)\u003E, an\u0027 follow it up with a \u003Csheetreference(Action,37,0)\u003E!",
     "RowId": 10704,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "In yer case, I\u0027d start out with a Action, an\u0027 follow it up with a Action!",
+    "Text": "In yer case, I\u0027d start out with a \u003Csheetreference(Action,3617,0)\u003E, an\u0027 follow it up with a \u003Csheetreference(Action,3623,0)\u003E!",
     "RowId": 10705,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3416,21 +3416,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Remember the order I told ye, lasslad!\nAction first! Action second!",
+    "Text": "Remember the order I told ye, \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheetreference(Action,9,0)\u003E first! \u003Csheetreference(Action,15,0)\u003E second!",
     "RowId": 10707,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "Remember the order I told ye, lasslad!\nAction first! Action second!",
+    "Text": "Remember the order I told ye, \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheetreference(Action,31,0)\u003E first! \u003Csheetreference(Action,37,0)\u003E second!",
     "RowId": 10708,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "Remember the order I told ye, lasslad!\nAction first! Action second!",
+    "Text": "Remember the order I told ye, \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheetreference(Action,3617,0)\u003E first! \u003Csheetreference(Action,3623,0)\u003E second!",
     "RowId": 10709,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
@@ -3444,21 +3444,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Hit that wooden warrior with yer combination!\nAction first! Action second!",
+    "Text": "Hit that wooden warrior with yer combination!\n\u003Csheetreference(Action,9,0)\u003E first! \u003Csheetreference(Action,15,0)\u003E second!",
     "RowId": 10711,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "Hit that wooden warrior with yer combination!\nAction first! Action second!",
+    "Text": "Hit that wooden warrior with yer combination!\n\u003Csheetreference(Action,31,0)\u003E first! \u003Csheetreference(Action,37,0)\u003E second!",
     "RowId": 10712,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",
     "SheetLanguage": 2
   },
   {
-    "Text": "Hit that wooden warrior with yer combination!\nAction first! Action second!",
+    "Text": "Hit that wooden warrior with yer combination!\n\u003Csheetreference(Action,3617,0)\u003E first! \u003Csheetreference(Action,3623,0)\u003E second!",
     "RowId": 10713,
     "SubRowId": 0,
     "SheetName": "InstanceContentTextData",

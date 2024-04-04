@@ -42,7 +42,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uE051\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u79FB\u52D5 \uE054\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u62E1\u7E2E \u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2 \u30E1\u30CB\u30E5\u30FC\u975E\u8868\u793A\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u79FB\u52D5 \u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u62E1\u7E2E \u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2 \u30E1\u30CB\u30E5\u30FC\u975E\u8868\u793A",
+    "Text": "\u003CIf(Equal(IntegerParameter(80),0))\u003E\uE051\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u79FB\u52D5 \uE054\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u62E1\u7E2E \u003CIf(Equal(StringParameter(2),ObjectParameter(0)))\u003E\u003CIf(Equal(StringParameter(3),ObjectParameter(0)))\u003E\u003CElse/\u003E\u003CHighlight\u003EStringParameter(3)\u003C/Highlight\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2\u003C/If\u003E\u003CElse/\u003E\u003CIf(Equal(StringParameter(3),ObjectParameter(0)))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2\u003CElse/\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CHighlight\u003EStringParameter(3)\u003C/Highlight\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003E\u003CElse/\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u30E1\u30CB\u30E5\u30FC\u975E\u8868\u793A\u003C/If\u003E\u003CElse/\u003E\u003CIcon2\u003E20\u003C/Icon2\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u79FB\u52D5 \u003CIcon2\u003E24\u003C/Icon2\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u62E1\u7E2E \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E\u30B9\u30C6\u30C3\u30AB\u30FC\u306E\u56DE\u8EE2 \u003CIcon2\u003E11\u003C/Icon2\u003E\u30E1\u30CB\u30E5\u30FC\u975E\u8868\u793A\u003C/If\u003E",
     "RowId": 14094,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -77,7 +77,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14099,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -168,21 +168,21 @@
     "SheetLanguage": 1
   },
   {
-    "Text": " [WorldDCGroupTypeWORLDDCGROUPTYPE_NAME]",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(3),100))\u003E\u003CElse/\u003E [\u003Csheetreference(WorldDCGroupType,IntegerParameter(3),WORLDDCGROUPTYPE_NAME)\u003E]\u003C/If\u003E",
     "RowId": 14112,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "ClassJob",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E",
     "RowId": 14113,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "ClassJob \uE06A",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E \uE06A\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 14114,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -196,14 +196,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "X:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Y:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080",
+    "Text": "X:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E",
     "RowId": 14116,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "X:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Y:\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080 Z:-\uE03F\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u2080",
+    "Text": "X:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Z:\u003CIf(LessThan(IntegerParameter(7),0))\u003E-\u003CElse/\u003E\u003C/If\u003E\u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E\uE03F\u003CIf(IntegerParameter(6))\u003E\u003Cswitch(IntegerParameter(6),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E",
     "RowId": 14117,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -280,7 +280,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14152,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -301,7 +301,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14155,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -322,7 +322,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u767A\u751F%",
+    "Text": "\u767A\u751F\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%",
     "RowId": 14158,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -343,7 +343,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u6D3B\u773C\u6D3B\u773C\u306A\u3057",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u6D3B\u773C\u003CElse/\u003E\u6D3B\u773C\u306A\u3057\u003C/If\u003E",
     "RowId": 14161,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -357,7 +357,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": " \u30D0\u30EA\u30E5\u30FC\u30A2\u30C3\u30D7\u767A\u751F%\u30D0\u30EA\u30E5\u30FC\u30A2\u30C3\u30D7\u767A\u751F%",
+    "Text": " \u003CIf(Equal(IntegerParameter(2),0))\u003E\u30D0\u30EA\u30E5\u30FC\u30A2\u30C3\u30D7\u767A\u751F\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%\u003CElse/\u003E\u003Cspan uiForeground=\u0022504\u0022 color=\u0022#00cc22\u0022\u003E\u003Cspan uiGlow=\u0022505\u0022\u003E\u30D0\u30EA\u30E5\u30FC\u30A2\u30C3\u30D7\u767A\u751F\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%\u003C/span\u003E\u003C/span\u003E\u003C/If\u003E",
     "RowId": 14163,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -469,7 +469,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF05",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF05",
     "RowId": 14179,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -483,7 +483,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5E",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E",
     "RowId": 14181,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -511,7 +511,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u54C1\u8CEA\u306E\u4E0A\u6607\u91CF\u304C\u901A\u5E38\u306E.\u500D\u306B\u306A\u3063\u3066\u3044\u308B\u72B6\u614B\u3002",
+    "Text": "\u54C1\u8CEA\u306E\u4E0A\u6607\u91CF\u304C\u901A\u5E38\u306E\u003C38(IntegerParameter(1),100,.,0)\u003E\u500D\u306B\u306A\u3063\u3066\u3044\u308B\u72B6\u614B\u3002",
     "RowId": 14201,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -574,7 +574,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5E",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E",
     "RowId": 14210,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -644,7 +644,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": " / ",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CColorFill\u003E-4182016\u003C/ColorFill\u003E\u003C27\u003E0\u003C/27\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CColorFill\u003Estackcolor\u003C/ColorFill\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E / \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14254,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -658,7 +658,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF08-,/\u65E5\uFF09",
+    "Text": "\uFF08-\u003Cformat(IntegerParameter(1),,)\u003E/\u65E5\uFF09",
     "RowId": 14256,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -756,7 +756,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u5EFA\u7BC9\u4E0A\u9650\uFF1A/",
+    "Text": "\u5EFA\u7BC9\u4E0A\u9650\uFF1A\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14270,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -770,7 +770,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5E\u6642\u9593\u5373\u6642\u5B8C\u6210",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u6642\u9593\u003CElse/\u003E\u5373\u6642\u5B8C\u6210\u003C/If\u003E",
     "RowId": 14272,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -875,7 +875,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14287,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -896,21 +896,21 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u6642\u9593",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u6642\u9593",
     "RowId": 14290,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u6642\u9593",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u6642\u9593",
     "RowId": 14291,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u3059\u3067\u306B\u751F\u7523\u3092\u958B\u59CB\u3057\u3066\u3044\u308B\u30B9\u30B1\u30B8\u30E5\u30FC\u30EB\u3067\u3059\u3002\n\u524A\u9664\u3057\u3066\u3001\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u524A\u9664\u3057\u3066\u3082\u3001\u6D88\u8CBB\u3057\u305F\u6750\u6599\u306F\u9084\u3063\u3066\u304D\u307E\u305B\u3093\u3002",
+    "Text": "\u3059\u3067\u306B\u751F\u7523\u3092\u958B\u59CB\u3057\u3066\u3044\u308B\u30B9\u30B1\u30B8\u30E5\u30FC\u30EB\u3067\u3059\u3002\n\u524A\u9664\u3057\u3066\u3001\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u524A\u9664\u3057\u3066\u3082\u3001\u6D88\u8CBB\u3057\u305F\u6750\u6599\u306F\u9084\u3063\u3066\u304D\u307E\u305B\u3093\u3002\u003C/span\u003E\u003C/span\u003E",
     "RowId": 14292,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1120,7 +1120,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u500B",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u500B",
     "RowId": 14322,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1148,7 +1148,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u683D\u57F9\u59D4\u8A17\u306E\u4F9D\u983C\u306B\u306F\u3001\n1\u65E5\u6BCE\u306B\u30B7\u30A7\u30EB\u30C0\u30EC\u30FC\u30B9\u30AF\u30EA\u30C3\u30D7:\u9752\u8239\u8CA8\u679A\u304C\u304B\u304B\u308A\u307E\u3059\u3002\n\u683D\u57F9\u59D4\u8A17\u4E2D\u306F\u3001\u7A2E\u307E\u304D\u304B\u3089\u53CE\u7A6B\u307E\u3067\u3092\u9B54\u6CD5\u4EBA\u5F62\u304C\u884C\u3044\u3001\n\u6700\u5927\u306750\u500B\u306E\u53CE\u7A6B\u7269\u3092\u30B9\u30C8\u30C3\u30AF\u3057\u3066\u304A\u304F\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\n\u8CBB\u7528\u306F\u3001\u4F9D\u983C\u6642\u3068\uFF08\u5730\u7403\u6642\u9593\uFF09\u5348\u5F8C\u5348\u524D\u6642\u6BCE\u306B\u3001\n\u81EA\u52D5\u7684\u306B\u652F\u6255\u308F\u308C\u307E\u3059\u3002\n\u203B\u3059\u3067\u306B\u5F53\u65E5\u5206\u304C\u652F\u6255\u308F\u308C\u3066\u3044\u305F\u5834\u5408\u3001\u8FFD\u52A0\u8CBB\u7528\u306F\u304B\u304B\u308A\u307E\u305B\u3093\u3002\n\n\u683D\u57F9\u59D4\u8A17\u3092\u4F9D\u983C\u3057\u3066\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u4F9D\u983C\u5F8C\u3001\u4EE5\u4E0B\u306E\u72B6\u6CC1\u306B\u306A\u3063\u305F\u5834\u5408\u306F\u683D\u57F9\u59D4\u8A17\u304C\u505C\u6B62\u3055\u308C\u307E\u3059\u3002\n\u3000\u30FB\u7A2E\u307E\u304D\u306E\u969B\u3001\u7A2E\u306E\u6240\u6301\u6570\u304C0\u3060\u3063\u305F\u5834\u5408\n\u3000\u30FB\u30B7\u30A7\u30EB\u30C0\u30EC\u30FC\u30B9\u30AF\u30EA\u30C3\u30D7:\u9752\u8239\u8CA8\u304C\u4E0D\u8DB3\u3057\u3001\n\u3000\u3000\u8CBB\u7528\u306E\u652F\u6255\u3044\u304C\u3067\u304D\u306A\u304B\u3063\u305F\u5834\u5408\n\u3000\u30FB\u53CE\u7A6B\u6570\u304C50\u500B\u306B\u9054\u3057\u305F\u5834\u5408\n\u203B\u518D\u958B\u304C\u53EF\u80FD\u306A\u72B6\u614B\u306B\u306A\u308B\u3068\u3001\u81EA\u52D5\u3067\u683D\u57F9\u59D4\u8A17\u306F\u518D\u958B\u3055\u308C\u3001\n\u3000\u518D\u958B\u6642\u306B\u8CBB\u7528\u304C\u652F\u6255\u308F\u308C\u307E\u3059\u3002\n\u203B\u683D\u57F9\u59D4\u8A17\u306B\u3088\u308A\u3001\u9B54\u6CD5\u4EBA\u5F62\u304C\u53CE\u7A6B\u3092\u884C\u3063\u305F\u5834\u5408\u306F\u3001\n\u3000\u958B\u62D3\u7D4C\u9A13\u5024\u3092\u7372\u5F97\u3059\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093\u3002",
+    "Text": "\u683D\u57F9\u59D4\u8A17\u306E\u4F9D\u983C\u306B\u306F\u3001\n1\u65E5\u6BCE\u306B\u30B7\u30A7\u30EB\u30C0\u30EC\u30FC\u30B9\u30AF\u30EA\u30C3\u30D7:\u9752\u8239\u8CA8\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u679A\u304C\u304B\u304B\u308A\u307E\u3059\u3002\n\u683D\u57F9\u59D4\u8A17\u4E2D\u306F\u3001\u7A2E\u307E\u304D\u304B\u3089\u53CE\u7A6B\u307E\u3067\u3092\u9B54\u6CD5\u4EBA\u5F62\u304C\u884C\u3044\u3001\n\u6700\u5927\u306750\u500B\u306E\u53CE\u7A6B\u7269\u3092\u30B9\u30C8\u30C3\u30AF\u3057\u3066\u304A\u304F\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\n\u8CBB\u7528\u306F\u3001\u4F9D\u983C\u6642\u3068\uFF08\u5730\u7403\u6642\u9593\uFF09\u003CResetTime\u003E17\u003C/ResetTime\u003E\u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003E\u5348\u5F8C\u003CElse/\u003E\u5348\u524D\u003C/If\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E0\u003C/If\u003E\u6642\u6BCE\u306B\u3001\n\u81EA\u52D5\u7684\u306B\u652F\u6255\u308F\u308C\u307E\u3059\u3002\n\u203B\u3059\u3067\u306B\u5F53\u65E5\u5206\u304C\u652F\u6255\u308F\u308C\u3066\u3044\u305F\u5834\u5408\u3001\u8FFD\u52A0\u8CBB\u7528\u306F\u304B\u304B\u308A\u307E\u305B\u3093\u3002\n\n\u683D\u57F9\u59D4\u8A17\u3092\u4F9D\u983C\u3057\u3066\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u4F9D\u983C\u5F8C\u3001\u4EE5\u4E0B\u306E\u72B6\u6CC1\u306B\u306A\u3063\u305F\u5834\u5408\u306F\u683D\u57F9\u59D4\u8A17\u304C\u505C\u6B62\u3055\u308C\u307E\u3059\u3002\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u3000\u30FB\u7A2E\u307E\u304D\u306E\u969B\u3001\u7A2E\u306E\u6240\u6301\u6570\u304C0\u3060\u3063\u305F\u5834\u5408\n\u3000\u30FB\u30B7\u30A7\u30EB\u30C0\u30EC\u30FC\u30B9\u30AF\u30EA\u30C3\u30D7:\u9752\u8239\u8CA8\u304C\u4E0D\u8DB3\u3057\u3001\n\u3000\u3000\u8CBB\u7528\u306E\u652F\u6255\u3044\u304C\u3067\u304D\u306A\u304B\u3063\u305F\u5834\u5408\n\u3000\u30FB\u53CE\u7A6B\u6570\u304C50\u500B\u306B\u9054\u3057\u305F\u5834\u5408\n\u203B\u518D\u958B\u304C\u53EF\u80FD\u306A\u72B6\u614B\u306B\u306A\u308B\u3068\u3001\u81EA\u52D5\u3067\u683D\u57F9\u59D4\u8A17\u306F\u518D\u958B\u3055\u308C\u3001\n\u3000\u518D\u958B\u6642\u306B\u8CBB\u7528\u304C\u652F\u6255\u308F\u308C\u307E\u3059\u3002\n\u203B\u683D\u57F9\u59D4\u8A17\u306B\u3088\u308A\u3001\u9B54\u6CD5\u4EBA\u5F62\u304C\u53CE\u7A6B\u3092\u884C\u3063\u305F\u5834\u5408\u306F\u3001\n\u3000\u958B\u62D3\u7D4C\u9A13\u5024\u3092\u7372\u5F97\u3059\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093\u3002\u003C/span\u003E\u003C/span\u003E",
     "RowId": 14326,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1169,14 +1169,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Item\u3092\u500B\u53D7\u3051\u53D6\u308A\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u73FE\u5728\u306E\u6240\u6301\u6570\uFF1A\u500B",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),0)\u003E\u3092\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u500B\u53D7\u3051\u53D6\u308A\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u73FE\u5728\u306E\u6240\u6301\u6570\uFF1A\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u500B",
     "RowId": 14329,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "Item\u500B\u306F\u6240\u6301\u4E0A\u9650\u3092\u8D85\u3048\u3066\u3044\u307E\u3059\u3002\n\u6301\u3061\u304D\u308C\u306A\u304B\u3063\u305F\u5206\u306F\u7834\u68C4\u3055\u308C\u307E\u3059\u304C\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u73FE\u5728\u306E\u6240\u6301\u6570\uFF1A\u500B",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),0)\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u500B\u306F\u6240\u6301\u4E0A\u9650\u3092\u8D85\u3048\u3066\u3044\u307E\u3059\u3002\n\u6301\u3061\u304D\u308C\u306A\u304B\u3063\u305F\u5206\u306F\u7834\u68C4\u3055\u308C\u307E\u3059\u304C\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u73FE\u5728\u306E\u6240\u6301\u6570\uFF1A\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u500B",
     "RowId": 14330,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1218,7 +1218,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u6B21\u56DE\u306E\u63A2\u7D22\u968A\u5E30\u9084\u6642\u9593\uFF1A\uE031 [/ :]",
+    "Text": "\u6B21\u56DE\u306E\u63A2\u7D22\u968A\u5E30\u9084\u6642\u9593\uFF1A\uE031 \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E[\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
     "RowId": 14336,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1400,14 +1400,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Lv",
+    "Text": "Lv\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14362,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": ".Im",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003EIm",
     "RowId": 14363,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1435,14 +1435,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u4EE3\u8868\u7684\u306A\u91E3\u308A\u990C\u30B7\u30EB\u30A8\u30C3\u30C8\u30B5\u30A4\u30BA",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u4EE3\u8868\u7684\u306A\u91E3\u308A\u990C\u003CElse/\u003E\u30B7\u30EB\u30A8\u30C3\u30C8\u30B5\u30A4\u30BA\u003C/If\u003E",
     "RowId": 14367,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 14368,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1827,14 +1827,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u52DD\u3061\u661F\uFF08\u9023\u52DD\u30DC\u30FC\u30CA\u30B9\u7D99\u7D9A\u4E2D\uFF01\uFF09\u3000",
+    "Text": "\u52DD\u3061\u661F\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\uFF08\u9023\u52DD\u30DC\u30FC\u30CA\u30B9\u7D99\u7D9A\u4E2D\uFF01\uFF09\u003CElse/\u003E\u3000\u003C/If\u003E",
     "RowId": 14425,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u2606\u2606\u2606\u2605\u2606\u2606\u2605\u2605\u2606\u2605\u2605\u2605\u3000\u2192\u3000\u2606\u2606\u2606\u2605\u2606\u2606\u2605\u2605\u2606\u2605\u2605\u2605",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E\u003Cswitch(IntegerParameter(4),\u2606\u2606\u2606,\u2605\u2606\u2606,\u2605\u2605\u2606,\u2605\u2605\u2605)\u003E\u003CElse/\u003E\u003C/If\u003E\u3000\u2192\u3000\u003CHighlight\u003EStringParameter(5)\u003C/Highlight\u003E\u003CIf(Equal(IntegerParameter(6),0))\u003E\u003CIf(GreaterThan(IntegerParameter(7),0))\u003E\u003CValue\u003EIntegerParameter(7)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E\u003Cswitch(IntegerParameter(8),\u2606\u2606\u2606,\u2605\u2606\u2606,\u2605\u2605\u2606,\u2605\u2605\u2605)\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 14426,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1848,21 +1848,21 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u3000\u2192\u3000",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u3000\u2192\u3000\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14428,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u73FE\u5728\u306E\u958B\u50AC\u30DE\u30C3\u30D7\uFF1APlaceName\u3000:\uFF5E:: a.m.p.m.\uFF5E: a.m.p.m.\n",
+    "Text": "\u73FE\u5728\u306E\u958B\u50AC\u30DE\u30C3\u30D7\uFF1A\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E\u3000\u003CIf(Equal(IntegerParameter(4),0))\u003E\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\uFF5E\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u003CElse/\u003E\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E0\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(LessThan(t_hour,12))\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E\uFF5E\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E0\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(LessThan(t_hour,12))\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E\u003C/If\u003E\n",
     "RowId": 14429,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u6B21\u56DE\u306E\u958B\u50AC\u30DE\u30C3\u30D7\uFF1APlaceName\u3000:\uFF5E:: a.m.p.m.\uFF5E: a.m.p.m.",
+    "Text": "\u6B21\u56DE\u306E\u958B\u50AC\u30DE\u30C3\u30D7\uFF1A\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E\u3000\u003CIf(Equal(IntegerParameter(4),0))\u003E\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\uFF5E\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u003CElse/\u003E\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E0\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(LessThan(t_hour,12))\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E\uFF5E\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E0\u003C/If\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E \u003CIf(LessThan(t_hour,12))\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E\u003C/If\u003E",
     "RowId": 14430,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1960,28 +1960,28 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5E",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14444,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5E",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E",
     "RowId": 14445,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u8003\u53E4\u5B66\u90E8\u5929\u6587\u5B66\u90E8\u533B\u5B66\u90E8\u6587\u5316\u5B66\u90E8\u30A8\u30FC\u30C6\u30EB\u5B66\u90E8\uFF1A",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u8003\u53E4\u5B66\u90E8,\u5929\u6587\u5B66\u90E8,\u533B\u5B66\u90E8,\u6587\u5316\u5B66\u90E8,\u30A8\u30FC\u30C6\u30EB\u5B66\u90E8)\u003E\uFF1A\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 14446,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\uE03D",
+    "Text": "\uE03D\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14447,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2065,14 +2065,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uFF5ELv",
+    "Text": "\uFF5ELv\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14475,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "Lv\uFF5E",
+    "Text": "Lv\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E",
     "RowId": 14476,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2135,7 +2135,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u78BA\u8A8D\uFF08\uFF09\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u78BA\u8A8D",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),1))\u003E\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u78BA\u8A8D\uFF08\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF09\u003CElse/\u003E\u30A2\u30C3\u30D7\u30B0\u30EC\u30FC\u30C9\u78BA\u8A8D\u003C/If\u003E",
     "RowId": 14491,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2156,35 +2156,35 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u4E0D\u52D5\u72B6\u614B\u306E\u89E3\u9664\u307E\u3067\u79D2\uFF01",
+    "Text": "\u4E0D\u52D5\u72B6\u614B\u306E\u89E3\u9664\u307E\u3067\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u79D2\uFF01",
     "RowId": 14494,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u5674\u706B\u767A\u751F\u307E\u3067\u79D2\uFF01",
+    "Text": "\u5674\u706B\u767A\u751F\u307E\u3067\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u79D2\uFF01",
     "RowId": 14495,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u5674\u706B\u7D42\u4E86\u307E\u3067\u79D2",
+    "Text": "\u5674\u706B\u7D42\u4E86\u307E\u3067\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u79D2",
     "RowId": 14496,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u4E71\u6C17\u6D41\u767A\u751F\u307E\u3067\u79D2\uFF01",
+    "Text": "\u4E71\u6C17\u6D41\u767A\u751F\u307E\u3067\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u79D2\uFF01",
     "RowId": 14497,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "\u4E71\u6C17\u6D41\u6D88\u6EC5\u307E\u3067\u79D2",
+    "Text": "\u4E71\u6C17\u6D41\u6D88\u6EC5\u307E\u3067\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u79D2",
     "RowId": 14498,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2415,7 +2415,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 14652,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2961,7 +2961,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uE051\u5DE6\u30DC\u30BF\u30F3\u30C9\u30E9\u30C3\u30B0\uFF1A\u30AB\u30E1\u30E9\u306E\u56DE\u8EE2 \uE052\u53F3\u30DC\u30BF\u30F3\u30C9\u30E9\u30C3\u30B0\uFF1A\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u79FB\u52D5 \uE054\u30DB\u30A4\u30FC\u30EB\u4E0A\u4E0B\uFF1A\u30AB\u30E1\u30E9\u30BA\u30FC\u30E0\u30AB\u30E1\u30E9\u306E\u56DE\u8EE2 \u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u79FB\u52D5 \uFF0B\u30AB\u30E1\u30E9\u30BA\u30FC\u30E0 \u9854\u3092\u5411\u3051\u308B \u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u4E00\u6642\u505C\u6B62",
+    "Text": "\u003CIf(Equal(IntegerParameter(80),0))\u003E\uE051\u5DE6\u30DC\u30BF\u30F3\u30C9\u30E9\u30C3\u30B0\uFF1A\u30AB\u30E1\u30E9\u306E\u56DE\u8EE2 \uE052\u53F3\u30DC\u30BF\u30F3\u30C9\u30E9\u30C3\u30B0\uFF1A\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u79FB\u52D5 \uE054\u30DB\u30A4\u30FC\u30EB\u4E0A\u4E0B\uFF1A\u30AB\u30E1\u30E9\u30BA\u30FC\u30E0\u003CElse/\u003E\u003CIcon2\u003E23\u003C/Icon2\u003E\u30AB\u30E1\u30E9\u306E\u56DE\u8EE2 \u003CIcon2\u003E20\u003C/Icon2\u003E\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u79FB\u52D5 \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E\u30AB\u30E1\u30E9\u30BA\u30FC\u30E0 \u003CIcon2\u003E11\u003C/Icon2\u003E\u9854\u3092\u5411\u3051\u308B \u003CIcon2\u003E13\u003C/Icon2\u003E\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u306E\u4E00\u6642\u505C\u6B62\u003C/If\u003E",
     "RowId": 14730,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3143,7 +3143,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": " ",
+    "Text": "\u003Czeropaddedvalue(IntegerParameter(1),2)\u003E \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 14757,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3185,21 +3185,21 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u30AE\u30A2\u30BB\u30C3\u30C8\uFF06\u30DF\u30E9\u30FC\u30B8\u30E5\u30D7\u30EC\u30FC\u30C8\u306B\u767B\u9332\u3057\u305F\u30A2\u30A4\u30C6\u30E0\u3068\u3001\u88C5\u5099\u4E2D\u306E\u30A2\u30A4\u30C6\u30E0\u3068\u3067\u3001\u4EE5\u4E0B\u306E\u88C5\u5099\u306E\u898B\u305F\u76EE\u306B\u5DEE\u7570\u304C\u767A\u751F\u3057\u3066\u3044\u308B\u305F\u3081\u3001\u9078\u629E\u3057\u305F\u30DD\u30FC\u30C8\u30EC\u30FC\u30C8\u306E\u8A2D\u5B9A\u304C\u5229\u7528\u3067\u304D\u306A\u3044\u5834\u5408\u304C\u3042\u308A\u307E\u3059\u3002\n\u72B6\u6CC1\u306B\u3088\u3063\u3066\u3001\u30AE\u30A2\u30BB\u30C3\u30C8\u3067\u306E\u88C5\u5099\u5909\u66F4\u3084\u30AE\u30A2\u30BB\u30C3\u30C8\u767B\u9332\u5185\u5BB9\u306E\u4E0A\u66F8\u304D\u3092\u304A\u8A66\u3057\u304F\u3060\u3055\u3044\u3002\n\u30FB\u30E1\u30A4\u30F3\u30A2\u30FC\u30E0\n\u30FB\u30B5\u30D6\u30A2\u30FC\u30E0\n\u30FB\u982D\u9632\u5177\n\u30FB\u80F4\u9632\u5177\n\u30FB\u624B\u9632\u5177\n\u30FB\u811A\u9632\u5177\n\u30FB\u8DB3\u9632\u5177\n\u30FB\u8033\u98FE\u308A\n\u30FB\u9996\u98FE\u308A\n\u30FB\u8155\u8F2A\n\u30FB\u53F3\u6307\u306E\u6307\u8F2A\n\u30FB\u5DE6\u6307\u306E\u6307\u8F2A\n\u30FB\u30BD\u30A6\u30EB\u30AF\u30EA\u30B9\u30BF\u30EB",
+    "Text": "\u30AE\u30A2\u30BB\u30C3\u30C8\uFF06\u30DF\u30E9\u30FC\u30B8\u30E5\u30D7\u30EC\u30FC\u30C8\u306B\u767B\u9332\u3057\u305F\u30A2\u30A4\u30C6\u30E0\u3068\u3001\u88C5\u5099\u4E2D\u306E\u30A2\u30A4\u30C6\u30E0\u3068\u3067\u3001\u4EE5\u4E0B\u306E\u88C5\u5099\u306E\u898B\u305F\u76EE\u306B\u5DEE\u7570\u304C\u767A\u751F\u3057\u3066\u3044\u308B\u305F\u3081\u3001\u9078\u629E\u3057\u305F\u30DD\u30FC\u30C8\u30EC\u30FC\u30C8\u306E\u8A2D\u5B9A\u304C\u5229\u7528\u3067\u304D\u306A\u3044\u5834\u5408\u304C\u3042\u308A\u307E\u3059\u3002\n\u72B6\u6CC1\u306B\u3088\u3063\u3066\u3001\u30AE\u30A2\u30BB\u30C3\u30C8\u3067\u306E\u88C5\u5099\u5909\u66F4\u3084\u30AE\u30A2\u30BB\u30C3\u30C8\u767B\u9332\u5185\u5BB9\u306E\u4E0A\u66F8\u304D\u3092\u304A\u8A66\u3057\u304F\u3060\u3055\u3044\u3002\u003CIf(IntegerParameter(1))\u003E\n\u30FB\u30E1\u30A4\u30F3\u30A2\u30FC\u30E0\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(2))\u003E\n\u30FB\u30B5\u30D6\u30A2\u30FC\u30E0\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(3))\u003E\n\u30FB\u982D\u9632\u5177\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(4))\u003E\n\u30FB\u80F4\u9632\u5177\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(5))\u003E\n\u30FB\u624B\u9632\u5177\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(7))\u003E\n\u30FB\u811A\u9632\u5177\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(8))\u003E\n\u30FB\u8DB3\u9632\u5177\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(9))\u003E\n\u30FB\u8033\u98FE\u308A\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(10))\u003E\n\u30FB\u9996\u98FE\u308A\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(11))\u003E\n\u30FB\u8155\u8F2A\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(12))\u003E\n\u30FB\u53F3\u6307\u306E\u6307\u8F2A\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(13))\u003E\n\u30FB\u5DE6\u6307\u306E\u6307\u8F2A\u003CElse/\u003E\u003C/If\u003E\u003CIf(IntegerParameter(14))\u003E\n\u30FB\u30BD\u30A6\u30EB\u30AF\u30EA\u30B9\u30BF\u30EB\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 14763,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "InstanceContent \u306B\u3001\u4ED6\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u3068\u7A81\u5165",
+    "Text": "\u003Csheetreference(InstanceContent,IntegerParameter(1),3)\u003E \u306B\u3001\u4ED6\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u3068\u7A81\u5165",
     "RowId": 14800,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "ContentFinderCondition \u306B\u3001\u30B5\u30DD\u30FC\u30C8NPC\u3068\u7A81\u5165",
+    "Text": "\u003Csheetreference(ContentFinderCondition,IntegerParameter(1),41)\u003E \u306B\u3001\u30B5\u30DD\u30FC\u30C8NPC\u3068\u7A81\u5165",
     "RowId": 14801,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3213,7 +3213,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\uE033\u5E73\u5747\u30A2\u30A4\u30C6\u30E0\u30EC\u30D9\u30EB \uFF5E\u3000\n\uE0BD\u30A2\u30A4\u30C6\u30E0\u30EC\u30D9\u30EB\u30B7\u30F3\u30AF\uFF1A",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\uE033\u5E73\u5747\u30A2\u30A4\u30C6\u30E0\u30EC\u30D9\u30EB \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\uFF5E\u3000\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\uE0BD\u30A2\u30A4\u30C6\u30E0\u30EC\u30D9\u30EB\u30B7\u30F3\u30AF\uFF1A\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 14803,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3297,7 +3297,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "ContentFinderCondition \u306F\u3001\u30B5\u30DD\u30FC\u30C8NPC\u306B\u5BFE\u5FDC\u4E88\u5B9A",
+    "Text": "\u003Csheetreference(ContentFinderCondition,IntegerParameter(1),41)\u003E \u306F\u3001\u30B5\u30DD\u30FC\u30C8NPC\u306B\u5BFE\u5FDC\u4E88\u5B9A",
     "RowId": 14815,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3367,14 +3367,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "TOTAL:",
+    "Text": "TOTAL:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14861,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "NEXT:/--/--",
+    "Text": "NEXT:\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E--/--\u003C/If\u003E",
     "RowId": 14862,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3416,14 +3416,14 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u2606\u2606\u2606\u2605\u2606\u2606\u2605\u2605\u2606\u2605\u2605\u2605",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u2606\u2606\u2606,\u2605\u2606\u2606,\u2605\u2605\u2606,\u2605\u2605\u2605)\u003E",
     "RowId": 14868,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": ",/,",
+    "Text": "\u003Cformat(IntegerParameter(1),,)\u003E/\u003Cformat(IntegerParameter(2),,)\u003E",
     "RowId": 14869,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3479,21 +3479,21 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "K:",
+    "Text": "K:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14877,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "D:",
+    "Text": "D:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14878,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 1
   },
   {
-    "Text": "A:",
+    "Text": "A:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 14879,
     "SubRowId": 0,
     "SheetName": "Addon",

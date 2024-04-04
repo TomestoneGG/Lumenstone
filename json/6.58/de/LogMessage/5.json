@@ -99,7 +99,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ein Gegner n\u00E4hert sich Gegner n\u00E4hern sich!",
+    "Text": "\u003CIf(Equal(IntegerParameter(2),1))\u003EEin Gegner n\u00E4hert sich\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Gegner n\u00E4hern sich\u003C/If\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -110,7 +110,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr erh\u00E4ltsterh\u00E4lt Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eerh\u00E4ltst\u003CElse/\u003Eerh\u00E4lt\u003C/If\u003E \u003Csheetreferencede(Item,1,IntegerParameter(1),1,4,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -121,7 +121,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr erh\u00E4ltsterh\u00E4lt Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eerh\u00E4ltst\u003CElse/\u003Eerh\u00E4lt\u003C/If\u003E \u003Csheetreferencede(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -132,7 +132,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Noch  SekundeSekunden, bis sich PlaceName schlie\u00DFt.",
+    "Text": "Noch \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E, bis sich \u003Csheetreference(PlaceName,IntegerParameter(1),8,3)\u003E schlie\u00DFt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -143,7 +143,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName hat sich geschlossen.",
+    "Text": "\u003CLink\u003E\u003Csheetreference(PlaceName,IntegerParameter(1),8,3)\u003E\u003C/Link\u003E hat sich geschlossen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -154,7 +154,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName \u00F6ffnet sich wieder.",
+    "Text": "\u003CLink\u003E\u003Csheetreference(PlaceName,IntegerParameter(1),8,3)\u003E\u003C/Link\u003E \u00F6ffnet sich wieder.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -198,7 +198,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ein Ausgang ist erschienen. Du hast nur noch  MinuteMinuten hier. ",
+    "Text": "Ein Ausgang ist erschienen. Du hast nur noch \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EMinute\u003CElse/\u003EMinuten\u003C/If\u003E hier. ",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -341,7 +341,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast EventItem erhalten.",
+    "Text": "Du hast \u003Csheetreferencede(EventItem,1,IntegerParameter(1),1,4,1)\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast EventItem erhalten.",
+    "Text": "Du hast \u003Csheetreferencede(EventItem,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -418,7 +418,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat BNpcName losgelassen! ",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat \u003Csheetreferencede(BNpcName,5,IntegerParameter(2),2,4,1)\u003E losgelassen! ",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -462,7 +462,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName erscheint!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E erscheint!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -627,7 +627,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName st\u00F6\u00DFt einen dissonanten Schrei aus!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E st\u00F6\u00DFt einen dissonanten Schrei aus!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -638,7 +638,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast EventItem angebracht.",
+    "Text": "Du hast \u003Csheetreferencede(EventItem,2,IntegerParameter(1),1,4,1)\u003E angebracht.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -649,7 +649,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName hat sich ge\u00F6ffnet.",
+    "Text": "\u003CLink\u003E\u003Csheetreference(PlaceName,IntegerParameter(1),8,3)\u003E\u003C/Link\u003E hat sich ge\u00F6ffnet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -726,7 +726,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName versucht, die Wand zu zerst\u00F6ren!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E versucht, die Wand zu zerst\u00F6ren!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -759,7 +759,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat Item fallen lassen! ",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat \u003Csheetreferencede(Item,1,IntegerParameter(2),1,4,1)\u003E fallen lassen! ",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -770,7 +770,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Deine Stufe weicht um  oder mehr von der empfohlenen ab.\nDamit dein Einsatz z\u00E4hlt, musst du \u00FCber die Aufgabenliste eine Stufenanpassung durchf\u00FChren.",
+    "Text": "Deine Stufe weicht um \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E oder mehr von der empfohlenen ab.\nDamit dein Einsatz z\u00E4hlt, musst du \u00FCber die Aufgabenliste eine Stufenanpassung durchf\u00FChren.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -781,7 +781,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr hasthat Item erhalten.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Csheetreferencede(Item,1,IntegerParameter(1),1,4,1)\u003E erhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -792,7 +792,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr hasthat Item erhalten.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Csheetreferencede(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E erhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -825,7 +825,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr konntestkonnte Item nicht erhalten. ",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekonntest\u003CElse/\u003Ekonnte\u003C/If\u003E \u003Csheetreferencede(Item,2,IntegerParameter(1),1,4,1)\u003E nicht erhalten. ",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -869,7 +869,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "EObj beginnt mit dem Countdown!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(EObj,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E beginnt mit dem Countdown!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -880,7 +880,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "EObj hat den Countdown zur\u00FCckgesetzt.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(EObj,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat den Countdown zur\u00FCckgesetzt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -935,7 +935,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist erschienen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist erschienen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -946,7 +946,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "EObj - Countdown beendet.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(EObj,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E - Countdown beendet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -957,7 +957,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist nicht mehr unverwundbar.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist nicht mehr unverwundbar.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -968,7 +968,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist wieder unverwundbar.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist wieder unverwundbar.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -979,7 +979,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat Samen verstreut.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat Samen verstreut.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -990,7 +990,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat es sich anders \u00FCberlegt.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat es sich anders \u00FCberlegt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1056,7 +1056,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist in Bedr\u00E4ngnis und BNpcName eilt zu Hilfe!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist in Bedr\u00E4ngnis und \u003Csheetreferencede(BNpcName,1,IntegerParameter(2),1,1,1)\u003E eilt zu Hilfe!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1089,7 +1089,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat das Ziel im Visier!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat das Ziel im Visier!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1100,7 +1100,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist nicht mehr unverwundbar.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist nicht mehr unverwundbar.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1111,7 +1111,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist jetzt unverwundbar!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist jetzt unverwundbar!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1177,7 +1177,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist in Bedr\u00E4ngnis und BNpcName eiltBNpcName eilen zu Hilfe!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist in Bedr\u00E4ngnis und \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferencede(BNpcName,1,IntegerParameter(2),1,1,1)\u003E eilt\u003CElse/\u003E\u003Csheetreferencede(BNpcName,5,IntegerParameter(2),2,1,1)\u003E eilen\u003C/If\u003E zu Hilfe!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1243,7 +1243,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Zeit bis zur vollen Aufladung:  Einheiten ",
+    "Text": "Zeit bis zur vollen Aufladung: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Einheiten ",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1265,7 +1265,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Weich BNpcName aus!",
+    "Text": "Weich \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,3,1)\u003E aus!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1276,7 +1276,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName vibriert und gibt ein Zeichen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E vibriert und gibt ein Zeichen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1342,7 +1342,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist dem Tod entronnen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist dem Tod entronnen!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -1408,7 +1408,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName flieht!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E flieht!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1419,7 +1419,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat die gespeicherte Kraft freigesetzt!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat die gespeicherte Kraft freigesetzt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1430,7 +1430,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat sein Ziel anvisiert!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat sein Ziel anvisiert!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1441,7 +1441,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName beginnt zu knurren!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E beginnt zu knurren!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1452,7 +1452,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ist das Verfolgen leid und schl\u00E4ft ersch\u00F6pft ein ...",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ist das Verfolgen leid und schl\u00E4ft ersch\u00F6pft ein ...",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1463,7 +1463,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName verbreitet d\u00FCstere Schwaden des Nichts!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,3,1)\u003E\u003C/Link\u003E verbreitet d\u00FCstere Schwaden des Nichts!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1606,7 +1606,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName schl\u00E4gt auf den Boden und l\u00E4sst einen Hagel von Bomber-Brocken herabst\u00FCrzen! ",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E schl\u00E4gt auf den Boden und l\u00E4sst einen Hagel von Bomber-Brocken herabst\u00FCrzen! ",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1617,7 +1617,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName gibt die Verfolgung auf und verzieht sich in seine H\u00F6hle.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E gibt die Verfolgung auf und verzieht sich in seine H\u00F6hle.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1793,7 +1793,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Als Bonus f\u00FCr den ersten erfolgreichen Abschluss eines Teilnehmers hast du . Routine und . Gil erhalten.",
+    "Text": "Als Bonus f\u00FCr den ersten erfolgreichen Abschluss eines Teilnehmers hast du \u003Cformat(IntegerParameter(1),.)\u003E Routine und \u003Cformat(IntegerParameter(2),.)\u003E Gil erhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1804,7 +1804,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast Item Item erhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Csheetreferencede(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Csheetreferencede(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E erhalten.",
     "LogKind": 62,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1815,7 +1815,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast Item Item erhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Csheetreferencede(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003Csheetreferencede(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E erhalten.",
     "LogKind": 62,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1859,7 +1859,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du wartest auf das Betreten. Momentan sind  Personen im Inneren.",
+    "Text": "Du wartest auf das Betreten. Momentan sind \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Personen im Inneren.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1903,7 +1903,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du kannst nicht noch mehr Item tragen.",
+    "Text": "Du kannst nicht noch mehr \u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E tragen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1914,7 +1914,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du kannst diese Woche nicht noch mehr Item erhalten.",
+    "Text": "Du kannst diese Woche nicht noch mehr \u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1925,7 +1925,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du kannst nicht noch mehr Item tragen.",
+    "Text": "Du kannst nicht noch mehr \u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E tragen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1936,7 +1936,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName bringt die Magitek-Geschosse in Position!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E bringt die Magitek-Geschosse in Position!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1947,7 +1947,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName gibt den Befehl zum Angriff!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E gibt den Befehl zum Angriff!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2431,7 +2431,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName hat das Ziel ins Visier genommen!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E hat das Ziel ins Visier genommen!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2442,7 +2442,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName schafft einen giftigen T\u00FCmpel!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E schafft einen giftigen T\u00FCmpel!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2453,7 +2453,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName ruft die Sterne herab!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E ruft die Sterne herab!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2684,7 +2684,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "F\u00FCr die Teilnahme in einer gefragten Rolle erh\u00E4ltst du einen Routine-Bonus von . und . Gil.",
+    "Text": "F\u00FCr die Teilnahme in einer gefragten Rolle erh\u00E4ltst du \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eeinen Routine-Bonus von \u003Cformat(IntegerParameter(1),.)\u003E und \u003CElse/\u003E\u003C/If\u003E\u003Cformat(IntegerParameter(2),.)\u003E Gil.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2706,7 +2706,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "F\u00FCr deinen Mut, dich einer zuf\u00E4lligen Herausforderung zu stellen, erh\u00E4ltst du einen Routine-Bonus von . und . Gil.",
+    "Text": "F\u00FCr deinen Mut, dich einer zuf\u00E4lligen Herausforderung zu stellen, erh\u00E4ltst du \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eeinen Routine-Bonus von \u003Cformat(IntegerParameter(1),.)\u003E und \u003CElse/\u003E\u003C/If\u003E\u003Cformat(IntegerParameter(2),.)\u003E Gil.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2783,7 +2783,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Verwesungss\u00E4fte machen BNpcName ganz rasend!",
+    "Text": "Die Verwesungss\u00E4fte machen \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,4,1)\u003E ganz rasend!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2860,7 +2860,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "dudeinerdirdichObjStr wurde von Magens\u00E4ure getroffen!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E wurde von Magens\u00E4ure getroffen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2948,7 +2948,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Der verrottende Gourmet beginnt dudeinerdirdichObjStr zu verschlingen!",
+    "Text": "Der verrottende Gourmet beginnt \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreferencede(ObjStr,2,IntegerParameter(8),1,4,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E zu verschlingen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2992,7 +2992,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Kampf-Aktivit\u00E4ten registriert. Ring-Teleporter PlaceName wird deaktiviert.",
+    "Text": "Kampf-Aktivit\u00E4ten registriert. Ring-Teleporter \u003Csheetreference(PlaceName,IntegerParameter(1),8,2)\u003E wird deaktiviert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3003,7 +3003,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Ring-Teleporter PlaceName aktiviert.",
+    "Text": "Ring-Teleporter \u003Csheetreference(PlaceName,IntegerParameter(1),8,2)\u003E aktiviert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3641,7 +3641,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Der Aquadon greift und schleudert  weg!",
+    "Text": "Der Aquadon greift und schleudert \u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E weg!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3652,7 +3652,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " hat nicht die erforderliche Stufe.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E hat nicht die erforderliche Stufe.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3663,7 +3663,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ist kein Krieger oder Magier.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E ist kein Krieger oder Magier.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3674,7 +3674,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ist kampfunf\u00E4hig.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E ist kampfunf\u00E4hig.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3685,7 +3685,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " hat diesen Spielinhalt noch nicht freigespielt.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E hat diesen Spielinhalt noch nicht freigespielt.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3696,7 +3696,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ist mit einem anderen Spielinhalt besch\u00E4ftigt.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E ist mit einem anderen Spielinhalt besch\u00E4ftigt.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3707,7 +3707,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " erf\u00FCllt die Bedingungen f\u00FCr die Teilnahme nicht.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E erf\u00FCllt die Bedingungen f\u00FCr die Teilnahme nicht.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ist in diesem Spielinhalt weiter fortgeschritten als der Gruppenanf\u00FChrer.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E ist in diesem Spielinhalt weiter fortgeschritten als der Gruppenanf\u00FChrer.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3729,7 +3729,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du kannst kann vor\u00FCbergehend nicht teilnehmen.\nDies ist eine Ma\u00DFnahme zur Suchtpr\u00E4vention.",
+    "Text": "\u003Cifplayer(IntegerParameter(1),Du kannst,\u003CLink\u003E\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E\u003C/Link\u003E kann)\u003E vor\u00FCbergehend nicht teilnehmen.\nDies ist eine Ma\u00DFnahme zur Suchtpr\u00E4vention.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3740,7 +3740,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du bistist bereit zur Teilnahmem\u00F6chtest noch warten.",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),ObjectParameter(1)))\u003EDu\u003CElse/\u003E\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CIf(Equal(IntegerParameter(1),ObjectParameter(1)))\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E bereit zur Teilnahme\u003CElse/\u003Em\u00F6chte\u003CIf(Equal(IntegerParameter(1),ObjectParameter(1)))\u003Est\u003CElse/\u003E\u003C/If\u003E noch warten\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4389,7 +4389,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Das Notaggregat BNpcName wurde aktiviert.",
+    "Text": "Das Notaggregat \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,2,1)\u003E wurde aktiviert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4400,7 +4400,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName wurde erfasst und reintegriert!",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E wurde erfasst und reintegriert!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4730,7 +4730,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Dauer aller auf dich wirkenden positiven und negativen Status wurde um das fache verl\u00E4ngert.",
+    "Text": "Die Dauer aller auf dich wirkenden positiven und negativen Status wurde um das \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Efache verl\u00E4ngert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4906,7 +4906,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName beginnt damit, BNpcName \u00C4ther zuzuleiten.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E beginnt damit, \u003Csheetreferencede(BNpcName,2,IntegerParameter(2),1,3,1)\u003E \u00C4ther zuzuleiten.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

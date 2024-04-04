@@ -70,7 +70,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " fps",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E fps",
     "RowId": 4002,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -385,14 +385,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " fps (Refresh Rate 1/1)",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E fps (Refresh Rate 1/1)",
     "RowId": 4054,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " fps (Refresh Rate 1/2)",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E fps (Refresh Rate 1/2)",
     "RowId": 4055,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -420,7 +420,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " fps (Refresh Rate 1/4)",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E fps (Refresh Rate 1/4)",
     "RowId": 4059,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -707,7 +707,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ControllerGamepad Settings",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Settings",
     "RowId": 4100,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -763,7 +763,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ControllerGamepad Customization",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Customization",
     "RowId": 4108,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -791,14 +791,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ": Confirm  /  : Cancel (Japanese Standard)",
+    "Text": "\u003CBitmapFontIcon\u003E8\u003C/BitmapFontIcon\u003E: Confirm  /  \u003CBitmapFontIcon\u003E9\u003C/BitmapFontIcon\u003E: Cancel (Japanese Standard)",
     "RowId": 4112,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": ": Cancel  /  : Confirm (Global Standard)",
+    "Text": "\u003CBitmapFontIcon\u003E8\u003C/BitmapFontIcon\u003E: Cancel  /  \u003CBitmapFontIcon\u003E9\u003C/BitmapFontIcon\u003E: Confirm (Global Standard)",
     "RowId": 4113,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -840,7 +840,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ControllerGamepad Settings",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Settings",
     "RowId": 4119,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -875,7 +875,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Compatible controllers can utilize rumble and playback of sound effects. (DirectX 11 is required for this feature.)(This feature is only available on Windows.)",
+    "Text": "Compatible controllers can utilize rumble and playback of sound effects. \u003Cswitch(IntegerParameter(78),(\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003EDirectX 11 is required for this feature.),,(\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003EThis feature is only available on Windows.))\u003E",
     "RowId": 4124,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1050,7 +1050,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " \uE033",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E \uE033\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 4149,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1162,7 +1162,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Automatically adjusts resolution levels for optimum performance.\nCurrently unavailable for the Mac version of FINAL FANTASY XIV.\u203BBeta Version",
+    "Text": "Automatically adjusts resolution levels for optimum performance.\n\u003CIf(Equal(IntegerParameter(78),3))\u003E\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003ECurrently unavailable for the Mac version of FINAL FANTASY XIV.\u003CElse/\u003E\u203BBeta Version\u003C/If\u003E",
     "RowId": 4165,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1197,7 +1197,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "GamepadWireless ControllerController Settings",
+    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EGamepad\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E\u003C/If\u003E Settings",
     "RowId": 4174,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1330,7 +1330,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Apply this resolution?\nSettings will be restored in  secondseconds.",
+    "Text": "Apply this resolution?\nSettings will be restored in \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Esecond\u003CElse/\u003Eseconds\u003C/If\u003E.",
     "RowId": 4195,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1911,14 +1911,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "/24",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24",
     "RowId": 4306,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Save these settings?\n(Press  \u002B  to save.)",
+    "Text": "Save these settings?\n(Press \u003CBitmapFontIcon\u003E12\u003C/BitmapFontIcon\u003E \u002B \u003CBitmapFontIcon\u003E19\u003C/BitmapFontIcon\u003E to save.)",
     "RowId": 4307,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1988,168 +1988,168 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the left stick up.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Tilt the left stick up.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4320,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the left stick down.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Tilt the left stick down.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4321,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the left stick to the left.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Tilt the left stick to the left.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4322,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the left stick to the right.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Tilt the left stick to the right.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4323,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the right stick up.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E23\u003C/BitmapFontIcon\u003E Tilt the right stick up.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4324,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the right stick down.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E23\u003C/BitmapFontIcon\u003E Tilt the right stick down.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4325,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the right stick to the left.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E23\u003C/BitmapFontIcon\u003E Tilt the right stick to the left.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4326,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tilt the right stick to the right.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E23\u003C/BitmapFontIcon\u003E Tilt the right stick to the right.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4327,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Press the up directional buttonbutton on the d-pad.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E1\u003C/BitmapFontIcon\u003E Press the up \u003CIf(GreaterThan(IntegerParameter(75),0))\u003Edirectional button\u003CElse/\u003Ebutton on the d-pad\u003C/If\u003E.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4328,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Press the down directional buttonbutton on the d-pad.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E2\u003C/BitmapFontIcon\u003E Press the down \u003CIf(GreaterThan(IntegerParameter(75),0))\u003Edirectional button\u003CElse/\u003Ebutton on the d-pad\u003C/If\u003E.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4329,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Press the left directional buttonbutton on the d-pad.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E3\u003C/BitmapFontIcon\u003E Press the left \u003CIf(GreaterThan(IntegerParameter(75),0))\u003Edirectional button\u003CElse/\u003Ebutton on the d-pad\u003C/If\u003E.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4330,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Press the right directional buttonbutton on the d-pad.\n(/24)",
+    "Text": "\u003CBitmapFontIcon\u003E4\u003C/BitmapFontIcon\u003E Press the right \u003CIf(GreaterThan(IntegerParameter(75),0))\u003Edirectional button\u003CElse/\u003Ebutton on the d-pad\u003C/If\u003E.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4331,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E11\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4332,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E8\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4333,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E9\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4334,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E10\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4335,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  trigger.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E12\u003C/BitmapFontIcon\u003E trigger.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4336,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  trigger.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E14\u003C/BitmapFontIcon\u003E trigger.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4337,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  trigger.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E trigger.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4338,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  trigger.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E15\u003C/BitmapFontIcon\u003E trigger.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4339,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E19\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4340,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E18\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4341,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E16\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4342,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Press the  button.\n(/24)",
+    "Text": "Press the \u003CBitmapFontIcon\u003E17\u003C/BitmapFontIcon\u003E button.\n(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/24)",
     "RowId": 4343,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2177,7 +2177,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE033",
+    "Text": "\uE033\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 4350,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2219,14 +2219,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Reassign current gear to \u201C\u201D?",
+    "Text": "Reassign current gear to \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D?",
     "RowId": 4356,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Delete \u201C\u201D?",
+    "Text": "Delete \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D?",
     "RowId": 4357,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2240,7 +2240,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ClassJob (Lv. )",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),1)\u003E (Lv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 4359,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2282,7 +2282,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ClassJob (Item Lv. )",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),1)\u003E (Item Lv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 4365,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2296,7 +2296,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Subcommands  Search for Matching Items",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E11\u003C/Icon2\u003E Search for Matching Items",
     "RowId": 4367,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2408,21 +2408,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ClassJob (\uE033)",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),1)\u003E (\uE033\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 4383,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Item registered to this gear set could not be found in your Armoury Chest. Replace it with another Item?",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E registered to this gear set could not be found in your Armoury Chest. Replace it with another \u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E?",
     "RowId": 4384,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Item registered to this gear set could not be found in your Armoury Chest. Replace it with Item?",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E registered to this gear set could not be found in your Armoury Chest. Replace it with \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E?",
     "RowId": 4385,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2443,7 +2443,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item registered to this gear set cannot be equipped. Replace it with Item?",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E registered to this gear set cannot be equipped. Replace it with \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E?",
     "RowId": 4388,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2576,7 +2576,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "%",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%",
     "RowId": 4408,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2744,7 +2744,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to meld materia.\nReattempt meld using the same materials?",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EUnable to meld materia.\nReattempt meld using the same materials?\u003C/span\u003E\u003C/span\u003E",
     "RowId": 4434,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2772,7 +2772,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to meld materia.\nReattempt meld using the same materials?",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EUnable to meld materia.\nReattempt meld using the same materials?\u003C/span\u003E\u003C/span\u003E",
     "RowId": 4438,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2828,7 +2828,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ".%",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E%",
     "RowId": 4446,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2884,7 +2884,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You must be a level  Disciple of the Hand to meld this materia.",
+    "Text": "You must be a level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Disciple of the Hand to meld this materia.",
     "RowId": 4454,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2968,7 +2968,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ",\uE049",
+    "Text": "\u003Cformat(IntegerParameter(1),,)\u003E\uE049",
     "RowId": 4467,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3045,7 +3045,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Payment: , Item",
+    "Text": "Payment: \u003Cformat(IntegerParameter(1),,)\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(2),IntegerParameter(1),1)\u003E",
     "RowId": 4478,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3080,7 +3080,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Restore Item to Item?",
+    "Text": "Restore \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E to \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E?",
     "RowId": 4483,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3171,7 +3171,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Removal fee: ,\uE049",
+    "Text": "Removal fee: \u003Cformat(IntegerParameter(1),,)\u003E\uE049",
     "RowId": 4496,
     "SubRowId": 0,
     "SheetName": "Addon",

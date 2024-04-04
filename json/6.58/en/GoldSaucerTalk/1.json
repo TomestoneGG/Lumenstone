@@ -510,7 +510,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u5FC5\u8981MGP\uFF1A,MGP",
+    "Unknown0": "\u5FC5\u8981MGP\uFF1A\u003Cformat(IntegerParameter(1),,)\u003EMGP",
     "Unknown1": "\u3084\u308B",
     "Unknown2": "\u3084\u308B(\u7121\u6599\u5238)",
     "Unknown3": "\u30AD\u30E3\u30F3\u30BB\u30EB",
@@ -544,7 +544,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": " MGP is required to purchase a ticket.\nYou currently possess ,. Proceed?",
+    "Unknown0": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E MGP is required to purchase a ticket.\nYou currently possess \u003Cformat(IntegerParameter(2),,)\u003E. Proceed?",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",
@@ -646,7 +646,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Come one, come all\u2500drawing number  of the Mini Cactpot is here! Care to try your luck with a ticket, misssir?",
+    "Unknown0": "Come one, come all\u2500drawing number \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E of the Mini Cactpot is here! Care to try your luck with a ticket, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -986,7 +986,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Awe you alwight MissMister adventuwer? Now I know why Ma towd me to stay away fwom that statue... B-B-But now who\u0027ll s-s-save B-B-Bootkins!?",
+    "Unknown0": "Awe you alwight \u003CIf(IntegerParameter(4))\u003EMiss\u003CElse/\u003EMister\u003C/If\u003E adventuwer? Now I know why Ma towd me to stay away fwom that statue... B-B-But now who\u0027ll s-s-save B-B-Bootkins!?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1088,7 +1088,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Oh, you do not seem to have enough space, misssir. I will be happy to hand over your prize after you make some room for it in your luggage.",
+    "Unknown0": "Oh, you do not seem to have enough space, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I will be happy to hand over your prize after you make some room for it in your luggage.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1394,7 +1394,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time).",
+    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1428,7 +1428,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "After the drawing, you will have until the following SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time) to claim your prize.",
+    "Unknown0": "After the drawing, you will have until the following \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time) to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1462,7 +1462,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time).",
+    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1496,7 +1496,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": ", MGP is required to purchase a Mini Cactpot ticket.",
+    "Unknown0": "\u003Cformat(IntegerParameter(1),,)\u003E MGP is required to purchase a Mini Cactpot ticket.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1530,7 +1530,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Eligibility to purchase Mini Cactpot tickets resets daily at  p.m.a.m. (Earth time).",
+    "Unknown0": "Eligibility to purchase Mini Cactpot tickets resets daily at \u003CResetTime\u003E0\u003C/ResetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1564,7 +1564,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I am sorry, but please accept this consolation prizeCongratulations! You have won 1st2nd3rdth prize, misssir\u2500along with the extra points for the Early Bird Bonus.",
+    "Unknown0": "\u003CIf(Equal(IntegerParameter(1),5))\u003EI am sorry, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Eth\u003C/If\u003E prize\u003C/If\u003E, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500along with the extra points for the Early Bird Bonus.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1598,7 +1598,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, your extravagant Item, and the bonus MGP for being an early bird!",
+    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, your extravagant \u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E, \u003Ci\u003Eand\u003C/i\u003E the bonus MGP for being an early bird!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1632,7 +1632,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I am terribly sorry, misssir, but you can no longer claim prizes for that ticket. Allow me to take it off your hands, and offer my condolences for your missed fortune.",
+    "Unknown0": "I am terribly sorry, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but you can no longer claim prizes for that ticket. Allow me to take it off your hands, and offer my condolences for your missed fortune.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1836,7 +1836,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "You failed!? Nooo! Now everyone will think I was the one dancing on a table in my smallclothes, propositioning every Sea Wolf as they passed by...",
+    "Unknown0": "You failed!? Nooo! Now everyone will think \u003Ci\u003EI\u003C/i\u003E was the one dancing on a table in my smallclothes, propositioning every Sea Wolf as they passed by...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2040,7 +2040,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "What is the\u2014\u003Ccough\u003E\u003Ccough\u003E meaning of this!? How many times must I endure this insufferable treatment?",
+    "Unknown0": "What is the\u2014\\\u003Ccough\u003E\\\u003Ccough\u003E meaning of this!? How many times must I endure this insufferable treatment?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2108,7 +2108,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "That is not the punishment I had in mind, thank you very much!",
+    "Unknown0": "That is \u003Ci\u003Enot\u003C/i\u003E the punishment I had in mind, thank you very much!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2176,7 +2176,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E Wh-What in the hells are you doin\u0027!? Right bleedin\u0027 unpleasant, that was!",
+    "Unknown0": "\\\u003Ccough\u003E Wh-What in the hells are you doin\u0027!? Right bleedin\u0027 unpleasant, that was!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2210,7 +2210,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Aaahhh! My eyes! \u003Ccough\u003E \u003Cwheeze\u003EJust what do you think you\u0027re doing!?",
+    "Unknown0": "Aaahhh! My eyes! \\\u003Ccough\u003E \\\u003Cwheeze\u003EJust what do you think you\u0027re doing!?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2380,7 +2380,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "What the\u2014 \u003Ccough\u003E Is this how they...\u003Ccough\u003E...welcome guests to the Gold Saucer?",
+    "Unknown0": "What the\u2014 \\\u003Ccough\u003E Is this how they...\\\u003Ccough\u003E...welcome guests to the Gold Saucer?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2482,7 +2482,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "That was quite the display of stealth! I reckon even a snake could learn a thing or three from a womanman of your cunning.",
+    "Unknown0": "That was quite the display of stealth! I reckon even a snake could learn a thing or three from a \u003CIf(IntegerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E of your cunning.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2516,7 +2516,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Whatever you do, don\u0027t let the thieving thieves see you with that vase! And if they do? Why, drop the package and run. It matters not if it shatters, as long as it doesn\u0027t fall into the highwaymen\u0027s hands. The last thing my client wants is to repurchase something that is already his.",
+    "Unknown0": "Whatever you do, \u003Ci\u003Edon\u0027t\u003C/i\u003E let the thieving thieves see you with that vase! And if they do? Why, drop the package and run. It matters not if it shatters, as long as it doesn\u0027t fall into the highwaymen\u0027s hands. The last thing my client wants is to repurchase something that is already his.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2550,7 +2550,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The conniving crooks! And to think you were so close! Fortunately, Lord Manderville was quite aware of the dangers of shipping such sought-after cargo, and the Jolly Raptor is exempt from any financial responsibility in the event of theft or damage. Now, I do happen to have several more packages here if you seek a chance at redemption?",
+    "Unknown0": "The conniving crooks! And to think you were so close! Fortunately, Lord Manderville was quite aware of the dangers of shipping such sought-after cargo, and the Jolly Raptor is exempt from any financial responsibility in the event of theft or damage. Now, I \u003Ci\u003Edo\u003C/i\u003E happen to have several more packages here if you seek a chance at redemption?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2652,7 +2652,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Another vase? I only think Lord Manderville purchases these things because he can. I don\u0027t even think he minds when one is dropped because that simply means no one else can have it either. Anyroad, you\u0027ve done the Saucer a great service. I\u0027ll prepare your reward so you can be on your way.",
+    "Unknown0": "Another vase? I only think Lord Manderville purchases these things because he \u003Ci\u003Ecan\u003C/i\u003E. I don\u0027t even think he minds when one is dropped because that simply means no one else can have it either. Anyroad, you\u0027ve done the Saucer a great service. I\u0027ll prepare your reward so you can be on your way.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2822,7 +2822,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "In addition to your other winnings, you will receive the Early Bird Bonus if you claim your prize within onetwothreefourfivesixseveneightnineten hourhours (Earth time) of the Jumbo Cactpot drawing.",
+    "Unknown0": "In addition to your other winnings, you will receive the Early Bird Bonus if you claim your prize within \u003CIf(IntegerParameter(3))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(3),10))\u003E\u003Cswitch(IntegerParameter(3),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E (Earth time) of the Jumbo Cactpot drawing.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3060,7 +3060,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "If you think you have what it takes to be the last one standing, then step right up! And if you do get caught in a squall of sputum\u2500hey, there\u0027s nothing to lose but your dignity.",
+    "Unknown0": "If you think you have what it takes to be the last one standing, then step right up! And if you \u003Ci\u003Edo\u003C/i\u003E get caught in a squall of sputum\u2500hey, there\u0027s nothing to lose but your dignity.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3332,7 +3332,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "We have a winner! Please accept my congratulations\u2500and your prize of , MGP! And remember: there\u0027s always more to be won on the morrow!",
+    "Unknown0": "\u003C96(1,2)\u003EWe have a winner! Please accept my congratulations\u2500and your prize of \u003Cformat(IntegerParameter(1),,)\u003E MGP! And remember: there\u0027s always more to be won on the morrow!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3366,7 +3366,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Your patronage is most appreciated, misssir.\nI hope to see you again tomorrow!",
+    "Unknown0": "Your patronage is most appreciated, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.\nI hope to see you again tomorrow!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3434,7 +3434,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Welcome to drawing number  of the Jumbo Cactpot! Can I interest you in a ticket to fame and fortune?",
+    "Unknown0": "Welcome to drawing number \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of the Jumbo Cactpot! Can I interest you in a ticket to fame and fortune?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3468,7 +3468,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I\u0027m afraid you\u0027re early for the drawing, misssir. Can I help you with anything while you wait?",
+    "Unknown0": "I\u0027m afraid you\u0027re early for the drawing, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Can I help you with anything while you wait?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3502,7 +3502,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Why, we\u0027ve already drawn the winning number for your ticket, misssir. Why not claim your prize from the cashier over there?",
+    "Unknown0": "Why, we\u0027ve already drawn the winning number for your ticket, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Why not claim your prize from the cashier over there?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3536,7 +3536,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "It pains me to say that you can\u0027t claim prizes with that ticket anymore, misssir. \u003Csigh\u003E What a pity. Ah well, better luck next time, and remember\u2500you can\u0027t wait forever to claim your prize.",
+    "Unknown0": "It pains me to say that you can\u0027t claim prizes with that ticket anymore, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. \\\u003Csigh\u003E What a pity. Ah well, better luck next time, and remember\u2500you can\u0027t wait forever to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3672,7 +3672,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The Jumbo Cactpot is Eorzea\u0027s premier lottery, misssir. You play by purchasing a ticket, starting from the low, low price of , MGP, and then picking your numbers\u2500four digits between zero and nine.",
+    "Unknown0": "The Jumbo Cactpot is Eorzea\u0027s premier lottery, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. You play by purchasing a ticket, starting from the low, low price of \u003Cformat(IntegerParameter(1),,)\u003E MGP, and then picking your numbers\u2500four digits between zero and nine.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3774,7 +3774,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Where is your Jumbo Cactpot ticket, misssir? If you have yet to purchase one, please see the broker\u2500she can help you with everything.",
+    "Unknown0": "Where is your Jumbo Cactpot ticket, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? If you have yet to purchase one, please see the broker\u2500she can help you with everything.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3808,7 +3808,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I do beg your pardon, misssir, but this week\u0027s winning number has yet to be announced.",
+    "Unknown0": "I do beg your pardon, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but this week\u0027s winning number has yet to be announced.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3876,7 +3876,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Greetings, madamsir, and welcome to Chocobo Square! Are you here to enter a race?",
+    "Unknown0": "Greetings, \u003CIf(IntegerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, and welcome to Chocobo Square! Are you here to enter a race?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4318,7 +4318,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Your entry into the GoldSaucerTextData GoldSaucerTextData race has been accepted! Pray remain in Chocobo Square until you are summoned to the course.",
+    "Unknown0": "Your entry into the \u003Csheetreference(GoldSaucerTextData,IntegerParameter(1),0)\u003E \u003Csheetreference(GoldSaucerTextData,IntegerParameter(2),0)\u003E race has been accepted! Pray remain in Chocobo Square until you are summoned to the course.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4454,7 +4454,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "You can purchase up to three Jumbo Cactpot tickets per week. The winning number is drawn every SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time).",
+    "Unknown0": "You can purchase up to three Jumbo Cactpot tickets per week. The winning number is drawn every \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4488,7 +4488,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "After the drawing, you will have until the following SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m.SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time) to claim your prize.",
+    "Unknown0": "After the drawing, you will have until the following \u003CIf(NotEqual(IntegerParameter(83),0))\u003E\u003Cswitch(IntegerParameter(83),\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Cresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Cresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Cresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time) to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4590,7 +4590,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I am sorry, but please accept this consolation prizeCongratulations! You have won 1st2nd3rdth prize, misssir.",
+    "Unknown0": "\u003CIf(Equal(IntegerParameter(1),5))\u003EI am sorry, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Eth\u003C/If\u003E prize\u003C/If\u003E, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4624,7 +4624,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, and your extravagant Item!",
+    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, and your extravagant \u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5100,7 +5100,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I could tell you how to dance just about as well as I could tell you how to love. No, you must experience it with your eyes, with your heart.",
+    "Unknown0": "I could \u003Ci\u003Etell\u003C/i\u003E you how to dance just about as well as I could \u003Ci\u003Etell\u003C/i\u003E you how to love. No, you must experience it with your eyes, with your heart.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5338,7 +5338,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The entry fee for this race is , MGP.\nYou currently possess ,. Proceed?",
+    "Unknown0": "The entry fee for this race is \u003Cformat(IntegerParameter(1),,)\u003E MGP.\nYou currently possess \u003Cformat(IntegerParameter(2),,)\u003E. Proceed?",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",
@@ -5576,7 +5576,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Can you believe this? An imp of questionable character and malleable appearance has snuck into the Saucer, and it\u0027s around here somewhere pretending to be me.",
+    "Unknown0": "Can you believe this? An imp of questionable character and malleable appearance has snuck into the Saucer, and it\u0027s around here somewhere pretending to be \u003Ci\u003Eme\u003C/i\u003E.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5644,7 +5644,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Er...could ye help? An imp is impersonating me. And not just me personality, mind\u2500it\u0027s copied everything, from head to arse to...well, ye get the picture.",
+    "Unknown0": "Er...could ye help? An imp is \u003Ci\u003Eimpersonating\u003C/i\u003E me. And not just me personality, mind\u2500it\u0027s copied everything, from head to arse to...well, ye get the picture.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5712,7 +5712,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "If I could have but a moment of your time. I was tasked with finding an imp traipsing about the premises, but the bloody bastard disguised itself as me and ran off into a crowd.",
+    "Unknown0": "If I could have but a moment of your time. I was tasked with finding an imp traipsing about the premises, but the bloody bastard disguised itself as \u003Ci\u003Eme\u003C/i\u003E and ran off into a crowd.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5746,7 +5746,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "This brightash should suffice to dispel the fiend\u0027s glamour, but I fear this task is too much for one man alone. So what do you say? If you would aid me in this task, I must warn you: our prey looks exactly as I do. The utmost care must be taken when examining our fellow patrons about the Saucer.",
+    "Unknown0": "This brightash should suffice to dispel the fiend\u0027s glamour, but I fear this task is too much for one man alone. So what do you say? If you would aid me in this task, I must warn you: our prey looks \u003Ci\u003Eexactly\u003C/i\u003E as I do. The utmost care must be taken when examining our fellow patrons about the Saucer.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5780,7 +5780,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Quick! Have you seen me? Not me me, the other me\u2500the me pretending to be me, you see? An imp! We have to find him\u2500me\u2500before I do\u2500he does\u2500something terrible like...like purchase my Mini Cactpot ticket!",
+    "Unknown0": "Quick! Have you seen me? Not \u003Ci\u003Eme\u003C/i\u003E me, the \u003Ci\u003Eother\u003C/i\u003E me\u2500the \u003Ci\u003Eme\u003C/i\u003E pretending to be me, you see? An imp! We have to find him\u2500me\u2500before I do\u2500he does\u2500something terrible like...like purchase my Mini Cactpot ticket!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5848,7 +5848,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Begging your pardon, misssir, but I am in dire need of assistance. An imp that is exceedingly skilled with glamours has taken my form and set about engaging in conduct most unbecoming. This cannot stand.",
+    "Unknown0": "Begging your pardon, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I am in dire need of assistance. An imp that is \u003Ci\u003Eexceedingly\u003C/i\u003E skilled with glamours has taken my form and set about engaging in conduct most unbecoming. This cannot stand.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5950,7 +5950,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The staff kindly supplied me with some special ash that will supposedly dispel the disguise, but those little demons make my skin crawl... Do you think you could find it in my stead? Remember: the creature will look exactly like me!",
+    "Unknown0": "The staff kindly supplied me with some special ash that will supposedly dispel the disguise, but those little demons make my skin crawl... Do you think you could find it in my stead? Remember: the creature will look \u003Ci\u003Eexactly\u003C/i\u003E like me!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6052,7 +6052,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "E-Excuse me, misssir? I know what little sense this makes, but...I need help finding myself.",
+    "Unknown0": "E-Excuse me, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? I know what little sense this makes, but...I need help finding myself.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6154,7 +6154,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "No matter. If you know, then perhaps you can help. Take this brightash and toss it in the eyes of the second most beautiful woman here\u2500that woman being the fraud who stole my face!",
+    "Unknown0": "No matter. If you know, then perhaps you can help. Take this brightash and toss it in the eyes of the \u003Ci\u003Esecond\u003C/i\u003E most beautiful woman here\u2500that woman being the fraud who stole my face!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6324,7 +6324,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Curse that foul voidsent! \u003Csigh\u003E Pardon me, misssir. I was chasing an imp a moment ago, when it transformed into me, and vanished amongst the masses.",
+    "Unknown0": "Curse that foul voidsent! \\\u003Csigh\u003E Pardon me, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I was chasing an imp a moment ago, when it transformed into me, and vanished amongst the masses.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6392,7 +6392,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Where\u0027d that damned imp get off to\u2014 Oh, hello friend. Care to lend a hand? I nearly had the little monster, but before I realized it, I was mesmerized by the twinkle of eyes, and comehither lips. Needless to say, he got away from me.",
+    "Unknown0": "Where\u0027d that damned imp get off to\u2014 Oh, hello friend. Care to lend a hand? I nearly had the little monster, but before I realized it, I was mesmerized by the twinkle of eyes, and come\u2013hither lips. Needless to say, he got away from me.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6426,7 +6426,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "He\u0027s the spitting image of me, but this brightash should be enough to dispel his glamour. Time is of the essence, my dear ladymy good sir. The realm is full to bursting with my good looks alone. I daresay two of me is simply too much.",
+    "Unknown0": "He\u0027s the spitting image of me, but this brightash should be enough to dispel his glamour. Time is of the essence, \u003CIf(IntegerParameter(4))\u003Emy dear lady\u003CElse/\u003Emy good sir\u003C/If\u003E. The realm is full to bursting with my good looks alone. I daresay two of me is simply too much.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6528,7 +6528,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Hey, listen! You\u0027d best be careful. There\u0027s an imp using glamours to impersonate patrons. I should know\u2500I just saw myself in a crowd not five minutes ago!",
+    "Unknown0": "Hey, listen! You\u0027d best be careful. There\u0027s an imp using glamours to impersonate patrons. I should know\u2500I just saw \u003Ci\u003Emyself\u003C/i\u003E in a crowd not five minutes ago!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6596,7 +6596,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Excuse me, misssir? Have you seen me before? I mean, have you seen someone who looks just like me? There\u0027s an imp in here somewhere, and it\u0027s wearing my face and my garb!",
+    "Unknown0": "Excuse me, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? Have you seen me before? I mean, have you seen someone who looks \u003Ci\u003Ejust like me\u003C/i\u003E? There\u0027s an imp in here somewhere, and it\u0027s wearing \u003Ci\u003Emy\u003C/i\u003E face and \u003Ci\u003Emy\u003C/i\u003E garb!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6664,7 +6664,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Where is it? Where is that awful little imp!? I\u0027ll tear it to shreds for masquerading as me!",
+    "Unknown0": "Where is it? Where is that \u003Ci\u003Eawful\u003C/i\u003E little imp!? I\u0027ll tear it to shreds for masquerading as me!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6766,7 +6766,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Could you help me find him, pretty please? If you use this brightash, he should change back, and then catching him will be easy! The imp looks just like me, so take a good look before you go, tee hee.",
+    "Unknown0": "Could you help me find him, pretty please? If you use this brightash, he should change back, and then catching him will be easy! The imp looks just like me, so take a \u003Ci\u003Egood\u003C/i\u003E look before you go, tee hee.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6800,7 +6800,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "No! I did not cast Blizzard on the privy seats, and I did not put a clutch of ninki nanka eggs in the complimentary wine tun! It was that accursed imp! He\u0027s using some glamour that makes him look exactly like me!",
+    "Unknown0": "No! I did not cast Blizzard on the privy seats, and I did \u003Ci\u003Enot\u003C/i\u003E put a clutch of ninki nanka eggs in the complimentary wine tun! It was that accursed imp! He\u0027s using some glamour that makes him look exactly like me!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6868,7 +6868,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I\u0027ve looked everywhere for that imp, but he\u0027s always a step ahead! You know of who I speak, do you not? The rapscallion cavorting about the Saucer in my image, that\u0027s who!",
+    "Unknown0": "I\u0027ve looked \u003Ci\u003Eeverywhere\u003C/i\u003E for that imp, but he\u0027s always a step ahead! You know of who I speak, do you not? The rapscallion cavorting about the Saucer in my image, that\u0027s who!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6902,7 +6902,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Be a dear and lend me a hand, won\u0027t you? I\u0027ve barely the strength to stand, much less search. Find me\u2500the other me\u2500and throw this brightash in her face. That should put an end to his games.",
+    "Unknown0": "Be a dear and lend me a hand, won\u0027t you? I\u0027ve barely the strength to stand, much less search. Find me\u2500the \u003Ci\u003Eother\u003C/i\u003E me\u2500and throw this brightash in her face. That should put an end to his games.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7106,7 +7106,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "This brightash should suffice to dispel the fiend\u0027s glamour, but only use it on one who looks exactly as I do. \u003Csigh\u003E I\u0027ll be glad when this nonsense is over and done with.",
+    "Unknown0": "This brightash should suffice to dispel the fiend\u0027s glamour, but only use it on one who looks \u003Ci\u003Eexactly\u003C/i\u003E as I do. \\\u003Csigh\u003E I\u0027ll be glad when this nonsense is over and done with.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7582,7 +7582,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The little bastard\u0027s disguise is perfect down to every detail\u2500but that will be his undoing. When you find him, you can use this brightash to dispel the glamour. Be careful, though\u2500I only have enough for one throw!",
+    "Unknown0": "The little bastard\u0027s disguise is perfect down to every detail\u2500but \u003Ci\u003Ethat\u003C/i\u003E will be his undoing. When you find him, you can use this brightash to dispel the glamour. Be careful, though\u2500I only have enough for one throw!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7684,7 +7684,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Try that again, ye soddin\u0027 hellcatwhoreson and I\u0027ll rip yer eyes from their sockets and shove \u0027em so far up yer arse ye\u0027ll see the dirk I\u0027s stuck in yer gut.",
+    "Unknown0": "Try that again, ye soddin\u0027 \u003CIf(IntegerParameter(4))\u003Ehellcat\u003CElse/\u003Ewhoreson\u003C/If\u003E and I\u0027ll rip yer eyes from their sockets and shove \u0027em so far up yer arse ye\u0027ll see the dirk I\u0027s stuck in yer gut.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7718,7 +7718,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Is... Is this smoke!? \u003Cgasp\u003E How dramatic! Truly, they\u0027ve spared no expense!",
+    "Unknown0": "Is... Is this smoke!? \\\u003Cgasp\u003E How dramatic! Truly, they\u0027ve spared no expense!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7752,7 +7752,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "And here I thought I knew all the games people played at the Gold Saucer... \u003Ccough\u003E",
+    "Unknown0": "And here I thought I knew all the games people played at the Gold Saucer... \\\u003Ccough\u003E",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7820,7 +7820,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E \u003Cwheeze\u003E You know, there are...\u003Ccough\u003E...better ways of getting a woman\u0027s attention... \u003Cwheeze\u003E",
+    "Unknown0": "\\\u003Ccough\u003E \\\u003Cwheeze\u003E You know, there are...\\\u003Ccough\u003E...better ways of getting a woman\u0027s attention... \\\u003Cwheeze\u003E",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7888,7 +7888,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E \u003Ccough\u003E How...how festive! Pray warn me before you do that again, though.",
+    "Unknown0": "\\\u003Ccough\u003E \\\u003Ccough\u003E How...how festive! Pray warn me before you do that again, though.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7922,7 +7922,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E \u003Ccough\u003E\n...Are you satisfied now? Some folk express their envy in the strangest ways...",
+    "Unknown0": "\\\u003Ccough\u003E \\\u003Ccough\u003E\n...Are you satisfied now? Some folk express their envy in the strangest ways...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -8058,7 +8058,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "What the\u2500 Oh, I see! This is for good luck, isn\u0027t it? Thank you, misssir! May I have another?",
+    "Unknown0": "What the\u2500 Oh, I see! This is for good luck, isn\u0027t it? Thank you, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! May I have another?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -8160,7 +8160,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Whoa there, lasslad. What\u0027s this? If it\u0027s games ye be playin\u0027, best look elsewhere for a partner.",
+    "Unknown0": "Whoa there, \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. What\u0027s this? If it\u0027s games ye be playin\u0027, best look elsewhere for a partner.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -8228,7 +8228,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E \u003Ccough\u003E Of all the strange wonders the Gold Saucer promised, brightash in the eyes was not among them...",
+    "Unknown0": "\\\u003Ccough\u003E \\\u003Ccough\u003E Of all the strange wonders the Gold Saucer promised, brightash in the eyes was not among them...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -8976,7 +8976,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Everything is so...so busy! The lights, the music, even\u2500 \u003Csniffle\u003E \u003Csniffle\u003E \u2500yes, even the smells are a feast for the senses!",
+    "Unknown0": "Everything is so...so busy! The lights, the music, even\u2500 \\\u003Csniffle\u003E \\\u003Csniffle\u003E \u2500yes, even the smells are a feast for the senses!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9452,7 +9452,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Cshudder\u003E People...why\u0027d it have to be people...",
+    "Unknown0": "\\\u003Cshudder\u003E People...why\u0027d it have to be people...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9588,7 +9588,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Victory does not always go to the swift, oh no! Oftentimes, it goes to the jockey who makes judicious use of the items shehe acquires during the race.",
+    "Unknown0": "Victory does not always go to the swift, oh no! Oftentimes, it goes to the jockey who makes judicious use of the items \u003CIf(IntegerParameter(4))\u003Eshe\u003CElse/\u003Ehe\u003C/If\u003E acquires during the race.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9928,7 +9928,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "To view your race chocobo\u0027s rating, select Character from the main menu, followed by Gold Saucer, then select Chocobo from within the interface.",
+    "Unknown0": "To view your race chocobo\u0027s rating, select \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ECharacter\u003C/span\u003E\u003C/span\u003E from the main menu, followed by \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EGold Saucer\u003C/span\u003E\u003C/span\u003E, then select \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EChocobo\u003C/span\u003E\u003C/span\u003E from within the interface.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10064,7 +10064,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Choco Potion\nInstantly restores stamina by 10%.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EChoco Potion\u003C/span\u003E\u003C/span\u003E\nInstantly restores stamina by 10%.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10098,7 +10098,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Stamina Tablet\nPrevents stamina reduction for 10 seconds. If stamina is zero, a small amount is restored.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EStamina Tablet\u003C/span\u003E\u003C/span\u003E\nPrevents stamina reduction for 10 seconds. If stamina is zero, a small amount is restored.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10132,7 +10132,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Sprint Shoes\nSummons a quick burst of speed.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ESprint Shoes\u003C/span\u003E\u003C/span\u003E\nSummons a quick burst of speed.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10166,7 +10166,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Choco Aether\nAllows a previously used race ability to be executed again.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EChoco Aether\u003C/span\u003E\u003C/span\u003E\nAllows a previously used race ability to be executed again.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10200,7 +10200,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Graviball\nAfflicts the forerunning chocobo with Heavy.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EGraviball\u003C/span\u003E\u003C/span\u003E\nAfflicts the forerunning chocobo with Heavy.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10234,7 +10234,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Bacchus\u0027s Water\nSends the forerunning chocobo into a Frenzied state.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EBacchus\u0027s Water\u003C/span\u003E\u003C/span\u003E\nSends the forerunning chocobo into a Frenzied state.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10268,7 +10268,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Briar Caltrop\nSurrounds your chocobo with a ring of thorns which will sap the stamina of any chocobos that enter.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EBriar Caltrop\u003C/span\u003E\u003C/span\u003E\nSurrounds your chocobo with a ring of thorns which will sap the stamina of any chocobos that enter.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10302,7 +10302,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Hero Tonic\nInvigorates your chocobo for 15 seconds, increasing its overall performance while nullifying any enfeeblements.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EHero Tonic\u003C/span\u003E\u003C/span\u003E\nInvigorates your chocobo for 15 seconds, increasing its overall performance while nullifying any enfeeblements.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10336,7 +10336,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Choco Meteor\nSummons a meteor from the heavens to wreak havoc on all other chocobos.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EChoco Meteor\u003C/span\u003E\u003C/span\u003E\nSummons a meteor from the heavens to wreak havoc on all other chocobos.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10608,7 +10608,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10642,7 +10642,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10676,7 +10676,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10710,7 +10710,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10778,7 +10778,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "To view your race chocobo\u0027s rating, select Character from the main menu, followed by Gold Saucer, then select Chocobo from within the interface.",
+    "Unknown0": "To view your race chocobo\u0027s rating, select \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ECharacter\u003C/span\u003E\u003C/span\u003E from the main menu, followed by \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EGold Saucer\u003C/span\u003E\u003C/span\u003E, then select \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EChocobo\u003C/span\u003E\u003C/span\u003E from within the interface.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10812,7 +10812,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Ugh...too many people by half. Got to nab that imp, though\u2500it\u0027s wearing my form.  \u003Csigh\u003E Brightash is all it\u0027d take to make the wretch show its true wings.",
+    "Unknown0": "Ugh...too many people by half. Got to nab that imp, though\u2500it\u0027s wearing my form.  \\\u003Csigh\u003E Brightash is all it\u0027d take to make the wretch show its true wings.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10880,7 +10880,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Care to help me track down an imp? It\u0027s disguised itself to blend in with the crowd. Heaping insult to injury, it chose me for its costume.",
+    "Unknown0": "Care to help me track down an imp? It\u0027s disguised itself to blend in with the crowd. Heaping insult to injury, it chose \u003Ci\u003Eme\u003C/i\u003E for its costume.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10948,7 +10948,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Good ladysir, might I bother you with a humble request? You see, I am a self-professed scholar of the void, come to this most unlikely of places in search of a creature from beyond this plane. A long story short, I found my specimen, but not before he had stolen my very face and escaped into the clamor. Now I seek a kind soul to uncover the imp so that he may be captured and carried back to my laboratorium.",
+    "Unknown0": "Good \u003CIf(IntegerParameter(4))\u003Elady\u003CElse/\u003Esir\u003C/If\u003E, might I bother you with a humble request? You see, I am a self-professed scholar of the void, come to this most unlikely of places in search of a creature from beyond this plane. A long story short, I found my specimen, but not before he had stolen my very face and escaped into the clamor. Now I seek a kind soul to uncover the imp so that he may be captured and carried back to my laboratorium.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11016,7 +11016,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Ccough\u003E Gods, why!?\nIs...is this what you people do here?",
+    "Unknown0": "\\\u003Ccough\u003E Gods, why!?\nIs...is this what you people do here?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11050,7 +11050,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Ack! \u003Ccough\u003E \u003Ccough\u003E\nJust wait until the manager hears about this!",
+    "Unknown0": "Ack! \\\u003Ccough\u003E \\\u003Ccough\u003E\nJust wait until the manager hears about this!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11220,7 +11220,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "So you\u0027re telling me the me you found wasn\u0027t me, or him after all? \u003Csigh\u003E I suppose if I want something done right, I have to do it myself...even if that something is finding myself.",
+    "Unknown0": "So you\u0027re telling me the \u003Ci\u003Eme\u003C/i\u003E you found wasn\u0027t \u003Ci\u003Eme\u003C/i\u003E, or \u003Ci\u003Ehim\u003C/i\u003E after all? \\\u003Csigh\u003E I suppose if I want something done right, I have to do it myself...even if that something is finding \u003Ci\u003Emy\u003C/i\u003Eself.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11356,7 +11356,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "There were how many people dressed like me? But...I was told this is a Ruby Road original... \u003Csigh\u003E And the search continues.",
+    "Unknown0": "There were how many people dressed like me? But...I was told this is a Ruby Road original... \\\u003Csigh\u003E And the search continues.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11390,7 +11390,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Let me guess\u2500you frivoled away my brightash on the third, or perhaps fourth most beautiful woman in all the Saucer? Ah, well. Failure is but a four letter word. Or was it five?",
+    "Unknown0": "Let me guess\u2500you frivoled away my brightash on the \u003Ci\u003Ethird\u003C/i\u003E, or perhaps \u003Ci\u003Efourth\u003C/i\u003E most beautiful woman in all the Saucer? Ah, well. Failure is but a four letter word. Or was it five?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11424,7 +11424,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "You couldn\u0027t find him, could you? \u003Csigh\u003E I knew I should\u0027ve looked myself. I appreciate that you tried, though.",
+    "Unknown0": "You couldn\u0027t find him, could you? \\\u003Csigh\u003E I knew I should\u0027ve looked myself. I appreciate that you tried, though.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11458,7 +11458,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "You wasted the brightash!? Ugh, I told you to be careful! Well, I suppose I\u0027m not as unique as Mother always said I was...",
+    "Unknown0": "You wasted the brightash!? Ugh, I \u003Ci\u003Etold\u003C/i\u003E you to be careful! Well, I suppose I\u0027m not as unique as Mother always said I was...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11492,7 +11492,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u003Csigh\u003E Well, you did your best, and have my thanks. However, the search must go on...",
+    "Unknown0": "\\\u003Csigh\u003E Well, you did your best, and have my thanks. However, the search must go on...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11560,7 +11560,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Couldn\u0027t find the swivin\u0027 sneak, could ye? Well, I\u0027m not one to fault a lassman for tryin\u0027.",
+    "Unknown0": "Couldn\u0027t find the swivin\u0027 sneak, could ye? Well, I\u0027m not one to fault a \u003CIf(IntegerParameter(4))\u003Elass\u003CElse/\u003Eman\u003C/If\u003E for tryin\u0027.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11628,7 +11628,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Chose wrongly, did you? Don\u0027t blame yourself, dear\u2500I have many imitators, and most of them aren\u0027t terrible creatures from the void.",
+    "Unknown0": "Chose wrongly, did you? Don\u0027t blame yourself, dear\u2500I have many imitators, and \u003Ci\u003Emost\u003C/i\u003E of them aren\u0027t terrible creatures from the void.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11798,7 +11798,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Hm? What do you mean there was yet another as fair as I? Are you mayhap blind to the subtleties of perfection?",
+    "Unknown0": "Hm? What do you mean there was yet \u003Ci\u003Eanother\u003C/i\u003E as fair as I? Are you mayhap blind to the subtleties of perfection?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12206,7 +12206,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "No luck, eh? \u003Csigh\u003E What a bother. I\u0027ll never get to enjoy any games at this rate.",
+    "Unknown0": "No luck, eh? \\\u003Csigh\u003E What a bother. I\u0027ll never get to enjoy any games at this rate.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12546,7 +12546,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Well, it seems you took the imp out of imposter! My thanks, adventurer!",
+    "Unknown0": "Well, it seems you took the \u003Ci\u003Eimp\u003C/i\u003E out of \u003Ci\u003Eimp\u003C/i\u003Eoster! My thanks, adventurer!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12682,7 +12682,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Well done! The good patrons of the Gold Saucer are free to bask in my beauty once more. But do not stare too long, lest you enjoy too much of a good thing.",
+    "Unknown0": "Well done! The good patrons of the Gold Saucer are free to bask in my beauty once more. But do not stare too long, lest you enjoy \u003Ci\u003Etoo much\u003C/i\u003E of a good thing.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12818,7 +12818,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Huzzah! I hope you gave that imp a piece of your mind, misssir\u2500and a good thrashing as well!",
+    "Unknown0": "Huzzah! I hope you gave that imp a piece of your mind, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500and a good thrashing as well!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12920,7 +12920,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Masterfully done, misssir! To see through such powerful glamours, you must have incredible powers of observation!",
+    "Unknown0": "Masterfully done, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! To see through such powerful glamours, you must have incredible powers of observation!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13464,7 +13464,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "As you will observe, races are divided into different classes. Which classes you can enter are determined by your chocobo\u0027s current rating\u2500which is , in case you were unaware.",
+    "Unknown0": "As you will observe, races are divided into different classes. Which classes you can enter are determined by your chocobo\u0027s current rating\u2500which is \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E, in case you were unaware.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13498,7 +13498,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The Maiden class is open only to the most inexperienced competitors. As such, you and your chocobo will quickly outgrow it.",
+    "Unknown0": "The \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EMaiden\u003C/span\u003E\u003C/span\u003E class is open only to the most inexperienced competitors. As such, you and your chocobo will quickly outgrow it.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13736,7 +13736,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Select Enter a race followed by Training Course to learn the basics of chocobo racing.",
+    "Unknown0": "Select \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EEnter a race\u003C/span\u003E\u003C/span\u003E followed by \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ETraining Course\u003C/span\u003E\u003C/span\u003E to learn the basics of chocobo racing.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13770,7 +13770,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Am...am I to understand that before even undertaking the training course, you chose to... No, no, of course not. No one would do such a thing. It makes no sense. I can only presume you have yet to register your fledgling chocobo...or have somehow misplaced the registration form.\n...Of course, if you were so foolish as to part ways with your fledgling, then you would need to obtain a new one by speaking with the feathertrader at Moogle\u0027s Gift Mounts in Bentbranch Meadows.",
+    "Unknown0": "Am...am I to understand that before even undertaking the training course, you chose to... No, no, of course not. No one would do such a thing. It makes no sense. I can only presume you have yet to register your fledgling chocobo...or have somehow misplaced the registration form.\n...Of course, if you \u003Ci\u003Ewere\u003C/i\u003E so foolish as to part ways with your fledgling, then you would need to obtain a new one by speaking with the feathertrader at Moogle\u0027s Gift Mounts in Bentbranch Meadows.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13804,7 +13804,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Away with you. Can you not see I\u0027m dancing?",
+    "Unknown0": "Away with you. Can you not see I\u0027m \u003Ci\u003Edancing\u003C/i\u003E?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13872,7 +13872,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Congratulations!\nHere is your prize of , MGP. Would you like to purchase another ticket?",
+    "Unknown0": "\u003C96(1,2)\u003ECongratulations!\nHere is your prize of \u003Cformat(IntegerParameter(1),,)\u003E MGP. Would you like to purchase another ticket?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14212,7 +14212,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Lord of Verminion\nCommand your minions, and conquer your enemies!\n\nAre you prepared for battle?",
+    "Unknown0": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ELord of Verminion\u003C/span\u003E\u003C/span\u003E\nCommand your minions, and conquer your enemies!\n\nAre you prepared for battle?",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",
@@ -14246,7 +14246,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The  Lord of Verminion Tournament\n\nMatch Period (Earth Time):\n//// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday) until\n //// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday)\nEntry Conditions: MinionRules\nTournament Rule: MinionRules\n\n",
+    "Unknown0": "The \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament\n\nMatch Period (Earth Time):\n\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheetreference(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheetreference(MinionRules,IntegerParameter(4),0)\u003E\n\n",
     "Unknown1": "OK",
     "Unknown2": "",
     "Unknown3": "",
@@ -14280,7 +14280,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "No tournaments are currently being held.\n\nThe next tournament is scheduled as follows.\nMatch Period (Earth Time):\n//// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday) until\n//// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday)\nEntry Conditions: MinionRules\nTournament Rule: MinionRules\n\n",
+    "Unknown0": "No tournaments are currently being held.\n\nThe next tournament is scheduled as follows.\nMatch Period (Earth Time):\n\u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheetreference(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheetreference(MinionRules,IntegerParameter(4),0)\u003E\n\n",
     "Unknown1": "OK",
     "Unknown2": "",
     "Unknown3": "",
@@ -14314,7 +14314,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Greetings, misssir! I am here for all your Lord of Verminion tournament needs! What may I do for you?",
+    "Unknown0": "Greetings, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! I am here for all your Lord of Verminion tournament needs! What may I do for you?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14416,7 +14416,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The rules and conditions for the  Lord of Verminion Tournament are as follows:\nEntry Conditions: MinionRules\nTournament Rule: MinionRules",
+    "Unknown0": "The rules and conditions for the \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheetreference(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheetreference(MinionRules,IntegerParameter(4),0)\u003E",
     "Unknown1": "Return",
     "Unknown2": "",
     "Unknown3": "",
@@ -14484,7 +14484,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Greetings, misssir! The  Lord of Verminion Tournament is currently underway!",
+    "Unknown0": "Greetings, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! The \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament is currently underway!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14586,7 +14586,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The rules and conditions for the  Lord of Verminion Tournament are as follows:\nEntry Conditions: MinionRules\nTournament Rule: MinionRules",
+    "Unknown0": "The rules and conditions for the \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheetreference(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheetreference(MinionRules,IntegerParameter(4),0)\u003E",
     "Unknown1": "Return",
     "Unknown2": "",
     "Unknown3": "",
@@ -14756,7 +14756,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "There we are, ! You are now officially registered for the  Lord of Verminion Tournament. Best of luck!",
+    "Unknown0": "There we are, \u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E! You are now officially registered for the \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament. Best of luck!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14824,7 +14824,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "My apologies, misssir, but I cannot register your entry at this time.",
+    "Unknown0": "My apologies, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register your entry at this time.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14858,7 +14858,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "According to my records, you must fulfill the following condition to enter the current tournament. Ahem. \u201CMinionRules.\u201D\nI\u0027m afraid you don\u0027t meet the prerequisite...",
+    "Unknown0": "According to my records, you must fulfill the following condition to enter the current tournament. Ahem. \u201C\u003Csheetreference(MinionRules,IntegerParameter(2),1)\u003E.\u201D\nI\u0027m afraid you don\u0027t meet the prerequisite...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14892,7 +14892,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "My apologies, misssir, but I cannot register you for tournaments until you\u0027ve completed stage two of the Verminion Challenge...",
+    "Unknown0": "My apologies, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register you for tournaments until you\u0027ve completed stage two of the Verminion Challenge...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14960,7 +14960,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The  Lord of Verminion Tournament has come to a close! Let\u0027s have a look at the final rankings, shall we?",
+    "Unknown0": "The \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E Lord of Verminion Tournament has come to a close! Let\u0027s have a look at the final rankings, shall we?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14994,7 +14994,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Congratulations, ! You\u0027ve finished  on the board! Along with an added bonus of , points, your total winnings come to ,MGP!",
+    "Unknown0": "Congratulations, \u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E! You\u0027ve finished \u003COrdinalValue\u003EIntegerParameter(1)\u003C/OrdinalValue\u003E on the board! Along with an added bonus of \u003Cformat(IntegerParameter(2),,)\u003E points, your total winnings come to \u003Cformat(IntegerParameter(3),,)\u003EMGP!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15028,7 +15028,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "...Ah, I\u0027m afraid you didn\u0027t quite earn a winning rank this time around. You are, however, eligible to receive a participation gift of , MGP.",
+    "Unknown0": "...Ah, I\u0027m afraid you didn\u0027t quite earn a winning rank this time around. You are, however, eligible to receive a participation gift of \u003Cformat(IntegerParameter(3),,)\u003E MGP.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15062,7 +15062,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Unfortunately, you didn\u0027t qualify for any prizes. But that just gives you a goal to aim for, right,  ?",
+    "Unknown0": "Unfortunately, you didn\u0027t qualify for any prizes. But that just gives you a goal to aim for, right, \u003Csplit(\u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E, ,1)\u003E?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15130,7 +15130,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Thank you for entering, misssir, and I hope to see you return for our next Lord of Verminion tournament!",
+    "Unknown0": "Thank you for entering, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, and I hope to see you return for our next Lord of Verminion tournament!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15436,7 +15436,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Matches for the next scheduled tournament will be held from //// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday) to //// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday).",
+    "Unknown0": "Matches for the next scheduled tournament will be held from \u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) to \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15708,7 +15708,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "The current tournament will run until //// - :00 p.m.a.m. (SundayMondayTuesdayWednesdayThursdayFridaySaturday). Tournament matches can only be played until fifteen minutes before the end of the tournament period.",
+    "Unknown0": "The current tournament will run until \u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E). Tournament matches can only be played until fifteen minutes before the end of the tournament period.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15946,7 +15946,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Ah, another challenger! Just so there are no surprises, let me read out the current tournament rule. Ahem!\n\u201CMinionRules.\u201D \nShall I sign you up, then?",
+    "Unknown0": "Ah, another challenger! Just so there are no surprises, let me read out the current tournament rule. Ahem!\n\u201C\u003Csheetreference(MinionRules,IntegerParameter(2),0)\u003E.\u201D \nShall I sign you up, then?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15980,7 +15980,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "I\u0027m terribly sorry, misssir, but we are no longer accepting entries for this tournament. Not to worry, though! There\u0027ll be another competition starting soon!",
+    "Unknown0": "I\u0027m terribly sorry, \u003CIf(IntegerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but we are no longer accepting entries for this tournament. Not to worry, though! There\u0027ll be another competition starting soon!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16150,7 +16150,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16184,7 +16184,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "\u6311\u6226\u306B\u306F,MGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Cformat(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16354,7 +16354,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Spiderweb\nRenders the chocobo running immediately behind you unable to use items.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ESpiderweb\u003C/span\u003E\u003C/span\u003E\nRenders the chocobo running immediately behind you unable to use items.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16388,7 +16388,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Stamina Swapper\nInterchanges your chocobo\u0027s stamina with that of a forerunning chocobo. Swap is made only if the forerunning chocobo has more stamina than yours.",
+    "Unknown0": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EStamina Swapper\u003C/span\u003E\u003C/span\u003E\nInterchanges your chocobo\u0027s stamina with that of a forerunning chocobo. Swap is made only if the forerunning chocobo has more stamina than yours.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16592,7 +16592,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "You have entered GoldSaucerTextData ChocoboRaceChallenge. Please wait in Chocobo Square until summoned.",
+    "Unknown0": "You have entered \u003Csheetreference(GoldSaucerTextData,IntegerParameter(1),0)\u003E \u003Csheetreference(ChocoboRaceChallenge,IntegerParameter(3),0)\u003E. Please wait in Chocobo Square until summoned.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16626,7 +16626,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Welcome to drawing number  of the Jumbo Cactpot! You can buy up to  more tickettickets",
+    "Unknown0": "Welcome to drawing number \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of the Jumbo Cactpot! You can buy up to \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E more \u003CIf(Equal(IntegerParameter(2),1))\u003Eticket\u003CElse/\u003Etickets\u003C/If\u003E",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -16660,7 +16660,7 @@
     "SheetLanguage": 2
   },
   {
-    "Unknown0": "Buy another ticket?\nIt\u0027ll cost you  MGP.",
+    "Unknown0": "Buy another ticket?\nIt\u0027ll cost you \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E MGP.",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",

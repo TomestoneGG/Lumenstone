@@ -119,7 +119,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": ", .",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E, \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.",
     "RowId": 10509,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -147,7 +147,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Level \uFF5E (level synced if higher)\n\uE033Average Item Level: \u3000\n\uE0BDItem Level Sync: ",
+    "Text": "Level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CIf(GreaterThan(IntegerParameter(2),IntegerParameter(1)))\u003E\uFF5E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E (level synced if higher)\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\uE033Average Item Level: \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\u3000\n\uE0BDItem Level Sync: \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 10513,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -182,7 +182,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You do not possess enough glamour prisms.",
+    "Text": "\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003EYou do not possess enough glamour prisms.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10518,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -210,7 +210,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Commence \u201CGcArmyExpedition\u201D?\n\nEstimated Time of Return: / : (In  hourhours)\n\n\u203BUnassigned chemistry is lost upon deployment.\n\n\u203BIf a mission is successful, another may not be undertaken until the mission list resets.",
+    "Text": "Commence \u201C\u003Csheetreference(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201D?\n\nEstimated Time of Return: \u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E\u003CElse/\u003E (In \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E)\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BUnassigned chemistry is lost upon deployment.\u003C/span\u003E\u003C/span\u003E\u003CElse/\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E\n\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003E\u203BIf a mission is successful, another may not be undertaken until the mission list resets.\u003C/span\u003E\u003C/span\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 10522,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -245,14 +245,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Squadron Attributes: //",
+    "Text": "Squadron Attributes: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E",
     "RowId": 10528,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Squadron Rank: ",
+    "Text": "Squadron Rank: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u2013\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 10529,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -266,7 +266,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE031  minuteminutesLess than 1 minute hourhours and  minuteminutes remaining [//// :]",
+    "Text": "\uE031 \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/If\u003E remaining [\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
     "RowId": 10531,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -280,14 +280,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "GcArmyExpedition",
+    "Text": "\u003Csheetreference(GcArmyExpedition,IntegerParameter(1),8)\u003E",
     "RowId": 10533,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "GcArmyTraining",
+    "Text": "\u003Csheetreference(GcArmyTraining,IntegerParameter(1),4)\u003E",
     "RowId": 10534,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -315,14 +315,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "NoYes (Return to barracks to review enlistment papers)",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ENo\u003CElse/\u003EYes (Return to barracks to review enlistment papers)\u003C/If\u003E",
     "RowId": 10538,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "MissionTraining Complete (Return to barracks for debriefing)",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EMission\u003CElse/\u003ETraining\u003C/If\u003E Complete (Return to barracks for debriefing)",
     "RowId": 10539,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -343,7 +343,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Mission: ",
+    "Text": "Mission: \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 10542,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -385,7 +385,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E",
     "RowId": 10548,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -399,7 +399,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u002B",
+    "Text": "\u002B\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10550,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -420,14 +420,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Mission UnderwayMission Complete",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EMission Underway\u003CElse/\u003EMission Complete\u003C/If\u003E",
     "RowId": 10553,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "TrainingTraining Complete",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ETraining\u003CElse/\u003ETraining Complete\u003C/If\u003E",
     "RowId": 10554,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -483,14 +483,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "New Battle Tactic Acquired: ",
+    "Text": "New Battle Tactic Acquired: \u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E",
     "RowId": 10562,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Tactic Mastery: ",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E Tactic Mastery: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 10563,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -595,28 +595,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "EXP Reward: ",
+    "Text": "EXP Reward: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10578,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Commence \u201C\u201D?",
+    "Text": "Commence \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D?",
     "RowId": 10579,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Commence \u201C\u201D?\n\u203BSquadron attribute total exceeds value allowed by current squadron rank. One or more squadron attributes will be capped.",
+    "Text": "Commence \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D?\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BSquadron attribute total exceeds value allowed by current squadron rank. One or more squadron attributes will be capped.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10580,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Daily Sessions Remaining:\n",
+    "Text": "Daily Sessions Remaining:\n\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10581,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -665,14 +665,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Squadron glamours are available from level 51.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ESquadron glamours are available from level 51.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10588,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "To apply a glamour, speak to a squadron member.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ETo apply a glamour, speak to a squadron member.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10589,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -700,7 +700,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE031  minuteminutesLess than 1 minute hourhours and  minuteminutes [//// :]",
+    "Text": "\uE031 \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E\u003C/If\u003E\u003C/If\u003E [\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E]",
     "RowId": 10593,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -742,28 +742,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "EXP Earned: ",
+    "Text": "EXP Earned: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10599,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Squadron glamours unavailable.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ESquadron glamours unavailable.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10600,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Squadron Attributes: /",
+    "Text": "Squadron Attributes: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E",
     "RowId": 10603,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 10604,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -966,7 +966,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Race \u2642\u2640",
+    "Text": "\u003Csheetreference(Race,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E",
     "RowId": 10659,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1001,14 +1001,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "//",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E",
     "RowId": 10664,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Enlisted //",
+    "Text": "Enlisted \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E",
     "RowId": 10665,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1057,7 +1057,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ClassJob Lv. ",
+    "Text": "\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E Lv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 10672,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1071,21 +1071,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Dismiss ?",
+    "Text": "Dismiss \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E?",
     "RowId": 10674,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Discharge  and recruit ?",
+    "Text": "Discharge \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E and recruit \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E?",
     "RowId": 10675,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Use Item to order the class change?\n(All glamours will be removed.)",
+    "Text": "Use \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E to order the class change?\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E(All glamours will be removed.)\u003C/span\u003E\u003C/span\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 10676,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1176,28 +1176,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u002B%",
+    "Text": "\u002B\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%",
     "RowId": 10689,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "-%",
+    "Text": "-\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%",
     "RowId": 10690,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "  (Mastery: )",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E  (Mastery: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 10691,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u2013",
     "RowId": 10692,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1253,7 +1253,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " (Invited)",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E (Invited)",
     "RowId": 10705,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1267,7 +1267,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "To organize a custom match, you must have two light or full parties willing to participate. Once invitations have been sent, the leader of the Claws can continue the registration process by pressing the Join button.\n\n\u203BSpectator parties must have at least two members.\n\u203BInvitations for spectator parties cannot be sent until participating parties have been formed.\n\u203BWhen organizing a custom match, the leaders of the participating and spectating parties must be in the same area.\n\u203BUndersized party settings are ignored in custom matches.\n\n\u203BThe following will cancel match registration:\n\u3000\u30FBA party leader leaves the area\n\u3000\u30FBA party leader is changed\n\u3000\u30FBA party member logs out\n\u3000\u30FBA new member joins a party\n\u3000\u30FBA member leaves a party\n\u3000\u30FBA party is disbanded\n\u3000\u30FBA party declines the match registration\n\u3000\u30FBThe \u201CCancel All\u201D button is pressed\n",
+    "Text": "To organize a custom match, you must have two light or full parties willing to participate. Once invitations have been sent, the leader of the Claws can continue the registration process by pressing the Join button.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BSpectator parties must have at least two members.\n\u203BInvitations for spectator parties cannot be sent until participating parties have been formed.\n\u203BWhen organizing a custom match, the leaders of the participating and spectating parties must be in the same area.\n\u203BUndersized party settings are ignored in custom matches.\n\n\u203BThe following will cancel match registration:\n\u3000\u30FBA party leader leaves the area\n\u3000\u30FBA party leader is changed\n\u3000\u30FBA party member logs out\n\u3000\u30FBA new member joins a party\n\u3000\u30FBA member leaves a party\n\u3000\u30FBA party is disbanded\n\u3000\u30FBA party declines the match registration\n\u3000\u30FBThe \u201CCancel All\u201D button is pressed\n\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10707,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1302,14 +1302,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Challenge \u0027s party to a custom match.",
+    "Text": "Challenge \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u0027s party to a custom match.",
     "RowId": 10712,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Invite \u0027s party to view a custom match.",
+    "Text": "Invite \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u0027s party to view a custom match.",
     "RowId": 10713,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1330,21 +1330,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have been challenged by  to a custom match in the Wolves\u0027 Den. Accept challenge?",
+    "Text": "You have been challenged by \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E to a custom match in the Wolves\u0027 Den. Accept challenge?",
     "RowId": 10716,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "You have been invited by  to spectate at a custom match in the Wolves\u0027 Den. Accept invitation?",
+    "Text": "You have been invited by \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E to spectate at a custom match in the Wolves\u0027 Den. Accept invitation?",
     "RowId": 10717,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Decline \u0027s invitation to a custom match?",
+    "Text": "Decline \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u0027s invitation to a custom match?",
     "RowId": 10718,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1372,7 +1372,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Confirming... (/)",
+    "Text": "Confirming... (\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 10722,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1456,7 +1456,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Rematches Left: ",
+    "Text": "Rematches Left: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10734,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1512,14 +1512,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Match Camera: ",
+    "Text": "Match Camera: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10742,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " Switch Camera   Display Menu",
+    "Text": "\u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Switch Camera  \u003CIcon2\u003E18\u003C/Icon2\u003E Display Menu",
     "RowId": 10743,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1575,14 +1575,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Limit: - minutes",
+    "Text": "Time Limit: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E-\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E minutes",
     "RowId": 10804,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "1- Players",
+    "Text": "1-\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Players",
     "RowId": 10805,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1617,14 +1617,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ContentFinderCondition",
+    "Text": "\u003Csheetreference(ContentFinderCondition,IntegerParameter(1),41)\u003E",
     "RowId": 10810,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BThe \u201CDuty Complete\u201D option is only available for previously\n\u3000completed duties.\n\u203BPractice phase selection does not entail the actual skipping of\n\u3000phases.\n",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously\n\u3000completed duties.\n\u203BPractice phase selection does not entail the actual skipping of\n\u3000phases.\u003C/span\u003E\u003C/span\u003E\n",
     "RowId": 10811,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1645,49 +1645,49 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Freelancers can participate in Frontline campaigns without being bound to their Grand Company of allegiance.\n\u203BWhen joining as a party, members will default to the freelance status.",
+    "Text": "Freelancers can participate in Frontline campaigns without being bound to their Grand Company of allegiance.\n\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003E\u203BWhen joining as a party, members will default to the freelance status.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10814,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": ":/ :/ :/",
+    "Text": "\u003CBitmapFontIcon\u003E82\u003C/BitmapFontIcon\u003E:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CBitmapFontIcon\u003E83\u003C/BitmapFontIcon\u003E:\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E \u003CBitmapFontIcon\u003E84\u003C/BitmapFontIcon\u003E:\u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(6)\u003C/Value\u003E",
     "RowId": 10815,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": ":/",
+    "Text": "\u003CBitmapFontIcon\u003E87\u003C/BitmapFontIcon\u003E:\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 10816,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Elapsed: :/Average Wait Time: ",
+    "Text": "Time Elapsed: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E/Average Wait Time: \u003CHighlight\u003EStringParameter(3)\u003C/Highlight\u003E",
     "RowId": 10817,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Role Waiting List Number: ",
+    "Text": "Role Waiting List Number: \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 10818,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Elapsed: :",
+    "Text": "Time Elapsed: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E",
     "RowId": 10819,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "ContentType (ARR, Heavensward, Stormblood, Shadowbringers)",
+    "Text": "\u003CLink\u003E\u003Csheetreference(ContentType,IntegerParameter(1),0)\u003E\u003C/Link\u003E (ARR, Heavensward, Stormblood, Shadowbringers)",
     "RowId": 10820,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1715,7 +1715,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BThis duty is only open for full parties without role requirements. Matching requirements cannot be set.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BThis duty is only open for full parties without role requirements. Matching requirements cannot be set.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10824,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1736,7 +1736,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Participating Parties: Two onetwothreefourfivesixseveneightnineten-player parties\nSpectator Party: 1-8 players",
+    "Text": "Participating Parties: Two \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E-player parties\nSpectator Party: 1-8 players",
     "RowId": 10827,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1778,7 +1778,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Reduced Difficulty",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CElse/\u003EReduced Difficulty\u003C/If\u003E",
     "RowId": 10834,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1799,7 +1799,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Matching Requirements\nThe \u201CDuty Complete\u201D option is only available for previously completed duties.\n\nPurpose\nThe \u201CDuty Completion\u201D option is only available if the weekly reward has yet to be obtained.\n\nPractice Phase Selection\nThis is only available when \u201CPurpose\u201D is set to \u201CPractice.\u201D Practice phase selection does not entail the actual skipping of phases.\n\nIf the registration period overlaps with the weekly reset, registration will be canceled.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EMatching Requirements\u003C/span\u003E\u003C/span\u003E\nThe \u201CDuty Complete\u201D option is only available for previously completed duties.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EPurpose\u003C/span\u003E\u003C/span\u003E\nThe \u201CDuty Completion\u201D option is only available if the weekly reward has yet to be obtained.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EPractice Phase Selection\u003C/span\u003E\u003C/span\u003E\nThis is only available when \u201CPurpose\u201D is set to \u201CPractice.\u201D Practice phase selection does not entail the actual skipping of phases.\n\nIf the registration period overlaps with the weekly reset, registration will be canceled.",
     "RowId": 10837,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1813,7 +1813,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.\n\nProgress is reset every week on SundayMondayTuesdayWednesdayThursdayFridaySaturday at  p.m.a.m. (Earth time).\n",
+    "Text": "Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.\n\nProgress is reset every week on \u003Cresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).\n",
     "RowId": 10839,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1869,7 +1869,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item Level ",
+    "Text": "Item Level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10847,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1911,7 +1911,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Remaining: ",
+    "Text": "Time Remaining: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10853,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1953,21 +1953,21 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Decline \u0027s challenge?",
+    "Text": "Decline \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u0027s challenge?",
     "RowId": 10859,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE033",
+    "Text": "\uE033\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10860,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Lv. ",
+    "Text": "Lv. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 10861,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2002,7 +2002,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " will be reported as conducting RMT activity.\nIf this report is found to be baseless and/or of malicious intent, you may face punishment.\nProceed?",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E will be reported as conducting RMT activity.\n\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003EIf this report is found to be baseless and/or of malicious intent, you may face punishment.\u003C/span\u003E\u003C/span\u003E\nProceed?",
     "RowId": 10871,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2149,7 +2149,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "-",
+    "Text": "\u2013-",
     "RowId": 10906,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2191,14 +2191,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE06A  ",
+    "Text": "\uE06A\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E \u003CIf(IntegerParameter(3))\u003E\u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E\u003CElse/\u003E\u003C/If\u003E \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 10912,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "\uE06A???  ",
+    "Text": "\uE06A??? \u003CIf(IntegerParameter(2))\u003E\u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E\u003CElse/\u003E\u003C/If\u003E \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 10913,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2254,14 +2254,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Current Location: ",
+    "Text": "Current Location: \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 10921,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Time Limit: m",
+    "Text": "Time Limit: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003Em",
     "RowId": 10922,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2310,7 +2310,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Beginners/first-timers welcome",
+    "Text": "\u003CBitmapFontIcon\u003E77\u003C/BitmapFontIcon\u003EBeginners/first-timers welcome",
     "RowId": 10929,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2373,7 +2373,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BSettings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BSettings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10938,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2429,7 +2429,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The names of blacklisted players from other World servers will be saved to your PC.\n\nAdd  to your blacklist?",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EThe names of blacklisted players from other World servers will be saved to your PC.\u003C/span\u003E\u003C/span\u003E\n\nAdd \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E to your blacklist?",
     "RowId": 10946,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2443,7 +2443,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "-",
+    "Text": "\u2013-",
     "RowId": 10948,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2464,7 +2464,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 10951,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2478,7 +2478,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u2013",
     "RowId": 10953,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2492,7 +2492,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\n\u203BNames of characters on other Worlds are saved to the client.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\n\u203BNames of characters on other Worlds are saved to the client.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 10955,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2506,14 +2506,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Returner Status",
+    "Text": "\u003CBitmapFontIcon\u003E95\u003C/BitmapFontIcon\u003EReturner Status",
     "RowId": 10960,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "The Returner status is applied to players who have at least one class at level 50 or above, have not visited Eorzea in more than 45 days, and have accepted the Returner\u0027s Bounty.\n\nThe Returner\u0027s Bounty consists of the following:\n  Novice Network Access\n  EXP bonus when partying with a Mentor (up to Lv. 80)\n  Returner online status icon\n\nReturner status is removed after accumulating 72 hours of gameplay after accepting the Bounty, or by using the text command TextCommand.",
+    "Text": "The \u003CBitmapFontIcon\u003E95\u003C/BitmapFontIcon\u003EReturner status is applied to players who have at least one class at level 50 or above, have not visited Eorzea in more than 45 days, and have accepted the Returner\u0027s Bounty.\n\nThe Returner\u0027s Bounty consists of the following:\n  \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ENovice Network Access\n  EXP bonus when partying with a \u003CBitmapFontIcon\u003E78\u003C/BitmapFontIcon\u003EMentor (up to Lv. 80)\n  Returner online status icon\u003C/span\u003E\u003C/span\u003E\n\nReturner status is removed after accumulating 72 hours of gameplay after accepting the Bounty, or by using the text command \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u003Csheetreference(TextCommand,238,8)\u003E\u003C/span\u003E\u003C/span\u003E.",
     "RowId": 10961,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2527,7 +2527,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Once Returner status has been removed, it cannot be obtained again until certain conditions are met.\n\nProceed?",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EOnce Returner status has been removed, it cannot be obtained again until certain conditions are met.\u003C/span\u003E\u003C/span\u003E\n\nProceed?",
     "RowId": 10963,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2555,7 +2555,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You will be granted another opportunity to accept the Returner\u0027s Bounty upon your next login.\n\nProceed?",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EYou will be granted another opportunity to accept the Returner\u0027s Bounty upon your next login.\u003C/span\u003E\u003C/span\u003E\n\nProceed?",
     "RowId": 10967,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2604,7 +2604,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Battle Mentor",
+    "Text": "\u003CBitmapFontIcon\u003E79\u003C/BitmapFontIcon\u003E Battle Mentor",
     "RowId": 10974,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2618,7 +2618,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " Trade Mentor",
+    "Text": "\u003CBitmapFontIcon\u003E80\u003C/BitmapFontIcon\u003E Trade Mentor",
     "RowId": 10976,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2681,14 +2681,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "3: Complete any level  tank role quest.",
+    "Text": "3: Complete any level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E tank role quest.",
     "RowId": 10985,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "4: Complete any level  healer role quest.",
+    "Text": "4: Complete any level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E healer role quest.",
     "RowId": 10986,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2737,7 +2737,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Adjust level of all items equipped by both parties to the lowest level item (\uE0BD).",
+    "Text": "Adjust level of all items equipped by both parties to the lowest level item (\uE0BD\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E).",
     "RowId": 10993,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2814,14 +2814,14 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Open Item?\n\nItem remaining: \nAttempts remaining: ",
+    "Text": "Open \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E?\n\n\u003CLink\u003E\u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E\u003C/Link\u003E remaining: \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\nAttempts remaining: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 11005,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Open Item?\n\nItem remaining: \nAttempts remaining: ",
+    "Text": "Open \u003Csheetreferenceen(Item,2,IntegerParameter(1),2,1)\u003E?\n\n\u003CLink\u003E\u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E\u003C/Link\u003E remaining: \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\nAttempts remaining: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 11006,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2870,7 +2870,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Once per week, completion of an unreal trial grants access to Faux Hollows.\n\u203BThe \u201CDuty Complete\u201D option is only available for previously completed duties.\n\u203BEarn a retelling while playing Faux Hollows to unlock one additional play per week.\n\u203BPractice phase selection does not entail the actual skipping of phases.",
+    "Text": "Once per week, completion of an unreal trial grants access to Faux Hollows.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously completed duties.\n\u203BEarn a retelling while playing Faux Hollows to unlock one additional play per week.\n\u203BPractice phase selection does not entail the actual skipping of phases.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 11014,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2891,7 +2891,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Faux Hollows Unavailable",
+    "Text": "\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EFaux Hollows Unavailable\u003C/span\u003E\u003C/span\u003E",
     "RowId": 11017,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2926,210 +2926,210 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Action",
+    "Text": "\u003CLink\u003E\u003Csheetreference(Action,IntegerParameter(1),0)\u003E\u003C/Link\u003E",
     "RowId": 11025,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Hello.",
+    "Text": "Hello.\u003C96(1,96)\u003E",
     "RowId": 11030,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Good match!",
+    "Text": "Good match!\u003C96(1,96)\u003E",
     "RowId": 11031,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Thank you.",
+    "Text": "Thank you.\u003C96(1,97)\u003E",
     "RowId": 11032,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Nice job!",
+    "Text": "Nice job!\u003C96(1,97)\u003E",
     "RowId": 11033,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Action ready!ready in s!",
+    "Text": "\u003CLink\u003E\u003Csheetreference(Action,IntegerParameter(1),0)\u003E\u003C/Link\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003Eready!\u003C96(1,98)\u003E\u003CElse/\u003Eready in \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003Es!\u003C96(1,99)\u003E\u003C/If\u003E",
     "RowId": 11034,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "ClassJob: Limit break ready!at %!",
+    "Text": "\u003CLink\u003E\u003Csheetreference(ClassJob,IntegerParameter(2),0)\u003E\u003C/Link\u003E: Limit break \u003CIf(Equal(IntegerParameter(1),100))\u003Eready!\u003C96(1,98)\u003E\u003CElse/\u003Eat \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%!\u003C96(1,99)\u003E\u003C/If\u003E",
     "RowId": 11035,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Collecting offensive supplies!",
+    "Text": "Collecting offensive supplies!\u003C96(1,100)\u003E",
     "RowId": 11036,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Collecting defensive supplies!",
+    "Text": "Collecting defensive supplies!\u003C96(1,100)\u003E",
     "RowId": 11037,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Collecting adrenaline supplies!",
+    "Text": "Collecting adrenaline supplies!\u003C96(1,100)\u003E",
     "RowId": 11038,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Collecting wolf\u0027s heart!",
+    "Text": "Collecting wolf\u0027s heart!\u003C96(1,100)\u003E",
     "RowId": 11039,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Attacking tank!",
+    "Text": "Attacking tank!\u003C96(1,101)\u003E",
     "RowId": 11040,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Attacking healer!",
+    "Text": "Attacking healer!\u003C96(1,101)\u003E",
     "RowId": 11041,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Attacking melee DPS!",
+    "Text": "Attacking melee DPS!\u003C96(1,101)\u003E",
     "RowId": 11042,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Attacking ranged DPS!",
+    "Text": "Attacking ranged DPS!\u003C96(1,101)\u003E",
     "RowId": 11043,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Stopping tank!",
+    "Text": "Stopping tank!\u003C96(1,102)\u003E",
     "RowId": 11044,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Stopping healer!",
+    "Text": "Stopping healer!\u003C96(1,102)\u003E",
     "RowId": 11045,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Stopping melee DPS!",
+    "Text": "Stopping melee DPS!\u003C96(1,102)\u003E",
     "RowId": 11046,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Stopping ranged DPS!",
+    "Text": "Stopping ranged DPS!\u003C96(1,102)\u003E",
     "RowId": 11047,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Collecting medals!",
+    "Text": "Collecting medals!\u003C96(1,103)\u003E",
     "RowId": 11048,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Get the medals!",
+    "Text": "Get the medals!\u003C96(1,103)\u003E",
     "RowId": 11049,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Everyone, attack!",
+    "Text": "Everyone, attack!\u003C96(1,104)\u003E",
     "RowId": 11050,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Fall back and regroup!",
+    "Text": "Fall back and regroup!\u003C96(1,99)\u003E",
     "RowId": 11051,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "MP at %!",
+    "Text": "MP at \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%!\u003C96(1,99)\u003E",
     "RowId": 11052,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "TP at %!",
+    "Text": "TP at \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%!\u003C96(1,99)\u003E",
     "RowId": 11053,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Attacking ClassJob! ",
+    "Text": "Attacking \u003C47\u003E\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/47\u003E! \u003C96(1,101)\u003E",
     "RowId": 11054,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Blocking ClassJob! ",
+    "Text": "Blocking \u003C47\u003E\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/47\u003E! \u003C96(1,102)\u003E",
     "RowId": 11055,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Action ready!ready in s!",
+    "Text": "\u003CLink\u003E\u003Csheetreference(Action,IntegerParameter(1),0)\u003E\u003C/Link\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003Eready!\u003C96(1,98)\u003E\u003CElse/\u003Eready in \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003Es!\u003C96(1,99)\u003E\u003C/If\u003E",
     "RowId": 11056,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "Focus on the ClassJob!",
+    "Text": "Focus on the \u003C47\u003E\u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/47\u003E!",
     "RowId": 11057,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "End focused attack! ",
+    "Text": "End focused attack! \u003C96(1,99)\u003E",
     "RowId": 11058,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3164,7 +3164,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u203BSettings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203BSettings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 11064,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3388,28 +3388,28 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 11096,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": " ",
+    "Text": "\u003Cswitch(IntegerParameter(1),,\u003Cspan uiForeground=\u0022576\u0022 color=\u0022#5be2ff\u0022\u003E,\u003Cspan uiForeground=\u0022575\u0022 color=\u0022#37de99\u0022\u003E,\u003Cspan uiForeground=\u0022577\u0022 color=\u0022#ffc240\u0022\u003E,\u003Cspan uiForeground=\u0022578\u0022 color=\u0022#ff5ad0\u0022\u003E)\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003Cswitch(IntegerParameter(1),,\u003C/span\u003E,\u003C/span\u003E,\u003C/span\u003E,\u003C/span\u003E)\u003E ",
     "RowId": 11097,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "[]",
+    "Text": "[\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E]",
     "RowId": 11098,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
   },
   {
-    "Text": "()",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E(\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 11099,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3479,7 +3479,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Join \u0027s alliance for ?",
+    "Text": "Join \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u0027s alliance for \u003CHighlight\u003EStringParameter(3)\u003C/Highlight\u003E?",
     "RowId": 11109,
     "SubRowId": 0,
     "SheetName": "Addon",

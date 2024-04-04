@@ -165,7 +165,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You plant seeds in the 1st2nd3rd4th5th6th7th8th9th10th bed, 1st2nd3rd4th5th6th7th8th9th10th patch.",
+    "Text": "You plant seeds in the \u003Cswitch(IntegerParameter(2),1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th)\u003E bed, \u003Cswitch(IntegerParameter(1),1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th)\u003E patch.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -308,7 +308,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room # has been added to the estate.",
+    "Text": "Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E has been added to the estate.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -319,7 +319,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room # has been added to the estate.",
+    "Text": "Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E has been added to the estate.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -330,7 +330,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr addadds room # to the estate.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eadd\u003CElse/\u003Eadds\u003C/If\u003E room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E to the estate.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room # has been demolished.",
+    "Text": "Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E has been demolished.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -363,7 +363,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room # has been demolished.",
+    "Text": "Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E has been demolished.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -374,7 +374,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr demolishdemolishes room #.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edemolish\u003CElse/\u003Edemolishes\u003C/If\u003E room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -440,7 +440,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You change the name of your private chambers to \u201C.\u201D",
+    "Text": "You change the name of your private chambers to \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -594,7 +594,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You partake of Item, and it is sublime.",
+    "Text": "You partake of \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E, and it is sublime.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -605,7 +605,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You partake of the last Item, and it is sublime.",
+    "Text": "You partake of the last \u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E, and it is sublime.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -627,7 +627,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You purchase Room #.",
+    "Text": "You purchase Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -660,7 +660,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room # has been vacated.",
+    "Text": "Room #\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E has been vacated.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -704,7 +704,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You purchase the deed to plot , ward , PlaceName.",
+    "Text": "You purchase the deed to plot \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E, ward \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E, \u003Csheetreferenceen(PlaceName,2,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -715,7 +715,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You build an an an an an an an an an a HousingPreset on plot , ward , PlaceName.",
+    "Text": "You build \u003CIf(Equal(IntegerParameter(4),262163))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262164))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262165))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262166))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262167))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262168))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262169))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262170))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262171))\u003Ean \u003CElse/\u003Ea \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003Csheetreference(HousingPreset,IntegerParameter(4),0)\u003E on plot \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E, ward \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E, \u003Csheetreferenceen(PlaceName,2,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -726,7 +726,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " removed.",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E removed.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -737,7 +737,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You relinquish the deed to plot , ward , PlaceName.",
+    "Text": "You relinquish the deed to plot \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E, ward \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E, \u003Csheetreferenceen(PlaceName,2,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -748,7 +748,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Nothing remains of Item.",
+    "Text": "Nothing remains of \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -792,7 +792,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item is placed in wheel slot onetwothreefourfivesixseveneightnineten.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(2),1,1)\u003E\u003C/Link\u003E is placed in wheel slot \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -814,7 +814,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The unprimed Item is removed from wheel slot onetwothreefourfivesixseveneightnineten.",
+    "Text": "The unprimed \u003Csheetreferenceen(Item,3,IntegerParameter(2),1,1)\u003E is removed from wheel slot \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -836,7 +836,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item is removed from wheel slot onetwothreefourfivesixseveneightnineten.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(2),1,1)\u003E\u003C/Link\u003E is removed from wheel slot \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -847,7 +847,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Company action \u201CCompanyAction\u201D is ready for activation.",
+    "Text": "Company action \u201C\u003Csheetreference(CompanyAction,IntegerParameter(1),0)\u003E\u201D is ready for activation.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -858,7 +858,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr readyreadies company action \u201CCompanyAction\u201D for activation.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eready\u003CElse/\u003Ereadies\u003C/If\u003E company action \u201C\u003Csheetreference(CompanyAction,IntegerParameter(2),0)\u003E\u201D for activation.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -891,7 +891,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room name changed to \u201C.\u201D",
+    "Text": "Room name changed to \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1067,7 +1067,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr addadds a company workshop to the estate.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eadd\u003CElse/\u003Eadds\u003C/If\u003E a company workshop to the estate.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1122,7 +1122,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr removeremoves the company workshop from the estate.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eremove\u003CElse/\u003Eremoves\u003C/If\u003E the company workshop from the estate.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1166,7 +1166,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " has been dispatched onto estate property.",
+    "Text": "\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E has been dispatched onto estate property.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1243,7 +1243,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Project quality increases by !did not increase.",
+    "Text": "Project quality \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eincreases by \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E!\u003CElse/\u003Edid not increase.\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1309,7 +1309,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Construction on Item has begun in the company workshop.",
+    "Text": "Construction on \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E has begun in the company workshop.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1386,7 +1386,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ProgressExcellent progressOutstanding progress was made on Item.",
+    "Text": "\u003Cswitch(IntegerParameter(2),Progress,Excellent progress,Outstanding progress)\u003E was made on \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1397,7 +1397,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ProgressExcellent progressOutstanding progress was made in completing Item.",
+    "Text": "\u003Cswitch(IntegerParameter(2),Progress,Excellent progress,Outstanding progress)\u003E was made in completing \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1430,7 +1430,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You remove Item from the workshop and place it in your inventory.",
+    "Text": "You remove \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E from the workshop and place it in your inventory.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1485,7 +1485,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "CompanyCraftDraft created.\nA new recipe has been added to the company crafting log.",
+    "Text": "\u003CLink\u003E\u003Csheetreference(CompanyCraftDraft,IntegerParameter(1),0)\u003E\u003C/Link\u003E created.\nA new recipe has been added to the company crafting log.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -1573,7 +1573,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to register vessel. Insufficient Item.",
+    "Text": "Unable to register vessel. Insufficient \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1595,7 +1595,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Company airship No.  -  registered.",
+    "Text": "Company airship No. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E - \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E registered.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1606,7 +1606,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr registerregisters company airship No.  - ObjStr.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eregister\u003CElse/\u003Eregisters\u003C/If\u003E company airship No. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E - \u003C/i\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/i\u003E.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1628,7 +1628,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Company airship No.  name changed to .",
+    "Text": "Company airship No. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E name changed to \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1650,7 +1650,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Company airship No.  -  dismantled.",
+    "Text": "Company airship No. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E - \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E dismantled.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1661,7 +1661,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr dismantledismantles company airship No.  - ObjStr.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edismantle\u003CElse/\u003Edismantles\u003C/If\u003E company airship No. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E - \u003C/i\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/i\u003E.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1727,7 +1727,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to deploy vessel. Vessel AirshipExplorationParamType rating must be at least .",
+    "Text": "Unable to deploy vessel. Vessel \u003Csheetreference(AirshipExplorationParamType,IntegerParameter(1),0)\u003E rating must be at least \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1738,7 +1738,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " has embarked on an exploratory voyage.",
+    "Text": "\u003Ci\u003E\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E\u003C/i\u003E has embarked on an exploratory voyage.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1749,7 +1749,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " has been recalled from an exploratory voyage.",
+    "Text": "\u003Ci\u003E\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E\u003C/i\u003E has been recalled from an exploratory voyage.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1771,7 +1771,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " exploratory voyage finalized.",
+    "Text": "\u003Ci\u003E\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E\u003C/i\u003E exploratory voyage finalized.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1782,7 +1782,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr finalizefinalizes the exploratory voyage for ObjStr.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Efinalize\u003CElse/\u003Efinalizes\u003C/If\u003E the exploratory voyage for \u003Ci\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/i\u003E.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1793,7 +1793,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "A new exploratory voyage destination\u2500AirshipExplorationPoint\u2500has been discovered!",
+    "Text": "A new exploratory voyage destination\u2500\u003Csheetreference(AirshipExplorationPoint,IntegerParameter(1),0)\u003E\u2500has been discovered!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1804,7 +1804,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " attains rank !",
+    "Text": "\u003Ci\u003E\u003CLink\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/Link\u003E\u003C/i\u003E attains rank \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1815,7 +1815,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The free company may now register airship No. .",
+    "Text": "The free company may now register airship No. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1848,7 +1848,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item has been repaired.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E has been repaired.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1859,7 +1859,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to repair vessel component without the required Item.",
+    "Text": "Unable to repair vessel component without the required \u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1870,7 +1870,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item does not currently require repairs.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E does not currently require repairs.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1892,7 +1892,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Room brightness set to .",
+    "Text": "Room brightness set to \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1980,7 +1980,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr chartcharts a new course to the Diadem (Hard)!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Echart\u003CElse/\u003Echarts\u003C/If\u003E a new course to the Diadem (Hard)!",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2002,7 +2002,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command.  is currently on an exploratory voyage.",
+    "Text": "Unable to execute command. \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E is currently on an exploratory voyage.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2013,7 +2013,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command.  has already been prepped for duty.",
+    "Text": "Unable to execute command. \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E has already been prepped for duty.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2024,7 +2024,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command.  is currently on an exploratory mission or awaiting mission finalization.",
+    "Text": "Unable to execute command. \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E is currently on an exploratory mission or awaiting mission finalization.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2035,7 +2035,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command. One or more of \u0027s parts are damaged.",
+    "Text": "Unable to execute command. One or more of \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E\u0027s parts are damaged.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2046,7 +2046,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command.  has not yet attained the sufficient rank.",
+    "Text": "Unable to execute command. \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E has not yet attained the sufficient rank.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2057,7 +2057,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command.  AirshipExplorationParamType must be higher than .",
+    "Text": "Unable to execute command. \u003Ci\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/i\u003E \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003E\u003Csheetreference(AirshipExplorationParamType,IntegerParameter(2),0)\u003E\u003C/span\u003E\u003C/span\u003E must be higher than \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2079,7 +2079,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command. You do not have the proper authorization (FCAuthority).",
+    "Text": "Unable to execute command. You do not have the proper authorization (\u003Csheetreference(FCAuthority,68,0)\u003E).",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2090,7 +2090,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command. You do not have the proper authorization (FCAuthority).",
+    "Text": "Unable to execute command. You do not have the proper authorization (\u003Csheetreference(FCAuthority,72,0)\u003E).",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2101,7 +2101,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command. You do not have the proper authorization (FCAuthority).",
+    "Text": "Unable to execute command. You do not have the proper authorization (\u003Csheetreference(FCAuthority,74,0)\u003E).",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2112,7 +2112,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute command. You do not have the proper authorization (FCAuthority).",
+    "Text": "Unable to execute command. You do not have the proper authorization (\u003Csheetreference(FCAuthority,70,0)\u003E).",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2167,7 +2167,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr is resting in the apartment\u0027s chocobo stables.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E is resting in the apartment\u0027s chocobo stables.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2211,7 +2211,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "An aetherial wheel has already been placed in wheel slot onetwothreefourfivesixseveneightnineten.",
+    "Text": "An aetherial wheel has already been placed in wheel slot \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2222,7 +2222,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You do not possess an aetherial wheel that will fit in wheel slot onetwothreefourfivesixseveneightnineten.",
+    "Text": "You do not possess an aetherial wheel that will fit in wheel slot \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2409,7 +2409,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Maximum HP, damage dealt, and spell-based HP restoration have been increased by %.",
+    "Text": "Maximum HP, damage dealt, and spell-based HP restoration have been increased by \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2464,7 +2464,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your item level has been synced to .\n\u203BWhile synced, all item stats are adjusted.",
+    "Text": "Your item level has been synced to \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\n\u203BWhile synced, all item stats are adjusted.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2475,7 +2475,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "One or more party members have yet to complete this duty.\nA bonus of  Item will be awarded upon completion.",
+    "Text": "One or more party members have yet to complete this duty.\nA bonus of \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E will be awarded upon completion.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -2563,7 +2563,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " of  party members are eligible for duty rewards. The number of coffers to appear will be  of a possible .",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E party members are eligible for duty rewards. The number of coffers to appear will be \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E of a possible \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -2618,7 +2618,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " of  party members were eligible for duty rewards. The number of coffers to appear has been finalized at  of a possible .",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E party members were eligible for duty rewards. The number of coffers to appear has been finalized at \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E of a possible \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -2706,7 +2706,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " of  party members are eligible for duty rewards. The number of coffers to appear will be  of a possible .",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E party members are eligible for duty rewards. The number of coffers to appear will be \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E of a possible \u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2728,7 +2728,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have entered a duty with the Unrestricted Party option enabled.\nDamage dealt, healing potency, and maximum HP are increased by %.",
+    "Text": "You have entered a duty with the Unrestricted Party option enabled.\nDamage dealt, healing potency, and maximum HP are increased by \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E%.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2816,7 +2816,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You obtain Item!",
+    "Text": "You obtain \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2860,7 +2860,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You infuse Item with Item.",
+    "Text": "You infuse \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E with \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2871,7 +2871,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "  \uE06F BaseParam rises to \u002B!",
+    "Text": "  \uE06F \u003Csheetreference(BaseParam,IntegerParameter(1),1)\u003E rises to \u002B\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2893,7 +2893,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The infusion fails. You lose Item.",
+    "Text": "The infusion fails. You lose \u003Csheetreferenceen(Item,2,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2915,7 +2915,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You do not possess any Item.",
+    "Text": "You do not possess any \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -2992,7 +2992,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to repair vessel. Insufficient Item.",
+    "Text": "Unable to repair vessel. Insufficient \u003Csheetreferenceen(Item,3,IntegerParameter(1),3,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3003,7 +3003,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item does not require repairs.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E does not require repairs.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3058,7 +3058,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Insufficient Item.",
+    "Text": "Insufficient \u003Csheetreferenceen(Item,3,IntegerParameter(1),3,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -3102,7 +3102,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to submit materials. You must have attained at least level  of the required class.",
+    "Text": "Unable to submit materials. You must have attained at least level \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E of the required class.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3146,7 +3146,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to commence voyage. Insufficient Item.",
+    "Text": "Unable to commence voyage. Insufficient \u003Csheetreferenceen(Item,3,IntegerParameter(1),3,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3168,7 +3168,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to commence voyage. AirshipExplorationParamType rating must be at least .",
+    "Text": "Unable to commence voyage. \u003CLink\u003E\u003Csheetreference(AirshipExplorationParamType,IntegerParameter(1),0)\u003E\u003C/Link\u003E rating must be at least \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3278,7 +3278,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You trade Item for  Item.",
+    "Text": "You trade \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E for \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(2),IntegerParameter(3),1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3399,7 +3399,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr castcasts a glamour. Item takes on the appearance of Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ecast\u003CElse/\u003Ecasts\u003C/If\u003E a glamour. \u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E takes on the appearance of \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3410,7 +3410,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr dispeldispels a glamour. Item returns to its true form.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edispel\u003CElse/\u003Edispels\u003C/If\u003E a glamour. \u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E returns to its true form.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3487,7 +3487,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "No glamours have been applied to plate .",
+    "Text": "No glamours have been applied to plate \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3498,7 +3498,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to cast glamour from plate .",
+    "Text": "Unable to cast glamour from plate \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3520,7 +3520,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to desynthesize. Your ClassJob level is insufficient.",
+    "Text": "Unable to desynthesize. Your \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E level is insufficient.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -3531,7 +3531,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr desynthesizedesynthesizes Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edesynthesize\u003CElse/\u003Edesynthesizes\u003C/If\u003E \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3542,7 +3542,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3553,7 +3553,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3564,7 +3564,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr botchbotches the desynthesis. Item is lost.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebotch\u003CElse/\u003Ebotches\u003C/If\u003E the desynthesis. \u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E is lost.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3575,7 +3575,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "YouryouObjStr\u0027s ClassJob desynthesis skill increases by .!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Link\u003E \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E desynthesis skill increases by \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E.\u003CTwoDigitValue\u003EIntegerParameter(3)\u003C/TwoDigitValue\u003E!",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3586,7 +3586,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "YouryouObjStr\u0027s ClassJob desynthesis skill decreases by ....",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Link\u003E \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E desynthesis skill decreases by \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E.\u003CTwoDigitValue\u003EIntegerParameter(3)\u003C/TwoDigitValue\u003E...",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3597,7 +3597,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr can now desynthesize items as any level 30 Disciple of the Hand.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E can now desynthesize items as any level 30 Disciple of the Hand.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3608,7 +3608,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr can now desynthesize items as an ClassJoban ClassJoban ClassJoban ClassJoban ClassJoba ClassJob.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E can now desynthesize items as \u003CIf(Equal(IntegerParameter(1),10))\u003Ean \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003Ean \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),5))\u003Ean \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),26))\u003Ean \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003Ean \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003Ea \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3619,7 +3619,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your desynthesis skill for ClassJob is reset.",
+    "Text": "Your desynthesis skill for \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E is reset.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3630,7 +3630,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You assign your retainer \u201CLv.  Item.\u201D",
+    "Text": "You assign your retainer \u201CLv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreference(Item,IntegerParameter(1),9)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3641,7 +3641,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You assign your retainer \u201CLv.  RetainerTaskRandom.\u201D",
+    "Text": "You assign your retainer \u201C\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ELv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CElse/\u003E\u003C/If\u003E\u003Csheetreference(RetainerTaskRandom,IntegerParameter(1),0)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3652,7 +3652,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201CLv.  Item\u201D is now complete.",
+    "Text": "\u201CLv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreference(Item,IntegerParameter(1),9)\u003E\u201D is now complete.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3663,7 +3663,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201CLv.  RetainerTaskRandom\u201D is now complete.",
+    "Text": "\u201C\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ELv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CElse/\u003E\u003C/If\u003E\u003Csheetreference(RetainerTaskRandom,IntegerParameter(1),0)\u003E\u201D is now complete.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3674,7 +3674,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You pay ObjStr Item Item.",
+    "Text": "You pay \u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3685,7 +3685,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr has reached maximum level.",
+    "Text": "\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E has reached maximum level.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3696,7 +3696,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You cancel \u201CLv.  Item.\u201D",
+    "Text": "You cancel \u201CLv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreference(Item,IntegerParameter(1),9)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3707,7 +3707,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You cancel \u201CLv.  RetainerTaskRandom.\u201D",
+    "Text": "You cancel \u201C\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ELv. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CElse/\u003E\u003C/If\u003E\u003Csheetreference(RetainerTaskRandom,IntegerParameter(1),0)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3751,7 +3751,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " has completed a venture!",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E has completed a venture!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3795,7 +3795,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr discover and obtaindiscovers and obtains Item\u2500an item most rare!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ediscover and obtain\u003CElse/\u003Ediscovers and obtains\u003C/If\u003E \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u2500an item most rare!",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3806,7 +3806,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr discover and obtaindiscovers and obtains Item\u2500an item most rare! Item\u2500items most rare!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ediscover and obtain\u003CElse/\u003Ediscovers and obtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u2500an item most rare!\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),3,1)\u003E\u2500items most rare!\u003C/If\u003E",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4004,7 +4004,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Glamours projected from plate .",
+    "Text": "Glamours projected from plate \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4070,7 +4070,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u0027s ceremony settings have been accepted.",
+    "Text": "\u003CActorFullName\u003EIntegerParameter(1)\u003C/ActorFullName\u003E\u0027s ceremony settings have been accepted.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4136,7 +4136,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr exchangeexchanges Item for Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eexchange\u003CElse/\u003Eexchanges\u003C/If\u003E \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E for \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4158,7 +4158,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to fully apply glamour plate .\nPlease ensure all items are compatible with character level, class, race, and gender.",
+    "Text": "Unable to fully apply glamour plate \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\nPlease ensure all items are compatible with character level, class, race, and gender.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4180,7 +4180,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "A projection of Item is added to your glamour dresser.",
+    "Text": "A projection of \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E is added to your glamour dresser.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4191,7 +4191,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The projection of Item is removed from your glamour dresser.",
+    "Text": "The projection of \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E is removed from your glamour dresser.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4202,7 +4202,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Glamour plate  saved.",
+    "Text": "Glamour plate \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E saved.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4213,7 +4213,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The projection of Item is restored to its original form and removed from your glamour dresser.",
+    "Text": "The projection of \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E is restored to its original form and removed from your glamour dresser.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4235,7 +4235,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " matchmatches found.",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4246,7 +4246,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": " matchmatches found.  displayed.",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E displayed.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4290,7 +4290,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "No matchmatches found.",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ENo\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4312,7 +4312,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Can only be viewed as .",
+    "Text": "Can only be viewed as \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4400,7 +4400,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "All objectives under the category RelicNoteCategory for Item - BaseParam \u002B complete!",
+    "Text": "All objectives under the category \u003Cspan uiForeground=\u0022571\u0022 color=\u0022#ffffff\u0022\u003E\u003Cspan uiGlow=\u0022572\u0022\u003E\u003Csheetreference(RelicNoteCategory,IntegerParameter(4),1)\u003E\u003C/span\u003E\u003C/span\u003E for \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E - \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E \u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E complete!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4411,7 +4411,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "All objectives for Item - BaseParam \u002B complete! BaseParam progress now stands at \u002B!",
+    "Text": "All objectives for \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E - \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E \u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E complete! \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E progress now stands at \u002B\u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4422,7 +4422,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Record of BNpcName kill (/) added for Item - BaseParam \u002B.",
+    "Text": "Record of \u003Csheetreferenceen(BNpcName,3,IntegerParameter(4),1,1)\u003E kill (\u003CValue\u003EIntegerParameter(5)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(6)\u003C/Value\u003E) added for \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E - \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E \u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4433,7 +4433,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Record of FATE completion added for Item - BaseParam \u002B.",
+    "Text": "Record of FATE completion added for \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E - \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E \u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4444,7 +4444,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Record of leve completion added for Item - BaseParam \u002B.",
+    "Text": "Record of leve completion added for \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E - \u003Csheetreference(BaseParam,IntegerParameter(2),1)\u003E \u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4455,7 +4455,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item crumbles into dust.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E crumbles into dust.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4466,7 +4466,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to obtain Item. Your inventory is full.",
+    "Text": "Unable to obtain \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E. Your inventory is full.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4521,7 +4521,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Hunt mark BNpcName slain! (/)",
+    "Text": "Hunt mark \u003Csheetreferenceen(BNpcName,3,IntegerParameter(2),1,1)\u003E slain! (\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(4)\u003C/Value\u003E)",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4532,7 +4532,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item objectives complete!",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E objectives complete!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4543,7 +4543,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You obtain Item,(\u002B%) Item.",
+    "Text": "You obtain \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E\u003CElse/\u003E\u003Cformat(IntegerParameter(1),,)\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E\u003CElse/\u003E(\u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E%)\u003C/If\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(2),3,1)\u003E\u003C/If\u003E.",
     "LogKind": 62,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4565,7 +4565,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You obtain EventItem.\nMark details can viewed at any time by using the bill located under the Key Items tab of your inventory.",
+    "Text": "You obtain \u003Csheetreferenceen(EventItem,1,IntegerParameter(1),1,1)\u003E.\nMark details can viewed at any time by using the bill located under the Key Items tab of your inventory.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4576,7 +4576,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You destroy EventItem and abandon the hunt.",
+    "Text": "You destroy \u003Csheetreferenceen(EventItem,2,IntegerParameter(1),1,1)\u003E and abandon the hunt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4587,7 +4587,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You cannot hold any more Item. Your reward has been forfeited.",
+    "Text": "You cannot hold any more \u003Csheetreferenceen(Item,1,IntegerParameter(1),2,1)\u003E. Your reward has been forfeited.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4620,7 +4620,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "PlaceName havehavehas been occupied by the GrandCompany!",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(PlaceName,2,IntegerParameter(2),2,1)\u003E\u003C/Link\u003E \u003CIf(Equal(IntegerParameter(2),1370))\u003Ehave\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(2),1372))\u003Ehave\u003CElse/\u003Ehas\u003C/If\u003E\u003C/If\u003E been occupied by the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4631,7 +4631,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "PlaceName areareis no longer occupied.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Link\u003E \u003CIf(Equal(IntegerParameter(1),1370))\u003Eare\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),1372))\u003Eare\u003CElse/\u003Eis\u003C/If\u003E\u003C/If\u003E no longer occupied.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4653,7 +4653,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName has been taken down by the GrandCompany!",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(BNpcName,1,IntegerParameter(2),1,1)\u003E\u003C/Link\u003E has been taken down by the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4664,7 +4664,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "As each Grand Company will dispatch only onetwothreefourfivesixseveneightnineten partyparties to the campaign, the number of occupiable outposts has been reduced to three.",
+    "Text": "As each Grand Company will dispatch only \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eparty\u003CElse/\u003Eparties\u003C/If\u003E to the campaign, the number of occupiable outposts has been reduced to three.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4675,7 +4675,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Status has overtaken a member of the GrandCompany!",
+    "Text": "\u003Csheetreference(Status,IntegerParameter(2),0)\u003E has overtaken a member of the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4686,7 +4686,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "A member of the GrandCompany has KO\u0027d a member of the GrandCompany overtaken by Status!",
+    "Text": "A member of the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E has KO\u0027d a member of the \u003Csheetreference(GrandCompany,IntegerParameter(3),0)\u003E overtaken by \u003Csheetreference(Status,IntegerParameter(2),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4697,7 +4697,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName has appeared PlaceNamePlaceNamein on at PlaceName!",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E has appeared \u003CIf(\u003Csheetreference(PlaceName,IntegerParameter(2),1)\u003E)\u003E\u003Cswitch(\u003Csheetreference(PlaceName,IntegerParameter(2),1)\u003E,in ,on )\u003E\u003CElse/\u003Eat \u003C/If\u003E\u003Csheetreferenceen(PlaceName,2,IntegerParameter(2),2,1)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4708,7 +4708,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "As each Grand Company will dispatch only onetwothreefourfivesixseveneightnineten partyparties to the campaign, neutral enemy behavior will differ.",
+    "Text": "As each Grand Company will dispatch only \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eparty\u003CElse/\u003Eparties\u003C/If\u003E to the campaign, neutral enemy behavior will differ.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4719,7 +4719,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The rank Brank Arank S EObj has activated.",
+    "Text": "The \u003Cswitch(IntegerParameter(2),rank B,rank A,rank S)\u003E \u003Csheetreferenceen(EObj,3,IntegerParameter(1),1,1)\u003E has activated.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4752,7 +4752,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "All data has been transferred from the rank Brank Arank S EObj.",
+    "Text": "All data has been transferred from the \u003Cswitch(IntegerParameter(2),rank B,rank A,rank S)\u003E \u003Csheetreferenceen(EObj,3,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4763,7 +4763,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The rank Brank Arank S EObj has been occupied by the GrandCompany!",
+    "Text": "The \u003Cswitch(IntegerParameter(3),rank B,rank A,rank S)\u003E \u003Csheetreferenceen(EObj,3,IntegerParameter(2),1,1)\u003E has been occupied by the \u003Csheetreference(GrandCompany,IntegerParameter(1),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4774,7 +4774,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The rank Brank Arank S EObj is no longer occupied.",
+    "Text": "The \u003Cswitch(IntegerParameter(2),rank B,rank A,rank S)\u003E \u003Csheetreferenceen(EObj,3,IntegerParameter(1),1,1)\u003E is no longer occupied.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4785,7 +4785,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "As each Grand Company will dispatch only onetwothreefourfivesixseveneightnineten partyparties to the campaign, tomelith activation patterns will differ.",
+    "Text": "As each Grand Company will dispatch only \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eparty\u003CElse/\u003Eparties\u003C/If\u003E to the campaign, tomelith activation patterns will differ.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4840,7 +4840,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 62,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5126,7 +5126,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStryouObjStr gaingains , experience pointpoints.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(8),1,1)\u003E\u003CElse/\u003Eyou\u003C/If\u003E\u003CElse/\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(8),1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Egain\u003CElse/\u003Egains\u003C/If\u003E \u003Cformat(IntegerParameter(1),,)\u003E experience \u003CIf(Equal(exp,1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E.",
     "LogKind": 64,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5137,7 +5137,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The chocobo is now fond of Item.",
+    "Text": "The chocobo is now fond of \u003Csheetreferenceen(Item,3,IntegerParameter(1),3,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5148,7 +5148,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your companion\u0027s maximum rank is now !",
+    "Text": "Your companion\u0027s maximum rank is now \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E!",
     "LogKind": 64,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5170,7 +5170,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You cannot fetch ObjStr while he is resting.",
+    "Text": "You cannot fetch \u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E while he is resting.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5181,7 +5181,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to fetch ObjStr. Another company member is currently training him.",
+    "Text": "Unable to fetch \u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E. Another company member is currently training him.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5203,7 +5203,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "To clean the stable, you must first possess Item.",
+    "Text": "To clean the stable, you must first possess \u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5302,7 +5302,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You stable ObjStr.",
+    "Text": "You stable \u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5313,7 +5313,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You fetch ObjStr from his stable.",
+    "Text": "You fetch \u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E from his stable.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5346,7 +5346,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr cannot earn EXP now.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E cannot earn EXP now.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5357,7 +5357,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr is resting.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E is resting.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -5368,7 +5368,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to train chocobo. ObjStr cannot earn any more EXP.",
+    "Text": "Unable to train chocobo. \u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E cannot earn any more EXP.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5434,7 +5434,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr does not appear to be in the mood for eating.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E does not appear to be in the mood for eating.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5445,7 +5445,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr devours Item.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E devours \u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5456,7 +5456,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr is beginning to grow new feathers!",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E is beginning to grow new feathers!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5467,7 +5467,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr has grown a new coat of feathers!",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E has grown a new coat of feathers!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5478,7 +5478,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr has forgotten all about his food.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E has forgotten all about his food.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5489,7 +5489,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ObjStr\u0027s feathers have returned to their original hue.",
+    "Text": "\u003CLink\u003E\u003CIf(IntegerParameter(8))\u003E\u003Csheetreference(ObjStr,IntegerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Link\u003E\u0027s feathers have returned to their original hue.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

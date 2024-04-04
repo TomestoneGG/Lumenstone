@@ -56,7 +56,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Um die aufgedeckte Geschichte lesen zu k\u00F6nnen, muss der Auftrag \u201EQuest\u201C abgeschlossen sein.",
+    "Text": "Um die aufgedeckte Geschichte lesen zu k\u00F6nnen, muss der Auftrag \u201E\u003Csheetreference(Quest,IntegerParameter(1),0)\u003E\u201C abgeschlossen sein.",
     "RowId": 15432,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -182,7 +182,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Eine neue Saison hat begonnen!\n\nAus der Vorsaison stehen Belohnungen aus, die du noch nicht eingel\u00F6st hast. Sprich mit dem Versorgungsoffizier des Mahlstroms am Wolfsh\u00F6hlen-Pier und nimm sie entgegen.\n\nDie Frist ist das Ende der momentanen Saison.\n",
+    "Text": "Eine neue Saison hat begonnen!\n\nAus der Vorsaison stehen Belohnungen aus, die du noch nicht eingel\u00F6st hast. Sprich mit dem \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EVersorgungsoffizier des Mahlstroms\u003C/span\u003E\u003C/span\u003E am Wolfsh\u00F6hlen-Pier und nimm sie entgegen.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDie Frist ist das Ende der momentanen Saison.\u003C/span\u003E\u003C/span\u003E\n",
     "RowId": 15450,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -210,7 +210,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " SekundeSekunden bis Gluthitze!",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E bis Gluthitze!",
     "RowId": 15454,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -322,7 +322,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wenn du deinen Job auf ClassJob wechselst, kannst du die Kommandomen\u00FC- und Kreuzkommandomen\u00FC-Einstellungen von ClassJobClassJob \u00FCbertragen.",
+    "Text": "Wenn du deinen Job auf \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E wechselst, kannst du die Kommandomen\u00FC- und Kreuzkommandomen\u00FC-Einstellungen von \u003Csheetreference(ClassJob,\u003Csheetreference(ClassJob,IntegerParameter(1),26)\u003E,0)\u003E \u00FCbertragen.",
     "RowId": 15490,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -343,7 +343,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Einige Kommandos des Jobs ClassJob nutzen Kommandos des Jobs ClassJobClassJob. Diese zu \u00FCbertragen erlaubt dir einen einfacheren Einstieg in die Spielweise.\nHast du keine oder nur wenig Erfahrung mit dem Job ClassJob, wird diese Einstellung empfohlen.\nDu kannst auch \u201EWarten\u201C w\u00E4hlen, wenn du nicht sofort entscheiden m\u00F6chtest. Dann \u00F6ffnet sich dieses Fenster beim n\u00E4chsten Wechsel auf ClassJob.\n\u203B Schreitest du mit dem Jobauftrag voran, wird dieses Fenster allerdings nicht mehr angezeigt werden.",
+    "Text": "Einige Kommandos des Jobs \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E nutzen Kommandos des Jobs \u003Csheetreference(ClassJob,\u003Csheetreference(ClassJob,IntegerParameter(1),26)\u003E,0)\u003E. Diese zu \u00FCbertragen erlaubt dir einen einfacheren Einstieg in die Spielweise.\nHast du keine oder nur wenig Erfahrung mit dem Job \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E, wird diese Einstellung empfohlen.\nDu kannst auch \u201EWarten\u201C w\u00E4hlen, wenn du nicht sofort entscheiden m\u00F6chtest. Dann \u00F6ffnet sich dieses Fenster beim n\u00E4chsten Wechsel auf \u003Csheetreference(ClassJob,IntegerParameter(1),0)\u003E.\n\u203B Schreitest du mit dem Jobauftrag voran, wird dieses Fenster allerdings nicht mehr angezeigt werden.",
     "RowId": 15493,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -392,7 +392,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6chtest du den gesamten Abwurf des F\u00FCtterungsplans annehmen?\n\n\u203B Der F\u00FCtterungsplan wird dadurch fortgesetzt.",
+    "Text": "M\u00F6chtest du den gesamten Abwurf des F\u00FCtterungsplans annehmen?\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Der F\u00FCtterungsplan wird dadurch fortgesetzt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15501,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -406,7 +406,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Den F\u00FCtterungsplan beenden und  freilassen?\nAbwurf wird automatisch erhalten, doch Gegenst\u00E4nde \u00FCber der Obergrenze gehen verloren.\n\n\u203B Freigelassene Tiere kommen nicht wieder zur\u00FCck.",
+    "Text": "Den F\u00FCtterungsplan beenden und \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E freilassen?\nAbwurf wird automatisch erhalten, doch Gegenst\u00E4nde \u00FCber der Obergrenze gehen verloren.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Freigelassene Tiere kommen nicht wieder zur\u00FCck.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15503,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -420,7 +420,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6chtest du die gesamte Ernte des Saatplans annehmen?\n\n\u203B Der Saatplan wird dadurch fortgesetzt.",
+    "Text": "M\u00F6chtest du die gesamte Ernte des Saatplans annehmen?\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Der Saatplan wird dadurch fortgesetzt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15505,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -469,7 +469,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Den F\u00FCtterungsplan beenden und BNpcName freilassen?\nAbwurf wird automatisch erhalten, doch Gegenst\u00E4nde \u00FCber der Obergrenze gehen verloren.\n\n\u203B Freigelassene Tiere kommen nicht wieder zur\u00FCck.",
+    "Text": "Den F\u00FCtterungsplan beenden und \u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,4,1)\u003E freilassen?\nAbwurf wird automatisch erhalten, doch Gegenst\u00E4nde \u00FCber der Obergrenze gehen verloren.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Freigelassene Tiere kommen nicht wieder zur\u00FCck.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15512,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -518,14 +518,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6chtest du das ausgew\u00E4hlte Objekt projizieren?\n\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar, wird aber pers\u00F6nlich gebunden.",
+    "Text": "M\u00F6chtest du das ausgew\u00E4hlte Objekt projizieren?\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar, wird aber pers\u00F6nlich gebunden.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15519,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Das Objekt, das du projizieren m\u00F6chtest, wurde bereits als Projektion registriert und kann \u00FCber die Projektionsliste daher so oft aufgestellt werden, wie du m\u00F6chtest. W\u00E4hlst du es stattdessen aus deinem Inventar, wird der Gegenstand pers\u00F6nlich gebunden. Dennoch fortfahren?\n\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar.",
+    "Text": "Das Objekt, das du projizieren m\u00F6chtest, wurde bereits als Projektion registriert und kann \u00FCber die Projektionsliste daher so oft aufgestellt werden, wie du m\u00F6chtest. W\u00E4hlst du es stattdessen aus deinem Inventar, wird der Gegenstand pers\u00F6nlich gebunden. Dennoch fortfahren?\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15520,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -539,14 +539,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6chtest du  ItemItem benutzen, um das ausgew\u00E4hlte Objekt als Projektion zu registrieren?\n\nAls Projektion registrierte Objekte k\u00F6nnen \u00FCber die Projektionsliste so oft aufgestellt, wie du m\u00F6chtest.\n\u203B Farbeinstellungen werden nicht registriert.\n\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar, wird aber pers\u00F6nlich gebunden.",
+    "Text": "M\u00F6chtest du \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E benutzen, um das ausgew\u00E4hlte Objekt als Projektion zu registrieren?\n\nAls Projektion registrierte Objekte k\u00F6nnen \u00FCber die Projektionsliste so oft aufgestellt, wie du m\u00F6chtest.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Farbeinstellungen werden nicht registriert.\n\u203B Das Gartenobjekt wird nur projiziert und bleibt daher als Gegenstand in deinem Inventar, wird aber pers\u00F6nlich gebunden.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15522,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Dieses Objekt ist nicht als Projektion registriert. M\u00F6chtest du es dennoch entfernen?\n\n\u203B Mit einem Inselprisma kannst du den Gegenstand als Projektion registrieren und ihn \u00FCber die Projektionsliste so oft aufstellen, wie du m\u00F6chtest.",
+    "Text": "Dieses Objekt ist nicht als Projektion registriert. M\u00F6chtest du es dennoch entfernen?\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Mit einem Inselprisma kannst du den Gegenstand als Projektion registrieren und ihn \u00FCber die Projektionsliste so oft aufstellen, wie du m\u00F6chtest.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15523,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -623,14 +623,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E ",
     "RowId": 15535,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Momentaner Ort: nicht projizierbar",
+    "Text": "Momentaner Ort: \u003CIf(IntegerParameter(2))\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003CElse/\u003Enicht projizierbar\u003C/If\u003E",
     "RowId": 15536,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -665,7 +665,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Dieses Objekt ist momentan auf deiner Insel projiziert. Die Registrierung trotzdem entfernen?\n\nDie momentanen Projektionen bleiben zwar bestehen, aber das Objekt wird aus deiner Projektionsliste entfernt.",
+    "Text": "Dieses Objekt ist momentan auf deiner Insel projiziert. Die Registrierung trotzdem entfernen?\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDie momentanen Projektionen bleiben zwar bestehen, aber das Objekt wird aus deiner Projektionsliste entfernt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15541,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -721,7 +721,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Gibt es f\u00FCr die von dir definierte Zeit einen Mangel an Material, der f\u00FCr die Herstellung im Inselatelier ben\u00F6tigt wird, so wird dir im Inself\u00FChrer und im Atelierplan ein Warnsymbol angezeigt.\n\nZus\u00E4tzlich erh\u00E4ltst du eine Texteinblendung, wenn ein Mangel durch Herstellung im Pionierswerk, den Geb\u00E4udebau oder den Materialverkauf entsteht.\n\u203B Hattest du zuvor schon zu wenig Material, erfolgt keine zus\u00E4tzliche Warnung.",
+    "Text": "Gibt es f\u00FCr die von dir definierte Zeit einen Mangel an Material, der f\u00FCr die Herstellung im Inselatelier ben\u00F6tigt wird, so wird dir im Inself\u00FChrer und im Atelierplan ein Warnsymbol angezeigt.\n\nZus\u00E4tzlich erh\u00E4ltst du eine Texteinblendung, wenn ein Mangel durch Herstellung im Pionierswerk, den Geb\u00E4udebau oder den Materialverkauf entsteht.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Hattest du zuvor schon zu wenig Material, erfolgt keine zus\u00E4tzliche Warnung.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15549,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -756,7 +756,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Item (Mangel: )",
+    "Text": "\u003CLink\u003E\u003Csheetreference(Item,IntegerParameter(1),9)\u003E\u003C/Link\u003E (Mangel: \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 15554,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -791,28 +791,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Projektion entfernen?\n\nDieses Objekt wurde als Projektion registriert und kann \u00FCber die Projektionsliste erneut aufgestellt werden.\n\u203B Die F\u00E4rbung wird dabei entfernt.",
+    "Text": "Die Projektion entfernen?\n\nDieses Objekt wurde als Projektion registriert und kann \u00FCber die Projektionsliste erneut aufgestellt werden.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Die F\u00E4rbung wird dabei entfernt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15559,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "StainFarbe zur\u00FCcksetzen",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(Stain,IntegerParameter(1),4)\u003E\u003CElse/\u003EFarbe zur\u00FCcksetzen\u003C/If\u003E",
     "RowId": 15561,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Projektion als Registrierung entfernen?\n\nUm sie neu zu registrieren, wirst du ein Inselprisma ben\u00F6tigen.",
+    "Text": "Die Projektion als Registrierung entfernen?\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EUm sie neu zu registrieren, wirst du ein Inselprisma ben\u00F6tigen.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15562,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " ItemItem verbrauchen und in der Projektionsliste registrieren?\n\nEinmal registriert, kann das Objekt so oft aufgestellt werden, wie du m\u00F6chtest.\n\u203B Farbeinstellungen werden nicht registriert.",
+    "Text": "\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E verbrauchen und in der Projektionsliste registrieren?\n\nEinmal registriert, kann das Objekt so oft aufgestellt werden, wie du m\u00F6chtest.\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Farbeinstellungen werden nicht registriert.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15563,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -868,14 +868,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Diese Saison: .. : bis .. :",
+    "Text": "Diese Saison: \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E bis \u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 15571,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "N\u00E4chste Saison: .. : bis .. :",
+    "Text": "N\u00E4chste Saison: \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E bis \u003CTime\u003EIntegerParameter(2)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 15572,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1183,7 +1183,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlayStation\u2122NetworkXbox-Profil ansehen",
+    "Text": "\u003CIf(Equal(IntegerParameter(78),99))\u003EPlayStation\u2122Network\u003CElse/\u003EXbox\u003C/If\u003E-Profil ansehen",
     "RowId": 15780,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1225,7 +1225,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u203B Ist dies nicht ausgew\u00E4hlt, wird lediglich das -Symbol angezeigt.",
+    "Text": "\u203B Ist dies nicht ausgew\u00E4hlt, wird lediglich das \u003CBitmapFontIcon\u003E88\u003C/BitmapFontIcon\u003E-Symbol angezeigt.",
     "RowId": 15805,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1253,14 +1253,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ": Klassen/Jobs",
+    "Text": "\u003CBitmapFontIcon\u003E146\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E151\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E149\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E145\u003C/BitmapFontIcon\u003E: Klassen/Jobs",
     "RowId": 15809,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ": Rollen",
+    "Text": "\u003CBitmapFontIcon\u003E82\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E83\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E84\u003C/BitmapFontIcon\u003E\u003CBitmapFontIcon\u003E87\u003C/BitmapFontIcon\u003E: Rollen",
     "RowId": 15810,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1386,7 +1386,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "() Hallo!\n() Lange nicht mehr hier gewesen.\n() Endlich kann es losgehen!\n() Vielen Dank!",
+    "Text": "\u003CColorFill\u003EIntegerParameter(16)\u003C/ColorFill\u003E(\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E) Hallo!\n(\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E) Lange nicht mehr hier gewesen.\n(\u003CHighlight\u003EStringParameter(3)\u003C/Highlight\u003E) Endlich kann es losgehen!\n(\u003CHighlight\u003EStringParameter(4)\u003C/Highlight\u003E) Vielen Dank!\u003CColorFill\u003Estackcolor\u003C/ColorFill\u003E",
     "RowId": 15828,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1456,7 +1456,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "(/)",
+    "Text": "(\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 15842,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1484,7 +1484,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Parameter f\u00FCr Item werden angepasst.",
+    "Text": "Parameter f\u00FCr \u003Csheetreferencede(Item,2,IntegerParameter(1),1,4,1)\u003E werden angepasst.",
     "RowId": 15846,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1498,7 +1498,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6chtest du  ItemItem verbrauchen (im Besitz: ) und die Parameter anpassen?",
+    "Text": "M\u00F6chtest du \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Csheetreferencede(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E verbrauchen (im Besitz: \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E) und die Parameter anpassen?",
     "RowId": 15848,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1512,14 +1512,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Parameter best\u00E4tigen und Item erhalten?",
+    "Text": "Parameter best\u00E4tigen und \u003Csheetreferencede(Item,2,IntegerParameter(1),1,4,1)\u003E erhalten?",
     "RowId": 15850,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u306E\n\u30D1\u30E9\u30E1\u30FC\u30BF\u8ABF\u6574\u3092\u5B8C\u4E86\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u003C/span\u003E\u003C/span\u003E\u306E\n\u30D1\u30E9\u30E1\u30FC\u30BF\u8ABF\u6574\u3092\u5B8C\u4E86\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
     "RowId": 15851,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1589,7 +1589,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Teil AusstehendLaufendBeendet",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),1))\u003ETeil \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u003Cindent\u003E\u003CElse/\u003E\u003C/If\u003E\u003Cswitch(IntegerParameter(1),Ausstehend,Laufend,Beendet)\u003E",
     "RowId": 15872,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1603,14 +1603,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Item",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E",
     "RowId": 15875,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "999\u002B",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),999))\u003E999\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 15876,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1659,7 +1659,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "N\u00E4chste Aktualisierung: .. :",
+    "Text": "N\u00E4chste Aktualisierung: \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 15883,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1701,7 +1701,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u00D7  - ",
+    "Text": "\u00D7 \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CIf(Equal(IntegerParameter(2),IntegerParameter(1)))\u003E\u003CElse/\u003E - \u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E",
     "RowId": 15889,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1750,7 +1750,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Woche ",
+    "Text": "Woche \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 15896,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1806,14 +1806,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "ContentType???",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E\u003CElse/\u003E???\u003C/If\u003E",
     "RowId": 15905,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u00D7  - ",
+    "Text": "\u00D7 \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CIf(Equal(IntegerParameter(2),IntegerParameter(1)))\u003E\u003CElse/\u003E - \u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E",
     "RowId": 15906,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1869,42 +1869,42 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "L\u00E4uft bald ab",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EL\u00E4uft bald ab\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15915,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "InstanceContent???\nSt.  ContentType???",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003Csheetreference(InstanceContent,IntegerParameter(5),3)\u003E\u003CElse/\u003E???\u003C/If\u003E\nSt. \u003CValue\u003EIntegerParameter(7)\u003C/Value\u003E \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E\u003CElse/\u003E???\u003C/If\u003E",
     "RowId": 15916,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E",
     "RowId": 15917,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "St. ",
+    "Text": "St. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E",
     "RowId": 15918,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Bis zum Ende von CSBonusTextDataCSBonusSeason\nCSBonusTextDataCSBonusSeason",
+    "Text": "Bis zum Ende von \u003Csheetreference(CSBonusTextData,\u003Csheetreference(CSBonusSeason,IntegerParameter(1),10)\u003E,0)\u003E\n\u003Csheetreference(CSBonusTextData,\u003Csheetreference(CSBonusSeason,IntegerParameter(1),11)\u003E,0)\u003E",
     "RowId": 15919,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": ".. um :",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E.\u003CValue\u003Et_year\u003C/Value\u003E um \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E",
     "RowId": 15920,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1918,84 +1918,84 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u201EInstanceContent\u201C erfolgreich abschlie\u00DFen.",
+    "Text": "\u201E\u003CLink\u003E\u003Csheetreference(InstanceContent,IntegerParameter(5),3)\u003E\u003C/Link\u003E\u201C erfolgreich abschlie\u00DFen.",
     "RowId": 15922,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "An \u201EInstanceContent\u201C teilnehmen.",
+    "Text": "An \u201E\u003Csheetreference(InstanceContent,IntegerParameter(5),3)\u003E\u201C teilnehmen.",
     "RowId": 15923,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "In beliebigem ContentType MGP erhalten.",
+    "Text": "In beliebigem \u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E MGP erhalten.",
     "RowId": 15924,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ContentType mindestens  Punkte erreichen.",
+    "Text": "\u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E mindestens \u003CIf(GreaterThan(IntegerParameter(7),0))\u003E\u003CValue\u003EIntegerParameter(7)\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(8)\u003C/Value\u003E\u003C/If\u003E Punkte erreichen.",
     "RowId": 15925,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Durch den Auftrag \u201EQuest\u201C,\n\u201EQuest\u201C oder\n\u201EQuest\u201C freigeschaltet.",
+    "Text": "Durch den Auftrag \u201E\u003Csheetreference(Quest,IntegerParameter(1),0)\u003E\u201C,\n\u201E\u003Csheetreference(Quest,IntegerParameter(2),0)\u003E\u201C oder\n\u201E\u003Csheetreference(Quest,IntegerParameter(3),0)\u003E\u201C freigeschaltet.",
     "RowId": 15926,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " ContentType PlaceNameTerritoryType oder PlaceNameTerritoryType abschlie\u00DFen. ContentType PlaceNameTerritoryType abschlie\u00DFen.",
+    "Text": "\u003CIf(Equal(IntegerParameter(4),2))\u003E\u003CValue\u003EIntegerParameter(8)\u003C/Value\u003E \u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E \u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(5),5)\u003E,8,2)\u003E oder \u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(6),5)\u003E,8,2)\u003E abschlie\u00DFen.\u003CElse/\u003E\u003CValue\u003EIntegerParameter(8)\u003C/Value\u003E \u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E \u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(5),5)\u003E,8,2)\u003E abschlie\u00DFen.\u003C/If\u003E",
     "RowId": 15927,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Eine Partie ContentType gegen ENpcResident PlaceNameTerritoryTypeLevel gewinnen.",
+    "Text": "Eine Partie \u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E gegen \u003Csheetreferencede(ENpcResident,2,IntegerParameter(5),1,4,1)\u003E \u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,\u003Csheetreference(Level,IntegerParameter(10),9)\u003E,5)\u003E,8,2)\u003E gewinnen.",
     "RowId": 15928,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Eine EventItemMobHuntOrderType abschlie\u00DFen.",
+    "Text": "Eine \u003Csheetreference(EventItem,\u003Csheetreference(MobHuntOrderType,IntegerParameter(5),2)\u003E,0)\u003E abschlie\u00DFen.",
     "RowId": 15929,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ItemFishParameter angeln.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,1,\u003Csheetreference(FishParameter,IntegerParameter(5),1)\u003E,1,4,1)\u003E\u003C/Link\u003E angeln.",
     "RowId": 15930,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Ebene  PlaceNameTerritoryTypeContentFinderConditionInstanceContent abschlie\u00DFen.",
+    "Text": "Ebene \u003CValue\u003EIntegerParameter(12)\u003C/Value\u003E \u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,\u003Csheetreference(ContentFinderCondition,\u003Csheetreference(InstanceContent,IntegerParameter(5),8)\u003E,1)\u003E,5)\u003E,8,2)\u003E abschlie\u00DFen.",
     "RowId": 15931,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Durch den Auftrag \u201EQuest\u201C freigeschaltet.",
+    "Text": "Durch den Auftrag \u201E\u003Csheetreference(Quest,IntegerParameter(1),0)\u003E\u201C freigeschaltet.",
     "RowId": 15932,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Wird mit dem Ankommen PlaceName oder PlaceName freigeschaltet.Wird mit dem Ankommen PlaceNamein ??? freigeschaltet.",
+    "Text": "\u003CIf(Equal(IntegerParameter(4),2))\u003EWird mit dem Ankommen \u003Csheetreference(PlaceName,IntegerParameter(5),8,2)\u003E oder \u003Csheetreference(PlaceName,IntegerParameter(6),8,2)\u003E freigeschaltet.\u003CElse/\u003EWird mit dem Ankommen \u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003Csheetreference(PlaceName,IntegerParameter(5),8,2)\u003E\u003CElse/\u003Ein ???\u003C/If\u003E freigeschaltet.\u003C/If\u003E",
     "RowId": 15933,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2016,28 +2016,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du hast das Mogpendium erhalten!\nM\u00F6chtest du eine Erkl\u00E4rung dazu \u00F6ffnen?\n\u203B Sie kann auch zu einem sp\u00E4teren Zeitpunkt angesehen werden.",
+    "Text": "Du hast das Mogpendium erhalten!\nM\u00F6chtest du eine Erkl\u00E4rung dazu \u00F6ffnen?\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003E\u203B Sie kann auch zu einem sp\u00E4teren Zeitpunkt angesehen werden.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 15936,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ItemTreasureHuntRank entziffern und die Schatztruhe \u00F6ffnen.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,1,\u003Csheetreference(TreasureHuntRank,IntegerParameter(5),2)\u003E,1,4,1)\u003E\u003C/Link\u003E entziffern und die Schatztruhe \u00F6ffnen.",
     "RowId": 15937,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "InstanceContent???",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003Csheetreference(InstanceContent,IntegerParameter(5),3)\u003E\u003CElse/\u003E???\u003C/If\u003E",
     "RowId": 15938,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ContentType???\nSt. ",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(ContentType,IntegerParameter(2),0)\u003E\u003CElse/\u003E???\u003C/If\u003E\nSt. \u003CValue\u003EIntegerParameter(7)\u003C/Value\u003E",
     "RowId": 15939,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2205,21 +2205,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u30E9\u30A6\u30F3\u30C9",
+    "Text": "\u30E9\u30A6\u30F3\u30C9\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 16021,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 16022,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Inhalt wird verlassen in :",
+    "Text": "Inhalt wird verlassen in \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E:\u003CTwoDigitValue\u003EIntegerParameter(2)\u003C/TwoDigitValue\u003E",
     "RowId": 16023,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2247,1036 +2247,1036 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101000,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E",
     "RowId": 101001,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101002,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CBitmapFontIcon\u003E18\u003C/BitmapFontIcon\u003E",
     "RowId": 101003,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E",
     "RowId": 101004,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E",
     "RowId": 101005,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E",
     "RowId": 101006,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E8\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101026,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC ",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC ",
     "RowId": 101027,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Chatlog ausw\u00E4hlen  Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101028,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Chatlog ausw\u00E4hlen  Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101029,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " In erg\u00E4nzenden Kommandos anlegen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E In erg\u00E4nzenden Kommandos anlegen",
     "RowId": 101030,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E8\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101031,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausr\u00FCstung wechseln   Untermen\u00FC   Slot wechseln",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Ausr\u00FCstung wechseln  \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln",
     "RowId": 101032,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Untermen\u00FC  Chatlog ausw\u00E4hlen  Reiter umschalten  Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003EUntermen\u00FC \u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E2\u003C/Icon2\u003E Reiter umschalten \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101033,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Zur\u00FCck zum Chat    Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck zum Chat   \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101034,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Zur\u00FCck zum Chat   Chatlog auf Normalgr\u00F6\u00DFe",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck zum Chat  \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog auf Normalgr\u00F6\u00DFe",
     "RowId": 101035,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Verlauf   L\u00F6schen   Auto-\u00DCbersetzung   Virtuelle Tastatur Bildschirmtastatur",
+    "Text": "\u003CIcon2\u003E5\u003C/Icon2\u003E Verlauf  \u003CIcon2\u003E10\u003C/Icon2\u003E L\u00F6schen  \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-\u00DCbersetzung\u003CIf(GreaterThan(IntegerParameter(94),0))\u003E  \u003CIf(Equal(IntegerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Virtuelle Tastatur\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Bildschirmtastatur\u003C/If\u003E\u003CElse/\u003E\u003Cindent\u003E\u003C/If\u003E",
     "RowId": 101036,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zur\u00FCck   Vorw\u00E4rts   Auto-\u00DCbersetzung     Virtuelle Tastatur Bildschirmtastatur",
+    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Zur\u00FCck  \u003CIcon2\u003E4\u003C/Icon2\u003E Vorw\u00E4rts  \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-\u00DCbersetzung  \u003CIf(GreaterThan(IntegerParameter(94),0))\u003E  \u003CIf(Equal(IntegerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Virtuelle Tastatur\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Bildschirmtastatur\u003C/If\u003E\u003CElse/\u003E\u003Cindent\u003E\u003C/If\u003E",
     "RowId": 101037,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Anwenden",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden",
     "RowId": 101038,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Anwenden   Einstellungen l\u00F6schen\u3000",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden  \u003CIcon2\u003E10\u003C/Icon2\u003E Einstellungen l\u00F6schen\u3000",
     "RowId": 101039,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Einstellungen speichern und schlie\u00DFen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Einstellungen speichern und schlie\u00DFen",
     "RowId": 101040,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Teilnahme best\u00E4tigen und schlie\u00DFen  Scrollen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Teilnahme best\u00E4tigen und schlie\u00DFen \u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 101041,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " \u00DCberspringen   Abbrechen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E \u00DCberspringen  \u003CIcon2\u003E9\u003C/Icon2\u003E Abbrechen",
     "RowId": 101042,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Kategorie w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Kategorie w\u00E4hlen",
     "RowId": 101043,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Gew\u00E4hltes Ausr\u00FCstungsset anlegen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Gew\u00E4hltes Ausr\u00FCstungsset anlegen",
     "RowId": 101044,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Untermen\u00FC   Suchbedingungen festlegen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E\u003CIcon2\u003E10\u003C/Icon2\u003EUntermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Suchbedingungen festlegen",
     "RowId": 101045,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Verschieben   Best\u00E4tigen   Abbrechen",
+    "Text": "\u003CIcon2\u003E5\u003C/Icon2\u003E Verschieben  \u003CIcon2\u003E8\u003C/Icon2\u003E Best\u00E4tigen  \u003CIcon2\u003E9\u003C/Icon2\u003E Abbrechen",
     "RowId": 101046,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Umbl\u00E4ttern",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Umbl\u00E4ttern",
     "RowId": 101047,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Verschieben   Best\u00E4tigen   Abbrechen",
+    "Text": "\u003CIcon2\u003E7\u003C/Icon2\u003E Verschieben  \u003CIcon2\u003E8\u003C/Icon2\u003E Best\u00E4tigen  \u003CIcon2\u003E9\u003C/Icon2\u003E Abbrechen",
     "RowId": 101048,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Anschlagbrett bearbeiten",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Anschlagbrett bearbeiten",
     "RowId": 101049,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Online-Mitglieder anzeigen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Online-Mitglieder anzeigen",
     "RowId": 101050,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Alle Mitglieder anzeigen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Alle Mitglieder anzeigen",
     "RowId": 101051,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101052,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Best\u00E4tigen und weiter",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Best\u00E4tigen und weiter",
     "RowId": 101053,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Absteigen",
+    "Text": "\u003CIcon2\u003E16\u003C/Icon2\u003E Absteigen",
     "RowId": 101054,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Anwenden",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden",
     "RowId": 101055,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Anwenden",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden",
     "RowId": 101056,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Anwenden",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden",
     "RowId": 101057,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101058,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101059,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101060,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ins Arsenal legen  Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Ins Arsenal legen \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101061,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Slot wechseln",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln",
     "RowId": 101062,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ins Inventar legen  Slot wechseln",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Ins Inventar legen \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln",
     "RowId": 101063,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC Slot wechseln  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003ESlot wechseln \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101064,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Slot wechseln  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101065,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Slot wechseln   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101066,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Slot wechseln   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101067,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Slot wechseln   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101068,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Slot wechseln   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101069,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC der Ausr\u00FCstung",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC der Ausr\u00FCstung",
     "RowId": 101070,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Kategorie w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Kategorie w\u00E4hlen",
     "RowId": 101071,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Online befindliche Mitglieder  Umbl\u00E4ttern",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Online befindliche Mitglieder \u003CIcon2\u003E3\u003C/Icon2\u003E\u003CIcon2\u003E4\u003C/Icon2\u003E Umbl\u00E4ttern",
     "RowId": 101072,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Alle Mitglieder   Umbl\u00E4ttern",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Alle Mitglieder  \u003CIcon2\u003E3\u003C/Icon2\u003E\u003CIcon2\u003E4\u003C/Icon2\u003E Umbl\u00E4ttern",
     "RowId": 101073,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101074,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen",
+    "Text": "\u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 101075,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Benutzen   Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Benutzen  \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101076,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Im Kommandomen\u00FC anlegen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Im Kommandomen\u00FC anlegen",
     "RowId": 101077,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen  Teilnahme best\u00E4tigen und schlie\u00DFen  Scrollen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Ausw\u00E4hlen \u003CIcon2\u003E11\u003C/Icon2\u003E Teilnahme best\u00E4tigen und schlie\u00DFen \u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 101078,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Gegenstand zur\u00FCcklegen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Gegenstand zur\u00FCcklegen",
     "RowId": 101079,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Gegenstand ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Gegenstand ausw\u00E4hlen",
     "RowId": 101080,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen",
+    "Text": "\u003CIcon2\u003E5\u003C/Icon2\u003E Scrollen",
     "RowId": 101081,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " L\u00F6schen  Auto-\u00DCbersetzung    Virtuelle Tastatur Bildschirmtastatur",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E L\u00F6schen \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-\u00DCbersetzung \u003CIf(GreaterThan(IntegerParameter(94),0))\u003E  \u003CIf(Equal(IntegerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Virtuelle Tastatur\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Bildschirmtastatur\u003C/If\u003E\u003CElse/\u003E\u003Cindent\u003E\u003C/If\u003E",
     "RowId": 101082,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zur\u00FCck   Weiter   Auto-\u00DCbersetzung    Virtuelle Tastatur Bildschirmtastatur",
+    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Zur\u00FCck  \u003CIcon2\u003E4\u003C/Icon2\u003E Weiter  \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-\u00DCbersetzung \u003CIf(GreaterThan(IntegerParameter(94),0))\u003E  \u003CIf(Equal(IntegerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Virtuelle Tastatur\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Bildschirmtastatur\u003C/If\u003E\u003CElse/\u003E\u003Cindent\u003E\u003C/If\u003E",
     "RowId": 101083,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Gegenstand f\u00FCr Truhe w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Gegenstand f\u00FCr Truhe w\u00E4hlen",
     "RowId": 101084,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Verschieben  Best\u00E4tigen  Abbrechen",
+    "Text": "\u003CIcon2\u003E7\u003C/Icon2\u003E Verschieben \u003CIcon2\u003E8\u003C/Icon2\u003E Best\u00E4tigen \u003CIcon2\u003E9\u003C/Icon2\u003E Abbrechen",
     "RowId": 101085,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Fach umschalten",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Fach umschalten",
     "RowId": 101086,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Entnehmen   Gegenstand f\u00FCr Truhe w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Entnehmen  \u003CIcon2\u003E11\u003C/Icon2\u003E Gegenstand f\u00FCr Truhe w\u00E4hlen",
     "RowId": 101087,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101088,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Slot wechseln  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Slot wechseln \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101089,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Im Kommandomen\u00FC anlegen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Im Kommandomen\u00FC anlegen",
     "RowId": 101090,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101091,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausr\u00FCstung an-/ablegen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Ausr\u00FCstung an-/ablegen",
     "RowId": 101092,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zufallsauswahl",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Zufallsauswahl",
     "RowId": 101093,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Farbe w\u00E4hlen  Zufallsauswahl",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Farbe w\u00E4hlen \u003CIcon2\u003E11\u003C/Icon2\u003E Zufallsauswahl",
     "RowId": 101094,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " W\u00E4hlen   Zufallsauswahl",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E W\u00E4hlen  \u003CIcon2\u003E11\u003C/Icon2\u003E Zufallsauswahl",
     "RowId": 101095,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Details scrollen",
+    "Text": "\u003CIcon2\u003E24\u003C/Icon2\u003E Details scrollen",
     "RowId": 101096,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Verschieben  Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E\u003CIcon2\u003E4\u003C/Icon2\u003E Verschieben \u003CIcon2\u003E8\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101097,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Anwenden",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Anwenden",
     "RowId": 101098,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Gegenstand f\u00FCr Truhe w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Gegenstand f\u00FCr Truhe w\u00E4hlen",
     "RowId": 101099,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   Chatlog ausw\u00E4hlen   Chatlog auf Normalgr\u00F6\u00DFe",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen  \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog auf Normalgr\u00F6\u00DFe",
     "RowId": 101100,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Fenster gr\u00F6\u00DFer/kleiner   Ein-/Ausblenden",
+    "Text": "\u003CBitmapFontIcon\u003E17\u003C/BitmapFontIcon\u003E Fenster gr\u00F6\u00DFer/kleiner  \u003CIcon2\u003E11\u003C/Icon2\u003E Ein-/Ausblenden",
     "RowId": 101101,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Set ansehen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Set ansehen",
     "RowId": 101102,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Beispiel f\u00FCr Angelstelle anzeigen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Beispiel f\u00FCr Angelstelle anzeigen",
     "RowId": 101103,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Karte scrollen",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Karte scrollen",
     "RowId": 101104,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Karte scrollen  Fischverzeichnis anzeigen",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Karte scrollen \u003CIcon2\u003E8\u003C/Icon2\u003E Fischverzeichnis anzeigen",
     "RowId": 101105,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101106,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Chatlog ausw\u00E4hlen  Reiter umschalten  Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E2\u003C/Icon2\u003E Reiter umschalten \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101107,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Chatlog ausw\u00E4hlen   Chatlog auf Normalgr\u00F6\u00DFe",
+    "Text": "\u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen  \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog auf Normalgr\u00F6\u00DFe",
     "RowId": 101108,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Gegenstand f\u00FCr Truhe w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Gegenstand f\u00FCr Truhe w\u00E4hlen",
     "RowId": 101109,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " \u00C4nderung r\u00FCckg\u00E4ngig",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E \u00C4nderung r\u00FCckg\u00E4ngig",
     "RowId": 101110,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Platzierung beenden",
+    "Text": "\u003CIcon2\u003E18\u003C/Icon2\u003E Platzierung beenden",
     "RowId": 101111,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u002B Bewegen   Drehen   Untermen\u00FC   Raster einaus",
+    "Text": "\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E\u002B\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Bewegen  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Drehen  \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101112,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u002B Bewegen   Drehen   Untermen\u00FC   Raster einaus  \uFF0B Platzieren auf Oberfl\u00E4chen einaus",
+    "Text": "\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E\u002B\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Bewegen  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Drehen  \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E  \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E Platzieren auf Oberfl\u00E4chen \u003CIf(IntegerParameter(2))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101113,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC   M\u00F6belliste",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC  \u003CIcon2\u003E11\u003C/Icon2\u003E M\u00F6belliste",
     "RowId": 101114,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Inventar",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Inventar",
     "RowId": 101115,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zu Ziel springen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Zu Ziel springen",
     "RowId": 101116,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Bewegen  Drehen \uFF0B Zoomen",
+    "Text": "\u003CIcon2\u003E20\u003C/Icon2\u003E Bewegen \u003CIcon2\u003E25\u003C/Icon2\u003E Drehen \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E Zoomen",
     "RowId": 101117,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC der Ausr\u00FCstung  Bewegen  Drehen \uFF0B Zoomen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC der Ausr\u00FCstung \u003CIcon2\u003E20\u003C/Icon2\u003E Bewegen \u003CIcon2\u003E25\u003C/Icon2\u003E Drehen \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E Zoomen",
     "RowId": 101118,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Raster einaus",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101119,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Raster einaus \uFF0B Platzieren auf Oberfl\u00E4chen einaus",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E Platzieren auf Oberfl\u00E4chen \u003CIf(IntegerParameter(2))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101120,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Im Kommandomen\u00FC anlegen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Im Kommandomen\u00FC anlegen",
     "RowId": 101121,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Chatlog ausw\u00E4hlen  Reiter umschalten",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E2\u003C/Icon2\u003E Reiter umschalten",
     "RowId": 101122,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101123,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Chatlog ausw\u00E4hlen  Reiter umschalten",
+    "Text": "\u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E2\u003C/Icon2\u003E Reiter umschalten",
     "RowId": 101124,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Reiter wechseln",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Reiter wechseln",
     "RowId": 101125,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zum Chat   Chatlog vergr\u00F6\u00DFern",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E Zum Chat  \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog vergr\u00F6\u00DFern",
     "RowId": 101126,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zum Chat   Chatlog auf Normalgr\u00F6\u00DFe",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E Zum Chat  \u003CIcon2\u003E11\u003C/Icon2\u003E Chatlog auf Normalgr\u00F6\u00DFe",
     "RowId": 101127,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen   Areal wechseln \u002B Zoomen",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scrollen  \u003CIcon2\u003E11\u003C/Icon2\u003E Areal wechseln \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E23\u003C/Icon2\u003E Zoomen",
     "RowId": 101128,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101129,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zur\u00FCck",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E Zur\u00FCck",
     "RowId": 101130,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Chatlog ausw\u00E4hlen  Reiter umschalten",
+    "Text": "\u003CIcon2\u003E1\u003C/Icon2\u003E Chatlog ausw\u00E4hlen \u003CIcon2\u003E2\u003C/Icon2\u003E Reiter umschalten",
     "RowId": 101131,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Klasse w\u00E4hlen",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Klasse w\u00E4hlen",
     "RowId": 101132,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Klasse w\u00E4hlen  Untermen\u00FC  Synthese beginnen",
+    "Text": "\u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Klasse w\u00E4hlen \u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Synthese beginnen",
     "RowId": 101133,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Synthese beginnen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E11\u003C/Icon2\u003E Synthese beginnen",
     "RowId": 101134,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zu \u201ESchlie\u00DFen\u201C springen",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E Zu \u201ESchlie\u00DFen\u201C springen",
     "RowId": 101135,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zu \u201ESchlie\u00DFen\u201C springen",
+    "Text": "\u003CIcon2\u003E9\u003C/Icon2\u003E Zu \u201ESchlie\u00DFen\u201C springen",
     "RowId": 101136,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101137,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101138,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101139,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC der Ausr\u00FCstung  Bewegen  Rotieren \uFF0B Zoomen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC der Ausr\u00FCstung \u003CIcon2\u003E20\u003C/Icon2\u003E Bewegen \u003CIcon2\u003E25\u003C/Icon2\u003E Rotieren \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E Zoomen",
     "RowId": 101140,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen  Areal wechseln  \u002B Zoomen  \u002B Karten-Link",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scrollen \u003CIcon2\u003E11\u003C/Icon2\u003E Areal wechseln  \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E23\u003C/Icon2\u003E Zoomen  \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E13\u003C/Icon2\u003E Karten-Link",
     "RowId": 101141,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen  Ebene umschalten \u002B Zoomen \u002B Karten-Link",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scrollen \u003CIcon2\u003E11\u003C/Icon2\u003E Ebene umschalten \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E23\u003C/Icon2\u003E Zoomen \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E13\u003C/Icon2\u003E Karten-Link",
     "RowId": 101142,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101143,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101144,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC  Scrollen",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC \u003CIcon2\u003E24\u003C/Icon2\u003E Scrollen",
     "RowId": 101145,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101146,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zuf\u00E4llige Nummer",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Zuf\u00E4llige Nummer",
     "RowId": 101147,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101148,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101149,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zuf\u00E4lliges Wort",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Zuf\u00E4lliges Wort",
     "RowId": 101150,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101151,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Regeln anzeigen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Regeln anzeigen",
     "RowId": 101152,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101153,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 101154,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " F\u00E4rben beenden",
+    "Text": "\u003CIcon2\u003E18\u003C/Icon2\u003E F\u00E4rben beenden",
     "RowId": 101155,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101156,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Ausw\u00E4hlen",
+    "Text": "\u003CIcon2\u003E19\u003C/Icon2\u003E Ausw\u00E4hlen",
     "RowId": 101157,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Best\u00E4tigen",
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Best\u00E4tigen",
     "RowId": 101158,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Vorschau beenden",
+    "Text": "\u003CIcon2\u003E18\u003C/Icon2\u003E Vorschau beenden",
     "RowId": 101159,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u002B Bewegen   Drehen   Raster einaus",
+    "Text": "\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E\u002B\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Bewegen  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Drehen  \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101160,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\u002B Bewegen   Drehen   Raster einaus  \u002B Platzieren auf Oberfl\u00E4chen einaus",
+    "Text": "\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E\u002B\u003CBitmapFontIcon\u003E20\u003C/BitmapFontIcon\u003E Bewegen  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Drehen  \u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E  \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E Platzieren auf Oberfl\u00E4chen \u003CIf(IntegerParameter(2))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101161,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Raster einaus",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101162,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Raster einaus \u002B Platzieren auf Oberfl\u00E4chen einaus",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Raster \u003CIf(IntegerParameter(1))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E Platzieren auf Oberfl\u00E4chen \u003CIf(IntegerParameter(2))\u003Eein\u003CElse/\u003Eaus\u003C/If\u003E",
     "RowId": 101163,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Zielort-Auswahl  Teleport  Zur Kartenfunktion",
+    "Text": "\u003CIcon2\u003E5\u003C/Icon2\u003E Zielort-Auswahl \u003CIcon2\u003E8\u003C/Icon2\u003E Teleport \u003CIcon2\u003E23\u003C/Icon2\u003E Zur Kartenfunktion",
     "RowId": 101164,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen  Zur Liste",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scrollen \u003CIcon2\u003E7\u003C/Icon2\u003E Zur Liste",
     "RowId": 101165,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Scrollen  Teleport  Zur Liste",
+    "Text": "\u003CIcon2\u003E23\u003C/Icon2\u003E Scrollen \u003CIcon2\u003E8\u003C/Icon2\u003E Teleport \u003CIcon2\u003E7\u003C/Icon2\u003E Zur Liste",
     "RowId": 101166,
     "SubRowId": 0,
     "SheetName": "Addon",

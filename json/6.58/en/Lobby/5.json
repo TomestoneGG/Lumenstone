@@ -1,6 +1,6 @@
 [
   {
-    "Text": "\u00A9 2010- SQUARE ENIX CO., LTD. All Rights Reserved.",
+    "Text": "\u00A9 2010-\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CElse/\u003E\u003CTime\u003E0\u003C/Time\u003E\u003CIf(LessThan(t_year,2013))\u003E2013\u003CElse/\u003E\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E SQUARE ENIX CO., LTD. All Rights Reserved.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -540,7 +540,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have selected  as your starting World. Proceed?",
+    "Text": "You have selected \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E as your starting World. Proceed?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1404,7 +1404,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "",
+    "Text": "\u2013\u2013",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1764,7 +1764,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "To load appearance data for the male Tribefemale Tribe saved to slot  at : on //// you must first install ExVersion.",
+    "Text": "To load appearance data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E you must first install \u003Csheetreference(ExVersion,IntegerParameter(5),0)\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1920,7 +1920,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Save Tribe maleTribe female appearance data to slot ?",
+    "Text": "Save \u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E male,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E female)\u003E appearance data to slot \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1968,7 +1968,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Load appearance data for the male Tribefemale Tribe saved to slot  at : on ////?",
+    "Text": "Load appearance data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2004,7 +2004,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Load appearance data for the male Tribefemale Tribe  hailing from Version 1.0 World, ?",
+    "Text": "Load appearance data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E hailing from Version 1.0 World, \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2016,7 +2016,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Load appearance data for the male Tribefemale Tribe saved to Version 1.0 save slot ?",
+    "Text": "Load appearance data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to Version 1.0 save slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2028,7 +2028,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Overwrite appearance data for the male Tribefemale Tribe saved to slot  at : on ////?",
+    "Text": "Overwrite appearance data for the \u003Cswitch(IntegerParameter(4),male \u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E,female \u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E)\u003E saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2076,7 +2076,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "////",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2088,7 +2088,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Save Slot ",
+    "Text": "Save Slot \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2100,7 +2100,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Tribe \u2642Tribe \u2640",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E \u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E \u2640)\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2268,7 +2268,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The appearance data saved to slot  at : on //// is incompatible with the current version of the benchmark. Do you wish to overwrite it?",
+    "Text": "The appearance data saved to slot \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E at \u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E on \u003CIf(Equal(IntegerParameter(77),3))\u003E\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003CElse/\u003E\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E/\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E is incompatible with the current version of the benchmark. Do you wish to overwrite it?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

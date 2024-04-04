@@ -1,6 +1,6 @@
 [
   {
-    "Text": "In the coming battle, you will fight as youObjStr.",
+    "Text": "In the coming battle, you will fight as \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -11,7 +11,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "In the coming battle, you will fight as .",
+    "Text": "In the coming battle, you will fight as \u003CHighlight\u003EObjectParameter(1)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -429,7 +429,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The mortal flame has been passed on to BNpcName...",
+    "Text": "The mortal flame has been passed on to \u003Csheetreferenceen(BNpcName,2,IntegerParameter(1),1,1)\u003E...",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -440,7 +440,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You sense an unknown grade GatheringPointName  yalmyalms to the .",
+    "Text": "You sense an unknown grade \u003Csheetreference(GatheringPointName,IntegerParameter(3),0)\u003E \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eyalm\u003CElse/\u003Eyalms\u003C/If\u003E to the \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -451,7 +451,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Use the duty action Solicit Siphon Snout to direct Ezel II to devour the clouded dream.",
+    "Text": "Use the duty action \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003ESolicit Siphon Snout\u003C/span\u003E\u003C/span\u003E to direct Ezel II to devour the clouded dream.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -704,7 +704,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Miners and botanists may use the action Aetheromatic Auger against enemies.\nThe compressed aether needed to perform the action accumulates as you gather.",
+    "Text": "Miners and botanists may use the action \u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EAetheromatic Auger\u003C/span\u003E\u003C/span\u003E against enemies.\nThe compressed aether needed to perform the action accumulates as you gather.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -1133,7 +1133,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have prevailed against BNpcName in single combat! Confidence within the Resistance surges as the enemy falters!",
+    "Text": "You have prevailed against \u003Csheetreferenceen(BNpcName,2,IntegerParameter(1),1,1)\u003E in single combat! Confidence within the Resistance surges as the enemy falters!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1155,7 +1155,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You attain Resistance rank !",
+    "Text": "You attain Resistance rank \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E!",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1166,7 +1166,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your item level has been synced to .\n\u203BWhile synced, all item stats are adjusted.",
+    "Text": "Your item level has been synced to \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\n\u203BWhile synced, all item stats are adjusted.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1177,7 +1177,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your courage wavers as darkness closes in around you. Your mettle decreases by ...",
+    "Text": "Your courage wavers as darkness closes in around you. Your mettle decreases by \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E...",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -1188,7 +1188,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Pangs of shame shoot through you as you flee from the battlefield. Your mettle decreases by ...",
+    "Text": "Pangs of shame shoot through you as you flee from the battlefield. Your mettle decreases by \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E...",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -1276,7 +1276,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your party leader has registered the party for the following duty:\nDynamicEvent",
+    "Text": "Your party leader has registered the party for the following duty:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1287,7 +1287,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have registered to join the following duty:\nDynamicEvent",
+    "Text": "You have registered to join the following duty:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1298,7 +1298,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Registration for the following duty has been canceled:\nDynamicEvent",
+    "Text": "Registration for the following duty has been canceled:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -1309,7 +1309,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Your party leader has canceled registration for the following duty:\nDynamicEvent",
+    "Text": "Your party leader has canceled registration for the following duty:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -1320,7 +1320,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Party makeup has changed. Your registration for the following duty has been withdrawn:\nDynamicEvent",
+    "Text": "Party makeup has changed. Your registration for the following duty has been withdrawn:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -1342,7 +1342,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You have joined the critical engagement, DynamicEvent. Access the Resistance Recruitment menu to join the fray!",
+    "Text": "You have joined the critical engagement, \u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E. Access the Resistance Recruitment menu to join the fray!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1353,7 +1353,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You were unable to join the following critical engagement:\nDynamicEvent",
+    "Text": "You were unable to join the following critical engagement:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -1408,7 +1408,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The Resistance is requesting soldiers for deployment to the following critical engagement:\nDynamicEvent",
+    "Text": "The Resistance is requesting soldiers for deployment to the following critical engagement:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1430,7 +1430,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr attainattains Resistance rank !",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eattain\u003CElse/\u003Eattains\u003C/If\u003E Resistance rank \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E!",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1485,7 +1485,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr gaingains ,(\u002B%) mettle.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Egain\u003CElse/\u003Egains\u003C/If\u003E \u003Cformat(IntegerParameter(2),,)\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E\u003CElse/\u003E(\u002B\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E%)\u003C/If\u003E mettle.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -1507,7 +1507,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201C\u201D deleted.",
+    "Text": "\u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D deleted.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1672,7 +1672,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201C\u201D loaded.",
+    "Text": "\u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u201D loaded.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1683,7 +1683,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Saved as \u201C.\u201D",
+    "Text": "Saved as \u201C\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1859,7 +1859,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "One or more party members have accepted a challenge to duel. Registration for the following duty has been canceled:\nDynamicEvent",
+    "Text": "One or more party members have accepted a challenge to duel. Registration for the following duty has been canceled:\n\u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 1,
@@ -1870,7 +1870,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You were not chosen to duel in the critical engagement, DynamicEvent.\nHowever, your presence on the battlefield has increased your notoriety by 1.",
+    "Text": "You were not chosen to duel in the critical engagement, \u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E.\nHowever, your presence on the battlefield has increased your notoriety by 1.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1881,7 +1881,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You were chosen to duel in the critical engagement, DynamicEvent, but at the cost of your notoriety.\nAccess the Resistance Recruitment window to join the fray!",
+    "Text": "You were chosen to duel in the critical engagement, \u003Csheetreference(DynamicEvent,IntegerParameter(1),10)\u003E, but at the cost of your notoriety.\nAccess the Resistance Recruitment window to join the fray!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1914,7 +1914,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You exchanged , mettle for  proofproofs of mettle.",
+    "Text": "You exchanged \u003Cformat(IntegerParameter(1),,)\u003E mettle for \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eproof\u003CElse/\u003Eproofs\u003C/If\u003E of mettle.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1925,7 +1925,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You exchanged  proofproofs of mettle for a Sun of Fortitude.",
+    "Text": "You exchanged \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eproof\u003CElse/\u003Eproofs\u003C/If\u003E of mettle for a Sun of Fortitude.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1936,7 +1936,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You exchanged  proofproofs of mettle for a Sun of Valor.",
+    "Text": "You exchanged \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eproof\u003CElse/\u003Eproofs\u003C/If\u003E of mettle for a Sun of Valor.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1947,7 +1947,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You exchanged  proofproofs of mettle for a Sun of Succor.",
+    "Text": "You exchanged \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eproof\u003CElse/\u003Eproofs\u003C/If\u003E of mettle for a Sun of Succor.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1958,7 +1958,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "The assault on the Dalriada has begun!",
+    "Text": "The assault on the \u003Ci\u003EDalriada\u003C/i\u003E has begun!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -2123,7 +2123,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201CVVDNotebookContents\u201D is added to the Mount Rokkon exorcism record.",
+    "Text": "\u201C\u003CLink\u003E\u003Csheetreference(VVDNotebookContents,IntegerParameter(1),2)\u003E\u003C/Link\u003E\u201D is added to the Mount Rokkon exorcism record.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2156,7 +2156,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u201CVVDNotebookContents\u201D is added to the Aloalo Conservation Record.",
+    "Text": "\u201C\u003CLink\u003E\u003Csheetreference(VVDNotebookContents,IntegerParameter(1),2)\u003E\u003C/Link\u003E\u201D is added to the Aloalo Conservation Record.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2211,7 +2211,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item is added to your field record.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E is added to your field record.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2244,7 +2244,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You now have access to PlaceName.",
+    "Text": "You now have access to \u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2805,7 +2805,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Overcoming the synthetic auracite system deals  pointpoints of damage to the Emerald Weapon!",
+    "Text": "Overcoming the synthetic auracite system deals \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E of damage to the Emerald Weapon!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3289,7 +3289,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "ContentFinderCondition has ended.",
+    "Text": "\u003CLink\u003E\u003Csheetreference(ContentFinderCondition,IntegerParameter(1),41)\u003E\u003C/Link\u003E has ended.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3784,7 +3784,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Destroying the Crystal of Light deals  damage to the echoes of Hydaelyn!",
+    "Text": "Destroying the Crystal of Light deals \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E damage to the echoes of Hydaelyn!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4598,7 +4598,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item recorded in sanctuary gathering log.",
+    "Text": "\u003Csheetreference(Item,IntegerParameter(1),9)\u003E recorded in sanctuary gathering log.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4609,7 +4609,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr gaingains  island experience pointpoints.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Egain\u003CElse/\u003Egains\u003C/If\u003E \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E island experience \u003CIf(Equal(exp,1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4686,7 +4686,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr attainattains sanctuary rank !",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eattain\u003CElse/\u003Eattains\u003C/If\u003E sanctuary rank \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4697,7 +4697,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4719,7 +4719,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute action. You cannot carry any more Item.",
+    "Text": "Unable to execute action. You cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4730,7 +4730,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You were unable to receive all the Item.",
+    "Text": "You were unable to receive all the \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4741,7 +4741,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to collect all materials. You cannot carry any more Item.",
+    "Text": "Unable to collect all materials. You cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4752,7 +4752,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item, Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E\u003CElse/\u003E\u003Cformat(IntegerParameter(1),,)\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(2),2,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4763,7 +4763,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains Item Item.",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Csheetreferenceen(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4774,7 +4774,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You cannot carry any more Item.",
+    "Text": "You cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4840,7 +4840,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You spent , seafarer\u0027s cowries to send an expedition to the .",
+    "Text": "You spent \u003Cformat(IntegerParameter(1),,)\u003E seafarer\u0027s cowries to send an expedition to the \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4851,7 +4851,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to craft item. youObjStr cannot carry any more Item.",
+    "Text": "Unable to craft item. \u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4873,7 +4873,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You may now obtain Item from foraging expeditions.",
+    "Text": "You may now obtain \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E from foraging expeditions.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4983,7 +4983,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to execute action. You cannot carry any more Item.",
+    "Text": "Unable to execute action. You cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4994,7 +4994,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You entrust the produce producer with Item to grow in plot .",
+    "Text": "You entrust the produce producer with \u003Csheetreferenceen(Item,1,IntegerParameter(2),1,1)\u003E to grow in plot \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5027,7 +5027,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to collect yield. You cannot carry any more Item.",
+    "Text": "Unable to collect yield. You cannot carry any more \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5104,7 +5104,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You changed the terrain of your hideaway from MJIText to MJIText.",
+    "Text": "You changed the terrain of your hideaway from \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E to \u003Csheetreference(MJIText,IntegerParameter(2),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5115,7 +5115,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Construction of MJIText has begun.",
+    "Text": "Construction of \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E has begun.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5126,7 +5126,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Construction of MJIText has finished.",
+    "Text": "Construction of \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E has finished.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5137,7 +5137,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Began renovations towards MJIText.",
+    "Text": "Began renovations towards \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5148,7 +5148,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Completed renovations towards MJIText.",
+    "Text": "Completed renovations towards \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5170,7 +5170,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "MJIText has been moved.",
+    "Text": "\u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E has been moved.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5181,7 +5181,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You changed the appearance of MJIText to MJIText.",
+    "Text": "You changed the appearance of \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E to \u003Csheetreference(MJIText,IntegerParameter(2),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5192,7 +5192,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You reconstructed the MJIText into a MJIText.",
+    "Text": "You reconstructed the \u003Csheetreference(MJIText,IntegerParameter(1),0)\u003E into a \u003Csheetreference(MJIText,IntegerParameter(2),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5225,7 +5225,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Item was ineffective against BNpcName... ",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E was ineffective against \u003Csheetreferenceen(BNpcName,2,IntegerParameter(2),1,1)\u003E... ",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5236,7 +5236,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName sensed your presence and scampered away.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E sensed your presence and scampered away.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5247,7 +5247,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName evaded your trap despite remaining blissfully unaware of your presence.",
+    "Text": "\u003CLink\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Link\u003E evaded your trap despite remaining blissfully unaware of your presence.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5258,7 +5258,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You successfully captured BNpcName!",
+    "Text": "You successfully captured \u003Csheetreferenceen(BNpcName,1,IntegerParameter(1),1,1)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5280,7 +5280,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName feels pleasantly stuffed.",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CElse/\u003E\u003CLink\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(3),1,1)\u003E\u003C/Link\u003E\u003C/If\u003E feels pleasantly stuffed.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5302,7 +5302,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "BNpcName licks your hand in sheer joy!",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CElse/\u003E\u003CLink\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(3),1,1)\u003E\u003C/Link\u003E\u003C/If\u003E licks your hand in sheer joy!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5324,7 +5324,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to enter. \u0027s island could not be found.Unable to enter. The selected island could not be found.",
+    "Text": "\u003CIf(IntegerParameter(1))\u003EUnable to enter. \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u0027s island could not be found.\u003CElse/\u003EUnable to enter. The selected island could not be found.\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5335,7 +5335,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to enter. \u0027s island is currently full.Unable to enter. The selected island is currently full.",
+    "Text": "\u003CIf(IntegerParameter(1))\u003EUnable to enter. \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u0027s island is currently full.\u003CElse/\u003EUnable to enter. The selected island is currently full.\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5346,7 +5346,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Unable to enter.  has forbidden access to their island.Unable to enter. The islekeep has forbidden access to their island.",
+    "Text": "\u003CIf(IntegerParameter(1))\u003EUnable to enter. \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E has forbidden access to their island.\u003CElse/\u003EUnable to enter. The islekeep has forbidden access to their island.\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5357,7 +5357,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Changed BNpcName\u0027s nickname to BNpcName.",
+    "Text": "Changed \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CElse/\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(5),1,1)\u003E\u003C/If\u003E\u0027s nickname to \u003CIf(Equal(IntegerParameter(3),1))\u003E\u003CHighlight\u003EStringParameter(4)\u003C/Highlight\u003E\u003CElse/\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(5),1,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5368,7 +5368,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You released BNpcName.",
+    "Text": "You released \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CElse/\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(3),1,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5379,7 +5379,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You entrusted the creature comforter with the care of BNpcName.",
+    "Text": "You entrusted the creature comforter with the care of \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\u003CElse/\u003E\u003Csheetreferenceen(BNpcName,2,IntegerParameter(3),1,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5423,7 +5423,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Changed expedition area to the .",
+    "Text": "Changed expedition area to the \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5434,7 +5434,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You spent , seafarer\u0027s cowries to extend the duration of the expedition and change the area to the .",
+    "Text": "You spent \u003Cformat(IntegerParameter(1),,)\u003E seafarer\u0027s cowries to extend the duration of the expedition and change the area to the \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5445,7 +5445,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "You spent , seafarer\u0027s cowries to extend the duration of the expedition to the .",
+    "Text": "You spent \u003Cformat(IntegerParameter(1),,)\u003E seafarer\u0027s cowries to extend the duration of the expedition to the \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5456,7 +5456,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains  of a possible  Item due to a stuffed isleventory!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E of a possible \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E due to a stuffed isleventory!",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -5467,7 +5467,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "youObjStr obtainobtains  of a possible  Item due to a stuffed isleventory!",
+    "Text": "\u003CLink\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(IntegerParameter(7))\u003E\u003Csheetreferenceen(ObjStr,2,IntegerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Link\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E of a possible \u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E \u003Csheetreferenceen(Item,3,IntegerParameter(1),2,1)\u003E due to a stuffed isleventory!",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -5478,7 +5478,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Released Companion in .",
+    "Text": "Released \u003Csheetreferenceen(Companion,2,IntegerParameter(1),1,1)\u003E in \u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -5489,7 +5489,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "Recalled Companion.",
+    "Text": "Recalled \u003Csheetreferenceen(Companion,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

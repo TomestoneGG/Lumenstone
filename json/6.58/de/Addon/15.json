@@ -28,7 +28,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Den geheimen Hort betreten?\nDie Mitglieder deiner Gruppe werden automatisch mitbef\u00F6rdert.",
+    "Text": "Den geheimen Hort betreten?\n\u003Cspan uiForeground=\u0022508\u0022 color=\u0022#ff8080\u0022\u003E\u003Cspan uiGlow=\u0022509\u0022\u003EDie Mitglieder deiner Gruppe werden automatisch mitbef\u00F6rdert.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 8116,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -42,21 +42,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "EmoteCategory",
+    "Text": "\u003Csheetreference(EmoteCategory,1,0)\u003E",
     "RowId": 8124,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "EmoteCategory",
+    "Text": "\u003Csheetreference(EmoteCategory,2,0)\u003E",
     "RowId": 8125,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "EmoteCategory",
+    "Text": "\u003Csheetreference(EmoteCategory,3,0)\u003E",
     "RowId": 8126,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -140,7 +140,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Beschreibung anzeigen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Beschreibung anzeigen",
     "RowId": 8139,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -161,14 +161,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Besucht: /",
+    "Text": "Besucht: \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 8142,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E",
     "RowId": 8143,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -210,7 +210,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Notizen anzeigen",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Notizen anzeigen",
     "RowId": 8149,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -245,7 +245,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\uE031 Noch  Std  Min (.. :)",
+    "Text": "\uE031 Noch \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E Std \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E Min (\u003CTime\u003EIntegerParameter(3)\u003C/Time\u003E\u003CValue\u003Et_day\u003C/Value\u003E.\u003CValue\u003Et_mon\u003C/Value\u003E. \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E)",
     "RowId": 8154,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -280,7 +280,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "/",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E/\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E",
     "RowId": 8159,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -469,7 +469,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Quelle: Spielbildschirm (PS3PS4\u2122PS4\u2122PS5\u2122)Remote Play-Bildschirm\nZiel: Remote Play-BildschirmSpielbildschirm (PS3PS4\u2122PS4\u2122PS5\u2122)\nMomentane Einstellungen des Ziels \u00FCberschreiben?",
+    "Text": "Quelle: \u003CIf(Equal(IntegerParameter(1),0))\u003ESpielbildschirm (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003CElse/\u003ERemote Play-Bildschirm\u003C/If\u003E\nZiel: \u003CIf(Equal(IntegerParameter(1),0))\u003ERemote Play-Bildschirm\u003CElse/\u003ESpielbildschirm (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)\u003C/If\u003E\nMomentane Einstellungen des Ziels \u00FCberschreiben?",
     "RowId": 8194,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -490,7 +490,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Spielbildschirm (PS3PS4\u2122PS4\u2122PS5\u2122)",
+    "Text": "Spielbildschirm (\u003CIf(GreaterThan(IntegerParameter(75),0))\u003E\u003Cswitch(IntegerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E\u003C/If\u003E)",
     "RowId": 8197,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -511,7 +511,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "GamepadWireless ControllerController",
+    "Text": "\u003CIf(Equal(IntegerParameter(75),0))\u003EGamepad\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E\u003C/If\u003E",
     "RowId": 8201,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -630,14 +630,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Anpassen der Fenstergr\u00F6\u00DFe mit  aktivieren",
+    "Text": "Anpassen der Fenstergr\u00F6\u00DFe mit \u003CBitmapFontIcon\u003E17\u003C/BitmapFontIcon\u003E aktivieren",
     "RowId": 8218,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Einf\u00FCgen von Text mit \u002B aktivieren",
+    "Text": "Einf\u00FCgen von Text mit \u003CBitmapFontIcon\u003E12\u003C/BitmapFontIcon\u003E\u002B\u003CBitmapFontIcon\u003E13\u003C/BitmapFontIcon\u003E aktivieren",
     "RowId": 8219,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -854,7 +854,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Frei (Bewegen mit \u002B)",
+    "Text": "Frei (Bewegen mit \u003CIcon2\u003E13\u003C/Icon2\u003E\u002B\u003CIcon2\u003E20\u003C/Icon2\u003E)",
     "RowId": 8261,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -910,7 +910,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PS4\u2122-Konsole: Full HD-Qualit\u00E4t mit stabilisierter BildwiederholratePS4\u2122-Konsole: Full HD-Qualit\u00E4t",
+    "Text": "\u003CIf(Equal(IntegerParameter(75),3))\u003EPS4\u2122-Konsole: Full HD-Qualit\u00E4t mit stabilisierter Bildwiederholrate\u003CElse/\u003EPS4\u2122-Konsole: Full HD-Qualit\u00E4t\u003C/If\u003E",
     "RowId": 8270,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -959,7 +959,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PS4\u2122Pro-Konsole: Auf 4K hochskalierte WQHD-Aufl\u00F6sungPS4\u2122Pro-Konsole:  Nur auf PS4\u2122Pro-Konsolen verf\u00FCgbar!",
+    "Text": "\u003CIf(Equal(IntegerParameter(75),3))\u003EPS4\u2122Pro-Konsole: Auf 4K hochskalierte WQHD-Aufl\u00F6sung\u003CElse/\u003EPS4\u2122Pro-Konsole: \u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E Nur auf PS4\u2122Pro-Konsolen verf\u00FCgbar!\u003C/If\u003E",
     "RowId": 8277,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1057,7 +1057,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "W\u00E4hle einen Zielordner.\nF\u00FCr fortgeschrittene Benutzer.",
+    "Text": "W\u00E4hle einen Zielordner.\n\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EF\u00FCr fortgeschrittene Benutzer.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 8295,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1120,14 +1120,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Im Kommandomen\u00FC anlegen  Ausf\u00FChren",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Im Kommandomen\u00FC anlegen \u003CIcon2\u003E8\u003C/Icon2\u003E Ausf\u00FChren",
     "RowId": 8305,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " Reittier/Begleiter umschalten",
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Reittier/Begleiter umschalten",
     "RowId": 8306,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1162,14 +1162,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Gesamt: .",
+    "Text": "Gesamt: \u003Cformat(IntegerParameter(1),.)\u003E",
     "RowId": 8311,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "ActStr",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(ActStr,5,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E",
     "RowId": 8312,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1351,35 +1351,35 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " BNpcNameBNpcName besiegen",
+    "Text": "\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Csheetreferencede(BNpcName,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Csheetreferencede(BNpcName,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E besiegen",
     "RowId": 8338,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "BNpcName PlaceName besiegen",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(BNpcName,2,IntegerParameter(1),1,4,1)\u003E\u003C/Link\u003E \u003Csheetreference(PlaceName,IntegerParameter(2),8,2)\u003E besiegen",
     "RowId": 8339,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Das FATE \u201EFate\u201C abschlie\u00DFen",
+    "Text": "Das FATE \u201E\u003Csheetreference(Fate,IntegerParameter(1),0)\u003E\u201C abschlie\u00DFen",
     "RowId": 8340,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Den Freibrief \u201ELeve\u201C abschlie\u00DFen",
+    "Text": "Den Freibrief \u201E\u003Csheetreference(Leve,IntegerParameter(1),0)\u003E\u201C abschlie\u00DFen",
     "RowId": 8341,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E \u003Csheetreference(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8342,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1400,7 +1400,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E",
     "RowId": 8345,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1414,7 +1414,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Den Staatserlass \u201ELeve\u201C abschlie\u00DFen",
+    "Text": "Den Staatserlass \u201E\u003Csheetreference(Leve,IntegerParameter(1),0)\u003E\u201C abschlie\u00DFen",
     "RowId": 8347,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1519,28 +1519,28 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Grad: ???",
+    "Text": "Grad: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CElse/\u003E???\u003C/If\u003E",
     "RowId": 8362,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "F\u00E4higkeit: ChocoboRaceAbilityKeine???",
+    "Text": "F\u00E4higkeit: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(ChocoboRaceAbility,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),0))\u003EKeine\u003CElse/\u003E???\u003C/If\u003E\u003C/If\u003E",
     "RowId": 8363,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Farbe: Stain???",
+    "Text": "Farbe: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheetreference(Stain,IntegerParameter(1),3)\u003E\u003CElse/\u003E???\u003C/If\u003E",
     "RowId": 8364,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "M\u00F6gliche Paarungen: ?",
+    "Text": "M\u00F6gliche Paarungen: \u003CIf(LessThan(IntegerParameter(1),0))\u003E?\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 8365,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1554,7 +1554,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u2642\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605???\u3000\u2640\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605\u2605???",
+    "Text": "\u003Cspan uiForeground=\u0022529\u0022 color=\u0022#30d6ff\u0022\u003E\u2642\u003C/span\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan uiForeground=\u0022530\u0022 color=\u0022#3d657d\u0022\u003E\u003Cswitch(IntegerParameter(1),\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003C/span\u003E\u003Cspan uiForeground=\u0022529\u0022 color=\u0022#30d6ff\u0022\u003E\u003Cswitch(IntegerParameter(1),\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003C/span\u003E\u003CElse/\u003E\u003Cspan uiForeground=\u0022529\u0022 color=\u0022#30d6ff\u0022\u003E???\u003C/span\u003E\u003C/If\u003E\u3000\u003Cspan uiForeground=\u0022531\u0022 color=\u0022#ff8261\u0022\u003E\u2640\u003C/span\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003Cspan uiForeground=\u0022532\u0022 color=\u0022#804a3b\u0022\u003E\u003Cswitch(IntegerParameter(2),\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003C/span\u003E\u003Cspan uiForeground=\u0022531\u0022 color=\u0022#ff8261\u0022\u003E\u003Cswitch(IntegerParameter(2),\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003C/span\u003E\u003CElse/\u003E\u003Cspan uiForeground=\u0022531\u0022 color=\u0022#ff8261\u0022\u003E???\u003C/span\u003E\u003C/If\u003E",
     "RowId": 8367,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1792,14 +1792,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "ObjStr",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(ObjStr,5,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E",
     "RowId": 8419,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName - PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E - \u003Csheetreference(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8420,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1813,7 +1813,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ". Gil / . Jagdabzeichen",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E Gil / \u003Cformat(IntegerParameter(2),.)\u003E Jagdabzeichen",
     "RowId": 8422,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1897,7 +1897,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": ". Gil / . Centurio-Abzeichen / . Routine ",
+    "Text": "\u003Cformat(IntegerParameter(1),.)\u003E Gil / \u003Cformat(IntegerParameter(2),.)\u003E Centurio-Abzeichen / \u003Cformat(IntegerParameter(3),.)\u003E Routine ",
     "RowId": 8434,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -1981,14 +1981,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Veteranen-Jagdlizenz \u2605Veteranen-Jagdlizenz \u2605\u2605Veteranen-Jagdlizenz \u2605\u2605\u2605Veteranen-Hochwild-Jagdlizenz\uFF08\uFF09",
+    "Text": "\u003Cswitch(IntegerParameter(1),Veteranen-Jagdlizenz \u2605,Veteranen-Jagdlizenz \u2605\u2605,Veteranen-Jagdlizenz \u2605\u2605\u2605,Veteranen-Hochwild-Jagdlizenz)\u003E\uFF08\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E\uFF09",
     "RowId": 8446,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\uFF08\uFF09",
+    "Text": "\uFF08\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\uFF09",
     "RowId": 8449,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2072,14 +2072,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u00C4nderungen bei Unterk\u00FCnften:\nF\u00FCr pers\u00F6nliche Unterk\u00FCnfte wurde die Funktion der Wohngemeinschaft hinzugef\u00FCgt.\nIn allen Unterk\u00FCnften kann nun die Beleuchtung geregelt werden.\nLange nicht genutzte Unterk\u00FCnfte und Grundst\u00FCcke werden nun automatisch entfernt. Genaueres erf\u00E4hrst du beim Unterkunftsbeamten.",
+    "Text": "\u00C4nderungen bei Unterk\u00FCnften:\nF\u00FCr pers\u00F6nliche Unterk\u00FCnfte wurde die Funktion der \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EWohngemeinschaft\u003C/span\u003E\u003C/span\u003E hinzugef\u00FCgt.\nIn allen Unterk\u00FCnften kann nun die \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EBeleuchtung\u003C/span\u003E\u003C/span\u003E geregelt werden.\nLange nicht genutzte Unterk\u00FCnfte und Grundst\u00FCcke werden nun automatisch entfernt. Genaueres erf\u00E4hrst du beim Unterkunftsbeamten.",
     "RowId": 8461,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "In der Gesellschaftswerkst\u00E4tte kannst du vom Planungspult aus nun mit dem Luftschiff Expeditionen zum Diadem unternehmen. Genaueres erf\u00E4hrst du in der Werkst\u00E4tte von Abenteurer-Marionette Nr. 014.",
+    "Text": "In der Gesellschaftswerkst\u00E4tte kannst du vom Planungspult aus nun mit dem Luftschiff \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EExpeditionen zum Diadem\u003C/span\u003E\u003C/span\u003E unternehmen. Genaueres erf\u00E4hrst du in der Werkst\u00E4tte von Abenteurer-Marionette Nr. 014.",
     "RowId": 8462,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2093,21 +2093,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Staatlichen Gesellschaften haben Wohnh\u00E4user errichtet und bieten Wohnungen zum Kauf an.\nSprich mit den Unterkunftsbeamten in den Wohngebieten, um mehr dar\u00FCber zu erfahren.",
+    "Text": "Die Staatlichen Gesellschaften haben Wohnh\u00E4user errichtet und bieten \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EWohnungen\u003C/span\u003E\u003C/span\u003E zum Kauf an.\nSprich mit den Unterkunftsbeamten in den Wohngebieten, um mehr dar\u00FCber zu erfahren.",
     "RowId": 8464,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Der Inhaltssuche wurde die Kategorie \u201EGoldsaucer\u201C hinzugef\u00FCgt. Dar\u00FCber kann an den folgenden Inhalten teilgenommen werden.\n\nTriple Triad: Weltensalon\nKampf der Trabanten: Gegen Spieler (um RP)\nKampf der Trabanten: Gegen Spieler (ohne RP)\nKampf der Trabanten: Turniere\n\nAu\u00DFerdem kostet die Teilnahme am Kampf der Trabanten keine MGP mehr.",
+    "Text": "Der Inhaltssuche wurde die Kategorie \u201EGoldsaucer\u201C hinzugef\u00FCgt. Dar\u00FCber kann an den folgenden Inhalten teilgenommen werden.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ETriple Triad: Weltensalon\u003C/span\u003E\u003C/span\u003E\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKampf der Trabanten: Gegen Spieler (um RP)\u003C/span\u003E\u003C/span\u003E\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKampf der Trabanten: Gegen Spieler (ohne RP)\u003C/span\u003E\u003C/span\u003E\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKampf der Trabanten: Turniere\u003C/span\u003E\u003C/span\u003E\n\nAu\u00DFerdem kostet die Teilnahme am Kampf der Trabanten keine MGP mehr.",
     "RowId": 8465,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Die folgenden Funktionen f\u00FCr Unterk\u00FCnfte wurden hinzugef\u00FCgt.\n\nOrchestrion\nDie Titel in der Wiedergabeliste eines Orchestrions k\u00F6nnen nun alle nacheinander, in zuf\u00E4lliger Reihenfolge oder einzeln abgespielt werden.\nWeitere Einzelheiten zu der Wiedergabeliste findest du im Hilfetext \u201EDas Orchestrion\u201C.\n\nAquarium\nMit diesem neuen M\u00F6belst\u00FCck, das es in verschiedenen Gr\u00F6\u00DFen gibt, k\u00F6nnen geangelte Fische in Unterk\u00FCnften ausgestellt werden.",
+    "Text": "Die folgenden Funktionen f\u00FCr Unterk\u00FCnfte wurden hinzugef\u00FCgt.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EOrchestrion\u003C/span\u003E\u003C/span\u003E\nDie Titel in der Wiedergabeliste eines Orchestrions k\u00F6nnen nun \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003Ealle nacheinander\u003C/span\u003E\u003C/span\u003E, \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003Ein zuf\u00E4lliger Reihenfolge\u003C/span\u003E\u003C/span\u003E oder \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003Eeinzeln\u003C/span\u003E\u003C/span\u003E abgespielt werden.\nWeitere Einzelheiten zu der Wiedergabeliste findest du im Hilfetext \u201EDas Orchestrion\u201C.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EAquarium\u003C/span\u003E\u003C/span\u003E\nMit diesem neuen M\u00F6belst\u00FCck, das es in verschiedenen Gr\u00F6\u00DFen gibt, k\u00F6nnen geangelte Fische in Unterk\u00FCnften ausgestellt werden.",
     "RowId": 8466,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2121,84 +2121,84 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Expeditionen zum Diadem wurden \u00FCberarbeitet!\nDu kannst die neuen Missionen vom Planungspult der Gesellschaftswerkst\u00E4tte aus beginnen. Genaueres erf\u00E4hrst du in der Werkst\u00E4tte von Abenteurer-Marionette Nr. 014.",
+    "Text": "Die Expeditionen zum \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDiadem\u003C/span\u003E\u003C/span\u003E wurden \u00FCberarbeitet!\nDu kannst die neuen Missionen vom Planungspult der Gesellschaftswerkst\u00E4tte aus beginnen. Genaueres erf\u00E4hrst du in der Werkst\u00E4tte von Abenteurer-Marionette Nr. 014.",
     "RowId": 8468,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Umz\u00FCge\nMit der neuen Umzugsfunktion ist es m\u00F6glich, ein Geb\u00E4ude auf ein anderes Grundst\u00FCck zu verlegen.\n\nLagerhaus\nEigent\u00FCmern einer Unterkunft (einschlie\u00DFlich Zimmer und Wohnungen) steht jetzt ein Lagerhaus zur Verf\u00FCgung, in dem sie ihre Zimmer- und Gartenausstattung einlagern k\u00F6nnen.\n\nSprich mit einem der Unterkunftsbeamten in den Wohngebieten, um mehr zu erfahren.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EUmz\u00FCge\u003C/span\u003E\u003C/span\u003E\nMit der neuen Umzugsfunktion ist es m\u00F6glich, ein Geb\u00E4ude auf ein anderes Grundst\u00FCck zu verlegen.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ELagerhaus\u003C/span\u003E\u003C/span\u003E\nEigent\u00FCmern einer Unterkunft (einschlie\u00DFlich Zimmer und Wohnungen) steht jetzt ein Lagerhaus zur Verf\u00FCgung, in dem sie ihre Zimmer- und Gartenausstattung einlagern k\u00F6nnen.\n\nSprich mit einem der Unterkunftsbeamten in den Wohngebieten, um mehr zu erfahren.",
     "RowId": 8469,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Die G\u00E4stezimmer in den Herbergen der Stadtstaaten wurden mit Projektionskommoden ausgestattet.\nDamit kannst du dich noch einfacher zu jeder Gelegenheit passend einkleiden!",
+    "Text": "Die G\u00E4stezimmer in den Herbergen der Stadtstaaten wurden mit \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EProjektionskommoden\u003C/span\u003E\u003C/span\u003E ausgestattet.\nDamit kannst du dich noch einfacher zu jeder Gelegenheit passend einkleiden!",
     "RowId": 8470,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Du kannst nun PvP-Teams bilden! Benutze dazu die entsprechende Tafel am Wolfsh\u00F6hlen-Pier!",
+    "Text": "Du kannst nun \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EPvP-Teams\u003C/span\u003E\u003C/span\u003E bilden! Benutze dazu die entsprechende Tafel am Wolfsh\u00F6hlen-Pier!",
     "RowId": 8471,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Kaufbeschr\u00E4nkungen f\u00FCr Grundst\u00FCcke\nIn allen Wohngebieten gelten f\u00FCr den Erwerb von Grundst\u00FCcken die folgenden Beschr\u00E4nkungen:\n- Die neuen Grundst\u00FCcke k\u00F6nnen nur f\u00FCr Unterk\u00FCnfte einer Freien Gesellschaft erworben werden.\n- Pro Dienst-Account k\u00F6nnen nur eine pers\u00F6nliche Unterkunft und eine Unterkunft einer Freien Gesellschaft erworben werden.\n- Freie Gesellschaften mit 3 oder weniger Mitgliedern k\u00F6nnen keine Unterk\u00FCnfte einer Freien Gesellschaft erwerben.\n\nWeiterverkauf\nGrundst\u00FCcke, die f\u00FCr den Weiterverkauf ger\u00E4umt werden, unterliegen der folgenden Beschr\u00E4nkung:\n- Nach vollzogener R\u00E4umung muss eine bestimmte Zeit verstreichen, bis der Weiterverkauf m\u00F6glich ist.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKaufbeschr\u00E4nkungen f\u00FCr Grundst\u00FCcke\u003C/span\u003E\u003C/span\u003E\nIn allen Wohngebieten gelten f\u00FCr den Erwerb von Grundst\u00FCcken die folgenden Beschr\u00E4nkungen:\n- Die neuen Grundst\u00FCcke k\u00F6nnen nur f\u00FCr Unterk\u00FCnfte einer Freien Gesellschaft erworben werden.\n- Pro Dienst-Account k\u00F6nnen nur eine pers\u00F6nliche Unterkunft und eine Unterkunft einer Freien Gesellschaft erworben werden.\n- Freie Gesellschaften mit 3 oder weniger Mitgliedern k\u00F6nnen keine Unterk\u00FCnfte einer Freien Gesellschaft erwerben.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EWeiterverkauf\u003C/span\u003E\u003C/span\u003E\nGrundst\u00FCcke, die f\u00FCr den Weiterverkauf ger\u00E4umt werden, unterliegen der folgenden Beschr\u00E4nkung:\n- Nach vollzogener R\u00E4umung muss eine bestimmte Zeit verstreichen, bis der Weiterverkauf m\u00F6glich ist.",
     "RowId": 8472,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Diarien\nIn allen Unterk\u00FCnften und Wohnungen k\u00F6nnen nun Diarien platziert werden. Besucher k\u00F6nnen Eintr\u00E4ge verfassen, mit dem Eigent\u00FCmer in Kontakt treten und ein \u201EGef\u00E4llt mir\u201C hinterlassen.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDiarien\u003C/span\u003E\u003C/span\u003E\nIn allen Unterk\u00FCnften und Wohnungen k\u00F6nnen nun Diarien platziert werden. Besucher k\u00F6nnen Eintr\u00E4ge verfassen, mit dem Eigent\u00FCmer in Kontakt treten und ein \u201EGef\u00E4llt mir\u201C hinterlassen.",
     "RowId": 8473,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Die folgenden Inhalte k\u00F6nnen nun \u00FCber die Inhaltssuche (Kategorie \u201EGoldsaucer\u201C) gestartet werden:\n\nChocobo-Rennen (\u00F6ffentlich)\n- Chocobo-Rennen: Zufallsstrecke\n- Chocobo-Rennen: Sagolii-Stra\u00DFe\n- Chocobo-Rennen: Sonnenk\u00FCste\n- Chocobo-Rennen: Pfad der Seelenruhe\n\nChocobo-Rennen (Gruppenmitglieder)\n- Chocobo-Rennen: Zufallsstrecke\n- Chocobo-Rennen: Sagolii-Stra\u00DFe\n- Chocobo-Rennen: Sonnenk\u00FCste\n- Chocobo-Rennen: Pfad der Seelenruhe",
+    "Text": "Die folgenden Inhalte k\u00F6nnen nun \u00FCber die Inhaltssuche (Kategorie \u201EGoldsaucer\u201C) gestartet werden:\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EChocobo-Rennen (\u00F6ffentlich)\u003C/span\u003E\u003C/span\u003E\n- Chocobo-Rennen: Zufallsstrecke\n- Chocobo-Rennen: Sagolii-Stra\u00DFe\n- Chocobo-Rennen: Sonnenk\u00FCste\n- Chocobo-Rennen: Pfad der Seelenruhe\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EChocobo-Rennen (Gruppenmitglieder)\u003C/span\u003E\u003C/span\u003E\n- Chocobo-Rennen: Zufallsstrecke\n- Chocobo-Rennen: Sagolii-Stra\u00DFe\n- Chocobo-Rennen: Sonnenk\u00FCste\n- Chocobo-Rennen: Pfad der Seelenruhe",
     "RowId": 8474,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\ndie Kaktor-Kletterwand!\nVerpass nicht den schwindelerregenden Springspa\u00DF in luftiger H\u00F6he!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Au\u00DFerdem f\u00FChren die Goldh\u00E4schen dich nun zu laufenden oder bevorstehenden GATEs.\n\nViel Spa\u00DF im Gold Saucer!",
+    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\ndie \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKaktor-Kletterwand\u003C/span\u003E\u003C/span\u003E!\nVerpass nicht den schwindelerregenden Springspa\u00DF in luftiger H\u00F6he!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Au\u00DFerdem f\u00FChren die Goldh\u00E4schen dich nun zu laufenden oder bevorstehenden GATEs.\n\nViel Spa\u00DF im Gold Saucer!",
     "RowId": 8475,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Kleiderpuppen\nIn allen Unterk\u00FCnften und Wohnungen k\u00F6nnen nun Kleiderpuppen platziert werden, um Ausr\u00FCstungsgegenst\u00E4nde zu pr\u00E4sentieren und zu verkaufen.\nSie k\u00F6nnen bei den H\u00E4ndlern der Wohngebiete und Dienstleistern der Unterk\u00FCnfte (Diener, Hokonin und Dienersysteme) erworben werden.\n\nZweck der Unterkunft\nDer Zweck einer Unterkunft oder Wohnung kann nun mit Stichw\u00F6rtern beschrieben werden.\nDie Stichw\u00F6rter k\u00F6nnen in den Unterkunftseinstellungen (Hauptmen\u00FC \u2192 Soziales \u2192 Unterk\u00FCnfte \u2192 Einstellungen einer Unterkunft \u00E4ndern \u2192 Zweck der Unterkunft) eingestellt werden und erscheinen im Profil der Unterkunft.",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKleiderpuppen\u003C/span\u003E\u003C/span\u003E\nIn allen Unterk\u00FCnften und Wohnungen k\u00F6nnen nun Kleiderpuppen platziert werden, um Ausr\u00FCstungsgegenst\u00E4nde zu pr\u00E4sentieren und zu verkaufen.\nSie k\u00F6nnen bei den H\u00E4ndlern der Wohngebiete und Dienstleistern der Unterk\u00FCnfte (Diener, Hokonin und Dienersysteme) erworben werden.\n\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EZweck der Unterkunft\u003C/span\u003E\u003C/span\u003E\nDer Zweck einer Unterkunft oder Wohnung kann nun mit Stichw\u00F6rtern beschrieben werden.\nDie Stichw\u00F6rter k\u00F6nnen in den Unterkunftseinstellungen (Hauptmen\u00FC \u2192 Soziales \u2192 Unterk\u00FCnfte \u2192 Einstellungen einer Unterkunft \u00E4ndern \u2192 Zweck der Unterkunft) eingestellt werden und erscheinen im Profil der Unterkunft.",
     "RowId": 8476,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Wunschlieferungen: Zhloe Aliapoh\nDu hast den h\u00F6chstm\u00F6glichen Zufriedenheitsrang erreicht und kannst nun Projektionen auf Zhloe Aliapoh anwenden.\n",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EWunschlieferungen: Zhloe Aliapoh\u003C/span\u003E\u003C/span\u003E\nDu hast den h\u00F6chstm\u00F6glichen Zufriedenheitsrang erreicht und kannst nun Projektionen auf Zhloe Aliapoh anwenden.\n",
     "RowId": 8477,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\nDer gro\u00DFe Yojinbo!\nStell dich der Herausforderung des gr\u00F6\u00DFten Schwertmeisters aller Zeiten!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um das neue GATE zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
+    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDer gro\u00DFe Yojinbo!\u003C/span\u003E\u003C/span\u003E\nStell dich der Herausforderung des gr\u00F6\u00DFten Schwertmeisters aller Zeiten!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um das neue GATE zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
     "RowId": 8478,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Auf bestimmten Tauchbooterkundungen k\u00F6nnen nun Seekarten aufgesp\u00FCrt werden, welche den Weg zu neuen lohnenswerten Zielorten verraten.",
+    "Text": "Auf bestimmten Tauchbooterkundungen k\u00F6nnen nun \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003ESeekarten\u003C/span\u003E\u003C/span\u003E aufgesp\u00FCrt werden, welche den Weg zu neuen lohnenswerten Zielorten verraten.",
     "RowId": 8479,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2212,14 +2212,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\nDer gro\u00DFe Yojinbo!\nDiese neue Attraktion darfst du nicht verpassen!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um das neue GATE zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
+    "Text": "Es wurde ein neues GATE hinzugef\u00FCgt:\n\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EDer gro\u00DFe Yojinbo\u003C/span\u003E\u003C/span\u003E!\nDiese neue Attraktion darfst du nicht verpassen!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um das neue GATE zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
     "RowId": 8481,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Der Kaktor-Kletterwand wurde eine neue Herausforderung hinzugef\u00FCgt. Verpass nicht den schwindelerregenden Springspa\u00DF in luftiger H\u00F6he!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um die neue Attraktion zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
+    "Text": "Der \u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EKaktor-Kletterwand\u003C/span\u003E\u003C/span\u003E wurde eine neue Herausforderung hinzugef\u00FCgt. Verpass nicht den schwindelerregenden Springspa\u00DF in luftiger H\u00F6he!\n\nDer Rezeptionist im Foyer gibt Auskunft \u00FCber das aktuelle GATE-Programm. Der Zeitplan f\u00FCr GATEs wurde angepasst, um die neue Attraktion zu ber\u00FCcksichtigen.\n\nViel Spa\u00DF im Gold Saucer!",
     "RowId": 8482,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2289,7 +2289,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CBitmapFontIcon\u003E68\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E67\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E120\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E123\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E63\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E121\u003C/BitmapFontIcon\u003E,\u003CBitmapFontIcon\u003E122\u003C/BitmapFontIcon\u003E,)\u003E",
     "RowId": 8492,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2303,7 +2303,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceNameAetheryte als kostenlosen Favoriten (durch Einmalpasswort)(durch PlayStation\u00AEPlus) entfernen?",
+    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E als kostenlosen Favoriten \u003Cswitch(IntegerParameter(2),(durch Einmalpasswort),(durch PlayStation\u00AEPlus),)\u003E entfernen?",
     "RowId": 8494,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2352,7 +2352,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Anzahl Teleport-Tickets: 999\u002B",
+    "Text": "Anzahl Teleport-Tickets: \u003CIf(GreaterThan(IntegerParameter(1),999))\u003E999\u002B\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E",
     "RowId": 8501,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2401,14 +2401,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceNameAetheryte",
+    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E",
     "RowId": 8508,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceNameTerritoryType",
+    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E",
     "RowId": 8509,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2443,7 +2443,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Untermen\u00FC",
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Untermen\u00FC",
     "RowId": 8514,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2478,21 +2478,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Wohngemeinschaft (. Bezirk, Nummer )",
+    "Text": "Wohngemeinschaft (\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E. Bezirk, Nummer \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E)",
     "RowId": 8519,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E",
     "RowId": 8520,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "PlaceName",
+    "Text": "\u003Csheetreference(PlaceName,IntegerParameter(1),0)\u003E",
     "RowId": 8521,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2611,7 +2611,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Du wurdest von  in eine Allianz eingeladen.\nAnnehmen?",
+    "Text": "Du wurdest von \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E in eine Allianz eingeladen.\nAnnehmen?",
     "RowId": 8538,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2653,21 +2653,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " in eine Allianz einladen?",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E in eine Allianz einladen?",
     "RowId": 8544,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Die Allianz-Einladung von  ablehnen?",
+    "Text": "Die Allianz-Einladung von \u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E ablehnen?",
     "RowId": 8545,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": " (eingeladen)",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E (eingeladen)",
     "RowId": 8546,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2716,21 +2716,21 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "WeatherPlaceNameTerritoryType",
+    "Text": "\u003Csheetreference(WeatherPlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E",
     "RowId": 8556,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Weather \uE06F Weather",
+    "Text": "\u003Csheetreference(Weather,IntegerParameter(1),1)\u003E \uE06F \u003Csheetreference(Weather,IntegerParameter(2),1)\u003E",
     "RowId": 8557,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Weather",
+    "Text": "\u003Csheetreference(Weather,IntegerParameter(1),1)\u003E",
     "RowId": 8558,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2744,7 +2744,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "St. ",
+    "Text": "St. \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "RowId": 8571,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2758,14 +2758,14 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\nSt. ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003CIf(IntegerParameter(2))\u003ESt. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8573,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "\nSt. ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003CIf(IntegerParameter(2))\u003ESt. \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8574,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -2884,7 +2884,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\nStufe ",
+    "Text": "\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\n\u003CIf(IntegerParameter(2))\u003EStufe \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8591,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3017,7 +3017,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " Notizen",
+    "Text": "\u003Czeropaddedvalue(IntegerParameter(1),3)\u003E Notizen",
     "RowId": 8617,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3122,42 +3122,42 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " %",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E %",
     "RowId": 8639,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Bereit",
+    "Text": "\u003Cspan uiForeground=\u0022506\u0022 color=\u0022#ffff66\u0022\u003E\u003Cspan uiGlow=\u0022507\u0022\u003EBereit\u003C/span\u003E\u003C/span\u003E",
     "RowId": 8640,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Noch   StundeStundenWeniger als 1 Stunde",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003ENoch \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E  \u003CIf(Equal(IntegerParameter(1),1))\u003EStunde\u003CElse/\u003EStunden\u003C/If\u003E\u003CElse/\u003EWeniger als 1 Stunde\u003C/If\u003E",
     "RowId": 8641,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item wirklich in den \u00C4therrad-St\u00E4nder einsetzen?",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Link\u003E wirklich in den \u00C4therrad-St\u00E4nder einsetzen?",
     "RowId": 8642,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item aus Einschub  entnehmen?",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,2,IntegerParameter(2),1,1,1)\u003E\u003C/Link\u003E aus Einschub \u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E entnehmen?",
     "RowId": 8643,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
   },
   {
-    "Text": "Item wird aus Einschub  entfernt.\nDas Rad wird dabei zerst\u00F6rt.",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Link\u003E wird aus Einschub \u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E entfernt.\n\u003Cspan uiForeground=\u0022500\u0022 color=\u0022#ff7b1a\u0022\u003E\u003Cspan uiGlow=\u0022501\u0022\u003EDas Rad wird dabei zerst\u00F6rt.\u003C/span\u003E\u003C/span\u003E",
     "RowId": 8644,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3185,7 +3185,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Item gegen das Gesellschaftskommando CompanyAction eintauschen?",
+    "Text": "\u003CLink\u003E\u003Csheetreferencede(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Link\u003E gegen das Gesellschaftskommando \u003Csheetreference(CompanyAction,IntegerParameter(2),0)\u003E eintauschen?",
     "RowId": 8648,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3206,7 +3206,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": " %",
+    "Text": "\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E %",
     "RowId": 8662,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3248,7 +3248,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "Erweiterte Maus-Funktionen aktivieren (Software-Mauscursor)",
+    "Text": "Erweiterte Maus-Funktionen aktivieren\u003CIf(Equal(IntegerParameter(75),0))\u003E (Software-Mauscursor)\u003CElse/\u003E\u003C/If\u003E",
     "RowId": 8671,
     "SubRowId": 0,
     "SheetName": "Addon",

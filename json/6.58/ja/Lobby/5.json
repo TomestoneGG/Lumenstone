@@ -1,6 +1,6 @@
 [
   {
-    "Text": "\u00A9 2010- SQUARE ENIX CO., LTD. All Rights Reserved.",
+    "Text": "\u00A9 2010-\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003CElse/\u003E\u003CTime\u003E0\u003C/Time\u003E\u003CIf(LessThan(t_year,2013))\u003E2013\u003CElse/\u003E\u003CValue\u003Et_year\u003C/Value\u003E\u003C/If\u003E\u003C/If\u003E SQUARE ENIX CO., LTD. All Rights Reserved.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -516,7 +516,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Tribe\u2642Tribe\u2640\u98A8\u306E\u540D\u524D\u3092\u30E9\u30F3\u30C0\u30E0\u306B\u547C\u3073\u51FA\u3057\u307E\u3059\u3002\n\u547C\u3073\u51FA\u3057\u305F\u540D\u524D\u306F\u305D\u306E\u307E\u307E\u7D9A\u3051\u3066\u7DE8\u96C6\u53EF\u80FD\u3067\u3059\u3002",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E\u2640)\u003E\u98A8\u306E\u540D\u524D\u3092\u30E9\u30F3\u30C0\u30E0\u306B\u547C\u3073\u51FA\u3057\u307E\u3059\u3002\n\u547C\u3073\u51FA\u3057\u305F\u540D\u524D\u306F\u305D\u306E\u307E\u307E\u7D9A\u3051\u3066\u7DE8\u96C6\u53EF\u80FD\u3067\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -540,7 +540,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u3042\u306A\u305F\u304C\u30D7\u30EC\u30A4\u3059\u308B\u30EF\u30FC\u30EB\u30C9\u3068\u3057\u3066\u3092\u81EA\u52D5\u9078\u629E\u3057\u307E\u3057\u305F\u3002\n\u3088\u308D\u3057\u3051\u308C\u3070\u6B21\u306E\u30B9\u30C6\u30C3\u30D7\u306B\u9032\u307F\u307E\u3059\u3002",
+    "Text": "\u3042\u306A\u305F\u304C\u30D7\u30EC\u30A4\u3059\u308B\u30EF\u30FC\u30EB\u30C9\u3068\u3057\u3066\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u3092\u81EA\u52D5\u9078\u629E\u3057\u307E\u3057\u305F\u3002\n\u3088\u308D\u3057\u3051\u308C\u3070\u6B21\u306E\u30B9\u30C6\u30C3\u30D7\u306B\u9032\u307F\u307E\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1272,7 +1272,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Tribe\u2642Tribe\u2640\u98A8\u306E\u540D\u524D\u3092\u30E9\u30F3\u30C0\u30E0\u306B\u547C\u3073\u51FA\u3057\u307E\u3059\u3002\n\u547C\u3073\u51FA\u3057\u305F\u540D\u524D\u306F\u305D\u306E\u307E\u307E\u7D9A\u3051\u3066\u7DE8\u96C6\u53EF\u80FD\u3067\u3059\u3002",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E\u2640)\u003E\u98A8\u306E\u540D\u524D\u3092\u30E9\u30F3\u30C0\u30E0\u306B\u547C\u3073\u51FA\u3057\u307E\u3059\u3002\n\u547C\u3073\u51FA\u3057\u305F\u540D\u524D\u306F\u305D\u306E\u307E\u307E\u7D9A\u3051\u3066\u7DE8\u96C6\u53EF\u80FD\u3067\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1764,7 +1764,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "// :\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u306ETribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3067\u3059\u3002\u3053\u306E\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080\u306B\u306F\u300CExVersion\u300D\u304C\u5FC5\u8981\u3067\u3059\u3002",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_year\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u306E\u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3067\u3059\u3002\u3053\u306E\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080\u306B\u306F\u300C\u003Csheetreference(ExVersion,IntegerParameter(5),0)\u003E\u300D\u304C\u5FC5\u8981\u3067\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1920,7 +1920,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Tribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u4E00\u6642\u4FDD\u5B58\u30C7\u30FC\u30BF\u30B9\u30ED\u30C3\u30C8\u306B\u4FDD\u5B58\u3057\u307E\u3059\u3002",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u4E00\u6642\u4FDD\u5B58\u30C7\u30FC\u30BF\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(3)\u003C/Value\u003E\u306B\u4FDD\u5B58\u3057\u307E\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1968,7 +1968,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "// :\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u306ETribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_year\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u306E\u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2004,7 +2004,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u30D0\u30FC\u30B8\u30E7\u30F31.0\u306E\u30EF\u30FC\u30EB\u30C9\u306B\u3044\u305F : Tribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
+    "Text": "\u30D0\u30FC\u30B8\u30E7\u30F31.0\u306E\u30EF\u30FC\u30EB\u30C9\u003CHighlight\u003EStringParameter(1)\u003C/Highlight\u003E\u306B\u3044\u305F\u003CHighlight\u003EStringParameter(2)\u003C/Highlight\u003E : \u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2016,7 +2016,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u30D0\u30FC\u30B8\u30E7\u30F31.0\u306E\u4E00\u6642\u4FDD\u5B58\u30B9\u30ED\u30C3\u30C8\u306B\u3042\u308BTribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
+    "Text": "\u30D0\u30FC\u30B8\u30E7\u30F31.0\u306E\u4E00\u6642\u4FDD\u5B58\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u306B\u3042\u308B\u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u307F\u307E\u3059\u3002",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2028,7 +2028,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "// :\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u306ETribe\u2642Tribe\u2640\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u4E0A\u66F8\u304D\u3057\u3066\u3082\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_year\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u306E\u003Cswitch(IntegerParameter(4),\u003Csheetreference(Tribe,IntegerParameter(3),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(3),1)\u003E\u2640)\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u3092\u4E0A\u66F8\u304D\u3057\u3066\u3082\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2076,7 +2076,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "//\u4FDD\u5B58",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_year\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E\u4FDD\u5B58",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2088,7 +2088,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "\u4E00\u6642\u4FDD\u5B58\u30C7\u30FC\u30BF\u30B9\u30ED\u30C3\u30C8",
+    "Text": "\u4E00\u6642\u4FDD\u5B58\u30C7\u30FC\u30BF\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2100,7 +2100,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "Tribe\u2642Tribe\u2640",
+    "Text": "\u003Cswitch(IntegerParameter(2),\u003Csheetreference(Tribe,IntegerParameter(1),0)\u003E\u2642,\u003Csheetreference(Tribe,IntegerParameter(1),1)\u003E\u2640)\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2268,7 +2268,7 @@
     "SheetLanguage": 1
   },
   {
-    "Text": "// :\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u306E\u5916\u898B\u30C7\u30FC\u30BF\u306F\u73FE\u5728\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u3067\u306F\u672A\u5BFE\u5FDC\u306E\u30C7\u30FC\u30BF\u3067\u3059\u304C\u3001\u4E0A\u66F8\u304D\u3057\u3066\u3082\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F        ",
+    "Text": "\u003CTime\u003EIntegerParameter(1)\u003C/Time\u003E\u003CValue\u003Et_year\u003C/Value\u003E/\u003CValue\u003Et_mon\u003C/Value\u003E/\u003CValue\u003Et_day\u003C/Value\u003E \u003CValue\u003Et_hour\u003C/Value\u003E:\u003CTwoDigitValue\u003Et_min\u003C/TwoDigitValue\u003E\u306B\u4FDD\u5B58\u3057\u305F\u30B9\u30ED\u30C3\u30C8\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E\u306E\u5916\u898B\u30C7\u30FC\u30BF\u306F\u73FE\u5728\u306E\u30D0\u30FC\u30B8\u30E7\u30F3\u3067\u306F\u672A\u5BFE\u5FDC\u306E\u30C7\u30FC\u30BF\u3067\u3059\u304C\u3001\u4E0A\u66F8\u304D\u3057\u3066\u3082\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F        ",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

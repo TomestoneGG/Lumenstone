@@ -24,13 +24,7 @@ class Program
             return;
         }
 
-        JsonSerializerOptions options = new() {
-            ReferenceHandler = ReferenceHandler.IgnoreCycles,
-            WriteIndented = true,
-            Converters = { new SeStringConverter(), new LazyRowConverterFactory() }
-        };
-
-        // Initialize Lumina with the sqpack path
+         // Initialize Lumina with the sqpack path
         
         string sqpackPath = args[0]; // Assuming the first argument is the sqpack path
         bool full = args.Length >= 3 ? args[2] == "full" : false;
@@ -40,6 +34,13 @@ class Program
         var luminaFR = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.French });
         var luminaJA = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.Japanese });
         
+        JsonSerializerOptions options = new() {
+            ReferenceHandler = ReferenceHandler.IgnoreCycles,
+            WriteIndented = true,
+            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory() }
+        };
+
+       
         var patch = args[1];
 
         // Get all types in the Lumina.Excel.GeneratedSheets namespace
