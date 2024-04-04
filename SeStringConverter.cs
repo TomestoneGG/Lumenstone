@@ -76,7 +76,7 @@ public class SeStringConverter : JsonConverter<SeString>
                         string hexValue = colorValue.ToString("x");
                         string paddedHexValue = hexValue.PadLeft(8, '0');
                         string firstSixChars = paddedHexValue.Substring(0, 6);
-                        colorAttr = " color=\"#" + firstSixChars + "\"";
+                        colorAttr = " style=\"color: #" + firstSixChars + "\"";
                     }
                 }
             }
