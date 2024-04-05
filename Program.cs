@@ -54,11 +54,17 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
+            if (type.Name == "Achievement")
+                continue;
+
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
         }
+
+        // Use our own copy of Achievement to work around the bug with Data being null.
+        ExtractSheetForAllLanguages<Lumenstone.Achievement>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
 
         ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
         ExtractMaps(luminaEN, full);
@@ -79,8 +85,9 @@ class Program
         // Get the ClassJobs Excel sheet
         var sheet = lumina.GetExcelSheet<T>();
 
-        if (sheet == null)
+        if (sheet == null) {
             return;
+        }
 
         const int cPageSize = 500;
         string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), $"json/{patch}/{lang}/{typeof(T).Name}");
