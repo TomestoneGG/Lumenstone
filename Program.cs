@@ -39,7 +39,6 @@ class Program
             WriteIndented = true,
             Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory() }
         };
-
        
         var patch = args[1];
 
@@ -115,7 +114,7 @@ class Program
             }
 
             sheetData.Add(row);
-            if (sheetData.Count() >= cPageSize) {
+            if (sheetData.Count >= cPageSize) {
                 string jsonForPage = JsonSerializer.Serialize(sheetData, options);
                 string fileNameForPage = $"{currentPage}.json";
                 string filePathForPage = Path.Combine(directoryPath, fileNameForPage);
@@ -126,7 +125,7 @@ class Program
             }
         }
 
-        if (sheetData.Count() == 0)
+        if (sheetData.Count == 0)
             return;
 
         // Serialize the object
