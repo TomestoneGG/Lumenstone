@@ -13,9 +13,6 @@ using SixLabors.ImageSharp.Processing.Processors.Normalization;
 
 class Program
 {
-    static int lowestIconID = 0;
-    static int highestIconID = 0;
-
     static void Main(string[] args)
      {
         if (args.Length < 2)
@@ -65,7 +62,7 @@ class Program
         // Use our own copy of Achievement to work around the bug with Data being null.
         ExtractSheetForAllLanguages<Lumenstone.Achievement>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
 
-        ExtractIcons(lowestIconID, highestIconID, luminaEN, full);
+        ExtractIcons(1, 156812, luminaEN, full);
         ExtractMaps(luminaEN, full);
         ExtractLoadingImages(luminaEN, full);
     }
@@ -101,18 +98,6 @@ class Program
         int currentPage = 1;
         foreach (var row in sheet)
         {
-            var iconProperty = typeof(T).GetProperty("Icon");
-            if (iconProperty != null && iconProperty.PropertyType == typeof(int)) {
-                // If Icon property exists, get its value
-                int iconValue = (int)iconProperty.GetValue(row);
-                if (iconValue > 0) {
-                    if (lowestIconID == 0 || iconValue < lowestIconID)
-                        lowestIconID = iconValue;
-                    if (iconValue > highestIconID)
-                        highestIconID = iconValue;
-                }
-            }
-
             sheetData.Add(row);
             if (sheetData.Count >= cPageSize) {
                 string jsonForPage = JsonSerializer.Serialize(sheetData, options);
