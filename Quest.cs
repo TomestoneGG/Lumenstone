@@ -186,7 +186,7 @@ public partial class Quest : ExcelRow
         UIntSpan RewardRowId = stackalloc uint[ 7 ];
         for( int i = 0; i < 7; i++ )
         {
-        	RewardRowId[ i ] = (uint) parser.ReadOffset< int >( 2304 + ( i * 4 ) );
+        	RewardRowId[ i ] = (uint) parser.ReadOffset< uint >( (ushort)(2304 + ( i * 4 )) );
         }
         OptionalItemReward = new LazyRow< Item >[5];
         for (int i = 0; i < 5; i++)
