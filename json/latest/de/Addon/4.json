@@ -1,5 +1,19 @@
 [
   {
+    "Text": "Blau",
+    "RowId": 1535,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Rot",
+    "RowId": 1536,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
     "Text": "Wei\u00DF",
     "RowId": 1537,
     "SubRowId": 0,
@@ -3304,7 +3318,7 @@
     "SheetLanguage": 3
   },
   {
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E %\u003C/i\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E,\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E %\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Czeropaddedvalue(IntegerParameter(1),2)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E,\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E %",
     "RowId": 2057,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3327,6 +3341,55 @@
   {
     "Text": "Mindestrang \u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahFemaleText,IntegerParameter(3),0)\u003E)\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahMaleText,IntegerParameter(3),0)\u003E)\u003E\u003C/If\u003E\n(Aktuell: \u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheetreference(GCRankLimsaFemaleText,PlayerParameter(52),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankLimsaMaleText,PlayerParameter(52),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheetreference(GCRankGridaniaFemaleText,PlayerParameter(53),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankGridaniaMaleText,PlayerParameter(53),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheetreference(GCRankUldahFemaleText,PlayerParameter(54),0)\u003E\u003CElse/\u003E\u003Csheetreference(GCRankUldahMaleText,PlayerParameter(54),0)\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E)",
     "RowId": 2061,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Betroffene Dialoge",
+    "RowId": 2063,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Alle Dialoge",
+    "RowId": 2064,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Nur vertonte Dialoge",
+    "RowId": 2065,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Geschwindigkeit von unvertonten Dialogen",
+    "RowId": 2066,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Geschwindigkeit",
+    "RowId": 2067,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
+    "RowId": 2068,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 3
+  },
+  {
+    "Text": "Einstellungen \u00F6ffnen",
+    "RowId": 2069,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3
@@ -3432,69 +3495,6 @@
   {
     "Text": "In diese Liste kannst du bis zu einhundert Gegenst\u00E4nde deines Interesses aufnehmen. Die Liste kann von anderen Spielern nicht eingesehen werden und du kannst sie auch au\u00DFerhalb deiner Stammwelt nutzen.",
     "RowId": 2084,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Noch nicht erhalten/registriert",
-    "RowId": 2085,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Auf dieser Seite sind keine nicht erhaltene oder registrierte Gegenst\u00E4nde vorhanden.",
-    "RowId": 2086,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Preis mit einberechneten Geb\u00FChren anzeigen.",
-    "RowId": 2087,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Um das Zielgebiet \u201E\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E\u201C zu entlasten, wurde es in mehrere Instanzen gleichen Inhalts aufgeteilt.\nW\u00E4hle eine Instanz aus.",
-    "RowId": 2090,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Keine Pr\u00E4ferenz",
-    "RowId": 2091,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),9))\u003EA\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\uE0B1,\uE0B2,\uE0B3,\uE0B4,\uE0B5,\uE0B6,\uE0B7,\uE0B8,\uE0B9)\u003E\u003C/If\u003E\u003CElse/\u003E0\u003C/If\u003E (\u003Cformat(IntegerParameter(3),.)\u003E)",
-    "RowId": 2092,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "Unterkunft",
-    "RowId": 2100,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "\u003Csheetreference(FCAuthority,43,0)\u003E",
-    "RowId": 2101,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 3
-  },
-  {
-    "Text": "\u003Csheetreference(FCAuthority,44,0)\u003E",
-    "RowId": 2102,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 3

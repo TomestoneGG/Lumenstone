@@ -1,5 +1,19 @@
 [
   {
+    "Text": "Blue",
+    "RowId": 1535,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Red",
+    "RowId": 1536,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
     "Text": "White",
     "RowId": 1537,
     "SubRowId": 0,
@@ -3304,7 +3318,7 @@
     "SheetLanguage": 2
   },
   {
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CBitmapFontIcon\u003E62\u003C/BitmapFontIcon\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E%\u003C/i\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E.\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E%\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Czeropaddedvalue(IntegerParameter(1),2)\u003E\u003CElse/\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E\u003C/If\u003E.\u003CValue\u003EIntegerParameter(2)\u003C/Value\u003E%",
     "RowId": 2057,
     "SubRowId": 0,
     "SheetName": "Addon",
@@ -3327,6 +3341,55 @@
   {
     "Text": "Achieve the rank of \u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahFemaleText,IntegerParameter(3),0)\u003E)\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\u003Csheetreference(GCRankLimsaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankGridaniaMaleText,IntegerParameter(3),0)\u003E,\u003Csheetreference(GCRankUldahMaleText,IntegerParameter(3),0)\u003E)\u003E\u003C/If\u003E or higher",
     "RowId": 2061,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Text Auto-advance Settings",
+    "RowId": 2063,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Apply to All Dialogue",
+    "RowId": 2064,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Apply to Voiced Dialogue Only",
+    "RowId": 2065,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Unvoiced Dialogue Settings",
+    "RowId": 2066,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Auto-advance Speed",
+    "RowId": 2067,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CValue\u003EIntegerParameter(1)\u003C/Value\u003E",
+    "RowId": 2068,
+    "SubRowId": 0,
+    "SheetName": "Addon",
+    "SheetLanguage": 2
+  },
+  {
+    "Text": "Open Text Auto-advance Settings",
+    "RowId": 2069,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
@@ -3432,69 +3495,6 @@
   {
     "Text": "Up to 100 items can be added to your favorites. Though they cannot be viewed by other players, you may access them while you are visiting another World.",
     "RowId": 2084,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "Unobtained/Unregistered Only",
-    "RowId": 2085,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "There are no unobtained or unregistered items to display on this page.",
-    "RowId": 2086,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "Display price with fee included.",
-    "RowId": 2087,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "To reduce congestion, the area you are about to enter has been divided into multiple identical instances. Select a destination.",
-    "RowId": 2090,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "No preference.",
-    "RowId": 2091,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "\u003Csheetreference(PlaceName,\u003Csheetreference(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),9))\u003EA\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\uE0B1,\uE0B2,\uE0B3,\uE0B4,\uE0B5,\uE0B6,\uE0B7,\uE0B8,\uE0B9)\u003E\u003C/If\u003E\u003CElse/\u003E0\u003C/If\u003E. (\u003Cformat(IntegerParameter(3),,)\u003E) ",
-    "RowId": 2092,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "Housing",
-    "RowId": 2100,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "\u003Csheetreference(FCAuthority,43,0)\u003E",
-    "RowId": 2101,
-    "SubRowId": 0,
-    "SheetName": "Addon",
-    "SheetLanguage": 2
-  },
-  {
-    "Text": "\u003Csheetreference(FCAuthority,44,0)\u003E",
-    "RowId": 2102,
     "SubRowId": 0,
     "SheetName": "Addon",
     "SheetLanguage": 2
