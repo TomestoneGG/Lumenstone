@@ -63,7 +63,7 @@ class Program
         //ExtractSheetForAllLanguages<Lumenstone.Achievement>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
         //ExtractSheetForAllLanguages<Lumenstone.Quest>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
 
-        //ExtractIcons(1, 160000, luminaEN, full);
+        ExtractIcons(1, 160000, luminaEN, full);
         //ExtractMaps(luminaEN, full);
         //ExtractLoadingImages(luminaEN, full);
     }
