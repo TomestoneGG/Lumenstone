@@ -50,8 +50,8 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
-            //if (type.Name == "Achievement"  || type.Name == "Quest")
-            //    continue;
+            if (type.Name == "Status")
+                continue;
 
             Console.WriteLine(type.Name);
             
@@ -59,11 +59,10 @@ class Program
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
         }
 
-        // Use our own copy of Achievement to work around the bug with Data being null.
-        //ExtractSheetForAllLanguages<Lumenstone.Achievement>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
-        //ExtractSheetForAllLanguages<Lumenstone.Quest>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
-
-        ExtractIcons(1, 160000, luminaEN, full);
+        // Use our own copy of Status to work around the bug with Icon being wrong.
+        ExtractSheetForAllLanguages<Lumenstone.Status>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
+        
+        //ExtractIcons(1, 160000, luminaEN, full);
         //ExtractMaps(luminaEN, full);
         //ExtractLoadingImages(luminaEN, full);
     }
