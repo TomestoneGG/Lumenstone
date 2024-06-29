@@ -62,9 +62,9 @@ class Program
         // Use our own copy of Status to work around the bug with Icon being wrong.
         ExtractSheetForAllLanguages<Lumenstone.Status>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
         
-        //ExtractIcons(1, 160000, luminaEN, full);
-        //ExtractMaps(luminaEN, full);
-        //ExtractLoadingImages(luminaEN, full);
+        ExtractIcons(1, 250000, luminaEN, full);
+        ExtractMaps(luminaEN, full);
+        ExtractLoadingImages(luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
@@ -128,21 +128,25 @@ class Program
     private const string IconFileFormat = "ui/icon/{0:D3}000/{1}{2:D6}.tex";
     private const string IconHDFileFormat = "ui/icon/{0:D3}000/{1}{2:D6}_hr1.tex";
 
-    private static TexFile GetIcon(Lumina.GameData lumina, string type, int iconId, bool hd)
+    private static TexFile? GetIcon(Lumina.GameData lumina, string type, int iconId, bool hd)
     {
         type ??= string.Empty;
         if (type.Length > 0 && !type.EndsWith("/"))
             type += "/";
 
         var filePath = string.Format(hd ? IconHDFileFormat :IconFileFormat, iconId / 1000, type, iconId);
-        var file = lumina.GetFile<TexFile>(filePath);
+        try {
+            var file = lumina.GetFile<TexFile>(filePath);
 
-        if (file != default(TexFile) || type.Length <= 0) return file;
+            if (file != default(TexFile) || type.Length <= 0) return file;
 
-        // Couldn't get specific type, try for generic version.
-        filePath = string.Format(hd ? IconHDFileFormat : IconFileFormat, iconId / 1000, string.Empty, iconId);
-        file = lumina.GetFile<TexFile>(filePath);
-        return file;
+            // Couldn't get specific type, try for generic version.
+            filePath = string.Format(hd ? IconHDFileFormat : IconFileFormat, iconId / 1000, string.Empty, iconId);
+            file = lumina.GetFile<TexFile>(filePath);
+            return file;
+        } catch (FileNotFoundException) {
+            return null;
+        }
     }
 
     static void ExtractIcons(int first, int last, Lumina.GameData lumina, bool fullImport)
