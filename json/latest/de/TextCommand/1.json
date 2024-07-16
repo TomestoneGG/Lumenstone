@@ -415,7 +415,7 @@
     "SheetLanguage": 3
   },
   {
-    "Description": "/grafikeinstellungen (/grafikein), /graphicpresets(/gpresets)\nVERWENDUNG:\n/grafikein [Nummer]\nWechselt die Grafikeinstellungen zu der entsprechenden Voreinstellung.\n\nNummern der Voreinstellungen (1-5)\n\u003CIf(Equal(PlayerParameter(78),3))\u003E1: Standard (Mac)\n2: Mittel (Mac)\n3: Hoch (Mac)\n4: Sehr hoch (Mac)\n5: Maximum (Mac)\u003CElse/\u003E1: Standard (Laptop)\n2: Standard (Desktop)\n3: Hoch (Laptop)\n4: Hoch (Desktop)\n5: Maximum\u003C/If\u003E",
+    "Description": "/grafikeinstellungen (/grafikein), /graphicpresets (/gpresets)\nVERWENDUNG:\n/grafikein [Nummer]\nWechselt die Grafikeinstellungen zu der entsprechenden Voreinstellung.\n\nNummern der Voreinstellungen (1-5)\n\u003CIf(Equal(PlayerParameter(78),3))\u003E1: Standard (Mac)\n2: Mittel (Mac)\n3: Hoch (Mac)\n4: Sehr hoch (Mac)\n5: Maximum (Mac)\u003CElse/\u003E1: Standard (Laptop)\n2: Standard (Desktop)\n3: Hoch (Laptop)\n4: Hoch (Desktop)\n5: Maximum\u003C/If\u003E",
     "Alias": "/grafikeinstellungen",
     "ShortAlias": "/grafikein",
     "Command": "/graphicpresets",
@@ -893,7 +893,7 @@
     "SheetLanguage": 3
   },
   {
-    "Description": "/gesichtsaccessoire, /facewear\nVERWENDUNG:\n/gesichtsaccessoire [Gesichtsaccessoire-Name]\n\u2192 Legt das ausgew\u00E4hlte Gesichtsaccessoire an.\n\nBeispiel:\n/gesichtsaccessoire \u201EOvale Brille\u201C\n\u2192 Legt die ovale Brille an.",
+    "Description": "/gesichtsaccessoire, /facewear\nVERWENDUNG:\n/gesichtsaccessoire [Gesichtsaccessoire-Name]\n\u2192 Legt das ausgew\u00E4hlte Gesichtsaccessoire an.\n\nBeispiel:\n/gesichtsaccessoire \u0022Ovale Brille\u0022\n\u2192 Legt die ovale Brille an.",
     "Alias": "/gesichtsaccessoire",
     "ShortAlias": "",
     "Command": "/facewear",
@@ -3657,7 +3657,7 @@
     "SheetLanguage": 3
   },
   {
-    "Description": "/alarm\nVERWENDUNG:\n/alarm [Unterbefehl]\n\u2192 Richtet einen Alarm ein.\nBeispiel:\n/alarm Feierabend oz wh 1920 15 ton04\nRichtet einen Alarm mit dem Namen \u201EFeierabend\u201C f\u00FCr 19:20 Uhr Ortszeit (oz) ein, der t\u00E4glich wiederholt (wh), 15 Minuten vorher angek\u00FCndigt wird und mit dem Alarmton 4 (ton04) klingelt. Wiederholung und Ank\u00FCndigung k\u00F6nnen ausgelassen werden. Eine Zeitangabe ist von 0000 bis 2400 m\u00F6glich. Die Ank\u00FCndigung kann zwischen 1 und 60 Minuten vor dem Termin liegen. Die Alarmt\u00F6ne reichen von ton00 bis ton05, und falls er zus\u00E4tzlich als stumm (mute) definiert ist, klingelt er nicht in Inhalten. Alarmton und Stummschaltung k\u00F6nnen ausgelassen werden.\n\u003E\u003EUnterbefehle\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eoz\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Elt\u003C/span\u003E)  Ortszeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Esz\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Est\u003C/span\u003E)  Serverzeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eez\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Eet\u003C/span\u003E)  Eorzea-Zeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Ezur\u00FCck\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Eclear\u003C/span\u003E)  L\u00F6scht alle Alarme.\n\nBei fehlendem Unterbefehl wird das Alarmfenster ge\u00F6ffnet bzw. geschlossen.",
+    "Description": "/alarm\nVERWENDUNG:\n/alarm [Unterbefehl]\n\u2192 Richtet einen Alarm ein.\nBeispiel:\n/alarm Feierabend oz 1920 15 ton04\nRichtet einen Alarm mit dem Namen \u201EFeierabend\u201C f\u00FCr 19:20 Uhr Ortszeit (oz) ein, der 15 Minuten vorher angek\u00FCndigt wird und mit dem Alarmton 4 (ton04) klingelt.\n/alarm Unternehmung oz wh 00 5 ton04\nRichtet einen Alarm mit dem Namen \u201EUnternehmung\u201C ein, der sich st\u00FCndlich 5 Minuten nach der vollen Stunde wiederholt und mit dem Alarmton 4 (ton04) klingelt.\nWiederholung und Ank\u00FCndigung k\u00F6nnen ausgelassen werden. Eine Zeitangabe ist von 0000 bis 2400 m\u00F6glich. Die Ank\u00FCndigung kann zwischen 1 und 60 Minuten vor dem Termin liegen. Bei einem Alarm zu einer festgelegten Uhrzeit ist die wh Funktion nicht m\u00F6glich. Die Alarmt\u00F6ne reichen von ton00 bis ton05, und falls er zus\u00E4tzlich als stumm (mute) definiert ist, klingelt er nicht in Inhalten. Alarmton und Stummschaltung k\u00F6nnen ausgelassen werden.\n\u003E\u003EUnterbefehle\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eoz\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Elt\u003C/span\u003E)  Ortszeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Esz\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Est\u003C/span\u003E)  Serverzeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eez\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Eet\u003C/span\u003E)  Eorzea-Zeit\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003Ezur\u00FCck\u003C/span\u003E (\u003Cspan style=\u0022color: #ffff66;\u0022\u003Eclear\u003C/span\u003E)  L\u00F6scht alle Alarme.\n\nBei fehlendem Unterbefehl wird das Alarmfenster ge\u00F6ffnet bzw. geschlossen.",
     "Alias": "/alarm",
     "ShortAlias": "",
     "Command": "/alarm",
