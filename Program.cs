@@ -195,21 +195,10 @@ class Program
         }
     }
 
-    private static Image<Rgba32> GetImage(TexFile tex)
+    private static Image<Bgra32> GetImage(TexFile tex)
     {
         // Create a new image from the raw pixel data
-        var image = Image.LoadPixelData<Rgba32>(tex.ImageData, tex.Header.Width, tex.Header.Height);
-
-        // Manually rearrange the color channels
-        for (int y = 0; y < image.Height; y++)
-        {
-            for (int x = 0; x < image.Width; x++)
-            {
-                var pixel = image[x, y];
-                var newPixel = new Rgba32(pixel.B, pixel.G, pixel.R, pixel.A);
-                image[x, y] = newPixel;
-            }
-        }
+        var image = Image.LoadPixelData<Bgra32>(tex.ImageData, tex.Header.Width, tex.Header.Height);
 
         return image;
     }
