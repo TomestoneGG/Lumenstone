@@ -8,10 +8,19 @@ public class LazyRowConverterFactory : JsonConverterFactory
 {
     public override bool CanConvert(Type typeToConvert)
     {
-        // Check if the type is a LazyRow<T> where T extends ExcelRow
-        return typeToConvert.IsGenericType &&
-               typeToConvert.GetGenericTypeDefinition() == typeof(LazyRow<>) &&
-               typeof(ExcelRow).IsAssignableFrom(typeToConvert.GetGenericArguments()[0]);
+        // Check if the type is a generic type and matches RowRef<>
+        if (typeToConvert.IsGenericType && 
+            typeToConvert.GetGenericTypeDefinition() == typeof(RowRef<>))
+        {
+            // Get the type argument T
+            Type argumentType = typeToConvert.GetGenericArguments()[0];
+
+            // Check if T is a struct and implements IExcelRow<T>
+            return argumentType.IsValueType && 
+                argumentType.GetInterface(typeof(IExcelRow<>).FullName) != null;
+        }
+
+        return false;
     }
 
     public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)
