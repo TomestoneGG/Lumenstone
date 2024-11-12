@@ -56,7 +56,30 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
-            if (type.Name != "Action" && type.Name != "ActionTransient") continue;
+            if (type.Name != "GilShopItem") continue;
+            
+            Console.WriteLine(type.Name);
+            
+            MethodInfo constructed = generic.MakeGenericMethod(type);
+            constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+        }
+
+        var subrowTypes = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.GilShopItem)).GetTypes()
+         .Where(t => t.Namespace == "Lumina.Excel.Sheets" 
+                 && !t.IsAbstract 
+                 && t.GetInterfaces()
+                     .Any(i => i.IsGenericType 
+                               && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelSubrow<>)
+                               && i.GenericTypeArguments[0] == t));
+
+        generic = typeof(Program).GetMethod(nameof(ExtractSubrowSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
+        if (generic == null)
+            return;
+
+        // Call ExtractSheetForAllLanguages for each type
+        foreach (var type in subrowTypes)
+        {
+            if (type.Name != "GilShopItem") continue;
             
             Console.WriteLine(type.Name);
             
@@ -76,6 +99,15 @@ class Program
         ExtractSheet<T>(luminaDE, patch, "de", options);
         ExtractSheet<T>(luminaFR, patch, "fr", options);
         ExtractSheet<T>(luminaJA, patch, "ja", options);
+    }
+
+    static void ExtractSubrowSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
+                                            JsonSerializerOptions options) where T : struct, IExcelSubrow<T>
+    {
+        ExtractSubrowSheet<T>(luminaEN, patch, "en", options);
+        ExtractSubrowSheet<T>(luminaDE, patch, "de", options);
+        ExtractSubrowSheet<T>(luminaFR, patch, "fr", options);
+        ExtractSubrowSheet<T>(luminaJA, patch, "ja", options);
     }
 
     static void ExtractSheet<T>(Lumina.GameData lumina, string patch, string lang, JsonSerializerOptions options) where T: struct, Lumina.Excel.IExcelRow<T>
@@ -124,7 +156,56 @@ class Program
         File.WriteAllText(filePath, json);
 
         Console.WriteLine($"{typeof(T).Name} data extracted and saved to {fileName}");
+    }
 
+    static void ExtractSubrowSheet<T>(Lumina.GameData lumina, string patch, string lang, JsonSerializerOptions options) where T: struct, Lumina.Excel.IExcelSubrow<T>
+    {
+        // Get the ClassJobs Excel sheet
+        var sheet = lumina.GetSubrowExcelSheet<T>();
+
+        if (sheet == null) {
+            return;
+        }
+
+        const int cPageSize = 500;
+        string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), $"json/{patch}/{lang}/{typeof(T).Name}");
+
+        if (!Directory.Exists(directoryPath))
+        {
+            Directory.CreateDirectory(directoryPath);
+        }
+
+        // Extract data and save as JSON
+        var sheetData = new List<T>();
+        int currentPage = 1;
+        foreach (var rows in sheet)
+        {
+            foreach (var row in rows) {
+                sheetData.Add(row);
+            }
+            if (sheetData.Count >= cPageSize) {
+                string jsonForPage = JsonSerializer.Serialize(sheetData, options);
+                string fileNameForPage = $"{currentPage}.json";
+                string filePathForPage = Path.Combine(directoryPath, fileNameForPage);
+                File.WriteAllText(filePathForPage, jsonForPage);
+                sheetData.Clear();
+                Console.WriteLine($"{typeof(T).Name} data extracted and saved to {fileNameForPage}");
+                currentPage++;
+            }
+        }
+
+        if (sheetData.Count == 0)
+            return;
+
+        // Serialize the object
+        string json = JsonSerializer.Serialize(sheetData, options);
+        string fileName = $"{currentPage}.json";
+                
+        string filePath = Path.Combine(directoryPath, fileName);
+
+        File.WriteAllText(filePath, json);
+
+        Console.WriteLine($"{typeof(T).Name} data extracted and saved to {fileName}");
     }
 
     private const string IconFileFormat = "ui/icon/{0:D3}000/{1}{2:D6}.tex";
