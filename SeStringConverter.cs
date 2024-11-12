@@ -135,20 +135,24 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
 
     public String ConvertPayload(ReadOnlySePayload payload)
     {
-        //if( payload.Type == ReadOnlySePayloadType.Text )
+        if (payload.Type == ReadOnlySePayloadType.Invalid)
+            return "";
+
+        if( payload.Type == ReadOnlySePayloadType.Text )
             return payload.AsSpan().ToString().Replace( "<", "\\<" );
 
-return "";
-        /* switch( payload.PayloadType )
+        switch( payload.MacroCode )
             {
-                case PayloadType.NewLine:
+                case MacroCode.NewLine:
                     return "\n";
-                case PayloadType.SoftHyphen:
+                case MacroCode.SoftHyphen:
                     return "";
-                case PayloadType.Hyphen:
+                case MacroCode.Hyphen:
                     return "–";
                 default:
                 {
+                    return payload.AsSpan().ToString();
+                    /*
                     if( payload.Expressions.Count == 0 )
                         return ConvertPayloadTag($"<{payload.PayloadType.ToString().ToLower()}>");
 
@@ -173,7 +177,8 @@ return "";
                     return ConvertPayloadTag($"<{payloadTag}({string.Join( ',', payload.Expressions.Select(
                         ex => ConvertExpression(ex)
                     ) )})>");
+                    */
                 }
-            }*/
+            }
     }
 }
