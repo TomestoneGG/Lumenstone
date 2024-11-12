@@ -10,6 +10,7 @@ using Lumina.Text;
 using Lumina.Text.ReadOnly;
 using Lumina.Text.Payloads;
 using SixLabors.ImageSharp.Formats;
+using System.Xml.XPath;
 
 public class SeStringConverter : JsonConverter<ReadOnlySeString>
 {
@@ -51,15 +52,15 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
             return "</i>";
 
         // Eliminate uicolorborder ("UIGlow") as we don't bother representing it in any way.
-        if (lowerType.StartsWith("<uicolorborder")) {
+        if (lowerType.StartsWith("<edgecolortype")) {
             return "";
         }
 
         // Convert ui color fill to a span with a foreground color.
-        if (lowerType.StartsWith("<uicolorfill")) {
-            if (lowerType == "<uicolorfill>0</uicolorfill>")
+        if (lowerType.StartsWith("<colortype")) {
+            if (lowerType == "<colortype>0</colortype>")
                 return "</span>";
-            string numPattern = @"<uicolorfill>(\d+)</uicolorfill>";
+            string numPattern = @"<colortype>(\d+)</colortype>";
         
             Match match = Regex.Match(lowerType, numPattern);
             string colorAttr = "";
@@ -84,8 +85,10 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
         return type;
     }
 
-    public String ConvertExpression(Lumina.Text.Expressions.BaseExpression expression)
+    public String ConvertExpression(Lumina.Text.ReadOnly.ReadOnlySeExpression expression)
     {
+        return expression.AsSpan().ToString();
+        /*
         if (expression is Lumina.Text.Expressions.StringExpression se)
             return ConvertSeString(se.Value);
         if (expression is Lumina.Text.Expressions.BinaryExpression be)
@@ -93,9 +96,10 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
          if (expression is Lumina.Text.Expressions.ParameterExpression pe)
             return ConvertParameterExpression(pe);
         return expression.ToString();
+        */
     }
 
-    public String ConvertParameterExpression(Lumina.Text.Expressions.ParameterExpression expression)
+    /*public String ConvertParameterExpression(Lumina.Text.Expressions.ParameterExpression expression)
     {
         return expression.ExpressionType switch
         {
@@ -132,13 +136,14 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
         // This allows us to dynamically construct the replacement string based on the matched digits
         return Regex.Replace(result, pattern, match => $"PlayerParameter({match.Groups[1].Value})");
     }
+*/
 
     public String ConvertPayload(ReadOnlySePayload payload)
     {
         if (payload.Type == ReadOnlySePayloadType.Invalid)
             return "";
 
-        if( payload.Type == ReadOnlySePayloadType.Text )
+        if (payload.Type == ReadOnlySePayloadType.Text)
             return payload.AsSpan().ToString().Replace( "<", "\\<" );
 
         switch( payload.MacroCode )
@@ -151,33 +156,38 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                     return "–";
                 default:
                 {
-                    return payload.AsSpan().ToString();
-                    /*
-                    if( payload.Expressions.Count == 0 )
-                        return ConvertPayloadTag($"<{payload.PayloadType.ToString().ToLower()}>");
+                    //return "\nExpression: " + payload.AsSpan().ToString() + "\n";
 
-                    var originalPayloadTag = payload.PayloadType.ToString();
+                    var expressions = (payload as ICollection<ReadOnlySeExpression>);
+                    var expressionCount = (payload as ICollection<ReadOnlySeExpression>).Count;
+                  
+                    if (expressionCount == 0)
+                        return ConvertPayloadTag($"<{payload.AsSpan().ToString().ToLower()}>");
+
+                    var originalPayloadTag = payload.MacroCode.ToString();
                     var payloadTag = originalPayloadTag.ToLower();
-                    if (payloadTag == "if" && payload.Expressions.Count == 3) {
-                        string expression1 = ConvertExpression(payload.Expressions.ElementAt(0));
-                        string expression2 = ConvertExpression(payload.Expressions.ElementAt(1));
+                 
+                    //return payloadTag + ":" + expressionCount;
+
+                    if (payloadTag == "if" && expressionCount == 3) {
+                        string expression1 = ConvertExpression(expressions.ElementAt(0));
+                        string expression2 = ConvertExpression(expressions.ElementAt(1));
                         if (expression2.Length == 0)
                             expression2 = " ";
-                        string expression3 = ConvertExpression(payload.Expressions.ElementAt(2));
+                        string expression3 = ConvertExpression(expressions.ElementAt(2));
                         if (expression3.Length == 0)
                             expression3 = " ";
                         return $"<If({expression1})>{expression2}<Else/>{expression3}</If>";
                     }
                     
-                    if (payload.Expressions.Count == 1) {
-                        string expression1 = ConvertExpression(payload.Expressions.ElementAt(0));
+                    if (expressions.Count == 1) {
+                        string expression1 = ConvertExpression(expressions.ElementAt(0));
                         return ConvertPayloadTag($"<{originalPayloadTag}>{expression1}</{originalPayloadTag}>");
                     }
 
-                    return ConvertPayloadTag($"<{payloadTag}({string.Join( ',', payload.Expressions.Select(
+                    return ConvertPayloadTag($"<{payloadTag}({string.Join( ',', expressions.Select(
                         ex => ConvertExpression(ex)
                     ) )})>");
-                    */
                 }
             }
     }
