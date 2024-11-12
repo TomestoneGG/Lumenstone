@@ -7,10 +7,11 @@ using System.Text.RegularExpressions;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
 using Lumina.Text;
+using Lumina.Text.ReadOnly;
 using Lumina.Text.Payloads;
 using SixLabors.ImageSharp.Formats;
 
-public class SeStringConverter : JsonConverter<SeString>
+public class SeStringConverter : JsonConverter<ReadOnlySeString>
 {
     private ExcelSheet<UIColor> _uiColors;
 
@@ -20,14 +21,14 @@ public class SeStringConverter : JsonConverter<SeString>
         _uiColors = uiColors;
     }
 
-    public override SeString Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+    public override ReadOnlySeString Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         // For deserialization, you might want to convert the JSON string back to SeString.
         // This example assumes you're not deserializing SeString objects.
         throw new NotImplementedException("Deserialization is not supported.");
     }
 
-    public override void Write(Utf8JsonWriter writer, SeString value, JsonSerializerOptions options)
+    public override void Write(Utf8JsonWriter writer, ReadOnlySeString value, JsonSerializerOptions options)
     {
         // Serialize the SeString object as a JSON string.
         try { writer.WriteStringValue(ConvertSeString(value)); } catch (Exception) {
@@ -35,9 +36,9 @@ public class SeStringConverter : JsonConverter<SeString>
         }
     }
 
-    public String ConvertSeString(SeString value)
+    public String ConvertSeString(ReadOnlySeString value)
     {
-        return string.Join("", value.Payloads.Select(ConvertPayload));
+        return string.Join("", value.Select(ConvertPayload));
     }
 
     public string ConvertPayloadTag(String type)
@@ -132,12 +133,13 @@ public class SeStringConverter : JsonConverter<SeString>
         return Regex.Replace(result, pattern, match => $"PlayerParameter({match.Groups[1].Value})");
     }
 
-    public String ConvertPayload(BasePayload payload)
+    public String ConvertPayload(ReadOnlySePayload payload)
     {
-        if( payload.PayloadType == PayloadType.Text )
-            return payload.RawString.Replace( "<", "\\<" );
+        //if( payload.Type == ReadOnlySePayloadType.Text )
+            return payload.AsSpan().ToString().Replace( "<", "\\<" );
 
-         switch( payload.PayloadType )
+return "";
+        /* switch( payload.PayloadType )
             {
                 case PayloadType.NewLine:
                     return "\n";
@@ -172,6 +174,6 @@ public class SeStringConverter : JsonConverter<SeString>
                         ex => ConvertExpression(ex)
                     ) )})>");
                 }
-            }
+            }*/
     }
 }

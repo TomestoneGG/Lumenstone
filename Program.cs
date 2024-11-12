@@ -41,9 +41,8 @@ class Program
         var patch = args[1];
 
         // Get all types in the Lumina.Excel.GeneratedSheets namespace
-       var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Item)).GetTypes()
+       var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Action)).GetTypes()
          .Where(t => t.Namespace == "Lumina.Excel.Sheets" 
-                 && t.IsClass 
                  && !t.IsAbstract 
                  && t.GetInterfaces()
                      .Any(i => i.IsGenericType 
@@ -57,15 +56,17 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
+            if (type.Name != "Action" && type.Name != "ActionTransient") continue;
+            
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
         }
         
-        ExtractIcons(1, 250000, luminaEN, full);
-        ExtractMaps(luminaEN, full);
-        ExtractLoadingImages(luminaEN, full);
+        // ExtractIcons(1, 250000, luminaEN, full);
+        // ExtractMaps(luminaEN, full);
+        // ExtractLoadingImages(luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 

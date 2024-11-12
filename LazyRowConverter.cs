@@ -17,10 +17,14 @@ public class LazyRowConverter<T> : JsonConverter<RowRef<T>> where T : struct, IE
         // Ensure thread-safe access to SerializationDepth
         lock (typeof(LazyRowConverter<T>))
         {
-            if (value.RowId == 0)
+            if (value.RowId == 0 || value.RowId == 4294967295) // FIXME: WHy?
                 writer.WriteNullValue();
-            else
-                JsonSerializer.Serialize(writer, value.Value, options);
+            else {
+                writer.WriteStartObject();
+                writer.WriteNumber("RowId", value.RowId);
+                writer.WriteString("SheetName", typeof(T).Name);
+                writer.WriteEndObject();
+            }
         }
     }
 }
