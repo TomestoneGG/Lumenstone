@@ -35,7 +35,7 @@ class Program
         JsonSerializerOptions options = new() {
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             WriteIndented = true,
-            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory() }
+            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() }
         };
        
         var patch = args[1];
@@ -56,8 +56,6 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
-            if (type.Name != "GilShopItem") continue;
-            
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
@@ -79,8 +77,6 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in subrowTypes)
         {
-            if (type.Name != "GilShopItem") continue;
-            
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
