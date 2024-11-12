@@ -5,7 +5,8 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Lumina.Data.Files;
-using Lumina.Excel.GeneratedSheets2;
+using Lumina.Excel;
+using Lumina.Excel.Sheets;
 using Lumina.Text;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
@@ -40,8 +41,14 @@ class Program
         var patch = args[1];
 
         // Get all types in the Lumina.Excel.GeneratedSheets namespace
-        var types = Assembly.GetAssembly(typeof(Lumina.Excel.GeneratedSheets2.Item)).GetTypes()
-            .Where(t => t.Namespace == "Lumina.Excel.GeneratedSheets2" && t.IsSubclassOf(typeof(Lumina.Excel.ExcelRow)));
+       var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Item)).GetTypes()
+         .Where(t => t.Namespace == "Lumina.Excel.Sheets" 
+                 && t.IsClass 
+                 && !t.IsAbstract 
+                 && t.GetInterfaces()
+                     .Any(i => i.IsGenericType 
+                               && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelRow<>)
+                               && i.GenericTypeArguments[0] == t));
 
         MethodInfo generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
         if (generic == null)
@@ -50,17 +57,11 @@ class Program
         // Call ExtractSheetForAllLanguages for each type
         foreach (var type in types)
         {
-            if (type.Name == "Status")
-                continue;
-
             Console.WriteLine(type.Name);
             
             MethodInfo constructed = generic.MakeGenericMethod(type);
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
         }
-
-        // Use our own copy of Status to work around the bug with Icon being wrong.
-        ExtractSheetForAllLanguages<Lumenstone.Status>(patch, luminaEN, luminaDE, luminaFR, luminaJA, options);
         
         ExtractIcons(1, 250000, luminaEN, full);
         ExtractMaps(luminaEN, full);
@@ -68,7 +69,7 @@ class Program
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
-                                            JsonSerializerOptions options) where T : Lumina.Excel.ExcelRow
+                                            JsonSerializerOptions options) where T : struct, IExcelRow<T>
     {
         ExtractSheet<T>(luminaEN, patch, "en", options);
         ExtractSheet<T>(luminaDE, patch, "de", options);
@@ -76,7 +77,7 @@ class Program
         ExtractSheet<T>(luminaJA, patch, "ja", options);
     }
 
-    static void ExtractSheet<T>(Lumina.GameData lumina, string patch, string lang, JsonSerializerOptions options) where T : Lumina.Excel.ExcelRow
+    static void ExtractSheet<T>(Lumina.GameData lumina, string patch, string lang, JsonSerializerOptions options) where T: struct, Lumina.Excel.IExcelRow<T>
     {
         // Get the ClassJobs Excel sheet
         var sheet = lumina.GetExcelSheet<T>();

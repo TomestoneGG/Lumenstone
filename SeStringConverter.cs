@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using Lumina.Excel;
-using Lumina.Excel.GeneratedSheets2;
+using Lumina.Excel.Sheets;
 using Lumina.Text;
 using Lumina.Text.Payloads;
 using SixLabors.ImageSharp.Formats;
@@ -66,15 +66,14 @@ public class SeStringConverter : JsonConverter<SeString>
                 string numStr = match.Groups[1].Value; // Extract the number as a string
                 uint num = uint.Parse(numStr); // Convert the string to an integer
                 var row = _uiColors.GetRow(num);
-                if (row != null) {
-                    var colorProperty = typeof(UIColor).GetProperty("UIForeground");
-                    if (colorProperty != null && colorProperty.PropertyType == typeof(uint)) {
-                        uint colorValue = (uint)colorProperty.GetValue(row);
-                        string hexValue = colorValue.ToString("x");
-                        string paddedHexValue = hexValue.PadLeft(8, '0');
-                        string firstSixChars = paddedHexValue.Substring(0, 6);
-                        colorAttr = " style=\"color: #" + firstSixChars + ";\"";
-                    }
+                
+                var colorProperty = typeof(UIColor).GetProperty("UIForeground");
+                if (colorProperty != null && colorProperty.PropertyType == typeof(uint)) {
+                    uint colorValue = (uint)colorProperty.GetValue(row);
+                    string hexValue = colorValue.ToString("x");
+                    string paddedHexValue = hexValue.PadLeft(8, '0');
+                    string firstSixChars = paddedHexValue.Substring(0, 6);
+                    colorAttr = " style=\"color: #" + firstSixChars + ";\"";
                 }
             }
 
