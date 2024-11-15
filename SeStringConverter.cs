@@ -152,6 +152,8 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                     return "";
                 case MacroCode.Hyphen:
                     return "–";
+                case MacroCode.NonBreakingSpace:
+                    return "";
                 default:
                 {
                     //return "\nExpression: " + payload.AsSpan().ToString() + "\n";
