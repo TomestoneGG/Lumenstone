@@ -47,9 +47,9 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
     {
         // Convert italics to HTML <i> and </i> tags.
         var lowerType = type.ToLower();
-        if (lowerType == "<italics>1</italics>")
+        if (lowerType == "<italic>1</italic>")
             return "<i>";
-        if (lowerType == "<italics>0</italics>")
+        if (lowerType == "<italic>0</italic>")
             return "</i>";
 
         // Eliminate uicolorborder ("UIGlow") as we don't bother representing it in any way.
@@ -157,8 +157,8 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                     //return "\nExpression: " + payload.AsSpan().ToString() + "\n";
 
                     var expressions = (payload as ICollection<ReadOnlySeExpression>);
-                    var expressionCount = (payload as ICollection<ReadOnlySeExpression>).Count;
-                  
+                    var expressionCount = expressions.Count;
+                     
                     if (expressionCount == 0)
                         return ConvertPayloadTag($"<{payload.AsSpan().ToString().ToLower()}>");
 
@@ -176,7 +176,7 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                         return  $"<If({expression1})>{expression2}<Else/>{expression3}</If>";
                     }
                     
-                    if (expressions.Count == 1) {
+                    if (expressionCount == 1) {
                         string expression1 = ConvertExpression(expressions.ElementAt(0));
                         return ConvertPayloadTag($"<{originalPayloadTag}>{expression1}</{originalPayloadTag}>");
                     }
