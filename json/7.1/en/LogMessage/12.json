@@ -10,7 +10,7 @@
   },
   {
     "RowId": 5501,
-    "Text": "Mark for the quest \u201C\u003Csheet(Quest,lnum1,0)\u003E\u201D detected.",
+    "Text": "Mark for the quest \u201C\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201D detected.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -19,7 +19,7 @@
   },
   {
     "RowId": 5502,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -28,7 +28,7 @@
   },
   {
     "RowId": 5503,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you a \u201C\u003Cswitch(lnum2,Friend of the Hard Place,Supporter of the Hard Place,Cornerstone of the Hard Place,Savior of the Hard Place)\u003E.\u201D",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you a \u201C\u003Cswitch(IntegerParameter(2),Friend of the Hard Place,Supporter of the Hard Place,Cornerstone of the Hard Place,Savior of the Hard Place)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -37,7 +37,7 @@
   },
   {
     "RowId": 5504,
-    "Text": "You are acutely aware of a nearby \u003Cennoun(Item,3,lnum1,1,1)\u003E!",
+    "Text": "You are acutely aware of a nearby \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E!",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -46,7 +46,7 @@
   },
   {
     "RowId": 5505,
-    "Text": "You are acutely aware of a nearby \u003Cennoun(Item,3,lnum1,1,1)\u003E!",
+    "Text": "You are acutely aware of a nearby \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E!",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -55,7 +55,7 @@
   },
   {
     "RowId": 5506,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,2,1)\u003E\u003C/Head\u003E are aware of your presence and have left the area.",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E are aware of your presence and have left the area.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -73,7 +73,7 @@
   },
   {
     "RowId": 5508,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ewere\u003CElse/\u003Ewas\u003C/If\u003E able to salvage some ingredients.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewere\u003CElse/\u003Ewas\u003C/If\u003E able to salvage some ingredients.",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -82,7 +82,7 @@
   },
   {
     "RowId": 5509,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -91,7 +91,7 @@
   },
   {
     "RowId": 5510,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you a \u201C\u003Cswitch(lnum2,Backer of the Beehive,Promoter of the Beehive,Pillar of the Beehive,Savior of the Beehive)\u003E.\u201D",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you a \u201C\u003Cswitch(IntegerParameter(2),Backer of the Beehive,Promoter of the Beehive,Pillar of the Beehive,Savior of the Beehive)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -100,7 +100,7 @@
   },
   {
     "RowId": 5511,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -109,7 +109,7 @@
   },
   {
     "RowId": 5512,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you a \u201C\u003Cswitch(lnum2,Crafting Connoisseur,Talented Teacher,Skillful Supervisor,Cultivated Crafter)\u003E.\u201D",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you a \u201C\u003Cswitch(IntegerParameter(2),Crafting Connoisseur,Talented Teacher,Skillful Supervisor,Cultivated Crafter)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -217,7 +217,7 @@
   },
   {
     "RowId": 5524,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -226,7 +226,7 @@
   },
   {
     "RowId": 5525,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you an \u201C\u003Cswitch(lnum2,Aide\u0027s Able Associate,Aide\u0027s Avid Assistant,Aide\u0027s Ardent Ally,Aide\u0027s Attentive Angel)\u003E.\u201D",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you an \u201C\u003Cswitch(IntegerParameter(2),Aide\u0027s Able Associate,Aide\u0027s Avid Assistant,Aide\u0027s Ardent Ally,Aide\u0027s Attentive Angel)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -253,7 +253,7 @@
   },
   {
     "RowId": 5528,
-    "Text": "You release \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cennoun(Item,3,lnum1,lnum2,1)\u003E.",
+    "Text": "You release \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -271,7 +271,7 @@
   },
   {
     "RowId": 5530,
-    "Text": "Unable to obtain \u003Cennoun(Item,2,lnum1,1,1)\u003E. Insufficient inventory space.",
+    "Text": "Unable to obtain \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E. Insufficient inventory space.",
     "LogKind": 60,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -280,7 +280,7 @@
   },
   {
     "RowId": 5531,
-    "Text": "You caught \u003CNum\u003Elnum1\u003C/Num\u003E fish before the teeming waters dissipated.",
+    "Text": "You caught \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E fish before the teeming waters dissipated.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -298,7 +298,7 @@
   },
   {
     "RowId": 5533,
-    "Text": "Able to execute \u003Csheet(Action,lnum1,0)\u003E!",
+    "Text": "Able to execute \u003Csheet(Action,IntegerParameter(1),0)\u003E!",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 5535,
-    "Text": "\u003Csheet(SpearfishingComboTarget,lnum1,0)\u003E",
+    "Text": "\u003Csheet(SpearfishingComboTarget,IntegerParameter(1),0)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -325,7 +325,7 @@
   },
   {
     "RowId": 5536,
-    "Text": "\u003Csheet(SpearfishingComboTarget,lnum1,1)\u003E",
+    "Text": "\u003Csheet(SpearfishingComboTarget,IntegerParameter(1),1)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 5538,
-    "Text": "Unable to disable \u003Csheet(Status,lnum1,0)\u003E while gathering.",
+    "Text": "Unable to disable \u003Csheet(Status,IntegerParameter(1),0)\u003E while gathering.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -361,7 +361,7 @@
   },
   {
     "RowId": 5540,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -370,7 +370,7 @@
   },
   {
     "RowId": 5541,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you \u003Cswitch(lnum2,\u201CAppointed to House Leveilleur.\u201D,a \u201CBenefactor of House Leveilleur.\u201D,the \u201CChampion of House Leveilleur.\u201D,the \u201CHonorary Scion of House Leveilleur.\u201D)\u003E",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you \u003Cswitch(IntegerParameter(2),\u201CAppointed to House Leveilleur.\u201D,a \u201CBenefactor of House Leveilleur.\u201D,the \u201CChampion of House Leveilleur.\u201D,the \u201CHonorary Scion of House Leveilleur.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -379,7 +379,7 @@
   },
   {
     "RowId": 5542,
-    "Text": "The prime has become sublime, and \u003CIf([gstr1==gstr2])\u003Eyou\u003CElse/\u003E\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E\u003C/If\u003E \u003CIf([gstr1==gstr2])\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(Item,2,lnum2,1,1)\u003E.",
+    "Text": "The prime has become sublime, and \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(Item,2,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 67,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -397,7 +397,7 @@
   },
   {
     "RowId": 5544,
-    "Text": "You are no longer able to gather \u003Cennoun(Item,3,lnum1,2,1)\u003E.",
+    "Text": "You are no longer able to gather \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -406,7 +406,7 @@
   },
   {
     "RowId": 5545,
-    "Text": "Unable to obtain \u003Cennoun(Item,2,lnum1,1,1)\u003E. The gathering rate for this item is 0%.",
+    "Text": "Unable to obtain \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E. The gathering rate for this item is 0%.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -415,7 +415,7 @@
   },
   {
     "RowId": 5546,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/Head\u003E adapts to your needs, reducing Hook cost!",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E adapts to your needs, reducing Hook cost!",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -424,7 +424,7 @@
   },
   {
     "RowId": 5547,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -433,7 +433,7 @@
   },
   {
     "RowId": 5548,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you a \u201C\u003Cswitch(lnum2,Probably Proper Person,Tentatively True \u003Cif(gnum4,Tradeswoman,Tradesman)\u003E,Just and Generous Journeyer,Familiar Friend-like Face)\u003E.\u201D",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you a \u201C\u003Cswitch(IntegerParameter(2),Probably Proper Person,Tentatively True \u003CIf(PlayerParameter(4))\u003ETradeswoman\u003CElse/\u003ETradesman\u003C/If\u003E,Just and Generous Journeyer,Familiar Friend-like Face)\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -442,7 +442,7 @@
   },
   {
     "RowId": 5549,
-    "Text": "\u003CIf([lnum1==0])\u003ENo\u003CElse/\u003E\u003Cif([lnum1\u003Elnum2],Displaying the first \u003Ckilo(lnum2,\\,)\u003E,\u003Ckilo(lnum1,\\,)\u003E)\u003E\u003C/If\u003E \u003CIf([lnum1==1])\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ENo\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003EDisplaying the first \u003Ckilo(IntegerParameter(2),,)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),,)\u003E\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -487,7 +487,7 @@
   },
   {
     "RowId": 5554,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E \u003Cswitch(lnum2,accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),accepts your delivery,happily accepts your delivery,excitedly accepts your delivery)\u003E.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -496,7 +496,7 @@
   },
   {
     "RowId": 5555,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E now considers you \u003Cswitch(lnum2,a \u201CKind Collaborator,a \u201CFacilitator of Feline Felicity,a \u201CGracious Gleaner,an \u201CIrreplaceable Comrade)\u003E.\u201C",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E now considers you \u003Cswitch(IntegerParameter(2),a \u201CKind Collaborator,a \u201CFacilitator of Feline Felicity,a \u201CGracious Gleaner,an \u201CIrreplaceable Comrade)\u003E.\u201C",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 5556,
-    "Text": "You keep \u003Cennoun(Item,2,lnum1,1,1)\u003E as swimbait.",
+    "Text": "You keep \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E as swimbait.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -514,7 +514,7 @@
   },
   {
     "RowId": 5557,
-    "Text": "You release \u003Cennoun(Item,1,lnum1,1,1)\u003E and keep \u003Cennoun(Item,2,lnum2,1,1)\u003E as swimbait.",
+    "Text": "You release \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E and keep \u003Cennoun(Item,2,IntegerParameter(2),1,1)\u003E as swimbait.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -523,7 +523,7 @@
   },
   {
     "RowId": 5558,
-    "Text": "You apply \u003Cennoun(Item,1,lnum1,1,1)\u003E to your line.",
+    "Text": "You apply \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E to your line.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -577,7 +577,7 @@
   },
   {
     "RowId": 5564,
-    "Text": "\u003Csheet(FishParameter,lnum1,1)\u003E",
+    "Text": "\u003Csheet(FishParameter,IntegerParameter(1),1)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -667,7 +667,7 @@
   },
   {
     "RowId": 5574,
-    "Text": "The effect of \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003Csheet(Trait,lnum1,0)\u003E\u003C/span\u003E has restored \u003CNum\u003Elnum4\u003C/Num\u003E GP and granted \u003CNum\u003Elnum3\u003C/Num\u003E integrity to the gathering point.",
+    "Text": "The effect of \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003Csheet(Trait,IntegerParameter(1),0)\u003E\u003C/span\u003E has restored \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E GP and granted \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E integrity to the gathering point.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -676,7 +676,7 @@
   },
   {
     "RowId": 5575,
-    "Text": "\u003Csheet(FishParameter,lnum1,2)\u003E",
+    "Text": "\u003Csheet(FishParameter,IntegerParameter(1),2)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -739,7 +739,7 @@
   },
   {
     "RowId": 5582,
-    "Text": "\u003Csheet(FishingSpot,lnum1,3)\u003E",
+    "Text": "\u003Csheet(FishingSpot,IntegerParameter(1),3)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -748,7 +748,7 @@
   },
   {
     "RowId": 5583,
-    "Text": "\u003Csheet(SpearfishingComboTarget,lnum1,2)\u003E",
+    "Text": "\u003Csheet(SpearfishingComboTarget,IntegerParameter(1),2)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -775,7 +775,7 @@
   },
   {
     "RowId": 5586,
-    "Text": "\u003Csheet(FishParameter,lnum1,3)\u003E",
+    "Text": "\u003Csheet(FishParameter,IntegerParameter(1),3)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -955,7 +955,7 @@
   },
   {
     "RowId": 5606,
-    "Text": "You create the fellowship \u201C\u003CString\u003Elstr1\u003C/String\u003E.\u201D",
+    "Text": "You create the fellowship \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1018,7 +1018,7 @@
   },
   {
     "RowId": 5613,
-    "Text": "You change the fellowship name to \u201C\u003CString\u003Elstr2\u003C/String\u003E.\u201D",
+    "Text": "You change the fellowship name to \u201C\u003CString\u003EStringParameter(2)\u003C/String\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1036,7 +1036,7 @@
   },
   {
     "RowId": 5615,
-    "Text": "\u003CIf([gstr1==gstr2])\u003Eyou\u003CElse/\u003E\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E\u003C/If\u003E removed from fellowship blacklist.",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E removed from fellowship blacklist.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 5616,
-    "Text": "Fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D has been disbanded.",
+    "Text": "Fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D has been disbanded.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1054,7 +1054,7 @@
   },
   {
     "RowId": 5617,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eare\u003CElse/\u003Eis\u003C/If\u003E now a member of group \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eare\u003CElse/\u003Eis\u003C/If\u003E now a member of group \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1072,7 +1072,7 @@
   },
   {
     "RowId": 5619,
-    "Text": "You discharge \u003CIf([gstr1==gstr2])\u003Eyou\u003CElse/\u003E\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E\u003C/If\u003E from the fellowship.",
+    "Text": "You discharge \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E from the fellowship.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1081,7 +1081,7 @@
   },
   {
     "RowId": 5620,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eare\u003CElse/\u003Eis\u003C/If\u003E now the fellowship master.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eare\u003CElse/\u003Eis\u003C/If\u003E now the fellowship master.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1090,7 +1090,7 @@
   },
   {
     "RowId": 5621,
-    "Text": "You promote \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E to fellowship admin.",
+    "Text": "You promote \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E to fellowship admin.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1099,7 +1099,7 @@
   },
   {
     "RowId": 5622,
-    "Text": "You demote \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E from fellowship admin.",
+    "Text": "You demote \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E from fellowship admin.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "RowId": 5625,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eare\u003CElse/\u003Eis\u003C/If\u003E added to fellowship blacklist.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eare\u003CElse/\u003Eis\u003C/If\u003E added to fellowship blacklist.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1153,7 +1153,7 @@
   },
   {
     "RowId": 5628,
-    "Text": "Recruitment commenced for the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "Recruitment commenced for the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1162,7 +1162,7 @@
   },
   {
     "RowId": 5629,
-    "Text": "Recruitment canceled for the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "Recruitment canceled for the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 5632,
-    "Text": "You join the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You join the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1234,7 +1234,7 @@
   },
   {
     "RowId": 5637,
-    "Text": "You invite \u003CIf([gstr1==gstr2])\u003Eyou\u003CElse/\u003E\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E\u003C/If\u003E to the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You invite \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E to the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1243,7 +1243,7 @@
   },
   {
     "RowId": 5638,
-    "Text": "You join the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You join the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1261,7 +1261,7 @@
   },
   {
     "RowId": 5640,
-    "Text": "You have been granted master privileges for the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You have been granted master privileges for the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1270,7 +1270,7 @@
   },
   {
     "RowId": 5641,
-    "Text": "You are discharged from the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You are discharged from the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1279,7 +1279,7 @@
   },
   {
     "RowId": 5642,
-    "Text": "A Game Master has removed you from the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "A Game Master has removed you from the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1288,7 +1288,7 @@
   },
   {
     "RowId": 5643,
-    "Text": "You decline the invitation to the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You decline the invitation to the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1297,7 +1297,7 @@
   },
   {
     "RowId": 5644,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E\u0027s fellowship invite has been withdrawn.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E\u0027s fellowship invite has been withdrawn.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1315,7 +1315,7 @@
   },
   {
     "RowId": 5646,
-    "Text": "\u003CIf([gstr1==gstr2])\u003Eyou\u003CElse/\u003E\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E\u003C/If\u003E invites you to a fellowship.",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E invites you to a fellowship.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 5647,
-    "Text": "Fellowship invite from \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D canceled.",
+    "Text": "Fellowship invite from \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D canceled.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1342,7 +1342,7 @@
   },
   {
     "RowId": 5649,
-    "Text": "You are promoted to admin for the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You are promoted to admin for the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1351,7 +1351,7 @@
   },
   {
     "RowId": 5650,
-    "Text": "You are demoted from admin for the fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.\u201D",
+    "Text": "You are demoted from admin for the fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.\u201D",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1360,7 +1360,7 @@
   },
   {
     "RowId": 5651,
-    "Text": "The fellowship \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D has been disbanded.",
+    "Text": "The fellowship \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D has been disbanded.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -1720,7 +1720,7 @@
   },
   {
     "RowId": 5691,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1729,7 +1729,7 @@
   },
   {
     "RowId": 5692,
-    "Text": " \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found. \u003CNum\u003Elnum2\u003C/Num\u003E displayed.",
+    "Text": " \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ematch\u003CElse/\u003Ematches\u003C/If\u003E found. \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E displayed.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1810,7 +1810,7 @@
   },
   {
     "RowId": 5701,
-    "Text": "You acquire the \u003Csheet(Ornament,lnum1,8)\u003E personal effect.",
+    "Text": "You acquire the \u003Csheet(Ornament,IntegerParameter(1),8)\u003E personal effect.",
     "LogKind": 64,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1846,7 +1846,7 @@
   },
   {
     "RowId": 5705,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eequip\u003CElse/\u003Eequips\u003C/If\u003E a personal effect.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eequip\u003CElse/\u003Eequips\u003C/If\u003E a personal effect.",
     "LogKind": 43,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1855,7 +1855,7 @@
   },
   {
     "RowId": 5706,
-    "Text": "\u003Csheet(Ornament,lnum1,8)\u003E selected as auto-umbrella.",
+    "Text": "\u003Csheet(Ornament,IntegerParameter(1),8)\u003E selected as auto-umbrella.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1864,7 +1864,7 @@
   },
   {
     "RowId": 5707,
-    "Text": "\u003Csheet(Ornament,lnum1,8)\u003E deselected as auto-umbrella.",
+    "Text": "\u003Csheet(Ornament,IntegerParameter(1),8)\u003E deselected as auto-umbrella.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2260,7 +2260,7 @@
   },
   {
     "RowId": 5751,
-    "Text": "You obtain \u003CNum\u003Elnum1\u003C/Num\u003E \u003Cennoun(Item,3,lnum2,lnum1,1)\u003E.",
+    "Text": "You obtain \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(2),IntegerParameter(1),1)\u003E.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2269,7 +2269,7 @@
   },
   {
     "RowId": 5752,
-    "Text": "You cannot carry any more \u003Cennoun(Item,3,lnum1,2,1)\u003E.",
+    "Text": "You cannot carry any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2305,7 +2305,7 @@
   },
   {
     "RowId": 5756,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/Head\u003E has been added to your market board favorites. (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been added to your market board favorites. (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2323,7 +2323,7 @@
   },
   {
     "RowId": 5758,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/Head\u003E has been removed from your market board favorites. (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been removed from your market board favorites. (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2422,7 +2422,7 @@
   },
   {
     "RowId": 5769,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/Head\u003E has been added to your market board wish list. (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been added to your market board wish list. (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2431,7 +2431,7 @@
   },
   {
     "RowId": 5770,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/Head\u003E has been removed from your market board wish list. (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been removed from your market board wish list. (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2476,7 +2476,7 @@
   },
   {
     "RowId": 5775,
-    "Text": "\u201C\u003Csheet(AkatsukiNote,lnum1,1)\u003E\u201D has been added to the Unending Codex.",
+    "Text": "\u201C\u003Csheet(AkatsukiNote,IntegerParameter(1),1)\u003E\u201D has been added to the Unending Codex.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -2485,7 +2485,7 @@
   },
   {
     "RowId": 5776,
-    "Text": "You receive \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cennoun(Item,1,lnum1,lnum2,1)\u003E. Your minimog challenge rewards for the week have been claimed.",
+    "Text": "You receive \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,1,IntegerParameter(1),IntegerParameter(2),1)\u003E. Your minimog challenge rewards for the week have been claimed.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2539,7 +2539,7 @@
   },
   {
     "RowId": 5782,
-    "Text": "There \u003CIf([lnum3==1])\u003Eis\u003CElse/\u003Eare\u003C/If\u003E \u003CNum\u003Elnum3\u003C/Num\u003E \u003CIf([lnum3==1])\u003Ecompletion\u003CElse/\u003Ecompletions\u003C/If\u003E remaining to fulfill the \u003CIf([lnum1==0])\u003Eweekly objective\u003CElse/\u003E\u003Cif([lnum1==1],minimog challenge,ultimog challenge)\u003E\u003C/If\u003E.",
+    "Text": "There \u003CIf(Equal(IntegerParameter(3),1))\u003Eis\u003CElse/\u003Eare\u003C/If\u003E \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Ecompletion\u003CElse/\u003Ecompletions\u003C/If\u003E remaining to fulfill the \u003CIf(Equal(IntegerParameter(1),0))\u003Eweekly objective\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),1))\u003Eminimog challenge\u003CElse/\u003Eultimog challenge\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -2584,7 +2584,7 @@
   },
   {
     "RowId": 5787,
-    "Text": "You try on \u003Cennoun(Glasses,2,lnum1,1,1)\u003E.",
+    "Text": "You try on \u003Cennoun(Glasses,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2701,7 +2701,7 @@
   },
   {
     "RowId": 5800,
-    "Text": "Unable to execute command. Character is currently visiting the \u003CString\u003Elstr1\u003C/String\u003E data center.",
+    "Text": "Unable to execute command. Character is currently visiting the \u003CString\u003EStringParameter(1)\u003C/String\u003E data center.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -2764,7 +2764,7 @@
   },
   {
     "RowId": 5807,
-    "Text": "Successfully retrieved data for \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Successfully retrieved data for \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -2818,7 +2818,7 @@
   },
   {
     "RowId": 5813,
-    "Text": "\u003Csheet(ExVersion,lnum1,0)\u003E is required to select \u003CString\u003Elstr2\u003C/String\u003E. Please choose another race.",
+    "Text": "\u003Csheet(ExVersion,IntegerParameter(1),0)\u003E is required to select \u003CString\u003EStringParameter(2)\u003C/String\u003E. Please choose another race.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -3070,7 +3070,7 @@
   },
   {
     "RowId": 5841,
-    "Text": "You used \u003CIf([lnum2==1])\u003E\u003Cennoun(Item,1,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,2,1)\u003E\u003C/If\u003E. (Remaining: \u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "You used \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E\u003C/If\u003E. (Remaining: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3079,7 +3079,7 @@
   },
   {
     "RowId": 5842,
-    "Text": "\u201C\u003Csheet(AkatsukiNote,lnum1,1)\u003E\u201D has been updated in the Unending Codex.",
+    "Text": "\u201C\u003Csheet(AkatsukiNote,IntegerParameter(1),1)\u003E\u201D has been updated in the Unending Codex.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3088,7 +3088,7 @@
   },
   {
     "RowId": 5843,
-    "Text": "\u003Csheet(Hud,lnum1,ADDONHUD_NAME)\u003E and \u003Csheet(Hud,lnum2,ADDONHUD_NAME)\u003E updated!",
+    "Text": "\u003Csheet(Hud,IntegerParameter(1),ADDONHUD_NAME)\u003E and \u003Csheet(Hud,IntegerParameter(2),ADDONHUD_NAME)\u003E updated!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3097,7 +3097,7 @@
   },
   {
     "RowId": 5844,
-    "Text": "\u003Csheet(Hud,lnum1,ADDONHUD_NAME)\u003E and \u003Csheet(Hud,lnum2,ADDONHUD_NAME)\u003E unlocked and updated!",
+    "Text": "\u003Csheet(Hud,IntegerParameter(1),ADDONHUD_NAME)\u003E and \u003Csheet(Hud,IntegerParameter(2),ADDONHUD_NAME)\u003E unlocked and updated!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3187,7 +3187,7 @@
   },
   {
     "RowId": 5854,
-    "Text": "You have acquired the portrait elements encased in \u003Cennoun(Item,2,lnum1,1,1)\u003E.",
+    "Text": "You have acquired the portrait elements encased in \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 64,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3394,7 +3394,7 @@
   },
   {
     "RowId": 5877,
-    "Text": "Portrait could not be updated due to unfulfilled requirements. (\u003CNum\u003Elnum1\u003C/Num\u003E)",
+    "Text": "Portrait could not be updated due to unfulfilled requirements. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3403,7 +3403,7 @@
   },
   {
     "RowId": 5878,
-    "Text": "\u003CIf([lnum1==5])\u003EAdventurer plate could not be updated due to invalid data. \\(\u003Cnum(lnum1)\u003E\\)\u003Cbr\u003EPlease try restarting the application after checking your current play environment.\u003CElse/\u003EAdventurer plate could not be updated due to unfulfilled requirements. \\(\u003Cnum(lnum1)\u003E\\)\u003C/If\u003E\u003CIf([lnum1==29])\u003E\u003Cbr\u003ECurrent gear data does not match gear data being applied to the adventurer plate.\u003Cbr\u003EPlease try updating or re-equipping your gear set.\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),5))\u003EAdventurer plate could not be updated due to invalid data. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\nPlease try restarting the application after checking your current play environment.\u003CElse/\u003EAdventurer plate could not be updated due to unfulfilled requirements. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003C/If\u003E\u003CIf(Equal(IntegerParameter(1),29))\u003E\nCurrent gear data does not match gear data being applied to the adventurer plate.\nPlease try updating or re-equipping your gear set.\u003CElse/\u003E \u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3601,7 +3601,7 @@
   },
   {
     "RowId": 5900,
-    "Text": "You begin trial synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E.",
+    "Text": "You begin trial synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3619,7 +3619,7 @@
   },
   {
     "RowId": 5902,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],Your,\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u0027s)\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E proved a success!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E proved a success!",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3637,7 +3637,7 @@
   },
   {
     "RowId": 5904,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],Your,\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u0027s)\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E failed...",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E failed...",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 5905,
-    "Text": "  \uE06F Progress \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E",
+    "Text": "  \uE06F Progress \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3655,7 +3655,7 @@
   },
   {
     "RowId": 5906,
-    "Text": "  \uE06F Quality \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E",
+    "Text": "  \uE06F Quality \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3664,7 +3664,7 @@
   },
   {
     "RowId": 5907,
-    "Text": "  \uE06F HQ \u003CNum\u003Elnum1\u003C/Num\u003E%",
+    "Text": "  \uE06F HQ \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3673,7 +3673,7 @@
   },
   {
     "RowId": 5908,
-    "Text": "  \uE06F Collectability \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E",
+    "Text": "  \uE06F Collectability \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3709,7 +3709,7 @@
   },
   {
     "RowId": 5912,
-    "Text": "You use \u003Csheet(Action,lnum1,0)\u003E \uE06F Success!",
+    "Text": "You use \u003Csheet(Action,IntegerParameter(1),0)\u003E \uE06F Success!",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 5913,
-    "Text": "You use \u003Csheet(Action,lnum1,0)\u003E \uE06F Failure!",
+    "Text": "You use \u003Csheet(Action,IntegerParameter(1),0)\u003E \uE06F Failure!",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3727,7 +3727,7 @@
   },
   {
     "RowId": 5914,
-    "Text": "Synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E failed due to insufficient quality.",
+    "Text": "Synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E failed due to insufficient quality.",
     "LogKind": 66,
     "Unknown0": 16,
     "Unknown1": 0,
@@ -3736,7 +3736,7 @@
   },
   {
     "RowId": 5915,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],Your,\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u0027s)\u003E\u003C/Head\u003E synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E failed due to insufficient quality.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Head\u003E synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E failed due to insufficient quality.",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3754,7 +3754,7 @@
   },
   {
     "RowId": 5917,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],Your,\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u0027s)\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,lnum1,1,1)\u003E failed due to insufficient quality.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EYour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E\u003C/Head\u003E trial synthesis of \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E failed due to insufficient quality.",
     "LogKind": 66,
     "Unknown0": 1,
     "Unknown1": 0,

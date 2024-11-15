@@ -5,7 +5,7 @@
   },
   {
     "RowId": 9826,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 9827,
@@ -25,15 +25,15 @@
   },
   {
     "RowId": 9831,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 9832,
-    "Text": "Points: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Points: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9833,
-    "Text": "Captures: \u003CNum\u003Elnum1\u003C/Num\u003E "
+    "Text": "Captures: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E "
   },
   {
     "RowId": 9834,
@@ -65,7 +65,7 @@
   },
   {
     "RowId": 9843,
-    "Text": "Match in progress: Turn \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Match in progress: Turn \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9844,
@@ -77,7 +77,7 @@
   },
   {
     "RowId": 9846,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9847,
@@ -97,7 +97,7 @@
   },
   {
     "RowId": 9851,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 9852,
@@ -105,7 +105,7 @@
   },
   {
     "RowId": 9853,
-    "Text": "Time Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 9854,
@@ -113,7 +113,7 @@
   },
   {
     "RowId": 9855,
-    "Text": "The following rules have been set for this tournament:\n\n\u003Cswitch(lnum1,\u30FB\u003Cstring(lstr2)\u003E,\u30FB\u003Cstring(lstr2)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr3)\u003E,\u30FB\u003Cstring(lstr2)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr3)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr4)\u003E,\u30FB\u003Cstring(lstr2)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr3)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr4)\u003E\u003Cbr\u003E\u30FB\u003Cstring(lstr5)\u003E)\u003E\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ERules cannot be changed once the competition has begun.\u003C/span\u003E\n\nProceed?"
+    "Text": "The following rules have been set for this tournament:\n\n\u003Cswitch(IntegerParameter(1),\u30FB\u003CString\u003EStringParameter(2)\u003C/String\u003E,\u30FB\u003CString\u003EStringParameter(2)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(3)\u003C/String\u003E,\u30FB\u003CString\u003EStringParameter(2)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(3)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(4)\u003C/String\u003E,\u30FB\u003CString\u003EStringParameter(2)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(3)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(4)\u003C/String\u003E\n\u30FB\u003CString\u003EStringParameter(5)\u003C/String\u003E)\u003E\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ERules cannot be changed once the competition has begun.\u003C/span\u003E\n\nProceed?"
   },
   {
     "RowId": 9856,
@@ -125,7 +125,7 @@
   },
   {
     "RowId": 9858,
-    "Text": "\u003CIf([lnum1\u003E=0])\u003E\u002B\u003Cnum(lnum1)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(1),0))\u003E\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 9859,
@@ -145,11 +145,11 @@
   },
   {
     "RowId": 9863,
-    "Text": "Round \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Round \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9864,
-    "Text": "Points \u003CIf([lnum1\u003E=0])\u003E\u002B\u003Cnum(lnum1)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E\u3000Captures \u003CIf([lnum2\u003E=0])\u003E\u002B\u003Cnum(lnum2)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E\u003C/If\u003E"
+    "Text": "Points \u003CIf(GreaterThanOrEqualTo(IntegerParameter(1),0))\u003E\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u3000Captures \u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),0))\u003E\u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 9865,
@@ -173,7 +173,7 @@
   },
   {
     "RowId": 9870,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,26)\u003E"
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),26)\u003E"
   },
   {
     "RowId": 9871,
@@ -193,11 +193,11 @@
   },
   {
     "RowId": 9875,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 9876,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,25)\u003E"
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),25)\u003E"
   },
   {
     "RowId": 9877,
@@ -213,7 +213,7 @@
   },
   {
     "RowId": 9880,
-    "Text": "Available from \u003Csheet(ENpcResident,1044839,0)\u003E in Wonder Square upon completing the main scenario quest \u201C\u003CIf([lnum2\u003E0])\u003E???\u003CElse/\u003E\u003Cstring(lstr1)\u003E.\u003C/If\u003E\u201D"
+    "Text": "Available from \u003Csheet(ENpcResident,1044839,0)\u003E in Wonder Square upon completing the main scenario quest \u201C\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E???\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E.\u003C/If\u003E\u201D"
   },
   {
     "RowId": 9881,
@@ -241,15 +241,15 @@
   },
   {
     "RowId": 9887,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9888,
-    "Text": "\u003Csheet(EmjCostumeData,lnum1,0)\u003E"
+    "Text": "\u003Csheet(EmjCostumeData,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 9889,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 9890,
@@ -437,7 +437,7 @@
   },
   {
     "RowId": 10025,
-    "Text": "\u003Csheet(ContentType,lnum1,0)\u003E\u003CIf([lnum2\u003C0])\u003E \u003CElse/\u003E \\(\u003Csheet(ExVersion,lnum2,0)\u003E\\)\u003C/If\u003E"
+    "Text": "\u003Csheet(ContentType,IntegerParameter(1),0)\u003E\u003CIf(LessThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E (\u003Csheet(ExVersion,IntegerParameter(2),0)\u003E)\u003C/If\u003E"
   },
   {
     "RowId": 10026,
@@ -493,7 +493,7 @@
   },
   {
     "RowId": 10039,
-    "Text": "#\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "#\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10040,
@@ -573,7 +573,7 @@
   },
   {
     "RowId": 10059,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EJapanese \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003EEnglish \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003EGerman \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003EFrench\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EJapanese \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EEnglish \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003EGerman \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003EFrench\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10060,
@@ -697,7 +697,7 @@
   },
   {
     "RowId": 10090,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously\n\u3000completed duties.\n\u003CIf([lnum1==0])\u003E\u203BThe \u201CDuty Completion\u201D option is only available if the\u003Cbr\u003E\u3000weekly reward has yet to be obtained.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u203BPractice phase selection does not entail the actual skipping\n\u3000of phases.\u003C/span\u003E\n\u003CIf([lnum1==0])\u003E\u003Ccolortype(508)\u003E\u003Cedgecolortype(509)\u003E\u203BIf the registration period overlaps with the weekly reset\\,\u003Cbr\u003E\u3000registration will be canceled.\u003Cbr\u003E\u203BIf 1 to 4 members have already received the weekly reward\\,\u003Cbr\u003E\u3000or if a member logs out or disconnects\\, the number of rewards\u003Cbr\u003E\u3000will be reduced. No coffers will appear if 5 or more members\u003Cbr\u003E\u3000have received the reward.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously\n\u3000completed duties.\n\u003CIf(Equal(IntegerParameter(1),0))\u003E\u203BThe \u201CDuty Completion\u201D option is only available if the\n\u3000weekly reward has yet to be obtained.\n\u003CElse/\u003E \u003C/If\u003E\u203BPractice phase selection does not entail the actual skipping\n\u3000of phases.\u003C/span\u003E\n\u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u203BIf the registration period overlaps with the weekly reset,\n\u3000registration will be canceled.\n\u203BIf 1 to 4 members have already received the weekly reward,\n\u3000or if a member logs out or disconnects, the number of rewards\n\u3000will be reduced. No coffers will appear if 5 or more members\n\u3000have received the reward.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10091,
@@ -709,11 +709,11 @@
   },
   {
     "RowId": 10093,
-    "Text": "\u003CIf([lnum1==lnum2])\u003E\u003Chead(\u003Cif(lnum1,\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E,\u003Cnum(lnum1)\u003E)\u003E)\u003E player\u003Cif([lnum1==1],,s)\u003E\u003CElse/\u003E\u003Chead(\u003Cif(lnum1,\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E,\u003Cnum(lnum1)\u003E)\u003E)\u003E to \u003Cif(lnum2,\u003Cif([lnum2\u003C=10],\u003Cswitch(lnum2,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum2)\u003E)\u003E,\u003Cnum(lnum2)\u003E)\u003E players\u003C/If\u003E\n\u003CIf([lnum2\u003E1])\u003E\\(\u003Cnum(lnum3)\u003E tank\u003Cif([lnum3==1],,s)\u003E\\, \u003Cnum(lnum4)\u003E healer\u003Cif([lnum4==1],,s)\u003E\\, \u003Cnum(lnum5)\u003E melee DPS\\, \u003Cnum(lnum6)\u003E physical ranged DPS\\, \u003Cnum(lnum7)\u003E magical ranged DPS\\, \u003Cnum(lnum8)\u003E other DPS\\)\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),IntegerParameter(2)))\u003E\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E player\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E to \u003CIf(IntegerParameter(2))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(2),10))\u003E\u003Cswitch(IntegerParameter(2),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E players\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(2),1))\u003E(\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E tank\u003CIf(Equal(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E, \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E healer\u003CIf(Equal(IntegerParameter(4),1))\u003E \u003CElse/\u003Es\u003C/If\u003E, \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E melee DPS, \u003CNum\u003EIntegerParameter(6)\u003C/Num\u003E physical ranged DPS, \u003CNum\u003EIntegerParameter(7)\u003C/Num\u003E magical ranged DPS, \u003CNum\u003EIntegerParameter(8)\u003C/Num\u003E other DPS)\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10094,
-    "Text": "Job: \u003Csheet(ClassJobCategory,lnum1,0)\u003E"
+    "Text": "Job: \u003Csheet(ClassJobCategory,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 10095,
@@ -749,11 +749,11 @@
   },
   {
     "RowId": 10103,
-    "Text": "Claimable Items: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Claimable Items: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10104,
-    "Text": "By passing on \u003CIf([lnum2\u003C=1])\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003Ethe \u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,1,1)\u003E\u003C/If\u003E, you will no longer have the option to select Need or Greed. Proceed?"
+    "Text": "By passing on \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003Ethe \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003C/If\u003E, you will no longer have the option to select Need or Greed. Proceed?"
   },
   {
     "RowId": 10105,
@@ -769,7 +769,7 @@
   },
   {
     "RowId": 10108,
-    "Text": "Set the loot rule for \u003CIf([lnum2\u003C=1])\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003Ethe \u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,3,1)\u003E\u003C/If\u003E to \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EGreed Only\u003C/span\u003E?"
+    "Text": "Set the loot rule for \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003Ethe \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),3,1)\u003E\u003C/If\u003E to \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EGreed Only\u003C/span\u003E?"
   },
   {
     "RowId": 10109,
@@ -785,7 +785,7 @@
   },
   {
     "RowId": 10112,
-    "Text": "Allow \u003CHead\u003E\u003Cstring(lstr3)\u003E\u003C/Head\u003E to claim \u003CIf([lnum2\u003C=1])\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003Ethe \u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,3,1)\u003E\u003C/If\u003E?"
+    "Text": "Allow \u003CHead\u003E\u003CString\u003EStringParameter(3)\u003C/String\u003E\u003C/Head\u003E to claim \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003Ethe \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),3,1)\u003E\u003C/If\u003E?"
   },
   {
     "RowId": 10113,
@@ -797,7 +797,7 @@
   },
   {
     "RowId": 10115,
-    "Text": "\u003CIf([lnum1==lnum2])\u003E\u003Chead(\u003Cif(lnum1,\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E,\u003Cnum(lnum1)\u003E)\u003E)\u003E player\u003Cif([lnum1==1],,s)\u003E\u003CElse/\u003E\u003Chead(\u003Cif(lnum1,\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E,\u003Cnum(lnum1)\u003E)\u003E)\u003E to \u003Cif(lnum2,\u003Cif([lnum2\u003C=10],\u003Cswitch(lnum2,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum2)\u003E)\u003E,\u003Cnum(lnum2)\u003E)\u003E players\u003C/If\u003E\n\u003CIf([lnum2\u003E1])\u003E\\(\u003Cnum(lnum3)\u003E tank\u003Cif([lnum3==1],,s)\u003E\\, \u003Cnum(lnum4)\u003E pure healer\u003Cif([lnum4==1],,s)\u003E\\, \u003Cnum(lnum5)\u003E barrier healer\u003Cif([lnum5==1],,s)\u003E\\, \u003Cnum(lnum6)\u003E melee DPS\\, \u003Cnum(lnum7)\u003E physical ranged DPS\\, \u003Cnum(lnum8)\u003E magical ranged DPS\\, \u003Cnum(lnum9)\u003E other DPS\\)\u003CElse/\u003E \u003C/If\u003E "
+    "Text": "\u003CIf(Equal(IntegerParameter(1),IntegerParameter(2)))\u003E\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E player\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E to \u003CIf(IntegerParameter(2))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(2),10))\u003E\u003Cswitch(IntegerParameter(2),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E players\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(2),1))\u003E(\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E tank\u003CIf(Equal(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E, \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E pure healer\u003CIf(Equal(IntegerParameter(4),1))\u003E \u003CElse/\u003Es\u003C/If\u003E, \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E barrier healer\u003CIf(Equal(IntegerParameter(5),1))\u003E \u003CElse/\u003Es\u003C/If\u003E, \u003CNum\u003EIntegerParameter(6)\u003C/Num\u003E melee DPS, \u003CNum\u003EIntegerParameter(7)\u003C/Num\u003E physical ranged DPS, \u003CNum\u003EIntegerParameter(8)\u003C/Num\u003E magical ranged DPS, \u003CNum\u003EIntegerParameter(9)\u003C/Num\u003E other DPS)\u003CElse/\u003E \u003C/If\u003E "
   },
   {
     "RowId": 10119,
@@ -825,7 +825,7 @@
   },
   {
     "RowId": 10125,
-    "Text": "Commence \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D?"
+    "Text": "Commence \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D?"
   },
   {
     "RowId": 10126,
@@ -853,7 +853,7 @@
   },
   {
     "RowId": 10132,
-    "Text": "\u003CIf([lnum3\u003E0])\u003ETactical\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E Training - Exercise \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003ETactical\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E Training - Exercise \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10133,
@@ -869,7 +869,7 @@
   },
   {
     "RowId": 10136,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr2)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 10137,
@@ -885,11 +885,11 @@
   },
   {
     "RowId": 10140,
-    "Text": "Role: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Role: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10141,
-    "Text": "Level: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Level: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10142,
@@ -897,7 +897,7 @@
   },
   {
     "RowId": 10143,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10144,
@@ -921,7 +921,7 @@
   },
   {
     "RowId": 10149,
-    "Text": "\u003CIf([lnum4\u003E0])\u003ETactical\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E Training - Exercise \u003CNum\u003Elnum3\u003C/Num\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(4),0))\u003ETactical\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E Training - Exercise \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 10150,
@@ -933,11 +933,11 @@
   },
   {
     "RowId": 10152,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/HeadAll\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 10153,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E Training"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E Training"
   },
   {
     "RowId": 10154,
@@ -949,11 +949,11 @@
   },
   {
     "RowId": 10156,
-    "Text": "Class: \u003Csheet(ClassJobCategory,lnum1,0)\u003E"
+    "Text": "Class: \u003Csheet(ClassJobCategory,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 10157,
-    "Text": "Level: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Level: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10158,
@@ -965,7 +965,7 @@
   },
   {
     "RowId": 10160,
-    "Text": "\u003Cspan style=\u0022color: #e1c500;\u0022\u003EProgress Record\u003C/span\u003E\nProgress within the latest Savage raids is\nperiodically saved, allowing for continuation\nof the duty from that point.\n\nProgress is reset every week on\n\u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EParty Progress\u003C/span\u003E\nA party\u0027s starting point in the raid is\ndetermined by the leader\u0027s past progress.\nAs long as all other conditions are met, \nplayers who have not progressed as far as\nthe leader may still participate in the duty.\n\nIf a party member\u0027s progress was less\nthan that of the leader, then progress\nwill be updated to match.\n\nIf a party member\u0027s progress is beyond\nthat of the leader, that member\u0027s progress\nwill remain unaffected.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EReward Restrictions\u003C/span\u003E\nPlayers will not earn rewards for completing\nphases they have already completed.\nCoffer quantity will vary based on the total\nnumber of party members who have already\ncompleted the duty.\n\nWhen participating in the latest Savage raid\nwith a matched party, duty rewards may\nchange based on the progress level of\nmatched members.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EJob Distribution\u003C/span\u003E\nParties formed with the Raid Finder do not\nallow for two members with the same job\nunless certain conditions are met.\n\nDPS jobs are divided into the following roles:\nMelee DPS, Physical Ranged DPS,\nMagical Ranged DPS, and Not Specified.\n\nWhen the raid purpose is set as \u201CDuty Completion,\u201D\nthe jobs that fall into Not Specified must be\ndifferent from the ones which fill the other three\nDPS roles. When the raid purpose is set to \u201CPractice,\u201D\noverlapping between specified and unspecified DPS\njobs is allowed.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELoot Rules \u0026 Languages\u003C/span\u003E\nLoot rules and Language settings are imported\nfrom current Duty Finder settings.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EPenalties\u003C/span\u003E\nPenalties for withdrawing from duties are\nshared between all matched content."
+    "Text": "\u003Cspan style=\u0022color: #e1c500;\u0022\u003EProgress Record\u003C/span\u003E\nProgress within the latest Savage raids is\nperiodically saved, allowing for continuation\nof the duty from that point.\n\nProgress is reset every week on\n\u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EParty Progress\u003C/span\u003E\nA party\u0027s starting point in the raid is\ndetermined by the leader\u0027s past progress.\nAs long as all other conditions are met, \nplayers who have not progressed as far as\nthe leader may still participate in the duty.\n\nIf a party member\u0027s progress was less\nthan that of the leader, then progress\nwill be updated to match.\n\nIf a party member\u0027s progress is beyond\nthat of the leader, that member\u0027s progress\nwill remain unaffected.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EReward Restrictions\u003C/span\u003E\nPlayers will not earn rewards for completing\nphases they have already completed.\nCoffer quantity will vary based on the total\nnumber of party members who have already\ncompleted the duty.\n\nWhen participating in the latest Savage raid\nwith a matched party, duty rewards may\nchange based on the progress level of\nmatched members.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EJob Distribution\u003C/span\u003E\nParties formed with the Raid Finder do not\nallow for two members with the same job\nunless certain conditions are met.\n\nDPS jobs are divided into the following roles:\nMelee DPS, Physical Ranged DPS,\nMagical Ranged DPS, and Not Specified.\n\nWhen the raid purpose is set as \u201CDuty Completion,\u201D\nthe jobs that fall into Not Specified must be\ndifferent from the ones which fill the other three\nDPS roles. When the raid purpose is set to \u201CPractice,\u201D\noverlapping between specified and unspecified DPS\njobs is allowed.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELoot Rules \u0026 Languages\u003C/span\u003E\nLoot rules and Language settings are imported\nfrom current Duty Finder settings.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EPenalties\u003C/span\u003E\nPenalties for withdrawing from duties are\nshared between all matched content."
   },
   {
     "RowId": 10161,
@@ -993,7 +993,7 @@
   },
   {
     "RowId": 10170,
-    "Text": "Kick \u003CString\u003Elstr1\u003C/String\u003E from the Novice Network.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EThis command should only be executed in cases of spamming or harassment.\u003C/span\u003E"
+    "Text": "Kick \u003CString\u003EStringParameter(1)\u003C/String\u003E from the Novice Network.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EThis command should only be executed in cases of spamming or harassment.\u003C/span\u003E"
   },
   {
     "RowId": 10171,
@@ -1021,7 +1021,7 @@
   },
   {
     "RowId": 10177,
-    "Text": "Current Participants:\n\u003CNum\u003Elnum1\u003C/Num\u003E mentor\u003CIf([lnum1==1])\u003E \u003CElse/\u003Es\u003C/If\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2==1])\u003Enew adventurer/returner\u003CElse/\u003Enew adventurers/returners\u003C/If\u003E"
+    "Text": "Current Participants:\n\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E mentor\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Enew adventurer/returner\u003CElse/\u003Enew adventurers/returners\u003C/If\u003E"
   },
   {
     "RowId": 10178,
@@ -1069,7 +1069,7 @@
   },
   {
     "RowId": 10189,
-    "Text": "You have received an invite to the Novice Network from the \u003CIcon\u003E78\u003C/Icon\u003Ementor \u003CString\u003Elstr1\u003C/String\u003E!\n\nThe Novice Network is a place where beginning players can share their experiences and pose questions on adventuring to participating mentors. Be sure to take full advantage of this channel, but also remember to be polite and respectful while doing so!"
+    "Text": "You have received an invite to the Novice Network from the \u003CIcon\u003E78\u003C/Icon\u003Ementor \u003CString\u003EStringParameter(1)\u003C/String\u003E!\n\nThe Novice Network is a place where beginning players can share their experiences and pose questions on adventuring to participating mentors. Be sure to take full advantage of this channel, but also remember to be polite and respectful while doing so!"
   },
   {
     "RowId": 10190,
@@ -1253,7 +1253,7 @@
   },
   {
     "RowId": 10235,
-    "Text": "Enable \u003CIf([gnum106==99])\u003ED-pad\u003CElse/\u003Edirectional\u003C/If\u003E and action buttons."
+    "Text": "Enable \u003CIf(Equal(PlayerParameter(106),99))\u003ED-pad\u003CElse/\u003Edirectional\u003C/If\u003E and action buttons."
   },
   {
     "RowId": 10236,
@@ -1309,7 +1309,7 @@
   },
   {
     "RowId": 10249,
-    "Text": "Toggle Key (\u003CIcon2\u003E14\u003C/Icon2\u003E on \u003CIf([gnum75\u003E0])\u003Econtrollers\u003CElse/\u003Egamepads\u003C/If\u003E)"
+    "Text": "Toggle Key (\u003CIcon2\u003E14\u003C/Icon2\u003E on \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtrollers\u003CElse/\u003Egamepads\u003C/If\u003E)"
   },
   {
     "RowId": 10250,
@@ -1317,19 +1317,19 @@
   },
   {
     "RowId": 10251,
-    "Text": "Toggle Key (\u003CIcon2\u003E15\u003C/Icon2\u003E on \u003CIf([gnum75\u003E0])\u003Econtrollers\u003CElse/\u003Egamepads\u003C/If\u003E)"
+    "Text": "Toggle Key (\u003CIcon2\u003E15\u003C/Icon2\u003E on \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtrollers\u003CElse/\u003Egamepads\u003C/If\u003E)"
   },
   {
     "RowId": 10252,
-    "Text": "\u003CIf([gnum78==3])\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E"
   },
   {
     "RowId": 10253,
-    "Text": "\u003CIf([gnum78==3])\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E"
   },
   {
     "RowId": 10254,
-    "Text": "\u003CIf([gnum78==3])\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E"
   },
   {
     "RowId": 10255,
@@ -1497,27 +1497,27 @@
   },
   {
     "RowId": 10296,
-    "Text": "Scroll Up (\u002B\u003CIf([gnum78==3])\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E)"
+    "Text": "Scroll Up (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E)"
   },
   {
     "RowId": 10297,
-    "Text": "Scroll Down (\u002B\u003CIf([gnum78==3])\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E)"
+    "Text": "Scroll Down (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Econtrol\u003CElse/\u003ECtrl\u003C/If\u003E)"
   },
   {
     "RowId": 10298,
-    "Text": "Scroll Up (\u002B\u003CIf([gnum78==3])\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E)"
+    "Text": "Scroll Up (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E)"
   },
   {
     "RowId": 10299,
-    "Text": "Scroll Down (\u002B\u003CIf([gnum78==3])\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E)"
+    "Text": "Scroll Down (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E)"
   },
   {
     "RowId": 10300,
-    "Text": "Scroll Up (\u002B\u003CIf([gnum78==3])\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E)"
+    "Text": "Scroll Up (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E)"
   },
   {
     "RowId": 10301,
-    "Text": "Scroll Down (\u002B\u003CIf([gnum78==3])\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E)"
+    "Text": "Scroll Down (\u002B\u003CIf(Equal(PlayerParameter(78),3))\u003Eshift\u003CElse/\u003EShift\u003C/If\u003E)"
   },
   {
     "RowId": 10302,
@@ -1677,11 +1677,11 @@
   },
   {
     "RowId": 10353,
-    "Text": "Medals: \u003Ckilo(lnum1,\\,)\u003E"
+    "Text": "Medals: \u003Ckilo(IntegerParameter(1),,)\u003E"
   },
   {
     "RowId": 10354,
-    "Text": "Medals: \u003Ckilo(lnum1,\\,)\u003E"
+    "Text": "Medals: \u003Ckilo(IntegerParameter(1),,)\u003E"
   },
   {
     "RowId": 10355,
@@ -1689,7 +1689,7 @@
   },
   {
     "RowId": 10356,
-    "Text": "Yo-kai Medallium (\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E\uFF09"
+    "Text": "Yo-kai Medallium (\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E\uFF09"
   },
   {
     "RowId": 10357,
@@ -1721,7 +1721,7 @@
   },
   {
     "RowId": 10364,
-    "Text": "x\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "x\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10365,
@@ -1753,7 +1753,7 @@
   },
   {
     "RowId": 10376,
-    "Text": "Trade the selected items for \u003CIf([lnum2==1])\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,lnum2,1)\u003E\u003C/If\u003E?"
+    "Text": "Trade the selected items for \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E?"
   },
   {
     "RowId": 10377,
@@ -1761,7 +1761,7 @@
   },
   {
     "RowId": 10380,
-    "Text": "Growth: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E\u003CIf([lnum3==1])\u003E \uFF08Sword: \u003Cnum(lnum4)\u003E/\u003Cnum(lnum5)\u003E Shield: \u003Cnum(lnum6)\u003E/\u003Cnum(lnum7)\u003E\uFF09\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Growth: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CIf(Equal(IntegerParameter(3),1))\u003E \uFF08Sword: \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E Shield: \u003CNum\u003EIntegerParameter(6)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(7)\u003C/Num\u003E\uFF09\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10381,
@@ -1785,15 +1785,15 @@
   },
   {
     "RowId": 10386,
-    "Text": "Bonus \u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Bonus \u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10387,
-    "Text": "\u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10388,
-    "Text": "/\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "/\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10389,
@@ -1801,7 +1801,7 @@
   },
   {
     "RowId": 10390,
-    "Text": "Use \u003CIf([lnum1==1])\u003Ea \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003Epinch of treated crystal sand\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003Epinches of treated crystal sand\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003C/If\u003E to foster your quickened anima\u0027s growth?"
+    "Text": "Use \u003CIf(Equal(IntegerParameter(1),1))\u003Ea \u003Cspan style=\u0022color: #ffff66;\u0022\u003Epinch of treated crystal sand\u003C/span\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cspan style=\u0022color: #ffff66;\u0022\u003Epinches of treated crystal sand\u003C/span\u003E\u003C/If\u003E to foster your quickened anima\u0027s growth?"
   },
   {
     "RowId": 10391,
@@ -1817,7 +1817,7 @@
   },
   {
     "RowId": 10394,
-    "Text": "Use \u003CIf([lnum2==1])\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,lnum2,1)\u003E\u003C/If\u003E to reallocate growth?"
+    "Text": "Use \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E to reallocate growth?"
   },
   {
     "RowId": 10400,
@@ -1833,7 +1833,7 @@
   },
   {
     "RowId": 10403,
-    "Text": "Save Slot \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Save Slot \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10404,
@@ -1841,11 +1841,11 @@
   },
   {
     "RowId": 10405,
-    "Text": "Floor \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Floor \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10406,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/HeadAll\u003E\n\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E\n\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 10407,
@@ -1877,7 +1877,7 @@
   },
   {
     "RowId": 10414,
-    "Text": "Gear Strength: \u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Gear Strength: \u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10415,
@@ -1889,7 +1889,7 @@
   },
   {
     "RowId": 10417,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10418,
@@ -1929,7 +1929,7 @@
   },
   {
     "RowId": 10427,
-    "Text": "\u003CIf(lnum3)\u003E\u003Ccolortype(573)\u003E\u003Cedgecolortype(574)\u003E\u003Citalic(1)\u003E\u003Cstring(lstr1)\u003E\u003Cif([lnum2==0],,\u003Cif([lnum2\u003E=lnum4],\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E \u002B\u003Cnum(lnum2)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E, \u002B\u003Cnum(lnum2)\u003E)\u003E)\u003E\u003Citalic(0)\u003E\u003Ccolortype(0)\u003E\u003Cedgecolortype(0)\u003E\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003Cif([lnum2==0],,\u003Cif([lnum2\u003E=lnum4],\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E \u002B\u003Cnum(lnum2)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E, \u002B\u003Cnum(lnum2)\u003E)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Cspan style=\u0022color: #f9e846;\u0022\u003E\u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003CItalic\u003E0\u003C/Italic\u003E\u003C/span\u003E\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 10428,
@@ -1993,7 +1993,7 @@
   },
   {
     "RowId": 10443,
-    "Text": "Time Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 10444,

@@ -10,7 +10,7 @@
   },
   {
     "RowId": 3501,
-    "Text": "Du hast \u003Cdenoun(GatheringPointName,1,lnum1,1,4,1)\u003E der G\u00FCte \u003CNum\u003Elnum2\u003C/Num\u003E im \u003CString\u003Elstr3\u003C/String\u003E entdeckt!",
+    "Text": "Du hast \u003Cdenoun(GatheringPointName,1,IntegerParameter(1),1,4,1)\u003E der G\u00FCte \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E im \u003CString\u003EStringParameter(3)\u003C/String\u003E entdeckt!",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -19,7 +19,7 @@
   },
   {
     "RowId": 3502,
-    "Text": "Du kannst \u003Cdenoun(GatheringPointName,4,lnum1,2,4,1)\u003E mehr wahrnehmen.",
+    "Text": "Du kannst \u003Cdenoun(GatheringPointName,4,IntegerParameter(1),2,4,1)\u003E mehr wahrnehmen.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -55,7 +55,7 @@
   },
   {
     "RowId": 3506,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E nun alle vormals unerreichbaren Gegenst\u00E4nde sammeln!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E nun alle vormals unerreichbaren Gegenst\u00E4nde sammeln!",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -64,7 +64,7 @@
   },
   {
     "RowId": 3507,
-    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,lnum1,1,1,1)\u003E\u003C/Head\u003E ist verschwunden.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist verschwunden.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -73,7 +73,7 @@
   },
   {
     "RowId": 3508,
-    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,lnum1,1,1,1)\u003E\u003C/Head\u003E ist ersch\u00F6pft.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist ersch\u00F6pft.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -100,7 +100,7 @@
   },
   {
     "RowId": 3511,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Fischen abgebrochen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Fischen abgebrochen.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -109,7 +109,7 @@
   },
   {
     "RowId": 3512,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E (\u003CNum\u003Elnum2\u003C/Num\u003E,\u003CNum\u003Elnum3\u003C/Num\u003E Ilme) gefangen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Ilme) gefangen.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -118,7 +118,7 @@
   },
   {
     "RowId": 3513,
-    "Text": "Im Fischer-Notizbuch wurde der Fischgrund \u201E\u003Csheet(PlaceName,lnum1,0)\u003E\u201C verzeichnet.",
+    "Text": "Im Fischer-Notizbuch wurde der Fischgrund \u201E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u201C verzeichnet.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -127,7 +127,7 @@
   },
   {
     "RowId": 3514,
-    "Text": "Du hast deinen Rekord in der Kategorie \u201E\u003Csheet(Addon,lnum1,0)\u003E\u201C gebrochen!",
+    "Text": "Du hast deinen Rekord in der Kategorie \u201E\u003Csheet(Addon,IntegerParameter(1),0)\u003E\u201C gebrochen!",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -136,7 +136,7 @@
   },
   {
     "RowId": 3515,
-    "Text": "Deine Beute hat sich aus dem Staub gemacht und du hast \u003Cdenoun(Item,3,lnum1,1,4,1)\u003E verloren. ",
+    "Text": "Deine Beute hat sich aus dem Staub gemacht und du hast \u003Cdenoun(Item,3,IntegerParameter(1),1,4,1)\u003E verloren. ",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -199,7 +199,7 @@
   },
   {
     "RowId": 3522,
-    "Text": "Du hast \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E bereitgemacht.",
+    "Text": "Du hast \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E bereitgemacht.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -217,7 +217,7 @@
   },
   {
     "RowId": 3524,
-    "Text": "Das Sammeln ist nicht m\u00F6glich, weil \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E \u003Cdenoun(Item,4,lnum1,1,4,1)\u003E mehr besitzen \u003CIf([gstr1==gstr2])\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E.",
+    "Text": "Das Sammeln ist nicht m\u00F6glich, weil \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E \u003Cdenoun(Item,4,IntegerParameter(1),1,4,1)\u003E mehr besitzen \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -226,7 +226,7 @@
   },
   {
     "RowId": 3525,
-    "Text": "Du hast \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E geangelt, musst deinen Fang aber wieder freilassen, weil du nicht mehr davon besitzen kannst.",
+    "Text": "Du hast \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E geangelt, musst deinen Fang aber wieder freilassen, weil du nicht mehr davon besitzen kannst.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -235,7 +235,7 @@
   },
   {
     "RowId": 3526,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E im Moment \u003Cdenoun(Item,4,lnum1,2,4,1)\u003E mehr sammeln.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E im Moment \u003Cdenoun(Item,4,IntegerParameter(1),2,4,1)\u003E mehr sammeln.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -253,7 +253,7 @@
   },
   {
     "RowId": 3528,
-    "Text": "Du hast \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E wieder freigelassen.",
+    "Text": "Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E wieder freigelassen.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -262,7 +262,7 @@
   },
   {
     "RowId": 3529,
-    "Text": "Du hast gar \u003Cdenoun(Item,4,lnum1,1,4,1)\u003E zum Freilassen.",
+    "Text": "Du hast gar \u003Cdenoun(Item,4,IntegerParameter(1),1,4,1)\u003E zum Freilassen.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -271,7 +271,7 @@
   },
   {
     "RowId": 3530,
-    "Text": "\u003Csheet(FishingSpot,lnum1,1)\u003E",
+    "Text": "\u003Csheet(FishingSpot,IntegerParameter(1),1)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -280,7 +280,7 @@
   },
   {
     "RowId": 3531,
-    "Text": "\u003Csheet(FishingSpot,lnum1,2)\u003E",
+    "Text": "\u003Csheet(FishingSpot,IntegerParameter(1),2)\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 3537,
-    "Text": "Der Ertrag an \u003Cdenoun(Item,5,lnum1,2,3,1)\u003E ist um \u003CNum\u003Elnum2\u003C/Num\u003E gestiegen!  ",
+    "Text": "Der Ertrag an \u003Cdenoun(Item,5,IntegerParameter(1),2,3,1)\u003E ist um \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E gestiegen!  ",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 3538,
-    "Text": "Du hast \u003CIf([lnum1==1])\u003E\u003Cdenoun(Item,1,lnum2,1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(lnum1,.)\u003E \u003Cdenoun(Item,5,lnum2,2,4,1)\u003E\u003C/If\u003E \u003CIf([lnum3==0])\u003E \u003CElse/\u003E\\(\u002B\u003Cnum(lnum3)\u003E\u003Cnbsp\u003E%\\) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%) \u003C/If\u003Eerhalten.",
     "LogKind": 62,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
   },
   {
     "RowId": 3539,
-    "Text": "Du hast das Limit f\u00FCr \u003Cdenoun(Item,5,lnum1,2,4,1)\u003E bereits erreicht.",
+    "Text": "Du hast das Limit f\u00FCr \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E bereits erreicht.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -361,7 +361,7 @@
   },
   {
     "RowId": 3540,
-    "Text": "Du hast das Wochenlimit f\u00FCr \u003Cdenoun(Item,5,lnum1,2,4,1)\u003E bereits erreicht.",
+    "Text": "Du hast das Wochenlimit f\u00FCr \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E bereits erreicht.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -370,7 +370,7 @@
   },
   {
     "RowId": 3541,
-    "Text": "Hier ist mit \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C nichts aufzufinden.",
+    "Text": "Hier ist mit \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C nichts aufzufinden.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -379,7 +379,7 @@
   },
   {
     "RowId": 3542,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ekonntest\u003CElse/\u003Ekonnte\u003C/If\u003E auch mit \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C nichts entdecken.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekonntest\u003CElse/\u003Ekonnte\u003C/If\u003E auch mit \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C nichts entdecken.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -388,7 +388,7 @@
   },
   {
     "RowId": 3543,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E mit \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C etwas entdeckt!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E mit \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C etwas entdeckt!",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -397,7 +397,7 @@
   },
   {
     "RowId": 3544,
-    "Text": "Deinem Sammler-Notizbuch wurde ein \u003Csheet(GatheringSubCategory,lnum1,5)\u003E hinzugef\u00FCgt.",
+    "Text": "Deinem Sammler-Notizbuch wurde ein \u003Csheet(GatheringSubCategory,IntegerParameter(1),5)\u003E hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -406,7 +406,7 @@
   },
   {
     "RowId": 3545,
-    "Text": "Deinem Fischer-Notizbuch wurde ein \u003Csheet(GatheringSubCategory,lnum1,5)\u003E hinzugef\u00FCgt.",
+    "Text": "Deinem Fischer-Notizbuch wurde ein \u003Csheet(GatheringSubCategory,IntegerParameter(1),5)\u003E hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -415,7 +415,7 @@
   },
   {
     "RowId": 3546,
-    "Text": "Du hast \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E bereits erhalten.",
+    "Text": "Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E bereits erhalten.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -433,7 +433,7 @@
   },
   {
     "RowId": 3548,
-    "Text": "Die SP-Kosten beim Sammlerst\u00FCck-Sammeln sind um \u003CNum\u003Elnum1\u003C/Num\u003E reduziert!",
+    "Text": "Die SP-Kosten beim Sammlerst\u00FCck-Sammeln sind um \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E reduziert!",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -442,7 +442,7 @@
   },
   {
     "RowId": 3549,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E setzt \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C ein.\n\uE06F Sammlerwert um \u003CNum\u003Elnum2\u003C/Num\u003E gestiegen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E setzt \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C ein.\n\uE06F Sammlerwert um \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E gestiegen.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -478,7 +478,7 @@
   },
   {
     "RowId": 3553,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E (Sammlerwert: \u003CNum\u003Elnum2\u003C/Num\u003E) raffiniert!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E (Sammlerwert: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E) raffiniert!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -487,7 +487,7 @@
   },
   {
     "RowId": 3554,
-    "Text": " \uE06F \u003CHead\u003E\u003Cdenoun(Item,1,lnum1,1,4,1)\u003E\u003C/Head\u003E erhalten.",
+    "Text": " \uE06F \u003CHead\u003E\u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -496,7 +496,7 @@
   },
   {
     "RowId": 3555,
-    "Text": " \uE06F \u003CHead\u003E\u003Cdenoun(Item,1,lnum1,lnum2,4,1)\u003E\u003C/Head\u003E erhalten.",
+    "Text": " \uE06F \u003CHead\u003E\u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E\u003C/Head\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -532,7 +532,7 @@
   },
   {
     "RowId": 3559,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eziehst\u003CElse/\u003Ezieht\u003C/If\u003E \u003CIf([lnum4==1])\u003E\u003Cdenoun(Item,1,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cnum(lnum4)\u003E \u003Cdenoun(Item,5,lnum1,2,4,1)\u003E\u003C/If\u003E mit einer L\u00E4nge von \u003CNum\u003Elnum2\u003C/Num\u003E,\u003CNum\u003Elnum3\u003C/Num\u003E Ilmen an Land!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eziehst\u003CElse/\u003Ezieht\u003C/If\u003E \u003CIf(Equal(IntegerParameter(4),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E mit einer L\u00E4nge von \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Ilmen an Land!",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -550,7 +550,7 @@
   },
   {
     "RowId": 3561,
-    "Text": "Du hast \u003Cdenoun(GatheringPointName,1,lnum1,1,4,1)\u003E der G\u00FCte \u003CNum\u003Elnum2\u003C/Num\u003E im \u003CString\u003Elstr3\u003C/String\u003E entdeckt!",
+    "Text": "Du hast \u003Cdenoun(GatheringPointName,1,IntegerParameter(1),1,4,1)\u003E der G\u00FCte \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E im \u003CString\u003EStringParameter(3)\u003C/String\u003E entdeckt!",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -559,7 +559,7 @@
   },
   {
     "RowId": 3562,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,2,1,1)\u003E\u003C/Head\u003E haben dich entdeckt und sind gefl\u00FCchtet.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,1,1)\u003E\u003C/Head\u003E haben dich entdeckt und sind gefl\u00FCchtet.",
     "LogKind": 59,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -622,7 +622,7 @@
   },
   {
     "RowId": 3569,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E setzt \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C ein.\n\uE06F Du vertraust deiner Intuition. Sammlerwert um \u003CNum\u003Elnum2\u003C/Num\u003E gestiegen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E setzt \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C ein.\n\uE06F Du vertraust deiner Intuition. Sammlerwert um \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E gestiegen.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -685,7 +685,7 @@
   },
   {
     "RowId": 3576,
-    "Text": "Du hast \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E (\u003CNum\u003Elnum2\u003C/Num\u003E,\u003CNum\u003Elnum3\u003C/Num\u003E Ilme) aufgespie\u00DFt.",
+    "Text": "Du hast \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Ilme) aufgespie\u00DFt.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -694,7 +694,7 @@
   },
   {
     "RowId": 3577,
-    "Text": "Du spie\u00DFt \u003CIf([lnum4==1])\u003E\u003Cdenoun(Item,1,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cnum(lnum4)\u003E \u003Cdenoun(Item,5,lnum1,2,4,1)\u003E\u003C/If\u003E mit einer L\u00E4nge von \u003CNum\u003Elnum2\u003C/Num\u003E,\u003CNum\u003Elnum3\u003C/Num\u003E Ilmen auf!",
+    "Text": "Du spie\u00DFt \u003CIf(Equal(IntegerParameter(4),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E mit einer L\u00E4nge von \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Ilmen auf!",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -703,7 +703,7 @@
   },
   {
     "RowId": 3578,
-    "Text": "Du hast eine \u003Cswitch(lnum1,kleine,mittlere,gro\u00DFe)\u003E Spitze an deiner Harpune angebracht.",
+    "Text": "Du hast eine \u003Cswitch(IntegerParameter(1),kleine,mittlere,gro\u00DFe)\u003E Spitze an deiner Harpune angebracht.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -712,7 +712,7 @@
   },
   {
     "RowId": 3579,
-    "Text": "Der neue Speerfischgrund \u201E\u003Csheet(PlaceName,lnum1,0)\u003E\u201C wurde in deinem Fischer-Notizbuch vermerkt.",
+    "Text": "Der neue Speerfischgrund \u201E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u201C wurde in deinem Fischer-Notizbuch vermerkt.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -748,7 +748,7 @@
   },
   {
     "RowId": 3583,
-    "Text": "\u003CHead\u003E\u003Csheet(Action,lnum1,0)\u003E\u003C/Head\u003E hat nun eine Erfolgrate von \u003CNum\u003Elnum3\u003C/Num\u003E %, um \u003Csheet(Status,lnum2,0)\u003E auszul\u00F6sen.",
+    "Text": "\u003CHead\u003E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u003C/Head\u003E hat nun eine Erfolgrate von \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E %, um \u003Csheet(Status,IntegerParameter(2),0)\u003E auszul\u00F6sen.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -766,7 +766,7 @@
   },
   {
     "RowId": 3585,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E keinen Platz im Inventar und \u003CIf([gstr1==gstr2])\u003Emusst\u003CElse/\u003Emuss\u003C/If\u003E \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E wieder schwimmen lassen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E keinen Platz im Inventar und \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Emusst\u003CElse/\u003Emuss\u003C/If\u003E \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E wieder schwimmen lassen.",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -793,7 +793,7 @@
   },
   {
     "RowId": 3588,
-    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,lnum1,1,1,1)\u003E\u003C/Head\u003E ist verschwunden.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(GatheringPointName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist verschwunden.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -811,7 +811,7 @@
   },
   {
     "RowId": 3590,
-    "Text": "\u003CHead\u003E\u003Csheet(SpearfishingEcology,lnum1,lnum2)\u003E\u003C/Head\u003E",
+    "Text": "\u003CHead\u003E\u003Csheet(SpearfishingEcology,IntegerParameter(1),IntegerParameter(2))\u003E\u003C/Head\u003E",
     "LogKind": 67,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 3595,
-    "Text": "\u003CHead\u003E\u003Csheet(Action,lnum1,0)\u003E\u003C/Head\u003E erh\u00F6ht die Wirkung von \u003Csheet(Status,lnum2,0)\u003E um \u003CNum\u003Elnum3\u003C/Num\u003E %.",
+    "Text": "\u003CHead\u003E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u003C/Head\u003E erh\u00F6ht die Wirkung von \u003Csheet(Status,IntegerParameter(2),0)\u003E um \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E %.",
     "LogKind": 67,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 3596,
-    "Text": "Du hast \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E erhalten.\n\u003CHead\u003E\u003Cdenoun(Item,5,lnum1,2,1,1)\u003E\u003C/Head\u003E k\u00F6nnen bei Scheinewechslern gegen verschiedene Gegenst\u00E4nde eingetauscht werden.",
+    "Text": "Du hast \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E erhalten.\n\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,1,1)\u003E\u003C/Head\u003E k\u00F6nnen bei Scheinewechslern gegen verschiedene Gegenst\u00E4nde eingetauscht werden.",
     "LogKind": 67,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 3599,
-    "Text": "Du hast \u003CIf([lnum1==1])\u003E\u003Cdenoun(Item,1,lnum2,1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(lnum1,.)\u003E \u003Cdenoun(Item,5,lnum2,2,4,1)\u003E\u003C/If\u003E \u003CIf([lnum3==0])\u003E \u003CElse/\u003E\\(\u002B\u003Cnum(lnum3)\u003E\u003Cnbsp\u003E%\\) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%) \u003C/If\u003Eerhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1378,7 +1378,7 @@
   },
   {
     "RowId": 3653,
-    "Text": "Du hast den Gebieter beschwichtigt und bist als Wei\u00DFmagier\u003CIf(gnum4)\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen.",
+    "Text": "Du hast den Gebieter beschwichtigt und bist als Wei\u00DFmagier\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1387,7 +1387,7 @@
   },
   {
     "RowId": 3654,
-    "Text": "Du hast A-Ruhn-Senna gerettet und bist als Wei\u00DFmagier\u003CIf(gnum4)\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen!",
+    "Text": "Du hast A-Ruhn-Senna gerettet und bist als Wei\u00DFmagier\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen!",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 3655,
-    "Text": "Du bist A-Towa-Cants Spuren gefolgt und bist als Wei\u00DFmagier\u003CIf(gnum4)\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen!",
+    "Text": "Du bist A-Towa-Cants Spuren gefolgt und bist als Wei\u00DFmagier\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003E \u003C/If\u003E einen weiteren, bedeutenden Schritt vorangekommen!",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1495,7 +1495,7 @@
   },
   {
     "RowId": 3666,
-    "Text": "In dir, \u003CIf(gnum4)\u003Edie\u003CElse/\u003Eder\u003C/If\u003E du Jehantel so gut unterst\u00FCtzt hast, erklingt eine Melodie der Barden vergangener Zeiten!",
+    "Text": "In dir, \u003CIf(PlayerParameter(4))\u003Edie\u003CElse/\u003Eder\u003C/If\u003E du Jehantel so gut unterst\u00FCtzt hast, erklingt eine Melodie der Barden vergangener Zeiten!",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 3712,
-    "Text": "Du sp\u00FCrst eine Quelle \u003CNum\u003Elnum2\u003C/Num\u003E Yalme in Richtung \u003Cswitch(lnum1,Norden,Nordost,Osten,S\u00FCdost,S\u00FCden,S\u00FCdwest,Westen,Nordwest,Norden)\u003E!",
+    "Text": "Du sp\u00FCrst eine Quelle \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Yalme in Richtung \u003Cswitch(IntegerParameter(1),Norden,Nordost,Osten,S\u00FCdost,S\u00FCden,S\u00FCdwest,Westen,Nordwest,Norden)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1918,7 +1918,7 @@
   },
   {
     "RowId": 3713,
-    "Text": "Du hast bereits alle Wind\u00E4therquellen im Gebiet \u003Csheet(PlaceName,lnum1,0)\u003E geb\u00FCndelt.",
+    "Text": "Du hast bereits alle Wind\u00E4therquellen im Gebiet \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E geb\u00FCndelt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 3716,
-    "Text": "Du wirfst \u003Cdenoun(EventItem,2,lnum1,1,4,1)\u003E weg.",
+    "Text": "Du wirfst \u003Cdenoun(EventItem,2,IntegerParameter(1),1,4,1)\u003E weg.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1990,7 +1990,7 @@
   },
   {
     "RowId": 3721,
-    "Text": "Der Kampf kann nicht begonnen werden, weil \u201E\u003Csheet(Leve,lnum1,0)\u003E\u201C noch l\u00E4uft.",
+    "Text": "Der Kampf kann nicht begonnen werden, weil \u201E\u003Csheet(Leve,IntegerParameter(1),0)\u003E\u201C noch l\u00E4uft.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2008,7 +2008,7 @@
   },
   {
     "RowId": 3723,
-    "Text": "Die Aufgabe \u201E\u003CString\u003Elstr2\u003C/String\u003E\u201C\nf\u00FCr den Auftrag \u201E\u003Csheet(Quest,lnum1,0)\u003E\u201C konnte nicht abgeschlossen werden.",
+    "Text": "Die Aufgabe \u201E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u201C\nf\u00FCr den Auftrag \u201E\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201C konnte nicht abgeschlossen werden.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2017,7 +2017,7 @@
   },
   {
     "RowId": 3724,
-    "Text": "Um mit dem Auftrag \u201E\u003Csheet(Quest,lnum2,0)\u003E\u201C fortzufahren, musst du auf das Reittier \u201E\u003Csheet(Mount,lnum1,0)\u003E\u201C aufsitzen.",
+    "Text": "Um mit dem Auftrag \u201E\u003Csheet(Quest,IntegerParameter(2),0)\u003E\u201C fortzufahren, musst du auf das Reittier \u201E\u003Csheet(Mount,IntegerParameter(1),0)\u003E\u201C aufsitzen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2053,7 +2053,7 @@
   },
   {
     "RowId": 3728,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich kaum merklich verdichtet.",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich kaum merklich verdichtet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2062,7 +2062,7 @@
   },
   {
     "RowId": 3729,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich leicht verdichtet.",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich leicht verdichtet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2071,7 +2071,7 @@
   },
   {
     "RowId": 3730,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich sp\u00FCrbar verdichtet.",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich sp\u00FCrbar verdichtet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2080,7 +2080,7 @@
   },
   {
     "RowId": 3731,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich um ein gutes St\u00FCck verdichtet.",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich um ein gutes St\u00FCck verdichtet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2089,7 +2089,7 @@
   },
   {
     "RowId": 3732,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich um ein bedeutendes St\u00FCck verdichtet!",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich um ein bedeutendes St\u00FCck verdichtet!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2098,7 +2098,7 @@
   },
   {
     "RowId": 3733,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich stark verdichtet!",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich stark verdichtet!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2107,7 +2107,7 @@
   },
   {
     "RowId": 3734,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich sehr stark verdichtet!",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich sehr stark verdichtet!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2116,7 +2116,7 @@
   },
   {
     "RowId": 3735,
-    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,lnum1,1,3,1)\u003E hat sich optimal verdichtet!",
+    "Text": "Die synthetische Seele in \u003Cdenoun(Item,2,IntegerParameter(1),1,3,1)\u003E hat sich optimal verdichtet!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2125,7 +2125,7 @@
   },
   {
     "RowId": 3736,
-    "Text": "Transaktion nicht m\u00F6glich, da \u003Cdenoun(Item,2,lnum1,1,1,1)\u003E ausger\u00FCstet ist.",
+    "Text": "Transaktion nicht m\u00F6glich, da \u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E ausger\u00FCstet ist.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2143,7 +2143,7 @@
   },
   {
     "RowId": 3738,
-    "Text": "Transaktion nicht m\u00F6glich, da \u003Cdenoun(Item,2,lnum1,1,1,1)\u003E oder \u003Cdenoun(Item,2,lnum2,1,1,1)\u003E ausger\u00FCstet sind.",
+    "Text": "Transaktion nicht m\u00F6glich, da \u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E oder \u003Cdenoun(Item,2,IntegerParameter(2),1,1,1)\u003E ausger\u00FCstet sind.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2152,7 +2152,7 @@
   },
   {
     "RowId": 3739,
-    "Text": "Transaktion nicht m\u00F6glich, da du \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E nur einmal besitzen kannst.",
+    "Text": "Transaktion nicht m\u00F6glich, da du \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E nur einmal besitzen kannst.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2161,7 +2161,7 @@
   },
   {
     "RowId": 3740,
-    "Text": "Transaktion nicht m\u00F6glich,\nda du \u003Cdenoun(Item,2,lnum1,1,1,1)\u003E oder \u003Cdenoun(Item,2,lnum2,1,1,1)\u003E nur je einmal besitzen kannst.",
+    "Text": "Transaktion nicht m\u00F6glich,\nda du \u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E oder \u003Cdenoun(Item,2,IntegerParameter(2),1,1,1)\u003E nur je einmal besitzen kannst.",
     "LogKind": 57,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2188,7 +2188,7 @@
   },
   {
     "RowId": 3743,
-    "Text": "Das \u00C4thergemisch aus dem Kessel wurde zu \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,1,lnum1,1,3,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cdenoun(Item,5,lnum1,2,3,1)\u003E\u003C/If\u003E kristallisiert.",
+    "Text": "Das \u00C4thergemisch aus dem Kessel wurde zu \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(1),1,3,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),2,3,1)\u003E\u003C/If\u003E kristallisiert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2206,7 +2206,7 @@
   },
   {
     "RowId": 3745,
-    "Text": "Du hast \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cdenoun(Item,5,lnum1,lnum2,4,1)\u003E erhalten.",
+    "Text": "Du hast \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),IntegerParameter(2),4,1)\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2224,7 +2224,7 @@
   },
   {
     "RowId": 3747,
-    "Text": "Der Status \u201E\u003Csheet(Status,lnum1,0)\u003E\u201C kann w\u00E4hrend eines Ereignisses nicht entfernt werden.",
+    "Text": "Der Status \u201E\u003Csheet(Status,IntegerParameter(1),0)\u003E\u201C kann w\u00E4hrend eines Ereignisses nicht entfernt werden.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2251,7 +2251,7 @@
   },
   {
     "RowId": 3750,
-    "Text": "Du hast \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E entziffert!\n\u003CHead\u003E\u003Cdenoun(EventItem,1,lnum2,1,1,1)\u003E\u003C/Head\u003E wurde deinen Schl\u00FCsselgegenst\u00E4nden hinzugef\u00FCgt.",
+    "Text": "Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E entziffert!\n\u003CHead\u003E\u003Cdenoun(EventItem,1,IntegerParameter(2),1,1,1)\u003E\u003C/Head\u003E wurde deinen Schl\u00FCsselgegenst\u00E4nden hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2260,7 +2260,7 @@
   },
   {
     "RowId": 3751,
-    "Text": "Hier siehst du weit und breit nichts \u003CIf([lnum1==0])\u003ESchatz\u003CElse/\u003E\u00C4thergramm\u003C/If\u003E\u00E4hnliches ...",
+    "Text": "Hier siehst du weit und breit nichts \u003CIf(Equal(IntegerParameter(1),0))\u003ESchatz\u003CElse/\u003E\u00C4thergramm\u003C/If\u003E\u00E4hnliches ...",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2269,7 +2269,7 @@
   },
   {
     "RowId": 3752,
-    "Text": "Die Zeit ist um! \u003Cswitch(lnum1,Die Schatztruhe ist,Das \u00C4thergramm ist,Schatztruhen wie \u00C4thergramme sind)\u003E wie vom Erdboden verschluckt und du gibst auf.",
+    "Text": "Die Zeit ist um! \u003Cswitch(IntegerParameter(1),Die Schatztruhe ist,Das \u00C4thergramm ist,Schatztruhen wie \u00C4thergramme sind)\u003E wie vom Erdboden verschluckt und du gibst auf.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2332,7 +2332,7 @@
   },
   {
     "RowId": 3759,
-    "Text": "Du hast \u003CIf([lnum1==0])\u003Eeine versteckte Schatztruhe\u003CElse/\u003Eein Transport-\u00C4thergramm\u003C/If\u003E gefunden!",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),0))\u003Eeine versteckte Schatztruhe\u003CElse/\u003Eein Transport-\u00C4thergramm\u003C/If\u003E gefunden!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2350,7 +2350,7 @@
   },
   {
     "RowId": 3761,
-    "Text": "Du hast \u003CIf([lnum1==0])\u003Edie Schatztruhe\u003CElse/\u003Edas \u00C4thergramm\u003C/If\u003E doch schon gefunden.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),0))\u003Edie Schatztruhe\u003CElse/\u003Edas \u00C4thergramm\u003C/If\u003E doch schon gefunden.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2359,7 +2359,7 @@
   },
   {
     "RowId": 3762,
-    "Text": "Deine Gruppenmitglieder m\u00FCssen im selben Areal sein, damit du \u003CIf([lnum1==0])\u003Eeine Schatztruhe\u003CElse/\u003Eein \u00C4thergramm\u003C/If\u003E finden kannst.",
+    "Text": "Deine Gruppenmitglieder m\u00FCssen im selben Areal sein, damit du \u003CIf(Equal(IntegerParameter(1),0))\u003Eeine Schatztruhe\u003CElse/\u003Eein \u00C4thergramm\u003C/If\u003E finden kannst.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2368,7 +2368,7 @@
   },
   {
     "RowId": 3763,
-    "Text": "Du bist gerade mit \u201E\u003CString\u003Egstr56\u003C/String\u003E\u201C besch\u00E4ftigt und kannst jetzt nicht nach \u003CIf([lnum1==0])\u003ESchatztruhen\u003CElse/\u003E\u00C4thergrammen\u003C/If\u003E suchen.",
+    "Text": "Du bist gerade mit \u201E\u003CString\u003EObjectParameter(56)\u003C/String\u003E\u201C besch\u00E4ftigt und kannst jetzt nicht nach \u003CIf(Equal(IntegerParameter(1),0))\u003ESchatztruhen\u003CElse/\u003E\u00C4thergrammen\u003C/If\u003E suchen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2377,7 +2377,7 @@
   },
   {
     "RowId": 3764,
-    "Text": "Du kannst nicht nach \u003CIf([lnum1==0])\u003ESchatztruhen\u003CElse/\u003E\u00C4thergrammen\u003C/If\u003E suchen,\nweil jemand in deiner Gruppe gerade in einem anderen Spielinhalt besch\u00E4ftigt ist.",
+    "Text": "Du kannst nicht nach \u003CIf(Equal(IntegerParameter(1),0))\u003ESchatztruhen\u003CElse/\u003E\u00C4thergrammen\u003C/If\u003E suchen,\nweil jemand in deiner Gruppe gerade in einem anderen Spielinhalt besch\u00E4ftigt ist.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2395,7 +2395,7 @@
   },
   {
     "RowId": 3766,
-    "Text": "\u003CHead\u003E\u003Cdenoun(EventItem,2,lnum1,1,1,1)\u003E\u003C/Head\u003E zerf\u00E4llt zu Staub.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(EventItem,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E zerf\u00E4llt zu Staub.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2404,7 +2404,7 @@
   },
   {
     "RowId": 3767,
-    "Text": "Du kannst keine neue Schatzkarte entziffern,\nweil sich bereits \u003Cdenoun(EventItem,1,lnum1,1,1,1)\u003E unter deinen Schl\u00FCsselgegenst\u00E4nden befindet.",
+    "Text": "Du kannst keine neue Schatzkarte entziffern,\nweil sich bereits \u003Cdenoun(EventItem,1,IntegerParameter(1),1,1,1)\u003E unter deinen Schl\u00FCsselgegenst\u00E4nden befindet.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -2422,7 +2422,7 @@
   },
   {
     "RowId": 3769,
-    "Text": "Du kannst vor\u00FCbergehend keine \u003CIf([lnum1==0])\u003ESchatztruhen\u003CElse/\u003E\u00C4thergramme\u003C/If\u003E mehr finden.\nDies ist eine Ma\u00DFnahme zur Suchtpr\u00E4vention.",
+    "Text": "Du kannst vor\u00FCbergehend keine \u003CIf(Equal(IntegerParameter(1),0))\u003ESchatztruhen\u003CElse/\u003E\u00C4thergramme\u003C/If\u003E mehr finden.\nDies ist eine Ma\u00DFnahme zur Suchtpr\u00E4vention.",
     "LogKind": 60,
     "Unknown0": 129,
     "Unknown1": 0,
@@ -2467,7 +2467,7 @@
   },
   {
     "RowId": 3774,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr3],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,1,1)\u003E,gstr3)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr3])\u003Elegst deine\u003CElse/\u003Elegt \u003Cif(gnum8,\u003Cif(\u003Csheet(BNpcName,gnum8,6)\u003E,\u003Cswitch(\u003Csheet(BNpcName,gnum8,6)\u003E,ihre,seine)\u003E,seine)\u003E,\u003Cif(gnum6,\u003Cswitch(gnum6,ihre,seine)\u003E,seine)\u003E)\u003E\u003C/If\u003E Hand auf das \u00C4thergramm.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Elegst deine\u003CElse/\u003Elegt \u003CIf(PlayerParameter(8))\u003E\u003CIf(\u003Csheet(BNpcName,PlayerParameter(8),6)\u003E)\u003E\u003Cswitch(\u003Csheet(BNpcName,PlayerParameter(8),6)\u003E,ihre,seine)\u003E\u003CElse/\u003Eseine\u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(6))\u003E\u003Cswitch(PlayerParameter(6),ihre,seine)\u003E\u003CElse/\u003Eseine\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E Hand auf das \u00C4thergramm.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2503,7 +2503,7 @@
   },
   {
     "RowId": 3778,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr3],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,1,1)\u003E,gstr3)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr3])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Gruppe angemeldet, um einen geheimen Hort zu betreten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Gruppe angemeldet, um einen geheimen Hort zu betreten.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2512,7 +2512,7 @@
   },
   {
     "RowId": 3779,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr3],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,1,1)\u003E,gstr3)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr3])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Transport \u00FCber das \u00C4thergramm abgebrochen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Transport \u00FCber das \u00C4thergramm abgebrochen.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2521,7 +2521,7 @@
   },
   {
     "RowId": 3780,
-    "Text": "Aktuelle-Agenda-Eintrag \u201E\u003Csheet(ContentsNote,lnum1,11)\u003E\u201C vollst\u00E4ndig!",
+    "Text": "Aktuelle-Agenda-Eintrag \u201E\u003Csheet(ContentsNote,IntegerParameter(1),11)\u003E\u201C vollst\u00E4ndig!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2548,7 +2548,7 @@
   },
   {
     "RowId": 3783,
-    "Text": "Der Eintrag \u201E\u003Csheet(ContentsNote,lnum1,11)\u003E\u201C der Aktuellen Agenda ist fast vollst\u00E4ndig!",
+    "Text": "Der Eintrag \u201E\u003Csheet(ContentsNote,IntegerParameter(1),11)\u003E\u201C der Aktuellen Agenda ist fast vollst\u00E4ndig!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2566,7 +2566,7 @@
   },
   {
     "RowId": 3785,
-    "Text": "Du musst mindestens Stufe \u003CNum\u003Elnum1\u003C/Num\u003E sein, um diesen Ort zu betreten.",
+    "Text": "Du musst mindestens Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E sein, um diesen Ort zu betreten.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -2575,7 +2575,7 @@
   },
   {
     "RowId": 3786,
-    "Text": "Du hast \u003Cdenoun(EventItem,1,lnum1,1,4,1)\u003E erhalten.",
+    "Text": "Du hast \u003Cdenoun(EventItem,1,IntegerParameter(1),1,4,1)\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2584,7 +2584,7 @@
   },
   {
     "RowId": 3787,
-    "Text": "Die Suche nach \u003CIf([lnum1==0])\u003Eeiner Schatztruhe\u003CElse/\u003Eeinem \u00C4thergramm\u003C/If\u003E ist nicht m\u00F6glich,\nweil jemand in der Gruppe mit Synthese besch\u00E4ftigt ist.",
+    "Text": "Die Suche nach \u003CIf(Equal(IntegerParameter(1),0))\u003Eeiner Schatztruhe\u003CElse/\u003Eeinem \u00C4thergramm\u003C/If\u003E ist nicht m\u00F6glich,\nweil jemand in der Gruppe mit Synthese besch\u00E4ftigt ist.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2620,7 +2620,7 @@
   },
   {
     "RowId": 3791,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr3],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,1,1)\u003E,gstr3)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr3])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E eine Bereitschaftsanfrage gestellt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E eine Bereitschaftsanfrage gestellt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2647,7 +2647,7 @@
   },
   {
     "RowId": 3794,
-    "Text": "Bereitschaftsanfrage: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E bereit, \u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E nicht bereit\u003CIf([lnum2==0])\u003E\u003Csound(0,46)\u003E\u003CElse/\u003E\u003Csound(0,47)\u003E\u003C/If\u003E",
+    "Text": "Bereitschaftsanfrage: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E bereit, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E nicht bereit\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003Csound(0,46)\u003E\u003CElse/\u003E\u003Csound(0,47)\u003E\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2719,7 +2719,7 @@
   },
   {
     "RowId": 3802,
-    "Text": "Das Textkommando \u201E\u003CString\u003Elstr3\u003C/String\u003E\u201C erfordert den Unterbefehl [\u003CString\u003Elstr2\u003C/String\u003E] an \u003CNum\u003Elnum1\u003C/Num\u003E. Stelle.",
+    "Text": "Das Textkommando \u201E\u003CString\u003EStringParameter(3)\u003C/String\u003E\u201C erfordert den Unterbefehl [\u003CString\u003EStringParameter(2)\u003C/String\u003E] an \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. Stelle.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2728,7 +2728,7 @@
   },
   {
     "RowId": 3803,
-    "Text": "Der Unterbefehl [\u003CString\u003Elstr2\u003C/String\u003E] an der \u003CNum\u003Elnum1\u003C/Num\u003E. Stelle des Textkommandos (\u003CString\u003Elstr3\u003C/String\u003E) ist fehlerhaft.",
+    "Text": "Der Unterbefehl [\u003CString\u003EStringParameter(2)\u003C/String\u003E] an der \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. Stelle des Textkommandos (\u003CString\u003EStringParameter(3)\u003C/String\u003E) ist fehlerhaft.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2737,7 +2737,7 @@
   },
   {
     "RowId": 3804,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E ist bereits als erg\u00E4nzendes Kommando zugewiesen.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E ist bereits als erg\u00E4nzendes Kommando zugewiesen.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2746,7 +2746,7 @@
   },
   {
     "RowId": 3805,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E konnte nicht zugewiesen werden. Alle Pl\u00E4tze f\u00FCr erg\u00E4nzende Kommandos sind belegt.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E konnte nicht zugewiesen werden. Alle Pl\u00E4tze f\u00FCr erg\u00E4nzende Kommandos sind belegt.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2755,7 +2755,7 @@
   },
   {
     "RowId": 3806,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E kann nicht als erg\u00E4nzendes Kommando zugewiesen werden.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E kann nicht als erg\u00E4nzendes Kommando zugewiesen werden.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2764,7 +2764,7 @@
   },
   {
     "RowId": 3807,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E ist noch nicht als erg\u00E4nzendes Kommando zugewiesen.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E ist noch nicht als erg\u00E4nzendes Kommando zugewiesen.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2809,7 +2809,7 @@
   },
   {
     "RowId": 3812,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C kann nicht erlernt werden, weil du nicht genug Kommandopunkte hast.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C kann nicht erlernt werden, weil du nicht genug Kommandopunkte hast.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2818,7 +2818,7 @@
   },
   {
     "RowId": 3813,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C hast du bereits erlernt.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C hast du bereits erlernt.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2854,7 +2854,7 @@
   },
   {
     "RowId": 3817,
-    "Text": "Du hast den Neulings-Status \u003CIf([lnum1==0])\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Du hast den Neulings-Status \u003CIf(Equal(IntegerParameter(1),0))\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2881,7 +2881,7 @@
   },
   {
     "RowId": 3820,
-    "Text": "Die automatische Teilnahme am Neulings-Chat wurde \u003CIf([lnum1==0])\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Die automatische Teilnahme am Neulings-Chat wurde \u003CIf(Equal(IntegerParameter(1),0))\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2908,7 +2908,7 @@
   },
   {
     "RowId": 3823,
-    "Text": "Die automatische Teilnahme am Neulings-Chat wurde \u003CIf([lnum1==0])\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Die automatische Teilnahme am Neulings-Chat wurde \u003CIf(Equal(IntegerParameter(1),0))\u003Edeaktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2917,7 +2917,7 @@
   },
   {
     "RowId": 3824,
-    "Text": "Der \u003Csheet(Action,2880,0)\u003E wird nun \u003CIf([lnum1==0])\u003Enicht mehr\u003CElse/\u003Ewieder\u003C/If\u003E angezeigt.",
+    "Text": "Der \u003Csheet(Action,2880,0)\u003E wird nun \u003CIf(Equal(IntegerParameter(1),0))\u003Enicht mehr\u003CElse/\u003Ewieder\u003C/If\u003E angezeigt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2962,7 +2962,7 @@
   },
   {
     "RowId": 3829,
-    "Text": "Herausforderungen zum Duell werden nun \u003CIf([lnum1==0])\u003Eautomatisch abgelehnt\u003CElse/\u003Eakzeptiert\u003C/If\u003E.",
+    "Text": "Herausforderungen zum Duell werden nun \u003CIf(Equal(IntegerParameter(1),0))\u003Eautomatisch abgelehnt\u003CElse/\u003Eakzeptiert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3016,7 +3016,7 @@
   },
   {
     "RowId": 3835,
-    "Text": "Einladungen zum Neulings-Chat werden nun automatisch \u003CIf([lnum1==1])\u003Eangenommen\u003CElse/\u003Eabgelehnt\u003C/If\u003E.",
+    "Text": "Einladungen zum Neulings-Chat werden nun automatisch \u003CIf(Equal(IntegerParameter(1),1))\u003Eangenommen\u003CElse/\u003Eabgelehnt\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3061,7 +3061,7 @@
   },
   {
     "RowId": 3840,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E wird n\u00E4chstes Mal als \u003CString\u003Elstr2\u003C/String\u003E erscheinen.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E wird n\u00E4chstes Mal als \u003CString\u003EStringParameter(2)\u003C/String\u003E erscheinen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3070,7 +3070,7 @@
   },
   {
     "RowId": 3841,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E wird n\u00E4chstes Mal unverwandelt erscheinen.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E wird n\u00E4chstes Mal unverwandelt erscheinen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3106,7 +3106,7 @@
   },
   {
     "RowId": 3845,
-    "Text": "Emote-Nachrichten werden im Chatlog \u003CIf([lnum1==1])\u003Eangezeigt\u003CElse/\u003Enicht angezeigt\u003C/If\u003E.",
+    "Text": "Emote-Nachrichten werden im Chatlog \u003CIf(Equal(IntegerParameter(1),1))\u003Eangezeigt\u003CElse/\u003Enicht angezeigt\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3115,7 +3115,7 @@
   },
   {
     "RowId": 3846,
-    "Text": "Titel wurde zu \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C ge\u00E4ndert.",
+    "Text": "Titel wurde zu \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3142,7 +3142,7 @@
   },
   {
     "RowId": 3849,
-    "Text": "Gr\u00F6\u00DFe von Demi-Bahamut wurde zu \u201E\u003Cswitch(lnum1,klein,mittel,gro\u00DF)\u003E\u201C ge\u00E4ndert.",
+    "Text": "Gr\u00F6\u00DFe von Demi-Bahamut wurde zu \u201E\u003Cswitch(IntegerParameter(1),klein,mittel,gro\u00DF)\u003E\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3151,7 +3151,7 @@
   },
   {
     "RowId": 3850,
-    "Text": "Hauptlautst\u00E4rke: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Hauptlautst\u00E4rke: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3160,7 +3160,7 @@
   },
   {
     "RowId": 3851,
-    "Text": "Lautst\u00E4rke Hintergrundmusik: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Hintergrundmusik: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3169,7 +3169,7 @@
   },
   {
     "RowId": 3852,
-    "Text": "Lautst\u00E4rke Soundeffekte: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Soundeffekte: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3178,7 +3178,7 @@
   },
   {
     "RowId": 3853,
-    "Text": "Lautst\u00E4rke Stimmen: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Stimmen: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3187,7 +3187,7 @@
   },
   {
     "RowId": 3854,
-    "Text": "Lautst\u00E4rke Systemt\u00F6ne: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Systemt\u00F6ne: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3196,7 +3196,7 @@
   },
   {
     "RowId": 3855,
-    "Text": "Lautst\u00E4rke Umgebungsger\u00E4usche: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Umgebungsger\u00E4usche: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3205,7 +3205,7 @@
   },
   {
     "RowId": 3856,
-    "Text": "Lautst\u00E4rke Soundeffekte (Eigene): \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Soundeffekte (Eigene): \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3214,7 +3214,7 @@
   },
   {
     "RowId": 3857,
-    "Text": "Lautst\u00E4rke Soundeffekte (Gruppenmitglieder): \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Soundeffekte (Gruppenmitglieder): \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3223,7 +3223,7 @@
   },
   {
     "RowId": 3858,
-    "Text": "Lautst\u00E4rke Soundeffekte (Andere): \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke Soundeffekte (Andere): \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3232,7 +3232,7 @@
   },
   {
     "RowId": 3859,
-    "Text": "Lautst\u00E4rke der Systemt\u00F6ne \u00FCber Lautsprecher: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke der Systemt\u00F6ne \u00FCber Lautsprecher: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3241,7 +3241,7 @@
   },
   {
     "RowId": 3860,
-    "Text": "Hauptlautst\u00E4rke \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Hauptlautst\u00E4rke \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3250,7 +3250,7 @@
   },
   {
     "RowId": 3861,
-    "Text": "Hintergrundmusik \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Hintergrundmusik \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3259,7 +3259,7 @@
   },
   {
     "RowId": 3862,
-    "Text": "Soundeffekte \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Soundeffekte \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3268,7 +3268,7 @@
   },
   {
     "RowId": 3863,
-    "Text": "Stimmen \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Stimmen \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3277,7 +3277,7 @@
   },
   {
     "RowId": 3864,
-    "Text": "Systemt\u00F6ne \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Systemt\u00F6ne \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3286,7 +3286,7 @@
   },
   {
     "RowId": 3865,
-    "Text": "Umgebungsger\u00E4usche \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Umgebungsger\u00E4usche \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3295,7 +3295,7 @@
   },
   {
     "RowId": 3866,
-    "Text": "Systemt\u00F6ne \u00FCber Lautsprecher \u003CIf([lnum1==0])\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
+    "Text": "Systemt\u00F6ne \u00FCber Lautsprecher \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder eingeschaltet\u003CElse/\u003Estummgeschaltet\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3304,7 +3304,7 @@
   },
   {
     "RowId": 3867,
-    "Text": "Kamerawinkel: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Kamerawinkel: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3322,7 +3322,7 @@
   },
   {
     "RowId": 3869,
-    "Text": "Musik beim Reiten \u003CIf([lnum1==0])\u003Estumm\u003CElse/\u003Ewieder ein\u003C/If\u003Egeschaltet",
+    "Text": "Musik beim Reiten \u003CIf(Equal(IntegerParameter(1),0))\u003Estumm\u003CElse/\u003Ewieder ein\u003C/If\u003Egeschaltet",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3331,7 +3331,7 @@
   },
   {
     "RowId": 3870,
-    "Text": "Lautst\u00E4rke f\u00FCr Kompositionen: \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Lautst\u00E4rke f\u00FCr Kompositionen: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3340,7 +3340,7 @@
   },
   {
     "RowId": 3871,
-    "Text": "Kompositionen \u003CIf([lnum1==0])\u003Ewieder ein\u003CElse/\u003Estumm\u003C/If\u003Egeschaltet",
+    "Text": "Kompositionen \u003CIf(Equal(IntegerParameter(1),0))\u003Ewieder ein\u003CElse/\u003Estumm\u003C/If\u003Egeschaltet",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3376,7 +3376,7 @@
   },
   {
     "RowId": 3875,
-    "Text": "Das Textkommando \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C ist momentan nicht verf\u00FCgbar.",
+    "Text": "Das Textkommando \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C ist momentan nicht verf\u00FCgbar.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3403,7 +3403,7 @@
   },
   {
     "RowId": 3878,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E ist bereits ein aktives Kommando.",
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E ist bereits ein aktives Kommando.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3412,7 +3412,7 @@
   },
   {
     "RowId": 3879,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E ist kein aktives Kommando.",
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E ist kein aktives Kommando.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3421,7 +3421,7 @@
   },
   {
     "RowId": 3880,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E kann nicht den aktiven Kommandos hinzugef\u00FCgt werden. Es sind keine Pl\u00E4tze mehr frei.",
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E kann nicht den aktiven Kommandos hinzugef\u00FCgt werden. Es sind keine Pl\u00E4tze mehr frei.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3439,7 +3439,7 @@
   },
   {
     "RowId": 3882,
-    "Text": "Grafikeinstellung wurden ge\u00E4ndert zu: \u003CIf([gnum78==3])\u003E\u003Cswitch(lnum1,Standard \\(Mac\\),Mittel \\(Mac\\),Hoch \\(Mac\\),Sehr hoch \\(Mac\\),Maximum \\(Mac\\))\u003E\u003CElse/\u003E\u003Cswitch(lnum1,Standard \\(Notebook\\),Standard \\(Desktop\\),Hoch \\(Notebook\\),Hoch \\(Desktop\\),Maximum)\u003E\u003C/If\u003E",
+    "Text": "Grafikeinstellung wurden ge\u00E4ndert zu: \u003CIf(Equal(PlayerParameter(78),3))\u003E\u003Cswitch(IntegerParameter(1),Standard (Mac),Mittel (Mac),Hoch (Mac),Sehr hoch (Mac),Maximum (Mac))\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(1),Standard (Notebook),Standard (Desktop),Hoch (Notebook),Hoch (Desktop),Maximum)\u003E\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3448,7 +3448,7 @@
   },
   {
     "RowId": 3883,
-    "Text": "Die Einstellung f\u00FCr die Namensanzeige \u003Cswitch(lnum1,aller Spieler,deines Charakters,von Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Egliedern,von Allianz-Mitgliedern,Dritter,von Freunden,von Gegnern in Crystalline Conflict)\u003E wurde zu \u201E\u003Cswitch(lnum2,Immer,Im Kampf,Wenn anvisiert,Nie)\u003E.\u201C ge\u00E4ndert.",
+    "Text": "Die Einstellung f\u00FCr die Namensanzeige \u003Cswitch(IntegerParameter(1),aller Spieler,deines Charakters,von Gruppenmitgliedern,von Allianz-Mitgliedern,Dritter,von Freunden,von Gegnern in Crystalline Conflict)\u003E wurde zu \u201E\u003Cswitch(IntegerParameter(2),Immer,Im Kampf,Wenn anvisiert,Nie)\u003E.\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3457,7 +3457,7 @@
   },
   {
     "RowId": 3884,
-    "Text": "Die Einstellungen f\u00FCr die Anzeigeart des Namens \u003Cswitch(lnum1,aller Spieler,deines Charakters,von Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Egliedern,von Allianz-Mitgliedern,Dritter,von Freunden,von Gegnern in Crystalline Conflict)\u003E wurde zu \u201E\u003Cswitch(lnum2,Voller Name,Nachname abgek\u00FCrzt,Vorname abgek\u00FCrzt,Initialen)\u003E.\u201C ge\u00E4ndert.",
+    "Text": "Die Einstellungen f\u00FCr die Anzeigeart des Namens \u003Cswitch(IntegerParameter(1),aller Spieler,deines Charakters,von Gruppenmitgliedern,von Allianz-Mitgliedern,Dritter,von Freunden,von Gegnern in Crystalline Conflict)\u003E wurde zu \u201E\u003Cswitch(IntegerParameter(2),Voller Name,Nachname abgek\u00FCrzt,Vorname abgek\u00FCrzt,Initialen)\u003E.\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3466,7 +3466,7 @@
   },
   {
     "RowId": 3885,
-    "Text": "Die Gel\u00E4ndemarkierungen wurden in Slot \u003CNum\u003Elnum1\u003C/Num\u003E gespeichert.",
+    "Text": "Die Gel\u00E4ndemarkierungen wurden in Slot \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E gespeichert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3475,7 +3475,7 @@
   },
   {
     "RowId": 3886,
-    "Text": "Die Gel\u00E4ndemarkierungen von Slot \u003CNum\u003Elnum1\u003C/Num\u003E wurden geladen.",
+    "Text": "Die Gel\u00E4ndemarkierungen von Slot \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E wurden geladen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3484,7 +3484,7 @@
   },
   {
     "RowId": 3887,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E mit dem \u003CNum\u003Elnum3\u003C/Num\u003E-seitigen W\u00FCrfel eine \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003Elnum2\u003C/Num\u003E gew\u00FCrfelt!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E mit dem \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E-seitigen W\u00FCrfel eine \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E gew\u00FCrfelt!",
     "LogKind": 74,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3511,7 +3511,7 @@
   },
   {
     "RowId": 3890,
-    "Text": "Darstellungsgr\u00F6\u00DFe von \u003CString\u003Elstr1\u003C/String\u003E wurde zu \u003Cswitch(lnum2,klein,mittel,gro\u00DF)\u003E ge\u00E4ndert.",
+    "Text": "Darstellungsgr\u00F6\u00DFe von \u003CString\u003EStringParameter(1)\u003C/String\u003E wurde zu \u003Cswitch(IntegerParameter(2),klein,mittel,gro\u00DF)\u003E ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3520,7 +3520,7 @@
   },
   {
     "RowId": 3891,
-    "Text": "Darstellungsgr\u00F6\u00DFe aller Familiare wurde zu \u003Cswitch(lnum1,klein,mittel,gro\u00DF)\u003E ge\u00E4ndert.",
+    "Text": "Darstellungsgr\u00F6\u00DFe aller Familiare wurde zu \u003Cswitch(IntegerParameter(1),klein,mittel,gro\u00DF)\u003E ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3529,7 +3529,7 @@
   },
   {
     "RowId": 3892,
-    "Text": "Auswahl per Rechtsklick ist f\u00FCr Charaktere \u003CIf([lnum1\u003E0])\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Auswahl per Rechtsklick ist f\u00FCr Charaktere \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3538,7 +3538,7 @@
   },
   {
     "RowId": 3893,
-    "Text": "Auswahl per Rechtsklick ist f\u00FCr Kampf-NPCs \u003CIf([lnum1\u003E0])\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Auswahl per Rechtsklick ist f\u00FCr Kampf-NPCs \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3547,7 +3547,7 @@
   },
   {
     "RowId": 3894,
-    "Text": "Auswahl per Rechtsklick ist f\u00FCr Begleiter \u003CIf([lnum1\u003E0])\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
+    "Text": "Auswahl per Rechtsklick ist f\u00FCr Begleiter \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Enicht aktiviert\u003CElse/\u003Eaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3556,7 +3556,7 @@
   },
   {
     "RowId": 3895,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C kann nicht ausgef\u00FChrt werden.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C kann nicht ausgef\u00FChrt werden.",
     "LogKind": 60,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3565,7 +3565,7 @@
   },
   {
     "RowId": 3896,
-    "Text": "Die visuelle Tondarstellung ist nun \u003CIf([lnum1\u003E0])\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E",
+    "Text": "Die visuelle Tondarstellung ist nun \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3574,7 +3574,7 @@
   },
   {
     "RowId": 3897,
-    "Text": "Die Farbkorrektur ist nun \u003CIf([lnum1\u003E0])\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E",
+    "Text": "Die Farbkorrektur ist nun \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3583,7 +3583,7 @@
   },
   {
     "RowId": 3898,
-    "Text": "Das automatische Anvisieren von Zielen bei Ausf\u00FChrung einer Attacke wurde \u003CIf([lnum1\u003E0])\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E.",
+    "Text": "Das automatische Anvisieren von Zielen bei Ausf\u00FChrung einer Attacke wurde \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eaktiviert\u003CElse/\u003Edeaktiviert\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3610,7 +3610,7 @@
   },
   {
     "RowId": 3901,
-    "Text": "Du brauchst mindestens \u003Ckilo(lnum1,.)\u003E Gil, um dich von Jandelaine versch\u00F6nern zu lassen.",
+    "Text": "Du brauchst mindestens \u003Ckilo(IntegerParameter(1),.)\u003E Gil, um dich von Jandelaine versch\u00F6nern zu lassen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 3905,
-    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E Alarm eingerichtet: \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E um \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf([lnum5==0])\u003E\u003Cnum(t_hour)\u003E:\u003Csec(t_min)\u003E\u003CElse/\u003E\u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E:\u003Csec(t_min)\u003E Uhr\u003Cif([t_hour\u003E=12], p.m., a.m.)\u003E\u003C/If\u003E \u003Cswitch(lnum2,\uE0D3,\uE0D4,\uE0D5)\u003E\nDie Benachrichtigung erfolgt \u003CIf([lnum4==0])\u003Ezur gleichen Zeit\u003CElse/\u003E\u003Cnum(lnum4)\u003E \u003Cif([lnum4==1],Minute,Minuten)\u003E vorher\u003C/If\u003E.",
+    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E Alarm eingerichtet: \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E um \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(IntegerParameter(5),0))\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003CElse/\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr\u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003E p.m.\u003CElse/\u003E a.m.\u003C/If\u003E\u003C/If\u003E \u003Cswitch(IntegerParameter(2),\uE0D3,\uE0D4,\uE0D5)\u003E\nDie Benachrichtigung erfolgt \u003CIf(Equal(IntegerParameter(4),0))\u003Ezur gleichen Zeit\u003CElse/\u003E\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(4),1))\u003EMinute\u003CElse/\u003EMinuten\u003C/If\u003E vorher\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3655,7 +3655,7 @@
   },
   {
     "RowId": 3906,
-    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E findet \u003CIf([lnum4==0])\u003Ejetzt\u003CElse/\u003Ein \u003Cnum(lnum4)\u003E \u003Cif([lnum4==1],Minute,Minuten)\u003E\u003C/If\u003E statt!",
+    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E findet \u003CIf(Equal(IntegerParameter(4),0))\u003Ejetzt\u003CElse/\u003Ein \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(4),1))\u003EMinute\u003CElse/\u003EMinuten\u003C/If\u003E\u003C/If\u003E statt!",
     "LogKind": 55,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3673,7 +3673,7 @@
   },
   {
     "RowId": 3908,
-    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E Alarm gel\u00F6scht: \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E",
+    "Text": "\u003CIcon\u003E104\u003C/Icon\u003E Alarm gel\u00F6scht: \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3700,7 +3700,7 @@
   },
   {
     "RowId": 3911,
-    "Text": "Du hast \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E probeweise angelegt.",
+    "Text": "Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E probeweise angelegt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 3913,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurde zu den Favoriten hinzugef\u00FCgt. (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E)",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde zu den Favoriten hinzugef\u00FCgt. (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E)",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -3736,7 +3736,7 @@
   },
   {
     "RowId": 3915,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E Treffer gefunden.",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Treffer gefunden.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3745,7 +3745,7 @@
   },
   {
     "RowId": 3916,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurde von den Favoriten entfernt.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde von den Favoriten entfernt.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -3754,7 +3754,7 @@
   },
   {
     "RowId": 3917,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurde aus dem Verlauf entfernt.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde aus dem Verlauf entfernt.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -3772,7 +3772,7 @@
   },
   {
     "RowId": 3919,
-    "Text": "\u003CIf([lnum1==0])\u003EDie Suche ergab keinen Treffer.\u003CElse/\u003EDie Suche ergab \u003Cif([lnum1\u003E10],mehr als 10 Treffer. Nur die ersten 10 Emotes werden angezeigt.,\u003Cnum(lnum1)\u003E Treffer.)\u003E\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EDie Suche ergab keinen Treffer.\u003CElse/\u003EDie Suche ergab \u003CIf(GreaterThan(IntegerParameter(1),10))\u003Emehr als 10 Treffer. Nur die ersten 10 Emotes werden angezeigt.\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Treffer.\u003C/If\u003E\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 3921,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E hat Stufe \u003CNum\u003Elnum2\u003C/Num\u003E erreicht.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E hat Stufe \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E erreicht.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3844,7 +3844,7 @@
   },
   {
     "RowId": 3927,
-    "Text": "Der Einsatz \u201E\u003Csheet(GcArmyExpedition,lnum1,8)\u003E\u201C beginnt!",
+    "Text": "Der Einsatz \u201E\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201C beginnt!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3853,7 +3853,7 @@
   },
   {
     "RowId": 3928,
-    "Text": "Die \u003Csheet(GcArmyTraining,lnum1,4)\u003E beginnt!",
+    "Text": "Die \u003Csheet(GcArmyTraining,IntegerParameter(1),4)\u003E beginnt!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3934,7 +3934,7 @@
   },
   {
     "RowId": 3937,
-    "Text": "Der Einsatz \u201E\u003Csheet(GcArmyExpedition,lnum1,8)\u003E\u201C war erfolgreich!",
+    "Text": "Der Einsatz \u201E\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201C war erfolgreich!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3943,7 +3943,7 @@
   },
   {
     "RowId": 3938,
-    "Text": "Die \u003Csheet(GcArmyTraining,lnum1,4)\u003E ist abgeschlossen!",
+    "Text": "Die \u003Csheet(GcArmyTraining,IntegerParameter(1),4)\u003E ist abgeschlossen!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3952,7 +3952,7 @@
   },
   {
     "RowId": 3939,
-    "Text": "Du hast die Bewerbung von \u003Csheet(ENpcResident,lnum1,0)\u003E zur\u00FCckgelegt.",
+    "Text": "Du hast die Bewerbung von \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E zur\u00FCckgelegt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3961,7 +3961,7 @@
   },
   {
     "RowId": 3940,
-    "Text": "Du hast \u003Csheet(ENpcResident,lnum1,0)\u003E in dein Kommando aufgenommen!",
+    "Text": "Du hast \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E in dein Kommando aufgenommen!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3970,7 +3970,7 @@
   },
   {
     "RowId": 3941,
-    "Text": "Du hast \u003Csheet(ENpcResident,lnum1,0)\u003E entlassen und \u003Csheet(ENpcResident,lnum2,0)\u003E in dein Kommando aufgenommen!",
+    "Text": "Du hast \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E entlassen und \u003Csheet(ENpcResident,IntegerParameter(2),0)\u003E in dein Kommando aufgenommen!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3979,7 +3979,7 @@
   },
   {
     "RowId": 3942,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E hat einen neuen Kameradenbonus.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E hat einen neuen Kameradenbonus.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -3988,7 +3988,7 @@
   },
   {
     "RowId": 3943,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E hat eine neue Klasse.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E hat eine neue Klasse.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4006,7 +4006,7 @@
   },
   {
     "RowId": 3945,
-    "Text": "Die Klasse kann nicht gewechselt werden, da du kein \u003Cdenoun(Item,5,lnum1,1,4,1)\u003E besitzt.",
+    "Text": "Die Klasse kann nicht gewechselt werden, da du kein \u003Cdenoun(Item,5,IntegerParameter(1),1,4,1)\u003E besitzt.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4015,7 +4015,7 @@
   },
   {
     "RowId": 3946,
-    "Text": "Kommandorang \u003CNum\u003Elnum1\u003C/Num\u003E",
+    "Text": "Kommandorang \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -4024,7 +4024,7 @@
   },
   {
     "RowId": 3947,
-    "Text": "Du hast die Bewerbung von \u003Csheet(ENpcResident,lnum1,0)\u003E abgelehnt.",
+    "Text": "Du hast die Bewerbung von \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E abgelehnt.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4096,7 +4096,7 @@
   },
   {
     "RowId": 3955,
-    "Text": "Du hast die Strategie von \u003Csheet(ENpcResident,lnum1,0)\u003E ge\u00E4ndert.",
+    "Text": "Du hast die Strategie von \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4168,7 +4168,7 @@
   },
   {
     "RowId": 3963,
-    "Text": "Die Operation \u201E\u003Csheet(InstanceContent,lnum1,3)\u003E\u201C war erfolgreich!",
+    "Text": "Die Operation \u201E\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E\u201C war erfolgreich!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4213,7 +4213,7 @@
   },
   {
     "RowId": 3968,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E hat eine Projektion erhalten.",
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E hat eine Projektion erhalten.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4231,7 +4231,7 @@
   },
   {
     "RowId": 3970,
-    "Text": "Du erh\u00E4ltst \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003E1])\u003E\u003Cdenoun(Item,5,lnum2,2,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,lnum2,1,4,1)\u003E\u003C/If\u003E.",
+    "Text": "Du erh\u00E4ltst \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(GreaterThan(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,IntegerParameter(2),1,4,1)\u003E\u003C/If\u003E.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4321,7 +4321,7 @@
   },
   {
     "RowId": 3980,
-    "Text": "Du hast \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cdenoun(Item,5,lnum1,lnum2,4,1)\u003E abgegeben und\ndaf\u00FCr \u003CNum\u003Elnum4\u003C/Num\u003E \u003Cdenoun(Item,5,lnum3,lnum4,4,1)\u003E erhalten.\n\u003CHead\u003E\u003Cdenoun(Item,5,lnum3,lnum4,4,1)\u003E\u003C/Head\u003E wurde\u003CIf([lnum4\u003C=1])\u003E \u003CElse/\u003En\u003C/If\u003E mangels Inventarplatz verworfen.",
+    "Text": "Du hast \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),IntegerParameter(2),4,1)\u003E abgegeben und\ndaf\u00FCr \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(3),IntegerParameter(4),4,1)\u003E erhalten.\n\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(3),IntegerParameter(4),4,1)\u003E\u003C/Head\u003E wurde\u003CIf(LessThanOrEqualTo(IntegerParameter(4),1))\u003E \u003CElse/\u003En\u003C/If\u003E mangels Inventarplatz verworfen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4330,7 +4330,7 @@
   },
   {
     "RowId": 3981,
-    "Text": "Du hast \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cdenoun(Item,5,lnum1,lnum2,4,1)\u003E abgegeben und\ndaf\u00FCr \u003CNum\u003Elnum4\u003C/Num\u003E \u003Cdenoun(Item,5,lnum3,lnum4,4,1)\u003E erhalten.\nMangels Platz wurde\u003CIf([lnum4\u003C=1])\u003E \u003CElse/\u003En\u003C/If\u003E nur \u003Cdenoun(Item,5,lnum3,lnum4,4,1)\u003E dem Inventar hinzugef\u00FCgt.",
+    "Text": "Du hast \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),IntegerParameter(2),4,1)\u003E abgegeben und\ndaf\u00FCr \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(3),IntegerParameter(4),4,1)\u003E erhalten.\nMangels Platz wurde\u003CIf(LessThanOrEqualTo(IntegerParameter(4),1))\u003E \u003CElse/\u003En\u003C/If\u003E nur \u003Cdenoun(Item,5,IntegerParameter(3),IntegerParameter(4),4,1)\u003E dem Inventar hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4375,7 +4375,7 @@
   },
   {
     "RowId": 3986,
-    "Text": "Deine Punkte als \u003Csheet(ClassJob,lnum1,0)\u003E steigen um \u003CNum\u003Elnum2\u003C/Num\u003E.",
+    "Text": "Deine Punkte als \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E steigen um \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4384,7 +4384,7 @@
   },
   {
     "RowId": 3987,
-    "Text": "Du hast \u003CIf([lnum1==1])\u003E\u003Cdenoun(Item,1,lnum2,1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(lnum1,.)\u003E \u003Cdenoun(Item,5,lnum2,2,4,1)\u003E\u003C/If\u003E \u003CIf([lnum3==0])\u003E \u003CElse/\u003E\\(\u002B\u003Cnum(lnum3)\u003E\u003Cnbsp\u003E%\\) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%) \u003C/If\u003Eerhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4393,7 +4393,7 @@
   },
   {
     "RowId": 3988,
-    "Text": "Du hast \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,1,lnum1,lnum2,4,1)\u003E\u003C/If\u003E als Preis f\u00FCr das Gl\u00FCcks-Kupo erhalten.",
+    "Text": "Du hast \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E\u003C/If\u003E als Preis f\u00FCr das Gl\u00FCcks-Kupo erhalten.",
     "LogKind": 62,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4438,7 +4438,7 @@
   },
   {
     "RowId": 3993,
-    "Text": "Du erteilst den \u003Csheet(BgcArmyAction,lnum1,1)\u003E.",
+    "Text": "Du erteilst den \u003Csheet(BgcArmyAction,IntegerParameter(1),1)\u003E.",
     "LogKind": 43,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4474,7 +4474,7 @@
   },
   {
     "RowId": 3997,
-    "Text": "Deine Soldaten setzen \u003CString\u003Elstr1\u003C/String\u003E ein.",
+    "Text": "Deine Soldaten setzen \u003CString\u003EStringParameter(1)\u003C/String\u003E ein.",
     "LogKind": 43,
     "Unknown0": 1,
     "Unknown1": 0,

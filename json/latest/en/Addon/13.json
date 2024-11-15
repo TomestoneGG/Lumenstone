@@ -33,11 +33,11 @@
   },
   {
     "RowId": 6736,
-    "Text": "\u003CIf([lnum1\u003E1])\u003ERelocate to a new private estate for \u003Ckilo(lnum1,\\,)\u003E gil?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B15% of the full value of the old plot was applied towards the price of the new.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C1])\u003ERelocate to a new private estate? No fees will be incurred.\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B15% of the your old plot\u0027s value was more than the price of the new.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),1))\u003ERelocate to a new private estate for \u003Ckilo(IntegerParameter(1),,)\u003E gil?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B15% of the full value of the old plot was applied towards the price of the new.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),1))\u003ERelocate to a new private estate? No fees will be incurred.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B15% of the your old plot\u0027s value was more than the price of the new.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6737,
-    "Text": "\u003CIf([lnum1\u003E1])\u003ERelocate to a new free company estate for \u003Ckilo(lnum1,\\,)\u003E gil?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B15% of the value of the old plot was applied towards the price of the new.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C1])\u003ERelocate to a new free company estate? No fees will be incurred.\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B15% of your old plot\u0027s value was more than the price of the new.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),1))\u003ERelocate to a new free company estate for \u003Ckilo(IntegerParameter(1),,)\u003E gil?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B15% of the value of the old plot was applied towards the price of the new.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),1))\u003ERelocate to a new free company estate? No fees will be incurred.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B15% of your old plot\u0027s value was more than the price of the new.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6738,
@@ -89,7 +89,7 @@
   },
   {
     "RowId": 6752,
-    "Text": "Place \u003Cennoun(Item,2,lnum1,1,1)\u003E in the vase?"
+    "Text": "Place \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E in the vase?"
   },
   {
     "RowId": 6753,
@@ -97,7 +97,7 @@
   },
   {
     "RowId": 6755,
-    "Text": "Discard the following item and replace it with \u003Cennoun(Item,1,lnum1,1,1)\u003E?"
+    "Text": "Discard the following item and replace it with \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6760,
@@ -165,7 +165,7 @@
   },
   {
     "RowId": 6776,
-    "Text": "\u003CIf([lnum1==425])\u003E\u003Csheet(PlaceName,1805,0)\u003E \u003CElse/\u003E\u003Cif([lnum1==426],\u003Csheet(PlaceName,1807,0)\u003E ,\u003Cif([lnum1==427],\u003Csheet(PlaceName,1809,0)\u003E ,\u003Cif([lnum1==2412],\u003Csheet(PlaceName,1905,0)\u003E ,\u003Cif([lnum1==4139],\u003Csheet(PlaceName,3718,0)\u003E,Public Apartments )\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u003CIf([lnum3==129])\u003EWing 1 \u003CElse/\u003EWing 2 \u003C/If\u003ERoom #\u003CNum\u003Elnum4\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E "
+    "Text": "\u003CIf(Equal(IntegerParameter(1),425))\u003E\u003Csheet(PlaceName,1805,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),426))\u003E\u003Csheet(PlaceName,1807,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),427))\u003E\u003Csheet(PlaceName,1809,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2412))\u003E\u003Csheet(PlaceName,1905,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),4139))\u003E\u003Csheet(PlaceName,3718,0)\u003E\u003CElse/\u003EPublic Apartments \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),129))\u003EWing 1 \u003CElse/\u003EWing 2 \u003C/If\u003ERoom #\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E "
   },
   {
     "RowId": 6777,
@@ -197,7 +197,7 @@
   },
   {
     "RowId": 6784,
-    "Text": "Enter \u003CIf([gstr1==gstr3])\u003Eyour\u003CElse/\u003E\u003Cif([gstr1==gstr3],\u003Cif(gnum8,\u003Cennoun(ObjStr,2,gnum8,1,1)\u003E,you)\u003E,\u003Cif(gnum8,\u003Cennoun(ObjStr,2,gnum8,1,1)\u003E,gstr3)\u003E)\u003E\u0027s\u003C/If\u003E room?"
+    "Text": "Enter \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Eyour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003Eyou\u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E room?"
   },
   {
     "RowId": 6790,
@@ -265,7 +265,7 @@
   },
   {
     "RowId": 6812,
-    "Text": "Environment: \u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "Environment: \u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 6813,
@@ -277,7 +277,7 @@
   },
   {
     "RowId": 6815,
-    "Text": "\u003Cswitch(lnum1,S,M,L,XL)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),S,M,L,XL)\u003E"
   },
   {
     "RowId": 6816,
@@ -285,7 +285,7 @@
   },
   {
     "RowId": 6817,
-    "Text": "\u003CIf([lnum1\u003E99])\u003E99\u002B\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E/\uE03C\u003Cif([lnum2\u003E99],99\u002B,\u003Cnum(lnum2)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E/\uE03D\u003Cif([lnum3\u003E99],99\u002B,\u003Cnum(lnum3)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E/\uE03C\u003CIf(GreaterThan(IntegerParameter(2),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E/\uE03D\u003CIf(GreaterThan(IntegerParameter(3),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6818,
@@ -321,11 +321,11 @@
   },
   {
     "RowId": 6826,
-    "Text": "\u003CIf([lnum1==1])\u003ESightseeing Log\u003CElse/\u003E\u003Cif([lnum1==2],Landscapes,\u003Cif([lnum1==3],Portraits,)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003ESightseeing Log\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2))\u003ELandscapes\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),3))\u003EPortraits\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6827,
-    "Text": "Frame \u003Cennoun(Item,2,lnum1,1,1)\u003E?"
+    "Text": "Frame \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6828,
@@ -333,7 +333,7 @@
   },
   {
     "RowId": 6829,
-    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDiscard the following painting\u003C/span\u003E and replace it with \u003Cennoun(Item,2,lnum1,1,1)\u003E?"
+    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDiscard the following painting\u003C/span\u003E and replace it with \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6830,
@@ -405,7 +405,7 @@
   },
   {
     "RowId": 6847,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6848,
@@ -453,7 +453,7 @@
   },
   {
     "RowId": 6859,
-    "Text": "Apply \u003Cennoun(Item,1,lnum1,1,1)\u003E?"
+    "Text": "Apply \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6860,
@@ -461,7 +461,7 @@
   },
   {
     "RowId": 6861,
-    "Text": "Apply \u003Cennoun(Item,1,lnum1,1,1)\u003E? The currently applied design will be lost."
+    "Text": "Apply \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E? The currently applied design will be lost."
   },
   {
     "RowId": 6862,
@@ -521,11 +521,11 @@
   },
   {
     "RowId": 6876,
-    "Text": "\u003CIf([lnum1==425])\u003E\u003Csheet(PlaceName,1805,0)\u003E \u003CElse/\u003E\u003Cif([lnum1==426],\u003Csheet(PlaceName,1807,0)\u003E ,\u003Cif([lnum1==427],\u003Csheet(PlaceName,1809,0)\u003E ,\u003Cif([lnum1==2412],\u003Csheet(PlaceName,1905,0)\u003E,\u003Cif([lnum1==4139],\u003Csheet(PlaceName,3718,0)\u003E,Public Apartments )\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u003CIf([lnum3==129])\u003EWing 1 \u003CElse/\u003EWing 2 \u003C/If\u003ERoom #\u003CNum\u003Elnum4\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E "
+    "Text": "\u003CIf(Equal(IntegerParameter(1),425))\u003E\u003Csheet(PlaceName,1805,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),426))\u003E\u003Csheet(PlaceName,1807,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),427))\u003E\u003Csheet(PlaceName,1809,0)\u003E \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2412))\u003E\u003Csheet(PlaceName,1905,0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),4139))\u003E\u003Csheet(PlaceName,3718,0)\u003E\u003CElse/\u003EPublic Apartments \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),129))\u003EWing 1 \u003CElse/\u003EWing 2 \u003C/If\u003ERoom #\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E "
   },
   {
     "RowId": 6877,
-    "Text": "Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E (\u003Cswitch(lnum4,Small,Medium,Large)\u003E)"
+    "Text": "Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E (\u003Cswitch(IntegerParameter(4),Small,Medium,Large)\u003E)"
   },
   {
     "RowId": 6878,
@@ -561,7 +561,7 @@
   },
   {
     "RowId": 6886,
-    "Text": "Use the components selected and \u003CIf([lnum1==1])\u003Ethe following item\u003CElse/\u003E\u003Cnum(lnum1)\u003E of the following items\u003C/If\u003E to outfit and register your submersible?"
+    "Text": "Use the components selected and \u003CIf(Equal(IntegerParameter(1),1))\u003Ethe following item\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the following items\u003C/If\u003E to outfit and register your submersible?"
   },
   {
     "RowId": 6887,
@@ -601,7 +601,7 @@
   },
   {
     "RowId": 6896,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E (\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E (\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)"
   },
   {
     "RowId": 6897,
@@ -617,7 +617,7 @@
   },
   {
     "RowId": 6900,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6902,
@@ -645,11 +645,11 @@
   },
   {
     "RowId": 6908,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E (\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E (\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)"
   },
   {
     "RowId": 6909,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6910,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 6911,
-    "Text": "Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6912,
@@ -709,7 +709,7 @@
   },
   {
     "RowId": 6924,
-    "Text": "Once the following message is deleted, another may be left in its place. Proceed?\n\n\u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D"
+    "Text": "Once the following message is deleted, another may be left in its place. Proceed?\n\n\u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D"
   },
   {
     "RowId": 6925,
@@ -717,23 +717,23 @@
   },
   {
     "RowId": 6926,
-    "Text": "\u003CHeadAll\u003E\u003Cstring(lstr1)\u003E\u003C/HeadAll\u003E"
+    "Text": "\u003CHeadAll\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/HeadAll\u003E"
   },
   {
     "RowId": 6927,
-    "Text": "Class/Job: \u003CHeadAll\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/HeadAll\u003E"
+    "Text": "Class/Job: \u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E"
   },
   {
     "RowId": 6928,
-    "Text": "Race: \u003Csheet(Race,lnum1,0)\u003E"
+    "Text": "Race: \u003Csheet(Race,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6929,
-    "Text": "Gender: \u003CIf([lnum1==0])\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
+    "Text": "Gender: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
   },
   {
     "RowId": 6930,
-    "Text": "Pose: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Pose: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6931,
@@ -741,11 +741,11 @@
   },
   {
     "RowId": 6932,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6933,
-    "Text": "Capacity: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Capacity: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6934,
@@ -845,7 +845,7 @@
   },
   {
     "RowId": 6959,
-    "Text": "Purchase selected item for \u003Ckilo(lnum1,\\,)\u003E gil?"
+    "Text": "Purchase selected item for \u003Ckilo(IntegerParameter(1),,)\u003E gil?"
   },
   {
     "RowId": 6960,
@@ -1137,15 +1137,15 @@
   },
   {
     "RowId": 7032,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EThe collectable item \u003Cennoun(Item,3,lnum1,1,1)\u003E\u003CElse/\u003E\u003Chead(\u003Cennoun(Item,1,lnum1,1,1)\u003E)\u003E\u003C/If\u003E will be printed on the canvas. Proceed?\n\u003CIf([lnum2\u003E0])\u003E\u203BItems with the lowest collectability are prioritized for printing.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EThe collectable item \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CHead\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E\u003C/If\u003E will be printed on the canvas. Proceed?\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203BItems with the lowest collectability are prioritized for printing.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E"
   },
   {
     "RowId": 7033,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYou have selected the same item that is already on display.\u003C/span\u003E\n\nDiscard the following item and replace it with another?\n\u003CIf([lnum2\u003E0])\u003E\u203BItems with the lowest collectability are prioritized for printing.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYou have selected the same item that is already on display.\u003C/span\u003E\n\nDiscard the following item and replace it with another?\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203BItems with the lowest collectability are prioritized for printing.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E"
   },
   {
     "RowId": 7034,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EThe collectable item \u003Cennoun(Item,3,lnum1,1,1)\u003E\u003CElse/\u003E\u003Chead(\u003Cennoun(Item,1,lnum1,1,1)\u003E)\u003E\u003C/If\u003E will be printed on the canvas. Proceed?\n\u003CIf([lnum2\u003E0])\u003E\u203BItems with the lowest collectability are prioritized for printing.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E\n\nThe following item will be discarded:\u003C/span\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EThe collectable item \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CHead\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E\u003C/If\u003E will be printed on the canvas. Proceed?\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203BItems with the lowest collectability are prioritized for printing.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BHQ items and collectables will be rendered normal.\u003C/span\u003E\n\nThe following item will be discarded:\u003C/span\u003E"
   },
   {
     "RowId": 7035,
@@ -1169,11 +1169,11 @@
   },
   {
     "RowId": 7040,
-    "Text": "\u003Cswitch(lnum1,Available to free companies.,Unavailable to free companies.)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Available to free companies.,Unavailable to free companies.)\u003E"
   },
   {
     "RowId": 7041,
-    "Text": "\u003Cswitch(lnum1,Available to private buyers.,Unavailable to private buyers.)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Available to private buyers.,Unavailable to private buyers.)\u003E"
   },
   {
     "RowId": 7042,
@@ -1181,11 +1181,11 @@
   },
   {
     "RowId": 7043,
-    "Text": "\u003Cswitch(lnum1,Selling on a first-come-first-served basis.,Selling via lottery. \\(Current participants: \u003Cnum(lnum2)\u003E\\),Currently unavailable for purchase.)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Selling on a first-come-first-served basis.,Selling via lottery. (Current participants: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E),Currently unavailable for purchase.)\u003E"
   },
   {
     "RowId": 7044,
-    "Text": "\u003Cswitch(lnum2,Accepting entries until \u003Csettime(lnum1)\u003E\u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E:\u003Csec(t_min)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E \u003Cif([gnum77==3],\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E,\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E)\u003E,Results period ends \u003Csettime(lnum1)\u003E\u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E:\u003Csec(t_min)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E \u003Cif([gnum77==3],\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E,\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E)\u003E)\u003E."
+    "Text": "\u003Cswitch(IntegerParameter(2),Accepting entries until \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E,Results period ends \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E)\u003E."
   },
   {
     "RowId": 7045,
@@ -1193,7 +1193,7 @@
   },
   {
     "RowId": 7046,
-    "Text": "Do you wish to deposit \u003Ckilo(lnum1,\\,)\u003E gil to enter the lottery for this \u003CIf([lnum2==3])\u003E\u003Cif([lnum3==0],\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003Epersonal plot\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003Efree company plot\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E\u003CElse/\u003Eplot of land\u003C/If\u003E? Please note that you may only enter the lottery for one plot of land during each lottery period.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u30FBThis land is currently available for purchase by \u003Cswitch(lnum2,free companies only,private buyers only,free companies and private buyers)\u003E.\n\u30FBOnce submitted, a lottery entry may not be withdrawn.\n\u30FBYou can confirm lottery results by viewing this placard during the results period.\n\u30FBUnsuccessful entrants can receive a 100% refund of their deposit by accessing this placard during the results period.\n\u30FBWhen relocating from an existing plot, in principle, approximately 15% of the value of the old plot will be refunded to you. However, please note that the refunded amount may not exceed the value of the new plot.\n\u30FBShould you fail to claim your plot of land during the results period despite having won the lottery, your claim will be forfeit and a 50% cancellation fee will be deducted from the deposit made at entry. You will be refunded the remaining 50% upon accessing this placard.\n\u30FBRegardless of lottery results, any and all refunds for a given lottery period expire 90 days (Earth time) after the results period. Please be sure to access this placard within the allotted time to receive any applicable refunds.\n\u30FBYou may not apply for another plot of land until all outstanding properties/refunds have been claimed.\n\u003CIf([lnum2==1])\u003E\u30FBYou may not purchase land on behalf of your free company for thirty days after joining. Should you leave your free company after entering the lottery\\, you will be unable to claim any land won\\, even if you re-enter the same free company.\u003CElse/\u003E\u003Cif([lnum2==3],\u003Cif([lnum3==1],\u30FBYou may not purchase land on behalf of your free company for thirty days after joining. Should you leave your free company after entering the lottery\\, you will be unable to claim any land won\\, even if you re-enter the same free company.,)\u003E,)\u003E\u003C/If\u003E\u003C/span\u003E"
+    "Text": "Do you wish to deposit \u003Ckilo(IntegerParameter(1),,)\u003E gil to enter the lottery for this \u003CIf(Equal(IntegerParameter(2),3))\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003Epersonal plot\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003Efree company plot\u003C/span\u003E\u003C/If\u003E\u003CElse/\u003Eplot of land\u003C/If\u003E? Please note that you may only enter the lottery for one plot of land during each lottery period.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u30FBThis land is currently available for purchase by \u003Cswitch(IntegerParameter(2),free companies only,private buyers only,free companies and private buyers)\u003E.\n\u30FBOnce submitted, a lottery entry may not be withdrawn.\n\u30FBYou can confirm lottery results by viewing this placard during the results period.\n\u30FBUnsuccessful entrants can receive a 100% refund of their deposit by accessing this placard during the results period.\n\u30FBWhen relocating from an existing plot, in principle, approximately 15% of the value of the old plot will be refunded to you. However, please note that the refunded amount may not exceed the value of the new plot.\n\u30FBShould you fail to claim your plot of land during the results period despite having won the lottery, your claim will be forfeit and a 50% cancellation fee will be deducted from the deposit made at entry. You will be refunded the remaining 50% upon accessing this placard.\n\u30FBRegardless of lottery results, any and all refunds for a given lottery period expire 90 days (Earth time) after the results period. Please be sure to access this placard within the allotted time to receive any applicable refunds.\n\u30FBYou may not apply for another plot of land until all outstanding properties/refunds have been claimed.\n\u003CIf(Equal(IntegerParameter(2),1))\u003E\u30FBYou may not purchase land on behalf of your free company for thirty days after joining. Should you leave your free company after entering the lottery, you will be unable to claim any land won, even if you re-enter the same free company.\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(2),3))\u003E\u003CIf(Equal(IntegerParameter(3),1))\u003E\u30FBYou may not purchase land on behalf of your free company for thirty days after joining. Should you leave your free company after entering the lottery, you will be unable to claim any land won, even if you re-enter the same free company.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/span\u003E"
   },
   {
     "RowId": 7047,
@@ -1245,11 +1245,11 @@
   },
   {
     "RowId": 7063,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\uFF08\u003CIf([lnum2==65535])\u003E\u2015\u003CElse/\u003E\u003Cdigit(lnum2,3)\u003E\u003C/If\u003E\uFF09"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\uFF08\u003CIf(Equal(IntegerParameter(2),65535))\u003E\u2015\u003CElse/\u003E\u003Cdigit(IntegerParameter(2),3)\u003E\u003C/If\u003E\uFF09"
   },
   {
     "RowId": 7064,
-    "Text": "\u003CString\u003Elstr2\u003C/String\u003E (\u003CIf([lnum1==0])\u003EUnobtained\u003CElse/\u003EObtained\u003C/If\u003E)"
+    "Text": "\u003CString\u003EStringParameter(2)\u003C/String\u003E (\u003CIf(Equal(IntegerParameter(1),0))\u003EUnobtained\u003CElse/\u003EObtained\u003C/If\u003E)"
   },
   {
     "RowId": 7065,
@@ -1281,7 +1281,7 @@
   },
   {
     "RowId": 7072,
-    "Text": "Commence \u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003Elstr2\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E (mode: \u003CString\u003Elstr1\u003C/String\u003E)?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAffects estate BGM.\u003C/span\u003E"
+    "Text": "Commence \u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E (mode: \u003CString\u003EStringParameter(1)\u003C/String\u003E)?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAffects estate BGM.\u003C/span\u003E"
   },
   {
     "RowId": 7073,
@@ -1289,7 +1289,7 @@
   },
   {
     "RowId": 7074,
-    "Text": "Change current playlist to \u003CString\u003Elstr1\u003C/String\u003E?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAffects estate BGM.\u003C/span\u003E"
+    "Text": "Change current playlist to \u003CString\u003EStringParameter(1)\u003C/String\u003E?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAffects estate BGM.\u003C/span\u003E"
   },
   {
     "RowId": 7075,
@@ -1393,11 +1393,11 @@
   },
   {
     "RowId": 7108,
-    "Text": "Category: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Category: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 7109,
-    "Text": "Track: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Track: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 7110,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 7114,
-    "Text": "Change the entire estate\u0027s background music to \u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E?"
+    "Text": "Change the entire estate\u0027s background music to \u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E?"
   },
   {
     "RowId": 7115,
@@ -1433,7 +1433,7 @@
   },
   {
     "RowId": 7118,
-    "Text": "\u003CIf([lnum1==65535])\u003E\u2015\u003CElse/\u003E \u003Cdigit(lnum1,3)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),65535))\u003E\u2015\u003CElse/\u003E \u003Cdigit(IntegerParameter(1),3)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7119,
@@ -1449,15 +1449,15 @@
   },
   {
     "RowId": 7122,
-    "Text": "The winning number is...\u003CNum\u003Elnum1\u003C/Num\u003E!\n\nCongratulations! You are the winner of this lottery. Finalize your purchase and claim your plot of land?\n\u203BPlot available until \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E."
+    "Text": "The winning number is...\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E!\n\nCongratulations! You are the winner of this lottery. Finalize your purchase and claim your plot of land?\n\u203BPlot available until \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E."
   },
   {
     "RowId": 7123,
-    "Text": "The results period has ended. Your claim to this plot of land has been forfeit. Additionally, a cancellation fee of 50% will be deducted from your deposit. Accept the remaining refund of \u003Ckilo(lnum1,\\,)\u003E gil?\n\u203BRefund available until \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E."
+    "Text": "The results period has ended. Your claim to this plot of land has been forfeit. Additionally, a cancellation fee of 50% will be deducted from your deposit. Accept the remaining refund of \u003Ckilo(IntegerParameter(1),,)\u003E gil?\n\u203BRefund available until \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E."
   },
   {
     "RowId": 7124,
-    "Text": "The winning number is...\u003CNum\u003Elnum1\u003C/Num\u003E. May you have better luck in the future!\n\nAccept a full refund of your deposit of \u003Ckilo(lnum2,\\,)\u003E gil?\n\u203BRefund available until \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E."
+    "Text": "The winning number is...\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. May you have better luck in the future!\n\nAccept a full refund of your deposit of \u003Ckilo(IntegerParameter(2),,)\u003E gil?\n\u203BRefund available until \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E."
   },
   {
     "RowId": 7125,
@@ -1465,7 +1465,7 @@
   },
   {
     "RowId": 7126,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EThe winning number for this plot is \u003Cnum(lnum1)\u003E\u003CElse/\u003EThere were no participants in this lottery\u003C/If\u003E."
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EThe winning number for this plot is \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CElse/\u003EThere were no participants in this lottery\u003C/If\u003E."
   },
   {
     "RowId": 7127,
@@ -1473,7 +1473,7 @@
   },
   {
     "RowId": 7128,
-    "Text": "Congratulations! As the sole entrant of this lottery, you have won by default. Finalize your purchase and claim your plot of land?\n\u203BPlot available until \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E."
+    "Text": "Congratulations! As the sole entrant of this lottery, you have won by default. Finalize your purchase and claim your plot of land?\n\u203BPlot available until \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E \u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E."
   },
   {
     "RowId": 7129,
@@ -1497,11 +1497,11 @@
   },
   {
     "RowId": 7134,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E. \u003CHeadAll\u003E\u003Cstring(lstr2)\u003E\u003C/HeadAll\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. \u003CHeadAll\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003C/HeadAll\u003E"
   },
   {
     "RowId": 7135,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E. \u003CString\u003Elstr2\u003C/String\u003E\n\uE0D0 \u003CIf([lnum3==0])\u003E\u003Csettime(lnum4)\u003E\u003Cnum(t_hour)\u003E:\u003Csec(t_min)\u003E\u003CElse/\u003E\u003Csettime(lnum4)\u003E\u003Cif([t_hour\u003C 12],\u003Cnum(t_hour)\u003E,\u003Cnum(t_hour)\u003E)\u003E:\u003Csec(t_min)\u003E\u003C/If\u003E [\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E]"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. \u003CString\u003EStringParameter(2)\u003C/String\u003E\n\uE0D0 \u003CIf(Equal(IntegerParameter(3),0))\u003E\u003CSetTime\u003EIntegerParameter(4)\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003CElse/\u003E\u003CSetTime\u003EIntegerParameter(4)\u003C/SetTime\u003E\u003CIf(LessThan(t_hour, 12))\u003E\u003CNum\u003Et_hour\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_hour\u003C/Num\u003E\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003C/If\u003E [\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E]"
   },
   {
     "RowId": 7136,
@@ -1521,7 +1521,7 @@
   },
   {
     "RowId": 7140,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 7141,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 7162,
-    "Text": "Turn \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Turn \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 7181,
@@ -1709,7 +1709,7 @@
   },
   {
     "RowId": 7516,
-    "Text": "\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Mode"
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Mode"
   },
   {
     "RowId": 7517,
@@ -1773,7 +1773,7 @@
   },
   {
     "RowId": 7534,
-    "Text": "Restore \u003CIf([gnum75\u003E0])\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E settings to their default?"
+    "Text": "Restore \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E settings to their default?"
   },
   {
     "RowId": 7535,
@@ -1849,7 +1849,7 @@
   },
   {
     "RowId": 7555,
-    "Text": "\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E"
   },
   {
     "RowId": 7556,

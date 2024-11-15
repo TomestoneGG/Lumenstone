@@ -9,11 +9,11 @@
   },
   {
     "RowId": 12761,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum2==0])\u003E \u003CElse/\u003E \u00E0 \u003Cnum(lnum2)\u003E\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E \u00E0 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12762,
-    "Text": "\u003CIf([lnum2\u003E0])\u003ELa limite de koupons de la fortune ayant \u00E9t\u00E9 atteinte\\, vous ne pourrez pas recevoir de tampons.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003E0])\u003ELa limite ayant \u00E9t\u00E9 atteinte\\, vous ne pourrez pas recevoir tous \u003Cfrnoun(Item,2,lnum1,2,1)\u003E.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003EContinuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ELa limite de koupons de la fortune ayant \u00E9t\u00E9 atteinte, vous ne pourrez pas recevoir de tampons.\n\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003ELa limite ayant \u00E9t\u00E9 atteinte, vous ne pourrez pas recevoir tous \u003Cfrnoun(Item,2,IntegerParameter(1),2,1)\u003E.\n\u003CElse/\u003E \u003C/If\u003EContinuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12763,
@@ -45,7 +45,7 @@
   },
   {
     "RowId": 12770,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12771,
@@ -57,7 +57,7 @@
   },
   {
     "RowId": 12773,
-    "Text": "\u003CIf([lnum1==0])\u003E \u003CElse/\u003Ele \u003Csettime(lnum1)\u003E\u003Cnum(t_day)\u003E.\u003Cnum(t_mon)\u003E.\u003Cnum(t_year)\u003E \u00E0 \u003Cnum(t_hour)\u003Eh\u003Csec(t_min)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E \u003CElse/\u003Ele \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12774,
@@ -73,7 +73,7 @@
   },
   {
     "RowId": 12777,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u002B\u003CElse/\u003E0\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u002B\u003CElse/\u003E0\u003C/If\u003E"
   },
   {
     "RowId": 12778,
@@ -85,7 +85,7 @@
   },
   {
     "RowId": 12781,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12782,
@@ -93,7 +93,7 @@
   },
   {
     "RowId": 12783,
-    "Text": "Ce monument est d\u00E9di\u00E9 aux prodigieux \u003CLower\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/Lower\u003Es et \u00E0 tous les autres ouvriers qui ont aid\u00E9 Azur\u00E9e \u00E0 rena\u00EEtre de ses cendres."
+    "Text": "Ce monument est d\u00E9di\u00E9 aux prodigieux \u003CLower\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Lower\u003Es et \u00E0 tous les autres ouvriers qui ont aid\u00E9 Azur\u00E9e \u00E0 rena\u00EEtre de ses cendres."
   },
   {
     "RowId": 12784,
@@ -137,7 +137,7 @@
   },
   {
     "RowId": 12805,
-    "Text": "\u003CIf([lnum1==0])\u003ENommez votre communaut\u00E9.\u003CElse/\u003EDonnez un nouveau nom \u00E0 votre communaut\u00E9.\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ENommez votre communaut\u00E9.\u003CElse/\u003EDonnez un nouveau nom \u00E0 votre communaut\u00E9.\u003C/If\u003E"
   },
   {
     "RowId": 12806,
@@ -253,7 +253,7 @@
   },
   {
     "RowId": 12834,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12835,
@@ -265,7 +265,7 @@
   },
   {
     "RowId": 12837,
-    "Text": "Dissoudre la communaut\u00E9 \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Dissoudre la communaut\u00E9 \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12838,
@@ -313,7 +313,7 @@
   },
   {
     "RowId": 12849,
-    "Text": "Fin du sondage\u003C\u003Cnbsp\u003E\u003E: \u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "Fin du sondage\u003C\u003Cnbsp\u003E\u003E: \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 12850,
@@ -377,7 +377,7 @@
   },
   {
     "RowId": 12865,
-    "Text": "Jusqu\u0027au \u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "Jusqu\u0027au \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 12866,
@@ -401,7 +401,7 @@
   },
   {
     "RowId": 12871,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E voix"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E voix"
   },
   {
     "RowId": 12872,
@@ -425,7 +425,7 @@
   },
   {
     "RowId": 12877,
-    "Text": "Date limite du recrutement\u003C\u003Cnbsp\u003E\u003E: \u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "Date limite du recrutement\u003C\u003Cnbsp\u003E\u003E: \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 12878,
@@ -497,7 +497,7 @@
   },
   {
     "RowId": 12895,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \u003CIcon\u003E88\u003C/Icon\u003E \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \u003CIcon\u003E88\u003C/Icon\u003E \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12896,
@@ -585,7 +585,7 @@
   },
   {
     "RowId": 12917,
-    "Text": "Renoncer au titre de repr\u00E9sentant\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Renoncer au titre de repr\u00E9sentant\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12918,
@@ -617,7 +617,7 @@
   },
   {
     "RowId": 12925,
-    "Text": "Groupe \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Groupe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12926,
@@ -633,7 +633,7 @@
   },
   {
     "RowId": 12929,
-    "Text": "Saisissez un nouveau nom pour le groupe \u003CNum\u003Elnum1\u003C/Num\u003E."
+    "Text": "Saisissez un nouveau nom pour le groupe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E."
   },
   {
     "RowId": 12930,
@@ -681,7 +681,7 @@
   },
   {
     "RowId": 12941,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 12942,
@@ -697,7 +697,7 @@
   },
   {
     "RowId": 12945,
-    "Text": "Vous allez rejoindre la communaut\u00E9 \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Vous allez rejoindre la communaut\u00E9 \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12946,
@@ -741,7 +741,7 @@
   },
   {
     "RowId": 12956,
-    "Text": "membres. (Nombre de membres actuel\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1==1000])\u003E\u003Ccolortype(508)\u003E\u003Cedgecolortype(509)\u003E\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\u003C/If\u003E/1 000)"
+    "Text": "membres. (Nombre de membres actuel\u003C\u003Cnbsp\u003E\u003E: \u003CIf(Equal(IntegerParameter(1),1000))\u003E\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\u003C/span\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\u003C/If\u003E/1 000)"
   },
   {
     "RowId": 12957,
@@ -765,7 +765,7 @@
   },
   {
     "RowId": 12962,
-    "Text": "Objectif\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E membres"
+    "Text": "Objectif\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E membres"
   },
   {
     "RowId": 12963,
@@ -773,7 +773,7 @@
   },
   {
     "RowId": 12964,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12965,
@@ -793,7 +793,7 @@
   },
   {
     "RowId": 12969,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/1 000"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/1 000"
   },
   {
     "RowId": 12970,
@@ -809,15 +809,15 @@
   },
   {
     "RowId": 12973,
-    "Text": "Vous allez rejoindre la communaut\u00E9 \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Vous allez rejoindre la communaut\u00E9 \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12974,
-    "Text": "Refuser l\u0027invitation \u00E0 rejoindre la communaut\u00E9 \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Refuser l\u0027invitation \u00E0 rejoindre la communaut\u00E9 \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12975,
-    "Text": "Quitter la communaut\u00E9 \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Quitter la communaut\u00E9 \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12976,
@@ -857,7 +857,7 @@
   },
   {
     "RowId": 12985,
-    "Text": "Pr\u00E9sident\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Pr\u00E9sident\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12986,
@@ -913,7 +913,7 @@
   },
   {
     "RowId": 12999,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 13001,
@@ -921,7 +921,7 @@
   },
   {
     "RowId": 13002,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 13003,
@@ -961,7 +961,7 @@
   },
   {
     "RowId": 13013,
-    "Text": "Vous devez renouveler votre accr\u00E9ditation si vous \u00EAtes devenu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E mentor avant que les conditions d\u0027obtention du titre ne changent. Pour plus de d\u00E9tails, renseignez-vous aupr\u00E8s d\u0027un chef instructeur."
+    "Text": "Vous devez renouveler votre accr\u00E9ditation si vous \u00EAtes devenu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E mentor avant que les conditions d\u0027obtention du titre ne changent. Pour plus de d\u00E9tails, renseignez-vous aupr\u00E8s d\u0027un chef instructeur."
   },
   {
     "RowId": 13014,
@@ -981,7 +981,7 @@
   },
   {
     "RowId": 13018,
-    "Text": "5. Accomplir une des trois qu\u00EAtes de r\u00F4le de DPS (physique ou magique) de niveau \u003CNum\u003Elnum1\u003C/Num\u003E."
+    "Text": "5. Accomplir une des trois qu\u00EAtes de r\u00F4le de DPS (physique ou magique) de niveau \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E."
   },
   {
     "RowId": 13019,
@@ -989,11 +989,11 @@
   },
   {
     "RowId": 13020,
-    "Text": "3. Atteindre le niveau \u003CNum\u003Elnum1\u003C/Num\u003E dans l\u0027une des disciplines de la terre."
+    "Text": "3. Atteindre le niveau \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E dans l\u0027une des disciplines de la terre."
   },
   {
     "RowId": 13021,
-    "Text": "4. Atteindre le niveau \u003CNum\u003Elnum1\u003C/Num\u003E dans l\u0027une des disciplines de la main."
+    "Text": "4. Atteindre le niveau \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E dans l\u0027une des disciplines de la main."
   },
   {
     "RowId": 13022,
@@ -1089,15 +1089,15 @@
   },
   {
     "RowId": 13050,
-    "Text": "BPM\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "BPM\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13051,
-    "Text": "Mesure\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Mesure\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13052,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 13053,
@@ -1153,7 +1153,7 @@
   },
   {
     "RowId": 13068,
-    "Text": "Moi seul\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Moi seul\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 13069,
@@ -1177,7 +1177,7 @@
   },
   {
     "RowId": 13074,
-    "Text": "Le mode orchestral synchronise vos actions d\u0027interpr\u00E9tation et celles des membres de votre \u00E9quipe avant de les jouer ensemble, offrant ainsi un meilleur rendu \u00E0 votre auditoire.\nAvec le type d\u0027\u00E9coute \u201CMoi seul\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u201D, vous n\u0027entendrez que vos propres notes, mais instantan\u00E9ment.\nAvec \u201CTout l\u0027orchestre\u201D, vous entendrez la m\u00EAme chose que votre auditoire. Vos notes et celles de toute votre \u00E9quipe vous parviendront cependant avec un d\u00E9lai sonore."
+    "Text": "Le mode orchestral synchronise vos actions d\u0027interpr\u00E9tation et celles des membres de votre \u00E9quipe avant de les jouer ensemble, offrant ainsi un meilleur rendu \u00E0 votre auditoire.\nAvec le type d\u0027\u00E9coute \u201CMoi seul\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u201D, vous n\u0027entendrez que vos propres notes, mais instantan\u00E9ment.\nAvec \u201CTout l\u0027orchestre\u201D, vous entendrez la m\u00EAme chose que votre auditoire. Vos notes et celles de toute votre \u00E9quipe vous parviendront cependant avec un d\u00E9lai sonore."
   },
   {
     "RowId": 13075,
@@ -1197,7 +1197,7 @@
   },
   {
     "RowId": 13080,
-    "Text": "Un appel de pr\u00E9paration a \u00E9t\u00E9 envoy\u00E9.\nInformer vos \u00E9quipiers que vous \u00EAtes pr\u00EAt\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?\n* Le d\u00E9compte d\u00E9butera d\u00E8s que tout l\u0027orchestre aura r\u00E9pondu oui."
+    "Text": "Un appel de pr\u00E9paration a \u00E9t\u00E9 envoy\u00E9.\nInformer vos \u00E9quipiers que vous \u00EAtes pr\u00EAt\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?\n* Le d\u00E9compte d\u00E9butera d\u00E8s que tout l\u0027orchestre aura r\u00E9pondu oui."
   },
   {
     "RowId": 13081,
@@ -1205,7 +1205,7 @@
   },
   {
     "RowId": 13082,
-    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13083,
@@ -1213,7 +1213,7 @@
   },
   {
     "RowId": 13084,
-    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13085,
@@ -1221,11 +1221,11 @@
   },
   {
     "RowId": 13086,
-    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1==0])\u003ENon\u003CElse/\u003EOui\u003C/If\u003E"
+    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CIf(Equal(IntegerParameter(1),0))\u003ENon\u003CElse/\u003EOui\u003C/If\u003E"
   },
   {
     "RowId": 13089,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
   },
   {
     "RowId": 13090,
@@ -1233,7 +1233,7 @@
   },
   {
     "RowId": 13091,
-    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13092,
@@ -1241,7 +1241,7 @@
   },
   {
     "RowId": 13093,
-    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum2\u003C/Num\u003E / \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E / \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13094,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 13095,
-    "Text": "Vitesse de d\u00E9filement\u003C\u003Cnbsp\u003E\u003E: x\u003Cfloat(lnum1,10,\\,)\u003E"
+    "Text": "Vitesse de d\u00E9filement\u003C\u003Cnbsp\u003E\u003E: x\u003Cfloat(IntegerParameter(1),10,,)\u003E"
   },
   {
     "RowId": 13096,
@@ -1397,11 +1397,11 @@
   },
   {
     "RowId": 13132,
-    "Text": "Temps limite\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E minutes/Lieu\u003C\u003Cnbsp\u003E\u003E: \u003Csheet(PlaceName,lnum2,0)\u003E"
+    "Text": "Temps limite\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E minutes/Lieu\u003C\u003Cnbsp\u003E\u003E: \u003Csheet(PlaceName,IntegerParameter(2),0)\u003E"
   },
   {
     "RowId": 13133,
-    "Text": "\u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003E \u00E9quipes de \u003CElse/\u003E \u003C/If\u003E\u003CNum\u003Elnum1\u003C/Num\u003E joueurs\u003CIf([lnum3\u003E0])\u003E\u003Cbr\u003E\uE033Nv objet moyen \u003Cnum(lnum3)\u003E ou plus\u003CElse/\u003E \u003C/If\u003E\n* Pour valider cette mission dans votre palmar\u00E8s bleu, votre \u00E9quipe doit \u00EAtre compos\u00E9e exclusivement de mages bleus et compter le nombre de participants requis."
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u00E9quipes de \u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E joueurs\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\uE033Nv objet moyen \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E ou plus\u003CElse/\u003E \u003C/If\u003E\n* Pour valider cette mission dans votre palmar\u00E8s bleu, votre \u00E9quipe doit \u00EAtre compos\u00E9e exclusivement de mages bleus et compter le nombre de participants requis."
   },
   {
     "RowId": 13134,
@@ -1421,7 +1421,7 @@
   },
   {
     "RowId": 13139,
-    "Text": "Utilisez la pose de groupe, seul\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E ou avec vos amis pour prendre des clich\u00E9s renversants\u003C\u003Cnbsp\u003E\u003E! Vos personnages r\u00E9p\u00E8tent la derni\u00E8re emote ou action effectu\u00E9e\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "Utilisez la pose de groupe, seul\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E ou avec vos amis pour prendre des clich\u00E9s renversants\u003C\u003Cnbsp\u003E\u003E! Vos personnages r\u00E9p\u00E8tent la derni\u00E8re emote ou action effectu\u00E9e\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 13140,
@@ -1677,7 +1677,7 @@
   },
   {
     "RowId": 13203,
-    "Text": "N\u00B0\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "N\u00B0\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 13204,
@@ -1689,7 +1689,7 @@
   },
   {
     "RowId": 13206,
-    "Text": "D\u00E9but du prochain ouvrage dans \u003CIf([lnum1\u003E0])\u003E \u003Cnum(lnum1)\u003E heure\u003Cif([lnum1\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \u003Cnum(lnum2)\u003E minute\u003Cif([lnum2\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003Elnum3\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
+    "Text": "D\u00E9but du prochain ouvrage dans \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E heure\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E minute\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
   },
   {
     "RowId": 13207,
@@ -1729,11 +1729,11 @@
   },
   {
     "RowId": 13222,
-    "Text": "Fin du classement dans \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Ej \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E1])\u003E\u003Cnum(lnum2)\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003Em\u003CElse/\u003E\u003Cif([lnum2\u003E0],,moins d\u0027une minute)\u003E\u003C/If\u003E"
+    "Text": "Fin du classement dans \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Ej \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),1))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003Emoins d\u0027une minute\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 13223,
-    "Text": "D\u00E9but de l\u0027ouvrage collectif dans \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Em\u003CElse/\u003E\u003Cif([lnum1\u003E0],,moins d\u0027une minute)\u003E\u003C/If\u003E"
+    "Text": "D\u00E9but de l\u0027ouvrage collectif dans \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CElse/\u003Emoins d\u0027une minute\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 13224,
@@ -1745,7 +1745,7 @@
   },
   {
     "RowId": 13226,
-    "Text": "Les prochaines festes commencent dans \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Ej \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003Em \u003CElse/\u003E\u003Cif([lnum2\u003E0],,\u003Cif([lnum1\u003E0],,moins d\u0027une minute)\u003E)\u003E\u003C/If\u003E"
+    "Text": "Les prochaines festes commencent dans \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Ej \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em \u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CElse/\u003Emoins d\u0027une minute\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 13227,
@@ -1777,7 +1777,7 @@
   },
   {
     "RowId": 13235,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u003CElse/\u003E---\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CElse/\u003E---\u003C/If\u003E"
   },
   {
     "RowId": 13236,
@@ -1789,11 +1789,11 @@
   },
   {
     "RowId": 13238,
-    "Text": "\u003CIf([lnum1==0])\u003EP\u00E9riode hors classement\u003CElse/\u003EFin du classement le \u003Csettime(lnum1)\u003E\u003Cnum(t_day)\u003E.\u003Cnum(t_mon)\u003E.\u003Cnum(t_year)\u003E \u00E0 \u003Cnum(t_hour)\u003Eh\u003Csec(t_min)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EP\u00E9riode hors classement\u003CElse/\u003EFin du classement le \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E\u003C/If\u003E"
   },
   {
     "RowId": 13239,
-    "Text": "Les classements sont actuellement disponibles sur The Lodestone\u003C\u003Cnbsp\u003E\u003E!\n\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Les classements sont actuellement disponibles sur The Lodestone\u003C\u003Cnbsp\u003E\u003E!\n\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 13240,
@@ -1849,31 +1849,31 @@
   },
   {
     "RowId": 13300,
-    "Text": "Retirer \u003CString\u003Elstr1\u003C/String\u003E de la liste noire de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Retirer \u003CString\u003EStringParameter(1)\u003C/String\u003E de la liste noire de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13301,
-    "Text": "Exclure \u003CString\u003Elstr1\u003C/String\u003E de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Exclure \u003CString\u003EStringParameter(1)\u003C/String\u003E de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13302,
-    "Text": "Transmettre le titre de pr\u00E9sident(e) de cette communaut\u00E9 \u00E0 \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Transmettre le titre de pr\u00E9sident(e) de cette communaut\u00E9 \u00E0 \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13303,
-    "Text": "Donner le titre de repr\u00E9sentant(e) de cette communaut\u00E9 \u00E0 \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Donner le titre de repr\u00E9sentant(e) de cette communaut\u00E9 \u00E0 \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13304,
-    "Text": "Retirer le titre de repr\u00E9sentant(e) de cette communaut\u00E9 \u00E0 \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Retirer le titre de repr\u00E9sentant(e) de cette communaut\u00E9 \u00E0 \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13305,
-    "Text": "Renoncer au rang de repr\u00E9sentant\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de cette communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Renoncer au rang de repr\u00E9sentant\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de cette communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13306,
-    "Text": "Ajouter \u003CString\u003Elstr1\u003C/String\u003E \u00E0 la liste noire de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Ajouter \u003CString\u003EStringParameter(1)\u003C/String\u003E \u00E0 la liste noire de la communaut\u00E9\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 13307,

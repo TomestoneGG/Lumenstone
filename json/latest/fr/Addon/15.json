@@ -25,7 +25,7 @@
   },
   {
     "RowId": 8133,
-    "Text": "Un appel de pr\u00E9paration a \u00E9t\u00E9 envoy\u00E9.\nInformer vos \u00E9quipiers que vous \u00EAtes pr\u00EAt\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?\n* Vous pouvez r\u00E9fl\u00E9chir et r\u00E9pondre plus tard depuis la fen\u00EAtre de notification."
+    "Text": "Un appel de pr\u00E9paration a \u00E9t\u00E9 envoy\u00E9.\nInformer vos \u00E9quipiers que vous \u00EAtes pr\u00EAt\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?\n* Vous pouvez r\u00E9fl\u00E9chir et r\u00E9pondre plus tard depuis la fen\u00EAtre de notification."
   },
   {
     "RowId": 8134,
@@ -61,11 +61,11 @@
   },
   {
     "RowId": 8142,
-    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 8143,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 8144,
@@ -109,7 +109,7 @@
   },
   {
     "RowId": 8154,
-    "Text": "\uE031 Dans \u003CIf([lnum1==0])\u003E\u003Cnum(lnum2)\u003Em\u003CElse/\u003E\u003Cnum(lnum1)\u003Eh\u003Cnum(lnum2)\u003Em\u003C/If\u003E (\u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
+    "Text": "\uE031 Dans \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003C/If\u003E (\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
   },
   {
     "RowId": 8155,
@@ -129,7 +129,7 @@
   },
   {
     "RowId": 8159,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 8160,
@@ -245,7 +245,7 @@
   },
   {
     "RowId": 8194,
-    "Text": "Source\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1==0])\u003E\u00C9cran mode normal\u003CElse/\u003E\u00C9cran mode lecture \u00E0 distance\u003C/If\u003E\nDestination\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1==0])\u003E\u00C9cran mode lecture \u00E0 distance\u003CElse/\u003E\u00C9cran mode normal\u003C/If\u003E\nLes param\u00E8tres ci-dessus vont \u00EAtre copi\u00E9s par-dessus les anciens r\u00E9glages.\nContinuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Source\u003C\u003Cnbsp\u003E\u003E: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u00C9cran mode normal\u003CElse/\u003E\u00C9cran mode lecture \u00E0 distance\u003C/If\u003E\nDestination\u003C\u003Cnbsp\u003E\u003E: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u00C9cran mode lecture \u00E0 distance\u003CElse/\u003E\u00C9cran mode normal\u003C/If\u003E\nLes param\u00E8tres ci-dessus vont \u00EAtre copi\u00E9s par-dessus les anciens r\u00E9glages.\nContinuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8195,
@@ -257,7 +257,7 @@
   },
   {
     "RowId": 8197,
-    "Text": "\u00C9cran mode normal (\u003CIf([gnum75\u003E0])\u003E\u003Cswitch(gnum75,PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E \u003C/If\u003E)"
+    "Text": "\u00C9cran mode normal (\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PS3,PS4\u2122,PS4\u2122,PS5\u2122,,)\u003E\u003CElse/\u003E \u003C/If\u003E)"
   },
   {
     "RowId": 8198,
@@ -269,7 +269,7 @@
   },
   {
     "RowId": 8201,
-    "Text": "Haut-parleur \u003CIf([gnum75==0])\u003Ede la manette\u003CElse/\u003E\u003Cif([gnum78==99],de la manette sans fil,de la manette sans fil Xbox)\u003E\u003C/If\u003E"
+    "Text": "Haut-parleur \u003CIf(Equal(PlayerParameter(75),0))\u003Ede la manette\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Ede la manette sans fil\u003CElse/\u003Ede la manette sans fil Xbox\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 8202,
@@ -509,7 +509,7 @@
   },
   {
     "RowId": 8270,
-    "Text": "\u003CIf([gnum75==3])\u003EPS4 Standard\u003Cnbsp\u003E: r\u00E9solution Full HD et taux de rafra\u00EEchissement \u00E9lev\u00E9\u003CElse/\u003EPS4 Standard\u003Cnbsp\u003E: r\u00E9solution Full HD\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(75),3))\u003EPS4 Standard\u003C\u003Cnbsp\u003E\u003E: r\u00E9solution Full HD et taux de rafra\u00EEchissement \u00E9lev\u00E9\u003CElse/\u003EPS4 Standard\u003C\u003Cnbsp\u003E\u003E: r\u00E9solution Full HD\u003C/If\u003E"
   },
   {
     "RowId": 8271,
@@ -537,7 +537,7 @@
   },
   {
     "RowId": 8277,
-    "Text": "\u003CIf([gnum75==3])\u003EPS4 Pro\u003Cnbsp\u003E: r\u00E9solution WQHD \\(converti en 4K\\)\u003CElse/\u003EPS4 Pro\u003Cnbsp\u003E: \u003Cicon(63)\u003E disponibles uniquement pour les consoles compatibles\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(75),3))\u003EPS4 Pro\u003C\u003Cnbsp\u003E\u003E: r\u00E9solution WQHD (converti en 4K)\u003CElse/\u003EPS4 Pro\u003C\u003Cnbsp\u003E\u003E: \u003CIcon\u003E63\u003C/Icon\u003E disponibles uniquement pour les consoles compatibles\u003C/If\u003E"
   },
   {
     "RowId": 8278,
@@ -661,11 +661,11 @@
   },
   {
     "RowId": 8311,
-    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 8312,
-    "Text": "\u003CHead\u003E\u003Csheet(ActStr,lnum1,0)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ActStr,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 8313,
@@ -769,23 +769,23 @@
   },
   {
     "RowId": 8338,
-    "Text": "Vaincre \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cfrnoun(BNpcName,12,lnum1,lnum2,1)\u003E"
+    "Text": "Vaincre \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(BNpcName,12,IntegerParameter(1),IntegerParameter(2),1)\u003E"
   },
   {
     "RowId": 8339,
-    "Text": "Vaincre \u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E"
+    "Text": "Vaincre \u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E"
   },
   {
     "RowId": 8340,
-    "Text": "R\u00E9ussir l\u0027AL\u00C9A \u201C\u003Csheet(Fate,lnum1,0)\u003E\u201D."
+    "Text": "R\u00E9ussir l\u0027AL\u00C9A \u201C\u003Csheet(Fate,IntegerParameter(1),0)\u003E\u201D."
   },
   {
     "RowId": 8341,
-    "Text": "Accomplir le mandat de guilde \u201C\u003Csheet(Leve,lnum1,0)\u003E\u201D."
+    "Text": "Accomplir le mandat de guilde \u201C\u003Csheet(Leve,IntegerParameter(1),0)\u003E\u201D."
   },
   {
     "RowId": 8342,
-    "Text": "\u003CHead\u003E\u003Csheet(PlaceName,lnum1,0)\u003E\u003C/Head\u003E\u003CIf(lnum2)\u003E - \u003Chead(\u003Csheet(PlaceName,lnum2,0)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u003C/Head\u003E\u003CIf(IntegerParameter(2))\u003E - \u003CHead\u003E\u003Csheet(PlaceName,IntegerParameter(2),0)\u003E\u003C/Head\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8343,
@@ -797,7 +797,7 @@
   },
   {
     "RowId": 8345,
-    "Text": "\u003CHead\u003E\u003Csheet(PlaceName,lnum1,0)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 8346,
@@ -805,7 +805,7 @@
   },
   {
     "RowId": 8347,
-    "Text": "Accomplir le mandat de grande compagnie \u201C\u003Csheet(Leve,lnum1,0)\u003E\u201D."
+    "Text": "Accomplir le mandat de grande compagnie \u201C\u003Csheet(Leve,IntegerParameter(1),0)\u003E\u201D."
   },
   {
     "RowId": 8348,
@@ -865,19 +865,19 @@
   },
   {
     "RowId": 8362,
-    "Text": "Grade\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u003CElse/\u003E?\u003C/If\u003E"
+    "Text": "Grade\u003C\u003Cnbsp\u003E\u003E: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CElse/\u003E?\u003C/If\u003E"
   },
   {
     "RowId": 8363,
-    "Text": "Aptitude\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003E0])\u003E\u003Csheet(ChocoboRaceAbility,lnum1,0)\u003E\u003CElse/\u003E\u003Cif([lnum1==0],aucune,?)\u003E\u003C/If\u003E"
+    "Text": "Aptitude\u003C\u003Cnbsp\u003E\u003E: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheet(ChocoboRaceAbility,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),0))\u003Eaucune\u003CElse/\u003E?\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 8364,
-    "Text": "Couleur\u003C\u003Cnbsp\u003E\u003E: \u003CLower\u003E\u003Cif([lnum1\u003E0],\u003Csheet(Stain,lnum1,3)\u003E,?)\u003E\u003C/Lower\u003E"
+    "Text": "Couleur\u003C\u003Cnbsp\u003E\u003E: \u003CLower\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Csheet(Stain,IntegerParameter(1),3)\u003E\u003CElse/\u003E?\u003C/If\u003E\u003C/Lower\u003E"
   },
   {
     "RowId": 8365,
-    "Text": "Saillies\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C0])\u003E?\u003CElse/\u003E\u003Cnum(lnum1)\u003E restante\u003Cif([lnum1\u003C=1],,s)\u003E\u003C/If\u003E"
+    "Text": "Saillies\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),0))\u003E?\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E restante\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 8366,
@@ -885,7 +885,7 @@
   },
   {
     "RowId": 8367,
-    "Text": "\u003Cspan style=\u0022color: #30d6ff;\u0022\u003E\u2642\u003C/span\u003E\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(530)\u003E\u003Cswitch(lnum1,\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003Ccolortype(0)\u003E\u003Ccolortype(529)\u003E\u003Cswitch(lnum1,\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(529)\u003E????\u003Ccolortype(0)\u003E\u003C/If\u003E\u3000\u003Cspan style=\u0022color: #ff8261;\u0022\u003E\u2640\u003C/span\u003E\u003CIf([lnum2\u003E0])\u003E\u003Ccolortype(532)\u003E\u003Cswitch(lnum2,\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003Ccolortype(0)\u003E\u003Ccolortype(531)\u003E\u003Cswitch(lnum2,\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(531)\u003E????\u003Ccolortype(0)\u003E\u003C/If\u003E"
+    "Text": "\u003Cspan style=\u0022color: #30d6ff;\u0022\u003E\u2642\u003C/span\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #3d657d;\u0022\u003E\u003Cswitch(IntegerParameter(1),\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003C/span\u003E\u003Cspan style=\u0022color: #30d6ff;\u0022\u003E\u003Cswitch(IntegerParameter(1),\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #30d6ff;\u0022\u003E????\u003C/span\u003E\u003C/If\u003E\u3000\u003Cspan style=\u0022color: #ff8261;\u0022\u003E\u2640\u003C/span\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003Cspan style=\u0022color: #804a3b;\u0022\u003E\u003Cswitch(IntegerParameter(2),\u2605\u2605\u2605,\u2605\u2605,\u2605,)\u003E\u003C/span\u003E\u003Cspan style=\u0022color: #ff8261;\u0022\u003E\u003Cswitch(IntegerParameter(2),\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605)\u003E\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ff8261;\u0022\u003E????\u003C/span\u003E\u003C/If\u003E"
   },
   {
     "RowId": 8368,
@@ -1021,11 +1021,11 @@
   },
   {
     "RowId": 8419,
-    "Text": "\u003CHead\u003E\u003Csheet(ObjStr,lnum1,0)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ObjStr,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 8420,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\u003CIf(lnum2)\u003E - \u003Csheet(PlaceName,lnum2,0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E - \u003Csheet(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8421,
@@ -1033,7 +1033,7 @@
   },
   {
     "RowId": 8422,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E insigne\u003CIf([lnum2\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E alli\u00E9\u003CIf([lnum2\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E insigne\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E alli\u00E9\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E"
   },
   {
     "RowId": 8423,
@@ -1081,7 +1081,7 @@
   },
   {
     "RowId": 8434,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E insigne\u003CIf([lnum2\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E Centurio\u003CIf([lnum3\u003E0])\u003E / \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E Exp\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E insigne\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E Centurio\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E / \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E Exp\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8435,
@@ -1129,11 +1129,11 @@
   },
   {
     "RowId": 8446,
-    "Text": "\u003Cswitch(lnum1,Contrats de v\u00E9t\u00E9ran \\(rang 1\\),Contrats de v\u00E9t\u00E9ran \\(rang 2\\),Contrats de v\u00E9t\u00E9ran \\(rang 3\\),Contrats d\u0027\u00E9lite de v\u00E9t\u00E9ran)\u003E \uFF08\u003CString\u003Elstr2\u003C/String\u003E\uFF09"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrats de v\u00E9t\u00E9ran (rang 1),Contrats de v\u00E9t\u00E9ran (rang 2),Contrats de v\u00E9t\u00E9ran (rang 3),Contrats d\u0027\u00E9lite de v\u00E9t\u00E9ran)\u003E \uFF08\u003CString\u003EStringParameter(2)\u003C/String\u003E\uFF09"
   },
   {
     "RowId": 8449,
-    "Text": "\uFF08\u003CString\u003Elstr1\u003C/String\u003E\uFF09"
+    "Text": "\uFF08\u003CString\u003EStringParameter(1)\u003C/String\u003E\uFF09"
   },
   {
     "RowId": 8450,
@@ -1305,7 +1305,7 @@
   },
   {
     "RowId": 8492,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(68)\u003E,\u003Cicon(67)\u003E,\u003Cicon(120)\u003E,\u003Cicon(123)\u003E,\u003Cicon(63)\u003E,\u003Cicon(121)\u003E,\u003Cicon(122)\u003E,)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E68\u003C/Icon\u003E,\u003CIcon\u003E67\u003C/Icon\u003E,\u003CIcon\u003E120\u003C/Icon\u003E,\u003CIcon\u003E123\u003C/Icon\u003E,\u003CIcon\u003E63\u003C/Icon\u003E,\u003CIcon\u003E121\u003C/Icon\u003E,\u003CIcon\u003E122\u003C/Icon\u003E,)\u003E"
   },
   {
     "RowId": 8493,
@@ -1313,7 +1313,7 @@
   },
   {
     "RowId": 8494,
-    "Text": "Retirer le favori\u003Cswitch(lnum2, gratuit \\(Identificateur\\), gratuit \\(PlayStation\u00AEPlus\\),)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003Csheet(PlaceName,\u003Csheet(Aetheryte,lnum1,8)\u003E,0)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Retirer le favori\u003Cswitch(IntegerParameter(2), gratuit (Identificateur), gratuit (PlayStation\u00AEPlus),)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003Csheet(PlaceName,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8495,
@@ -1341,7 +1341,7 @@
   },
   {
     "RowId": 8501,
-    "Text": "Billet\u003CIf([lnum1\u003E1])\u003Es\u003CElse/\u003E \u003C/If\u003E de transport \u00E9th\u00E9r\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003E999])\u003E999\u002B\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E"
+    "Text": "Billet\u003CIf(GreaterThan(IntegerParameter(1),1))\u003Es\u003CElse/\u003E \u003C/If\u003E de transport \u00E9th\u00E9r\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(GreaterThan(IntegerParameter(1),999))\u003E999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 8502,
@@ -1369,11 +1369,11 @@
   },
   {
     "RowId": 8508,
-    "Text": "\u003Csheet(PlaceName,\u003Csheet(Aetheryte,lnum1,8)\u003E,0)\u003E"
+    "Text": "\u003Csheet(PlaceName,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E"
   },
   {
     "RowId": 8509,
-    "Text": "\u003Csheet(PlaceName,\u003Csheet(TerritoryType,lnum1,5)\u003E,0)\u003E"
+    "Text": "\u003Csheet(PlaceName,\u003Csheet(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E"
   },
   {
     "RowId": 8510,
@@ -1413,15 +1413,15 @@
   },
   {
     "RowId": 8519,
-    "Text": "Maison (partag\u00E9e\u003C\u003Cnbsp\u003E\u003E: secteur \u003CNum\u003Elnum1\u003C/Num\u003E, parcelle \u003CNum\u003Elnum2\u003C/Num\u003E)"
+    "Text": "Maison (partag\u00E9e\u003C\u003Cnbsp\u003E\u003E: secteur \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E, parcelle \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
   },
   {
     "RowId": 8520,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 8521,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 8522,
@@ -1489,7 +1489,7 @@
   },
   {
     "RowId": 8538,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E vous invite \u00E0 former une alliance. Accepter\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E vous invite \u00E0 former une alliance. Accepter\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8539,
@@ -1513,15 +1513,15 @@
   },
   {
     "RowId": 8544,
-    "Text": "Inviter \u003CString\u003Elstr1\u003C/String\u003E \u00E0 former une alliance\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Inviter \u003CString\u003EStringParameter(1)\u003C/String\u003E \u00E0 former une alliance\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8545,
-    "Text": "Refuser l\u0027invitation de \u003CString\u003Elstr1\u003C/String\u003E \u00E0 former une alliance\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Refuser l\u0027invitation de \u003CString\u003EStringParameter(1)\u003C/String\u003E \u00E0 former une alliance\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8546,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (invitation en cours)"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (invitation en cours)"
   },
   {
     "RowId": 8550,
@@ -1549,15 +1549,15 @@
   },
   {
     "RowId": 8556,
-    "Text": "\u003Csheet(WeatherPlaceName,\u003Csheet(TerritoryType,lnum1,5)\u003E,0)\u003E"
+    "Text": "\u003Csheet(WeatherPlaceName,\u003Csheet(TerritoryType,IntegerParameter(1),5)\u003E,0)\u003E"
   },
   {
     "RowId": 8557,
-    "Text": "\u003Csheet(Weather,lnum1,1)\u003E \uE06F \u003Csheet(Weather,lnum2,1)\u003E"
+    "Text": "\u003Csheet(Weather,IntegerParameter(1),1)\u003E \uE06F \u003Csheet(Weather,IntegerParameter(2),1)\u003E"
   },
   {
     "RowId": 8558,
-    "Text": "\u003Csheet(Weather,lnum1,1)\u003E"
+    "Text": "\u003Csheet(Weather,IntegerParameter(1),1)\u003E"
   },
   {
     "RowId": 8559,
@@ -1569,7 +1569,7 @@
   },
   {
     "RowId": 8571,
-    "Text": "Nv \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Nv \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 8572,
@@ -1577,11 +1577,11 @@
   },
   {
     "RowId": 8573,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003CIf(lnum2)\u003ENv \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003CIf(IntegerParameter(2))\u003ENv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8574,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003CIf(lnum2)\u003ENv \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003CIf(IntegerParameter(2))\u003ENv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8575,
@@ -1649,7 +1649,7 @@
   },
   {
     "RowId": 8591,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003CIf(lnum2)\u003ENv \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003CIf(IntegerParameter(2))\u003ENv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8592,
@@ -1673,7 +1673,7 @@
   },
   {
     "RowId": 8599,
-    "Text": "La substitution est \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eactiv\u00E9e\u003C/span\u003E pour les actions ci-dessous.\n\u003Csheet(Action,lnum1,0)\u003E \u2192 \u003Csheet(Action,lnum2,0)\u003E\nLes param\u00E8tres de substitution de l\u0027action \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003Csheet(Action,lnum3,0)\u003E\u003C/span\u003E peuvent \u00EAtre modifi\u00E9s."
+    "Text": "La substitution est \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eactiv\u00E9e\u003C/span\u003E pour les actions ci-dessous.\n\u003Csheet(Action,IntegerParameter(1),0)\u003E \u2192 \u003Csheet(Action,IntegerParameter(2),0)\u003E\nLes param\u00E8tres de substitution de l\u0027action \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003Csheet(Action,IntegerParameter(3),0)\u003E\u003C/span\u003E peuvent \u00EAtre modifi\u00E9s."
   },
   {
     "RowId": 8600,
@@ -1745,15 +1745,15 @@
   },
   {
     "RowId": 8617,
-    "Text": "Indice \u003Cdigit(lnum1,3)\u003E"
+    "Text": "Indice \u003Cdigit(IntegerParameter(1),3)\u003E"
   },
   {
     "RowId": 8618,
-    "Text": "\u003CHead\u003E\u003Csheet(ObjStr,lnum1,0)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ObjStr,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 8619,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 8620,
@@ -1813,7 +1813,7 @@
   },
   {
     "RowId": 8639,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
   },
   {
     "RowId": 8640,
@@ -1821,19 +1821,19 @@
   },
   {
     "RowId": 8641,
-    "Text": "\u003CIf([lnum1\u003E=1])\u003E\u003Cnum(lnum1)\u003E heure\u003Cif([lnum1==1],,s)\u003E\u003CElse/\u003EMoins d\u0027une heure\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(1),1))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E heure\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003EMoins d\u0027une heure\u003C/If\u003E"
   },
   {
     "RowId": 8642,
-    "Text": "Installer \u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Installer \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8643,
-    "Text": "R\u00E9cup\u00E9rer \u003Cfrnoun(Item,2,lnum2,1,1)\u003E de la base \u003CNum\u003Elnum1\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "R\u00E9cup\u00E9rer \u003Cfrnoun(Item,2,IntegerParameter(2),1,1)\u003E de la base \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8644,
-    "Text": "Si vous retirez \u003Cfrnoun(Item,2,lnum1,1,1)\u003E de la base \u003CNum\u003Elnum2\u003C/Num\u003E maintenant, il sera d\u00E9finitivement perdu. Voulez-vous continuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Si vous retirez \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E de la base \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E maintenant, il sera d\u00E9finitivement perdu. Voulez-vous continuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 8645,
@@ -1849,11 +1849,11 @@
   },
   {
     "RowId": 8648,
-    "Text": "Convertir \u003Cfrnoun(Item,2,lnum1,1,1)\u003E en bienfait de compagnie \u201C\u003Csheet(CompanyAction,lnum2,0)\u003E\u201D\u00A0?"
+    "Text": "Convertir \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E en bienfait de compagnie \u201C\u003Csheet(CompanyAction,IntegerParameter(2),0)\u003E\u201D\u00A0?"
   },
   {
     "RowId": 8651,
-    "Text": "Carnet d\u0027exploration (\u003CString\u003Elstr1\u003C/String\u003E)"
+    "Text": "Carnet d\u0027exploration (\u003CString\u003EStringParameter(1)\u003C/String\u003E)"
   },
   {
     "RowId": 8660,
@@ -1865,7 +1865,7 @@
   },
   {
     "RowId": 8662,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
   },
   {
     "RowId": 8663,
@@ -1889,7 +1889,7 @@
   },
   {
     "RowId": 8671,
-    "Text": "Activer les fonctions avanc\u00E9es de la souris \u003CIf([gnum75==0])\u003E\\(curseur\\)\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Activer les fonctions avanc\u00E9es de la souris \u003CIf(Equal(PlayerParameter(75),0))\u003E(curseur)\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 8672,

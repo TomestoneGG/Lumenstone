@@ -21,7 +21,7 @@
   },
   {
     "RowId": 3934,
-    "Text": "\u003Ckilo(lnum1,.)\u003E/\u003Ckilo(lnum2,.)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),.)\u003E/\u003Ckilo(IntegerParameter(2),.)\u003E"
   },
   {
     "RowId": 3960,
@@ -93,7 +93,7 @@
   },
   {
     "RowId": 4002,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E fps"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E fps"
   },
   {
     "RowId": 4003,
@@ -557,7 +557,7 @@
   },
   {
     "RowId": 4124,
-    "Text": "Kompatiblen Controllern steht Vibration und das Abspielen von T\u00F6nen zur Verf\u00FCgung. \u003Cswitch(gnum78,\\(\u003Cicon(63)\u003E Nur DX11-Version.\\),,\\(\u003Cicon(63)\u003E Nur Windows-Version.\\))\u003E"
+    "Text": "Kompatiblen Controllern steht Vibration und das Abspielen von T\u00F6nen zur Verf\u00FCgung. \u003Cswitch(PlayerParameter(78),(\u003CIcon\u003E63\u003C/Icon\u003E Nur DX11-Version.),,(\u003CIcon\u003E63\u003C/Icon\u003E Nur Windows-Version.))\u003E"
   },
   {
     "RowId": 4125,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 4149,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \uE033\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \uE033\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4150,
@@ -713,7 +713,7 @@
   },
   {
     "RowId": 4165,
-    "Text": "Passt aktiv die Aufl\u00F6sung f\u00FCr optimale Leistung an.\n\u003CIf([gnum78==3])\u003E\u003Cicon(63)\u003ENicht f\u00FCr Mac-Version verf\u00FCgbar\u003CElse/\u003E\u203BAktuell in der Beta-Version\u003C/If\u003E"
+    "Text": "Passt aktiv die Aufl\u00F6sung f\u00FCr optimale Leistung an.\n\u003CIf(Equal(PlayerParameter(78),3))\u003E\u003CIcon\u003E63\u003C/Icon\u003ENicht f\u00FCr Mac-Version verf\u00FCgbar\u003CElse/\u003E\u203BAktuell in der Beta-Version\u003C/If\u003E"
   },
   {
     "RowId": 4166,
@@ -745,7 +745,7 @@
   },
   {
     "RowId": 4174,
-    "Text": "\u003CIf([gnum75==0])\u003EGamepad\u003CElse/\u003E\u003Cif([gnum78==99],Wireless Controller,Controller)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(75),0))\u003EGamepad\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003EWireless Controller\u003CElse/\u003EController\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 4175,
@@ -825,7 +825,7 @@
   },
   {
     "RowId": 4195,
-    "Text": "Diese Aufl\u00F6sung anwenden?\nIn \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E wird die urspr\u00FCngliche Einstellung wiederhergestellt."
+    "Text": "Diese Aufl\u00F6sung anwenden?\nIn \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E wird die urspr\u00FCngliche Einstellung wiederhergestellt."
   },
   {
     "RowId": 4196,
@@ -1049,7 +1049,7 @@
   },
   {
     "RowId": 4306,
-    "Text": "Konfiguration im Gang (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Konfiguration im Gang (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4307,
@@ -1093,103 +1093,103 @@
   },
   {
     "RowId": 4320,
-    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach oben. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach oben. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4321,
-    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach unten. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach unten. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4322,
-    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach links. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach links. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4323,
-    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach rechts. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E20\u003C/Icon\u003E Dr\u00FCck den linken Stick nach rechts. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4324,
-    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach oben. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach oben. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4325,
-    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach unten. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach unten. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4326,
-    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach links. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach links. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4327,
-    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach rechts. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E23\u003C/Icon\u003E Dr\u00FCck den rechten Stick nach rechts. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4328,
-    "Text": "\u003CIcon\u003E1\u003C/Icon\u003E Dr\u00FCck die Oben-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E1\u003C/Icon\u003E Dr\u00FCck die Oben-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4329,
-    "Text": "\u003CIcon\u003E2\u003C/Icon\u003E Dr\u00FCck die Unten-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E2\u003C/Icon\u003E Dr\u00FCck die Unten-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4330,
-    "Text": "\u003CIcon\u003E3\u003C/Icon\u003E Dr\u00FCck die Links-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E3\u003C/Icon\u003E Dr\u00FCck die Links-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4331,
-    "Text": "\u003CIcon\u003E4\u003C/Icon\u003E Dr\u00FCck die Rechts-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "\u003CIcon\u003E4\u003C/Icon\u003E Dr\u00FCck die Rechts-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4332,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E11\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E11\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4333,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E8\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E8\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4334,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E9\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E9\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4335,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E10\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E10\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4336,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E12\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E12\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4337,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E14\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E14\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4338,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E13\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E13\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4339,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E15\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E15\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4340,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E19\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E19\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4341,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E18\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E18\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4342,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E16\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E16\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4343,
-    "Text": "Dr\u00FCck die \u003CIcon\u003E17\u003C/Icon\u003E-Taste. (\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Dr\u00FCck die \u003CIcon\u003E17\u003C/Icon\u003E-Taste. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4350,
-    "Text": "\uE033\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE033\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 4351,
@@ -1213,11 +1213,11 @@
   },
   {
     "RowId": 4356,
-    "Text": "Das Ausr\u00FCstungsset \u003CNum\u003Elnum2\u003C/Num\u003E \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C mit deiner momentanen Ausr\u00FCstung \u00FCberschreiben?"
+    "Text": "Das Ausr\u00FCstungsset \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C mit deiner momentanen Ausr\u00FCstung \u00FCberschreiben?"
   },
   {
     "RowId": 4357,
-    "Text": "Das Ausr\u00FCstungsset \u003CNum\u003Elnum2\u003C/Num\u003E \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C l\u00F6schen?"
+    "Text": "Das Ausr\u00FCstungsset \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C l\u00F6schen?"
   },
   {
     "RowId": 4358,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 4359,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E St \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E St \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4360,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 4365,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E St. \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E St. \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4366,
@@ -1321,15 +1321,15 @@
   },
   {
     "RowId": 4383,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E (\uE033\u003CNum\u003Elnum2\u003C/Num\u003E)"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E (\uE033\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
   },
   {
     "RowId": 4384,
-    "Text": "Im Arsenal befindet sich \u003Cdenoun(Item,4,lnum1,1,1,1)\u003E mit den registrierten Parametern. Stattdessen einen leicht abweichenden Gegenstand f\u00FCr deine Haupthand verwenden?"
+    "Text": "Im Arsenal befindet sich \u003Cdenoun(Item,4,IntegerParameter(1),1,1,1)\u003E mit den registrierten Parametern. Stattdessen einen leicht abweichenden Gegenstand f\u00FCr deine Haupthand verwenden?"
   },
   {
     "RowId": 4385,
-    "Text": "Im Arsenal befindet sich \u003Cdenoun(Item,4,lnum1,1,1,1)\u003E f\u00FCr deine Haupthand, aber \u003Cdenoun(Item,3,lnum2,1,1,1)\u003E w\u00E4re ebenfalls f\u00FCr deinen Job/deine Klasse geeignet. Diesen Gegenstand verwenden?"
+    "Text": "Im Arsenal befindet sich \u003Cdenoun(Item,4,IntegerParameter(1),1,1,1)\u003E f\u00FCr deine Haupthand, aber \u003Cdenoun(Item,3,IntegerParameter(2),1,1,1)\u003E w\u00E4re ebenfalls f\u00FCr deinen Job/deine Klasse geeignet. Diesen Gegenstand verwenden?"
   },
   {
     "RowId": 4386,
@@ -1341,7 +1341,7 @@
   },
   {
     "RowId": 4388,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E\u003C/Head\u003E f\u00FCr deine Haupthand kann momentan nicht angelegt werden, aber \u003Cdenoun(Item,3,lnum2,1,1,1)\u003E w\u00E4re ebenfalls f\u00FCr deinen Job/deine Klasse geeignet. Diesen Gegenstand verwenden?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E f\u00FCr deine Haupthand kann momentan nicht angelegt werden, aber \u003Cdenoun(Item,3,IntegerParameter(2),1,1,1)\u003E w\u00E4re ebenfalls f\u00FCr deinen Job/deine Klasse geeignet. Diesen Gegenstand verwenden?"
   },
   {
     "RowId": 4390,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 4408,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%"
   },
   {
     "RowId": 4409,
@@ -1561,7 +1561,7 @@
   },
   {
     "RowId": 4446,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E,\u003CSec\u003Elnum2\u003C/Sec\u003E %"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E %"
   },
   {
     "RowId": 4447,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 4454,
-    "Text": "Einsetzen ist nicht m\u00F6glich. Erforderlich: Handwerker der Stufe \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Einsetzen ist nicht m\u00F6glich. Erforderlich: Handwerker der Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 4455,
@@ -1641,7 +1641,7 @@
   },
   {
     "RowId": 4467,
-    "Text": "\u003Ckilo(lnum1,.)\u003E\uE049"
+    "Text": "\u003Ckilo(IntegerParameter(1),.)\u003E\uE049"
   },
   {
     "RowId": 4468,
@@ -1685,7 +1685,7 @@
   },
   {
     "RowId": 4478,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,lnum2,1,1,1)\u003E\u003C/Head\u003E \u00D7 \u003Ckilo(lnum1,.)\u003E"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(2),1,1,1)\u003E\u003C/Head\u003E \u00D7 \u003Ckilo(IntegerParameter(1),.)\u003E"
   },
   {
     "RowId": 4479,
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 4483,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E in \u003Cdenoun(Item,1,lnum2,1,4,1)\u003E umwandeln?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E in \u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E umwandeln?"
   },
   {
     "RowId": 4484,
@@ -1757,7 +1757,7 @@
   },
   {
     "RowId": 4496,
-    "Text": "Kosten: \u003Ckilo(lnum1,.)\u003E\uE049"
+    "Text": "Kosten: \u003Ckilo(IntegerParameter(1),.)\u003E\uE049"
   },
   {
     "RowId": 4497,
@@ -1949,7 +1949,7 @@
   },
   {
     "RowId": 4544,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CSec\u003Et_year\u003C/Sec\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CSec\u003Et_year\u003C/Sec\u003E"
   },
   {
     "RowId": 4545,

@@ -25,7 +25,7 @@
   },
   {
     "RowId": 10451,
-    "Text": "Ganze Gruppe kampfunf\u00E4hig: \u003CNum\u003Elnum1\u003C/Num\u003E Mal"
+    "Text": "Ganze Gruppe kampfunf\u00E4hig: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Mal"
   },
   {
     "RowId": 10452,
@@ -45,7 +45,7 @@
   },
   {
     "RowId": 10456,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E begutachten lassen?\n\u203B Der Gegenstand wird bei der Begutachtung verbraucht."
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E begutachten lassen?\n\u203B Der Gegenstand wird bei der Begutachtung verbraucht."
   },
   {
     "RowId": 10457,
@@ -97,7 +97,7 @@
   },
   {
     "RowId": 10469,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E\u003CIf([lnum2\u003E0])\u003E / \u003Csheet(ClassJob,lnum2,0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E / \u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10470,
@@ -105,11 +105,11 @@
   },
   {
     "RowId": 10471,
-    "Text": "Die aktuellen Ranglisten k\u00F6nnen auf dem Lodestone eingesehen werden.\n\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Die aktuellen Ranglisten k\u00F6nnen auf dem Lodestone eingesehen werden.\n\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10472,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 10473,
@@ -205,7 +205,7 @@
   },
   {
     "RowId": 10509,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 10510,
@@ -221,7 +221,7 @@
   },
   {
     "RowId": 10513,
-    "Text": "Stufe \u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum2\u003Elnum1])\u003E - \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E (h\u00F6here Stufen werden angepasst)\u003CIf([lnum3\u003E0])\u003E\u003Cbr\u003E\u00D8 Gegen\u003C-\u003Estands\u003C-\u003Estufe: min. \uE033 \u003Cnum(lnum3)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E\u003Cbr\u003EGegen\u003C-\u003Estands\u003C-\u003Estufen-Anpassung: \uE0BD \u003Cnum(lnum4)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(GreaterThan(IntegerParameter(2),IntegerParameter(1)))\u003E - \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E (h\u00F6here Stufen werden angepasst)\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\u00D8 Gegenstandsstufe: min. \uE033 \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\nGegenstandsstufen-Anpassung: \uE0BD \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10514,
@@ -257,7 +257,7 @@
   },
   {
     "RowId": 10522,
-    "Text": "Den Einsatz \u201E\u003Csheet(GcArmyExpedition,lnum1,8)\u003E\u201C beginnen?\n\nDas Kommando kehrt voraussichtlich am \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr (\u003CIf([lnum3==0])\u003Esofort\u003CElse/\u003Ein \u003Cnum(lnum3)\u003E Stunde\u003Cif([lnum3==1],,n)\u003E\u003C/If\u003E) zur\u00FCck.\u003CIf([lnum4\u003E0])\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u003Cbr\u003E\u203B Mit Beginn dieses Einsatzes gehen verf\u00FCgbare Kameradenboni verloren.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u003Cbr\u003E\u203B Wenn ein Einsatz erfolgreich abgeschlossen wird\\, kann bis zur w\u00F6chentlichen Zur\u00FCcksetzung der Einsatzbefehle kein anderer unternommen werden.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Den Einsatz \u201E\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201C beginnen?\n\nDas Kommando kehrt voraussichtlich am \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr (\u003CIf(Equal(IntegerParameter(3),0))\u003Esofort\u003CElse/\u003Ein \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Stunde\u003CIf(Equal(IntegerParameter(3),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003C/If\u003E) zur\u00FCck.\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\n\u203B Mit Beginn dieses Einsatzes gehen verf\u00FCgbare Kameradenboni verloren.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\n\u203B Wenn ein Einsatz erfolgreich abgeschlossen wird, kann bis zur w\u00F6chentlichen Zur\u00FCcksetzung der Einsatzbefehle kein anderer unternommen werden.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10523,
@@ -277,11 +277,11 @@
   },
   {
     "RowId": 10528,
-    "Text": "Schlagkraft: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E"
+    "Text": "Schlagkraft: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
   },
   {
     "RowId": 10529,
-    "Text": "Kommandorang: \u003CIf([lnum1==0])\u003E0\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E"
+    "Text": "Kommandorang: \u003CIf(Equal(IntegerParameter(1),0))\u003E0\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 10530,
@@ -289,7 +289,7 @@
   },
   {
     "RowId": 10531,
-    "Text": "\uE031 \u003CIf([lnum1==0])\u003E\u003Cif([lnum2\u003E0],Noch \u003Cnum(lnum2)\u003E Minute\u003Cif([lnum2==1],,n)\u003E,weniger als 1 Minute)\u003E\u003CElse/\u003ENoch \u003Cnum(lnum1)\u003E Stunde\u003Cif([lnum1==1],,n)\u003E\u003Cif([lnum2\u003E0], \u003Cnum(lnum2)\u003E Minute\u003Cif([lnum2==1],,n)\u003E,)\u003E\u003C/If\u003E \u003CSetTime\u003Elnum3\u003C/SetTime\u003E(\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr)"
+    "Text": "\uE031 \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ENoch \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003CElse/\u003Eweniger als 1 Minute\u003C/If\u003E\u003CElse/\u003ENoch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Stunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E(\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr)"
   },
   {
     "RowId": 10532,
@@ -297,11 +297,11 @@
   },
   {
     "RowId": 10533,
-    "Text": "Einsatz: \u003Csheet(GcArmyExpedition,lnum1,8)\u003E"
+    "Text": "Einsatz: \u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E"
   },
   {
     "RowId": 10534,
-    "Text": "Ausbildung: \u003Csheet(GcArmyTraining,lnum1,4)\u003E"
+    "Text": "Ausbildung: \u003Csheet(GcArmyTraining,IntegerParameter(1),4)\u003E"
   },
   {
     "RowId": 10535,
@@ -317,11 +317,11 @@
   },
   {
     "RowId": 10538,
-    "Text": "\u003CIf([lnum1==0])\u003EKeine\u003CElse/\u003EIn der Wachstube zur Pr\u00FCfung bereit\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EKeine\u003CElse/\u003EIn der Wachstube zur Pr\u00FCfung bereit\u003C/If\u003E"
   },
   {
     "RowId": 10539,
-    "Text": "\u003CIf([lnum1==0])\u003EEinsatz beendet\u003CElse/\u003EAusbildung beendet\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EEinsatz beendet\u003CElse/\u003EAusbildung beendet\u003C/If\u003E"
   },
   {
     "RowId": 10540,
@@ -333,7 +333,7 @@
   },
   {
     "RowId": 10542,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10543,
@@ -357,7 +357,7 @@
   },
   {
     "RowId": 10548,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
   },
   {
     "RowId": 10549,
@@ -365,7 +365,7 @@
   },
   {
     "RowId": 10550,
-    "Text": "\u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10551,
@@ -377,11 +377,11 @@
   },
   {
     "RowId": 10553,
-    "Text": "\u003CIf([lnum1==0])\u003EIm Einsatz\u003CElse/\u003EEinsatz beendet\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EIm Einsatz\u003CElse/\u003EEinsatz beendet\u003C/If\u003E"
   },
   {
     "RowId": 10554,
-    "Text": "\u003CIf([lnum1==0])\u003EIn Ausbildung\u003CElse/\u003EAusbildung beendet\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EIn Ausbildung\u003CElse/\u003EAusbildung beendet\u003C/If\u003E"
   },
   {
     "RowId": 10555,
@@ -413,11 +413,11 @@
   },
   {
     "RowId": 10562,
-    "Text": "Strategie \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C erworben!"
+    "Text": "Strategie \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C erworben!"
   },
   {
     "RowId": 10563,
-    "Text": "Strategie \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C hat Rang \u003CNum\u003Elnum2\u003C/Num\u003E erreicht!"
+    "Text": "Strategie \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C hat Rang \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E erreicht!"
   },
   {
     "RowId": 10564,
@@ -477,19 +477,19 @@
   },
   {
     "RowId": 10578,
-    "Text": "Routine: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Routine: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10579,
-    "Text": "Die \u003CString\u003Elstr1\u003C/String\u003E beginnen?"
+    "Text": "Die \u003CString\u003EStringParameter(1)\u003C/String\u003E beginnen?"
   },
   {
     "RowId": 10580,
-    "Text": "Die \u003CString\u003Elstr1\u003C/String\u003E beginnen?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BDa die f\u00FCr den aktuellen Rang maximale Schlagkraft bereits erreicht ist, wird ein anderer Teil der Schlagkraft entsprechend reduziert.\u003C/span\u003E"
+    "Text": "Die \u003CString\u003EStringParameter(1)\u003C/String\u003E beginnen?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BDa die f\u00FCr den aktuellen Rang maximale Schlagkraft bereits erreicht ist, wird ein anderer Teil der Schlagkraft entsprechend reduziert.\u003C/span\u003E"
   },
   {
     "RowId": 10581,
-    "Text": "Noch m\u00F6glich:\n\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Noch m\u00F6glich:\n\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10582,
@@ -537,7 +537,7 @@
   },
   {
     "RowId": 10593,
-    "Text": "\uE031  \u003CIf([lnum1==0])\u003E\u003Cif([lnum2\u003E0],In \u003Cnum(lnum2)\u003E Minute\u003Cif([lnum2==1],,n)\u003E,In weniger als 1 Minute)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E Stunde\u003Cif([lnum1==1],,n)\u003E \u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E Minute\u003Cif([lnum2==1],,n)\u003E,)\u003E\u003C/If\u003E \u003CSetTime\u003Elnum3\u003C/SetTime\u003E(\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr)"
+    "Text": "\uE031  \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EIn \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003CElse/\u003EIn weniger als 1 Minute\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Stunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003En\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E(\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E. um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr)"
   },
   {
     "RowId": 10594,
@@ -561,7 +561,7 @@
   },
   {
     "RowId": 10599,
-    "Text": "Routine: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Routine: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10600,
@@ -569,11 +569,11 @@
   },
   {
     "RowId": 10603,
-    "Text": "Schlagkraft: \u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E"
+    "Text": "Schlagkraft: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
   },
   {
     "RowId": 10604,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10609,
@@ -689,7 +689,7 @@
   },
   {
     "RowId": 10659,
-    "Text": "\u003Csheet(Race,lnum1,0)\u003E \u003CIf([lnum2==0])\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
+    "Text": "\u003Csheet(Race,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
   },
   {
     "RowId": 10660,
@@ -709,11 +709,11 @@
   },
   {
     "RowId": 10664,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
   },
   {
     "RowId": 10665,
-    "Text": "Rekrutiert: \u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "Rekrutiert: \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
   },
   {
     "RowId": 10666,
@@ -741,7 +741,7 @@
   },
   {
     "RowId": 10672,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E St. \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E St. \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10673,
@@ -749,15 +749,15 @@
   },
   {
     "RowId": 10674,
-    "Text": "M\u00F6chtest du \u003CString\u003Elstr1\u003C/String\u003E wirklich ablehnen?"
+    "Text": "M\u00F6chtest du \u003CString\u003EStringParameter(1)\u003C/String\u003E wirklich ablehnen?"
   },
   {
     "RowId": 10675,
-    "Text": "M\u00F6chtest du wirklich \u003CString\u003Elstr1\u003C/String\u003E entlassen und \u003CString\u003Elstr2\u003C/String\u003E rekrutieren?"
+    "Text": "M\u00F6chtest du wirklich \u003CString\u003EStringParameter(1)\u003C/String\u003E entlassen und \u003CString\u003EStringParameter(2)\u003C/String\u003E rekrutieren?"
   },
   {
     "RowId": 10676,
-    "Text": "M\u00F6chtest du wirklich \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E verbrauchen und \u003Csheet(ClassJob,lnum4,0)\u003E als neue Klasse festlegen?\u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EDa die Ausr\u00FCstung gewechselt wird\\, gehen auch alle Projektionen verloren.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "M\u00F6chtest du wirklich \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E verbrauchen und \u003Csheet(ClassJob,IntegerParameter(4),0)\u003E als neue Klasse festlegen?\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EDa die Ausr\u00FCstung gewechselt wird, gehen auch alle Projektionen verloren.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10677,
@@ -809,15 +809,15 @@
   },
   {
     "RowId": 10689,
-    "Text": "\u002B\u003CNum\u003Elnum1\u003C/Num\u003E %"
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E %"
   },
   {
     "RowId": 10690,
-    "Text": "-\u003CNum\u003Elnum1\u003C/Num\u003E %"
+    "Text": "-\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E %"
   },
   {
     "RowId": 10691,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10692,
@@ -853,7 +853,7 @@
   },
   {
     "RowId": 10705,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (eingeladen)"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (eingeladen)"
   },
   {
     "RowId": 10706,
@@ -881,11 +881,11 @@
   },
   {
     "RowId": 10712,
-    "Text": "Die Gruppe von \u003CString\u003Elstr1\u003C/String\u003E zu einem Schaukampf auffordern?"
+    "Text": "Die Gruppe von \u003CString\u003EStringParameter(1)\u003C/String\u003E zu einem Schaukampf auffordern?"
   },
   {
     "RowId": 10713,
-    "Text": "Die Gruppe von \u003CString\u003Elstr1\u003C/String\u003E als Zuschauer bei einem Schaukampf einladen?"
+    "Text": "Die Gruppe von \u003CString\u003EStringParameter(1)\u003C/String\u003E als Zuschauer bei einem Schaukampf einladen?"
   },
   {
     "RowId": 10714,
@@ -897,15 +897,15 @@
   },
   {
     "RowId": 10716,
-    "Text": "Du wurdest von \u003CString\u003Elstr1\u003C/String\u003E zu einem Schaukampf aufgefordert. M\u00F6chtest du annehmen?"
+    "Text": "Du wurdest von \u003CString\u003EStringParameter(1)\u003C/String\u003E zu einem Schaukampf aufgefordert. M\u00F6chtest du annehmen?"
   },
   {
     "RowId": 10717,
-    "Text": "Du wurdest von \u003CString\u003Elstr1\u003C/String\u003E als Zuschauer zu einem Schaukampf eingeladen. M\u00F6chtest du annehmen?"
+    "Text": "Du wurdest von \u003CString\u003EStringParameter(1)\u003C/String\u003E als Zuschauer zu einem Schaukampf eingeladen. M\u00F6chtest du annehmen?"
   },
   {
     "RowId": 10718,
-    "Text": "M\u00F6chtest du die Einladung zu einem Schaukampf von \u003CString\u003Elstr1\u003C/String\u003E wirklich ablehnen?"
+    "Text": "M\u00F6chtest du die Einladung zu einem Schaukampf von \u003CString\u003EStringParameter(1)\u003C/String\u003E wirklich ablehnen?"
   },
   {
     "RowId": 10719,
@@ -921,7 +921,7 @@
   },
   {
     "RowId": 10722,
-    "Text": "Antworten: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Antworten: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10723,
@@ -969,7 +969,7 @@
   },
   {
     "RowId": 10734,
-    "Text": "Noch \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003EKampf\u003CElse/\u003EK\u00E4mpfe\u003C/If\u003E m\u00F6glich."
+    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EKampf\u003CElse/\u003EK\u00E4mpfe\u003C/If\u003E m\u00F6glich."
   },
   {
     "RowId": 10735,
@@ -1001,7 +1001,7 @@
   },
   {
     "RowId": 10742,
-    "Text": "Kamera: Nr. \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Kamera: Nr. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10743,
@@ -1037,11 +1037,11 @@
   },
   {
     "RowId": 10804,
-    "Text": "Zeitlimit: \u003CNum\u003Elnum1\u003C/Num\u003E bis \u003CNum\u003Elnum2\u003C/Num\u003E Minuten"
+    "Text": "Zeitlimit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E bis \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minuten"
   },
   {
     "RowId": 10805,
-    "Text": "Teilnehmer: 1 bis \u003CNum\u003Elnum1\u003C/Num\u003E Spieler"
+    "Text": "Teilnehmer: 1 bis \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Spieler"
   },
   {
     "RowId": 10806,
@@ -1061,7 +1061,7 @@
   },
   {
     "RowId": 10810,
-    "Text": "\u003Csheet(ContentFinderCondition,lnum1,43)\u003E"
+    "Text": "\u003Csheet(ContentFinderCondition,IntegerParameter(1),43)\u003E"
   },
   {
     "RowId": 10811,
@@ -1081,27 +1081,27 @@
   },
   {
     "RowId": 10815,
-    "Text": "\u003CIcon\u003E82\u003C/Icon\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E \u003CIcon\u003E83\u003C/Icon\u003E: \u003CNum\u003Elnum3\u003C/Num\u003E/\u003CNum\u003Elnum4\u003C/Num\u003E \u003CIcon\u003E84\u003C/Icon\u003E: \u003CNum\u003Elnum5\u003C/Num\u003E/\u003CNum\u003Elnum6\u003C/Num\u003E"
+    "Text": "\u003CIcon\u003E82\u003C/Icon\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIcon\u003E83\u003C/Icon\u003E: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003CIcon\u003E84\u003C/Icon\u003E: \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(6)\u003C/Num\u003E"
   },
   {
     "RowId": 10816,
-    "Text": "\u003CIcon\u003E87\u003C/Icon\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CIcon\u003E87\u003C/Icon\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 10817,
-    "Text": "Verstrichen: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E (Durchschnitt: \u003CString\u003Elstr3\u003C/String\u003E)"
+    "Text": "Verstrichen: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E (Durchschnitt: \u003CString\u003EStringParameter(3)\u003C/String\u003E)"
   },
   {
     "RowId": 10818,
-    "Text": "Position auf der Warteliste: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Position auf der Warteliste: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10819,
-    "Text": "Verstrichene Zeit: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "Verstrichene Zeit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 10820,
-    "Text": "\u003CHead\u003E\u003Csheet(ContentType,lnum1,0)\u003E\u003C/Head\u003E (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
+    "Text": "\u003CHead\u003E\u003Csheet(ContentType,IntegerParameter(1),0)\u003E\u003C/Head\u003E (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
   },
   {
     "RowId": 10821,
@@ -1129,7 +1129,7 @@
   },
   {
     "RowId": 10827,
-    "Text": "K\u00E4mpfer: 2 Gruppen mit je \u003CNum\u003Elnum1\u003C/Num\u003E Spielern\nZuschauer: 1 bis 8 Spieler (wenn gestattet)"
+    "Text": "K\u00E4mpfer: 2 Gruppen mit je \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Spielern\nZuschauer: 1 bis 8 Spieler (wenn gestattet)"
   },
   {
     "RowId": 10828,
@@ -1153,7 +1153,7 @@
   },
   {
     "RowId": 10834,
-    "Text": "\u003CIf([lnum1==0])\u003E \u003CElse/\u003EVerringerte Schwierigkeit\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E \u003CElse/\u003EVerringerte Schwierigkeit\u003C/If\u003E"
   },
   {
     "RowId": 10835,
@@ -1205,7 +1205,7 @@
   },
   {
     "RowId": 10847,
-    "Text": "G.-Stufe \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "G.-Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10848,
@@ -1229,7 +1229,7 @@
   },
   {
     "RowId": 10853,
-    "Text": "Verbleibende Zeit: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Verbleibende Zeit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10854,
@@ -1253,15 +1253,15 @@
   },
   {
     "RowId": 10859,
-    "Text": "Die Herausforderung von \u003CString\u003Elstr1\u003C/String\u003E wirklich ablehnen?"
+    "Text": "Die Herausforderung von \u003CString\u003EStringParameter(1)\u003C/String\u003E wirklich ablehnen?"
   },
   {
     "RowId": 10860,
-    "Text": "\uE033 \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE033 \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10861,
-    "Text": "St. \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "St. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 10862,
@@ -1281,7 +1281,7 @@
   },
   {
     "RowId": 10871,
-    "Text": "Melden, dass \u003CString\u003Elstr1\u003C/String\u003E Werbung f\u00FCr RMT (Handel mit Gegenst\u00E4nden und Charakteren f\u00FCr echtes Geld) macht?\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003EWer andere ohne guten Grund meldet, kann mit einer Strafe belegt werden.\u003C/span\u003E"
+    "Text": "Melden, dass \u003CString\u003EStringParameter(1)\u003C/String\u003E Werbung f\u00FCr RMT (Handel mit Gegenst\u00E4nden und Charakteren f\u00FCr echtes Geld) macht?\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003EWer andere ohne guten Grund meldet, kann mit einer Strafe belegt werden.\u003C/span\u003E"
   },
   {
     "RowId": 10872,
@@ -1389,11 +1389,11 @@
   },
   {
     "RowId": 10912,
-    "Text": "\uE06B \u003CString\u003Elstr1\u003C/String\u003E \u003CIf(lnum3)\u003E\u003Cicon(88)\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\uE06B \u003CString\u003EStringParameter(1)\u003C/String\u003E \u003CIf(IntegerParameter(3))\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 10913,
-    "Text": "\uE06B ?? \u003CIf(lnum2)\u003E\u003Cicon(88)\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\uE06B ?? \u003CIf(IntegerParameter(2))\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10914,
@@ -1425,11 +1425,11 @@
   },
   {
     "RowId": 10921,
-    "Text": "Aufenthaltsort: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Aufenthaltsort: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 10922,
-    "Text": "Zeitlimit: \u003CNum\u003Elnum1\u003C/Num\u003E Min"
+    "Text": "Zeitlimit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Min"
   },
   {
     "RowId": 10923,
@@ -1525,7 +1525,7 @@
   },
   {
     "RowId": 10946,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E auf die Schwarze Liste setzen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die Namen von Spielern auf einer anderen Welt werden nicht auf dem Spiel-Server, sondern auf deinem Ger\u00E4t gespeichert.\u003C/span\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E auf die Schwarze Liste setzen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die Namen von Spielern auf einer anderen Welt werden nicht auf dem Spiel-Server, sondern auf deinem Ger\u00E4t gespeichert.\u003C/span\u003E"
   },
   {
     "RowId": 10947,
@@ -1545,7 +1545,7 @@
   },
   {
     "RowId": 10951,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 10952,
@@ -1569,7 +1569,7 @@
   },
   {
     "RowId": 10957,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E wird auf die Schwarze Liste gesetzt. Ab jetzt werden sowohl dieser Charakter selbst als auch alle seine Nachrichten nicht mehr angezeigt. Auch werden alle anderen Charaktere dieses Spielers der Schwarzen Liste hinzugef\u00FCgt. Name und Stammwelt des Charakters zur Zeit der Registrierung auf der Schwarzen Liste werden lokal gespeichert.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EWillst du nur die Nachrichten eines Charakters stummschalten, kannst du ihn \u00FCber das Untermen\u00FC auch auf die Stumme Liste setzen. Befindet sich der Charakter bereits auf der Stummen Liste, wird er \u00FCber diesen Befehl auch auf die Schwarze Liste gesetzt.\u003C/span\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E wird auf die Schwarze Liste gesetzt. Ab jetzt werden sowohl dieser Charakter selbst als auch alle seine Nachrichten nicht mehr angezeigt. Auch werden alle anderen Charaktere dieses Spielers der Schwarzen Liste hinzugef\u00FCgt. Name und Stammwelt des Charakters zur Zeit der Registrierung auf der Schwarzen Liste werden lokal gespeichert.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EWillst du nur die Nachrichten eines Charakters stummschalten, kannst du ihn \u00FCber das Untermen\u00FC auch auf die Stumme Liste setzen. Befindet sich der Charakter bereits auf der Stummen Liste, wird er \u00FCber diesen Befehl auch auf die Schwarze Liste gesetzt.\u003C/span\u003E"
   },
   {
     "RowId": 10958,
@@ -1681,11 +1681,11 @@
   },
   {
     "RowId": 10985,
-    "Text": "3. Bedingung: Rollenauftrag f\u00FCr Verteidiger der Stufe \u003CNum\u003Elnum1\u003C/Num\u003E abgeschlossen."
+    "Text": "3. Bedingung: Rollenauftrag f\u00FCr Verteidiger der Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E abgeschlossen."
   },
   {
     "RowId": 10986,
-    "Text": "4. Bedingung: Rollenauftrag f\u00FCr Heiler der Stufe \u003CNum\u003Elnum1\u003C/Num\u003E abgeschlossen."
+    "Text": "4. Bedingung: Rollenauftrag f\u00FCr Heiler der Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E abgeschlossen."
   },
   {
     "RowId": 10987,
@@ -1713,7 +1713,7 @@
   },
   {
     "RowId": 10993,
-    "Text": "Senkt die Stufe aller Ausr\u00FCstungsgegenst\u00E4nde beider Duellanten auf die Stufe des Gegenstands mit der niedrigsten Gegenstandsstufe, in diesem Fall \uE0BD \u003CNum\u003Elnum1\u003C/Num\u003E."
+    "Text": "Senkt die Stufe aller Ausr\u00FCstungsgegenst\u00E4nde beider Duellanten auf die Stufe des Gegenstands mit der niedrigsten Gegenstandsstufe, in diesem Fall \uE0BD \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E."
   },
   {
     "RowId": 10994,
@@ -1761,11 +1761,11 @@
   },
   {
     "RowId": 11005,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,lnum1,2,1,1)\u003E\u003C/Head\u003E in Besitz: \u003Ckilo(lnum3,.)\u003E\n\nM\u00F6chtest du \u003Cdenoun(Item,1,lnum1,1,4,1)\u003E \u00F6ffnen lassen?\n\n(Noch \u003CNum\u003Elnum2\u003C/Num\u003E Mal m\u00F6glich.)"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,1,1)\u003E\u003C/Head\u003E in Besitz: \u003Ckilo(IntegerParameter(3),.)\u003E\n\nM\u00F6chtest du \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E \u00F6ffnen lassen?\n\n(Noch \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Mal m\u00F6glich.)"
   },
   {
     "RowId": 11006,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,lnum1,2,1,1)\u003E\u003C/Head\u003E in Besitz: \u003Ckilo(lnum3,.)\u003E\n\nM\u00F6chtest du \u003Cdenoun(Item,1,lnum1,lnum4,4,1)\u003E \u00F6ffnen lassen?\n\n(Noch \u003CNum\u003Elnum2\u003C/Num\u003E Mal m\u00F6glich.)"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,1,1)\u003E\u003C/Head\u003E in Besitz: \u003Ckilo(IntegerParameter(3),.)\u003E\n\nM\u00F6chtest du \u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(4),4,1)\u003E \u00F6ffnen lassen?\n\n(Noch \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Mal m\u00F6glich.)"
   },
   {
     "RowId": 11007,
@@ -1829,7 +1829,7 @@
   },
   {
     "RowId": 11025,
-    "Text": "Bericht: \u003Csheet(Action,lnum1,0)\u003E"
+    "Text": "Bericht: \u003Csheet(Action,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 11030,
@@ -1849,11 +1849,11 @@
   },
   {
     "RowId": 11034,
-    "Text": "\u003Csheet(Action,lnum1,0)\u003E \u003CIf([lnum2==0])\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Ein \u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],Sekunde,Sekunden)\u003E bereit!\u003Csound(1,99)\u003E\u003C/If\u003E"
+    "Text": "\u003Csheet(Action,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Ein \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E bereit!\u003Csound(1,99)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 11035,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,lnum2,0)\u003E\u003C/Head\u003E Limitrausch \u003CIf([lnum1==100])\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Ebei \u003Cnum(lnum1)\u003E %!\u003Csound(1,99)\u003E\u003C/If\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\u003C/Head\u003E Limitrausch \u003CIf(Equal(IntegerParameter(1),100))\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Ebei \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E %!\u003Csound(1,99)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 11036,
@@ -1921,27 +1921,27 @@
   },
   {
     "RowId": 11052,
-    "Text": "MP auf \u003CNum\u003Elnum1\u003C/Num\u003E %!\u003Csound(1,98)\u003E"
+    "Text": "MP auf \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E %!\u003Csound(1,98)\u003E"
   },
   {
     "RowId": 11053,
-    "Text": "TP auf \u003CNum\u003Elnum1\u003C/Num\u003E %!\u003Csound(1,98)\u003E"
+    "Text": "TP auf \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E %!\u003Csound(1,98)\u003E"
   },
   {
     "RowId": 11054,
-    "Text": "Ich greife \u003CIf([lnum1==37])\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf([lnum1==6])\u003EDruiden\u003CElse/\u003E\u003Cif([lnum1==7],Thaumaturgen,\u003Cif([lnum1==14],Alchemisten,\u003Cif([lnum1==23],Barden,\u003Cif([lnum1==28],Gelehrten,\u003Cif([lnum1==29],Schurken,\u003Cif([lnum1==31],Maschinisten,\u003Cif([lnum1==33],Astrologen,\u003Cif([lnum1==40],Weisen,\u003Csheet(ClassJob,lnum1,0)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E an!\u003Csound(1,101)\u003E"
+    "Text": "Ich greife \u003CIf(Equal(IntegerParameter(1),37))\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),6))\u003EDruiden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),7))\u003EThaumaturgen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003EAlchemisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),23))\u003EBarden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),28))\u003EGelehrten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),29))\u003ESchurken\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),31))\u003EMaschinisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003EAstrologen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),40))\u003EWeisen\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E an!\u003Csound(1,101)\u003E"
   },
   {
     "RowId": 11055,
-    "Text": "Ich halte \u003CIf([lnum1==37])\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf([lnum1==6])\u003EDruiden\u003CElse/\u003E\u003Cif([lnum1==7],Thaumaturgen,\u003Cif([lnum1==14],Alchemisten,\u003Cif([lnum1==23],Barden,\u003Cif([lnum1==28],Gelehrten,\u003Cif([lnum1==29],Schurken,\u003Cif([lnum1==31],Maschinisten,\u003Cif([lnum1==33],Astrologen,\u003Cif([lnum1==40],Weisen,\u003Csheet(ClassJob,lnum1,0)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E auf!\u003Csound(1,102)\u003E"
+    "Text": "Ich halte \u003CIf(Equal(IntegerParameter(1),37))\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),6))\u003EDruiden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),7))\u003EThaumaturgen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003EAlchemisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),23))\u003EBarden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),28))\u003EGelehrten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),29))\u003ESchurken\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),31))\u003EMaschinisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003EAstrologen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),40))\u003EWeisen\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E auf!\u003Csound(1,102)\u003E"
   },
   {
     "RowId": 11056,
-    "Text": "\u003Csheet(Action,lnum1,0)\u003E \u003CIf([lnum2==0])\u003Eist bereit!\u003Csound(1,98)\u003E\u003CElse/\u003Eist in \u003Cnum(lnum2)\u003E Sekunden bereit!\u003Csound(1,99)\u003E\u003C/If\u003E"
+    "Text": "\u003Csheet(Action,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003Eist bereit!\u003Csound(1,98)\u003E\u003CElse/\u003Eist in \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Sekunden bereit!\u003Csound(1,99)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 11057,
-    "Text": "Konzentriert euch auf \u003CIf([lnum1==37])\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf([lnum1==6])\u003EDruiden\u003CElse/\u003E\u003Cif([lnum1==7],Thaumaturgen,\u003Cif([lnum1==14],Alchemisten,\u003Cif([lnum1==23],Barden,\u003Cif([lnum1==28],Gelehrten,\u003Cif([lnum1==29],Schurken,\u003Cif([lnum1==31],Maschinisten,\u003Cif([lnum1==33],Astrologen,\u003Cif([lnum1==40],Weisen,\u003Csheet(ClassJob,lnum1,0)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E!"
+    "Text": "Konzentriert euch auf \u003CIf(Equal(IntegerParameter(1),37))\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),6))\u003EDruiden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),7))\u003EThaumaturgen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003EAlchemisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),23))\u003EBarden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),28))\u003EGelehrten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),29))\u003ESchurken\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),31))\u003EMaschinisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003EAstrologen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),40))\u003EWeisen\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E!"
   },
   {
     "RowId": 11058,

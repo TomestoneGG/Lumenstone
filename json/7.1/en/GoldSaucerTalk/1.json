@@ -466,7 +466,7 @@
   },
   {
     "RowId": 15,
-    "Unknown0": "\u5FC5\u8981MGP\uFF1A\u003Ckilo(lnum1,\\,)\u003EMGP",
+    "Unknown0": "\u5FC5\u8981MGP\uFF1A\u003Ckilo(IntegerParameter(1),,)\u003EMGP",
     "Unknown1": "\u3084\u308B",
     "Unknown2": "\u3084\u308B(\u7121\u6599\u5238)",
     "Unknown3": "\u30AD\u30E3\u30F3\u30BB\u30EB",
@@ -497,7 +497,7 @@
   },
   {
     "RowId": 16,
-    "Unknown0": "\u003CNum\u003Elnum1\u003C/Num\u003E MGP is required to purchase a ticket.\nYou currently possess \u003Ckilo(lnum2,\\,)\u003E. Proceed?",
+    "Unknown0": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E MGP is required to purchase a ticket.\nYou currently possess \u003Ckilo(IntegerParameter(2),,)\u003E. Proceed?",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",
@@ -590,7 +590,7 @@
   },
   {
     "RowId": 19,
-    "Unknown0": "Come one, come all\u2500drawing number \u003CNum\u003Elnum3\u003C/Num\u003E of the Mini Cactpot is here! Care to try your luck with a ticket, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E?",
+    "Unknown0": "Come one, come all\u2500drawing number \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E of the Mini Cactpot is here! Care to try your luck with a ticket, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -900,7 +900,7 @@
   },
   {
     "RowId": 29,
-    "Unknown0": "Awe you alwight \u003CIf(gnum4)\u003EMiss\u003CElse/\u003EMister\u003C/If\u003E adventuwer? Now I know why Ma towd me to stay away fwom that statue... B-B-But now who\u0027ll s-s-save B-B-Bootkins!?",
+    "Unknown0": "Awe you alwight \u003CIf(PlayerParameter(4))\u003EMiss\u003CElse/\u003EMister\u003C/If\u003E adventuwer? Now I know why Ma towd me to stay away fwom that statue... B-B-But now who\u0027ll s-s-save B-B-Bootkins!?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -993,7 +993,7 @@
   },
   {
     "RowId": 32,
-    "Unknown0": "Oh, you do not seem to have enough space, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I will be happy to hand over your prize after you make some room for it in your luggage.",
+    "Unknown0": "Oh, you do not seem to have enough space, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I will be happy to hand over your prize after you make some room for it in your luggage.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1272,7 +1272,7 @@
   },
   {
     "RowId": 41,
-    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf([gnum83!=0])\u003E\u003Cswitch(gnum83,\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E\u003C/If\u003E (Earth time).",
+    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1303,7 +1303,7 @@
   },
   {
     "RowId": 42,
-    "Unknown0": "After the drawing, you will have until the following \u003CIf([gnum83!=0])\u003E\u003Cswitch(gnum83,\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E\u003C/If\u003E (Earth time) to claim your prize.",
+    "Unknown0": "After the drawing, you will have until the following \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time) to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1334,7 +1334,7 @@
   },
   {
     "RowId": 43,
-    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf([gnum83!=0])\u003E\u003Cswitch(gnum83,\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E\u003C/If\u003E (Earth time).",
+    "Unknown0": "The winning number for the Jumbo Cactpot will be drawn every \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1365,7 +1365,7 @@
   },
   {
     "RowId": 44,
-    "Unknown0": "\u003Ckilo(lnum1,\\,)\u003E MGP is required to purchase a Mini Cactpot ticket.",
+    "Unknown0": "\u003Ckilo(IntegerParameter(1),,)\u003E MGP is required to purchase a Mini Cactpot ticket.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 45,
-    "Unknown0": "Eligibility to purchase Mini Cactpot tickets resets daily at \u003CSetResetTime\u003E0\u003C/SetResetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).",
+    "Unknown0": "Eligibility to purchase Mini Cactpot tickets resets daily at \u003CSetResetTime\u003E0\u003C/SetResetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1427,7 +1427,7 @@
   },
   {
     "RowId": 46,
-    "Unknown0": "\u003CIf([lnum1==5])\u003EI am sorry\\, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003Cif([lnum1\u003C4],\u003Cswitch(lnum1,1st,2nd,3rd)\u003E,\u003Cnum(lnum1)\u003Eth)\u003E prize\u003C/If\u003E, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500along with the extra points for the Early Bird Bonus.",
+    "Unknown0": "\u003CIf(Equal(IntegerParameter(1),5))\u003EI am sorry, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eth\u003C/If\u003E prize\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500along with the extra points for the Early Bird Bonus.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1458,7 +1458,7 @@
   },
   {
     "RowId": 47,
-    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, your extravagant \u003Cennoun(Item,3,lnum1,1,1)\u003E, \u003CItalic\u003E1\u003C/Italic\u003Eand\u003CItalic\u003E0\u003C/Italic\u003E the bonus MGP for being an early bird!",
+    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, your extravagant \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E, \u003CItalic\u003E1\u003C/Italic\u003Eand\u003CItalic\u003E0\u003C/Italic\u003E the bonus MGP for being an early bird!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -1489,7 +1489,7 @@
   },
   {
     "RowId": 48,
-    "Unknown0": "I am terribly sorry, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but you can no longer claim prizes for that ticket. Allow me to take it off your hands, and offer my condolences for your missed fortune.",
+    "Unknown0": "I am terribly sorry, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but you can no longer claim prizes for that ticket. Allow me to take it off your hands, and offer my condolences for your missed fortune.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2264,7 +2264,7 @@
   },
   {
     "RowId": 73,
-    "Unknown0": "That was quite the display of stealth! I reckon even a snake could learn a thing or three from a \u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E of your cunning.",
+    "Unknown0": "That was quite the display of stealth! I reckon even a snake could learn a thing or three from a \u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E of your cunning.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -2574,7 +2574,7 @@
   },
   {
     "RowId": 83,
-    "Unknown0": "In addition to your other winnings, you will receive the Early Bird Bonus if you claim your prize within \u003CIf(lnum3)\u003E\u003Cif([lnum3\u003C=10],\u003Cswitch(lnum3,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum3)\u003E)\u003E\u003CElse/\u003E\u003Cnum(lnum3)\u003E\u003C/If\u003E \u003CIf([lnum3==1])\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E (Earth time) of the Jumbo Cactpot drawing.",
+    "Unknown0": "In addition to your other winnings, you will receive the Early Bird Bonus if you claim your prize within \u003CIf(IntegerParameter(3))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(3),10))\u003E\u003Cswitch(IntegerParameter(3),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E (Earth time) of the Jumbo Cactpot drawing.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3039,7 +3039,7 @@
   },
   {
     "RowId": 98,
-    "Unknown0": "\u003Csound(1,2)\u003EWe have a winner! Please accept my congratulations\u2500and your prize of \u003Ckilo(lnum1,\\,)\u003E MGP! And remember: there\u0027s always more to be won on the morrow!",
+    "Unknown0": "\u003Csound(1,2)\u003EWe have a winner! Please accept my congratulations\u2500and your prize of \u003Ckilo(IntegerParameter(1),,)\u003E MGP! And remember: there\u0027s always more to be won on the morrow!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3070,7 +3070,7 @@
   },
   {
     "RowId": 99,
-    "Unknown0": "Your patronage is most appreciated, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.\nI hope to see you again tomorrow!",
+    "Unknown0": "Your patronage is most appreciated, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.\nI hope to see you again tomorrow!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3132,7 +3132,7 @@
   },
   {
     "RowId": 101,
-    "Unknown0": "Welcome to drawing number \u003CNum\u003Elnum1\u003C/Num\u003E of the Jumbo Cactpot! Can I interest you in a ticket to fame and fortune?",
+    "Unknown0": "Welcome to drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the Jumbo Cactpot! Can I interest you in a ticket to fame and fortune?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3163,7 +3163,7 @@
   },
   {
     "RowId": 102,
-    "Unknown0": "I\u0027m afraid you\u0027re early for the drawing, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Can I help you with anything while you wait?",
+    "Unknown0": "I\u0027m afraid you\u0027re early for the drawing, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Can I help you with anything while you wait?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3194,7 +3194,7 @@
   },
   {
     "RowId": 103,
-    "Unknown0": "Why, we\u0027ve already drawn the winning number for your ticket, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Why not claim your prize from the cashier over there?",
+    "Unknown0": "Why, we\u0027ve already drawn the winning number for your ticket, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Why not claim your prize from the cashier over there?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3225,7 +3225,7 @@
   },
   {
     "RowId": 104,
-    "Unknown0": "It pains me to say that you can\u0027t claim prizes with that ticket anymore, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. \\\\\u003Csigh\u003E What a pity. Ah well, better luck next time, and remember\u2500you can\u0027t wait forever to claim your prize.",
+    "Unknown0": "It pains me to say that you can\u0027t claim prizes with that ticket anymore, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. \\\\\u003Csigh\u003E What a pity. Ah well, better luck next time, and remember\u2500you can\u0027t wait forever to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3349,7 +3349,7 @@
   },
   {
     "RowId": 108,
-    "Unknown0": "The Jumbo Cactpot is Eorzea\u0027s premier lottery, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. You play by purchasing a ticket, starting from the low, low price of \u003Ckilo(lnum1,\\,)\u003E MGP, and then picking your numbers\u2500four digits between zero and nine.",
+    "Unknown0": "The Jumbo Cactpot is Eorzea\u0027s premier lottery, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. You play by purchasing a ticket, starting from the low, low price of \u003Ckilo(IntegerParameter(1),,)\u003E MGP, and then picking your numbers\u2500four digits between zero and nine.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3442,7 +3442,7 @@
   },
   {
     "RowId": 111,
-    "Unknown0": "Where is your Jumbo Cactpot ticket, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? If you have yet to purchase one, please see the broker\u2500she can help you with everything.",
+    "Unknown0": "Where is your Jumbo Cactpot ticket, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? If you have yet to purchase one, please see the broker\u2500she can help you with everything.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3473,7 +3473,7 @@
   },
   {
     "RowId": 112,
-    "Unknown0": "I do beg your pardon, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but this week\u0027s winning number has yet to be announced.",
+    "Unknown0": "I do beg your pardon, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but this week\u0027s winning number has yet to be announced.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3535,7 +3535,7 @@
   },
   {
     "RowId": 114,
-    "Unknown0": "Greetings, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, and welcome to Chocobo Square! Are you here to enter a race?",
+    "Unknown0": "Greetings, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, and welcome to Chocobo Square! Are you here to enter a race?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -3938,7 +3938,7 @@
   },
   {
     "RowId": 127,
-    "Unknown0": "Your entry into the \u003Csheet(GoldSaucerTextData,lnum1,0)\u003E \u003Csheet(GoldSaucerTextData,lnum2,0)\u003E race has been accepted! Pray remain in Chocobo Square until you are summoned to the course.",
+    "Unknown0": "Your entry into the \u003Csheet(GoldSaucerTextData,IntegerParameter(1),0)\u003E \u003Csheet(GoldSaucerTextData,IntegerParameter(2),0)\u003E race has been accepted! Pray remain in Chocobo Square until you are summoned to the course.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4062,7 +4062,7 @@
   },
   {
     "RowId": 131,
-    "Unknown0": "You can purchase up to three Jumbo Cactpot tickets per week. The winning number is drawn every \u003CIf([gnum83!=0])\u003E\u003Cswitch(gnum83,\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E\u003C/If\u003E (Earth time).",
+    "Unknown0": "You can purchase up to three Jumbo Cactpot tickets per week. The winning number is drawn every \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4093,7 +4093,7 @@
   },
   {
     "RowId": 132,
-    "Unknown0": "After the drawing, you will have until the following \u003CIf([gnum83!=0])\u003E\u003Cswitch(gnum83,\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003Cif(t_hour,\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E,12)\u003E \u003Cif([t_hour\u003E=12],p.m.,a.m.)\u003E\u003C/If\u003E (Earth time) to claim your prize.",
+    "Unknown0": "After the drawing, you will have until the following \u003CIf(NotEqual(PlayerParameter(83),0))\u003E\u003Cswitch(PlayerParameter(83),\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(4,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,\u003Csetresettime(18,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E,,,\u003Csetresettime(11,0)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E)\u003E\u003CElse/\u003E\u003Csetresettime(21,6)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E\u003C/If\u003E (Earth time) to claim your prize.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4186,7 +4186,7 @@
   },
   {
     "RowId": 135,
-    "Unknown0": "\u003CIf([lnum1==5])\u003EI am sorry\\, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003Cif([lnum1\u003C4],\u003Cswitch(lnum1,1st,2nd,3rd)\u003E,\u003Cnum(lnum1)\u003Eth)\u003E prize\u003C/If\u003E, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.",
+    "Unknown0": "\u003CIf(Equal(IntegerParameter(1),5))\u003EI am sorry, but please accept this consolation prize\u003CElse/\u003ECongratulations! You have won \u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eth\u003C/If\u003E prize\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4217,7 +4217,7 @@
   },
   {
     "RowId": 136,
-    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, and your extravagant \u003Cennoun(Item,3,lnum1,1,1)\u003E!",
+    "Unknown0": "My gods\u2500you have hit the Cactpot! Allow me the honor of presenting you with first prize, and your extravagant \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -4868,7 +4868,7 @@
   },
   {
     "RowId": 157,
-    "Unknown0": "The entry fee for this race is \u003Ckilo(lnum1,\\,)\u003E MGP.\nYou currently possess \u003Ckilo(lnum2,\\,)\u003E. Proceed?",
+    "Unknown0": "The entry fee for this race is \u003Ckilo(IntegerParameter(1),,)\u003E MGP.\nYou currently possess \u003Ckilo(IntegerParameter(2),,)\u003E. Proceed?",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",
@@ -5333,7 +5333,7 @@
   },
   {
     "RowId": 172,
-    "Unknown0": "Begging your pardon, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I am in dire need of assistance. An imp that is \u003CItalic\u003E1\u003C/Italic\u003Eexceedingly\u003CItalic\u003E0\u003C/Italic\u003E skilled with glamours has taken my form and set about engaging in conduct most unbecoming. This cannot stand.",
+    "Unknown0": "Begging your pardon, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I am in dire need of assistance. An imp that is \u003CItalic\u003E1\u003C/Italic\u003Eexceedingly\u003CItalic\u003E0\u003C/Italic\u003E skilled with glamours has taken my form and set about engaging in conduct most unbecoming. This cannot stand.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5519,7 +5519,7 @@
   },
   {
     "RowId": 178,
-    "Unknown0": "E-Excuse me, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? I know what little sense this makes, but...I need help finding myself.",
+    "Unknown0": "E-Excuse me, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? I know what little sense this makes, but...I need help finding myself.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5767,7 +5767,7 @@
   },
   {
     "RowId": 186,
-    "Unknown0": "Curse that foul voidsent! \\\\\u003Csigh\u003E Pardon me, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I was chasing an imp a moment ago, when it transformed into me, and vanished amongst the masses.",
+    "Unknown0": "Curse that foul voidsent! \\\\\u003Csigh\u003E Pardon me, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I was chasing an imp a moment ago, when it transformed into me, and vanished amongst the masses.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -5860,7 +5860,7 @@
   },
   {
     "RowId": 189,
-    "Unknown0": "He\u0027s the spitting image of me, but this brightash should be enough to dispel his glamour. Time is of the essence, \u003CIf(gnum4)\u003Emy dear lady\u003CElse/\u003Emy good sir\u003C/If\u003E. The realm is full to bursting with my good looks alone. I daresay two of me is simply too much.",
+    "Unknown0": "He\u0027s the spitting image of me, but this brightash should be enough to dispel his glamour. Time is of the essence, \u003CIf(PlayerParameter(4))\u003Emy dear lady\u003CElse/\u003Emy good sir\u003C/If\u003E. The realm is full to bursting with my good looks alone. I daresay two of me is simply too much.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -6015,7 +6015,7 @@
   },
   {
     "RowId": 194,
-    "Unknown0": "Excuse me, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? Have you seen me before? I mean, have you seen someone who looks \u003CItalic\u003E1\u003C/Italic\u003Ejust like me\u003CItalic\u003E0\u003C/Italic\u003E? There\u0027s an imp in here somewhere, and it\u0027s wearing \u003CItalic\u003E1\u003C/Italic\u003Emy\u003CItalic\u003E0\u003C/Italic\u003E face and \u003CItalic\u003E1\u003C/Italic\u003Emy\u003CItalic\u003E0\u003C/Italic\u003E garb!",
+    "Unknown0": "Excuse me, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? Have you seen me before? I mean, have you seen someone who looks \u003CItalic\u003E1\u003C/Italic\u003Ejust like me\u003CItalic\u003E0\u003C/Italic\u003E? There\u0027s an imp in here somewhere, and it\u0027s wearing \u003CItalic\u003E1\u003C/Italic\u003Emy\u003CItalic\u003E0\u003C/Italic\u003E face and \u003CItalic\u003E1\u003C/Italic\u003Emy\u003CItalic\u003E0\u003C/Italic\u003E garb!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7007,7 +7007,7 @@
   },
   {
     "RowId": 226,
-    "Unknown0": "Try that again, ye soddin\u0027 \u003CIf(gnum4)\u003Ehellcat\u003CElse/\u003Ewhoreson\u003C/If\u003E and I\u0027ll rip yer eyes from their sockets and shove \u0027em so far up yer arse ye\u0027ll see the dirk I\u0027s stuck in yer gut.",
+    "Unknown0": "Try that again, ye soddin\u0027 \u003CIf(PlayerParameter(4))\u003Ehellcat\u003CElse/\u003Ewhoreson\u003C/If\u003E and I\u0027ll rip yer eyes from their sockets and shove \u0027em so far up yer arse ye\u0027ll see the dirk I\u0027s stuck in yer gut.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7348,7 +7348,7 @@
   },
   {
     "RowId": 237,
-    "Unknown0": "What the\u2500 Oh, I see! This is for good luck, isn\u0027t it? Thank you, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! May I have another?",
+    "Unknown0": "What the\u2500 Oh, I see! This is for good luck, isn\u0027t it? Thank you, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! May I have another?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -7441,7 +7441,7 @@
   },
   {
     "RowId": 240,
-    "Unknown0": "Whoa there, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. What\u0027s this? If it\u0027s games ye be playin\u0027, best look elsewhere for a partner.",
+    "Unknown0": "Whoa there, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. What\u0027s this? If it\u0027s games ye be playin\u0027, best look elsewhere for a partner.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -8743,7 +8743,7 @@
   },
   {
     "RowId": 282,
-    "Unknown0": "Victory does not always go to the swift, oh no! Oftentimes, it goes to the jockey who makes judicious use of the items \u003CIf(gnum4)\u003Eshe\u003CElse/\u003Ehe\u003C/If\u003E acquires during the race.",
+    "Unknown0": "Victory does not always go to the swift, oh no! Oftentimes, it goes to the jockey who makes judicious use of the items \u003CIf(PlayerParameter(4))\u003Eshe\u003CElse/\u003Ehe\u003C/If\u003E acquires during the race.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9673,7 +9673,7 @@
   },
   {
     "RowId": 312,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9704,7 +9704,7 @@
   },
   {
     "RowId": 313,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9735,7 +9735,7 @@
   },
   {
     "RowId": 314,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9766,7 +9766,7 @@
   },
   {
     "RowId": 315,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -9983,7 +9983,7 @@
   },
   {
     "RowId": 322,
-    "Unknown0": "Good \u003CIf(gnum4)\u003Elady\u003CElse/\u003Esir\u003C/If\u003E, might I bother you with a humble request? You see, I am a self-professed scholar of the void, come to this most unlikely of places in search of a creature from beyond this plane. A long story short, I found my specimen, but not before he had stolen my very face and escaped into the clamor. Now I seek a kind soul to uncover the imp so that he may be captured and carried back to my laboratorium.",
+    "Unknown0": "Good \u003CIf(PlayerParameter(4))\u003Elady\u003CElse/\u003Esir\u003C/If\u003E, might I bother you with a humble request? You see, I am a self-professed scholar of the void, come to this most unlikely of places in search of a creature from beyond this plane. A long story short, I found my specimen, but not before he had stolen my very face and escaped into the clamor. Now I seek a kind soul to uncover the imp so that he may be captured and carried back to my laboratorium.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -10541,7 +10541,7 @@
   },
   {
     "RowId": 340,
-    "Unknown0": "Couldn\u0027t find the swivin\u0027 sneak, could ye? Well, I\u0027m not one to fault a \u003CIf(gnum4)\u003Elass\u003CElse/\u003Eman\u003C/If\u003E for tryin\u0027.",
+    "Unknown0": "Couldn\u0027t find the swivin\u0027 sneak, could ye? Well, I\u0027m not one to fault a \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Eman\u003C/If\u003E for tryin\u0027.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11688,7 +11688,7 @@
   },
   {
     "RowId": 377,
-    "Unknown0": "Huzzah! I hope you gave that imp a piece of your mind, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500and a good thrashing as well!",
+    "Unknown0": "Huzzah! I hope you gave that imp a piece of your mind, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E\u2500and a good thrashing as well!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -11781,7 +11781,7 @@
   },
   {
     "RowId": 380,
-    "Unknown0": "Masterfully done, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! To see through such powerful glamours, you must have incredible powers of observation!",
+    "Unknown0": "Masterfully done, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! To see through such powerful glamours, you must have incredible powers of observation!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12277,7 +12277,7 @@
   },
   {
     "RowId": 396,
-    "Unknown0": "As you will observe, races are divided into different classes. Which classes you can enter are determined by your chocobo\u0027s current rating\u2500which is \u003CNum\u003Elnum1\u003C/Num\u003E, in case you were unaware.",
+    "Unknown0": "As you will observe, races are divided into different classes. Which classes you can enter are determined by your chocobo\u0027s current rating\u2500which is \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E, in case you were unaware.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12649,7 +12649,7 @@
   },
   {
     "RowId": 408,
-    "Unknown0": "\u003Csound(1,2)\u003ECongratulations!\nHere is your prize of \u003Ckilo(lnum1,\\,)\u003E MGP. Would you like to purchase another ticket?",
+    "Unknown0": "\u003Csound(1,2)\u003ECongratulations!\nHere is your prize of \u003Ckilo(IntegerParameter(1),,)\u003E MGP. Would you like to purchase another ticket?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -12990,7 +12990,7 @@
   },
   {
     "RowId": 419,
-    "Unknown0": "The \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament\n\nMatch Period (Earth Time):\n\u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheet(MinionRules,lnum4,1)\u003E\nTournament Rule: \u003Csheet(MinionRules,lnum4,0)\u003E\n\n",
+    "Unknown0": "The \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament\n\nMatch Period (Earth Time):\n\u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheet(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheet(MinionRules,IntegerParameter(4),0)\u003E\n\n",
     "Unknown1": "OK",
     "Unknown2": "",
     "Unknown3": "",
@@ -13021,7 +13021,7 @@
   },
   {
     "RowId": 420,
-    "Unknown0": "No tournaments are currently being held.\n\nThe next tournament is scheduled as follows.\nMatch Period (Earth Time):\n\u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n\u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheet(MinionRules,lnum4,1)\u003E\nTournament Rule: \u003Csheet(MinionRules,lnum4,0)\u003E\n\n",
+    "Unknown0": "No tournaments are currently being held.\n\nThe next tournament is scheduled as follows.\nMatch Period (Earth Time):\n\u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) until\n\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E)\nEntry Conditions: \u003Csheet(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheet(MinionRules,IntegerParameter(4),0)\u003E\n\n",
     "Unknown1": "OK",
     "Unknown2": "",
     "Unknown3": "",
@@ -13052,7 +13052,7 @@
   },
   {
     "RowId": 421,
-    "Unknown0": "Greetings, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! I am here for all your Lord of Verminion tournament needs! What may I do for you?",
+    "Unknown0": "Greetings, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! I am here for all your Lord of Verminion tournament needs! What may I do for you?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13145,7 +13145,7 @@
   },
   {
     "RowId": 424,
-    "Unknown0": "The rules and conditions for the \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheet(MinionRules,lnum4,1)\u003E\nTournament Rule: \u003Csheet(MinionRules,lnum4,0)\u003E",
+    "Unknown0": "The rules and conditions for the \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheet(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheet(MinionRules,IntegerParameter(4),0)\u003E",
     "Unknown1": "Return",
     "Unknown2": "",
     "Unknown3": "",
@@ -13207,7 +13207,7 @@
   },
   {
     "RowId": 426,
-    "Unknown0": "Greetings, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! The \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament is currently underway!",
+    "Unknown0": "Greetings, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! The \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament is currently underway!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13300,7 +13300,7 @@
   },
   {
     "RowId": 429,
-    "Unknown0": "The rules and conditions for the \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheet(MinionRules,lnum4,1)\u003E\nTournament Rule: \u003Csheet(MinionRules,lnum4,0)\u003E",
+    "Unknown0": "The rules and conditions for the \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament are as follows:\nEntry Conditions: \u003Csheet(MinionRules,IntegerParameter(4),1)\u003E\nTournament Rule: \u003Csheet(MinionRules,IntegerParameter(4),0)\u003E",
     "Unknown1": "Return",
     "Unknown2": "",
     "Unknown3": "",
@@ -13455,7 +13455,7 @@
   },
   {
     "RowId": 434,
-    "Unknown0": "There we are, \u003CString\u003Egstr1\u003C/String\u003E! You are now officially registered for the \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament. Best of luck!",
+    "Unknown0": "There we are, \u003CString\u003EObjectParameter(1)\u003C/String\u003E! You are now officially registered for the \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament. Best of luck!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13517,7 +13517,7 @@
   },
   {
     "RowId": 436,
-    "Unknown0": "My apologies, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register your entry at this time.",
+    "Unknown0": "My apologies, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register your entry at this time.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13548,7 +13548,7 @@
   },
   {
     "RowId": 437,
-    "Unknown0": "According to my records, you must fulfill the following condition to enter the current tournament. Ahem. \u201C\u003Csheet(MinionRules,lnum2,1)\u003E.\u201D\nI\u0027m afraid you don\u0027t meet the prerequisite...",
+    "Unknown0": "According to my records, you must fulfill the following condition to enter the current tournament. Ahem. \u201C\u003Csheet(MinionRules,IntegerParameter(2),1)\u003E.\u201D\nI\u0027m afraid you don\u0027t meet the prerequisite...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13579,7 +13579,7 @@
   },
   {
     "RowId": 438,
-    "Unknown0": "My apologies, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register you for tournaments until you\u0027ve completed stage two of the Verminion Challenge...",
+    "Unknown0": "My apologies, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I cannot register you for tournaments until you\u0027ve completed stage two of the Verminion Challenge...",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13641,7 +13641,7 @@
   },
   {
     "RowId": 440,
-    "Unknown0": "The \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Lord of Verminion Tournament has come to a close! Let\u0027s have a look at the final rankings, shall we?",
+    "Unknown0": "The \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Lord of Verminion Tournament has come to a close! Let\u0027s have a look at the final rankings, shall we?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13672,7 +13672,7 @@
   },
   {
     "RowId": 441,
-    "Unknown0": "Congratulations, \u003CString\u003Egstr1\u003C/String\u003E! You\u0027ve finished \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E on the board! Along with an added bonus of \u003Ckilo(lnum2,\\,)\u003E points, your total winnings come to \u003Ckilo(lnum3,\\,)\u003EMGP!",
+    "Unknown0": "Congratulations, \u003CString\u003EObjectParameter(1)\u003C/String\u003E! You\u0027ve finished \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E on the board! Along with an added bonus of \u003Ckilo(IntegerParameter(2),,)\u003E points, your total winnings come to \u003Ckilo(IntegerParameter(3),,)\u003EMGP!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13703,7 +13703,7 @@
   },
   {
     "RowId": 442,
-    "Unknown0": "...Ah, I\u0027m afraid you didn\u0027t quite earn a winning rank this time around. You are, however, eligible to receive a participation gift of \u003Ckilo(lnum3,\\,)\u003E MGP.",
+    "Unknown0": "...Ah, I\u0027m afraid you didn\u0027t quite earn a winning rank this time around. You are, however, eligible to receive a participation gift of \u003Ckilo(IntegerParameter(3),,)\u003E MGP.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13734,7 +13734,7 @@
   },
   {
     "RowId": 443,
-    "Unknown0": "Unfortunately, you didn\u0027t qualify for any prizes. But that just gives you a goal to aim for, right, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E?",
+    "Unknown0": "Unfortunately, you didn\u0027t qualify for any prizes. But that just gives you a goal to aim for, right, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -13796,7 +13796,7 @@
   },
   {
     "RowId": 445,
-    "Unknown0": "Thank you for entering, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, and I hope to see you return for our next Lord of Verminion tournament!",
+    "Unknown0": "Thank you for entering, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, and I hope to see you return for our next Lord of Verminion tournament!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14075,7 +14075,7 @@
   },
   {
     "RowId": 454,
-    "Unknown0": "Matches for the next scheduled tournament will be held from \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) to \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E).",
+    "Unknown0": "Matches for the next scheduled tournament will be held from \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E) to \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E).",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14323,7 +14323,7 @@
   },
   {
     "RowId": 462,
-    "Unknown0": "The current tournament will run until \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E). Tournament matches can only be played until fifteen minutes before the end of the tournament period.",
+    "Unknown0": "The current tournament will run until \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E - \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E). Tournament matches can only be played until fifteen minutes before the end of the tournament period.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14540,7 +14540,7 @@
   },
   {
     "RowId": 469,
-    "Unknown0": "Ah, another challenger! Just so there are no surprises, let me read out the current tournament rule. Ahem!\n\u201C\u003Csheet(MinionRules,lnum2,0)\u003E.\u201D \nShall I sign you up, then?",
+    "Unknown0": "Ah, another challenger! Just so there are no surprises, let me read out the current tournament rule. Ahem!\n\u201C\u003Csheet(MinionRules,IntegerParameter(2),0)\u003E.\u201D \nShall I sign you up, then?",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14571,7 +14571,7 @@
   },
   {
     "RowId": 470,
-    "Unknown0": "I\u0027m terribly sorry, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but we are no longer accepting entries for this tournament. Not to worry, though! There\u0027ll be another competition starting soon!",
+    "Unknown0": "I\u0027m terribly sorry, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but we are no longer accepting entries for this tournament. Not to worry, though! There\u0027ll be another competition starting soon!",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14726,7 +14726,7 @@
   },
   {
     "RowId": 475,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -14757,7 +14757,7 @@
   },
   {
     "RowId": 476,
-    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(lnum1,\\,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
+    "Unknown0": "\u6311\u6226\u306B\u306F\u003Ckilo(IntegerParameter(1),,)\u003EMGP\u304C\u5FC5\u8981\u3067\u3059",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15129,7 +15129,7 @@
   },
   {
     "RowId": 488,
-    "Unknown0": "You have entered \u003Csheet(GoldSaucerTextData,lnum1,0)\u003E \u003Csheet(ChocoboRaceChallenge,lnum3,0)\u003E. Please wait in Chocobo Square until summoned.",
+    "Unknown0": "You have entered \u003Csheet(GoldSaucerTextData,IntegerParameter(1),0)\u003E \u003Csheet(ChocoboRaceChallenge,IntegerParameter(3),0)\u003E. Please wait in Chocobo Square until summoned.",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15160,7 +15160,7 @@
   },
   {
     "RowId": 489,
-    "Unknown0": "Welcome to drawing number \u003CNum\u003Elnum1\u003C/Num\u003E of the Jumbo Cactpot! You can buy up to \u003CNum\u003Elnum2\u003C/Num\u003E more \u003CIf([lnum2==1])\u003Eticket\u003CElse/\u003Etickets\u003C/If\u003E",
+    "Unknown0": "Welcome to drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the Jumbo Cactpot! You can buy up to \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E more \u003CIf(Equal(IntegerParameter(2),1))\u003Eticket\u003CElse/\u003Etickets\u003C/If\u003E",
     "Unknown1": "",
     "Unknown2": "",
     "Unknown3": "",
@@ -15191,7 +15191,7 @@
   },
   {
     "RowId": 490,
-    "Unknown0": "Buy another ticket?\nIt\u0027ll cost you \u003CNum\u003Elnum3\u003C/Num\u003E MGP.",
+    "Unknown0": "Buy another ticket?\nIt\u0027ll cost you \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E MGP.",
     "Unknown1": "Yes",
     "Unknown2": "No",
     "Unknown3": "",

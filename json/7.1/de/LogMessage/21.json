@@ -388,7 +388,7 @@
   },
   {
     "RowId": 10043,
-    "Text": "Erf\u00FCllt von der Erinnerung an das L\u00E4cheln \u003CIf(gnum4)\u003Eeiner teuren Freundin\u003CElse/\u003Eeines teuren Freundes\u003C/If\u003E, manifestiert sich das Bestreben eines gewissen Ritters in seinem Schild!",
+    "Text": "Erf\u00FCllt von der Erinnerung an das L\u00E4cheln \u003CIf(PlayerParameter(4))\u003Eeiner teuren Freundin\u003CElse/\u003Eeines teuren Freundes\u003C/If\u003E, manifestiert sich das Bestreben eines gewissen Ritters in seinem Schild!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -541,7 +541,7 @@
   },
   {
     "RowId": 10060,
-    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,lnum1,1,1,1)\u003E\u003C/Head\u003E ist abgetrennt!",
+    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist abgetrennt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -568,7 +568,7 @@
   },
   {
     "RowId": 10063,
-    "Text": "\u30CA\u30EB\u30B6\u30EB\u306B\u003CNum\u003Elnum1\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
+    "Text": "\u30CA\u30EB\u30B6\u30EB\u306B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 10099,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E verf\u00FCgt nicht \u00FCber die zur Reparatur erforderliche Dunkelmaterie.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E verf\u00FCgt nicht \u00FCber die zur Reparatur erforderliche Dunkelmaterie.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -901,7 +901,7 @@
   },
   {
     "RowId": 10100,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E hat nicht die richtige Klasse oder Stufe, um \u003CIf([gstr1==gstr2])\u003Edeine Gegenst\u00E4nde\u003CElse/\u003Edie Gegenst\u00E4nde von \u003Cif([gstr1==gstr2],\u003Cswitch(3,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E)\u003E\u003C/If\u003E zu reparieren.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E hat nicht die richtige Klasse oder Stufe, um \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edeine Gegenst\u00E4nde\u003CElse/\u003Edie Gegenst\u00E4nde von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E zu reparieren.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -910,7 +910,7 @@
   },
   {
     "RowId": 10101,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ebesitzst\u003CElse/\u003Ebesitzt\u003C/If\u003E keine Gegenst\u00E4nde, die von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E repariert werden k\u00F6nnen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebesitzst\u003CElse/\u003Ebesitzt\u003C/If\u003E keine Gegenst\u00E4nde, die von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E repariert werden k\u00F6nnen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -919,7 +919,7 @@
   },
   {
     "RowId": 10102,
-    "Text": "Aktion nicht m\u00F6glich. Du hast bereits eine Reparaturanfrage an \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E gestellt.",
+    "Text": "Aktion nicht m\u00F6glich. Du hast bereits eine Reparaturanfrage an \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E gestellt.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -928,7 +928,7 @@
   },
   {
     "RowId": 10103,
-    "Text": "Aktion nicht m\u00F6glich. \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E repariert gerade die Ausr\u00FCstung eines anderen Charakters. ",
+    "Text": "Aktion nicht m\u00F6glich. \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E repariert gerade die Ausr\u00FCstung eines anderen Charakters. ",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -955,7 +955,7 @@
   },
   {
     "RowId": 10106,
-    "Text": "Du hast \u003Ckilo(lnum1,.)\u003E Gil f\u00FCr die Reparatur erhalten.",
+    "Text": "Du hast \u003Ckilo(IntegerParameter(1),.)\u003E Gil f\u00FCr die Reparatur erhalten.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -973,7 +973,7 @@
   },
   {
     "RowId": 10108,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E\u003C/Head\u003E wurde repariert.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E wurde repariert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -982,7 +982,7 @@
   },
   {
     "RowId": 10109,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003EGegenstand wurde\u003CElse/\u003EGegenst\u00E4nde wurden\u003C/If\u003E repariert.",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EGegenstand wurde\u003CElse/\u003EGegenst\u00E4nde wurden\u003C/If\u003E repariert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 10124,
-    "Text": "Du kannst \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,2,lnum1,2,4,1)\u003E\u003C/If\u003E nicht erhalten, da du die Obergrenze erreicht hast.",
+    "Text": "Du kannst \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E nicht erhalten, da du die Obergrenze erreicht hast.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1171,7 +1171,7 @@
   },
   {
     "RowId": 10130,
-    "Text": "\u003CHead\u003E\u003Cnum(lnum2)\u003E\u003C/Head\u003E \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,5,lnum1,lnum2,1,1)\u003E wurde\u003CElse/\u003E\u003Cdenoun(Item,5,lnum1,lnum2,1,1)\u003E wurden\u003C/If\u003E verschifft.",
+    "Text": "\u003CHead\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/Head\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,5,IntegerParameter(1),IntegerParameter(2),1,1)\u003E wurde\u003CElse/\u003E\u003Cdenoun(Item,5,IntegerParameter(1),IntegerParameter(2),1,1)\u003E wurden\u003C/If\u003E verschifft.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 10131,
-    "Text": "Du hast bis zu \u003CNum\u003Elnum1\u003C/Num\u003E St\u00FCck jedes Gegenstands verschifft.",
+    "Text": "Du hast bis zu \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E St\u00FCck jedes Gegenstands verschifft.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 10132,
-    "Text": "Du kannst \u003Cdenoun(Item,2,lnum1,2,4,1)\u003E nicht erhalten, da du die Obergrenze erreicht hast.",
+    "Text": "Du kannst \u003Cdenoun(Item,2,IntegerParameter(1),2,4,1)\u003E nicht erhalten, da du die Obergrenze erreicht hast.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 10147,
-    "Text": "\u003CIf(lnum3)\u003EDu hast den Meilenstein \u201E\u003Cstring(lstr2)\u003E\u201C von \u201E\u003Cstring(lstr1)\u003E\u201C erreicht!\u003CElse/\u003EDu hast \u201E\u003Cstring(lstr1)\u003E\u201C abgeschlossen!\u003C/If\u003E",
+    "Text": "\u003CIf(IntegerParameter(3))\u003EDu hast den Meilenstein \u201E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u201C von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C erreicht!\u003CElse/\u003EDu hast \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C abgeschlossen!\u003C/If\u003E",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1342,7 +1342,7 @@
   },
   {
     "RowId": 10149,
-    "Text": "Du hast \u003Cdenoun(BNpcName,2,lnum1,1,4,1)\u003E freigelassen.",
+    "Text": "Du hast \u003Cdenoun(BNpcName,2,IntegerParameter(1),1,4,1)\u003E freigelassen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1675,7 +1675,7 @@
   },
   {
     "RowId": 10186,
-    "Text": "Der Eintrag \u201E\u003Csheet(VVDNotebookContents,lnum1,2)\u003E\u201C wurde dem Erkundungsbericht der Unterstadt von Sil\u0027dih hinzugef\u00FCgt.",
+    "Text": "Der Eintrag \u201E\u003Csheet(VVDNotebookContents,IntegerParameter(1),2)\u003E\u201C wurde dem Erkundungsbericht der Unterstadt von Sil\u0027dih hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 10210,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E besucht die Insel.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E besucht die Insel.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1918,7 +1918,7 @@
   },
   {
     "RowId": 10213,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E\u003C/Head\u003E wurde als Projektion registriert.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E wurde als Projektion registriert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 10217,
-    "Text": "Du hast nicht gen\u00FCgend \u003Cdenoun(Item,5,lnum1,2,4,1)\u003E.",
+    "Text": "Du hast nicht gen\u00FCgend \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2134,7 +2134,7 @@
   },
   {
     "RowId": 10237,
-    "Text": "\u003Csheet(MJIText,lnum1,0)\u003E wurde gedreht.",
+    "Text": "\u003Csheet(MJIText,IntegerParameter(1),0)\u003E wurde gedreht.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2152,7 +2152,7 @@
   },
   {
     "RowId": 10239,
-    "Text": "\u003Csheet(MJIText,lnum2,0)\u003E wurde fertiggestellt. Bitte pr\u00FCfe \u003Cdenoun(EObj,2,lnum1,1,4,1)\u003E, um den Bau abzuschlie\u00DFen.",
+    "Text": "\u003Csheet(MJIText,IntegerParameter(2),0)\u003E wurde fertiggestellt. Bitte pr\u00FCfe \u003Cdenoun(EObj,2,IntegerParameter(1),1,4,1)\u003E, um den Bau abzuschlie\u00DFen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2449,7 +2449,7 @@
   },
   {
     "RowId": 10272,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E hat sich in einen Brummonauten verwandelt!",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E hat sich in einen Brummonauten verwandelt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2566,7 +2566,7 @@
   },
   {
     "RowId": 10285,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(DeepDungeonDemiclone,1,lnum1,1,4,1)\u003E erhalten!",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,4,1)\u003E erhalten!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2575,7 +2575,7 @@
   },
   {
     "RowId": 10286,
-    "Text": "Ihr habt \u003Cdenoun(DeepDungeonDemiclone,1,lnum1,1,4,1)\u003E erhalten!",
+    "Text": "Ihr habt \u003Cdenoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,4,1)\u003E erhalten!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2584,7 +2584,7 @@
   },
   {
     "RowId": 10287,
-    "Text": "Du kannst \u003Cdenoun(DeepDungeonDemiclone,4,lnum1,2,4,1)\u003E mehr aufnehmen und legst den Demiklon zur\u00FCck in die Truhe.",
+    "Text": "Du kannst \u003Cdenoun(DeepDungeonDemiclone,4,IntegerParameter(1),2,4,1)\u003E mehr aufnehmen und legst den Demiklon zur\u00FCck in die Truhe.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2593,7 +2593,7 @@
   },
   {
     "RowId": 10288,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E generiert \u003Cdenoun(DeepDungeonDemiclone,1,lnum2,1,4,1)\u003E.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E generiert \u003Cdenoun(DeepDungeonDemiclone,1,IntegerParameter(2),1,4,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 10409,
-    "Text": "Rral Soj h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(lnum1,\u003Cif(gnum4,eine musterg\u00FCltige Metallhandwerkerin,einen musterg\u00FCltigen Metallhandwerker)\u003E,\u003Cif(gnum4,Metallarbeiterin,Metallarbeiter)\u003E von Format,\u003Cif(gnum4,Metall-Wunderwerkerin,Metall-Wunderwerker)\u003E,\u003Cif(gnum4,Meisterin,Meister)\u003E des Metalls)\u003E.",
+    "Text": "Rral Soj h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine musterg\u00FCltige Metallhandwerkerin\u003CElse/\u003Eeinen musterg\u00FCltigen Metallhandwerker\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003EMetallarbeiterin\u003CElse/\u003EMetallarbeiter\u003C/If\u003E von Format,\u003CIf(PlayerParameter(4))\u003EMetall-Wunderwerkerin\u003CElse/\u003EMetall-Wunderwerker\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003EMeisterin\u003CElse/\u003EMeister\u003C/If\u003E des Metalls)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Pameka h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(lnum1,\u003Cif(gnum4,eine talentierte Buchbinderin,einen talentierten Buchbinder)\u003E,\u003Cif(gnum4,eine raffinierte Buchbinderin,einen raffinierten Buchbinder)\u003E,\u003Cif(gnum4,eine virtuose Buchbinderin,einen virtuosen Buchbinder)\u003E,\u003Cif(gnum4,eine wahre Buchbinderin,einen wahren Buchbinder)\u003E)\u003E.",
+    "Text": "Pameka h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine talentierte Buchbinderin\u003CElse/\u003Eeinen talentierten Buchbinder\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine raffinierte Buchbinderin\u003CElse/\u003Eeinen raffinierten Buchbinder\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine virtuose Buchbinderin\u003CElse/\u003Eeinen virtuosen Buchbinder\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine wahre Buchbinderin\u003CElse/\u003Eeinen wahren Buchbinder\u003C/If\u003E)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3700,7 +3700,7 @@
   },
   {
     "RowId": 10411,
-    "Text": "Xeerol Ja h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(lnum1,\u003Cif(gnum4,eine fremdl\u00E4ndische Fruchtsaft-Sommeli\u00E8re,einen fremdl\u00E4ndischen Fruchtsaft-Sommelier)\u003E,\u003Cif(gnum4,eine zuverl\u00E4ssige Fruchtsaft-Sommeli\u00E8re,einen zuverl\u00E4ssigen Fruchtsaft-Sommelier)\u003E,\u003Cif(gnum4,eine unersetzliche Fruchtsaft-Sommeli\u00E8re,einen unersetzlichen Fruchtsaft-Sommelier)\u003E,\u003Cif(gnum4,eine schwesterliche Fruchtsaft-Sommeli\u00E8re,einen br\u00FCderlichen Fruchtsaft-Sommelier)\u003E)\u003E.",
+    "Text": "Xeerol Ja h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine fremdl\u00E4ndische Fruchtsaft-Sommeli\u00E8re\u003CElse/\u003Eeinen fremdl\u00E4ndischen Fruchtsaft-Sommelier\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine zuverl\u00E4ssige Fruchtsaft-Sommeli\u00E8re\u003CElse/\u003Eeinen zuverl\u00E4ssigen Fruchtsaft-Sommelier\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine unersetzliche Fruchtsaft-Sommeli\u00E8re\u003CElse/\u003Eeinen unersetzlichen Fruchtsaft-Sommelier\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine schwesterliche Fruchtsaft-Sommeli\u00E8re\u003CElse/\u003Eeinen br\u00FCderlichen Fruchtsaft-Sommelier\u003C/If\u003E)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3709,7 +3709,7 @@
   },
   {
     "RowId": 10412,
-    "Text": "Shunye h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(lnum1,\u003Cif(gnum4,eine erbl\u00FChende Sammlerin,einen erbl\u00FChenden Sammler)\u003E,\u003Cif(gnum4,eine florierende Sammlerin,einen florierenden Sammler)\u003E,\u003Cif(gnum4,eine reife Sammlerin,einen reifen Sammler)\u003E,\u003Cif(gnum4,eine gestandene Sammlerin,einen gestandenen Sammler)\u003E)\u003E.",
+    "Text": "Shunye h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine erbl\u00FChende Sammlerin\u003CElse/\u003Eeinen erbl\u00FChenden Sammler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine florierende Sammlerin\u003CElse/\u003Eeinen florierenden Sammler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine reife Sammlerin\u003CElse/\u003Eeinen reifen Sammler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine gestandene Sammlerin\u003CElse/\u003Eeinen gestandenen Sammler\u003C/If\u003E)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 10413,
-    "Text": "Donuhanu h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(lnum1,\u003Cif(gnum4,eine passable Fischf\u00E4ngerin,einen passablen Fischf\u00E4nger)\u003E,\u003Cif(gnum4,eine verl\u00E4ssliche Fischf\u00E4ngerin,einen verl\u00E4sslichen Fischf\u00E4nger)\u003E,\u003Cif(gnum4,eine gro\u00DFartige Fischf\u00E4ngerin,einen gro\u00DFartigen Fischf\u00E4nger)\u003E,\u003Cif(gnum4,eine un\u003C-\u003Ever\u003C-\u003Egleich\u003C-\u003Eli\u003C-\u003Eche Fischf\u00E4ngerin,einen un\u003C-\u003Ever\u003C-\u003Egleich\u003C-\u003Eli\u003C-\u003Echen Fischf\u00E4nger)\u003E)\u003E.",
+    "Text": "Donuhanu h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine passable Fischf\u00E4ngerin\u003CElse/\u003Eeinen passablen Fischf\u00E4nger\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine verl\u00E4ssliche Fischf\u00E4ngerin\u003CElse/\u003Eeinen verl\u00E4sslichen Fischf\u00E4nger\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine gro\u00DFartige Fischf\u00E4ngerin\u003CElse/\u003Eeinen gro\u00DFartigen Fischf\u00E4nger\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine unvergleichliche Fischf\u00E4ngerin\u003CElse/\u003Eeinen unvergleichlichen Fischf\u00E4nger\u003C/If\u003E)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3727,7 +3727,7 @@
   },
   {
     "RowId": 10414,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Rral Soj erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(gnum4)\u003Ezur meisterhaftesten Metallarbeiterin\u003CElse/\u003Ezum meisterhaftesten Metallarbeiter\u003C/If\u003E von XRral Soj Metallwaren!",
+    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Rral Soj erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur meisterhaftesten Metallarbeiterin\u003CElse/\u003Ezum meisterhaftesten Metallarbeiter\u003C/If\u003E von XRral Soj Metallwaren!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3736,7 +3736,7 @@
   },
   {
     "RowId": 10415,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Pameka erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(gnum4)\u003Ezur einzigartigen Buchbindemeisterin\u003CElse/\u003Ezum einzigartigen Buchbindemeister\u003C/If\u003E der Briefwerkstatt!",
+    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Pameka erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur einzigartigen Buchbindemeisterin\u003CElse/\u003Ezum einzigartigen Buchbindemeister\u003C/If\u003E der Briefwerkstatt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3745,7 +3745,7 @@
   },
   {
     "RowId": 10416,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Xeerol Ja erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(gnum4)\u003Ezur saftkundigen Freundin\u003CElse/\u003Ezum saftkundigen Freund\u003C/If\u003E ihrer Safterei!",
+    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Xeerol Ja erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur saftkundigen Freundin\u003CElse/\u003Ezum saftkundigen Freund\u003C/If\u003E ihrer Safterei!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3754,7 +3754,7 @@
   },
   {
     "RowId": 10417,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Shunye erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(gnum4)\u003Ezur meisterhaften Sammlerin\u003CElse/\u003Ezum meisterhaften Sammler\u003C/If\u003E seiner Apotheke!",
+    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Shunye erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(PlayerParameter(4))\u003Ezur meisterhaften Sammlerin\u003CElse/\u003Ezum meisterhaften Sammler\u003C/If\u003E seiner Apotheke!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3763,7 +3763,7 @@
   },
   {
     "RowId": 10418,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Donuhanu erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(gnum4)\u003Ezur einzigartigen Fischf\u00E4ngerin\u003CElse/\u003Ezum einzigartigen Fischf\u00E4nger\u003C/If\u003E der Fabelhaften Fische!",
+    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Donuhanu erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(PlayerParameter(4))\u003Ezur einzigartigen Fischf\u00E4ngerin\u003CElse/\u003Ezum einzigartigen Fischf\u00E4nger\u003C/If\u003E der Fabelhaften Fische!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 10420,
-    "Text": "Die Schatzkarte kann nicht ge\u00F6ffnet werden, da dein momentanter Job bzw. deine momentane Klasse nicht mindestens Stufe \u003CNum\u003Elnum1\u003C/Num\u003E erreicht hat.",
+    "Text": "Die Schatzkarte kann nicht ge\u00F6ffnet werden, da dein momentanter Job bzw. deine momentane Klasse nicht mindestens Stufe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E erreicht hat.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 10421,
-    "Text": "Du musst eine der folgenden Klassen sein, um diese Karte \u00F6ffnen zu k\u00F6nnen:\n\u003Csheet(ClassJobCategory,lnum1,0)\u003E",
+    "Text": "Du musst eine der folgenden Klassen sein, um diese Karte \u00F6ffnen zu k\u00F6nnen:\n\u003Csheet(ClassJobCategory,IntegerParameter(1),0)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3970,7 +3970,7 @@
   },
   {
     "RowId": 10441,
-    "Text": "Du kannst mit dem Auftrag \u201E\u003Csheet(Quest,lnum1,0)\u003E\u201C nicht fortfahren, da du dich \u00FCber die Inhaltssuche f\u00FCr einen Spielinhalt registriert hast.",
+    "Text": "Du kannst mit dem Auftrag \u201E\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201C nicht fortfahren, da du dich \u00FCber die Inhaltssuche f\u00FCr einen Spielinhalt registriert hast.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3979,7 +3979,7 @@
   },
   {
     "RowId": 10442,
-    "Text": "Du kannst den Auftrag \u201E\u003Csheet(Quest,lnum1,0)\u003E\u201C nicht abschlie\u00DFen, da du dich \u00FCber die Inhaltssuche f\u00FCr einen Spielinhalt registriert hast.",
+    "Text": "Du kannst den Auftrag \u201E\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201C nicht abschlie\u00DFen, da du dich \u00FCber die Inhaltssuche f\u00FCr einen Spielinhalt registriert hast.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4051,7 +4051,7 @@
   },
   {
     "RowId": 10450,
-    "Text": "Die Kreatur ist geschw\u00E4cht! Verwende jetzt \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E!",
+    "Text": "Die Kreatur ist geschw\u00E4cht! Verwende jetzt \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,

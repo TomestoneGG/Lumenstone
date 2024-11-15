@@ -227,7 +227,7 @@
     "Unknown35": true,
     "Talk": [
       "Ah, you must be the adventurer the guild said they would send. I have been ever so eagerly awaiting your arrival. Might you have the delivery on your person?",
-      "Excellent. You are to be commended, good \u003CIf(gnum4)\u003Elady\u003CElse/\u003Esir\u003C/If\u003E. I believe this should be sufficient remuneration for your services.",
+      "Excellent. You are to be commended, good \u003CIf(PlayerParameter(4))\u003Elady\u003CElse/\u003Esir\u003C/If\u003E. I believe this should be sufficient remuneration for your services.",
       "Well, then. Take your time. I do not wish to see you sacrifice quality if it only means I save a few bells. You know where I will be.",
       "0",
       "0",
@@ -273,7 +273,7 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "Your arrival here this \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],night,morn)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],day,night)\u003E\u003C/If\u003E was foretold in the stars. You have something to...deliver, don\u0027t you?",
+      "Your arrival here this \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Enight\u003CElse/\u003Emorn\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eday\u003CElse/\u003Enight\u003C/If\u003E\u003C/If\u003E was foretold in the stars. You have something to...deliver, don\u0027t you?",
       "Ah, yes, your success was never in question. The universe is pleased and grants you your reward.",
       "Shhh. Hush, now. The Spinner has decreed your path. Craft away, my child. Craft away.",
       "But wait... What is this I sense? A desire to craft more?",
@@ -325,7 +325,7 @@
       "Well, may the Builder watch over your endeavors. But remember, Black Rabbit Traders \u003CItalic\u003E1\u003C/Italic\u003Ealso\u003CItalic\u003E0\u003C/Italic\u003E appreciate promptness.",
       "Now, if it is further employment that you seek, I would be willing to make you a similar offer for more of the same item. What say you?",
       "Very well. You know where to find me, should you come to your senses.",
-      "My thanks, adventurer. Good \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,day)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],day,evening)\u003E\u003C/If\u003E."
+      "My thanks, adventurer. Good \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Eday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eday\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E."
     ]
   },
   {
@@ -368,7 +368,7 @@
     "Unknown35": true,
     "Talk": [
       "So it is you that accepted my unit\u0027s request. Very well, then. Let us see what you have brought us.",
-      "Yes, yes... This appears to meet Wood Wailer standards. You have my unit\u0027s thanks, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Let me prepare your reward forthwith.",
+      "Yes, yes... This appears to meet Wood Wailer standards. You have my unit\u0027s thanks, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Let me prepare your reward forthwith.",
       "My men and I require those supplies immediately. Every moment you tarry puts us in danger of being unprepared for an attack.",
       "0",
       "0",
@@ -415,11 +415,11 @@
     "Unknown35": true,
     "Talk": [
       "From the Adventurers\u0027 Guild, are you? Very good, very good.",
-      "Finished, are we? Let me take a look.\nYes... Yes... Very good. Very good, indeed. You have done a fine job today, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. My superiors at the Consortium will be pleased, to say the least.",
+      "Finished, are we? Let me take a look.\nYes... Yes... Very good. Very good, indeed. You have done a fine job today, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. My superiors at the Consortium will be pleased, to say the least.",
       "The Brugaire Consortium is known for the expediency with which it fills its orders. If you refuse to complete the items I have requested, I will simply hire another adventurer to do my bidding. Gods know there are more than enough of you running around this city to choose from.",
       "And, I believe they would be even \u003CItalic\u003E1\u003C/Italic\u003Emore\u003CItalic\u003E0\u003C/Italic\u003E pleased if I were to return to the warehouses with a healthy surplus of the requested goods. You seem competent enough in your chosen trade. Would you consider contributing a few more whacks of the proverbial hammer in service of Brugaire?",
       "I see. Off with you then. I am a busy man, and my clients are waiting.",
-      "You have served the Consortium well. I shall duly note your contributions in my log. Good \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],night,day)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],day,night)\u003E\u003C/If\u003E, then."
+      "You have served the Consortium well. I shall duly note your contributions in my log. Good \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Enight\u003CElse/\u003Eday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eday\u003CElse/\u003Enight\u003C/If\u003E\u003C/If\u003E, then."
     ]
   },
   {
@@ -508,7 +508,7 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "Hmph. You don\u0027t have the look of a crafts\u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E. Then again, I am not paying for looks. Make me what I have requested and all parties shall be satisfied.",
+      "Hmph. You don\u0027t have the look of a crafts\u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E. Then again, I am not paying for looks. Make me what I have requested and all parties shall be satisfied.",
       "I find your work more than satisfactory. Let me thank you. May our paths cross again.",
       "I await your completion of the task I requested.",
       "0",
@@ -555,7 +555,7 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "You the \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E the Adventurers\u0027 Guild sent to do my synthesis? I\u0027m H\u0027rhanbolo, captain of the \u003CItalic\u003E1\u003C/Italic\u003EIce Princess\u003CItalic\u003E0\u003C/Italic\u003E\u2500third fastest trading ship in all of Limsa.",
+      "You the \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E the Adventurers\u0027 Guild sent to do my synthesis? I\u0027m H\u0027rhanbolo, captain of the \u003CItalic\u003E1\u003C/Italic\u003EIce Princess\u003CItalic\u003E0\u003C/Italic\u003E\u2500third fastest trading ship in all of Limsa.",
       "Everything seems to be in order; a fine job, if I do say so myself. You ever think about hanging up your adventurer\u0027s britches, let me know. There might be a place for you on the \u003CItalic\u003E1\u003C/Italic\u003EPrincess\u003CItalic\u003E0\u003C/Italic\u003E.",
       "The Navigator did well to guide you here, but don\u0027t think she\u0027ll save you if my order isn\u0027t ready soon.",
       "But before you trade in your land legs, could a lady ask one last favor? Those items I requested...might you be able to craft a few more? There\u0027s coin to be had, don\u0027t you worry.",
@@ -605,7 +605,7 @@
       "Where in Thal\u0027s bowels have you been? There\u0027s work to be done. Come on, come on, get to it! Commerce and industry wait for no Lalafell! Especially when that Lalafell is Master Gegeruju.",
       "Finally done, are we? Couldn\u0027t remember if you were quenching or cross-stitching, is that it? Hand it over, then! Pleasure doing business and all that!",
       "Are you getting to it, or do I have to get on you!?",
-      "Oh, wait. Where are you going? I wasn\u0027t finished. Would a \u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E of your means be interested in whipping up a few more of those fine items? The master likes to see that he\u0027s always prepared.",
+      "Oh, wait. Where are you going? I wasn\u0027t finished. Would a \u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E of your means be interested in whipping up a few more of those fine items? The master likes to see that he\u0027s always prepared.",
       "No get-up-and-go in your blood? Pity... Then again, the master has \u003CItalic\u003E1\u003C/Italic\u003Eother\u003CItalic\u003E0\u003C/Italic\u003E means of getting what he needs.",
       "Excellent. Master Gegeruju always says, \u201CWhy have one of anything when you can have a dozen?\u201D"
     ]
@@ -649,7 +649,7 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "Good \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,morning)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],afternoon,evening)\u003E\u003C/If\u003E, adventurer. Handing in or picking up? One moment, please.",
+      "Good \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Emorning\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eafternoon\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E, adventurer. Handing in or picking up? One moment, please.",
       "Handing in? Sign here, please. Thank you, and have a nice day. Next!",
       "I cannot sign off on your contract until you complete the order. Next!",
       "If your business is not pressing, might Ashgana Exports persuade you to extend your contract? You will be rightly recompensed.",
@@ -936,7 +936,7 @@
       "The very lives of the men and women of this place ride on whether or not I can provide them with quality materiel in a timely manner. If you are incapable of fulfilling my request, then might I suggest finding someone who can?",
       "The most ill-stricken of the knights may not be fortunate enough to find me before my stock is depleted once more. You see, no matter how much I procure, the demand is always greater than the supply. Now, if there were some way to increase my stock...",
       "Oh, I understand. There is more to life as an adventurer than seeing knights are properly equipped so that they might return to their families alive, rather than in several pieces.",
-      "Thank you for the extra effort, \u003CIf(gnum4)\u003Egood lady\u003CElse/\u003Egood sir\u003C/If\u003E. Knowing that the work we do might save even a single life... It makes this all worthwhile."
+      "Thank you for the extra effort, \u003CIf(PlayerParameter(4))\u003Egood lady\u003CElse/\u003Egood sir\u003C/If\u003E. Knowing that the work we do might save even a single life... It makes this all worthwhile."
     ]
   },
   {
@@ -1119,11 +1119,11 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "Ye here to deliver me fish, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Eladdie\u003C/If\u003E?",
+      "Ye here to deliver me fish, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Eladdie\u003C/If\u003E?",
       "Lessee now... Aye, ye brought everythin\u0027 on the list. Much obliged.",
-      "Ye cannot be bringin\u0027 the fish in dribs and drabs, \u003CIf(gnum4)\u003Egirl\u003CElse/\u003Eson\u003C/If\u003E. Make sure ye match the order afore ye come speak with me again. Half-filled deliveries ain\u0027t worth their weight in shattered shells.",
+      "Ye cannot be bringin\u0027 the fish in dribs and drabs, \u003CIf(PlayerParameter(4))\u003Egirl\u003CElse/\u003Eson\u003C/If\u003E. Make sure ye match the order afore ye come speak with me again. Half-filled deliveries ain\u0027t worth their weight in shattered shells.",
       "Lessee now... Aye, ye brought everythin\u0027 on the list. Much obliged. But I\u0027d bet my weight in seashells that yer lookin\u0027 to pad them pockets with another layer o\u0027 coin now. Tell me I\u0027m wrong.",
-      "Ah, about that bet... I don\u0027t need to tell a cultured \u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E as yerself that was but a figure of speech, now, do I?",
+      "Ah, about that bet... I don\u0027t need to tell a cultured \u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E as yerself that was but a figure of speech, now, do I?",
       "Ye came through! I never doubted ye would, mind ye."
     ]
   },
@@ -1213,7 +1213,7 @@
     "Unknown34": 0,
     "Unknown35": true,
     "Talk": [
-      "Where have you \u003CItalic\u003E1\u003C/Italic\u003Ebeen\u003CItalic\u003E0\u003C/Italic\u003E, my \u003CIf(gnum4)\u003Edear lady\u003CElse/\u003Egood fellow\u003C/If\u003E? Please tell me you have the items I ordered.",
+      "Where have you \u003CItalic\u003E1\u003C/Italic\u003Ebeen\u003CItalic\u003E0\u003C/Italic\u003E, my \u003CIf(PlayerParameter(4))\u003Edear lady\u003CElse/\u003Egood fellow\u003C/If\u003E? Please tell me you have the items I ordered.",
       "Thank the Twelve. The world continues to turn, and your service to Master Gegeruju shall be remembered.",
       "Oh, gods, no! Were you not informed of the urgency!? Dive in the water and use your hands if you must, but make haste! Haste, I say! Master Gegeruju does not tolerate three things in this world: being made to wait, being made to wait, and being made to wait!",
       "I have some good news, and some bad news. The bad news is, in my haste to find an adventurer who could obtain the items Master Gegeruju requested, I failed to remember one of his many mottos\u2500why have one of anything when you can have a dozen? The good news is, there is more coin to be made if you are interested. Say you are interested!",
@@ -1262,7 +1262,7 @@
     "Talk": [
       "First, allow me to thank you for agreeing to this contract. The people of Coerthas can no longer turn away the aid of outsiders if they are to survive this everlasting winter the Calamity has brought.",
       "Your diligence has seen the lives of several families saved, for with this fish, they will not know hunger.",
-      "I am but a lone skyfisher, and the Sea of Clouds can oft prove a harsh mistress. It is why I turn to the Adventurers\u0027 Guild to help me see my contracts with the valley families are met and that they do not starve. If the adventurer sent by the guild cannot complete \u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E end of the agreement, then I may be forced to look elsewhere.",
+      "I am but a lone skyfisher, and the Sea of Clouds can oft prove a harsh mistress. It is why I turn to the Adventurers\u0027 Guild to help me see my contracts with the valley families are met and that they do not starve. If the adventurer sent by the guild cannot complete \u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E end of the agreement, then I may be forced to look elsewhere.",
       "Your diligence has seen the lives of several families saved, for they will not know hunger this evening. Tomorrow, however, is another day... Unless, that is, I can somehow procure more skyfish.",
       "That is alright. With the number of dragon attacks increasing by the day, there is no guarantee these families will even live to see tomorrow.",
       "I thank you, and Coerthas thanks you...though it may not readily seem like it."
@@ -1310,7 +1310,7 @@
       "The cold of this godsforsaken place has not discouraged you from fulfilling my order, has it?",
       "Say what you will about the weather, the frigid air up here does wonders for preserving the freshness of dead flesh. I could leave this order of yours in a barrel outside and the fish would still taste as if they were caught yesterday.",
       "I care not how long it takes for you to fulfill my order. Just know that I have many others in my employ, and every delivery \u003CItalic\u003E1\u003C/Italic\u003Ethey\u003CItalic\u003E0\u003C/Italic\u003E make is another sack of coin in \u003CItalic\u003E1\u003C/Italic\u003Etheir\u003CItalic\u003E0\u003C/Italic\u003E hands when it could have been in yours.",
-      "Now that I have seen true you are a \u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E for your word, might I suggest we increase the contract? The guild need not know. I am saved the hassle, and you can have their exorbitant finder\u0027s fee.",
+      "Now that I have seen true you are a \u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E for your word, might I suggest we increase the contract? The guild need not know. I am saved the hassle, and you can have their exorbitant finder\u0027s fee.",
       "Color me unsurprised. If I were in your shoes, I wouldn\u0027t want a reason to stay a moment longer in this damnable cold.",
       "And here you are, the finder\u0027s fee included, just as promised."
     ]
@@ -1496,9 +1496,9 @@
     "Unknown35": true,
     "Talk": [
       "Everything you need to know about the request is indicated on the slip of parchment provided with the leve plate, including quantity and quality. When you have completed your work, you may deliver it to me, and I shall see it makes it into the hands of the client.",
-      "You have outdone yourself, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. The client will be most pleased.",
-      "I understand that myriad adventures hither and thither across the realm can keep a \u003CIf(gnum4)\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E from \u003CItalic\u003E1\u003C/Italic\u003Elesser\u003CItalic\u003E0\u003C/Italic\u003E duties such as these, but I ask that you remember many of your clients\u0027 livelihoods depend on the timely completion of their requests.",
-      "You\u0027ve outdone yourself, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! In fact, I believe it is reasonable to venture that this delivery will please the client greatly\u2500which brings me to my next proposal. In such cases, I have been instructed to offer the opportunity to create more...for an additional compensation, of course. Would such a task be of interest to you?",
+      "You have outdone yourself, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. The client will be most pleased.",
+      "I understand that myriad adventures hither and thither across the realm can keep a \u003CIf(PlayerParameter(4))\u003Ewoman\u003CElse/\u003Eman\u003C/If\u003E from \u003CItalic\u003E1\u003C/Italic\u003Elesser\u003CItalic\u003E0\u003C/Italic\u003E duties such as these, but I ask that you remember many of your clients\u0027 livelihoods depend on the timely completion of their requests.",
+      "You\u0027ve outdone yourself, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! In fact, I believe it is reasonable to venture that this delivery will please the client greatly\u2500which brings me to my next proposal. In such cases, I have been instructed to offer the opportunity to create more...for an additional compensation, of course. Would such a task be of interest to you?",
       "Of course. There are others who would gladly accept the petition.",
       "On behalf of the client, I thank you. Compensation for the additional work has been added to your payment."
     ]

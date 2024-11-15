@@ -1461,27 +1461,27 @@
   },
   {
     "RowId": 2865,
-    "Description": "Du setzt einen Gesch\u00FCtzturm an die anvisierte Stelle, woraufhin er magische Fl\u00E4chenattacken auf alle umstehenden Gegner ausf\u00FChrt.\nAttacke-Wert: 60\nAttacke-Wert verringert sich ab dem zweiten Gegner um je 10 % (maximal 50 %).\u003CIf([gnum72\u003E=30])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EZusatzeffekt bei \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EHyperladung\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E: Attacke-Wert 90 und Ziel erleidet 5\u003Cnbsp\u003E% mehr Schaden.\u003Cbr\u003EDauer: 10 Sekunden,)\u003E\u003CElse/\u003E \u003C/If\u003E\nGemeinsamer Reaktivierungs-Timer mit \u003Cspan style=\u0022color: #40bfff;\u0022\u003ESelbstschuss-Gyrocopter TURM\u003C/span\u003E"
+    "Description": "Du setzt einen Gesch\u00FCtzturm an die anvisierte Stelle, woraufhin er magische Fl\u00E4chenattacken auf alle umstehenden Gegner ausf\u00FChrt.\nAttacke-Wert: 60\nAttacke-Wert verringert sich ab dem zweiten Gegner um je 10 % (maximal 50 %).\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nZusatzeffekt bei \u003Cspan style=\u0022color: #ffff66;\u0022\u003EHyperladung\u003C/span\u003E: Attacke-Wert 90 und Ziel erleidet 5\u003C\u003Cnbsp\u003E\u003E% mehr Schaden.\nDauer: 10 Sekunden\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\nGemeinsamer Reaktivierungs-Timer mit \u003Cspan style=\u0022color: #40bfff;\u0022\u003ESelbstschuss-Gyrocopter TURM\u003C/span\u003E"
   },
   {
     "RowId": 2866,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 140\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003EZusatzeffekt: Hitzebalken f\u00FCllt sich um 5.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 140\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\nZusatzeffekt: Hitzebalken f\u00FCllt sich um 5.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2867,
-    "Description": "Du l\u00E4dst 3 \u003Cspan style=\u0022color: #ffff66;\u0022\u003ESpezialprojektile\u003C/span\u003E nach.\nWirkung von Spezialprojektilen: N\u00E4chste 3 Waffenfertigkeiten w\u00E4hrend der Wirkungsdauer haben einen erh\u00F6hten Attacke-Wert und bei einigen ist die Wahrscheinlichkeit f\u00FCr Zusatzeffekte erh\u00F6ht.\n\u003CIf([gnum72\u003E=52])\u003E\u003Cif([gnum68==31],Au\u00DFerdem f\u00FCllt sich der Hitzebalken langsamer.\u003Cbr\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003EMaximal 3 Projektile stapelbar.\nEffekt wird durch erneute Anwendung beendet."
+    "Description": "Du l\u00E4dst 3 \u003Cspan style=\u0022color: #ffff66;\u0022\u003ESpezialprojektile\u003C/span\u003E nach.\nWirkung von Spezialprojektilen: N\u00E4chste 3 Waffenfertigkeiten w\u00E4hrend der Wirkungsdauer haben einen erh\u00F6hten Attacke-Wert und bei einigen ist die Wahrscheinlichkeit f\u00FCr Zusatzeffekte erh\u00F6ht.\n\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),52))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003EAu\u00DFerdem f\u00FCllt sich der Hitzebalken langsamer.\n\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003EMaximal 3 Projektile stapelbar.\nEffekt wird durch erneute Anwendung beendet."
   },
   {
     "RowId": 2868,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nKombo-Bedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EFeuer frei\u003C/span\u003E oder \u003Cspan style=\u0022color: #40bfff;\u0022\u003EH\u00F6llenfeuer frei\u003C/span\u003E\nAttacke-Wert: 210\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003EBonus: Hitzebalken f\u00FCllt sich um 5.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nKombo-Bedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EFeuer frei\u003C/span\u003E oder \u003Cspan style=\u0022color: #40bfff;\u0022\u003EH\u00F6llenfeuer frei\u003C/span\u003E\nAttacke-Wert: 210\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\nBonus: Hitzebalken f\u00FCllt sich um 5.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2869,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 40\nZusatzeffekt: Schaden \u00FCber Zeit\nAttacke-Wert: 45\nDauer: \u003CIf([gnum72\u003E=14])\u003E\u003Cif([gnum68==31],30,18)\u003E\u003CElse/\u003E18\u003C/If\u003E Sekunden"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 40\nZusatzeffekt: Schaden \u00FCber Zeit\nAttacke-Wert: 45\nDauer: \u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),14))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E30\u003CElse/\u003E18\u003C/If\u003E\u003CElse/\u003E18\u003C/If\u003E Sekunden"
   },
   {
     "RowId": 2870,
-    "Description": "Du f\u00FChrst eine physische Attacke auf die f\u00E4cherf\u00F6rmig vor dir stehenden Gegner aus.\nAttacke-Wert: 140\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003EZusatzeffekt: Hitzebalken f\u00FCllt sich um 5.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke auf die f\u00E4cherf\u00F6rmig vor dir stehenden Gegner aus.\nAttacke-Wert: 140\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\nZusatzeffekt: Hitzebalken f\u00FCllt sich um 5.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2871,
@@ -1489,15 +1489,15 @@
   },
   {
     "RowId": 2872,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 240\n\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=40],Zusatzeffekt: Batteriebalken f\u00FCllt sich um 20.\u003Cbr\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003EEigener Reaktivierungs-Timer"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 240\n\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),40))\u003EZusatzeffekt: Batteriebalken f\u00FCllt sich um 20.\n\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003EEigener Reaktivierungs-Timer"
   },
   {
     "RowId": 2873,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nKombo-Bedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EFlintenlaufgeschoss\u003C/span\u003E oder \u003Cspan style=\u0022color: #40bfff;\u0022\u003EH\u00F6llen-Flintenlaufgeschoss\u003C/span\u003E\nAttacke-Wert: 270\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003EBonus: Hitzebalken f\u00FCllt sich um 5.,)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=40],\u003Cbr\u003EBonus: Batteriebalken f\u00FCllt sich um 10.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nKombo-Bedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EFlintenlaufgeschoss\u003C/span\u003E oder \u003Cspan style=\u0022color: #40bfff;\u0022\u003EH\u00F6llen-Flintenlaufgeschoss\u003C/span\u003E\nAttacke-Wert: 270\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\nBonus: Hitzebalken f\u00FCllt sich um 5.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),40))\u003E\nBonus: Batteriebalken f\u00FCllt sich um 10.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2874,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 130\nMaximale Aufladungen: \u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=74],3,2)\u003E\u003CElse/\u003E2\u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 130\nMaximale Aufladungen: \u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),74))\u003E3\u003CElse/\u003E2\u003C/If\u003E\u003CElse/\u003E2\u003C/If\u003E"
   },
   {
     "RowId": 2875,
@@ -1505,15 +1505,15 @@
   },
   {
     "RowId": 2876,
-    "Description": "Die n\u00E4chste Waffenfertigkeit w\u00E4hrend der Wirkungsdauer trifft direkt und kritisch.\nIst ein Effekt aktiv, der deine Rate kritischer oder direkter Treffer steigert, erh\u00F6ht sich auch der Attacke-Wert.\nWirkt nicht auf Schaden \u00FCber Zeit.\nDauer: 5 Sekunden\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=84],\u003Cbr\u003EMaximale Aufladungen: 2,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Die n\u00E4chste Waffenfertigkeit w\u00E4hrend der Wirkungsdauer trifft direkt und kritisch.\nIst ein Effekt aktiv, der deine Rate kritischer oder direkter Treffer steigert, erh\u00F6ht sich auch der Attacke-Wert.\nWirkt nicht auf Schaden \u00FCber Zeit.\nDauer: 5 Sekunden\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),84))\u003E\nMaximale Aufladungen: 2\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2877,
-    "Description": "Du f\u00FCgst dem Ziel 40 % \u003Cspan style=\u0022color: #ffff66;\u0022\u003EGewicht\u003C/span\u003E zu.\nDauer: 12 Sekunden\nBei \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EPvP\u003C/span\u003E: 8 Sekunden\u003CIf([gnum72\u003E=22])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EGemeinsamer Reaktivierungs-Timer mit \u003Ccolortype(502)\u003E\u003Cedgecolortype(503)\u003EStolperschuss\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FCgst dem Ziel 40 % \u003Cspan style=\u0022color: #ffff66;\u0022\u003EGewicht\u003C/span\u003E zu.\nDauer: 12 Sekunden\nBei \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EPvP\u003C/span\u003E: 8 Sekunden\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),22))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nGemeinsamer Reaktivierungs-Timer mit \u003Cspan style=\u0022color: #40bfff;\u0022\u003EStolperschuss\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2878,
-    "Description": "Du \u00FCbergie\u00DFt das Ziel mit langsam brennendem Pech und f\u00FCgst ihm dadurch \u003Cspan style=\u0022color: #ffff66;\u0022\u003EWildfeuer\u003C/span\u003E zu. Kommando \u00E4ndert sich zu \u003Cspan style=\u0022color: #40bfff;\u0022\u003EDetonator\u003C/span\u003E. Der Schaden wird am Ende der Wirkungsdauer oder beim Ausf\u00FChren von \u003Cspan style=\u0022color: #40bfff;\u0022\u003EDetonator\u003C/span\u003E auf das Ziel entladen.\nAttacke-Wert: \u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=78],240,100)\u003E\u003CElse/\u003E100\u003C/If\u003E f\u00FCr jeden deiner Treffer einer Waffenfertigkeit beim Ziel w\u00E4hrend der Wirkungsdauer (maximal 6 Treffer)\nDauer: 10 Sekunden"
+    "Description": "Du \u00FCbergie\u00DFt das Ziel mit langsam brennendem Pech und f\u00FCgst ihm dadurch \u003Cspan style=\u0022color: #ffff66;\u0022\u003EWildfeuer\u003C/span\u003E zu. Kommando \u00E4ndert sich zu \u003Cspan style=\u0022color: #40bfff;\u0022\u003EDetonator\u003C/span\u003E. Der Schaden wird am Ende der Wirkungsdauer oder beim Ausf\u00FChren von \u003Cspan style=\u0022color: #40bfff;\u0022\u003EDetonator\u003C/span\u003E auf das Ziel entladen.\nAttacke-Wert: \u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),78))\u003E240\u003CElse/\u003E100\u003C/If\u003E\u003CElse/\u003E100\u003C/If\u003E f\u00FCr jeden deiner Treffer einer Waffenfertigkeit beim Ziel w\u00E4hrend der Wirkungsdauer (maximal 6 Treffer)\nDauer: 10 Sekunden"
   },
   {
     "RowId": 2879,
@@ -1545,7 +1545,7 @@
   },
   {
     "RowId": 2886,
-    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nZusatzeffekt: \u003Cspan style=\u0022color: #ffff66;\u0022\u003EStumm\u003C/span\u003E\nDauer: 2 Sekunden\u003CIf([gnum72\u003E=45])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EGemeinsamer Reaktivierungs-Timer mit \u003Ccolortype(502)\u003E\u003Cedgecolortype(503)\u003EDeckungsfeuer\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke aus.\nAttacke-Wert: 100\nZusatzeffekt: \u003Cspan style=\u0022color: #ffff66;\u0022\u003EStumm\u003C/span\u003E\nDauer: 2 Sekunden\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),45))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nGemeinsamer Reaktivierungs-Timer mit \u003Cspan style=\u0022color: #40bfff;\u0022\u003EDeckungsfeuer\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2887,
@@ -1557,11 +1557,11 @@
   },
   {
     "RowId": 2889,
-    "Description": "Du schaltest den Modus des Gyrocopters auf Regenerieren um. Der Selbstschuss-Gyrocopter TURM verbraucht dann MP, regeneriert daf\u00FCr aber in einem Umkreis von 20 Yalmen um ihn bei dir und allen Gruppenmitgliedern TP.\u003CIf([gnum72\u003E=50])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EDer Selbstschuss-Gyrocopter L\u00C4UFER regeneriert MP.\u003Cbr\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003E\n\u003CIf([gnum72\u003E=30])\u003E\u003Cif([gnum68==31],Zusatzeffekt bei \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EHyperladung\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E: Verdoppelter Regenerationseffekt\u003Cbr\u003E,)\u003E\u003CElse/\u003E \u003C/If\u003ERegeneriermodus endet bei erneuter Ausf\u00FChrung.\nBedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EGyrocopter\u003C/span\u003E ist bereits gerufen."
+    "Description": "Du schaltest den Modus des Gyrocopters auf Regenerieren um. Der Selbstschuss-Gyrocopter TURM verbraucht dann MP, regeneriert daf\u00FCr aber in einem Umkreis von 20 Yalmen um ihn bei dir und allen Gruppenmitgliedern TP.\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),50))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nDer Selbstschuss-Gyrocopter L\u00C4UFER regeneriert MP.\n\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\n\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003EZusatzeffekt bei \u003Cspan style=\u0022color: #ffff66;\u0022\u003EHyperladung\u003C/span\u003E: Verdoppelter Regenerationseffekt\n\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003ERegeneriermodus endet bei erneuter Ausf\u00FChrung.\nBedingung: \u003Cspan style=\u0022color: #40bfff;\u0022\u003EGyrocopter\u003C/span\u003E ist bereits gerufen."
   },
   {
     "RowId": 2890,
-    "Description": "Du f\u00FChrst eine physische Attacke auf das Ziel und die Gegner in seiner N\u00E4he aus.\nAttacke-Wert: 130\nAttacke-Wert verringert sich ab dem zweiten Gegner um 50 %.\nMaximale Aufladungen: \u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=74],3,2)\u003E\u003CElse/\u003E2\u003C/If\u003E"
+    "Description": "Du f\u00FChrst eine physische Attacke auf das Ziel und die Gegner in seiner N\u00E4he aus.\nAttacke-Wert: 130\nAttacke-Wert verringert sich ab dem zweiten Gegner um 50 %.\nMaximale Aufladungen: \u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),74))\u003E3\u003CElse/\u003E2\u003C/If\u003E\u003CElse/\u003E2\u003C/If\u003E"
   },
   {
     "RowId": 2891,

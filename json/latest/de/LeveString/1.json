@@ -21,11 +21,11 @@
   },
   {
     "RowId": 5,
-    "Objective": "Schw\u00E4che den Gegner und bes\u00E4nftige ihn \u003CIf([lnum1==0])\u003Emit dem Emote \u201EBeruhigen\u201C\u003CElse/\u003Emit \u003Cdenoun(EventItem,5,lnum1,2,3,1)\u003E\u003C/If\u003E"
+    "Objective": "Schw\u00E4che den Gegner und bes\u00E4nftige ihn \u003CIf(Equal(IntegerParameter(1),0))\u003Emit dem Emote \u201EBeruhigen\u201C\u003CElse/\u003Emit \u003Cdenoun(EventItem,5,IntegerParameter(1),2,3,1)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6,
-    "Objective": "\u003CIf([lnum1==0])\u003EGreif an\u003CElse/\u003EBenutze \u003Cdenoun(EventItem,5,lnum1,2,4,1)\u003E\u003C/If\u003E, um die Gegner zu enttarnen, und besiege sie"
+    "Objective": "\u003CIf(Equal(IntegerParameter(1),0))\u003EGreif an\u003CElse/\u003EBenutze \u003Cdenoun(EventItem,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E, um die Gegner zu enttarnen, und besiege sie"
   },
   {
     "RowId": 7,
@@ -37,7 +37,7 @@
   },
   {
     "RowId": 9,
-    "Objective": "Geleite \u003Cdenoun(BNpcName,2,lnum1,1,4,1)\u003E zum Ziel"
+    "Objective": "Geleite \u003Cdenoun(BNpcName,2,IntegerParameter(1),1,4,1)\u003E zum Ziel"
   },
   {
     "RowId": 10,
@@ -97,11 +97,11 @@
   },
   {
     "RowId": 24,
-    "Objective": "Ringe \u003Cdenoun(BNpcName,2,lnum1,2,3,1)\u003E \u003Cdenoun(EventItem,5,lnum2,2,4,1)\u003E ab, um Monster zu enttarnen"
+    "Objective": "Ringe \u003Cdenoun(BNpcName,2,IntegerParameter(1),2,3,1)\u003E \u003Cdenoun(EventItem,5,IntegerParameter(2),2,4,1)\u003E ab, um Monster zu enttarnen"
   },
   {
     "RowId": 25,
-    "Objective": "Wenn \u003Cdenoun(BNpcName,2,lnum1,1,1,1)\u003E k. o. geht, scheitert die Mission"
+    "Objective": "Wenn \u003Cdenoun(BNpcName,2,IntegerParameter(1),1,1,1)\u003E k. o. geht, scheitert die Mission"
   },
   {
     "RowId": 26,
@@ -113,7 +113,7 @@
   },
   {
     "RowId": 28,
-    "Objective": "Finde den Gegner mit \u003Cdenoun(EventItem,5,lnum1,2,3,1)\u003E und besiege ihn"
+    "Objective": "Finde den Gegner mit \u003Cdenoun(EventItem,5,IntegerParameter(1),2,3,1)\u003E und besiege ihn"
   },
   {
     "RowId": 29,
@@ -129,15 +129,15 @@
   },
   {
     "RowId": 32,
-    "Objective": "Besiege Gegner, die auf das \u003CIf([lnum1==1])\u003E/stups\u003CElse/\u003E/schuld\u003C/If\u003E Emote reagieren und sammle \u003Cdenoun(EventItem,2,lnum2,2,4,1)\u003E auf."
+    "Objective": "Besiege Gegner, die auf das \u003CIf(Equal(IntegerParameter(1),1))\u003E/stups\u003CElse/\u003E/schuld\u003C/If\u003E Emote reagieren und sammle \u003Cdenoun(EventItem,2,IntegerParameter(2),2,4,1)\u003E auf."
   },
   {
     "RowId": 33,
-    "Objective": "Mission misslingt, wenn alle \u003Cdenoun(BNpcName,5,lnum1,2,1,1)\u003E verloren gehen"
+    "Objective": "Mission misslingt, wenn alle \u003Cdenoun(BNpcName,5,IntegerParameter(1),2,1,1)\u003E verloren gehen"
   },
   {
     "RowId": 34,
-    "Objective": "Benutze \u003Cdenoun(EventItem,2,lnum2,2,4,1)\u003E von \u003Cdenoun(BNpcName,2,lnum1,2,3,1)\u003E an \u003Cdenoun(EObj,2,lnum3,2,3,1)\u003E, um \u003Cdenoun(BNpcName,5,lnum4,2,4,1)\u003E anzulocken"
+    "Objective": "Benutze \u003Cdenoun(EventItem,2,IntegerParameter(2),2,4,1)\u003E von \u003Cdenoun(BNpcName,2,IntegerParameter(1),2,3,1)\u003E an \u003Cdenoun(EObj,2,IntegerParameter(3),2,3,1)\u003E, um \u003Cdenoun(BNpcName,5,IntegerParameter(4),2,4,1)\u003E anzulocken"
   },
   {
     "RowId": 35,

@@ -991,7 +991,7 @@
   },
   {
     "RowId": 4066,
-    "Text": "Don\u0027t disappoint me now, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E.",
+    "Text": "Don\u0027t disappoint me now, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E.",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -1276,7 +1276,7 @@
   },
   {
     "RowId": 4085,
-    "Text": "\u003CIf([lnum2==0])\u003E\u003Chead(\u003Cennoun(BNpcName,1,lnum1,1,1)\u003E)\u003E appears!\u003CElse/\u003E\u003Chead(\u003Cennoun(BNpcName,3,lnum1,2,1)\u003E)\u003E appear!\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CHead\u003E\u003Cennoun(BNpcName,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E appears!\u003CElse/\u003E\u003CHead\u003E\u003Cennoun(BNpcName,3,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E appear!\u003C/If\u003E",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1291,7 +1291,7 @@
   },
   {
     "RowId": 4086,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E withdraws...",
+    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E withdraws...",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 4087,
-    "Text": "A \u003Csheet(Treasure,lnum2,0)\u003E is discovered upon defeating \u003Cennoun(BNpcName,2,lnum1,1,1)\u003E!",
+    "Text": "A \u003Csheet(Treasure,IntegerParameter(2),0)\u003E is discovered upon defeating \u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1321,7 +1321,7 @@
   },
   {
     "RowId": 4088,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E escapes!",
+    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E escapes!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -2776,7 +2776,7 @@
   },
   {
     "RowId": 4185,
-    "Text": "The Battlehall will be closing in \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. Please note that no new matches may be initiated within \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum1==2])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E of closing time.",
+    "Text": "The Battlehall will be closing in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. Please note that no new matches may be initiated within \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),2))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E of closing time.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2791,7 +2791,7 @@
   },
   {
     "RowId": 4186,
-    "Text": "The Battlehall will be closing in \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. No new matches may be initiated at this time. Please note that you will automatically be escorted out of the Battlehall at closing time.",
+    "Text": "The Battlehall will be closing in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. No new matches may be initiated at this time. Please note that you will automatically be escorted out of the Battlehall at closing time.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2806,7 +2806,7 @@
   },
   {
     "RowId": 4187,
-    "Text": "The Battlehall will be closing in \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. Please note that you will automatically be escorted out of the Battlehall at closing time.",
+    "Text": "The Battlehall will be closing in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. Please note that you will automatically be escorted out of the Battlehall at closing time.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2821,7 +2821,7 @@
   },
   {
     "RowId": 4188,
-    "Text": "The Battlehall will be closing in \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. From this point onward, no new players will be admitted to the room.",
+    "Text": "The Battlehall will be closing in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E. From this point onward, no new players will be admitted to the room.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2896,7 +2896,7 @@
   },
   {
     "RowId": 4193,
-    "Text": "Please make haste, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! What\u0027s left of our precious mochi is being devoured as we speak!",
+    "Text": "Please make haste, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! What\u0027s left of our precious mochi is being devoured as we speak!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -2911,7 +2911,7 @@
   },
   {
     "RowId": 4194,
-    "Text": "Be sure to avoid the cyclops\u0027s mallet, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, lest you also are pounded into a fine paste!",
+    "Text": "Be sure to avoid the cyclops\u0027s mallet, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, lest you also are pounded into a fine paste!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3721,7 +3721,7 @@
   },
   {
     "RowId": 4248,
-    "Text": "Be wary, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!",
+    "Text": "Be wary, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,

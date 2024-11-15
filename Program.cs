@@ -2,6 +2,7 @@
 
 using System.IO;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Lumina.Data.Files;

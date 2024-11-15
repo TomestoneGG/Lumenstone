@@ -46,7 +46,7 @@
   },
   {
     "RowId": 7505,
-    "Text": "Purifikation \u003CIf([lnum1==1])\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Enicht bereit!\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "Purifikation \u003CIf(Equal(IntegerParameter(1),1))\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Enicht bereit!\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -55,7 +55,7 @@
   },
   {
     "RowId": 7506,
-    "Text": "Adrenalinrausch \u003CIf([lnum1==1])\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Enicht bereit!\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "Adrenalinrausch \u003CIf(Equal(IntegerParameter(1),1))\u003Ebereit!\u003Csound(1,98)\u003E\u003CElse/\u003Enicht bereit!\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -280,7 +280,7 @@
   },
   {
     "RowId": 7531,
-    "Text": "Der Erdseim-Zug f\u00E4hrt in 30 Sekunden vom \u003Csheet(PlaceName,lnum1,0)\u003E ab!",
+    "Text": "Der Erdseim-Zug f\u00E4hrt in 30 Sekunden vom \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E ab!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -289,7 +289,7 @@
   },
   {
     "RowId": 7532,
-    "Text": "Der Erdseim-Zug ist vom \u003Csheet(PlaceName,lnum1,0)\u003E abgefahren.",
+    "Text": "Der Erdseim-Zug ist vom \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E abgefahren.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -298,7 +298,7 @@
   },
   {
     "RowId": 7533,
-    "Text": "Die \u003CIf([lnum1==0])\u003E\u003Ccolortype(542)\u003E\u003Cedgecolortype(543)\u003EFalken\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(544)\u003E\u003Cedgecolortype(545)\u003ERaben\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003C/If\u003E haben die Verladestation besetzt! ",
+    "Text": "Die \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #0096ff;\u0022\u003EFalken\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ff566e;\u0022\u003ERaben\u003C/span\u003E\u003C/If\u003E haben die Verladestation besetzt! ",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -307,7 +307,7 @@
   },
   {
     "RowId": 7534,
-    "Text": "Die \u003CIf([lnum1==0])\u003E\u003Ccolortype(542)\u003E\u003Cedgecolortype(543)\u003EFalken\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(544)\u003E\u003Cedgecolortype(545)\u003ERaben\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003C/If\u003E haben die Verladestation besetzt und \u003Cswitch(lnum2,Gobmaschinen,einen Haupt-Erdseim-Tank,Gobbr\u00FChe,eine Gobkiste)\u003E entladen!",
+    "Text": "Die \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #0096ff;\u0022\u003EFalken\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ff566e;\u0022\u003ERaben\u003C/span\u003E\u003C/If\u003E haben die Verladestation besetzt und \u003Cswitch(IntegerParameter(2),Gobmaschinen,einen Haupt-Erdseim-Tank,Gobbr\u00FChe,eine Gobkiste)\u003E entladen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 7535,
-    "Text": "Der Goblin-S\u00F6ldner verl\u00E4sst in 30 Sekunden \u003Csheet(PlaceName,lnum1,0)\u003E!",
+    "Text": "Der Goblin-S\u00F6ldner verl\u00E4sst in 30 Sekunden \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -325,7 +325,7 @@
   },
   {
     "RowId": 7536,
-    "Text": "Goblin-S\u00F6ldner haben \u003Csheet(PlaceName,lnum1,0)\u003E verlassen.",
+    "Text": "Goblin-S\u00F6ldner haben \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E verlassen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 7537,
-    "Text": "Die \u003CIf([lnum1==0])\u003E\u003Ccolortype(542)\u003E\u003Cedgecolortype(543)\u003EFalken\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(544)\u003E\u003Cedgecolortype(545)\u003ERaben\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003C/If\u003E haben den Goblin-S\u00F6ldner unter Vertrag genommen!",
+    "Text": "Die \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #0096ff;\u0022\u003EFalken\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ff566e;\u0022\u003ERaben\u003C/span\u003E\u003C/If\u003E haben den Goblin-S\u00F6ldner unter Vertrag genommen!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 7538,
-    "Text": "Der Vertrag der \u003CIf([lnum1==0])\u003E\u003Ccolortype(542)\u003E\u003Cedgecolortype(543)\u003EFalken\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Ccolortype(544)\u003E\u003Cedgecolortype(545)\u003ERaben\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003C/If\u003E mit dem Goblin-S\u00F6ldner ist ausgelaufen.",
+    "Text": "Der Vertrag der \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #0096ff;\u0022\u003EFalken\u003C/span\u003E\u003CElse/\u003E\u003Cspan style=\u0022color: #ff566e;\u0022\u003ERaben\u003C/span\u003E\u003C/If\u003E mit dem Goblin-S\u00F6ldner ist ausgelaufen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
   },
   {
     "RowId": 7539,
-    "Text": "Die Schutzbarriere um den Kern der \u003CIf([lnum1==0])\u003EFalken\u003CElse/\u003ERaben\u003C/If\u003E ist geschw\u00E4cht!",
+    "Text": "Die Schutzbarriere um den Kern der \u003CIf(Equal(IntegerParameter(1),0))\u003EFalken\u003CElse/\u003ERaben\u003C/If\u003E ist geschw\u00E4cht!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -361,7 +361,7 @@
   },
   {
     "RowId": 7540,
-    "Text": "Du hast einen Hinweis auf das Losungswort gefunden: \u003CString\u003Elstr1\u003C/String\u003E!",
+    "Text": "Du hast einen Hinweis auf das Losungswort gefunden: \u003CString\u003EStringParameter(1)\u003C/String\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 7556,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Ckilo(lnum1,.)\u003E Serien-Routine erhalten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Ckilo(IntegerParameter(1),.)\u003E Serien-Routine erhalten.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -514,7 +514,7 @@
   },
   {
     "RowId": 7557,
-    "Text": "\u003CIf([gstr1==gstr2])\u003EDeine Serienstufe\u003CElse/\u003EDie Serienstufe von \u003Cif([gstr1==gstr2],\u003Cswitch(3,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E)\u003E\u003C/If\u003E ist auf \u003CNum\u003Elnum1\u003C/Num\u003E gestiegen!",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003EDeine Serienstufe\u003CElse/\u003EDie Serienstufe von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E ist auf \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E gestiegen!",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -523,7 +523,7 @@
   },
   {
     "RowId": 7558,
-    "Text": "Extra-Stufe gestiegen! \u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E Malmenstein \u003CNum\u003Elnum1\u003C/Num\u003E erreicht!",
+    "Text": "Extra-Stufe gestiegen! \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E Malmenstein \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E erreicht!",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -820,7 +820,7 @@
   },
   {
     "RowId": 7591,
-    "Text": "In \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2==1])\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E wechselt \u003Csheet(PlaceName,lnum3,0)\u003E (\u003Cswitch(lnum1,Rang B,Rang A,Rang S)\u003E) in den aktiven Zustand!",
+    "Text": "In \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003ESekunde\u003CElse/\u003ESekunden\u003C/If\u003E wechselt \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E (\u003Cswitch(IntegerParameter(1),Rang B,Rang A,Rang S)\u003E) in den aktiven Zustand!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -829,7 +829,7 @@
   },
   {
     "RowId": 7592,
-    "Text": "\u003Csheet(PlaceName,lnum2,0)\u003E (\u003Cswitch(lnum1,Rang B,Rang A,Rang S)\u003E) ist aktiv geworden!",
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(2),0)\u003E (\u003Cswitch(IntegerParameter(1),Rang B,Rang A,Rang S)\u003E) ist aktiv geworden!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -838,7 +838,7 @@
   },
   {
     "RowId": 7593,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003EDer Mahlstrom\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003EDie Bruderschaft\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003EDie Legion\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E hat sich mit \u003Csheet(PlaceName,lnum3,0)\u003E (\u003Cswitch(lnum2,Rang B,Rang A,Rang S)\u003E) vereinigt.",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003EDer Mahlstrom\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003EDie Bruderschaft\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003EDie Legion\u003C/span\u003E)\u003E hat sich mit \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E (\u003Cswitch(IntegerParameter(2),Rang B,Rang A,Rang S)\u003E) vereinigt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -847,7 +847,7 @@
   },
   {
     "RowId": 7594,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E wurde in den Ruhezustand zur\u00FCckversetzt.",
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E wurde in den Ruhezustand zur\u00FCckversetzt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 7595,
-    "Text": "Ein Mitglied \u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003Edes Mahlstroms\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003Eder Bruderschaft\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003Eder Legion\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E hat den Status Euphorie V erlangt!",
+    "Text": "Ein Mitglied \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003Edes Mahlstroms\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003Eder Bruderschaft\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003Eder Legion\u003C/span\u003E)\u003E hat den Status Euphorie V erlangt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 7596,
-    "Text": "Ein Mitglied \u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003Edes Mahlstroms\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003Eder Bruderschaft\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003Eder Legion\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E mit dem Status Euphorie V wurde soeben besiegt!",
+    "Text": "Ein Mitglied \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003Edes Mahlstroms\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003Eder Bruderschaft\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003Eder Legion\u003C/span\u003E)\u003E mit dem Status Euphorie V wurde soeben besiegt!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1099,7 +1099,7 @@
   },
   {
     "RowId": 7622,
-    "Text": "Der Name des PvP-Teams wurde zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "Der Name des PvP-Teams wurde zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1108,7 +1108,7 @@
   },
   {
     "RowId": 7623,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen des PvP-Teams zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen des PvP-Teams zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "RowId": 7625,
-    "Text": "Der Name des PvP-Teams wurde zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "Der Name des PvP-Teams wurde zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "RowId": 7626,
-    "Text": "Hip, hip, hurra! Das PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde gebildet.",
+    "Text": "Hip, hip, hurra! Das PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde gebildet.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1144,7 +1144,7 @@
   },
   {
     "RowId": 7627,
-    "Text": "Das PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde gebildet.",
+    "Text": "Das PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde gebildet.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 7631,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat das Spiel betreten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat das Spiel betreten.",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 7632,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat das Spiel verlassen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat das Spiel verlassen.",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1207,7 +1207,7 @@
   },
   {
     "RowId": 7634,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E wurde in das PvP-Team eingeladen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E wurde in das PvP-Team eingeladen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1216,7 +1216,7 @@
   },
   {
     "RowId": 7635,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat dich in ein PvP-Team eingeladen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat dich in ein PvP-Team eingeladen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 7636,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat die Einladung in das PvP-Team abgelehnt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat die Einladung in das PvP-Team abgelehnt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1234,7 +1234,7 @@
   },
   {
     "RowId": 7637,
-    "Text": "Du hast die Einladung von \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E\u003C/If\u003E abgelehnt.",
+    "Text": "Du hast die Einladung von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E abgelehnt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 7645,
-    "Text": "Die Einladung in ein PvP-Team von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E wurde zur\u00FCckgezogen.",
+    "Text": "Die Einladung in ein PvP-Team von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E wurde zur\u00FCckgezogen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1315,7 +1315,7 @@
   },
   {
     "RowId": 7646,
-    "Text": "Du bist dem PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C beigetreten.",
+    "Text": "Du bist dem PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C beigetreten.",
     "LogKind": 77,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 7647,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E dem PvP-Team beigetreten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E dem PvP-Team beigetreten.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1351,7 +1351,7 @@
   },
   {
     "RowId": 7650,
-    "Text": "Du hast das PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C verlassen.",
+    "Text": "Du hast das PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C verlassen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1360,7 +1360,7 @@
   },
   {
     "RowId": 7651,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das PvP-Team verlassen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das PvP-Team verlassen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 7655,
-    "Text": "Du hast \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,4,1)\u003E,gstr2)\u003E\u003C/If\u003E aus dem PvP-Team ausgeschlossen.",
+    "Text": "Du hast \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,4,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E aus dem PvP-Team ausgeschlossen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 7656,
-    "Text": "Du wurdest aus dem PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ausgeschlossen.",
+    "Text": "Du wurdest aus dem PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ausgeschlossen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1414,7 +1414,7 @@
   },
   {
     "RowId": 7657,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das PvP-Team verlassen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das PvP-Team verlassen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1450,7 +1450,7 @@
   },
   {
     "RowId": 7661,
-    "Text": "Du hast \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,4,1)\u003E,gstr2)\u003E\u003C/If\u003E zum Zweiten Anf\u00FChrer ernannt.",
+    "Text": "Du hast \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,4,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E zum Zweiten Anf\u00FChrer ernannt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 7662,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E zum Zweiten Anf\u00FChrer ernannt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E zum Zweiten Anf\u00FChrer ernannt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1495,7 +1495,7 @@
   },
   {
     "RowId": 7666,
-    "Text": "Du hast \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,4,1)\u003E,gstr2)\u003E\u003C/If\u003E als Zweiten Anf\u00FChrer abgesetzt.",
+    "Text": "Du hast \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,4,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E als Zweiten Anf\u00FChrer abgesetzt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1504,7 +1504,7 @@
   },
   {
     "RowId": 7667,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E als Zweiter Anf\u00FChrer abgesetzt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E als Zweiter Anf\u00FChrer abgesetzt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 7670,
-    "Text": "Du hast \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,4,1)\u003E,gstr2)\u003E\u003C/If\u003E zum Anf\u00FChrer gemacht.",
+    "Text": "Du hast \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,4,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E zum Anf\u00FChrer gemacht.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1540,7 +1540,7 @@
   },
   {
     "RowId": 7671,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E zum Anf\u00FChrer ernannt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E zum Anf\u00FChrer ernannt.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1585,7 +1585,7 @@
   },
   {
     "RowId": 7676,
-    "Text": "Weil der Anf\u00FChrer des PvP-Teams eine bestimmte Zeit abwesend war, ist \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E Anf\u00FChrer geworden.",
+    "Text": "Weil der Anf\u00FChrer des PvP-Teams eine bestimmte Zeit abwesend war, ist \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E Anf\u00FChrer geworden.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1594,7 +1594,7 @@
   },
   {
     "RowId": 7677,
-    "Text": "Weil der Anf\u00FChrer des PvP-Teams eine bestimmte Zeit abwesend war, ist \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E Anf\u00FChrer geworden.",
+    "Text": "Weil der Anf\u00FChrer des PvP-Teams eine bestimmte Zeit abwesend war, ist \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E Anf\u00FChrer geworden.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 7680,
-    "Text": "\u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E hat das Wappen des PvP-Teams ge\u00E4ndert.",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E hat das Wappen des PvP-Teams ge\u00E4ndert.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1657,7 +1657,7 @@
   },
   {
     "RowId": 7684,
-    "Text": "Das PvP-Team ist in die Kampfklasse \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C aufgestiegen.",
+    "Text": "Das PvP-Team ist in die Kampfklasse \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C aufgestiegen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1666,7 +1666,7 @@
   },
   {
     "RowId": 7685,
-    "Text": "Das PvP-Team ist in die Kampfklasse \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C abgestiegen.",
+    "Text": "Das PvP-Team ist in die Kampfklasse \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C abgestiegen.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1702,7 +1702,7 @@
   },
   {
     "RowId": 7689,
-    "Text": "Das PvP-Team \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde aufgel\u00F6st.",
+    "Text": "Das PvP-Team \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde aufgel\u00F6st.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 7909,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,26)\u003E begleitet dich nun beim Domanischen Mahjong.",
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),26)\u003E begleitet dich nun beim Domanischen Mahjong.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 7910,
-    "Text": "Du hast das Kost\u00FCm von \u003Csheet(EmjVoiceNpc,lnum1,26)\u003E zu \u201E\u003Csheet(EmjCostumeData,lnum2,0)\u003E\u201C ge\u00E4ndert.",
+    "Text": "Du hast das Kost\u00FCm von \u003Csheet(EmjVoiceNpc,IntegerParameter(1),26)\u003E zu \u201E\u003Csheet(EmjCostumeData,IntegerParameter(2),0)\u003E\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 7921,
-    "Text": "Kommandos gespeichert in \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C.",
+    "Text": "Kommandos gespeichert in \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3799,7 +3799,7 @@
   },
   {
     "RowId": 7922,
-    "Text": "\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurde geladen.",
+    "Text": "\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde geladen.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3835,7 +3835,7 @@
   },
   {
     "RowId": 7926,
-    "Text": "Du bist aktuell \u003CIf(gnum4)\u003Ekeine Blaumagierin\u003CElse/\u003Ekein Blaumagier\u003C/If\u003E.",
+    "Text": "Du bist aktuell \u003CIf(PlayerParameter(4))\u003Ekeine Blaumagierin\u003CElse/\u003Ekein Blaumagier\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4276,7 +4276,7 @@
   },
   {
     "RowId": 7975,
-    "Text": "Du hast zus\u00E4tzliche Chance-Punkte (\u003CNum\u003Elnum1\u003C/Num\u003E/9) bekommen,\nweil ein Mitglied den Inhalt zum ersten Mal abgeschlossen hat.",
+    "Text": "Du hast zus\u00E4tzliche Chance-Punkte (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/9) bekommen,\nweil ein Mitglied den Inhalt zum ersten Mal abgeschlossen hat.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4303,7 +4303,7 @@
   },
   {
     "RowId": 7978,
-    "Text": "Du hast \u003CNum\u003Elnum1\u003C/Num\u003E Chance-Punkt\u003CIf([lnum1==1])\u003E \u003CElse/\u003Ee\u003C/If\u003E erhalten.",
+    "Text": "Du hast \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Chance-Punkt\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Ee\u003C/If\u003E erhalten.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4321,7 +4321,7 @@
   },
   {
     "RowId": 7980,
-    "Text": "Du tr\u00E4gst die optimale Ausr\u00FCstung als \u003Csheet(ClassJob,gnum68,0)\u003E.",
+    "Text": "Du tr\u00E4gst die optimale Ausr\u00FCstung als \u003Csheet(ClassJob,PlayerParameter(68),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4357,7 +4357,7 @@
   },
   {
     "RowId": 7984,
-    "Text": "In deinem Arsenal gibt es keine bessere Ausr\u00FCstung als \u003Csheet(ClassJob,gnum68,0)\u003E.",
+    "Text": "In deinem Arsenal gibt es keine bessere Ausr\u00FCstung als \u003Csheet(ClassJob,PlayerParameter(68),0)\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4366,7 +4366,7 @@
   },
   {
     "RowId": 7985,
-    "Text": "\u003CIf([lnum1==0])\u003EEin Teil der Gegenst\u00E4nde konnte nicht angelegt werden.\u003CElse/\u003EDie Ausr\u00FCstung konnte nicht ge\u00E4ndert werden.\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EEin Teil der Gegenst\u00E4nde konnte nicht angelegt werden.\u003CElse/\u003EDie Ausr\u00FCstung konnte nicht ge\u00E4ndert werden.\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4429,7 +4429,7 @@
   },
   {
     "RowId": 7992,
-    "Text": "Du spendest \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,5,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,lnum1,2,4,1)\u003E\u003C/If\u003E.",
+    "Text": "Du spendest \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4438,7 +4438,7 @@
   },
   {
     "RowId": 7993,
-    "Text": "Du spendest \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2==1])\u003E\u003Cdenoun(Item,5,lnum1,1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,lnum1,2,4,1)\u003E\u003C/If\u003E und erh\u00E4ltst zum Dank \u003Ckilo(lnum3,.)\u003E Gil.",
+    "Text": "Du spendest \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,5,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E und erh\u00E4ltst zum Dank \u003Ckilo(IntegerParameter(3),.)\u003E Gil.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,

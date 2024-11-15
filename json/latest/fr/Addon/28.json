@@ -53,15 +53,15 @@
   },
   {
     "RowId": 16021,
-    "Text": "\u30E9\u30A6\u30F3\u30C9\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u30E9\u30A6\u30F3\u30C9\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16022,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16023,
-    "Text": "Temps restant\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003Em \u003CSec\u003Elnum2\u003C/Sec\u003Es"
+    "Text": "Temps restant\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em \u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003Es"
   },
   {
     "RowId": 16024,
@@ -73,11 +73,11 @@
   },
   {
     "RowId": 16026,
-    "Text": "Vous \u00EAtes \u003CIf(gnum4)\u003E\u00E9limin\u00E9e\u003CElse/\u003E\u00E9limin\u00E9\u003C/If\u003E et participez en mode spectateur. \u00C9tudiez le terrain pour faire mieux la prochaine fois\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "Vous \u00EAtes \u003CIf(PlayerParameter(4))\u003E\u00E9limin\u00E9e\u003CElse/\u003E\u00E9limin\u00E9\u003C/If\u003E et participez en mode spectateur. \u00C9tudiez le terrain pour faire mieux la prochaine fois\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 16027,
-    "Text": "Dernier lieu\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003E0])\u003E\u003Cstring(lstr2)\u003E\u003CElse/\u003Eaucun\u003C/If\u003E"
+    "Text": "Dernier lieu\u003C\u003Cnbsp\u003E\u003E: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003CElse/\u003Eaucun\u003C/If\u003E"
   },
   {
     "RowId": 16040,
@@ -121,7 +121,7 @@
   },
   {
     "RowId": 16055,
-    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16060,
@@ -145,7 +145,7 @@
   },
   {
     "RowId": 16065,
-    "Text": "\u003CIf([lnum1\u003Elnum2])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003Clnum3])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum1\u003Elnum2])\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003Clnum3])\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),IntegerParameter(3)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),IntegerParameter(3)))\u003E\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 16066,
@@ -181,7 +181,7 @@
   },
   {
     "RowId": 16074,
-    "Text": "Appliqu\u00E9 \u00E0 \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Appliqu\u00E9 \u00E0 \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16075,
@@ -221,11 +221,11 @@
   },
   {
     "RowId": 16084,
-    "Text": "Le filtre \u003CNum\u003Elnum1\u003C/Num\u003E (\u003CString\u003Elstr2\u003C/String\u003E) sera supprim\u00E9. Continuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Le filtre \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E) sera supprim\u00E9. Continuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 16085,
-    "Text": "(Message masqu\u00E9 par le filtre \u003CNum\u003Elnum1\u003C/Num\u003E)"
+    "Text": "(Message masqu\u00E9 par le filtre \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)"
   },
   {
     "RowId": 16086,
@@ -241,11 +241,11 @@
   },
   {
     "RowId": 16101,
-    "Text": "Adapte automatiquement la r\u00E9solution lorsque l\u0027affichage des graphismes 3D exige des ressources trop importantes, dans le but de stabiliser le taux de rafra\u00EEchissement.\u003CIf([gnum78==2])\u003E\u003Cbr\u003E* Lorsque le type de conversion ascendante choisi est \u201CNVIDIA DLSS\u201D\\, la r\u00E9solution dynamique est g\u00E9r\u00E9e nativement et la pr\u00E9sente option est sans effet.\u003Cbr\u003E\u003Cbr\u003ELe taux de rafra\u00EEchissement souhait\u00E9 peut \u00EAtre d\u00E9termin\u00E9 en changeant le seuil d\u0027activation de la r\u00E9solution dynamique.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum78==3])\u003E\u003Cbr\u003ELe taux de rafra\u00EEchissement souhait\u00E9 peut \u00EAtre d\u00E9termin\u00E9 en changeant le seuil d\u0027activation de la r\u00E9solution dynamique.\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Adapte automatiquement la r\u00E9solution lorsque l\u0027affichage des graphismes 3D exige des ressources trop importantes, dans le but de stabiliser le taux de rafra\u00EEchissement.\u003CIf(Equal(PlayerParameter(78),2))\u003E\n* Lorsque le type de conversion ascendante choisi est \u201CNVIDIA DLSS\u201D, la r\u00E9solution dynamique est g\u00E9r\u00E9e nativement et la pr\u00E9sente option est sans effet.\n\nLe taux de rafra\u00EEchissement souhait\u00E9 peut \u00EAtre d\u00E9termin\u00E9 en changeant le seuil d\u0027activation de la r\u00E9solution dynamique.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(78),3))\u003E\nLe taux de rafra\u00EEchissement souhait\u00E9 peut \u00EAtre d\u00E9termin\u00E9 en changeant le seuil d\u0027activation de la r\u00E9solution dynamique.\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16102,
-    "Text": "R\u00E8gle la qualit\u00E9 d\u0027affichage des graphismes 3D.\nUne valeur entre 50 et 100% peut \u00EAtre choisie afin d\u0027influencer les performances.\u003CIf([gnum78==2])\u003E\u003Cbr\u003E* Lorsque le type de conversion ascendante choisi est \u201CNVIDIA DLSS\u201D\\, la r\u00E9solution des graphismes 3D est g\u00E9r\u00E9e nativement et la pr\u00E9sente option est sans effet.\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "R\u00E8gle la qualit\u00E9 d\u0027affichage des graphismes 3D.\nUne valeur entre 50 et 100% peut \u00EAtre choisie afin d\u0027influencer les performances.\u003CIf(Equal(PlayerParameter(78),2))\u003E\n* Lorsque le type de conversion ascendante choisi est \u201CNVIDIA DLSS\u201D, la r\u00E9solution des graphismes 3D est g\u00E9r\u00E9e nativement et la pr\u00E9sente option est sans effet.\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16103,
@@ -397,7 +397,7 @@
   },
   {
     "RowId": 16140,
-    "Text": "R\u00E8gle la r\u00E9solution d\u0027affichage du jeu.\n\n\u003CIf([gnum75==4])\u003EFullHD\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 1920x1080.\u003Cbr\u003ECe mode est recommand\u00E9 pour obtenir les meilleures performances.\u003Cbr\u003E\u003Cbr\u003EWQHD\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 2560x1440.\u003Cbr\u003ECe mode pr\u00E9sente un bon \u00E9quilibre entre performance et qualit\u00E9 visuelle.\u003Cbr\u003E\u003Cbr\u003E4K\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 3840x2160.\u003Cbr\u003ECe mode privil\u00E9gie la qualit\u00E9 visuelle sur la rapidit\u00E9 du taux de rafra\u00EEchissement.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum106==99])\u003EFullHD\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 1920x1080.\u003Cbr\u003ECe mode est recommand\u00E9 pour obtenir les meilleures performances.\u003Cbr\u003E\u003Cbr\u003EWQHD\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 2560x1440.\u003Cbr\u003ECe mode pr\u00E9sente un bon \u00E9quilibre entre performance et qualit\u00E9 visuelle.\u003Cbr\u003E\u003Cbr\u003E4K\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 3840x2160.\u003Cbr\u003ECe mode privil\u00E9gie la qualit\u00E9 visuelle sur la rapidit\u00E9 du taux de rafra\u00EEchissement.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum78==99])\u003E\u003Cif([gnum75==4],,PS4 Standard\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 1920x1080 \\(Full HD\\).\u003Cbr\u003E\u003Cbr\u003EPS4 Pro\u003Cbr\u003ER\u00E8gle la r\u00E9solution \u00E0 2560x1440 \\(WQHD\\).)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "R\u00E8gle la r\u00E9solution d\u0027affichage du jeu.\n\n\u003CIf(Equal(PlayerParameter(75),4))\u003EFullHD\nR\u00E8gle la r\u00E9solution \u00E0 1920x1080.\nCe mode est recommand\u00E9 pour obtenir les meilleures performances.\n\nWQHD\nR\u00E8gle la r\u00E9solution \u00E0 2560x1440.\nCe mode pr\u00E9sente un bon \u00E9quilibre entre performance et qualit\u00E9 visuelle.\n\n4K\nR\u00E8gle la r\u00E9solution \u00E0 3840x2160.\nCe mode privil\u00E9gie la qualit\u00E9 visuelle sur la rapidit\u00E9 du taux de rafra\u00EEchissement.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(106),99))\u003EFullHD\nR\u00E8gle la r\u00E9solution \u00E0 1920x1080.\nCe mode est recommand\u00E9 pour obtenir les meilleures performances.\n\nWQHD\nR\u00E8gle la r\u00E9solution \u00E0 2560x1440.\nCe mode pr\u00E9sente un bon \u00E9quilibre entre performance et qualit\u00E9 visuelle.\n\n4K\nR\u00E8gle la r\u00E9solution \u00E0 3840x2160.\nCe mode privil\u00E9gie la qualit\u00E9 visuelle sur la rapidit\u00E9 du taux de rafra\u00EEchissement.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u003CIf(Equal(PlayerParameter(75),4))\u003E \u003CElse/\u003EPS4 Standard\nR\u00E8gle la r\u00E9solution \u00E0 1920x1080 (Full HD).\n\nPS4 Pro\nR\u00E8gle la r\u00E9solution \u00E0 2560x1440 (WQHD).\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16141,
@@ -513,11 +513,11 @@
   },
   {
     "RowId": 16224,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],jour,jours)\u003E\u003CElse/\u003EMoins d\u0027un jour\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ejour\u003CElse/\u003Ejours\u003C/If\u003E\u003CElse/\u003EMoins d\u0027un jour\u003C/If\u003E"
   },
   {
     "RowId": 16225,
-    "Text": "Retirer \u003CString\u003Elstr1\u003C/String\u003E de la liste des expuls\u00E9s et l\u0027autoriser \u00E0 entrer dans votre logement\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Retirer \u003CString\u003EStringParameter(1)\u003C/String\u003E de la liste des expuls\u00E9s et l\u0027autoriser \u00E0 entrer dans votre logement\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 16226,
@@ -625,23 +625,23 @@
   },
   {
     "RowId": 16301,
-    "Text": "\u003CIf([gnum78==3])\u003EMaximums \\(Mac\\)\u003CElse/\u003EMaximums\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EMaximums (Mac)\u003CElse/\u003EMaximums\u003C/If\u003E"
   },
   {
     "RowId": 16302,
-    "Text": "\u003CIf([gnum78==3])\u003ETr\u00E8s \u00E9lev\u00E9s \\(Mac\\)\u003CElse/\u003E\u00C9lev\u00E9s \\(PC de bureau\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003ETr\u00E8s \u00E9lev\u00E9s (Mac)\u003CElse/\u003E\u00C9lev\u00E9s (PC de bureau)\u003C/If\u003E"
   },
   {
     "RowId": 16303,
-    "Text": "\u003CIf([gnum78==3])\u003E\u00C9lev\u00E9s \\(Mac\\)\u003CElse/\u003E\u00C9lev\u00E9s \\(PC portable\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003E\u00C9lev\u00E9s (Mac)\u003CElse/\u003E\u00C9lev\u00E9s (PC portable)\u003C/If\u003E"
   },
   {
     "RowId": 16304,
-    "Text": "\u003CIf([gnum78==3])\u003EMoyens \\(Mac\\)\u003CElse/\u003EMoyens \\(PC de bureau\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EMoyens (Mac)\u003CElse/\u003EMoyens (PC de bureau)\u003C/If\u003E"
   },
   {
     "RowId": 16305,
-    "Text": "\u003CIf([gnum78==3])\u003EStandards \\(Mac\\)\u003CElse/\u003EMoyens \\(PC portable\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EStandards (Mac)\u003CElse/\u003EMoyens (PC portable)\u003C/If\u003E"
   },
   {
     "RowId": 16306,
@@ -649,23 +649,23 @@
   },
   {
     "RowId": 16307,
-    "Text": "\u003CIf([gnum78==3])\u003ELes param\u00E8tres graphiques les plus \u00E9lev\u00E9s.\u003CElse/\u003ELes param\u00E8tres graphiques les plus \u00E9lev\u00E9s.\u003Cbr\u003ERecommand\u00E9s uniquement pour les configurations haut de gamme.\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003ELes param\u00E8tres graphiques les plus \u00E9lev\u00E9s.\u003CElse/\u003ELes param\u00E8tres graphiques les plus \u00E9lev\u00E9s.\nRecommand\u00E9s uniquement pour les configurations haut de gamme.\u003C/If\u003E"
   },
   {
     "RowId": 16308,
-    "Text": "\u003CIf([gnum78==3])\u003EParam\u00E8tres graphiques sup\u00E9rieurs pour les mod\u00E8les haut de gamme.\u003CElse/\u003EParam\u00E8tres graphiques optimis\u00E9s pour les ordinateurs remplissant les conditions de la configuration recommand\u00E9e \\(ordinateurs de bureau\\).\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EParam\u00E8tres graphiques sup\u00E9rieurs pour les mod\u00E8les haut de gamme.\u003CElse/\u003EParam\u00E8tres graphiques optimis\u00E9s pour les ordinateurs remplissant les conditions de la configuration recommand\u00E9e (ordinateurs de bureau).\u003C/If\u003E"
   },
   {
     "RowId": 16309,
-    "Text": "\u003CIf([gnum78==3])\u003EParam\u00E8tres graphiques optimis\u00E9s pour les mod\u00E8les haut de gamme.\u003CElse/\u003EParam\u00E8tres graphiques optimis\u00E9s pour les machines remplissant les conditions de la configuration recommand\u00E9e \\(ordinateurs portables\\).\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EParam\u00E8tres graphiques optimis\u00E9s pour les mod\u00E8les haut de gamme.\u003CElse/\u003EParam\u00E8tres graphiques optimis\u00E9s pour les machines remplissant les conditions de la configuration recommand\u00E9e (ordinateurs portables).\u003C/If\u003E"
   },
   {
     "RowId": 16310,
-    "Text": "\u003CIf([gnum78==3])\u003EParam\u00E8tres graphiques donnant une meilleure qualit\u00E9 d\u0027image pour les mod\u00E8les recommand\u00E9s.\u003CElse/\u003EParam\u00E8tres \u00E9quilibr\u00E9s\\, offrant un bon confort de jeu tout en conservant la qualit\u00E9 graphique \\(ordinateurs de bureau\\).\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EParam\u00E8tres graphiques donnant une meilleure qualit\u00E9 d\u0027image pour les mod\u00E8les recommand\u00E9s.\u003CElse/\u003EParam\u00E8tres \u00E9quilibr\u00E9s, offrant un bon confort de jeu tout en conservant la qualit\u00E9 graphique (ordinateurs de bureau).\u003C/If\u003E"
   },
   {
     "RowId": 16311,
-    "Text": "\u003CIf([gnum78==3])\u003EParam\u00E8tres \u00E9quilibr\u00E9s\\, offrant un bon confort de jeu pour les mod\u00E8les recommand\u00E9s.\u003CElse/\u003EParam\u00E8tres \u00E9quilibr\u00E9s\\, offrant un bon confort de jeu tout en conservant la qualit\u00E9 graphique \\(ordinateurs portables\\).\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EParam\u00E8tres \u00E9quilibr\u00E9s, offrant un bon confort de jeu pour les mod\u00E8les recommand\u00E9s.\u003CElse/\u003EParam\u00E8tres \u00E9quilibr\u00E9s, offrant un bon confort de jeu tout en conservant la qualit\u00E9 graphique (ordinateurs portables).\u003C/If\u003E"
   },
   {
     "RowId": 16312,
@@ -953,7 +953,7 @@
   },
   {
     "RowId": 16409,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16411,
@@ -977,7 +977,7 @@
   },
   {
     "RowId": 16417,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16418,
@@ -1001,7 +1001,7 @@
   },
   {
     "RowId": 16424,
-    "Text": "L\u0027int\u00E9rieur sera modifi\u00E9 en \u003CString\u003Elstr1\u003C/String\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Les meubles actuellement pos\u00E9s seront rang\u00E9s dans l\u0027entrep\u00F4t.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Le processus de r\u00E9novation peut prendre un peu de temps.\u003C/span\u003E"
+    "Text": "L\u0027int\u00E9rieur sera modifi\u00E9 en \u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Les meubles actuellement pos\u00E9s seront rang\u00E9s dans l\u0027entrep\u00F4t.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Le processus de r\u00E9novation peut prendre un peu de temps.\u003C/span\u003E"
   },
   {
     "RowId": 16425,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 16426,
-    "Text": "Impossible de \u003Cswitch(lnum1,d\u00E9m\u00E9nager ou r\u00E9nover,d\u00E9m\u00E9nager,r\u00E9nover)\u003E. Il n\u0027y a pas assez de place disponible dans votre entrep\u00F4t."
+    "Text": "Impossible de \u003Cswitch(IntegerParameter(1),d\u00E9m\u00E9nager ou r\u00E9nover,d\u00E9m\u00E9nager,r\u00E9nover)\u003E. Il n\u0027y a pas assez de place disponible dans votre entrep\u00F4t."
   },
   {
     "RowId": 16427,
@@ -1021,11 +1021,11 @@
   },
   {
     "RowId": 16429,
-    "Text": "Vous avez obtenu l\u0027autorit\u00E9 pour modifier l\u0027apparence en \u003CString\u003Elstr1\u003C/String\u003E."
+    "Text": "Vous avez obtenu l\u0027autorit\u00E9 pour modifier l\u0027apparence en \u003CString\u003EStringParameter(1)\u003C/String\u003E."
   },
   {
     "RowId": 16430,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECo\u00FBt en gils\u00A0: \u003Ckilo(lnum1,\\,)\u003E\uE049\u003C/span\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECo\u00FBt en gils\u00A0: \u003Ckilo(IntegerParameter(1),,)\u003E\uE049\u003C/span\u003E"
   },
   {
     "RowId": 16431,
@@ -1097,7 +1097,7 @@
   },
   {
     "RowId": 16448,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 16449,
@@ -1105,7 +1105,7 @@
   },
   {
     "RowId": 16450,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16451,
@@ -1129,7 +1129,7 @@
   },
   {
     "RowId": 16456,
-    "Text": "\u003CIf(lnum1)\u003E \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003Cnum(lnum2)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E\u003C/If\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E"
+    "Text": "\u003CIf(IntegerParameter(1))\u003E \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
   },
   {
     "RowId": 16459,
@@ -1397,11 +1397,11 @@
   },
   {
     "RowId": 101082,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Effacer \u003CIcon2\u003E13\u003C/Icon2\u003E Traduction automatique  \u003CIf(gnum94)\u003E\u003Cif([gnum78==99],\u003Cicon2(11)\u003E Clavier virtuel,\u003Cicon2(11)\u003E Clavier visuel)\u003E\u003CElse/\u003E\u003Cnbsp\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Effacer \u003CIcon2\u003E13\u003C/Icon2\u003E Traduction automatique  \u003CIf(PlayerParameter(94))\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Clavier virtuel\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Clavier visuel\u003C/If\u003E\u003CElse/\u003E\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E"
   },
   {
     "RowId": 101083,
-    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Pr\u00E9c\u00E9dent  \u003CIcon2\u003E4\u003C/Icon2\u003E Suivant  \u003CIcon2\u003E13\u003C/Icon2\u003E Traduction automatique  \u003CIf(gnum94)\u003E\u003Cif([gnum78==99],\u003Cicon2(11)\u003E Clavier virtuel,\u003Cicon2(11)\u003E Clavier visuel)\u003E\u003CElse/\u003E\u003Cnbsp\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Pr\u00E9c\u00E9dent  \u003CIcon2\u003E4\u003C/Icon2\u003E Suivant  \u003CIcon2\u003E13\u003C/Icon2\u003E Traduction automatique  \u003CIf(PlayerParameter(94))\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Clavier virtuel\u003CElse/\u003E\u003CIcon2\u003E11\u003C/Icon2\u003E Clavier visuel\u003C/If\u003E\u003CElse/\u003E\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E"
   },
   {
     "RowId": 101084,
@@ -1709,19 +1709,19 @@
   },
   {
     "RowId": 101160,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E D\u00E9placer  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Tourner  \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E D\u00E9placer  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Tourner  \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E"
   },
   {
     "RowId": 101161,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E D\u00E9placer  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Tourner  \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver le placement sur meuble\u003CElse/\u003ED\u00E9sactiver le placement sur meuble\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E D\u00E9placer  \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Tourner  \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver le placement sur meuble\u003CElse/\u003ED\u00E9sactiver le placement sur meuble\u003C/If\u003E"
   },
   {
     "RowId": 101162,
-    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E"
   },
   {
     "RowId": 101163,
-    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E  \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EActiver le placement sur meuble\u003CElse/\u003ED\u00E9sactiver le placement sur meuble\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver la fonction d\u0027ancrage\u003CElse/\u003ED\u00E9sactiver la fonction d\u0027ancrage\u003C/If\u003E  \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EActiver le placement sur meuble\u003CElse/\u003ED\u00E9sactiver le placement sur meuble\u003C/If\u003E"
   },
   {
     "RowId": 101164,

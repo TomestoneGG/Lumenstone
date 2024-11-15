@@ -1000,7 +1000,7 @@
   },
   {
     "RowId": 1111,
-    "Text": "Character was logged out or disconnected mid-duty. Unable to process \u003CIf([lnum1\u003E0])\u003EReturn to Home World\u003CElse/\u003EWorld Visit\u003C/If\u003E request.\nYou must log in before a new request can be processed.",
+    "Text": "Character was logged out or disconnected mid-duty. Unable to process \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EReturn to Home World\u003CElse/\u003EWorld Visit\u003C/If\u003E request.\nYou must log in before a new request can be processed.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1018,7 +1018,7 @@
   },
   {
     "RowId": 1113,
-    "Text": "Character is currently imprisoned in the Mordion Gaol. \u003CIf([lnum1\u003E0])\u003EReturn to Home World\u003CElse/\u003EWorld Visit\u003C/If\u003E request denied.",
+    "Text": "Character is currently imprisoned in the Mordion Gaol. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EReturn to Home World\u003CElse/\u003EWorld Visit\u003C/If\u003E request denied.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 1116,
-    "Text": "World Visit transfer successful. Login to \u003CString\u003Elstr1\u003C/String\u003E now available.",
+    "Text": "World Visit transfer successful. Login to \u003CString\u003EStringParameter(1)\u003C/String\u003E now available.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1387,7 +1387,7 @@
   },
   {
     "RowId": 1154,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (\u003CString\u003Elstr2\u003C/String\u003E)",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 1162,
-    "Text": "Select the data center and World you wish to visit.\nEstimated Travel Time: \u003CIf([lnum1\u003C60])\u003ELess than 1 minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],Less than 2 minutes,\u003Cif([lnum1\u003C180],Less than 3 minutes,\u003Cif([lnum1\u003C300],Less than 5 minutes,\u003Cif([lnum1\u003C600],Less than 10 minutes,\u003Cif([lnum1\u003C1200],Less than 20 minutes,Unknown. Servers are currently congested.)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Select the data center and World you wish to visit.\nEstimated Travel Time: \u003CIf(LessThan(IntegerParameter(1),60))\u003ELess than 1 minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003ELess than 2 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003ELess than 3 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003ELess than 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003ELess than 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003ELess than 20 minutes\u003CElse/\u003EUnknown. Servers are currently congested.\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1468,7 +1468,7 @@
   },
   {
     "RowId": 1163,
-    "Text": "Returning to Home Data Center and Home World.\nEstimated Travel Time: \u003CIf([lnum1\u003C60])\u003ELess than 1 minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],Less than 2 minutes,\u003Cif([lnum1\u003C180],Less than 3 minutes,\u003Cif([lnum1\u003C300],Less than 5 minutes,\u003Cif([lnum1\u003C600],Less than 10 minutes,\u003Cif([lnum1\u003C1200],Less than 20 minutes,Unknown. Servers are currently congested.)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Returning to Home Data Center and Home World.\nEstimated Travel Time: \u003CIf(LessThan(IntegerParameter(1),60))\u003ELess than 1 minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003ELess than 2 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003ELess than 3 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003ELess than 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003ELess than 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003ELess than 20 minutes\u003CElse/\u003EUnknown. Servers are currently congested.\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 1168,
-    "Text": "\u2756\u003CString\u003Elstr1\u003C/String\u003E",
+    "Text": "\u2756\u003CString\u003EStringParameter(1)\u003C/String\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 1170,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E will now be transported to \u003CString\u003Elstr4\u003C/String\u003E in the \u003CString\u003Elstr3\u003C/String\u003E data center.\nEstimated Travel Time: \u003CIf([lnum1\u003C60])\u003ELess than 1 minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],Less than 2 minutes,\u003Cif([lnum1\u003C180],Less than 3 minutes,\u003Cif([lnum1\u003C300],Less than 5 minutes,\u003Cif([lnum1\u003C600],Less than 10 minutes,\u003Cif([lnum1\u003C1200],Less than 20 minutes,Unknown. Servers are currently congested.)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPlease note the following:\n\u30FBThis process may take several minutes to complete.\n\u30FBYou will be unable to cancel this process while it is underway.\n\u30FBYou will be unable to log in with a different character until this process has been completed.\n\n\u203BTravel times may take longer during periods of server congestion.\u003C/span\u003E",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E will now be transported to \u003CString\u003EStringParameter(4)\u003C/String\u003E in the \u003CString\u003EStringParameter(3)\u003C/String\u003E data center.\nEstimated Travel Time: \u003CIf(LessThan(IntegerParameter(1),60))\u003ELess than 1 minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003ELess than 2 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003ELess than 3 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003ELess than 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003ELess than 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003ELess than 20 minutes\u003CElse/\u003EUnknown. Servers are currently congested.\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPlease note the following:\n\u30FBThis process may take several minutes to complete.\n\u30FBYou will be unable to cancel this process while it is underway.\n\u30FBYou will be unable to log in with a different character until this process has been completed.\n\n\u203BTravel times may take longer during periods of server congestion.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1558,7 +1558,7 @@
   },
   {
     "RowId": 1173,
-    "Text": "Your character is traveling between data centers. Please wait until they have reached their destination.\nEstimated Travel Time: \u003CIf([lnum1\u003C60])\u003ELess than 1 minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],Less than 2 minutes,\u003Cif([lnum1\u003C180],Less than 3 minutes,\u003Cif([lnum1\u003C300],Less than 5 minutes,\u003Cif([lnum1\u003C600],Less than 10 minutes,\u003Cif([lnum1\u003C1200],Less than 20 minutes,Unknown. Servers are currently congested.)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Your character is traveling between data centers. Please wait until they have reached their destination.\nEstimated Travel Time: \u003CIf(LessThan(IntegerParameter(1),60))\u003ELess than 1 minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003ELess than 2 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003ELess than 3 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003ELess than 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003ELess than 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003ELess than 20 minutes\u003CElse/\u003EUnknown. Servers are currently congested.\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1567,7 +1567,7 @@
   },
   {
     "RowId": 1174,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E has arrived safely on \u003CString\u003Elstr4\u003C/String\u003E in the \u003CString\u003Elstr3\u003C/String\u003E data center!",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E has arrived safely on \u003CString\u003EStringParameter(4)\u003C/String\u003E in the \u003CString\u003EStringParameter(3)\u003C/String\u003E data center!",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1576,7 +1576,7 @@
   },
   {
     "RowId": 1175,
-    "Text": "This character is currently visiting the \u003CString\u003Elstr1\u003C/String\u003E data center.",
+    "Text": "This character is currently visiting the \u003CString\u003EStringParameter(1)\u003C/String\u003E data center.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1720,7 +1720,7 @@
   },
   {
     "RowId": 1191,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E will now be returned to Home World \u003CString\u003Elstr4\u003C/String\u003E in the \u003CString\u003Elstr3\u003C/String\u003E data center.\nEstimated Travel Time: \u003CIf([lnum1\u003C60])\u003ELess than 1 minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],Less than 2 minutes,\u003Cif([lnum1\u003C180],Less than 3 minutes,\u003Cif([lnum1\u003C300],Less than 5 minutes,\u003Cif([lnum1\u003C600],Less than 10 minutes,\u003Cif([lnum1\u003C1200],Less than 20 minutes,Unknown. Servers are currently congested.)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPlease note the following:\n\u30FBThis process may take several minutes to complete.\n\u30FBYou will be unable to cancel this process while it is underway.\n\u30FBYou will be unable to log in with a different character until this process has been completed.\u003C/span\u003E",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E will now be returned to Home World \u003CString\u003EStringParameter(4)\u003C/String\u003E in the \u003CString\u003EStringParameter(3)\u003C/String\u003E data center.\nEstimated Travel Time: \u003CIf(LessThan(IntegerParameter(1),60))\u003ELess than 1 minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003ELess than 2 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003ELess than 3 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003ELess than 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003ELess than 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003ELess than 20 minutes\u003CElse/\u003EUnknown. Servers are currently congested.\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPlease note the following:\n\u30FBThis process may take several minutes to complete.\n\u30FBYou will be unable to cancel this process while it is underway.\n\u30FBYou will be unable to log in with a different character until this process has been completed.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1801,7 +1801,7 @@
   },
   {
     "RowId": 1200,
-    "Text": "Unable to submit \u003CIf([lnum2\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request at this time. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Unable to submit \u003CIf(GreaterThan(IntegerParameter(2),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request at this time. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1819,7 +1819,7 @@
   },
   {
     "RowId": 1202,
-    "Text": "Unable to \u003CIf([lnum1\u003E0])\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E at this time. Please wait before attempting again.",
+    "Text": "Unable to \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E at this time. Please wait before attempting again.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1846,7 +1846,7 @@
   },
   {
     "RowId": 1205,
-    "Text": "Character is currently imprisoned in the Mordion Gaol. \u003CIf([lnum1\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request denied.",
+    "Text": "Character is currently imprisoned in the Mordion Gaol. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request denied.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1873,7 +1873,7 @@
   },
   {
     "RowId": 1208,
-    "Text": "Unable to \u003CIf([lnum2\u003E0])\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E. Please wait before submitting another request via the subcommand menu. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Unable to \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E. Please wait before submitting another request via the subcommand menu. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1882,7 +1882,7 @@
   },
   {
     "RowId": 1209,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E system is temporarily unavailable. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E system is temporarily unavailable. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 1210,
-    "Text": "Unable to \u003CIf([lnum2\u003E0])\u003Ereturn to Home World\u003CElse/\u003Evisit to another data center\u003C/If\u003E. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Unable to \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Ereturn to Home World\u003CElse/\u003Evisit to another data center\u003C/If\u003E. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1900,7 +1900,7 @@
   },
   {
     "RowId": 1211,
-    "Text": "Character was logged out or disconnected mid-duty. Unable to process \u003CIf([lnum1\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request.\nYou must log in before a new request can be processed.",
+    "Text": "Character was logged out or disconnected mid-duty. Unable to process \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request.\nYou must log in before a new request can be processed.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 1212,
-    "Text": "Unable to proceed with Data Center Visit. You cannot have any more characters on \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Unable to proceed with Data Center Visit. You cannot have any more characters on \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1936,7 +1936,7 @@
   },
   {
     "RowId": 1215,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E belongs to your current data center. Please use the World Visit system to travel there.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E belongs to your current data center. Please use the World Visit system to travel there.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 1216,
-    "Text": "Unable to visit \u003CString\u003Elstr1\u003C/String\u003E. This World belongs to a data center outside of your region.",
+    "Text": "Unable to visit \u003CString\u003EStringParameter(1)\u003C/String\u003E. This World belongs to a data center outside of your region.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 1217,
-    "Text": "You are currently on \u003CString\u003Elstr1\u003C/String\u003E. Canceling Data Center Visit request.",
+    "Text": "You are currently on \u003CString\u003EStringParameter(1)\u003C/String\u003E. Canceling Data Center Visit request.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1963,7 +1963,7 @@
   },
   {
     "RowId": 1218,
-    "Text": "Unable to select \u003CString\u003Elstr1\u003C/String\u003E as a destination for \u003CIf([lnum2\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E requests at this time.",
+    "Text": "Unable to select \u003CString\u003EStringParameter(1)\u003C/String\u003E as a destination for \u003CIf(GreaterThan(IntegerParameter(2),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E requests at this time.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1972,7 +1972,7 @@
   },
   {
     "RowId": 1219,
-    "Text": "A data error occurred and your \u003CIf([lnum1\u003E0])\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request could not be processed. Please contact the Support Desk. \u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum2)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "A data error occurred and your \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EReturn to Home World\u003CElse/\u003EData Center Visit\u003C/If\u003E request could not be processed. Please contact the Support Desk. \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n[\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 1220,
-    "Text": "An error occurred while contacting the server. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "An error occurred while contacting the server. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1990,7 +1990,7 @@
   },
   {
     "RowId": 1221,
-    "Text": "Unable to \u003CIf([lnum1\u003E0])\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E while in a party.",
+    "Text": "Unable to \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Ereturn to Home World\u003CElse/\u003Evisit another data center\u003C/If\u003E while in a party.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2188,7 +2188,7 @@
   },
   {
     "RowId": 1243,
-    "Text": "Your account data must be updated before traveling to Worlds in \u003CString\u003Elstr2\u003C/String\u003E.\nAfter returning to the title screen, please select \u003CString\u003Elstr2\u003C/String\u003E from the Data Center menu option and access the Character Selection screen. This will allow you to use the data center travel system to visit Worlds within this regional data center.",
+    "Text": "Your account data must be updated before traveling to Worlds in \u003CString\u003EStringParameter(2)\u003C/String\u003E.\nAfter returning to the title screen, please select \u003CString\u003EStringParameter(2)\u003C/String\u003E from the Data Center menu option and access the Character Selection screen. This will allow you to use the data center travel system to visit Worlds within this regional data center.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

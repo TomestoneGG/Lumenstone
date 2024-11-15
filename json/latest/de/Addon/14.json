@@ -985,15 +985,15 @@
   },
   {
     "RowId": 7840,
-    "Text": "[\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "[\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
   },
   {
     "RowId": 7841,
-    "Text": "[\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E]"
+    "Text": "[\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E]"
   },
   {
     "RowId": 7842,
-    "Text": "\u003Cswitch(lnum1,\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)\u003E"
   },
   {
     "RowId": 7843,
@@ -1025,27 +1025,27 @@
   },
   {
     "RowId": 7850,
-    "Text": "\u003CIcon\u003E12\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Eder LB-Taste\u003CElse/\u003E\u003Cif([gnum78==99],der L1-Taste,des linken Bumpers)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E12\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Eder LB-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder L1-Taste\u003CElse/\u003Edes linken Bumpers\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7851,
-    "Text": "\u003CIcon\u003E14\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Edes linken Triggers\u003CElse/\u003E\u003Cif([gnum78==99],der L2-Taste,des linken Triggers)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E14\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Edes linken Triggers\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder L2-Taste\u003CElse/\u003Edes linken Triggers\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7852,
-    "Text": "\u003CIcon\u003E16\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Eder linken Stick-Taste\u003CElse/\u003E\u003Cif([gnum78==99],der L3-Taste,der linken Stick-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E16\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Eder linken Stick-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder L3-Taste\u003CElse/\u003Eder linken Stick-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7853,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Eder RB-Taste\u003CElse/\u003E\u003Cif([gnum78==99],der R1-Taste,des rechten Bumpers)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Eder RB-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder R1-Taste\u003CElse/\u003Edes rechten Bumpers\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7854,
-    "Text": "\u003CIcon\u003E15\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Edes rechten Triggers\u003CElse/\u003E\u003Cif([gnum78==99],der R2-Taste,des rechten Triggers)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E15\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Edes rechten Triggers\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder R2-Taste\u003CElse/\u003Edes rechten Triggers\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7855,
-    "Text": "\u003CIcon\u003E17\u003C/Icon\u003E Belegung \u003CIf([gnum75==0])\u003Eder rechten Stick-Taste\u003CElse/\u003E\u003Cif([gnum78==99],der R3-Taste,der rechten Stick-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E17\u003C/Icon\u003E Belegung \u003CIf(Equal(PlayerParameter(75),0))\u003Eder rechten Stick-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Eder R3-Taste\u003CElse/\u003Eder rechten Stick-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7856,
@@ -1057,35 +1057,35 @@
   },
   {
     "RowId": 7858,
-    "Text": "\u003CIcon\u003E18\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003ESTART-Taste\u003CElse/\u003E\u003Cif([gnum78==99],Optionstaste,Men\u00FC-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E18\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003ESTART-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003EOptionstaste\u003CElse/\u003EMen\u00FC-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7859,
-    "Text": "\u003CIcon\u003E19\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003EZur\u00FCck-Taste\u003CElse/\u003E\u003Cif([gnum78==99],Touchpad-Taste,Ansicht-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E19\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003EZur\u00FCck-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003ETouchpad-Taste\u003CElse/\u003EAnsicht-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7860,
-    "Text": "\u003CIcon\u003E11\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003EY-Taste\u003CElse/\u003E\u003Cif([gnum78==99],\u25B3-Taste,Y-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E11\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003EY-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u25B3-Taste\u003CElse/\u003EY-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7861,
-    "Text": "\u003CIcon\u003E8\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003EB-Taste\u003CElse/\u003E\u003Cif([gnum78==99],\u25EF-Taste,B-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E8\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003EB-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u25EF-Taste\u003CElse/\u003EB-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7862,
-    "Text": "\u003CIcon\u003E9\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003EA-Taste\u003CElse/\u003E\u003Cif([gnum78==99],\u00D7-Taste,A-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E9\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003EA-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u00D7-Taste\u003CElse/\u003EA-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7863,
-    "Text": "\u003CIcon\u003E10\u003C/Icon\u003E Belegung der \u003CIf([gnum75==0])\u003EX-Taste\u003CElse/\u003E\u003Cif([gnum78==99],\u25A1-Taste,X-Taste)\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E10\u003C/Icon\u003E Belegung der \u003CIf(Equal(PlayerParameter(75),0))\u003EX-Taste\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u25A1-Taste\u003CElse/\u003EX-Taste\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7864,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(77)\u003E,\u003Cicon(95)\u003E,\u003Cicon(78)\u003E,\u003Cicon(79)\u003E,\u003Cicon(80)\u003E,\u003Cicon(81)\u003E,\u003Cicon(108)\u003E)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E77\u003C/Icon\u003E,\u003CIcon\u003E95\u003C/Icon\u003E,\u003CIcon\u003E78\u003C/Icon\u003E,\u003CIcon\u003E79\u003C/Icon\u003E,\u003CIcon\u003E80\u003C/Icon\u003E,\u003CIcon\u003E81\u003C/Icon\u003E,\u003CIcon\u003E108\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 7865,
-    "Text": "\u003Cswitch(lnum1,\uE090,\uE091,\uE092,\uE093,\uE094,\uE095,\uE096,\uE097)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\uE090,\uE091,\uE092,\uE093,\uE094,\uE095,\uE096,\uE097)\u003E"
   },
   {
     "RowId": 7866,
@@ -1893,31 +1893,31 @@
   },
   {
     "RowId": 8093,
-    "Text": "Achtung, der Gruppenanf\u00FChrer ist in diesem Inhalt noch nicht so weit fortgeschritten wie du. Du wirst zu seiner Position zur\u00FCck versetzt.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "Achtung, der Gruppenanf\u00FChrer ist in diesem Inhalt noch nicht so weit fortgeschritten wie du. Du wirst zu seiner Position zur\u00FCck versetzt.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8094,
-    "Text": "Achtung, der Gruppenanf\u00FChrer ist in diesem Inhalt noch nicht so weit fortgeschritten wie du. Du wirst zu seiner Position zur\u00FCck versetzt.\nAu\u00DFerdem \u003CIf([lnum2==1])\u003Ehat ein Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglied\u003CElse/\u003Ehaben \u003Cnum(lnum2)\u003E Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf([lnum3==1])\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003Cnum(lnum3)\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "Achtung, der Gruppenanf\u00FChrer ist in diesem Inhalt noch nicht so weit fortgeschritten wie du. Du wirst zu seiner Position zur\u00FCck versetzt.\nAu\u00DFerdem \u003CIf(Equal(IntegerParameter(2),1))\u003Ehat ein Gruppenmitglied\u003CElse/\u003Ehaben \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Gruppenmitglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf(Equal(IntegerParameter(3),1))\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8095,
-    "Text": "Achtung, \u003CIf([lnum2==1])\u003Eein Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglied hat\u003CElse/\u003E\u003Cnum(lnum2)\u003E Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglieder haben\u003C/If\u003E den gew\u00E4hlten Inhalt bereits abgeschlossen, daher \u003CIf([lnum3==1])\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003Cnum(lnum3)\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "Achtung, \u003CIf(Equal(IntegerParameter(2),1))\u003Eein Gruppenmitglied hat\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Gruppenmitglieder haben\u003C/If\u003E den gew\u00E4hlten Inhalt bereits abgeschlossen, daher \u003CIf(Equal(IntegerParameter(3),1))\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8096,
-    "Text": "Achtung, du bist noch nicht bis zu dem gew\u00E4hlten Inhalt fortgeschritten und wirst einen Teil der Geschichte \u00FCberspringen.\nAu\u00DFerdem \u003CIf([lnum2==1])\u003Ehat ein Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglied\u003CElse/\u003Ehaben \u003Cnum(lnum2)\u003E Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf([lnum3==1])\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003Cnum(lnum3)\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "Achtung, du bist noch nicht bis zu dem gew\u00E4hlten Inhalt fortgeschritten und wirst einen Teil der Geschichte \u00FCberspringen.\nAu\u00DFerdem \u003CIf(Equal(IntegerParameter(2),1))\u003Ehat ein Gruppenmitglied\u003CElse/\u003Ehaben \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Gruppenmitglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf(Equal(IntegerParameter(3),1))\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8097,
-    "Text": "Achtung, du bist noch nicht bis zu dem gew\u00E4hlten Inhalt fortgeschritten und wirst einen Teil der Geschichte \u00FCberspringen.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "Achtung, du bist noch nicht bis zu dem gew\u00E4hlten Inhalt fortgeschritten und wirst einen Teil der Geschichte \u00FCberspringen.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8098,
-    "Text": "\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) beginnen?"
+    "Text": "\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) beginnen?"
   },
   {
     "RowId": 8099,
-    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003EAchtung, du hast diesen Inhalt bereits abgeschlossen und daher keinen Anspruch auf eine Verg\u00FCtung.\u003C/span\u003E\nInsgesamt \u003CIf([lnum2==1])\u003Ehat ein Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglied\u003CElse/\u003Ehaben \u003Cnum(lnum2)\u003E Grup\u003C-\u003Epen\u003C-\u003Emit\u003C-\u003Eglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf([lnum3==1])\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003Cnum(lnum3)\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,lnum1,3)\u003E (Beuteregel: \u003Cswitch(lnum4,Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
+    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003EAchtung, du hast diesen Inhalt bereits abgeschlossen und daher keinen Anspruch auf eine Verg\u00FCtung.\u003C/span\u003E\nInsgesamt \u003CIf(Equal(IntegerParameter(2),1))\u003Ehat ein Gruppenmitglied\u003CElse/\u003Ehaben \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Gruppenmitglieder\u003C/If\u003E den Inhalt bereits abgeschlossen, daher \u003CIf(Equal(IntegerParameter(3),1))\u003Ewird nur eine Schatztruhe\u003CElse/\u003Ewerden \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E Schatztruhen\u003C/If\u003E erscheinen.\n\n\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E (Beuteregel: \u003Cswitch(IntegerParameter(4),Standard,Nur Gier,Anf\u00FChrer)\u003E) trotzdem betreten?"
   },
   {
     "RowId": 8100,
@@ -1925,7 +1925,7 @@
   },
   {
     "RowId": 8101,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E entziffern?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E entziffern?"
   },
   {
     "RowId": 8102,

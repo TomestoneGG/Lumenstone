@@ -21,11 +21,11 @@
   },
   {
     "RowId": 5,
-    "Objective": "\u5BFE\u8C61\u3092\u5F31\u3089\u305B\u3066\n\u003CIf([lnum1==0])\u003E\u30A8\u30E2\u30FC\u30C8\u300C\u306A\u3060\u3081\u308B\u300D\u003CElse/\u003E\u003Csheet(EventItem,lnum1,0)\u003E\u003C/If\u003E\u3092\u4F7F\u3063\u3066\u624B\u61D0\u3051\u308D"
+    "Objective": "\u5BFE\u8C61\u3092\u5F31\u3089\u305B\u3066\n\u003CIf(Equal(IntegerParameter(1),0))\u003E\u30A8\u30E2\u30FC\u30C8\u300C\u306A\u3060\u3081\u308B\u300D\u003CElse/\u003E\u003Csheet(EventItem,IntegerParameter(1),0)\u003E\u003C/If\u003E\u3092\u4F7F\u3063\u3066\u624B\u61D0\u3051\u308D"
   },
   {
     "RowId": 6,
-    "Objective": "\u003CIf([lnum1==0])\u003E\u5BFE\u8C61\u3092\u653B\u6483\u3057\u003CElse/\u003E\u003Csheet(EventItem,lnum1,0)\u003E\u3092\u4F7F\u7528\u3057\u003C/If\u003E\n\u6B63\u4F53\u3092\u898B\u7834\u3063\u3066\u8A0E\u4F10\u305B\u3088"
+    "Objective": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u5BFE\u8C61\u3092\u653B\u6483\u3057\u003CElse/\u003E\u003Csheet(EventItem,IntegerParameter(1),0)\u003E\u3092\u4F7F\u7528\u3057\u003C/If\u003E\n\u6B63\u4F53\u3092\u898B\u7834\u3063\u3066\u8A0E\u4F10\u305B\u3088"
   },
   {
     "RowId": 7,
@@ -37,7 +37,7 @@
   },
   {
     "RowId": 9,
-    "Objective": "\u30A8\u30E2\u30FC\u30C8\u300C\u624B\u307E\u306D\u304D\u3059\u308B\u300D\u3092\u4F7F\u3063\u3066\n\u003Csheet(BNpcName,lnum1,0)\u003E\u3092\u76EE\u7684\u5730\u307E\u3067\u5C0E\u3051"
+    "Objective": "\u30A8\u30E2\u30FC\u30C8\u300C\u624B\u307E\u306D\u304D\u3059\u308B\u300D\u3092\u4F7F\u3063\u3066\n\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E\u3092\u76EE\u7684\u5730\u307E\u3067\u5C0E\u3051"
   },
   {
     "RowId": 10,
@@ -97,11 +97,11 @@
   },
   {
     "RowId": 24,
-    "Objective": "\u003Csheet(BNpcName,lnum1,0)\u003E\u3092\u5012\u3059\u3068\u624B\u306B\u5165\u308B\n\u003Csheet(EventItem,lnum2,0)\u003E\u3092\u4F7F\u7528\u3057\n\u9B54\u7269\u306E\u6B63\u4F53\u3092\u898B\u7834\u308C"
+    "Objective": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E\u3092\u5012\u3059\u3068\u624B\u306B\u5165\u308B\n\u003Csheet(EventItem,IntegerParameter(2),0)\u003E\u3092\u4F7F\u7528\u3057\n\u9B54\u7269\u306E\u6B63\u4F53\u3092\u898B\u7834\u308C"
   },
   {
     "RowId": 25,
-    "Objective": "\u003Csheet(BNpcName,lnum1,0)\u003E\u304C\u5012\u3055\u308C\u308B\u3068\u4EFB\u52D9\u5931\u6557"
+    "Objective": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E\u304C\u5012\u3055\u308C\u308B\u3068\u4EFB\u52D9\u5931\u6557"
   },
   {
     "RowId": 26,
@@ -113,7 +113,7 @@
   },
   {
     "RowId": 28,
-    "Objective": "\u003Csheet(EventItem,lnum1,0)\u003E\u306E\u4FDD\u6709\u8005\u3092\u767A\u898B\u3057\n\u6B63\u4F53\u3092\u898B\u7834\u3063\u3066\u5012\u305B"
+    "Objective": "\u003Csheet(EventItem,IntegerParameter(1),0)\u003E\u306E\u4FDD\u6709\u8005\u3092\u767A\u898B\u3057\n\u6B63\u4F53\u3092\u898B\u7834\u3063\u3066\u5012\u305B"
   },
   {
     "RowId": 29,
@@ -129,15 +129,15 @@
   },
   {
     "RowId": 32,
-    "Objective": "\u30A8\u30E2\u30FC\u30C8\u300C\u003CIf([lnum1==1])\u003E\u3064\u3064\u304F\u003CElse/\u003E\u554F\u3044\u8A70\u3081\u308B\u003C/If\u003E\u300D\u306B\u53CD\u5FDC\u3057\u305F\u6575\u3092\u5012\u3057\n\u003Csheet(EventItem,lnum2,0)\u003E\u3092\u5165\u624B\u305B\u3088"
+    "Objective": "\u30A8\u30E2\u30FC\u30C8\u300C\u003CIf(Equal(IntegerParameter(1),1))\u003E\u3064\u3064\u304F\u003CElse/\u003E\u554F\u3044\u8A70\u3081\u308B\u003C/If\u003E\u300D\u306B\u53CD\u5FDC\u3057\u305F\u6575\u3092\u5012\u3057\n\u003Csheet(EventItem,IntegerParameter(2),0)\u003E\u3092\u5165\u624B\u305B\u3088"
   },
   {
     "RowId": 33,
-    "Objective": "\u5931\u6557\u6761\u4EF6\uFF1A\u003Csheet(BNpcName,lnum1,0)\u003E\u304C\u5168\u3066\u5931\u308F\u308C\u308B"
+    "Objective": "\u5931\u6557\u6761\u4EF6\uFF1A\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E\u304C\u5168\u3066\u5931\u308F\u308C\u308B"
   },
   {
     "RowId": 34,
-    "Objective": "\u003Csheet(BNpcName,lnum1,0)\u003E\u304B\u3089\u624B\u306B\u5165\u308B\n\u003Csheet(EventItem,lnum2,0)\u003E\u3092\u003Csheet(EObj,lnum3,0)\u003E\u306B\u4F7F\u7528\u3057\n\u003Csheet(BNpcName,lnum4,0)\u003E\u3092\u8A98\u3044\u51FA\u305B"
+    "Objective": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E\u304B\u3089\u624B\u306B\u5165\u308B\n\u003Csheet(EventItem,IntegerParameter(2),0)\u003E\u3092\u003Csheet(EObj,IntegerParameter(3),0)\u003E\u306B\u4F7F\u7528\u3057\n\u003Csheet(BNpcName,IntegerParameter(4),0)\u003E\u3092\u8A98\u3044\u51FA\u305B"
   },
   {
     "RowId": 35,

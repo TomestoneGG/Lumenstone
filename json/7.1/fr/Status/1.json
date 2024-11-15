@@ -2070,7 +2070,7 @@
   {
     "RowId": 47,
     "Name": "Discr\u00E9tion",
-    "Description": "Se d\u00E9place silencieusement et ne peut pas \u00EAtre d\u00E9tect\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E par les ennemis jusqu\u0027\u00E0 4 niveaux au-dessus du sien.",
+    "Description": "Se d\u00E9place silencieusement et ne peut pas \u00EAtre d\u00E9tect\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E par les ennemis jusqu\u0027\u00E0 4 niveaux au-dessus du sien.",
     "Icon": 216015,
     "ParamModifier": 0,
     "VFX": {
@@ -5661,7 +5661,7 @@
   {
     "RowId": 128,
     "Name": "Rafale de coups",
-    "Description": "\u003CIf([gnum68==23])\u003E\u003Cif([gnum72\u003E=70],Fl\u00E8che rayonnante,Tir droit)\u003E\u003CElse/\u003ETir droit\u003C/If\u003E\u003CIf([gnum68==23])\u003E\u003Cif([gnum72\u003E=72], et Morsure de l\u0027ombre, et Rafale impitoyable)\u003E\u003CElse/\u003E et Rafale impitoyable\u003C/If\u003E peuvent \u00EAtre \u003CIf([gnum68==23])\u003E\u003Cif([gnum72\u003E=70],lanc\u00E9es,lanc\u00E9s)\u003E\u003CElse/\u003Elanc\u00E9s\u003C/If\u003E.\n\u003CIf([gnum68==23])\u003E\u003Cif([gnum72\u003E=70],Fl\u00E8che rayonnante,Tir droit)\u003E\u003CElse/\u003ETir droit\u003C/If\u003E infligera 3 fois le montant normal de d\u00E9g\u00E2ts en un seul coup.\nLa puissance de \u003CIf([gnum68==23])\u003E\u003Cif([gnum72\u003E=72],Morsure de l\u0027ombre,Rafale impitoyable)\u003E\u003CElse/\u003ERafale impitoyable\u003C/If\u003E est augment\u00E9e.",
+    "Description": "\u003CIf(Equal(PlayerParameter(68),23))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),70))\u003EFl\u00E8che rayonnante\u003CElse/\u003ETir droit\u003C/If\u003E\u003CElse/\u003ETir droit\u003C/If\u003E\u003CIf(Equal(PlayerParameter(68),23))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),72))\u003E et Morsure de l\u0027ombre\u003CElse/\u003E et Rafale impitoyable\u003C/If\u003E\u003CElse/\u003E et Rafale impitoyable\u003C/If\u003E peuvent \u00EAtre \u003CIf(Equal(PlayerParameter(68),23))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),70))\u003Elanc\u00E9es\u003CElse/\u003Elanc\u00E9s\u003C/If\u003E\u003CElse/\u003Elanc\u00E9s\u003C/If\u003E.\n\u003CIf(Equal(PlayerParameter(68),23))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),70))\u003EFl\u00E8che rayonnante\u003CElse/\u003ETir droit\u003C/If\u003E\u003CElse/\u003ETir droit\u003C/If\u003E infligera 3 fois le montant normal de d\u00E9g\u00E2ts en un seul coup.\nLa puissance de \u003CIf(Equal(PlayerParameter(68),23))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),72))\u003EMorsure de l\u0027ombre\u003CElse/\u003ERafale impitoyable\u003C/If\u003E\u003CElse/\u003ERafale impitoyable\u003C/If\u003E est augment\u00E9e.",
     "Icon": 210356,
     "ParamModifier": 1,
     "VFX": null,

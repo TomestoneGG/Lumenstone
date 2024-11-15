@@ -2446,7 +2446,7 @@
   },
   {
     "RowId": 6163,
-    "Text": "Wie m\u00E4chtig \u003CIf(gnum4)\u003Esie\u003CElse/\u003Eer\u003C/If\u003E ist!",
+    "Text": "Wie m\u00E4chtig \u003CIf(PlayerParameter(4))\u003Esie\u003CElse/\u003Eer\u003C/If\u003E ist!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -3616,7 +3616,7 @@
   },
   {
     "RowId": 6241,
-    "Text": "Ich brauche deine Hilfe, \u003CIf(gnum4)\u003EReisende\u003CElse/\u003EReisender\u003C/If\u003E!",
+    "Text": "Ich brauche deine Hilfe, \u003CIf(PlayerParameter(4))\u003EReisende\u003CElse/\u003EReisender\u003C/If\u003E!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5281,7 +5281,7 @@
   },
   {
     "RowId": 6352,
-    "Text": "Oh, und vielen Dank, \u003CIf(gnum4)\u003Emein M\u00E4dchen\u003CElse/\u003Emein Junge\u003C/If\u003E!",
+    "Text": "Oh, und vielen Dank, \u003CIf(PlayerParameter(4))\u003Emein M\u00E4dchen\u003CElse/\u003Emein Junge\u003C/If\u003E!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 3,
@@ -5356,7 +5356,7 @@
   },
   {
     "RowId": 6357,
-    "Text": "Streng dich an, Abenteurer\u003CIf(gnum4)\u003Ein\u003CElse/\u003E \u003C/If\u003E!",
+    "Text": "Streng dich an, Abenteurer\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003E \u003C/If\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5386,7 +5386,7 @@
   },
   {
     "RowId": 6359,
-    "Text": "Schlag sie zur\u00FCck, Abenteurer\u003CIf(gnum4)\u003Ein\u003CElse/\u003E \u003C/If\u003E!",
+    "Text": "Schlag sie zur\u00FCck, Abenteurer\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003E \u003C/If\u003E!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5506,7 +5506,7 @@
   },
   {
     "RowId": 6367,
-    "Text": "\u003CIf(gnum4)\u003EFreundlichste von freundlichsten Aben\u003C-\u003Eteu\u003C-\u003Ere\u003C-\u003Erin\u003C-\u003Enen\u003CElse/\u003EFreundlichster von freundlichsten Abenteurern\u003C/If\u003E, Mimiroon sehr dankbar f\u00FCr Freundlichkeit sein!",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EFreundlichste von freundlichsten Abenteurerinnen\u003CElse/\u003EFreundlichster von freundlichsten Abenteurern\u003C/If\u003E, Mimiroon sehr dankbar f\u00FCr Freundlichkeit sein!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 3,
@@ -5596,7 +5596,7 @@
   },
   {
     "RowId": 6373,
-    "Text": "So spricht \u003CIf(gnum4)\u003Eeine wahre Kriegerin\u003CElse/\u003Eein wahrer Krieger\u003C/If\u003E!",
+    "Text": "So spricht \u003CIf(PlayerParameter(4))\u003Eeine wahre Kriegerin\u003CElse/\u003Eein wahrer Krieger\u003C/If\u003E!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 3,
@@ -6226,7 +6226,7 @@
   },
   {
     "RowId": 6415,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, dein Einsatz!",
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, dein Einsatz!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7231,7 +7231,7 @@
   },
   {
     "RowId": 6482,
-    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,lnum2,1,1,1)\u003E\u003C/Head\u003E hat \u003Cdenoun(Treasure,1,lnum3,1,4,1)\u003E \u003CIf([lnum1==1])\u003Eder Extraklasse \u003CElse/\u003E \u003C/If\u003Efallen gelassen!",
+    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(2),1,1,1)\u003E\u003C/Head\u003E hat \u003Cdenoun(Treasure,1,IntegerParameter(3),1,4,1)\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eder Extraklasse \u003CElse/\u003E \u003C/If\u003Efallen gelassen!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,

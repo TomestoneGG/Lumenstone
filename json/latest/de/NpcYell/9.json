@@ -1186,7 +1186,7 @@
   },
   {
     "RowId": 4079,
-    "Text": "Zeit f\u00FCr R\u00FCckspringen! Hazzu noch viel Spa\u00DF, Gro\u00DFwachsene\u003CIf(gnum4)\u003E \u003CElse/\u003Er\u003C/If\u003E!",
+    "Text": "Zeit f\u00FCr R\u00FCckspringen! Hazzu noch viel Spa\u00DF, Gro\u00DFwachsene\u003CIf(PlayerParameter(4))\u003E \u003CElse/\u003Er\u003C/If\u003E!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -1276,7 +1276,7 @@
   },
   {
     "RowId": 4085,
-    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,1,lnum1,1,1,1)\u003E\u003C/Head\u003E ist erschienen!",
+    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,1,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist erschienen!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1291,7 +1291,7 @@
   },
   {
     "RowId": 4086,
-    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,lnum1,1,1,1)\u003E\u003C/Head\u003E ist irgendwohin verschwunden.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist irgendwohin verschwunden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 4087,
-    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,lnum1,1,1,1)\u003E\u003C/Head\u003E ist besiegt und \u003Cdenoun(Treasure,1,lnum2,1,1,1)\u003E ist erschienen!",
+    "Text": "\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist besiegt und \u003Cdenoun(Treasure,1,IntegerParameter(2),1,1,1)\u003E ist erschienen!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1321,7 +1321,7 @@
   },
   {
     "RowId": 4088,
-    "Text": "\u003CIf([lnum2==0])\u003E\u003Chead(\u003Cdenoun(BNpcName,2,lnum1,1,1,1)\u003E)\u003E ist geflohen!\u003CElse/\u003E\u003Chead(\u003Cdenoun(BNpcName,2,lnum1,2,1,1)\u003E)\u003E sind geflohen!\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E ist geflohen!\u003CElse/\u003E\u003CHead\u003E\u003Cdenoun(BNpcName,2,IntegerParameter(1),2,1,1)\u003E\u003C/Head\u003E sind geflohen!\u003C/If\u003E",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -2776,7 +2776,7 @@
   },
   {
     "RowId": 4185,
-    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CNum\u003Elnum1\u003C/Num\u003E Minute\u003CIf([lnum1==1])\u003E \u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass neue Partien nur bis \u003CNum\u003Elnum2\u003C/Num\u003E Minuten vor Schlie\u00DFung begonnen werden k\u00F6nnen.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass neue Partien nur bis \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Minuten vor Schlie\u00DFung begonnen werden k\u00F6nnen.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2791,7 +2791,7 @@
   },
   {
     "RowId": 4186,
-    "Text": "Da der Weltensalon in \u003CNum\u003Elnum1\u003C/Num\u003E Minute\u003CIf([lnum1==1])\u003E \u003CElse/\u003En\u003C/If\u003E schlie\u00DFt, k\u00F6nnen keine neuen Partien mehr begonnen werden. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
+    "Text": "Da der Weltensalon in \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E schlie\u00DFt, k\u00F6nnen keine neuen Partien mehr begonnen werden. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2806,7 +2806,7 @@
   },
   {
     "RowId": 4187,
-    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf([lnum1==1])\u003Eeiner\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E Minute\u003CIf([lnum1==1])\u003E \u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf(Equal(IntegerParameter(1),1))\u003Eeiner\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E. Wir bitten zu beachten, dass verbleibende Spieler nach Schlie\u00DFung aus dem Weltensalon entfernt werden.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2821,7 +2821,7 @@
   },
   {
     "RowId": 4188,
-    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf([lnum1==1])\u003Eeiner\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E Minute\u003CIf([lnum1==1])\u003E \u003CElse/\u003En\u003C/If\u003E. Neue Spieler werden nun nicht mehr eingelassen.",
+    "Text": "Dieser Weltensalon schlie\u00DFt in \u003CIf(Equal(IntegerParameter(1),1))\u003Eeiner\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E Minute\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E. Neue Spieler werden nun nicht mehr eingelassen.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3721,7 +3721,7 @@
   },
   {
     "RowId": 4248,
-    "Text": "Sei vorsichtig, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!",
+    "Text": "Sei vorsichtig, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6886,7 +6886,7 @@
   },
   {
     "RowId": 4459,
-    "Text": "\u003CIf(gnum4)\u003EEine wahre Heldin\u003CElse/\u003EEin wahrer Held\u003C/If\u003E ...",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EEine wahre Heldin\u003CElse/\u003EEin wahrer Held\u003C/If\u003E ...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7306,7 +7306,7 @@
   },
   {
     "RowId": 4487,
-    "Text": "\u003CIf(gnum4)\u003EFrau Abenteurerin\u003CElse/\u003EHerr Abenteurer\u003C/If\u003E! K\u00F6nntest du mir vielleicht helfen?",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EFrau Abenteurerin\u003CElse/\u003EHerr Abenteurer\u003C/If\u003E! K\u00F6nntest du mir vielleicht helfen?",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 3,

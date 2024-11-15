@@ -657,7 +657,7 @@
   },
   {
     "RowId": 8630,
-    "Text": "Hier wirst du dein Ende finden, \u003CIf(gnum4)\u003EDienerin\u003CElse/\u003EDiener\u003C/If\u003E des Lichts."
+    "Text": "Hier wirst du dein Ende finden, \u003CIf(PlayerParameter(4))\u003EDienerin\u003CElse/\u003EDiener\u003C/If\u003E des Lichts."
   },
   {
     "RowId": 8631,
@@ -805,15 +805,15 @@
   },
   {
     "RowId": 8900,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum2,Klasse B,Klasse A,Klasse S)\u003E\n\u003Cswitch(lnum3,Unbesetzt,Erobert  \u003Cicon(51)\u003E,Erobert  \u003Cicon(52)\u003E,Erobert  \u003Cicon(53)\u003E)\u003E\nVerbleibende Daten: \u003CNum\u003Elnum4\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(2),Klasse B,Klasse A,Klasse S)\u003E\n\u003Cswitch(IntegerParameter(3),Unbesetzt,Erobert  \u003CIcon\u003E51\u003C/Icon\u003E,Erobert  \u003CIcon\u003E52\u003C/Icon\u003E,Erobert  \u003CIcon\u003E53\u003C/Icon\u003E)\u003E\nVerbleibende Daten: \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%"
   },
   {
     "RowId": 8901,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum2,Neutral,Erobert von \u003Cicon(51)\u003E,Erobert von \u003Cicon(52)\u003E,Erobert von \u003Cicon(53)\u003E)\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(2),Neutral,Erobert von \u003CIcon\u003E51\u003C/Icon\u003E,Erobert von \u003CIcon\u003E52\u003C/Icon\u003E,Erobert von \u003CIcon\u003E53\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 8902,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum3,Ruhezustand,\u003Cnum(lnum4)\u003E:\u003Csec(lnum5)\u003E bis Reaktivierung,Eisst\u00E4rke: \u003Cnum(lnum2)\u003E\u003Cnbsp\u003E%)\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(3),Ruhezustand,\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(5)\u003C/Sec\u003E bis Reaktivierung,Eisst\u00E4rke: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%)\u003E"
   },
   {
     "RowId": 8903,
@@ -821,7 +821,7 @@
   },
   {
     "RowId": 8910,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum2,\u003Cnum(lnum3)\u003E:\u003Csec(lnum4)\u003E bis Erscheinen,LP: \u003Cnum(lnum5)\u003E\u003Cnbsp\u003E%)\u003E "
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(2),\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(4)\u003C/Sec\u003E bis Erscheinen,LP: \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E%)\u003E "
   },
   {
     "RowId": 9000,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 10403,
-    "Text": "Unsere Gegner sind nicht zu untersch\u00E4tzen.\n\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, besch\u00FCtze Lucia!"
+    "Text": "Unsere Gegner sind nicht zu untersch\u00E4tzen.\n\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, besch\u00FCtze Lucia!"
   },
   {
     "RowId": 10404,
@@ -1565,7 +1565,7 @@
   },
   {
     "RowId": 10416,
-    "Text": "Es gibt neue Hauptziele!\n\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E und Raubahn!"
+    "Text": "Es gibt neue Hauptziele!\n\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E und Raubahn!"
   },
   {
     "RowId": 10417,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 10423,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!\nLos, schnappen wir uns das Hauptziel!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!\nLos, schnappen wir uns das Hauptziel!"
   },
   {
     "RowId": 10424,
@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 10430,
-    "Text": "Keine Sorge! \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E schafft das schon!\nWir m\u00FCssen auch weiterk\u00E4mpfen!"
+    "Text": "Keine Sorge! \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E schafft das schon!\nWir m\u00FCssen auch weiterk\u00E4mpfen!"
   },
   {
     "RowId": 10431,
@@ -1633,11 +1633,11 @@
   },
   {
     "RowId": 10433,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, jetzt h\u00E4ngt alles von dir ab!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, jetzt h\u00E4ngt alles von dir ab!"
   },
   {
     "RowId": 10434,
-    "Text": "Nicht schlecht, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E.\nAber der Bulle von Ala Mhigo hat noch seine H\u00F6rner!"
+    "Text": "Nicht schlecht, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E.\nAber der Bulle von Ala Mhigo hat noch seine H\u00F6rner!"
   },
   {
     "RowId": 10435,
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 10436,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E steht noch?\nDann los, bringen wir es zu Ende!!!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E steht noch?\nDann los, bringen wir es zu Ende!!!"
   },
   {
     "RowId": 10437,

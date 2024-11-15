@@ -1780,7 +1780,7 @@
       }
     ],
     "Text": [
-      "Welcome, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. You\u0027ll be glad to hear business is brisk, in no small part thanks to your efforts.",
+      "Welcome, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. You\u0027ll be glad to hear business is brisk, in no small part thanks to your efforts.",
       "As for our journey... Well, Uvlo is still gathering the funds. I offered to cover our travel expenses, but he is loath to be in debt to an elder.",
       "It\u0027s been fifty years since I\u0027ve left this city, so I\u0027ve no issue with staying here a little while longer. While Uvlo readies his funds, I shall take my time preparing the shop\u2500and myself\u2500for the journey ahead."
     ],
@@ -2251,7 +2251,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! People have been talking about my new menu, and I suspect I have you to thank once again.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! People have been talking about my new menu, and I suspect I have you to thank once again.",
       "Lately I\u0027ve been trying to come up with new drink recipes, but Halnaruk keeps suggesting the most \u003CItalic\u003E1\u003C/Italic\u003Eacrid\u003CItalic\u003E0\u003C/Italic\u003E ingredients...",
       "Still, I\u0027m glad to have him as my sounding board. Together, we\u0027ll strive for a happier, healthier Tuliyollal!"
     ],
@@ -3874,7 +3874,7 @@
       }
     ],
     "Text": [
-      "My apologies, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, but we\u0027ve no vacancies at present.",
+      "My apologies, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, but we\u0027ve no vacancies at present.",
       "0",
       "0"
     ],
@@ -4069,7 +4069,7 @@
       }
     ],
     "Text": [
-      "Oh hello, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. I must admit, I am still in shock after what Eutrope revealed to us... But Yaana and I will endeavor to find an alternative cure for the disease as quickly as we can.",
+      "Oh hello, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. I must admit, I am still in shock after what Eutrope revealed to us... But Yaana and I will endeavor to find an alternative cure for the disease as quickly as we can.",
       "Ah, speaking of Eutrope, have you ever found it strange that her name is so different from ours?",
       "It\u0027s because she decided to change hers from the one our parents gave us to an Alexandrian name instead. Her progressive ideals are not limited to her ring persona\u2500they are core to who she is."
     ],
@@ -4354,7 +4354,7 @@
       }
     ],
     "Text": [
-      "Welcome to the For\u0027ard Cabins, good \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E. While I am still in training, I will endeavor to ensure that your stay with us is comfortable.",
+      "Welcome to the For\u0027ard Cabins, good \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E. While I am still in training, I will endeavor to ensure that your stay with us is comfortable.",
       "0",
       "0"
     ],
@@ -7459,7 +7459,7 @@
       }
     ],
     "Text": [
-      "A Yok Huy was here earlier, looking quite flustered. Seems like I\u0027d better hold off on drinking \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],this evening,tonight)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],tonight,this evening)\u003E\u003C/If\u003E.",
+      "A Yok Huy was here earlier, looking quite flustered. Seems like I\u0027d better hold off on drinking \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Ethis evening\u003CElse/\u003Etonight\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Etonight\u003CElse/\u003Ethis evening\u003C/If\u003E\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -11014,7 +11014,7 @@
       }
     ],
     "Text": [
-      "Go ahead, folks, order anything off the menu\u2500\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],tonight,today)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],today,tonight)\u003E\u003C/If\u003E, it\u0027s on the house! I\u0027m even offering a special cocktail to commemorate the Dawnservant\u0027s triumphant return!",
+      "Go ahead, folks, order anything off the menu\u2500\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Etonight\u003CElse/\u003Etoday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Etoday\u003CElse/\u003Etonight\u003C/If\u003E\u003C/If\u003E, it\u0027s on the house! I\u0027m even offering a special cocktail to commemorate the Dawnservant\u0027s triumphant return!",
       "0",
       "0"
     ],
@@ -11935,7 +11935,7 @@
       }
     ],
     "Text": [
-      "Greetings, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! How fares the hunt? Finding your way around Tural without incident, I hope?",
+      "Greetings, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! How fares the hunt? Finding your way around Tural without incident, I hope?",
       "0",
       "0"
     ],
@@ -12013,7 +12013,7 @@
       }
     ],
     "Text": [
-      "To hunt is to live, and to live is to hunt. But your life is worth more than any mark, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Always remember that.",
+      "To hunt is to live, and to live is to hunt. But your life is worth more than any mark, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Always remember that.",
       "0",
       "0"
     ],

@@ -213,7 +213,7 @@
   },
   {
     "RowId": 6269,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6270,
@@ -377,7 +377,7 @@
   },
   {
     "RowId": 6312,
-    "Text": "\u300C\u003Csheet(HousingPreset,lnum1,0)\u003E\u300D\u3092\u5EFA\u7BC9\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u300C\u003Csheet(HousingPreset,IntegerParameter(1),0)\u003E\u300D\u3092\u5EFA\u7BC9\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6313,
@@ -421,7 +421,7 @@
   },
   {
     "RowId": 6323,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6324,
@@ -497,7 +497,7 @@
   },
   {
     "RowId": 6342,
-    "Text": "\u003Cswitch(lnum1,1st,2nd)\u003E FLOOR "
+    "Text": "\u003Cswitch(IntegerParameter(1),1st,2nd)\u003E FLOOR "
   },
   {
     "RowId": 6343,
@@ -545,7 +545,7 @@
   },
   {
     "RowId": 6355,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6357,
@@ -557,11 +557,11 @@
   },
   {
     "RowId": 6359,
-    "Text": "\u003CSec\u003Elnum1\u003C/Sec\u003E \u003Cswitch(lnum2,\uE083\u003Ccolortype(5)\u003E\uE07D\uE07C\u003Ccolortype(0)\u003E,\u003Ccolortype(5)\u003E\uE083\u003Ccolortype(0)\u003E\uE07D\u003Ccolortype(5)\u003E\uE07C\u003Ccolortype(0)\u003E,\u003Ccolortype(5)\u003E\uE083\uE07D\u003Ccolortype(0)\u003E\uE07C)\u003E"
+    "Text": "\u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E \u003Cswitch(IntegerParameter(2),\uE083\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE07D\uE07C\u003C/span\u003E,\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE083\u003C/span\u003E\uE07D\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE07C\u003C/span\u003E,\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE083\uE07D\u003C/span\u003E\uE07C)\u003E"
   },
   {
     "RowId": 6360,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E \uE049"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E \uE049"
   },
   {
     "RowId": 6361,
@@ -573,11 +573,11 @@
   },
   {
     "RowId": 6363,
-    "Text": "\u003CIf([lnum1\u003C4])\u003E\u003Cswitch(lnum1,1st,2nd,3rd)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003Eth\u003C/If\u003E Ward"
+    "Text": "\u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eth\u003C/If\u003E Ward"
   },
   {
     "RowId": 6364,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A"
   },
   {
     "RowId": 6365,
@@ -625,15 +625,15 @@
   },
   {
     "RowId": 6377,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E Gil"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E Gil"
   },
   {
     "RowId": 6378,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E \u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A \u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E \u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730"
   },
   {
     "RowId": 6379,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E:\u003CSec\u003Elnum3\u003C/Sec\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E:\u003CSec\u003EIntegerParameter(3)\u003C/Sec\u003E"
   },
   {
     "RowId": 6380,
@@ -661,11 +661,11 @@
   },
   {
     "RowId": 6386,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E \u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A \u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730 [\u003Cswitch(lnum4,Small,Medium,Large)\u003E]"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E \u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730 [\u003Cswitch(IntegerParameter(4),Small,Medium,Large)\u003E]"
   },
   {
     "RowId": 6387,
-    "Text": " \u00AB\u003CString\u003Elstr1\u003C/String\u003E\u00BB"
+    "Text": " \u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
   },
   {
     "RowId": 6388,
@@ -693,7 +693,7 @@
   },
   {
     "RowId": 6394,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6395,
@@ -769,15 +769,15 @@
   },
   {
     "RowId": 6413,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u306B\n\u003Csheet(Item,lnum2,0)\u003E\u3092\u690D\u3048\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u306B\n\u003Csheet(Item,IntegerParameter(2),0)\u003E\u3092\u690D\u3048\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6414,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6415,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u500B"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u500B"
   },
   {
     "RowId": 6416,
@@ -797,7 +797,7 @@
   },
   {
     "RowId": 6420,
-    "Text": "\u7551\u003CNum\u003Elnum1\u003C/Num\u003E\u306E\u755D\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u7551\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u306E\u755D\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6421,
@@ -821,7 +821,7 @@
   },
   {
     "RowId": 6426,
-    "Text": "\u30CF\u30A6\u30B9\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09\u306E\u5F15\u8D8A\u3092\u5B9F\u884C\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u203B\u652F\u6255\u3063\u305F\u30AE\u30EB\u3092\u4E0A\u9650\u3068\u3057\u305F\u300C\u6240\u6301\u3057\u3066\u3044\u308B\u571F\u5730\u4EE3\u300D\u306E\u7D0415\uFF05\u306E\u30AE\u30EB\u304C\u8FD4\u9084\u3055\u308C\u307E\u3059\u3002\n\n\u8FD4\u9084\u30AE\u30EB\uFF1A\u003Ckilo(lnum1,\\,)\u003E\u30AE\u30EB"
+    "Text": "\u30CF\u30A6\u30B9\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09\u306E\u5F15\u8D8A\u3092\u5B9F\u884C\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u203B\u652F\u6255\u3063\u305F\u30AE\u30EB\u3092\u4E0A\u9650\u3068\u3057\u305F\u300C\u6240\u6301\u3057\u3066\u3044\u308B\u571F\u5730\u4EE3\u300D\u306E\u7D0415\uFF05\u306E\u30AE\u30EB\u304C\u8FD4\u9084\u3055\u308C\u307E\u3059\u3002\n\n\u8FD4\u9084\u30AE\u30EB\uFF1A\u003Ckilo(IntegerParameter(1),,)\u003E\u30AE\u30EB"
   },
   {
     "RowId": 6427,
@@ -829,7 +829,7 @@
   },
   {
     "RowId": 6428,
-    "Text": "\u30CF\u30A6\u30B9\uFF08\u500B\u4EBA\u5B85\uFF09\u306E\u5F15\u8D8A\u3092\u5B9F\u884C\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u203B\u652F\u6255\u3063\u305F\u30AE\u30EB\u3092\u4E0A\u9650\u3068\u3057\u305F\u300C\u6240\u6301\u3057\u3066\u3044\u308B\u571F\u5730\u4EE3\u300D\u306E\u7D0415\uFF05\u306E\u30AE\u30EB\u304C\u8FD4\u9084\u3055\u308C\u307E\u3059\u3002\n\n\u8FD4\u9084\u30AE\u30EB\uFF1A\u003Ckilo(lnum1,\\,)\u003E\u30AE\u30EB"
+    "Text": "\u30CF\u30A6\u30B9\uFF08\u500B\u4EBA\u5B85\uFF09\u306E\u5F15\u8D8A\u3092\u5B9F\u884C\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u203B\u652F\u6255\u3063\u305F\u30AE\u30EB\u3092\u4E0A\u9650\u3068\u3057\u305F\u300C\u6240\u6301\u3057\u3066\u3044\u308B\u571F\u5730\u4EE3\u300D\u306E\u7D0415\uFF05\u306E\u30AE\u30EB\u304C\u8FD4\u9084\u3055\u308C\u307E\u3059\u3002\n\n\u8FD4\u9084\u30AE\u30EB\uFF1A\u003Ckilo(IntegerParameter(1),,)\u003E\u30AE\u30EB"
   },
   {
     "RowId": 6429,
@@ -837,15 +837,15 @@
   },
   {
     "RowId": 6430,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E\u3092\u96C7\u7528\u3057\u307E\u3059\u3002\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u89E3\u96C7\u6642\u306B\u30A2\u30A4\u30C6\u30E0\u306B\u623B\u3059\u3053\u3068\u306F\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u003C/span\u003E\n\u96C7\u7528\u3057\u3066\u3088\u308D\u3057\u3044\u3067\u3057\u3087\u3046\u304B\uFF1F"
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E\u3092\u96C7\u7528\u3057\u307E\u3059\u3002\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u89E3\u96C7\u6642\u306B\u30A2\u30A4\u30C6\u30E0\u306B\u623B\u3059\u3053\u3068\u306F\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u003C/span\u003E\n\u96C7\u7528\u3057\u3066\u3088\u308D\u3057\u3044\u3067\u3057\u3087\u3046\u304B\uFF1F"
   },
   {
     "RowId": 6432,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E\u3092\u96C7\u7528\u3059\u308B\u3002"
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E\u3092\u96C7\u7528\u3059\u308B\u3002"
   },
   {
     "RowId": 6433,
-    "Text": "\u003Csheet(ENpcResident,lnum1,0)\u003E\u3092\u89E3\u96C7\u3059\u308B\u3002"
+    "Text": "\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E\u3092\u89E3\u96C7\u3059\u308B\u3002"
   },
   {
     "RowId": 6434,
@@ -921,7 +921,7 @@
   },
   {
     "RowId": 6453,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u3000\u003CString\u003Elstr2\u003C/String\u003E\u53F7\u5BA4"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u3000\u003CString\u003EStringParameter(2)\u003C/String\u003E\u53F7\u5BA4"
   },
   {
     "RowId": 6454,
@@ -945,7 +945,7 @@
   },
   {
     "RowId": 6459,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E-\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E-\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6460,
@@ -953,7 +953,7 @@
   },
   {
     "RowId": 6461,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u53F7\u5BA4\uFF1A\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u306E\u500B\u5BA4\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002 \n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u53F7\u5BA4\uFF1A\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u306E\u500B\u5BA4\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002 \n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6462,
@@ -1025,7 +1025,7 @@
   },
   {
     "RowId": 6479,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730\u003CNum\u003Elnum4\u003C/Num\u003E\u53F7\u5BA4"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E\u53F7\u5BA4"
   },
   {
     "RowId": 6480,
@@ -1049,11 +1049,11 @@
   },
   {
     "RowId": 6485,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6486,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u53F7\u5BA4"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u53F7\u5BA4"
   },
   {
     "RowId": 6487,
@@ -1101,7 +1101,7 @@
   },
   {
     "RowId": 6498,
-    "Text": "\u8A13\u7DF4\u4E0D\u53EF(\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u5206\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E)"
+    "Text": "\u8A13\u7DF4\u4E0D\u53EF(\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u5206\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E)"
   },
   {
     "RowId": 6499,
@@ -1145,7 +1145,7 @@
   },
   {
     "RowId": 6509,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E-\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E-\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6510,
@@ -1205,7 +1205,7 @@
   },
   {
     "RowId": 6524,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u3092\u4F7F\u7528\u3057\u3066\u3001\u003Csheet(Stain,36,3)\u003E\u306B\u623B\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u3092\u4F7F\u7528\u3057\u3066\u3001\u003Csheet(Stain,36,3)\u003E\u306B\u623B\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6525,
@@ -1241,11 +1241,11 @@
   },
   {
     "RowId": 6533,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E\u30AE\u30EB\u3092\u652F\u6255\u3044\u3001\n\u500B\u4EBA\u7528\u3068\u3057\u3066\u3001\u3053\u306E\u571F\u5730\u3092\u8CFC\u5165\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\u30AE\u30EB\u3092\u652F\u6255\u3044\u3001\n\u500B\u4EBA\u7528\u3068\u3057\u3066\u3001\u3053\u306E\u571F\u5730\u3092\u8CFC\u5165\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6534,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E\u30AE\u30EB\u3092\u652F\u6255\u3044\u3001\n\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\u7528\u3068\u3057\u3066\u3001\u3053\u306E\u571F\u5730\u3092\u8CFC\u5165\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\u30AE\u30EB\u3092\u652F\u6255\u3044\u3001\n\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\u7528\u3068\u3057\u3066\u3001\u3053\u306E\u571F\u5730\u3092\u8CFC\u5165\u3057\u307E\u3059\u3002\n\u672C\u5F53\u306B\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6535,
@@ -1257,7 +1257,7 @@
   },
   {
     "RowId": 6537,
-    "Text": "\u00AB\u003CString\u003Elstr1\u003C/String\u003E\u00BB"
+    "Text": "\u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
   },
   {
     "RowId": 6538,
@@ -1273,11 +1273,11 @@
   },
   {
     "RowId": 6541,
-    "Text": "\u81EA\u5B85\uFF08\u500B\u4EBA\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u81EA\u5B85\uFF08\u500B\u4EBA\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6542,
-    "Text": "\u81EA\u5B85\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u81EA\u5B85\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6543,
@@ -1289,15 +1289,15 @@
   },
   {
     "RowId": 6545,
-    "Text": "\u63DB\u7FBD\u671F\u307E\u3067\uFF1A\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u6642\u9593\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E\u5206,)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E\u5206,1\u5206\u4EE5\u5185)\u003E\u003C/If\u003E"
+    "Text": "\u63DB\u7FBD\u671F\u307E\u3067\uFF1A\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u6642\u9593\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u5206\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u5206\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6546,
-    "Text": "\u8A13\u7DF4\u4E0D\u53EF(\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E\u5206\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E)"
+    "Text": "\u8A13\u7DF4\u4E0D\u53EF(\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u5206\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E)"
   },
   {
     "RowId": 6547,
-    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u306F\u73FE\u5728\u306E\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u304C\u4E0A\u9650\u306B\u9054\u3057\u3066\u3044\u306A\u3044\u305F\u3081\u3001\u003Csheet(Item,lnum1,0)\u003E\u3092\u3042\u305F\u3048\u3066\u3082\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u306E\u4E0A\u9650\u306F\u4E0A\u304C\u308A\u307E\u305B\u3093\u3002\n\n\u003C/span\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B\u30C1\u30E7\u30B3\u30DC\u53A9\u820E\u3067\u306F\u7D4C\u9A13\u5024\u7372\u5F97\u306E\u307F\u3067\u30E9\u30F3\u30AF\u30A2\u30C3\u30D7\u3057\u307E\u305B\u3093\u3002\u30E9\u30F3\u30AF\u3092\u4E0A\u3052\u308B\u305F\u3081\u306B\u306F\u30D5\u30A3\u30FC\u30EB\u30C9\u3067\u7D4C\u9A13\u5024\u3092\u7372\u5F97\u3055\u305B\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002\u003C/span\u003E\n\n\u3054\u8912\u7F8E\u3068\u3057\u3066\u9078\u629E\u3057\u307E\u3059\u304B\uFF1F"
+    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u306F\u73FE\u5728\u306E\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u304C\u4E0A\u9650\u306B\u9054\u3057\u3066\u3044\u306A\u3044\u305F\u3081\u3001\u003Csheet(Item,IntegerParameter(1),0)\u003E\u3092\u3042\u305F\u3048\u3066\u3082\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u306E\u4E0A\u9650\u306F\u4E0A\u304C\u308A\u307E\u305B\u3093\u3002\n\n\u003C/span\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B\u30C1\u30E7\u30B3\u30DC\u53A9\u820E\u3067\u306F\u7D4C\u9A13\u5024\u7372\u5F97\u306E\u307F\u3067\u30E9\u30F3\u30AF\u30A2\u30C3\u30D7\u3057\u307E\u305B\u3093\u3002\u30E9\u30F3\u30AF\u3092\u4E0A\u3052\u308B\u305F\u3081\u306B\u306F\u30D5\u30A3\u30FC\u30EB\u30C9\u3067\u7D4C\u9A13\u5024\u3092\u7372\u5F97\u3055\u305B\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002\u003C/span\u003E\n\n\u3054\u8912\u7F8E\u3068\u3057\u3066\u9078\u629E\u3057\u307E\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6548,
@@ -1329,7 +1329,7 @@
   },
   {
     "RowId": 6555,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u306F\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u003CNum\u003Elnum1\u003C/Num\u003E\u306B\u9054\u3057\u3066\u3044\u308B\u305F\u3081\u3001\u003Csheet(Item,lnum2,0)\u003E\u3092\u3042\u305F\u3048\u3066\u3082\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u306E\u4E0A\u9650\u306F\u4E0A\u304C\u308A\u307E\u305B\u3093\u3002\n\u3054\u8912\u7F8E\u3068\u3057\u3066\u9078\u629E\u3057\u307E\u3059\u304B\uFF1F"
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u306F\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u306B\u9054\u3057\u3066\u3044\u308B\u305F\u3081\u3001\u003Csheet(Item,IntegerParameter(2),0)\u003E\u3092\u3042\u305F\u3048\u3066\u3082\u30D0\u30C7\u30A3\u30E9\u30F3\u30AF\u306E\u4E0A\u9650\u306F\u4E0A\u304C\u308A\u307E\u305B\u3093\u3002\n\u3054\u8912\u7F8E\u3068\u3057\u3066\u9078\u629E\u3057\u307E\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6556,
@@ -1365,7 +1365,7 @@
   },
   {
     "RowId": 6564,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6565,
@@ -1373,7 +1373,7 @@
   },
   {
     "RowId": 6566,
-    "Text": "\u30DC\u30A4\u30B8\u30E3\u30FCEXP \u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
+    "Text": "\u30DC\u30A4\u30B8\u30E3\u30FCEXP \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E--/--\u003C/If\u003E"
   },
   {
     "RowId": 6567,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 6574,
-    "Text": "\u003CIf([lnum1\u003Elnum2])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003Cnum(lnum1)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/span\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6575,
@@ -1449,7 +1449,7 @@
   },
   {
     "RowId": 6585,
-    "Text": "\u9078\u629E\u3057\u305F\u30D1\u30FC\u30C4\u30A2\u30A4\u30C6\u30E0\u3068\u4EE5\u4E0B\u306E\u30A2\u30A4\u30C6\u30E0\u3092\n\u003CNum\u003Elnum1\u003C/Num\u003E\u679A\u6D88\u8CBB\u3057\u3066\u98DB\u7A7A\u8247\u3092\u767B\u9332\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u9078\u629E\u3057\u305F\u30D1\u30FC\u30C4\u30A2\u30A4\u30C6\u30E0\u3068\u4EE5\u4E0B\u306E\u30A2\u30A4\u30C6\u30E0\u3092\n\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u679A\u6D88\u8CBB\u3057\u3066\u98DB\u7A7A\u8247\u3092\u767B\u9332\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6586,
@@ -1457,7 +1457,7 @@
   },
   {
     "RowId": 6587,
-    "Text": "\u4E0B\u8A18\u306E\u30A2\u30A4\u30C6\u30E0\u3092\u4FEE\u7406\u3057\u307E\u3059\u304B\uFF1F\n\u003Csheet(Item,lnum1,0)\u003E\n\u6D88\u8CBB:\u003Csheet(Item,lnum2,0)\u003E\u00D7\u003CNum\u003Elnum3\u003C/Num\u003E(\u6240\u6301\u6570 \u003CNum\u003Elnum4\u003C/Num\u003E)"
+    "Text": "\u4E0B\u8A18\u306E\u30A2\u30A4\u30C6\u30E0\u3092\u4FEE\u7406\u3057\u307E\u3059\u304B\uFF1F\n\u003Csheet(Item,IntegerParameter(1),0)\u003E\n\u6D88\u8CBB:\u003Csheet(Item,IntegerParameter(2),0)\u003E\u00D7\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E(\u6240\u6301\u6570 \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E)"
   },
   {
     "RowId": 6588,
@@ -1501,7 +1501,7 @@
   },
   {
     "RowId": 6598,
-    "Text": "\u25A0\u003CIf([lnum1==0])\u003E \u003CElse/\u003E\u003Cdigit(lnum1,2)\u003E\u6642\u9593\u003C/If\u003E \u003Cdigit(lnum2,2)\u003E\u5206\u7D4C\u904E\u3000--------------------------------------------------------------------------------------------------"
+    "Text": "\u25A0\u003CIf(Equal(IntegerParameter(1),0))\u003E \u003CElse/\u003E\u003Cdigit(IntegerParameter(1),2)\u003E\u6642\u9593\u003C/If\u003E \u003Cdigit(IntegerParameter(2),2)\u003E\u5206\u7D4C\u904E\u3000--------------------------------------------------------------------------------------------------"
   },
   {
     "RowId": 6600,
@@ -1537,15 +1537,15 @@
   },
   {
     "RowId": 6608,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6609,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003E\u65E5\u003CElse/\u003E \u003C/If\u003E\u003CSec\u003Elnum1\u003C/Sec\u003E\u6642\u9593\u003CSec\u003Elnum2\u003C/Sec\u003E\u5206"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u65E5\u003CElse/\u003E \u003C/If\u003E\u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E\u6642\u9593\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E\u5206"
   },
   {
     "RowId": 6610,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6611,
@@ -1553,7 +1553,7 @@
   },
   {
     "RowId": 6612,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u4EE5\u4E0A"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u4EE5\u4E0A"
   },
   {
     "RowId": 6613,
@@ -1561,11 +1561,11 @@
   },
   {
     "RowId": 6614,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6615,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6616,
@@ -1585,7 +1585,7 @@
   },
   {
     "RowId": 6620,
-    "Text": "\u003Csheet(Item,lnum4,0)\u003E\u3092\u6D88\u8CBB\u3057\u3066\u3001\u524D\u56DE\u3068\u540C\u3058\u76EE\u7684\u5730\u306B\u51FA\u6E2F\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(4),0)\u003E\u3092\u6D88\u8CBB\u3057\u3066\u3001\u524D\u56DE\u3068\u540C\u3058\u76EE\u7684\u5730\u306B\u51FA\u6E2F\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6621,
@@ -1617,7 +1617,7 @@
   },
   {
     "RowId": 6628,
-    "Text": "\u4F5C\u696D\u5DE5\u7A0B\uFF1A\u003CNum\u003Elnum1\u003C/Num\u003E\u5DE5\u7A0B"
+    "Text": "\u4F5C\u696D\u5DE5\u7A0B\uFF1A\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u5DE5\u7A0B"
   },
   {
     "RowId": 6629,
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 6635,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6636,
@@ -1653,7 +1653,7 @@
   },
   {
     "RowId": 6637,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6638,
@@ -1661,7 +1661,7 @@
   },
   {
     "RowId": 6639,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6640,
@@ -1681,7 +1681,7 @@
   },
   {
     "RowId": 6644,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E\u003CIf([lnum3\u003E0])\u003E/\uE03C \u003Ckilo(lnum2,\\,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E/\uE03C \u003Ckilo(IntegerParameter(2),,)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6645,
@@ -1697,7 +1697,7 @@
   },
   {
     "RowId": 6648,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6650,
@@ -1709,7 +1709,7 @@
   },
   {
     "RowId": 6652,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u00D7\u003CNum\u003Elnum2\u003C/Num\u003E\u3092\n\u30AB\u30F3\u30D1\u30CB\u30FC\u88FD\u4F5C\u8A2D\u5099\u306B\u7D0D\u54C1\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u00D7\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u3092\n\u30AB\u30F3\u30D1\u30CB\u30FC\u88FD\u4F5C\u8A2D\u5099\u306B\u7D0D\u54C1\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6656,
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 6669,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\uFF1A\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uFF1A\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6670,
@@ -1785,19 +1785,19 @@
   },
   {
     "RowId": 6674,
-    "Text": "\u003Csheet(Item,lnum4,0)\u003E\u3092\u6D88\u8CBB\u3057\u3066\u3001\u9078\u629E\u3057\u305F\u76EE\u7684\u5730\u306B\u51FA\u6E2F\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(4),0)\u003E\u3092\u6D88\u8CBB\u3057\u3066\u3001\u9078\u629E\u3057\u305F\u76EE\u7684\u5730\u306B\u51FA\u6E2F\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6675,
-    "Text": "\u003Cswitch(lnum1,SS,S,A,B,C)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),SS,S,A,B,C)\u003E"
   },
   {
     "RowId": 6676,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_year\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_year\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 6677,
-    "Text": "( \u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003E\u65E5\u003Cif([lnum1\u003E0],\u003Cnum(lnum1)\u003E\u6642\u9593,)\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E\u5206,)\u003E\u5F8C\u003CElse/\u003E\u003Cif([lnum1\u003E0],\u003Cnum(lnum1)\u003E\u6642\u9593\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E\u5206,)\u003E\u5F8C,\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003E\u5206\u5F8C,1\u5206\u4EE5\u5185)\u003E)\u003E\u003C/If\u003E )"
+    "Text": "( \u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u65E5\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u6642\u9593\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u5206\u003CElse/\u003E \u003C/If\u003E\u5F8C\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u6642\u9593\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u5206\u003CElse/\u003E \u003C/If\u003E\u5F8C\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u5206\u5F8C\u003CElse/\u003E1\u5206\u4EE5\u5185\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E )"
   },
   {
     "RowId": 6678,
@@ -1889,11 +1889,11 @@
   },
   {
     "RowId": 6700,
-    "Text": "\u003Csheet(CompanyCraftDraft,lnum1,0)\u003E"
+    "Text": "\u003Csheet(CompanyCraftDraft,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6701,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u3092\n\u88FD\u4F5C\u3057\u307E\u3059\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u3092\n\u88FD\u4F5C\u3057\u307E\u3059\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6702,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 6705,
-    "Text": "\u7167\u660E\u306E\u8ABF\u6574[\u8A2D\u5B9A\uFF1A\u7167\u5EA6\u003CNum\u003Elnum1\u003C/Num\u003E]"
+    "Text": "\u7167\u660E\u306E\u8ABF\u6574[\u8A2D\u5B9A\uFF1A\u7167\u5EA6\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]"
   },
   {
     "RowId": 6706,
@@ -1917,7 +1917,7 @@
   },
   {
     "RowId": 6707,
-    "Text": "\u7167\u5EA6\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u7167\u5EA6\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6708,
@@ -1941,15 +1941,15 @@
   },
   {
     "RowId": 6713,
-    "Text": "\u81EA\u5B85\uFF08\u30A2\u30D1\u30EB\u30C8\u30E1\u30F3\u30C8\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
+    "Text": "\u81EA\u5B85\uFF08\u30A2\u30D1\u30EB\u30C8\u30E1\u30F3\u30C8\uFF09\u306E\u3042\u308B\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u306B\u79FB\u52D5\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F"
   },
   {
     "RowId": 6714,
-    "Text": "\u5F15\u8D8A\uFF08\u500B\u4EBA\uFF09[\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730]"
+    "Text": "\u5F15\u8D8A\uFF08\u500B\u4EBA\uFF09[\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730]"
   },
   {
     "RowId": 6715,
-    "Text": "\u5F15\u8D8A\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09[\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730]"
+    "Text": "\u5F15\u8D8A\uFF08\u30D5\u30EA\u30FC\u30AB\u30F3\u30D1\u30CB\u30FC\uFF09[\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730]"
   },
   {
     "RowId": 6716,
@@ -1973,7 +1973,7 @@
   },
   {
     "RowId": 6721,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u3092\u30CF\u30A6\u30B9\u30E1\u30A4\u30C8\u304B\u3089\u5916\u3057\u307E\u3059\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B\u5916\u3059\u3068\u76F8\u624B\u306F\u6A5F\u80FD\u304C\u5229\u7528\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u003C/span\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u3092\u30CF\u30A6\u30B9\u30E1\u30A4\u30C8\u304B\u3089\u5916\u3057\u307E\u3059\u3002\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B\u5916\u3059\u3068\u76F8\u624B\u306F\u6A5F\u80FD\u304C\u5229\u7528\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u3002\u003C/span\u003E"
   },
   {
     "RowId": 6722,
@@ -1981,15 +1981,15 @@
   },
   {
     "RowId": 6723,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u3092\u30CF\u30A6\u30B9\u30E1\u30A4\u30C8\u3068\u3057\u3066\u767B\u9332\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B\u9078\u629E\u3057\u305F\u30D5\u30EC\u30F3\u30C9\u3068\u3001\u305D\u306E\u6A29\u9650\u306B\u3064\u3044\u3066\u306F\n\u30A6\u30A3\u30F3\u30C9\u30A6\u3092\u9589\u3058\u305F\u969B\u306B\u53CD\u6620\u3055\u308C\u307E\u3059\u3002\u003C/span\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u3092\u30CF\u30A6\u30B9\u30E1\u30A4\u30C8\u3068\u3057\u3066\u767B\u9332\u3057\u307E\u3059\u3002\n\u3088\u308D\u3057\u3044\u3067\u3059\u304B\uFF1F\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B\u9078\u629E\u3057\u305F\u30D5\u30EC\u30F3\u30C9\u3068\u3001\u305D\u306E\u6A29\u9650\u306B\u3064\u3044\u3066\u306F\n\u30A6\u30A3\u30F3\u30C9\u30A6\u3092\u9589\u3058\u305F\u969B\u306B\u53CD\u6620\u3055\u308C\u307E\u3059\u3002\u003C/span\u003E"
   },
   {
     "RowId": 6724,
-    "Text": "\u30CF\u30A6\u30B9\uFF08\u30B7\u30A7\u30A2\uFF1A\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730\uFF09"
+    "Text": "\u30CF\u30A6\u30B9\uFF08\u30B7\u30A7\u30A2\uFF1A\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730\uFF09"
   },
   {
     "RowId": 6725,
-    "Text": "\u30CF\u30A6\u30B9\uFF08\u30B7\u30A7\u30A2\uFF1A\u003Csheet(PlaceName,lnum1,0)\u003E\u7B2C\u003CNum\u003Elnum2\u003C/Num\u003E\u533A\u003CNum\u003Elnum3\u003C/Num\u003E\u756A\u5730\uFF09"
+    "Text": "\u30CF\u30A6\u30B9\uFF08\u30B7\u30A7\u30A2\uFF1A\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u7B2C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u533A\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u756A\u5730\uFF09"
   },
   {
     "RowId": 6726,

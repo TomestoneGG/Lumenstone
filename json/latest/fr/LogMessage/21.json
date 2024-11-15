@@ -541,7 +541,7 @@
   },
   {
     "RowId": 10060,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E a \u00E9t\u00E9 tranch\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E a \u00E9t\u00E9 tranch\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -568,7 +568,7 @@
   },
   {
     "RowId": 10063,
-    "Text": "\u30CA\u30EB\u30B6\u30EB\u306B\u003CNum\u003Elnum1\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
+    "Text": "\u30CA\u30EB\u30B6\u30EB\u306B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 10099,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E ne poss\u00E8de pas la mati\u00E8re sombre n\u00E9cessaire pour cette r\u00E9paration.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E ne poss\u00E8de pas la mati\u00E8re sombre n\u00E9cessaire pour cette r\u00E9paration.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -901,7 +901,7 @@
   },
   {
     "RowId": 10100,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E ne dispose pas de la classe ou du niveau n\u00E9cessaires pour r\u00E9parer les objets de \u003CIf([gstr1==gstr2])\u003Evotre \u00E9quipement\u003CElse/\u003El\u0027\u00E9quipement de \u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E ne dispose pas de la classe ou du niveau n\u00E9cessaires pour r\u00E9parer les objets de \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evotre \u00E9quipement\u003CElse/\u003El\u0027\u00E9quipement de \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -910,7 +910,7 @@
   },
   {
     "RowId": 10101,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E n\u0027\u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E aucun objet pouvant \u00EAtre r\u00E9par\u00E9 par \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E dans \u003CIf([gstr1==gstr2])\u003Evotre\u003CElse/\u003Eson\u003C/If\u003E \u00E9quipement.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E n\u0027\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E aucun objet pouvant \u00EAtre r\u00E9par\u00E9 par \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E dans \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evotre\u003CElse/\u003Eson\u003C/If\u003E \u00E9quipement.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -919,7 +919,7 @@
   },
   {
     "RowId": 10102,
-    "Text": "Action impossible. Vous avez d\u00E9j\u00E0 soumis une demande de r\u00E9paration \u00E0 \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.",
+    "Text": "Action impossible. Vous avez d\u00E9j\u00E0 soumis une demande de r\u00E9paration \u00E0 \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -928,7 +928,7 @@
   },
   {
     "RowId": 10103,
-    "Text": "Action impossible. \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E est en train de r\u00E9parer l\u0027\u00E9quipement d\u0027un autre personnage.",
+    "Text": "Action impossible. \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E est en train de r\u00E9parer l\u0027\u00E9quipement d\u0027un autre personnage.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -955,7 +955,7 @@
   },
   {
     "RowId": 10106,
-    "Text": "Vous recevez \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E \u003CIf([lnum1\u003C=1])\u003Egil\u003CElse/\u003Egils\u003C/If\u003E pour les r\u00E9parations effectu\u00E9es.",
+    "Text": "Vous recevez \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Egil\u003CElse/\u003Egils\u003C/If\u003E pour les r\u00E9parations effectu\u00E9es.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -973,7 +973,7 @@
   },
   {
     "RowId": 10108,
-    "Text": "La r\u00E9paration \u003Cfrnoun(Item,9,lnum1,1,1)\u003E est termin\u00E9e.",
+    "Text": "La r\u00E9paration \u003Cfrnoun(Item,9,IntegerParameter(1),1,1)\u003E est termin\u00E9e.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -982,7 +982,7 @@
   },
   {
     "RowId": 10109,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eobjet r\u00E9par\u00E9\u003CElse/\u003Eobjets r\u00E9par\u00E9s\u003C/If\u003E.",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eobjet r\u00E9par\u00E9\u003CElse/\u003Eobjets r\u00E9par\u00E9s\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 10124,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C/Head\u003E ne peut \u00EAtre obtenu\u003CIf(\u003Csheet(Item,lnum1,6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E: votre sacoche est pleine.",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E ne peut \u00EAtre obtenu\u003CIf(\u003Csheet(Item,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E: votre sacoche est pleine.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1171,7 +1171,7 @@
   },
   {
     "RowId": 10130,
-    "Text": "Vous avez envoy\u00E9 \u003CIf([lnum2==1])\u003E\u003Cfrnoun(Item,1,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cfrnoun(Item,12,lnum1,2,1)\u003E\u003C/If\u003E.",
+    "Text": "Vous avez envoy\u00E9 \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cfrnoun(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),2,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 10131,
-    "Text": "Vous avez effectu\u00E9 une vente de gros de tous les objets en quantit\u00E9 sup\u00E9rieure \u00E0 \u003CNum\u003Elnum1\u003C/Num\u003E.",
+    "Text": "Vous avez effectu\u00E9 une vente de gros de tous les objets en quantit\u00E9 sup\u00E9rieure \u00E0 \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 10132,
-    "Text": "Impossible d\u0027obtenir davantage \u003Cfrnoun(Item,8,lnum1,2,1)\u003E, votre sacoche est pleine.",
+    "Text": "Impossible d\u0027obtenir davantage \u003Cfrnoun(Item,8,IntegerParameter(1),2,1)\u003E, votre sacoche est pleine.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 10147,
-    "Text": "\u003CIf(lnum3)\u003E Vous avez compl\u00E9t\u00E9 une \u00E9tape de\u003CElse/\u003E Vous avez atteint\u003C/If\u003E l\u0027objectif \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CIf(IntegerParameter(3))\u003E Vous avez compl\u00E9t\u00E9 une \u00E9tape de\u003CElse/\u003E Vous avez atteint\u003C/If\u003E l\u0027objectif \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1342,7 +1342,7 @@
   },
   {
     "RowId": 10149,
-    "Text": "Vous avez rel\u00E2ch\u00E9 \u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E.",
+    "Text": "Vous avez rel\u00E2ch\u00E9 \u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1675,7 +1675,7 @@
   },
   {
     "RowId": 10186,
-    "Text": "L\u0027article \u201C\u003Csheet(VVDNotebookContents,lnum1,2)\u003E\u201D a \u00E9t\u00E9 ajout\u00E9 au journal d\u0027exploration des canalisations sildiennes.",
+    "Text": "L\u0027article \u201C\u003Csheet(VVDNotebookContents,IntegerParameter(1),2)\u003E\u201D a \u00E9t\u00E9 ajout\u00E9 au journal d\u0027exploration des canalisations sildiennes.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1738,7 +1738,7 @@
   },
   {
     "RowId": 10193,
-    "Text": "Vous avez \u00E9t\u00E9 \u003CIf(gnum4)\u003Eensorcel\u00E9e\u003CElse/\u003Eensorcel\u00E9\u003C/If\u003E par H\u00E9pha\u00EFstos\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez \u00E9t\u00E9 \u003CIf(PlayerParameter(4))\u003Eensorcel\u00E9e\u003CElse/\u003Eensorcel\u00E9\u003C/If\u003E par H\u00E9pha\u00EFstos\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 10210,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E a d\u00E9barqu\u00E9 sur votre \u00EEle.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E a d\u00E9barqu\u00E9 sur votre \u00EEle.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1918,7 +1918,7 @@
   },
   {
     "RowId": 10213,
-    "Text": "Vous avez enregistr\u00E9 \u003Cfrnoun(Item,2,lnum1,1,1)\u003E.",
+    "Text": "Vous avez enregistr\u00E9 \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 10216,
-    "Text": "Impossible de s\u00E9lectionner la pi\u00E8ce de mobilier insulaire\u003C\u003Cnbsp\u003E\u003E: vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
+    "Text": "Impossible de s\u00E9lectionner la pi\u00E8ce de mobilier insulaire\u003C\u003Cnbsp\u003E\u003E: vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 10217,
-    "Text": "Action impossible. Vous ne poss\u00E9dez pas \u003Cfrnoun(Item,8,lnum1,1,1)\u003E.",
+    "Text": "Action impossible. Vous ne poss\u00E9dez pas \u003Cfrnoun(Item,8,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -1999,7 +1999,7 @@
   },
   {
     "RowId": 10222,
-    "Text": "Impossible de retirer le mirage de mobilier\u003C\u003Cnbsp\u003E\u003E: vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
+    "Text": "Impossible de retirer le mirage de mobilier\u003C\u003Cnbsp\u003E\u003E: vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2134,7 +2134,7 @@
   },
   {
     "RowId": 10237,
-    "Text": "\u003Csheet(MJIText,lnum1,0)\u003E\u003C\u003Cnbsp\u003E\u003E: orientation modif\u00E9e.",
+    "Text": "\u003Csheet(MJIText,IntegerParameter(1),0)\u003E\u003C\u003Cnbsp\u003E\u003E: orientation modif\u00E9e.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2152,7 +2152,7 @@
   },
   {
     "RowId": 10239,
-    "Text": "\u003Csheet(MJIText,lnum2,0)\u003E\u003C\u003Cnbsp\u003E\u003E: construction termin\u00E9e. Veuillez consulter \u003Cfrnoun(EObj,2,lnum1,1,1)\u003E pour terminer l\u0027op\u00E9ration.",
+    "Text": "\u003Csheet(MJIText,IntegerParameter(2),0)\u003E\u003C\u003Cnbsp\u003E\u003E: construction termin\u00E9e. Veuillez consulter \u003Cfrnoun(EObj,2,IntegerParameter(1),1,1)\u003E pour terminer l\u0027op\u00E9ration.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2449,7 +2449,7 @@
   },
   {
     "RowId": 10272,
-    "Text": "\u003Cifself(lnum1,Vous avez,\u003Chead(\u003Cpcname(lnum1)\u003E)\u003E a)\u003E pris l\u0027apparence d\u0027un cuirass\u00E9 Dreadnaught\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003Cifself(IntegerParameter(1),Vous avez,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E a)\u003E pris l\u0027apparence d\u0027un cuirass\u00E9 Dreadnaught\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2566,7 +2566,7 @@
   },
   {
     "RowId": 10285,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E obtenu \u003Cfrnoun(DeepDungeonDemiclone,1,lnum1,1,1)\u003E.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E obtenu \u003Cfrnoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2575,7 +2575,7 @@
   },
   {
     "RowId": 10286,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eet vos compagnons avez\u003CElse/\u003Eet ses compagnons ont\u003C/If\u003E obtenu \u003Cfrnoun(DeepDungeonDemiclone,1,lnum1,1,1)\u003E.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eet vos compagnons avez\u003CElse/\u003Eet ses compagnons ont\u003C/If\u003E obtenu \u003Cfrnoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2584,7 +2584,7 @@
   },
   {
     "RowId": 10287,
-    "Text": "Vous ne pouvez pas obtenir davantage \u003Cfrnoun(DeepDungeonDemiclone,8,lnum1,2,1)\u003E et avez remis celui-ci dans le coffre.",
+    "Text": "Vous ne pouvez pas obtenir davantage \u003Cfrnoun(DeepDungeonDemiclone,8,IntegerParameter(1),2,1)\u003E et avez remis celui-ci dans le coffre.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2593,7 +2593,7 @@
   },
   {
     "RowId": 10288,
-    "Text": "\u003Cifself(lnum1,Vous avez utilis\u00E9,\u003Chead(\u003Cpcname(lnum1)\u003E)\u003E a utilis\u00E9)\u003E \u003Cfrnoun(DeepDungeonDemiclone,1,lnum2,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003Cifself(IntegerParameter(1),Vous avez utilis\u00E9,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E a utilis\u00E9)\u003E \u003Cfrnoun(DeepDungeonDemiclone,1,IntegerParameter(2),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3601,7 +3601,7 @@
   },
   {
     "RowId": 10400,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Martyn. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Martyn. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3610,7 +3610,7 @@
   },
   {
     "RowId": 10401,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Paparlequin. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Paparlequin. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3619,7 +3619,7 @@
   },
   {
     "RowId": 10402,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Clive. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Clive. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3628,7 +3628,7 @@
   },
   {
     "RowId": 10403,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(gnum4)\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Mehdjina. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(PlayerParameter(4))\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Mehdjina. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3637,7 +3637,7 @@
   },
   {
     "RowId": 10404,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(gnum4)\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Hasdahd. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(PlayerParameter(4))\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Hasdahd. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3655,7 +3655,7 @@
   },
   {
     "RowId": 10406,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E du m\u00E9nestrel errant. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E du m\u00E9nestrel errant. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3664,7 +3664,7 @@
   },
   {
     "RowId": 10407,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(gnum4)\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Keshkwa. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(PlayerParameter(4))\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Keshkwa. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 10409,
-    "Text": "Rral Soj vous consid\u00E8re maintenant comme \u003Cswitch(lnum1,\u003Cif(gnum4,une m\u00E9tallurgiste talentueuse,un m\u00E9tallurgiste talentueux)\u003E,\u003Cif(gnum4,une,un)\u003E m\u00E9tallurgiste digne de confiance,\u003Cif(gnum4,une,un)\u003E m\u00E9tallurgiste infaillible,\u003Cif(gnum4,une pionni\u00E8re,un pionnier)\u003E de la m\u00E9tallurgie)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Rral Soj vous consid\u00E8re maintenant comme \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eune m\u00E9tallurgiste talentueuse\u003CElse/\u003Eun m\u00E9tallurgiste talentueux\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eune\u003CElse/\u003Eun\u003C/If\u003E m\u00E9tallurgiste digne de confiance,\u003CIf(PlayerParameter(4))\u003Eune\u003CElse/\u003Eun\u003C/If\u003E m\u00E9tallurgiste infaillible,\u003CIf(PlayerParameter(4))\u003Eune pionni\u00E8re\u003CElse/\u003Eun pionnier\u003C/If\u003E de la m\u00E9tallurgie)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Pameka vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune relieuse\u003CElse/\u003Eun relieur\u003C/If\u003E \u003Cswitch(lnum1,aux doigts de f\u00E9e,\u00E0 la sensibilit\u00E9 raffin\u00E9e,\u00E0 la cr\u00E9ativit\u00E9 f\u00E9conde,aux ambitions vertigineuses)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Pameka vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune relieuse\u003CElse/\u003Eun relieur\u003C/If\u003E \u003Cswitch(IntegerParameter(1),aux doigts de f\u00E9e,\u00E0 la sensibilit\u00E9 raffin\u00E9e,\u00E0 la cr\u00E9ativit\u00E9 f\u00E9conde,aux ambitions vertigineuses)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3700,7 +3700,7 @@
   },
   {
     "RowId": 10411,
-    "Text": "Xeerol Ja vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune formulatrice\u003CElse/\u003Eun formulateur\u003C/If\u003E \u003Cswitch(lnum1,\u00E9trang\u003Cif(gnum4,\u00E8re,er)\u003E de talent,de confiance,irrempla\u00E7able,\u00E0 qui l\u0027on peut se confier)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Xeerol Ja vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune formulatrice\u003CElse/\u003Eun formulateur\u003C/If\u003E \u003Cswitch(IntegerParameter(1),\u00E9trang\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de talent,de confiance,irrempla\u00E7able,\u00E0 qui l\u0027on peut se confier)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3709,7 +3709,7 @@
   },
   {
     "RowId": 10412,
-    "Text": "Shunye vous consid\u00E8re maintenant comme \u003Cswitch(lnum1,une jeune pousse printani\u00E8re,une chaleureuse lueur estivale,un tendre fruit automnal,un feu vif hivernal)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Shunye vous consid\u00E8re maintenant comme \u003Cswitch(IntegerParameter(1),une jeune pousse printani\u00E8re,une chaleureuse lueur estivale,un tendre fruit automnal,un feu vif hivernal)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 10413,
-    "Text": "Donuhanu vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune p\u00EAcheuse\u003CElse/\u003Eun p\u00EAcheur\u003C/If\u003E de bizarreries marines \u003Cswitch(lnum1,\u003Cif(gnum4,d\u00E9butante,d\u00E9butant)\u003E,\u003Cif(gnum4,comp\u00E9tente,comp\u00E9tent)\u003E,\u003Cif(gnum4,confirm\u00E9e,confirm\u00E9)\u003E,\u003Cif(gnum4,experte,expert)\u003E)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Donuhanu vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune p\u00EAcheuse\u003CElse/\u003Eun p\u00EAcheur\u003C/If\u003E de bizarreries marines \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Ed\u00E9butante\u003CElse/\u003Ed\u00E9butant\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Ecomp\u00E9tente\u003CElse/\u003Ecomp\u00E9tent\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Econfirm\u00E9e\u003CElse/\u003Econfirm\u00E9\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eexperte\u003CElse/\u003Eexpert\u003C/If\u003E)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3727,7 +3727,7 @@
   },
   {
     "RowId": 10414,
-    "Text": "Vous avez honor\u00E9 toutes les commandes de la quincaillerie de Rral Soj. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune artisane\u003CElse/\u003Eun artisan\u003C/If\u003E mod\u00E8le\u00A0!",
+    "Text": "Vous avez honor\u00E9 toutes les commandes de la quincaillerie de Rral Soj. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune artisane\u003CElse/\u003Eun artisan\u003C/If\u003E mod\u00E8le\u00A0!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3736,7 +3736,7 @@
   },
   {
     "RowId": 10415,
-    "Text": "Vous avez honor\u00E9 toutes les commandes du scriptorium de Pameka. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune relieuse\u003CElse/\u003Eun relieur\u003C/If\u003E digne de la post\u00E9rit\u00E9\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez honor\u00E9 toutes les commandes du scriptorium de Pameka. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune relieuse\u003CElse/\u003Eun relieur\u003C/If\u003E digne de la post\u00E9rit\u00E9\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3745,7 +3745,7 @@
   },
   {
     "RowId": 10416,
-    "Text": "Vous avez honor\u00E9 toutes les commandes du bar \u00E0 jus de Xeerol Ja. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune\u003CElse/\u003Eun\u003C/If\u003E camarade de trinqu\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez honor\u00E9 toutes les commandes du bar \u00E0 jus de Xeerol Ja. Celle-ci vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune\u003CElse/\u003Eun\u003C/If\u003E camarade de trinqu\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3754,7 +3754,7 @@
   },
   {
     "RowId": 10417,
-    "Text": "Vous avez honor\u00E9 toutes les commandes de la pharmacie de Shunye. Celui-ci vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune s\u00E9cheuse\u003CElse/\u003Eun s\u00E9cheur\u003C/If\u003E des larmes de la terre\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez honor\u00E9 toutes les commandes de la pharmacie de Shunye. Celui-ci vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune s\u00E9cheuse\u003CElse/\u003Eun s\u00E9cheur\u003C/If\u003E des larmes de la terre\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3763,7 +3763,7 @@
   },
   {
     "RowId": 10418,
-    "Text": "Vous avez honor\u00E9 toutes les commandes des Poissons p\u00E9tulants de Donuhanu. \nCe dernier vous consid\u00E8re maintenant comme \u003CIf(gnum4)\u003Eune p\u00EAcheuse\u003CElse/\u003Eun p\u00EAcheur\u003C/If\u003E de bizarreries marines l\u00E9gendaire\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez honor\u00E9 toutes les commandes des Poissons p\u00E9tulants de Donuhanu. \nCe dernier vous consid\u00E8re maintenant comme \u003CIf(PlayerParameter(4))\u003Eune p\u00EAcheuse\u003CElse/\u003Eun p\u00EAcheur\u003C/If\u003E de bizarreries marines l\u00E9gendaire\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3772,7 +3772,7 @@
   },
   {
     "RowId": 10419,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Wuk Lamat. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Wuk Lamat. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 10420,
-    "Text": "Impossible de consulter la carte. Le niveau de votre classe/job actuel est inf\u00E9rieur \u00E0 \u003CNum\u003Elnum1\u003C/Num\u003E.",
+    "Text": "Impossible de consulter la carte. Le niveau de votre classe/job actuel est inf\u00E9rieur \u00E0 \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 10421,
-    "Text": "Impossible de consulter la carte. Votre classe/job actuel n\u0027est pas \u003Csheet(ClassJobCategory,lnum1,0)\u003E.",
+    "Text": "Impossible de consulter la carte. Votre classe/job actuel n\u0027est pas \u003Csheet(ClassJobCategory,IntegerParameter(1),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3799,7 +3799,7 @@
   },
   {
     "RowId": 10422,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Tentoawa. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Tentoawa. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3808,7 +3808,7 @@
   },
   {
     "RowId": 10423,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027I\u0027toca. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027I\u0027toca. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3817,7 +3817,7 @@
   },
   {
     "RowId": 10424,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Pameka. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Pameka. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3826,7 +3826,7 @@
   },
   {
     "RowId": 10425,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Wihuwte. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Wihuwte. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3835,7 +3835,7 @@
   },
   {
     "RowId": 10426,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Philcox. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Philcox. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3862,7 +3862,7 @@
   },
   {
     "RowId": 10429,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Erenville. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Erenville. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3871,7 +3871,7 @@
   },
   {
     "RowId": 10430,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E du jeune gar\u00E7on perspicace. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E du jeune gar\u00E7on perspicace. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3880,7 +3880,7 @@
   },
   {
     "RowId": 10431,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Sphene. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Sphene. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3898,7 +3898,7 @@
   },
   {
     "RowId": 10433,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(gnum4)\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Shaloaci. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u003CIf(PlayerParameter(4))\u003E\u00E9loign\u00E9e\u003CElse/\u003E\u00E9loign\u00E9\u003C/If\u003E de Shaloaci. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3916,7 +3916,7 @@
   },
   {
     "RowId": 10435,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Uvlo. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Uvlo. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3925,7 +3925,7 @@
   },
   {
     "RowId": 10436,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de sire \u00C9pidema\u00EFs. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de sire \u00C9pidema\u00EFs. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3934,7 +3934,7 @@
   },
   {
     "RowId": 10437,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de la petite Mamool Ja. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de la petite Mamool Ja. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3943,7 +3943,7 @@
   },
   {
     "RowId": 10438,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E des cr\u00E9atures myst\u00E9rieuses. Retournez les chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E des cr\u00E9atures myst\u00E9rieuses. Retournez les chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3952,7 +3952,7 @@
   },
   {
     "RowId": 10439,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027enfant perdu. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027enfant perdu. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3961,7 +3961,7 @@
   },
   {
     "RowId": 10440,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027homme passionn\u00E9 par son travail. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027homme passionn\u00E9 par son travail. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3970,7 +3970,7 @@
   },
   {
     "RowId": 10441,
-    "Text": "Impossible de progresser dans la qu\u00EAte \u201C\u003Csheet(Quest,lnum1,0)\u003E\u201D durant la confirmation de participation.",
+    "Text": "Impossible de progresser dans la qu\u00EAte \u201C\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201D durant la confirmation de participation.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3979,7 +3979,7 @@
   },
   {
     "RowId": 10442,
-    "Text": "Impossible de terminer la qu\u00EAte \u201C\u003Csheet(Quest,lnum1,0)\u003E\u201D durant la confirmation de participation.",
+    "Text": "Impossible de terminer la qu\u00EAte \u201C\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201D durant la confirmation de participation.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4051,7 +4051,7 @@
   },
   {
     "RowId": 10450,
-    "Text": "L\u0027ennemi semble suffisamment affaibli. Utilisez \u003Cfrnoun(EventItem,2,lnum1,1,1)\u003E sur lui.",
+    "Text": "L\u0027ennemi semble suffisamment affaibli. Utilisez \u003Cfrnoun(EventItem,2,IntegerParameter(1),1,1)\u003E sur lui.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -4096,7 +4096,7 @@
   },
   {
     "RowId": 10455,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Prishe. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Prishe. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4105,7 +4105,7 @@
   },
   {
     "RowId": 10456,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Alxaal. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027Alxaal. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4114,7 +4114,7 @@
   },
   {
     "RowId": 10457,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de Jihli Aliapoh. Retournez la chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de Jihli Aliapoh. Retournez la chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4132,7 +4132,7 @@
   },
   {
     "RowId": 10459,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E du chocobo robuste. Retournez le chercher.",
+    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EVous vous \u00EAtes trop \u00E9loign\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E du chocobo robuste. Retournez le chercher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

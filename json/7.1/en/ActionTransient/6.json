@@ -1461,27 +1461,27 @@
   },
   {
     "RowId": 2865,
-    "Description": "Deploys an area of effect battle turret which will deliver auto-attacks to enemies within range with a potency of 60 for the first enemy, 10% less for the second, 20% less for the third, 30% less for the fourth, 40% less for the fifth, and 50% less for all remaining enemies.\u003CIf([gnum72\u003E=30])\u003E\u003Cif([gnum68==31],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EHypercharge Potency:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E 90\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EHypercharge Effect:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Increases target\u0027s damage taken by 5%\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EDuration:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E 10s,)\u003E\u003CElse/\u003E \u003C/If\u003E\nShares a recast timer with \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ERook Autoturret\u003C/span\u003E."
+    "Description": "Deploys an area of effect battle turret which will deliver auto-attacks to enemies within range with a potency of 60 for the first enemy, 10% less for the second, 20% less for the third, 30% less for the fourth, 40% less for the fifth, and 50% less for all remaining enemies.\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EHypercharge Potency:\u003C/span\u003E 90\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EHypercharge Effect:\u003C/span\u003E Increases target\u0027s damage taken by 5%\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 10s\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\nShares a recast timer with \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ERook Autoturret\u003C/span\u003E."
   },
   {
     "RowId": 2866,
-    "Description": "Delivers an attack with a potency of 140.\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EAdditional Effect:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Increases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EHeat Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 5,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 140.\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E Increases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeat Gauge\u003C/span\u003E by 5\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2867,
-    "Description": "Loads firearm with three rounds of special ammunition. One round of ammunition is used each time a weaponskill is executed, increasing that weaponskill\u0027s potency. Ammunition use may also increase the rate at which a weaponskill\u0027s additional effect is triggered\u003CIf([gnum72\u003E=52])\u003E\u003Cif([gnum68==31],\\, as well as lower the accompanying \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EHeat Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E increase.,.)\u003E\u003CElse/\u003E.\u003C/If\u003E No more than three rounds can be loaded at one time."
+    "Description": "Loads firearm with three rounds of special ammunition. One round of ammunition is used each time a weaponskill is executed, increasing that weaponskill\u0027s potency. Ammunition use may also increase the rate at which a weaponskill\u0027s additional effect is triggered\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),52))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E, as well as lower the accompanying \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeat Gauge\u003C/span\u003E increase.\u003CElse/\u003E.\u003C/If\u003E\u003CElse/\u003E.\u003C/If\u003E No more than three rounds can be loaded at one time."
   },
   {
     "RowId": 2868,
-    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Action: \u003C/span\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ESplit Shot\u003C/span\u003E or \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeated Split Shot\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Potency: \u003C/span\u003E210\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003ECombo Bonus:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Increases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EHeat Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 5,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Action: \u003C/span\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ESplit Shot\u003C/span\u003E or \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeated Split Shot\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Potency: \u003C/span\u003E210\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Bonus:\u003C/span\u003E Increases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeat Gauge\u003C/span\u003E by 5\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2869,
-    "Description": "Delivers an attack with a potency of 40.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E Damage over time\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EPotency:\u003C/span\u003E 45\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E \u003CIf([gnum72\u003E=14])\u003E\u003Cif([gnum68==31],30,18)\u003E\u003CElse/\u003E18\u003C/If\u003Es"
+    "Description": "Delivers an attack with a potency of 40.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E Damage over time\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EPotency:\u003C/span\u003E 45\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E \u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),14))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E30\u003CElse/\u003E18\u003C/If\u003E\u003CElse/\u003E18\u003C/If\u003Es"
   },
   {
     "RowId": 2870,
-    "Description": "Delivers an attack with a potency of 140 to all enemies in a cone before you.\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EAdditional Effect:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Increases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EHeat Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 5,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 140 to all enemies in a cone before you.\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E Increases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeat Gauge\u003C/span\u003E by 5\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2871,
@@ -1489,15 +1489,15 @@
   },
   {
     "RowId": 2872,
-    "Description": "Delivers an attack with a potency of 240.\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=40],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EAdditional Effect:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Increases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EBattery Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 20,)\u003E\u003CElse/\u003E \u003C/If\u003E\nThis weaponskill does not share a recast timer with any other actions."
+    "Description": "Delivers an attack with a potency of 240.\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),40))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E Increases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EBattery Gauge\u003C/span\u003E by 20\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\nThis weaponskill does not share a recast timer with any other actions."
   },
   {
     "RowId": 2873,
-    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Action: \u003C/span\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ESlug Shot\u003C/span\u003E or \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeated Slug Shot\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Potency: \u003C/span\u003E270\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=30],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003ECombo Bonus: \u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003EIncreases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EHeat Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 5,)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=40],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003ECombo Bonus: \u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003EIncreases \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EBattery Gauge\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E by 10,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Action: \u003C/span\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ESlug Shot\u003C/span\u003E or \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeated Slug Shot\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Potency: \u003C/span\u003E270\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Bonus: \u003C/span\u003EIncreases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EHeat Gauge\u003C/span\u003E by 5\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),40))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003ECombo Bonus: \u003C/span\u003EIncreases \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EBattery Gauge\u003C/span\u003E by 10\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2874,
-    "Description": "Delivers an attack with a potency of 130.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EMaximum Charges: \u003C/span\u003E\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=74],3,2)\u003E\u003CElse/\u003E2\u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 130.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EMaximum Charges: \u003C/span\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),74))\u003E3\u003CElse/\u003E2\u003C/If\u003E\u003CElse/\u003E2\u003C/If\u003E"
   },
   {
     "RowId": 2875,
@@ -1505,15 +1505,15 @@
   },
   {
     "RowId": 2876,
-    "Description": "Guarantees that next weaponskill is a critical direct hit.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 5s\nIncreases damage dealt when under an effect that raises critical hit rate or direct hit rate.\nThis action does not affect damage over time effects.\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=84],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EMaximum Charges: \u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E2,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Guarantees that next weaponskill is a critical direct hit.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 5s\nIncreases damage dealt when under an effect that raises critical hit rate or direct hit rate.\nThis action does not affect damage over time effects.\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),84))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EMaximum Charges: \u003C/span\u003E2\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2877,
-    "Description": "Afflicts target with \u003Cspan style=\u0022color: #ffff66;\u0022\u003EHeavy\u003C/span\u003E \u002B40%.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 12s (PvP 8s)\u003CIf([gnum72\u003E=22])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EShares a recast timer with \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003EFoot Graze\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Afflicts target with \u003Cspan style=\u0022color: #ffff66;\u0022\u003EHeavy\u003C/span\u003E \u002B40%.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 12s (PvP 8s)\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),22))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nShares a recast timer with \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EFoot Graze\u003C/span\u003E.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2878,
-    "Description": "Covers target\u0027s body in a slow-burning pitch. Action is changed to \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDetonator\u003C/span\u003E for the duration of the effect.\nDeals damage when time expires or upon executing \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDetonator\u003C/span\u003E.\nPotency is increased by \u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=78],240,100)\u003E\u003CElse/\u003E100\u003C/If\u003E for each of your own weaponskills you land prior to the end of the effect.\nCan be stacked up to 6 times.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration: \u003C/span\u003E10s"
+    "Description": "Covers target\u0027s body in a slow-burning pitch. Action is changed to \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDetonator\u003C/span\u003E for the duration of the effect.\nDeals damage when time expires or upon executing \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDetonator\u003C/span\u003E.\nPotency is increased by \u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),78))\u003E240\u003CElse/\u003E100\u003C/If\u003E\u003CElse/\u003E100\u003C/If\u003E for each of your own weaponskills you land prior to the end of the effect.\nCan be stacked up to 6 times.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration: \u003C/span\u003E10s"
   },
   {
     "RowId": 2879,
@@ -1545,7 +1545,7 @@
   },
   {
     "RowId": 2886,
-    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E \u003Cspan style=\u0022color: #ffff66;\u0022\u003ESilence\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 2s\u003CIf([gnum72\u003E=45])\u003E\u003Cif([gnum68==31],\u003Cbr\u003EShares a recast timer with \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003ESuppressive Fire\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E.,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Description": "Delivers an attack with a potency of 100.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EAdditional Effect:\u003C/span\u003E \u003Cspan style=\u0022color: #ffff66;\u0022\u003ESilence\u003C/span\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EDuration:\u003C/span\u003E 2s\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),45))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\nShares a recast timer with \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ESuppressive Fire\u003C/span\u003E.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 2887,
@@ -1557,11 +1557,11 @@
   },
   {
     "RowId": 2889,
-    "Description": "Disables a turret\u0027s attack mode. Rooks will instead create a 20-yalm radius TP-regeneration field.\u003CIf([gnum72\u003E=50])\u003E\u003Cif([gnum68==31], Bishops will create an MP-regeneration field.,)\u003E\u003CElse/\u003E \u003C/If\u003E Caster MP is slowly drained while autoturret is promoted.\u003CIf([gnum72\u003E=30])\u003E\u003Cif([gnum68==31],\u003Cbr\u003E\u003Ccolortype(504)\u003E\u003Cedgecolortype(505)\u003EHypercharge Effect:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Regeneration potency is doubled,)\u003E\u003CElse/\u003E \u003C/If\u003E\nAttack mode is reactivated upon reuse.\nCan only be executed while a turret is deployed."
+    "Description": "Disables a turret\u0027s attack mode. Rooks will instead create a 20-yalm radius TP-regeneration field.\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),50))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E Bishops will create an MP-regeneration field.\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E Caster MP is slowly drained while autoturret is promoted.\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),30))\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EHypercharge Effect:\u003C/span\u003E Regeneration potency is doubled\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\nAttack mode is reactivated upon reuse.\nCan only be executed while a turret is deployed."
   },
   {
     "RowId": 2890,
-    "Description": "Deals damage to all nearby enemies with a potency of 130 for the first enemy, and 50% less for all remaining enemies.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EMaximum Charges: \u003C/span\u003E\u003CIf([gnum68==31])\u003E\u003Cif([gnum72\u003E=74],3,2)\u003E\u003CElse/\u003E2\u003C/If\u003E"
+    "Description": "Deals damage to all nearby enemies with a potency of 130 for the first enemy, and 50% less for all remaining enemies.\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EMaximum Charges: \u003C/span\u003E\u003CIf(Equal(PlayerParameter(68),31))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),74))\u003E3\u003CElse/\u003E2\u003C/If\u003E\u003CElse/\u003E2\u003C/If\u003E"
   },
   {
     "RowId": 2891,

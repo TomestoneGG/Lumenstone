@@ -1000,7 +1000,7 @@
   },
   {
     "RowId": 1111,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie R\u00FCckkehr zur Stammwelt\u003CElse/\u003EDer Weltentransfer\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter w\u00E4hrend eines Spielinhalts ausgeloggt wurde oder die Verbindung unterbrochen war.\nBitte verlasse den Spielinhalt und versuche es dann erneut.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie R\u00FCckkehr zur Stammwelt\u003CElse/\u003EDer Weltentransfer\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter w\u00E4hrend eines Spielinhalts ausgeloggt wurde oder die Verbindung unterbrochen war.\nBitte verlasse den Spielinhalt und versuche es dann erneut.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1018,7 +1018,7 @@
   },
   {
     "RowId": 1113,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie R\u00FCckkehr zur Stammwelt\u003CElse/\u003EDer Weltentransfer\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter sich zur Zeit im Mordion-Kerker befindet.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie R\u00FCckkehr zur Stammwelt\u003CElse/\u003EDer Weltentransfer\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter sich zur Zeit im Mordion-Kerker befindet.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 1116,
-    "Text": "Der Weltentransfer wurde erfolgreich durchgef\u00FChrt. Du kannst dich nun auf der neuen Welt \u003CString\u003Elstr1\u003C/String\u003E einloggen.",
+    "Text": "Der Weltentransfer wurde erfolgreich durchgef\u00FChrt. Du kannst dich nun auf der neuen Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E einloggen.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1387,7 +1387,7 @@
   },
   {
     "RowId": 1154,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (\u003CString\u003Elstr2\u003C/String\u003E)",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 1162,
-    "Text": "W\u00E4hle das Datenzentrum und die Welt, auf die du reisen m\u00F6chtest.\nVoraussichtliche Dauer: \u003CIf([lnum1\u003C60])\u003Eetwa 1 Minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],etwa 2 Minuten,\u003Cif([lnum1\u003C180],etwa 3 Minuten,\u003Cif([lnum1\u003C300],etwa 5 Minuten,\u003Cif([lnum1\u003C600],etwa 10 Minuten,\u003Cif([lnum1\u003C1200],etwa 20 Minuten,lange Wartezeit durch gro\u00DFen Andrang)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "W\u00E4hle das Datenzentrum und die Welt, auf die du reisen m\u00F6chtest.\nVoraussichtliche Dauer: \u003CIf(LessThan(IntegerParameter(1),60))\u003Eetwa 1 Minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Eetwa 2 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Eetwa 3 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Eetwa 5 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Eetwa 10 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Eetwa 20 Minuten\u003CElse/\u003Elange Wartezeit durch gro\u00DFen Andrang\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1468,7 +1468,7 @@
   },
   {
     "RowId": 1163,
-    "Text": "Kehre auf die Stammwelt zur\u00FCck.\nVoraussichtliche Dauer: \u003CIf([lnum1\u003C60])\u003Eetwa 1 Minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],etwa 2 Minuten,\u003Cif([lnum1\u003C180],etwa 3 Minuten,\u003Cif([lnum1\u003C300],etwa 5 Minuten,\u003Cif([lnum1\u003C600],etwa 10 Minuten,\u003Cif([lnum1\u003C1200],etwa 20 Minuten,lange Wartezeit durch gro\u00DFen Andrang)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Kehre auf die Stammwelt zur\u00FCck.\nVoraussichtliche Dauer: \u003CIf(LessThan(IntegerParameter(1),60))\u003Eetwa 1 Minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Eetwa 2 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Eetwa 3 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Eetwa 5 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Eetwa 10 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Eetwa 20 Minuten\u003CElse/\u003Elange Wartezeit durch gro\u00DFen Andrang\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 1168,
-    "Text": "\u2756\u003CString\u003Elstr1\u003C/String\u003E",
+    "Text": "\u2756\u003CString\u003EStringParameter(1)\u003C/String\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 1170,
-    "Text": "Der Charakter \u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E beginnt die Reise auf die Welt \u003CString\u003Elstr4\u003C/String\u003E des Datenzentrums \u003CString\u003Elstr3\u003C/String\u003E.\nVoraussichtliche Dauer: \u003CIf([lnum1\u003C60])\u003Eetwa 1 Minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],etwa 2 Minuten,\u003Cif([lnum1\u003C180],etwa 3 Minuten,\u003Cif([lnum1\u003C300],etwa 5 Minuten,\u003Cif([lnum1\u003C600],etwa 10 Minuten,\u003Cif([lnum1\u003C1200],etwa 20 Minuten,lange Wartezeit durch gro\u00DFen Andrang)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EDer Reiseprozess kann nicht mehr abgebrochen werden.\nBis die Reise vollzogen ist, ist das Einloggen mit anderen Charakteren nicht m\u00F6glich.\u003C/span\u003E",
+    "Text": "Der Charakter \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E beginnt die Reise auf die Welt \u003CString\u003EStringParameter(4)\u003C/String\u003E des Datenzentrums \u003CString\u003EStringParameter(3)\u003C/String\u003E.\nVoraussichtliche Dauer: \u003CIf(LessThan(IntegerParameter(1),60))\u003Eetwa 1 Minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Eetwa 2 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Eetwa 3 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Eetwa 5 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Eetwa 10 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Eetwa 20 Minuten\u003CElse/\u003Elange Wartezeit durch gro\u00DFen Andrang\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EDer Reiseprozess kann nicht mehr abgebrochen werden.\nBis die Reise vollzogen ist, ist das Einloggen mit anderen Charakteren nicht m\u00F6glich.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1558,7 +1558,7 @@
   },
   {
     "RowId": 1173,
-    "Text": "Der Charakter befindet sich gerade im Reiseprozess auf ein anderes Datenzentrum. Bitte warte, bis der Prozess abgeschlossen ist.\nVoraussichtliche Dauer: \u003CIf([lnum1\u003C60])\u003Eetwa 1 Minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],etwa 2 Minuten,\u003Cif([lnum1\u003C180],etwa 3 Minuten,\u003Cif([lnum1\u003C300],etwa 5 Minuten,\u003Cif([lnum1\u003C600],etwa 10 Minuten,\u003Cif([lnum1\u003C1200],etwa 20 Minuten,lange Wartezeit durch gro\u00DFen Andrang)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Der Charakter befindet sich gerade im Reiseprozess auf ein anderes Datenzentrum. Bitte warte, bis der Prozess abgeschlossen ist.\nVoraussichtliche Dauer: \u003CIf(LessThan(IntegerParameter(1),60))\u003Eetwa 1 Minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Eetwa 2 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Eetwa 3 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Eetwa 5 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Eetwa 10 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Eetwa 20 Minuten\u003CElse/\u003Elange Wartezeit durch gro\u00DFen Andrang\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1567,7 +1567,7 @@
   },
   {
     "RowId": 1174,
-    "Text": "Der Charakter \u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E hat die Reise auf die Welt \u003CString\u003Elstr4\u003C/String\u003E des Datenzentrums \u003CString\u003Elstr3\u003C/String\u003E erfolgreich hinter sich gebracht!",
+    "Text": "Der Charakter \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E hat die Reise auf die Welt \u003CString\u003EStringParameter(4)\u003C/String\u003E des Datenzentrums \u003CString\u003EStringParameter(3)\u003C/String\u003E erfolgreich hinter sich gebracht!",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1576,7 +1576,7 @@
   },
   {
     "RowId": 1175,
-    "Text": "Dieser Charakter ist gerade auf dem Datenzentrum \u003CString\u003Elstr1\u003C/String\u003E zu Besuch.",
+    "Text": "Dieser Charakter ist gerade auf dem Datenzentrum \u003CString\u003EStringParameter(1)\u003C/String\u003E zu Besuch.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1720,7 +1720,7 @@
   },
   {
     "RowId": 1191,
-    "Text": "Der Charakter \u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E beginnt die Heimreise auf seine Stammwelt \u003CString\u003Elstr4\u003C/String\u003E des Datenzentrums \u003CString\u003Elstr3\u003C/String\u003E.\n\nVoraussichtliche Dauer: \u003CIf([lnum1\u003C60])\u003Eetwa 1 Minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],etwa 2 Minuten,\u003Cif([lnum1\u003C180],etwa 3 Minuten,\u003Cif([lnum1\u003C300],etwa 5 Minuten,\u003Cif([lnum1\u003C600],etwa 10 Minuten,\u003Cif([lnum1\u003C1200],etwa 20 Minuten,lange Wartezeit durch gro\u00DFen Andrang)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EDer Reiseprozess kann nicht mehr abgebrochen werden.\nBis die Reise vollzogen ist, ist das Einloggen mit anderen Charakteren nicht m\u00F6glich.\u003C/span\u003E",
+    "Text": "Der Charakter \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E beginnt die Heimreise auf seine Stammwelt \u003CString\u003EStringParameter(4)\u003C/String\u003E des Datenzentrums \u003CString\u003EStringParameter(3)\u003C/String\u003E.\n\nVoraussichtliche Dauer: \u003CIf(LessThan(IntegerParameter(1),60))\u003Eetwa 1 Minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Eetwa 2 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Eetwa 3 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Eetwa 5 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Eetwa 10 Minuten\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Eetwa 20 Minuten\u003CElse/\u003Elange Wartezeit durch gro\u00DFen Andrang\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EDer Reiseprozess kann nicht mehr abgebrochen werden.\nBis die Reise vollzogen ist, ist das Einloggen mit anderen Charakteren nicht m\u00F6glich.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1801,7 +1801,7 @@
   },
   {
     "RowId": 1200,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E ist zur Zeit nicht verf\u00FCgbar. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E ist zur Zeit nicht verf\u00FCgbar. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1819,7 +1819,7 @@
   },
   {
     "RowId": 1202,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden. Bitte warte einen Moment, bevor du es erneut versuchst.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden. Bitte warte einen Moment, bevor du es erneut versuchst.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1846,7 +1846,7 @@
   },
   {
     "RowId": 1205,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter sich zur Zeit im Mordion-Kerker befindet.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter sich zur Zeit im Mordion-Kerker befindet.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1873,7 +1873,7 @@
   },
   {
     "RowId": 1208,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E konnte nicht durchgef\u00FChrt werden. Bitte warte einen Moment und versuche es erneut.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E konnte nicht durchgef\u00FChrt werden. Bitte warte einen Moment und versuche es erneut.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1882,7 +1882,7 @@
   },
   {
     "RowId": 1209,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E ist zur Zeit nicht verf\u00FCgbar. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E ist zur Zeit nicht verf\u00FCgbar. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 1210,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E konnte nicht durchgef\u00FChrt werden. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E konnte nicht durchgef\u00FChrt werden. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1900,7 +1900,7 @@
   },
   {
     "RowId": 1211,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter w\u00E4hrend eines Spielinhalts ausgeloggt wurde oder die Verbindung unterbrochen war.\nBitte verlasse den Spielinhalt und logge dich dann erneut ein.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EDie Reise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da dein Charakter w\u00E4hrend eines Spielinhalts ausgeloggt wurde oder die Verbindung unterbrochen war.\nBitte verlasse den Spielinhalt und logge dich dann erneut ein.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 1212,
-    "Text": "Die Reise auf ein anderes Datenzentrum kann nicht durchgef\u00FChrt werden, da du die Obergrenze der Charakteranzahl auf der Welt \u003CString\u003Elstr1\u003C/String\u003E erreicht hast.",
+    "Text": "Die Reise auf ein anderes Datenzentrum kann nicht durchgef\u00FChrt werden, da du die Obergrenze der Charakteranzahl auf der Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E erreicht hast.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1927,7 +1927,7 @@
   },
   {
     "RowId": 1214,
-    "Text": "Die f\u00FCr die R\u00FCckkehr ausgew\u00E4hlte Welt \u003CString\u003Elstr1\u003C/String\u003E ist nicht die Stammwelt dieses Charakters.",
+    "Text": "Die f\u00FCr die R\u00FCckkehr ausgew\u00E4hlte Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E ist nicht die Stammwelt dieses Charakters.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1936,7 +1936,7 @@
   },
   {
     "RowId": 1215,
-    "Text": "Die f\u00FCr die Reise auf ein anderes Datenzentrum ausgew\u00E4hlte Welt \u003CString\u003Elstr1\u003C/String\u003E ist bereits dem Datenzentrum zugeordnet, auf dem du dich momentan befindest. Bitte nutze stattdessen die Weltenreise.",
+    "Text": "Die f\u00FCr die Reise auf ein anderes Datenzentrum ausgew\u00E4hlte Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E ist bereits dem Datenzentrum zugeordnet, auf dem du dich momentan befindest. Bitte nutze stattdessen die Weltenreise.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 1216,
-    "Text": "Die Reise auf ein anderes Datenzentrum kann nicht durchgef\u00FChrt werden, da sich die ausgew\u00E4hlte Welt \u003CString\u003Elstr1\u003C/String\u003E auf dem Datenzentrum einer anderen Region befindet.",
+    "Text": "Die Reise auf ein anderes Datenzentrum kann nicht durchgef\u00FChrt werden, da sich die ausgew\u00E4hlte Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E auf dem Datenzentrum einer anderen Region befindet.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 1217,
-    "Text": "Du befindest dich bereits auf der ausgew\u00E4hlten Welt \u003CString\u003Elstr1\u003C/String\u003E. Der Prozess wird abgebrochen.",
+    "Text": "Du befindest dich bereits auf der ausgew\u00E4hlten Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E. Der Prozess wird abgebrochen.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1963,7 +1963,7 @@
   },
   {
     "RowId": 1218,
-    "Text": "Die f\u00FCr die \u003CIf([lnum2\u003E0])\u003ER\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EReise auf ein anderes Datenzentrum\u003C/If\u003E ausgew\u00E4hlte Welt \u003CString\u003Elstr1\u003C/String\u003E kann momentan nicht bereist werden.",
+    "Text": "Die f\u00FCr die \u003CIf(GreaterThan(IntegerParameter(2),0))\u003ER\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EReise auf ein anderes Datenzentrum\u003C/If\u003E ausgew\u00E4hlte Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E kann momentan nicht bereist werden.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1972,7 +1972,7 @@
   },
   {
     "RowId": 1219,
-    "Text": "Die \u003CIf([lnum1\u003E0])\u003ER\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EReise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da ein Problem mit einem Teil der Spieldaten festgestellt wurde. Bitte wende dich an den Kundendienst. \u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum2)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Die \u003CIf(GreaterThan(IntegerParameter(1),0))\u003ER\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EReise auf ein anderes Datenzentrum\u003C/If\u003E kann nicht durchgef\u00FChrt werden, da ein Problem mit einem Teil der Spieldaten festgestellt wurde. Bitte wende dich an den Kundendienst. \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n(\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 1220,
-    "Text": "W\u00E4hrend der Server-Anfrage ist ein Fehler aufgetreten. \u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "W\u00E4hrend der Server-Anfrage ist ein Fehler aufgetreten. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1990,7 +1990,7 @@
   },
   {
     "RowId": 1221,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EKeine R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EKeine Reise auf ein anderes Datenzentrum\u003C/If\u003E m\u00F6glich, solange du einer Gruppe angeh\u00F6rst.",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EKeine R\u00FCckkehr zu deiner Stammwelt\u003CElse/\u003EKeine Reise auf ein anderes Datenzentrum\u003C/If\u003E m\u00F6glich, solange du einer Gruppe angeh\u00F6rst.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2107,7 +2107,7 @@
   },
   {
     "RowId": 1234,
-    "Text": "Die Reise zwischen den Datenzentren konnte nicht ausgef\u00FChrt werden, weil zu \u003CString\u003Elstr2\u003C/String\u003E noch keine vorherige Verbindung hergestellt wurde.\nSobald du eines der Datenzentren von \u003CString\u003Elstr2\u003C/String\u003E aus der Datenzentren-Auswahl des Titelbildschirms ausgew\u00E4hlt und dich mit dem Charakterbildschirm verbunden hast, kannst du zu Datenzentren dieser Region reisen.",
+    "Text": "Die Reise zwischen den Datenzentren konnte nicht ausgef\u00FChrt werden, weil zu \u003CString\u003EStringParameter(2)\u003C/String\u003E noch keine vorherige Verbindung hergestellt wurde.\nSobald du eines der Datenzentren von \u003CString\u003EStringParameter(2)\u003C/String\u003E aus der Datenzentren-Auswahl des Titelbildschirms ausgew\u00E4hlt und dich mit dem Charakterbildschirm verbunden hast, kannst du zu Datenzentren dieser Region reisen.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2116,7 +2116,7 @@
   },
   {
     "RowId": 1235,
-    "Text": "Auf der Welt \u003CString\u003Elstr1\u003C/String\u003E in \u003CString\u003Elstr2\u003C/String\u003E hast du bereits die maximale Anzahl an dir verf\u00FCgbaren Charakteren erreicht.\nUm auf die Welt eines Datenzentrums einer anderen Region als deiner eigenen zu reisen, ben\u00F6tigst du Platz f\u00FCr mindestens einen Charakter.",
+    "Text": "Auf der Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E in \u003CString\u003EStringParameter(2)\u003C/String\u003E hast du bereits die maximale Anzahl an dir verf\u00FCgbaren Charakteren erreicht.\nUm auf die Welt eines Datenzentrums einer anderen Region als deiner eigenen zu reisen, ben\u00F6tigst du Platz f\u00FCr mindestens einen Charakter.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2188,7 +2188,7 @@
   },
   {
     "RowId": 1243,
-    "Text": "Die Reise auf die Welt \u003CString\u003Elstr1\u003C/String\u003E konnte nicht durchgef\u00FChrt werden, weil die Kontoinformationen aktualisiert werden m\u00FCssen.\nBitte kehre zum Startbildschirm zur\u00FCck und w\u00E4hle bei der Charakterauswahl eines der Datenzentren der Region \u003CString\u003Elstr2\u003C/String\u003E. Danach kannst du die Weltenreise oder die Reise auf ein anderes Datenzentrum nutzen, um nach \u003CString\u003Elstr1\u003C/String\u003E zu reisen.",
+    "Text": "Die Reise auf die Welt \u003CString\u003EStringParameter(1)\u003C/String\u003E konnte nicht durchgef\u00FChrt werden, weil die Kontoinformationen aktualisiert werden m\u00FCssen.\nBitte kehre zum Startbildschirm zur\u00FCck und w\u00E4hle bei der Charakterauswahl eines der Datenzentren der Region \u003CString\u003EStringParameter(2)\u003C/String\u003E. Danach kannst du die Weltenreise oder die Reise auf ein anderes Datenzentrum nutzen, um nach \u003CString\u003EStringParameter(1)\u003C/String\u003E zu reisen.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

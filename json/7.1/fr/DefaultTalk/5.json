@@ -652,7 +652,7 @@
       }
     ],
     "Text": [
-      "Oh, mais c\u0027est vous, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes ici pour la r\u00E9union de l\u0027Alliance, je pr\u00E9sume\u003C\u003Cnbsp\u003E\u003E? Figurez-vous que moi aussi\u003C\u003Cnbsp\u003E\u003E!",
+      "Oh, mais c\u0027est vous, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes ici pour la r\u00E9union de l\u0027Alliance, je pr\u00E9sume\u003C\u003Cnbsp\u003E\u003E? Figurez-vous que moi aussi\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -886,7 +886,7 @@
       }
     ],
     "Text": [
-      "Merci de votre aide, aventur\u003CIf(gnum4)\u003Ei\u00E8re\u003CElse/\u003Eier\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Continuez comme \u00E7a dans les trois cit\u00E9s\u003C\u003Cnbsp\u003E\u003E!",
+      "Merci de votre aide, aventur\u003CIf(PlayerParameter(4))\u003Ei\u00E8re\u003CElse/\u003Eier\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Continuez comme \u00E7a dans les trois cit\u00E9s\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -1240,8 +1240,8 @@
       }
     ],
     "Text": [
-      "C\u0027est un plaisir de vous voir, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Apr\u00E8s tout ce que vous avez fait pour Ishgard, sachez que mes hommes et moi-m\u00EAme vous sommes \u00E9ternellement reconnaissants.",
-      "Bien s\u00FBr, il reste encore des gens parmi les n\u00F4tres qui doutent de votre valeur et de votre courage, mais je vous prie d\u0027\u00EAtre indulgent\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E envers eux. Le foss\u00E9 qui s\u00E9pare notre peuple des autres \u00C9orz\u00E9ens est encore large, voyez-vous.",
+      "C\u0027est un plaisir de vous voir, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Apr\u00E8s tout ce que vous avez fait pour Ishgard, sachez que mes hommes et moi-m\u00EAme vous sommes \u00E9ternellement reconnaissants.",
+      "Bien s\u00FBr, il reste encore des gens parmi les n\u00F4tres qui doutent de votre valeur et de votre courage, mais je vous prie d\u0027\u00EAtre indulgent\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E envers eux. Le foss\u00E9 qui s\u00E9pare notre peuple des autres \u00C9orz\u00E9ens est encore large, voyez-vous.",
       "0"
     ],
     "Unknown0": 0,
@@ -1474,7 +1474,7 @@
       }
     ],
     "Text": [
-      "\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Bonsoir,Bonjour)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Bonjour,Bonsoir)\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Vous allez bien\u003C\u003Cnbsp\u003E\u003E? Vous savez, de plus en plus de personnes m\u0027aident \u00E0 pr\u00E9parer mes infusions.",
+      "\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003EBonsoir\u003CElse/\u003EBonjour\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003EBonjour\u003CElse/\u003EBonsoir\u003C/If\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Vous allez bien\u003C\u003Cnbsp\u003E\u003E? Vous savez, de plus en plus de personnes m\u0027aident \u00E0 pr\u00E9parer mes infusions.",
       "C\u0027est gr\u00E2ce \u00E0 vous si mon p\u00E8re et moi, nous partageons un m\u00EAme objectif aujourd\u0027hui. Nous cherchons tous les deux \u00E0 aider notre prochain. Je tenais \u00E0 vous remercier du fond du c\u0153ur. Je ne vous d\u00E9cevrai pas\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -1750,7 +1750,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, j\u0027esp\u00E8re que tu ne te reposes pas sur tes lauriers. M\u00EAme si tu as r\u00E9ussi \u00E0 attraper le dragon de Nepto, il y a s\u00FBrement des poissons encore plus coriaces qui n\u0027attendent que de se mesurer \u00E0 toi\u003C\u003Cnbsp\u003E\u003E!",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, j\u0027esp\u00E8re que tu ne te reposes pas sur tes lauriers. M\u00EAme si tu as r\u00E9ussi \u00E0 attraper le dragon de Nepto, il y a s\u00FBrement des poissons encore plus coriaces qui n\u0027attendent que de se mesurer \u00E0 toi\u003C\u003Cnbsp\u003E\u003E!",
       "Qu\u0027il s\u0027agisse de p\u00EAcher ou de charmer, rien ne vaut l\u0027exp\u00E9rience de longues ann\u00E9es, et tu as le plus bel exemple de r\u00E9ussite devant toi. Ho ho ho\u003C\u003Cnbsp\u003E\u003E! \u00C0 toi donc de t\u0027inspirer de moi et de lancer ta ligne partout o\u00F9 tes aventures t\u0027emm\u00E8nent\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -1945,7 +1945,7 @@
       }
     ],
     "Text": [
-      "J\u0027ai eu vent de votre confrontation avec Shiva. Vous \u00EAtes r\u00E9ellement l\u003CIf(gnum4)\u003Ea\u003CElse/\u003Ee\u003C/If\u003E \u003CIf(gnum4)\u003EGuerri\u00E8re\u003CElse/\u003EGuerrier\u003C/If\u003E de la Lumi\u00E8re...",
+      "J\u0027ai eu vent de votre confrontation avec Shiva. Vous \u00EAtes r\u00E9ellement l\u003CIf(PlayerParameter(4))\u003Ea\u003CElse/\u003Ee\u003C/If\u003E \u003CIf(PlayerParameter(4))\u003EGuerri\u00E8re\u003CElse/\u003EGuerrier\u003C/If\u003E de la Lumi\u00E8re...",
       "0",
       "0"
     ],
@@ -2062,7 +2062,7 @@
       }
     ],
     "Text": [
-      "Alors comme \u00E7a, on veut devenir surineu\u003CIf(gnum4)\u003Ese\u003CElse/\u003Er\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Voyons d\u0027abord un peu ce que tu vaux sur le terrain...",
+      "Alors comme \u00E7a, on veut devenir surineu\u003CIf(PlayerParameter(4))\u003Ese\u003CElse/\u003Er\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Voyons d\u0027abord un peu ce que tu vaux sur le terrain...",
       "0",
       "0"
     ],
@@ -2101,7 +2101,7 @@
       }
     ],
     "Text": [
-      "Salut, \u003CIf(gnum4)\u003Ela nouvelle\u003CElse/\u003Ele nouveau\u003C/If\u003E. Moi, c\u0027est Bochard. Jacke est peut-\u00EAtre le ma\u00EEtre de guilde officiel, mais j\u0027\u00E9tais d\u00E9j\u00E0 surineur quand sa pauvre m\u00E8re lui donnait encore la t\u00E9t\u00E9e, ha ha\u003C\u003Cnbsp\u003E\u003E!",
+      "Salut, \u003CIf(PlayerParameter(4))\u003Ela nouvelle\u003CElse/\u003Ele nouveau\u003C/If\u003E. Moi, c\u0027est Bochard. Jacke est peut-\u00EAtre le ma\u00EEtre de guilde officiel, mais j\u0027\u00E9tais d\u00E9j\u00E0 surineur quand sa pauvre m\u00E8re lui donnait encore la t\u00E9t\u00E9e, ha ha\u003C\u003Cnbsp\u003E\u003E!",
       "Reviens me voir lorsque tu auras acquis un peu plus d\u0027exp\u00E9rience au sein de la guilde et je te d\u00E9voilerai les petits secrets de la voie de la double lame.",
       "0"
     ],
@@ -2140,7 +2140,7 @@
       }
     ],
     "Text": [
-      "Je vois que tu as commenc\u00E9 \u00E0 utiliser Lame tournoyante. Comme son nom l\u0027indique, cette technique consiste \u00E0 trancher dans le lard sans retenue\u003C\u003Cnbsp\u003E\u003E! Voil\u00E0 pourquoi c\u0027est la premi\u00E8re que les d\u00E9butant\u003CIf(gnum4)\u003Ees\u003CElse/\u003Es\u003C/If\u003E comme toi apprennent.",
+      "Je vois que tu as commenc\u00E9 \u00E0 utiliser Lame tournoyante. Comme son nom l\u0027indique, cette technique consiste \u00E0 trancher dans le lard sans retenue\u003C\u003Cnbsp\u003E\u003E! Voil\u00E0 pourquoi c\u0027est la premi\u00E8re que les d\u00E9butant\u003CIf(PlayerParameter(4))\u003Ees\u003CElse/\u003Es\u003C/If\u003E comme toi apprennent.",
       "Sa version am\u00E9lior\u00E9e, Tourbillon tailladant, permet m\u00EAme de lancer des rafales de vent au visage de tes ennemis pour les d\u00E9stabiliser avant de leur ass\u00E9ner un coup de surin aussi rapide que puissant\u003C\u003Cnbsp\u003E\u003E! ",
       "0"
     ],
@@ -2257,7 +2257,7 @@
       }
     ],
     "Text": [
-      "Alors, on se remplit les poches comme \u003CIf(gnum4)\u003Eune sagouine\u003CElse/\u003Eun sagouin\u003C/If\u003E gr\u00E2ce \u00E0 Rapine\u003C\u003Cnbsp\u003E\u003E? T\u0027as bien raison, va. Il faut avouer que cette technique est une des raisons majeures pour lesquelles les voleurs ont choisi un nom pareil.",
+      "Alors, on se remplit les poches comme \u003CIf(PlayerParameter(4))\u003Eune sagouine\u003CElse/\u003Eun sagouin\u003C/If\u003E gr\u00E2ce \u00E0 Rapine\u003C\u003Cnbsp\u003E\u003E? T\u0027as bien raison, va. Il faut avouer que cette technique est une des raisons majeures pour lesquelles les voleurs ont choisi un nom pareil.",
       "Et puis d\u0027ailleurs, comment on ferait autrement pour r\u00E9cup\u00E9rer des marchandises vol\u00E9es\u003C\u003Cnbsp\u003E\u003E? Certains croient peut-\u00EAtre que les bandits nous les rendent avec le sourire, dans un paquet-cadeau avec un joli ruban arc-en-ciel\u003C\u003Cnbsp\u003E\u003E?",
       "0"
     ],
@@ -2296,8 +2296,8 @@
       }
     ],
     "Text": [
-      "J\u0027esp\u00E8re que tu emploies Attaque sournoise \u00E0 bon escient, \u003CIf(gnum4)\u003Ema petite\u003CElse/\u003Emon petit\u003C/If\u003E. C\u0027est la technique parfaite pour surprendre ton adversaire, surtout lorsque celui-ci ne sait pas o\u00F9 tu te trouves et s\u0027y attend le moins.",
-      "... Tu as peur qu\u0027on te prenne pour \u003CIf(gnum4)\u003Eune\u003CElse/\u003Eun\u003C/If\u003E l\u00E2che\u003C\u003Cnbsp\u003E\u003E? Je te conseille de mettre une partie de ta morale au placard. Les surineurs se battent pour la justice, mais ils consid\u00E8rent aussi que la fin justifie les moyens, si tu vois ce que je veux dire...",
+      "J\u0027esp\u00E8re que tu emploies Attaque sournoise \u00E0 bon escient, \u003CIf(PlayerParameter(4))\u003Ema petite\u003CElse/\u003Emon petit\u003C/If\u003E. C\u0027est la technique parfaite pour surprendre ton adversaire, surtout lorsque celui-ci ne sait pas o\u00F9 tu te trouves et s\u0027y attend le moins.",
+      "... Tu as peur qu\u0027on te prenne pour \u003CIf(PlayerParameter(4))\u003Eune\u003CElse/\u003Eun\u003C/If\u003E l\u00E2che\u003C\u003Cnbsp\u003E\u003E? Je te conseille de mettre une partie de ta morale au placard. Les surineurs se battent pour la justice, mais ils consid\u00E8rent aussi que la fin justifie les moyens, si tu vois ce que je veux dire...",
       "0"
     ],
     "Unknown0": 0,
@@ -2335,7 +2335,7 @@
       }
     ],
     "Text": [
-      "Je dois avouer que tu as fait de l\u0027excellent travail, \u003CIf(gnum4)\u003Ema petite\u003CElse/\u003Emon petit\u003C/If\u003E. Un talent comme le tien pour la pratique du surin, \u00E7a ne court pas les rues.",
+      "Je dois avouer que tu as fait de l\u0027excellent travail, \u003CIf(PlayerParameter(4))\u003Ema petite\u003CElse/\u003Emon petit\u003C/If\u003E. Un talent comme le tien pour la pratique du surin, \u00E7a ne court pas les rues.",
       "Le vieux briscard que je suis n\u0027a plus grand-chose \u00E0 t\u0027apprendre, mais je compte sur toi pour continuer \u00E0 suivre la voie de la double lame avec assiduit\u00E9. J\u0027esp\u00E8re entendre parler de tes exploits avant de rejoindre mes anc\u00EAtres dans l\u0027au-del\u00E0, ha ha ha\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -2491,7 +2491,7 @@
       }
     ],
     "Text": [
-      "Charmante \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],soir\u00E9e,journ\u00E9e)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],journ\u00E9e,soir\u00E9e)\u003E\u003C/If\u003E, n\u0027est-ce pas\u003C\u003Cnbsp\u003E\u003E? Au cas o\u00F9 vous vous demanderiez, mon fr\u00E8re et moi surveillons notre charrette.",
+      "Charmante \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Esoir\u00E9e\u003CElse/\u003Ejourn\u00E9e\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Ejourn\u00E9e\u003CElse/\u003Esoir\u00E9e\u003C/If\u003E\u003C/If\u003E, n\u0027est-ce pas\u003C\u003Cnbsp\u003E\u003E? Au cas o\u00F9 vous vous demanderiez, mon fr\u00E8re et moi surveillons notre charrette.",
       "0",
       "0"
     ],
@@ -3076,7 +3076,7 @@
       }
     ],
     "Text": [
-      "J\u0027ai entendu que vous vous \u00EAtes port\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E volontaire pour participer aux festivit\u00E9s en tant que disciple du saint. Bravo\u003C\u003Cnbsp\u003E\u003E! C\u0027est \u00E7a, l\u0027esprit de la f\u00EAte des \u00E9toiles\u003C\u003Cnbsp\u003E\u003E!",
+      "J\u0027ai entendu que vous vous \u00EAtes port\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E volontaire pour participer aux festivit\u00E9s en tant que disciple du saint. Bravo\u003C\u003Cnbsp\u003E\u003E! C\u0027est \u00E7a, l\u0027esprit de la f\u00EAte des \u00E9toiles\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -3193,7 +3193,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, j\u0027aimerais vous exprimer ma gratitude pour tous vos efforts. Grrr\u00E2ce \u00E0 vous, le petit Timothey a retrouv\u00E9 le sourire\u003C\u003Cnbsp\u003E\u003E! Au nom de tous les disciples, merci.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, j\u0027aimerais vous exprimer ma gratitude pour tous vos efforts. Grrr\u00E2ce \u00E0 vous, le petit Timothey a retrouv\u00E9 le sourire\u003C\u003Cnbsp\u003E\u003E! Au nom de tous les disciples, merci.",
       "0",
       "0"
     ],
@@ -3232,7 +3232,7 @@
       }
     ],
     "Text": [
-      "Bienvenue \u00E0 la guilde des occultistes, aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Je suis ravie de vous apprendre que toutes les suspicions de complot \u00E0 mon encontre ont \u00E9t\u00E9 lev\u00E9es.",
+      "Bienvenue \u00E0 la guilde des occultistes, aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Je suis ravie de vous apprendre que toutes les suspicions de complot \u00E0 mon encontre ont \u00E9t\u00E9 lev\u00E9es.",
       "En ce moment, je travaille sans rel\u00E2che \u00E0 l\u0027\u00E9laboration d\u0027une technique permettant de sonder la valeur des apprentis occultistes, mais la mise par \u00E9crit de toutes mes th\u00E9ories risque de me prendre un bon moment... N\u0027oubliez pas que je vous observe aussi, alors appliquez-vous\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -3781,8 +3781,8 @@
       }
     ],
     "Text": [
-      "Notre ami Pipin a fait jouer ses relations pour que tu sois retir\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de la liste des personnes recherch\u00E9es pour le meurtre de dame Nanamo. Tu peux donc te promener dans les rues des cit\u00E9s sans \u00EAtre oblig\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de rester sur tes gardes en permanence. ",
-      "Apr\u00E8s tout, tu es \u003CIf(gnum4)\u003Ela protectrice\u003CElse/\u003Ele protecteur\u003C/If\u003E d\u0027\u00C9orz\u00E9a par excellence. S\u0027il y a quelqu\u0027un qui doit donner l\u0027exemple ici, c\u0027est bien toi\u003C\u003Cnbsp\u003E\u003E! Avec un peu de chance, nous r\u00E9ussirons tr\u00E8s bient\u00F4t \u00E0 lever ces accusations ridicules.",
+      "Notre ami Pipin a fait jouer ses relations pour que tu sois retir\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de la liste des personnes recherch\u00E9es pour le meurtre de dame Nanamo. Tu peux donc te promener dans les rues des cit\u00E9s sans \u00EAtre oblig\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de rester sur tes gardes en permanence. ",
+      "Apr\u00E8s tout, tu es \u003CIf(PlayerParameter(4))\u003Ela protectrice\u003CElse/\u003Ele protecteur\u003C/If\u003E d\u0027\u00C9orz\u00E9a par excellence. S\u0027il y a quelqu\u0027un qui doit donner l\u0027exemple ici, c\u0027est bien toi\u003C\u003Cnbsp\u003E\u003E! Avec un peu de chance, nous r\u00E9ussirons tr\u00E8s bient\u00F4t \u00E0 lever ces accusations ridicules.",
       "0"
     ],
     "Unknown0": 0,
@@ -4369,7 +4369,7 @@
       }
     ],
     "Text": [
-      "\u00C0 quoi ressemblerait \u00C9orz\u00E9a aujourd\u0027hui si tu n\u0027\u00E9tais pas l\u00E0\u003C\u003Cnbsp\u003E\u003E? Elle serait certainement dans un triste \u00E9tat... Je remercie les Douze de t\u0027avoir guid\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E jusqu\u0027\u00E0 nous.",
+      "\u00C0 quoi ressemblerait \u00C9orz\u00E9a aujourd\u0027hui si tu n\u0027\u00E9tais pas l\u00E0\u003C\u003Cnbsp\u003E\u003E? Elle serait certainement dans un triste \u00E9tat... Je remercie les Douze de t\u0027avoir guid\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E jusqu\u0027\u00E0 nous.",
       "0",
       "0"
     ],
@@ -5659,7 +5659,7 @@
       }
     ],
     "Text": [
-      "Par piti\u00E9, calmez-vous\u003C\u003Cnbsp\u003E\u003E! Ce n\u0027est absolument pas ce que vous... \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!? T-tu es d\u00E9j\u00E0 rentr\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?",
+      "Par piti\u00E9, calmez-vous\u003C\u003Cnbsp\u003E\u003E! Ce n\u0027est absolument pas ce que vous... \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!? T-tu es d\u00E9j\u00E0 rentr\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?",
       "Euh, en fait, c\u0027est-\u00E0-dire que... Comment dire... C\u0027est... beaucoup plus compliqu\u00E9 que \u00E7a en a l\u0027air, voil\u00E0\u003C\u003Cnbsp\u003E\u003E! Mais je suis certain que tout va s\u0027arranger, ha ha ha\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -5893,7 +5893,7 @@
       }
     ],
     "Text": [
-      "Vous d\u00E9couvrez les cartes, ou vous \u00EAtes un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E joueu\u003CIf(gnum4)\u003Ese\u003CElse/\u003Er\u003C/If\u003E rod\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Dans tous les cas, amusez-vous bien\u003C\u003Cnbsp\u003E\u003E!",
+      "Vous d\u00E9couvrez les cartes, ou vous \u00EAtes un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E joueu\u003CIf(PlayerParameter(4))\u003Ese\u003CElse/\u003Er\u003C/If\u003E rod\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Dans tous les cas, amusez-vous bien\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -6127,7 +6127,7 @@
       }
     ],
     "Text": [
-      "Oh, c\u0027est vous, \u003CIf(gnum4)\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!\nBienvenue au salon des Manderville. Ici, vous pourrez prendre un peu de repos entre deux attractions, en vous sustentant ou en vous rafra\u00EEchissant.",
+      "Oh, c\u0027est vous, \u003CIf(PlayerParameter(4))\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!\nBienvenue au salon des Manderville. Ici, vous pourrez prendre un peu de repos entre deux attractions, en vous sustentant ou en vous rafra\u00EEchissant.",
       "0",
       "0"
     ],
@@ -6283,7 +6283,7 @@
       }
     ],
     "Text": [
-      "Salut, \u003CIf(gnum4)\u003Ema belle\u003CElse/\u003Ecamarade\u003C/If\u003E. Tu vas courir, toi aussi\u003C\u003Cnbsp\u003E\u003E? Je sens que tu vas me donner du fil \u00E0 retordre, j\u0027ai h\u00E2te de te retrouver sur la piste\u003C\u003Cnbsp\u003E\u003E!",
+      "Salut, \u003CIf(PlayerParameter(4))\u003Ema belle\u003CElse/\u003Ecamarade\u003C/If\u003E. Tu vas courir, toi aussi\u003C\u003Cnbsp\u003E\u003E? Je sens que tu vas me donner du fil \u00E0 retordre, j\u0027ai h\u00E2te de te retrouver sur la piste\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -6322,7 +6322,7 @@
       }
     ],
     "Text": [
-      "Vous aimez Triple Triade, \u003CIf(gnum4)\u003Ema\u003C-\u003Ede\u003C-\u003Emoi\u003C-\u003Esel\u003C-\u003Ele\u003CElse/\u003El\u0027ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? J\u0027adore tellement ce jeu qu\u0027on m\u0027a surnomm\u00E9 \u201CElmer le Roi\u201D.",
+      "Vous aimez Triple Triade, \u003CIf(PlayerParameter(4))\u003Emademoiselle\u003CElse/\u003El\u0027ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? J\u0027adore tellement ce jeu qu\u0027on m\u0027a surnomm\u00E9 \u201CElmer le Roi\u201D.",
       "J\u0027ai jou\u00E9 contre toutes sortes de personnes au cours du temps. Et sachez que je tiens \u00E0 faire honneur \u00E0 mon nom\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -6439,7 +6439,7 @@
       }
     ],
     "Text": [
-      "Salut, l\u0027ami\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Tu veux m\u0027affronter \u00E0 Triple Triade\u003C\u003Cnbsp\u003E\u003E? J\u0027te ferai pas de cadeau\u003C\u003Cnbsp\u003E\u003E! Le Valet de pique est sans piti\u00E9, \u003CIf(gnum4)\u003Em\u00EAme contre les jolies filles\u003CElse/\u003Equel que soit son adversaire\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+      "Salut, l\u0027ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Tu veux m\u0027affronter \u00E0 Triple Triade\u003C\u003Cnbsp\u003E\u003E? J\u0027te ferai pas de cadeau\u003C\u003Cnbsp\u003E\u003E! Le Valet de pique est sans piti\u00E9, \u003CIf(PlayerParameter(4))\u003Em\u00EAme contre les jolies filles\u003CElse/\u003Equel que soit son adversaire\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -6595,7 +6595,7 @@
       }
     ],
     "Text": [
-      "\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Bonsoir,Bonjour)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Bonjour,Bonsoir)\u003E\u003C/If\u003E, \u003CIf(gnum4)\u003EMam\u0027zelle\u003CElse/\u003EM\u0027sieur\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! On est en train de jouer \u00E0 cache-cache, et c\u0027est moi le loup.",
+      "\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003EBonsoir\u003CElse/\u003EBonjour\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003EBonjour\u003CElse/\u003EBonsoir\u003C/If\u003E\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003EMam\u0027zelle\u003CElse/\u003EM\u0027sieur\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! On est en train de jouer \u00E0 cache-cache, et c\u0027est moi le loup.",
       "0",
       "0"
     ],
@@ -6751,7 +6751,7 @@
       }
     ],
     "Text": [
-      "Oh\u003C\u003Cnbsp\u003E\u003E! Tu es... Je ne peux pas te laisser passer mais ne t\u0027inqui\u00E8te pas, je ferai comme si je ne t\u0027avais pas vu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E. Je sais bien que tu n\u0027es pas coupable.",
+      "Oh\u003C\u003Cnbsp\u003E\u003E! Tu es... Je ne peux pas te laisser passer mais ne t\u0027inqui\u00E8te pas, je ferai comme si je ne t\u0027avais pas vu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E. Je sais bien que tu n\u0027es pas coupable.",
       "0",
       "0"
     ],
@@ -7027,7 +7027,7 @@
       }
     ],
     "Text": [
-      "Tiens\u003C\u003Cnbsp\u003E\u003E! Salut, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Je fais un concours avec Papalymo pour savoir qui arrivera \u00E0 recruter le plus de volontaires.",
+      "Tiens\u003C\u003Cnbsp\u003E\u003E! Salut, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Je fais un concours avec Papalymo pour savoir qui arrivera \u00E0 recruter le plus de volontaires.",
       "Pour l\u0027instant, j\u0027ai obtenu une vingtaine de promesses. C\u0027est pas mal, non\u003C\u003Cnbsp\u003E\u003E?",
       "0"
     ],
@@ -7105,7 +7105,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, je dois te remercier d\u0027avoir ramen\u00E9 Nero du Monde des T\u00E9n\u00E8bres. Je crois qu\u0027il restera sage d\u00E9sormais... Et puis, il a une dette envers moi, ne l\u0027oublions pas.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, je dois te remercier d\u0027avoir ramen\u00E9 Nero du Monde des T\u00E9n\u00E8bres. Je crois qu\u0027il restera sage d\u00E9sormais... Et puis, il a une dette envers moi, ne l\u0027oublions pas.",
       "0",
       "0"
     ],
@@ -7222,7 +7222,7 @@
       }
     ],
     "Text": [
-      "Mince alors, un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E... Je n\u0027ai aucune envie de me mesurer \u00E0 vous. On m\u0027a enr\u00F4l\u00E9 de force, vous savez\u003C\u003Cnbsp\u003E\u003E! Ne me faites pas de mal, je vous en supplie.",
+      "Mince alors, un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E... Je n\u0027ai aucune envie de me mesurer \u00E0 vous. On m\u0027a enr\u00F4l\u00E9 de force, vous savez\u003C\u003Cnbsp\u003E\u003E! Ne me faites pas de mal, je vous en supplie.",
       "Je sais m\u00EAme pas me battre... Vous ne pr\u00E9f\u00E9rez pas qu\u0027on s\u0027affronte aux cartes\u003C\u003Cnbsp\u003E\u003E?",
       "0"
     ],
@@ -7258,7 +7258,7 @@
       }
     ],
     "Text": [
-      "Hmm\u003C\u003Cnbsp\u003E\u003E? Vous \u00EAtes qui\u003C\u003Cnbsp\u003E\u003E? Je n\u0027ai rien \u00E0 dire \u00E0 un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de votre genre.",
+      "Hmm\u003C\u003Cnbsp\u003E\u003E? Vous \u00EAtes qui\u003C\u003Cnbsp\u003E\u003E? Je n\u0027ai rien \u00E0 dire \u00E0 un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de votre genre.",
       "0",
       "0"
     ],
@@ -7334,7 +7334,7 @@
     ],
     "Text": [
       "L\u0027Amirale a inform\u00E9 notre \u00E9tat-major de l\u0027incident qui s\u0027est produit au palais royal d\u0027Ul\u0027dah. Bien s\u00FBr, elle nous a pr\u00E9cis\u00E9 que cette information \u00E9tait strictement confidentielle, et par cons\u00E9quent, la plupart des gens \u00E0 Limsa Lominsa ne savent absolument rien de ce qui s\u0027est pass\u00E9.",
-      "\u003CIf([gnum52\u003E0])\u003E\u003Cif([gnum52\u003C127],Tu es la fiert\u00E9 du Maelstrom et tu,Tu)\u003E\u003CElse/\u003ETu\u003C/If\u003E as prot\u00E9g\u00E9 notre cit\u00E9 de la menace des Primordiaux \u00E0 plusieurs reprises. Je trouve intol\u00E9rable qu\u0027on puisse t\u0027accuser injustement d\u0027un crime aussi grave\u003C\u003Cnbsp\u003E\u003E! Mais ne t\u0027inqui\u00E8te pas, je veille sur toi. Tu ne crains rien ici.",
+      "\u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003CIf(LessThan(PlayerParameter(52),127))\u003ETu es la fiert\u00E9 du Maelstrom et tu\u003CElse/\u003ETu\u003C/If\u003E\u003CElse/\u003ETu\u003C/If\u003E as prot\u00E9g\u00E9 notre cit\u00E9 de la menace des Primordiaux \u00E0 plusieurs reprises. Je trouve intol\u00E9rable qu\u0027on puisse t\u0027accuser injustement d\u0027un crime aussi grave\u003C\u003Cnbsp\u003E\u003E! Mais ne t\u0027inqui\u00E8te pas, je veille sur toi. Tu ne crains rien ici.",
       "0"
     ],
     "Unknown0": 0,
@@ -7372,7 +7372,7 @@
       }
     ],
     "Text": [
-      "Mon ma\u00EEtre a con\u00E7u un projet \u00E0 l\u0027occasion de la f\u00EAte des demoiselles, mais il se heurte \u00E0 certaines difficult\u00E9s, et a besoin d\u0027aide... Je m\u0027en remets \u00E0 votre bienveillance, \u00F4 aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E.",
+      "Mon ma\u00EEtre a con\u00E7u un projet \u00E0 l\u0027occasion de la f\u00EAte des demoiselles, mais il se heurte \u00E0 certaines difficult\u00E9s, et a besoin d\u0027aide... Je m\u0027en remets \u00E0 votre bienveillance, \u00F4 aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -7411,7 +7411,7 @@
       }
     ],
     "Text": [
-      "\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Bonsoir,Bonjour)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Bonjour,Bonsoir)\u003E\u003C/If\u003E \u00E0 vous tous, c\u0153urs gridaniens\u003C\u003Cnbsp\u003E\u003E! Je suis Lisette de Valention, messag\u00E8re de l\u0027amour\u003C\u003Cnbsp\u003E\u003E!",
+      "\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003EBonsoir\u003CElse/\u003EBonjour\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003EBonjour\u003CElse/\u003EBonsoir\u003C/If\u003E\u003C/If\u003E \u00E0 vous tous, c\u0153urs gridaniens\u003C\u003Cnbsp\u003E\u003E! Je suis Lisette de Valention, messag\u00E8re de l\u0027amour\u003C\u003Cnbsp\u003E\u003E!",
       "Avez-vous trouv\u00E9 le courage de d\u00E9clarer votre flamme \u00E0 quelqu\u0027un\u003C\u003Cnbsp\u003E\u003E? Si ce n\u0027est pas encore le cas, dites-vous que c\u0027est maintenant l\u0027occasion ou jamais\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -7493,7 +7493,7 @@
     ],
     "Text": [
       "Par la Conqu\u00E9rante, comment cela a-t-il pu arriver\u003C\u003Cnbsp\u003E\u003E? Trouver mon \u00E2me s\u0153ur a toujours \u00E9t\u00E9 mon plus grand r\u00EAve, mais tout ceci est si soudain... La t\u00EAte me tourne... Mon c\u0153ur bat la chamade...",
-      "Oh, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, vous \u00EAtes encore l\u00E0\u003C\u003Cnbsp\u003E\u003E? J\u0027imagine que je dois vous remercier d\u0027avoir guid\u00E9 Hortefense vers celle qu\u0027il aime. La comtesse Arabelle serait si fi\u00E8re de vous.",
+      "Oh, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, vous \u00EAtes encore l\u00E0\u003C\u003Cnbsp\u003E\u003E? J\u0027imagine que je dois vous remercier d\u0027avoir guid\u00E9 Hortefense vers celle qu\u0027il aime. La comtesse Arabelle serait si fi\u00E8re de vous.",
       "0"
     ],
     "Unknown0": 0,
@@ -7570,7 +7570,7 @@
       }
     ],
     "Text": [
-      "Alors\u003C\u003Cnbsp\u003E\u003E? Vos recherches avencent bien\u003C\u003Cnbsp\u003E\u003E? Vous me voyez d\u00E9sol\u00E9 de vous avoir confi\u00E9 une telle t\u00E2che, mais je n\u0027avais pas le choix. Je suis s\u00FBr qu\u0027un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de votre trempe r\u00E9ussira l\u00E0 o\u00F9 nous avons \u00E9chou\u00E9.",
+      "Alors\u003C\u003Cnbsp\u003E\u003E? Vos recherches avencent bien\u003C\u003Cnbsp\u003E\u003E? Vous me voyez d\u00E9sol\u00E9 de vous avoir confi\u00E9 une telle t\u00E2che, mais je n\u0027avais pas le choix. Je suis s\u00FBr qu\u0027un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de votre trempe r\u00E9ussira l\u00E0 o\u00F9 nous avons \u00E9chou\u00E9.",
       "0",
       "0"
     ],
@@ -7610,7 +7610,7 @@
     ],
     "Text": [
       "Hourra\u003C\u003Cnbsp\u003E\u003E! Jamais je n\u0027ai autant appr\u00E9ci\u00E9 la Valention\u003C\u003Cnbsp\u003E\u003E! C\u0027est parce que j\u0027ai trouv\u00E9 la dulcin\u00E9e de mes r\u00EAves\u003C\u003Cnbsp\u003E\u003E!",
-      "Et tout ceci, c\u0027est gr\u00E2ce \u00E0 vous\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes l\u003CIf(gnum4)\u003Ea\u003CElse/\u003Ee\u003C/If\u003E plus grand\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E que je connaisse. Merci infiniment pour tout ce que vous avez fait\u003C\u003Cnbsp\u003E\u003E!",
+      "Et tout ceci, c\u0027est gr\u00E2ce \u00E0 vous\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes l\u003CIf(PlayerParameter(4))\u003Ea\u003CElse/\u003Ee\u003C/If\u003E plus grand\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E que je connaisse. Merci infiniment pour tout ce que vous avez fait\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -7885,7 +7885,7 @@
       }
     ],
     "Text": [
-      "Nous sommes des messagers de l\u0027amour, venus tout droit d\u0027Ishgard pour accomplir notre noble mission. \u003CIf(gnum4)\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E l\u0027aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, si cela vous int\u00E9resse, je ne saurais trop vous recommander d\u0027aller parler \u00E0 notre ma\u00EEtresse, dame Lisette, qui se trouve \u00E0 Gridania.",
+      "Nous sommes des messagers de l\u0027amour, venus tout droit d\u0027Ishgard pour accomplir notre noble mission. \u003CIf(PlayerParameter(4))\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E l\u0027aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, si cela vous int\u00E9resse, je ne saurais trop vous recommander d\u0027aller parler \u00E0 notre ma\u00EEtresse, dame Lisette, qui se trouve \u00E0 Gridania.",
       "0",
       "0"
     ],
@@ -7924,7 +7924,7 @@
       }
     ],
     "Text": [
-      "\u003CIf(gnum4)\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E l\u0027aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, je vous suis extr\u00EAmement reconnaissant pour l\u0027aide que vous nous avez fournie. Gr\u00E2ce \u00E0 vous, \u00C9orz\u00E9a s\u0027est remplie un peu plus d\u0027amour. Nous n\u0027oublierons pas votre geste.",
+      "\u003CIf(PlayerParameter(4))\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E l\u0027aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, je vous suis extr\u00EAmement reconnaissant pour l\u0027aide que vous nous avez fournie. Gr\u00E2ce \u00E0 vous, \u00C9orz\u00E9a s\u0027est remplie un peu plus d\u0027amour. Nous n\u0027oublierons pas votre geste.",
       "0",
       "0"
     ],
@@ -8275,7 +8275,7 @@
       }
     ],
     "Text": [
-      "Je n\u0027arrive pas \u00E0 y croire\u003C\u003Cnbsp\u003E\u003E! Les H\u00E9ritiers de la Septi\u00E8me Aube tra\u00EEn\u00E9s dans la boue\u003C\u003Cnbsp\u003E\u003E! Mais peu importe cette infamie, nous allons continuer de nous battre pour le bien des \u00C9orz\u00E9ens\u003C\u003Cnbsp\u003E\u003E! N\u0027est-ce pas, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E?",
+      "Je n\u0027arrive pas \u00E0 y croire\u003C\u003Cnbsp\u003E\u003E! Les H\u00E9ritiers de la Septi\u00E8me Aube tra\u00EEn\u00E9s dans la boue\u003C\u003Cnbsp\u003E\u003E! Mais peu importe cette infamie, nous allons continuer de nous battre pour le bien des \u00C9orz\u00E9ens\u003C\u003Cnbsp\u003E\u003E! N\u0027est-ce pas, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E?",
       "0",
       "0"
     ],
@@ -8356,7 +8356,7 @@
       }
     ],
     "Text": [
-      "Eh bien, je suis pour le moins surpris d\u0027avoir votre visite, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Comme vous devez vous en douter, les rumeurs concernant le banquet de c\u00E9l\u00E9bration sont arriv\u00E9es jusqu\u0027\u00E0 moi.",
+      "Eh bien, je suis pour le moins surpris d\u0027avoir votre visite, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Comme vous devez vous en douter, les rumeurs concernant le banquet de c\u00E9l\u00E9bration sont arriv\u00E9es jusqu\u0027\u00E0 moi.",
       "Mais je vais vous confier quelque chose\u003C\u003Cnbsp\u003E\u003E: je suis s\u00FBr que Sa Majest\u00E9 est vivante. C\u0027est le fait que les autorit\u00E9s n\u0027aient encore rien annonc\u00E9 officiellement qui m\u0027a mis la puce \u00E0 l\u0027oreille.",
       "Pour \u00EAtre franc, je dois vous avouer que \u00E7a serait trop dur pour moi que de penser autrement..."
     ],
@@ -8395,7 +8395,7 @@
       }
     ],
     "Text": [
-      "Mon enfant, que les Douze vous b\u00E9nissent, vous \u00EAtes sain\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E et sau\u003CIf(gnum4)\u003Eve\u003CElse/\u003Ef\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Je dois vous avouer que j\u0027ai tout de suite \u00E9t\u00E9 tr\u00E8s inquiet pour vous en apprenant ce qui s\u0027est pass\u00E9 au palais royal.",
+      "Mon enfant, que les Douze vous b\u00E9nissent, vous \u00EAtes sain\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E et sau\u003CIf(PlayerParameter(4))\u003Eve\u003CElse/\u003Ef\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Je dois vous avouer que j\u0027ai tout de suite \u00E9t\u00E9 tr\u00E8s inquiet pour vous en apprenant ce qui s\u0027est pass\u00E9 au palais royal.",
       "Croyez-moi, les Dieux ne sauraient laisser un tel crime impuni. Les coupables paieront t\u00F4t ou tard. Vous devez garder foi dans la justice divine et agir selon votre conscience.",
       "0"
     ],
@@ -8434,7 +8434,7 @@
       }
     ],
     "Text": [
-      "Je suis content de te revoir, aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Dis-moi, comment se porte Wilred\u003C\u003Cnbsp\u003E\u003E? J\u0027ai entendu dire que tu l\u0027as invit\u00E9 \u00E0 rejoindre cette organisation importante appel\u00E9e les Braves du Cristal.",
+      "Je suis content de te revoir, aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Dis-moi, comment se porte Wilred\u003C\u003Cnbsp\u003E\u003E? J\u0027ai entendu dire que tu l\u0027as invit\u00E9 \u00E0 rejoindre cette organisation importante appel\u00E9e les Braves du Cristal.",
       "Comme tu le sais, notre peuple continue de souffrir et nous pla\u00E7ons tous nos espoirs dans les jeunes comme lui. Malgr\u00E9 la p\u00E9riode o\u00F9 il s\u0027\u00E9tait \u00E9cart\u00E9 du droit chemin, je suis s\u00FBr qu\u0027il est d\u00E9sormais devenu quelqu\u0027un d\u0027exemplaire.",
       "... Qu\u0027y a-t-il\u003C\u003Cnbsp\u003E\u003E? Tu m\u0027as l\u0027air bien triste soudainement. Se pourrait-il qu\u0027il soit arriv\u00E9 quelque chose \u00E0 Wilred et que tu n\u0027oses pas me le dire\u003C\u003Cnbsp\u003E\u003E?"
     ],
@@ -8629,7 +8629,7 @@
       }
     ],
     "Text": [
-      "Memeroon tr\u00E8s content d\u0027avoir gagn\u00E9\u003C\u003Cnbsp\u003E\u003E! Memeroon adorer les duels. Aventuuuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E revenir perdre quand \u003CIf(gnum4)\u003Eelle\u003CElse/\u003Eil\u003C/If\u003E le vouloir\u003C\u003Cnbsp\u003E\u003E!",
+      "Memeroon tr\u00E8s content d\u0027avoir gagn\u00E9\u003C\u003Cnbsp\u003E\u003E! Memeroon adorer les duels. Aventuuuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E revenir perdre quand \u003CIf(PlayerParameter(4))\u003Eelle\u003CElse/\u003Eil\u003C/If\u003E le vouloir\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -8707,7 +8707,7 @@
       }
     ],
     "Text": [
-      "Memeroon et aventuuuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E finir \u00E0 \u00E9galit\u00E9\u003C\u003Cnbsp\u003E\u003E? Memeroon vouloir retenter sa chance bient\u00F4t\u003C\u003Cnbsp\u003E\u003E!",
+      "Memeroon et aventuuuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E finir \u00E0 \u00E9galit\u00E9\u003C\u003Cnbsp\u003E\u003E? Memeroon vouloir retenter sa chance bient\u00F4t\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -8998,7 +8998,7 @@
       }
     ],
     "Text": [
-      "Tu avais l\u0027air assez s\u00FBr\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de toi en venant me d\u00E9fier, mais je vois que tu es plut\u00F4t mauvais\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E en fait. J\u0027ai triomph\u00E9 les doigts dans le nez.",
+      "Tu avais l\u0027air assez s\u00FBr\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de toi en venant me d\u00E9fier, mais je vois que tu es plut\u00F4t mauvais\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E en fait. J\u0027ai triomph\u00E9 les doigts dans le nez.",
       "0",
       "0"
     ],
@@ -9253,7 +9253,7 @@
       }
     ],
     "Text": [
-      "Si on m\u0027avait dit qu\u0027il y aurait \u00E9galit\u00E9... Vous n\u0027\u00EAtes pas mauvais\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, mais ne vous inqui\u00E9tez pas, je vais m\u0027entra\u00EEner et je vous aurai la prochaine fois\u003C\u003Cnbsp\u003E\u003E!",
+      "Si on m\u0027avait dit qu\u0027il y aurait \u00E9galit\u00E9... Vous n\u0027\u00EAtes pas mauvais\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, mais ne vous inqui\u00E9tez pas, je vais m\u0027entra\u00EEner et je vous aurai la prochaine fois\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -9475,7 +9475,7 @@
       }
     ],
     "Text": [
-      "Tu es vraiment s\u00FBr\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de vouloir me d\u00E9fier\u003C\u003Cnbsp\u003E\u003E? Je suis relativement mauvaise, tu sais. Vas-y doucement...",
+      "Tu es vraiment s\u00FBr\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de vouloir me d\u00E9fier\u003C\u003Cnbsp\u003E\u003E? Je suis relativement mauvaise, tu sais. Vas-y doucement...",
       "0",
       "0"
     ],
@@ -9769,7 +9769,7 @@
       }
     ],
     "Text": [
-      "Je savais d\u00E9j\u00E0 que tu avais du courage, mais maintenant je sais que tu as aussi pas mal de chance. Je passe vraiment une mauvaise \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],soir\u00E9e,journ\u00E9e)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],journ\u00E9e,soir\u00E9e)\u003E\u003C/If\u003E...",
+      "Je savais d\u00E9j\u00E0 que tu avais du courage, mais maintenant je sais que tu as aussi pas mal de chance. Je passe vraiment une mauvaise \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Esoir\u00E9e\u003CElse/\u003Ejourn\u00E9e\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Ejourn\u00E9e\u003CElse/\u003Esoir\u00E9e\u003C/If\u003E\u003C/If\u003E...",
       "0",
       "0"
     ],
@@ -9883,7 +9883,7 @@
       }
     ],
     "Text": [
-      "Je m\u0027excuse sinc\u00E8rement... Ce sont mes clients qui m\u0027apprennent \u00E0 jouer, et j\u0027ai encore un peu de mal \u00E0 retenir les r\u00E8gles. Il faut me laisser encore un peu de temps... Mais au fait, vous \u00EAtes \u003CIf(gnum4)\u003Eune aventuri\u00E8re\u003CElse/\u003Eun aventurier\u003C/If\u003E, non\u003C\u003Cnbsp\u003E\u003E? Vous n\u0027avez pas du travail qui vous attend\u003C\u003Cnbsp\u003E\u003E?",
+      "Je m\u0027excuse sinc\u00E8rement... Ce sont mes clients qui m\u0027apprennent \u00E0 jouer, et j\u0027ai encore un peu de mal \u00E0 retenir les r\u00E8gles. Il faut me laisser encore un peu de temps... Mais au fait, vous \u00EAtes \u003CIf(PlayerParameter(4))\u003Eune aventuri\u00E8re\u003CElse/\u003Eun aventurier\u003C/If\u003E, non\u003C\u003Cnbsp\u003E\u003E? Vous n\u0027avez pas du travail qui vous attend\u003C\u003Cnbsp\u003E\u003E?",
       "0",
       "0"
     ],
@@ -9955,7 +9955,7 @@
       }
     ],
     "Text": [
-      "Mince alors, j\u0027ai perdu... Vous n\u0027y \u00EAtes pas all\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de main morte.",
+      "Mince alors, j\u0027ai perdu... Vous n\u0027y \u00EAtes pas all\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de main morte.",
       "0",
       "0"
     ],
@@ -10102,7 +10102,7 @@
       }
     ],
     "Text": [
-      "Je t\u0027ai battu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Contente de savoir que je ne suis pas totalement rrrouill\u00E9e.",
+      "Je t\u0027ai battu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Contente de savoir que je ne suis pas totalement rrrouill\u00E9e.",
       "0",
       "0"
     ],
@@ -10213,7 +10213,7 @@
       }
     ],
     "Text": [
-      "Vous \u00EAtes pr\u00EAt\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Il faut que vous sachiez que ce duel se passera bien entendu selon les r\u00E8gles, mais qu\u0027il vous co\u00FBtera \u00E9galement quelques points du Gold Saucer. Par contre, vous toucherez une r\u00E9compense qui remboursera largement ces frais si vous triomphez.",
+      "Vous \u00EAtes pr\u00EAt\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? Il faut que vous sachiez que ce duel se passera bien entendu selon les r\u00E8gles, mais qu\u0027il vous co\u00FBtera \u00E9galement quelques points du Gold Saucer. Par contre, vous toucherez une r\u00E9compense qui remboursera largement ces frais si vous triomphez.",
       "Ne vous inqui\u00E9tez pas, je vous guiderai tout au long de votre initiation.",
       "La croupi\u00E8re vous expliquera les r\u00E8gles une fois votre duel commenc\u00E9. Vous comprendrez mieux en situation. "
     ],
@@ -10324,7 +10324,7 @@
       }
     ],
     "Text": [
-      "Vous vous \u00EAtes d\u00E9brouill\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E comme un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E chef\u003C\u003Cnbsp\u003E\u003E! Vous ma\u00EEtrisez les r\u00E8gles, il ne vous reste plus qu\u0027\u00E0 aller d\u00E9fier tous les malheureux que vous croiserez.",
+      "Vous vous \u00EAtes d\u00E9brouill\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E comme un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E chef\u003C\u003Cnbsp\u003E\u003E! Vous ma\u00EEtrisez les r\u00E8gles, il ne vous reste plus qu\u0027\u00E0 aller d\u00E9fier tous les malheureux que vous croiserez.",
       "Vous trouverez des adversaires dans tout \u00C9orz\u00E9a. Tentez votre chance si les r\u00E8gles qu\u0027ils proposent vous conviennent\u003C\u003Cnbsp\u003E\u003E!",
       "Vous pouvez d\u00E9fier les autres aventuriers ou tout PNJ avec un icone en forme de carte au-dessus de la t\u00EAte."
     ],
@@ -10663,7 +10663,7 @@
       }
     ],
     "Text": [
-      "Peuh\u003C\u003Cnbsp\u003E\u003E! Ta strat\u00E9gie \u00E9tait bien trop rudimentaire... Il va falloir t\u0027entra\u00EEner davantage si tu veux devenir un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E adversaire \u00E0 ma mesure.",
+      "Peuh\u003C\u003Cnbsp\u003E\u003E! Ta strat\u00E9gie \u00E9tait bien trop rudimentaire... Il va falloir t\u0027entra\u00EEner davantage si tu veux devenir un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E adversaire \u00E0 ma mesure.",
       "0",
       "0"
     ],
@@ -10735,7 +10735,7 @@
       }
     ],
     "Text": [
-      "Aurais-je mal analys\u00E9 ta strat\u00E9gie...\u003C\u003Cnbsp\u003E\u003E? Je ne voyais pas en toi mon \u00E9gal\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E... J\u0027esp\u00E8re avoir l\u0027occasion de rectifier ce faux pas.",
+      "Aurais-je mal analys\u00E9 ta strat\u00E9gie...\u003C\u003Cnbsp\u003E\u003E? Je ne voyais pas en toi mon \u00E9gal\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E... J\u0027esp\u00E8re avoir l\u0027occasion de rectifier ce faux pas.",
       "0",
       "0"
     ],
@@ -11041,7 +11041,7 @@
       }
     ],
     "Text": [
-      "Mouahaha, j\u0027en \u00E9tais s\u00FBr\u003C\u003Cnbsp\u003E\u003E! Mais pleure pas pour \u00E7a, petit\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, t\u0027avais aucune chance contre le grand gagnant du Grand Prix de la Fielleuse...",
+      "Mouahaha, j\u0027en \u00E9tais s\u00FBr\u003C\u003Cnbsp\u003E\u003E! Mais pleure pas pour \u00E7a, petit\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, t\u0027avais aucune chance contre le grand gagnant du Grand Prix de la Fielleuse...",
       "0",
       "0"
     ],
@@ -11119,7 +11119,7 @@
       }
     ],
     "Text": [
-      "Tu peux \u00EAtre fi\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de finir \u00E0 \u00E9galit\u00E9 avec le vainqueur du Grand Prix de la Fielleuse... m\u00EAme si c\u0027\u00E9tait sans doute un gros coup d\u0027chance\u003C\u003Cnbsp\u003E\u003E!",
+      "Tu peux \u00EAtre fi\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de finir \u00E0 \u00E9galit\u00E9 avec le vainqueur du Grand Prix de la Fielleuse... m\u00EAme si c\u0027\u00E9tait sans doute un gros coup d\u0027chance\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -11233,7 +11233,7 @@
       }
     ],
     "Text": [
-      "J\u0027ai gagn\u00E9\u003C\u003Cnbsp\u003E\u003E! Tu sais \u003CIf(gnum4)\u003Ema\u003CElse/\u003Emon\u003C/If\u003E petit\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, il ne faut pas n\u00E9gliger l\u0027entra\u00EEnement.",
+      "J\u0027ai gagn\u00E9\u003C\u003Cnbsp\u003E\u003E! Tu sais \u003CIf(PlayerParameter(4))\u003Ema\u003CElse/\u003Emon\u003C/If\u003E petit\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, il ne faut pas n\u00E9gliger l\u0027entra\u00EEnement.",
       "0",
       "0"
     ],
@@ -11305,7 +11305,7 @@
       }
     ],
     "Text": [
-      "Nous finissons ex \u00E6quo alors que je ne t\u0027ai fait aucun cadeau... F\u00E9licitations \u003CIf(gnum4)\u003Ema\u003CElse/\u003Emon\u003C/If\u003E petit\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, tu t\u0027es admirablement bien battu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+      "Nous finissons ex \u00E6quo alors que je ne t\u0027ai fait aucun cadeau... F\u00E9licitations \u003CIf(PlayerParameter(4))\u003Ema\u003CElse/\u003Emon\u003C/If\u003E petit\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, tu t\u0027es admirablement bien battu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -11344,7 +11344,7 @@
       }
     ],
     "Text": [
-      "C\u0027est pour un d\u00E9fi\u003C\u003Cnbsp\u003E\u003E? Aucun probl\u00E8me, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! J\u0027admire ton courage, mais je vais te faire regretter de t\u0027\u00EAtre lev\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E ce matin, ha ha\u003C\u003Cnbsp\u003E\u003E!",
+      "C\u0027est pour un d\u00E9fi\u003C\u003Cnbsp\u003E\u003E? Aucun probl\u00E8me, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! J\u0027admire ton courage, mais je vais te faire regretter de t\u0027\u00EAtre lev\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E ce matin, ha ha\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -11422,7 +11422,7 @@
       }
     ],
     "Text": [
-      "Quelle belle victoire\u003C\u003Cnbsp\u003E\u003E! Mais ne t\u0027en veux pas trop. La victoire vient avec l\u0027exp\u00E9rience, mon ami\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
+      "Quelle belle victoire\u003C\u003Cnbsp\u003E\u003E! Mais ne t\u0027en veux pas trop. La victoire vient avec l\u0027exp\u00E9rience, mon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -11458,7 +11458,7 @@
       }
     ],
     "Text": [
-      "Tu te d\u00E9brouilles bien, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Je commence m\u00EAme \u00E0 me dire qu\u0027il n\u0027existe aucun domaine dans lequel tu serais mauvais\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E... Rah, j\u0027aime pas perdre comme \u00E7a\u003C\u003Cnbsp\u003E\u003E!",
+      "Tu te d\u00E9brouilles bien, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Je commence m\u00EAme \u00E0 me dire qu\u0027il n\u0027existe aucun domaine dans lequel tu serais mauvais\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E... Rah, j\u0027aime pas perdre comme \u00E7a\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -11983,7 +11983,7 @@
       }
     ],
     "Text": [
-      "Vous vous \u00EAtes tromp\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de carte \u00E0 cause du froid\u003C\u003Cnbsp\u003E\u003E? Mais n\u0027h\u00E9sitez pas \u00E0 revenir, si vous voulez prendre votre revanche.",
+      "Vous vous \u00EAtes tromp\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de carte \u00E0 cause du froid\u003C\u003Cnbsp\u003E\u003E? Mais n\u0027h\u00E9sitez pas \u00E0 revenir, si vous voulez prendre votre revanche.",
       "0",
       "0"
     ],
@@ -12100,7 +12100,7 @@
       }
     ],
     "Text": [
-      "Si tu as le courage de me d\u00E9fier, c\u0027est que tu dois \u00EAtre s\u00FBr\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de toi, j\u0027imagine\u003C\u003Cnbsp\u003E\u003E? J\u0027ai h\u00E2te de voir cela.\u266A",
+      "Si tu as le courage de me d\u00E9fier, c\u0027est que tu dois \u00EAtre s\u00FBr\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de toi, j\u0027imagine\u003C\u003Cnbsp\u003E\u003E? J\u0027ai h\u00E2te de voir cela.\u266A",
       "0",
       "0"
     ],
@@ -12283,7 +12283,7 @@
       }
     ],
     "Text": [
-      "Savez-vous que c\u0027est moi qui ai r\u00E9dig\u00E9 les textes explicatifs des cartes des monstres \u00E9orz\u00E9ens\u003C\u003Cnbsp\u003E\u003E?\n... Et vous me d\u00E9fiez en \u00E9tant conscient\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de cela\u003C\u003Cnbsp\u003E\u003E? Vous \u00EAtes s\u00FBr\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de vous\u003C\u003Cnbsp\u003E\u003E?",
+      "Savez-vous que c\u0027est moi qui ai r\u00E9dig\u00E9 les textes explicatifs des cartes des monstres \u00E9orz\u00E9ens\u003C\u003Cnbsp\u003E\u003E?\n... Et vous me d\u00E9fiez en \u00E9tant conscient\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de cela\u003C\u003Cnbsp\u003E\u003E? Vous \u00EAtes s\u00FBr\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de vous\u003C\u003Cnbsp\u003E\u003E?",
       "0",
       "0"
     ],
@@ -12358,7 +12358,7 @@
       }
     ],
     "Text": [
-      "Votre connaissance des cartes laisse encore \u00E0 d\u00E9sirer, \u003CIf(gnum4)\u003Ema\u003CElse/\u003Emon\u003C/If\u003E pauvre ami\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E. Je vous conseille de relire un million de fois les cartes des monstres que j\u0027ai r\u00E9dig\u00E9es.",
+      "Votre connaissance des cartes laisse encore \u00E0 d\u00E9sirer, \u003CIf(PlayerParameter(4))\u003Ema\u003CElse/\u003Emon\u003C/If\u003E pauvre ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E. Je vous conseille de relire un million de fois les cartes des monstres que j\u0027ai r\u00E9dig\u00E9es.",
       "0",
       "0"
     ],
@@ -12508,7 +12508,7 @@
       }
     ],
     "Text": [
-      "Un d\u00E9fi \u00E0 Triple Triade\u003C\u003Cnbsp\u003E\u003E? D\u00E9sol\u00E9e, l\u0027ami\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, mais je suis occup\u00E9. Une autre fois, peut-\u00EAtre.",
+      "Un d\u00E9fi \u00E0 Triple Triade\u003C\u003Cnbsp\u003E\u003E? D\u00E9sol\u00E9e, l\u0027ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, mais je suis occup\u00E9. Une autre fois, peut-\u00EAtre.",
       "0",
       "0"
     ],
@@ -12625,7 +12625,7 @@
       }
     ],
     "Text": [
-      "Ouah, un ex \u00E6quo\u003C\u003Cnbsp\u003E\u003E!? J\u0027ai fait de mon mieux, mais on dirait bien que vous \u00EAtes aussi fort\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E que moi, h\u00E9 h\u00E9\u003C\u003Cnbsp\u003E\u003E!",
+      "Ouah, un ex \u00E6quo\u003C\u003Cnbsp\u003E\u003E!? J\u0027ai fait de mon mieux, mais on dirait bien que vous \u00EAtes aussi fort\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E que moi, h\u00E9 h\u00E9\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -12664,7 +12664,7 @@
       }
     ],
     "Text": [
-      "Crooaaac\u003C\u003Cnbsp\u003E\u003E! \u003CIf(gnum4)\u003ECelle-l\u00E0\u003CElse/\u003ECelui-l\u00E0\u003C/If\u003E veut se mesurer \u00E0 celui-ci\u003C\u003Cnbsp\u003E\u003E!? Les sans-plumes n\u0027arrivent pas \u00E0 la cheville des Ixali, qu\u0027on se le dise\u003C\u003Cnbsp\u003E\u003E!",
+      "Crooaaac\u003C\u003Cnbsp\u003E\u003E! \u003CIf(PlayerParameter(4))\u003ECelle-l\u00E0\u003CElse/\u003ECelui-l\u00E0\u003C/If\u003E veut se mesurer \u00E0 celui-ci\u003C\u003Cnbsp\u003E\u003E!? Les sans-plumes n\u0027arrivent pas \u00E0 la cheville des Ixali, qu\u0027on se le dise\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -12700,7 +12700,7 @@
       }
     ],
     "Text": [
-      "Pour qui \u003CIf(gnum4)\u003Ecelle-l\u00E0\u003CElse/\u003Ecelui-l\u00E0\u003C/If\u003E se prend\u003C\u003Cnbsp\u003E\u003E? Celui-ci est \u00E0 deux doigts de trouver une id\u00E9e d\u0027am\u00E9lioration, celui-ci a mieux \u00E0 faire\u003C\u003Cnbsp\u003E\u003E!",
+      "Pour qui \u003CIf(PlayerParameter(4))\u003Ecelle-l\u00E0\u003CElse/\u003Ecelui-l\u00E0\u003C/If\u003E se prend\u003C\u003Cnbsp\u003E\u003E? Celui-ci est \u00E0 deux doigts de trouver une id\u00E9e d\u0027am\u00E9lioration, celui-ci a mieux \u00E0 faire\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -12736,7 +12736,7 @@
       }
     ],
     "Text": [
-      "C\u0027est tout ce que \u003CIf(gnum4)\u003Ecelle-l\u00E0\u003CElse/\u003Ecelui-l\u00E0\u003C/If\u003E a dans le ventre\u003C\u003Cnbsp\u003E\u003E? Celui-ci s\u0027attendait \u00E0 mieux\u003C\u003Cnbsp\u003E\u003E!",
+      "C\u0027est tout ce que \u003CIf(PlayerParameter(4))\u003Ecelle-l\u00E0\u003CElse/\u003Ecelui-l\u00E0\u003C/If\u003E a dans le ventre\u003C\u003Cnbsp\u003E\u003E? Celui-ci s\u0027attendait \u00E0 mieux\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -13183,7 +13183,7 @@
       }
     ],
     "Text": [
-      "Quand je pense que j\u0027ai pein\u00E9 \u00E0 arracher un match nul... Vous \u00EAtes dou\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, \u003CIf(gnum4)\u003Ema\u003C-\u003Ede\u003C-\u003Emoi\u003C-\u003Esel\u003C-\u003Ele\u003CElse/\u003El\u0027ami\u003C/If\u003E.",
+      "Quand je pense que j\u0027ai pein\u00E9 \u00E0 arracher un match nul... Vous \u00EAtes dou\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emademoiselle\u003CElse/\u003El\u0027ami\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -13222,7 +13222,7 @@
       }
     ],
     "Text": [
-      "Un d\u00E9fi, \u003CIf([gnum53\u003E0])\u003E\u003Cif([gnum53\u003C127],\u003Cif([gnum52\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankLimsaFemaleText,gnum52,0)\u003E,\u003Csheet(GCRankLimsaMaleText,gnum52,0)\u003E)\u003E,\u003Cif([gnum53\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankGridaniaFemaleText,gnum53,0)\u003E,\u003Csheet(GCRankGridaniaMaleText,gnum53,0)\u003E)\u003E,\u003Cif([gnum54\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankUldahFemaleText,gnum54,0)\u003E,\u003Csheet(GCRankUldahMaleText,gnum54,0)\u003E)\u003E,)\u003E)\u003E)\u003E,mon ami\u003Cif(gnum4,e,)\u003E)\u003E\u003CElse/\u003Emon ami\u003Cif(gnum4,e,)\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? J\u0027en serais ravi\u003C\u003Cnbsp\u003E\u003E! C\u0027est un honneur que de vous affronter, m\u00EAme si c\u0027est aux cartes\u003C\u003Cnbsp\u003E\u003E!",
+      "Un d\u00E9fi, \u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(LessThan(PlayerParameter(53),127))\u003E\u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankLimsaFemaleText,PlayerParameter(52),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankLimsaMaleText,PlayerParameter(52),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankGridaniaFemaleText,PlayerParameter(53),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankGridaniaMaleText,PlayerParameter(53),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankUldahFemaleText,PlayerParameter(54),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankUldahMaleText,PlayerParameter(54),0)\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E? J\u0027en serais ravi\u003C\u003Cnbsp\u003E\u003E! C\u0027est un honneur que de vous affronter, m\u00EAme si c\u0027est aux cartes\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -13372,7 +13372,7 @@
       }
     ],
     "Text": [
-      "Quel combat passionnant\u003C\u003Cnbsp\u003E\u003E! Je vais m\u0027entra\u00EEner avec \u003CIf([gnum53\u003E0])\u003E\u003Cif([gnum53\u003C127],nos,mes)\u003E\u003CElse/\u003Emes\u003C/If\u003E camarades de compagnie afin de faire des progr\u00E8s pour la prochaine fois.",
+      "Quel combat passionnant\u003C\u003Cnbsp\u003E\u003E! Je vais m\u0027entra\u00EEner avec \u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(LessThan(PlayerParameter(53),127))\u003Enos\u003CElse/\u003Emes\u003C/If\u003E\u003CElse/\u003Emes\u003C/If\u003E camarades de compagnie afin de faire des progr\u00E8s pour la prochaine fois.",
       "0",
       "0"
     ],
@@ -13411,7 +13411,7 @@
       }
     ],
     "Text": [
-      "Un match\u003C\u003Cnbsp\u003E\u003E? Pourquoi pas\u003C\u003Cnbsp\u003E\u003E! Vous allez voir, \u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],notre compagnie sait,les Immortels savent)\u003E\u003CElse/\u003Eles Immortels savent\u003C/If\u003E se d\u00E9fendre, m\u00EAme aux cartes.",
+      "Un match\u003C\u003Cnbsp\u003E\u003E? Pourquoi pas\u003C\u003Cnbsp\u003E\u003E! Vous allez voir, \u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003Enotre compagnie sait\u003CElse/\u003Eles Immortels savent\u003C/If\u003E\u003CElse/\u003Eles Immortels savent\u003C/If\u003E se d\u00E9fendre, m\u00EAme aux cartes.",
       "0",
       "0"
     ],
@@ -13450,7 +13450,7 @@
       }
     ],
     "Text": [
-      "Un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E comme vous doit d\u0027abord penser \u00E0 parcourir le monde avant de chercher \u00E0 m\u0027affronter... il est encore trop t\u00F4t.",
+      "Un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E comme vous doit d\u0027abord penser \u00E0 parcourir le monde avant de chercher \u00E0 m\u0027affronter... il est encore trop t\u00F4t.",
       "0",
       "0"
     ],
@@ -13489,7 +13489,7 @@
       }
     ],
     "Text": [
-      "\u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],Dans notre compagnie,Chez les Immortels)\u003E\u003CElse/\u003EChez les Immortels\u003C/If\u003E, nous nous servons de ce jeu pour d\u00E9velopper nos capacit\u00E9s en strat\u00E9gie. Voil\u00E0 pourquoi vous ne battrez pas si facilement le champion \u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],des Immortels,de la compagnie)\u003E\u003CElse/\u003Ede la compagnie\u003C/If\u003E, \u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],\u003Cif([gnum52\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankLimsaFemaleText,gnum52,0)\u003E,\u003Csheet(GCRankLimsaMaleText,gnum52,0)\u003E)\u003E,\u003Cif([gnum53\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankGridaniaFemaleText,gnum53,0)\u003E,\u003Csheet(GCRankGridaniaMaleText,gnum53,0)\u003E)\u003E,\u003Cif([gnum54\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankUldahFemaleText,gnum54,0)\u003E,\u003Csheet(GCRankUldahMaleText,gnum54,0)\u003E)\u003E,)\u003E)\u003E)\u003E,mon ami\u003Cif(gnum4,e,)\u003E)\u003E\u003CElse/\u003Emon ami\u003Cif(gnum4,e,)\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+      "\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003EDans notre compagnie\u003CElse/\u003EChez les Immortels\u003C/If\u003E\u003CElse/\u003EChez les Immortels\u003C/If\u003E, nous nous servons de ce jeu pour d\u00E9velopper nos capacit\u00E9s en strat\u00E9gie. Voil\u00E0 pourquoi vous ne battrez pas si facilement le champion \u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003Edes Immortels\u003CElse/\u003Ede la compagnie\u003C/If\u003E\u003CElse/\u003Ede la compagnie\u003C/If\u003E, \u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003E\u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankLimsaFemaleText,PlayerParameter(52),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankLimsaMaleText,PlayerParameter(52),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankGridaniaFemaleText,PlayerParameter(53),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankGridaniaMaleText,PlayerParameter(53),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankUldahFemaleText,PlayerParameter(54),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankUldahMaleText,PlayerParameter(54),0)\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -13567,7 +13567,7 @@
       }
     ],
     "Text": [
-      "Voil\u00E0 un beau combat comme on n\u0027en voit pas souvent. J\u0027esp\u00E8re que nous aurons de nouveau l\u0027occasion de nous affronter, \u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],\u003Cif([gnum52\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankLimsaFemaleText,gnum52,0)\u003E,\u003Csheet(GCRankLimsaMaleText,gnum52,0)\u003E)\u003E,\u003Cif([gnum53\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankGridaniaFemaleText,gnum53,0)\u003E,\u003Csheet(GCRankGridaniaMaleText,gnum53,0)\u003E)\u003E,\u003Cif([gnum54\u003E0],\u003Cif(gnum4,\u003Csheet(GCRankUldahFemaleText,gnum54,0)\u003E,\u003Csheet(GCRankUldahMaleText,gnum54,0)\u003E)\u003E,)\u003E)\u003E)\u003E,mon ami\u003Cif(gnum4,e,)\u003E)\u003E\u003CElse/\u003Emon ami\u003Cif(gnum4,e,)\u003E\u003C/If\u003E.",
+      "Voil\u00E0 un beau combat comme on n\u0027en voit pas souvent. J\u0027esp\u00E8re que nous aurons de nouveau l\u0027occasion de nous affronter, \u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003E\u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankLimsaFemaleText,PlayerParameter(52),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankLimsaMaleText,PlayerParameter(52),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankGridaniaFemaleText,PlayerParameter(53),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankGridaniaMaleText,PlayerParameter(53),0)\u003E\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(PlayerParameter(4))\u003E\u003Csheet(GCRankUldahFemaleText,PlayerParameter(54),0)\u003E\u003CElse/\u003E\u003Csheet(GCRankUldahMaleText,PlayerParameter(54),0)\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003CElse/\u003Emon ami\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -13678,7 +13678,7 @@
       }
     ],
     "Text": [
-      "Ouah\u003C\u003Cnbsp\u003E\u003E! J\u0027ai vraiment gagn\u00E9\u003C\u003Cnbsp\u003E\u003E? C\u0027est mon odeur de putr\u00E9faction qui vous a emp\u00EAch\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de vous concentrer, c\u0027est \u00E7a\u003C\u003Cnbsp\u003E\u003E? Si c\u0027est \u00E7a, je suis d\u00E9sol\u00E9\u003C\u003Cnbsp\u003E\u003E!",
+      "Ouah\u003C\u003Cnbsp\u003E\u003E! J\u0027ai vraiment gagn\u00E9\u003C\u003Cnbsp\u003E\u003E? C\u0027est mon odeur de putr\u00E9faction qui vous a emp\u00EAch\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de vous concentrer, c\u0027est \u00E7a\u003C\u003Cnbsp\u003E\u003E? Si c\u0027est \u00E7a, je suis d\u00E9sol\u00E9\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -14098,7 +14098,7 @@
       }
     ],
     "Text": [
-      "Comme tu es un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E bon\u003CIf(gnum4)\u003Ene\u003CElse/\u003E \u003C/If\u003E client\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, je t\u0027ai laiss\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E gagner... Ne va pas croire que \u00E7a sera aussi facile, la prochaine fois.",
+      "Comme tu es un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E bon\u003CIf(PlayerParameter(4))\u003Ene\u003CElse/\u003E \u003C/If\u003E client\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, je t\u0027ai laiss\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E gagner... Ne va pas croire que \u00E7a sera aussi facile, la prochaine fois.",
       "0",
       "0"
     ],
@@ -14170,7 +14170,7 @@
       }
     ],
     "Text": [
-      "Ho ho ho, vous pensez vraiment pouvoir vaincre mes cartes f\u00E9tiches\u003C\u003Cnbsp\u003E\u003E? Je vais vous apprendre la modestie, jeune \u003CIf(gnum4)\u003Einsolente\u003CElse/\u003Eblanc-bec\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+      "Ho ho ho, vous pensez vraiment pouvoir vaincre mes cartes f\u00E9tiches\u003C\u003Cnbsp\u003E\u003E? Je vais vous apprendre la modestie, jeune \u003CIf(PlayerParameter(4))\u003Einsolente\u003CElse/\u003Eblanc-bec\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -14473,7 +14473,7 @@
       }
     ],
     "Text": [
-      "Mince, j\u0027ai perrrdu\u003C\u003Cnbsp\u003E\u003E? Je ne m\u0027attendais pas \u00E0 ce que tu sois si fort\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Je vais devoir renoncer \u00E0 mon titre de championne du Maelstrom...",
+      "Mince, j\u0027ai perrrdu\u003C\u003Cnbsp\u003E\u003E? Je ne m\u0027attendais pas \u00E0 ce que tu sois si fort\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Je vais devoir renoncer \u00E0 mon titre de championne du Maelstrom...",
       "0",
       "0"
     ],
@@ -14587,8 +14587,8 @@
       }
     ],
     "Text": [
-      "Tu peux te consid\u00E9rer chez toi au camp de la T\u00EAte du dragon, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Je te dois bien \u00E7a apr\u00E8s tout ce que tu as fait pour nous.",
-      "C\u0027est bien beau d\u0027\u00EAtre \u003CIf(gnum4)\u003Ela plus grande h\u00E9ro\u00EFne\u003CElse/\u003Ele plus grand h\u00E9ros\u003C/If\u003E d\u0027\u00C9orz\u00E9a, mais il faut quand m\u00EAme se reposer \u00E0 un moment ou \u00E0 un autre, pas vrai\u003C\u003Cnbsp\u003E\u003E? Apr\u00E8s ces vacances bien m\u00E9rit\u00E9es, on partira \u00E0 l\u0027aventure rien que toi et moi, h\u00E9 h\u00E9...",
+      "Tu peux te consid\u00E9rer chez toi au camp de la T\u00EAte du dragon, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Je te dois bien \u00E7a apr\u00E8s tout ce que tu as fait pour nous.",
+      "C\u0027est bien beau d\u0027\u00EAtre \u003CIf(PlayerParameter(4))\u003Ela plus grande h\u00E9ro\u00EFne\u003CElse/\u003Ele plus grand h\u00E9ros\u003C/If\u003E d\u0027\u00C9orz\u00E9a, mais il faut quand m\u00EAme se reposer \u00E0 un moment ou \u00E0 un autre, pas vrai\u003C\u003Cnbsp\u003E\u003E? Apr\u00E8s ces vacances bien m\u00E9rit\u00E9es, on partira \u00E0 l\u0027aventure rien que toi et moi, h\u00E9 h\u00E9...",
       "0"
     ],
     "Unknown0": 0,
@@ -14743,7 +14743,7 @@
       }
     ],
     "Text": [
-      "Merci infiniment, aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Sans votre courageuse intervention, les dragons auraient certainement r\u00E9ussi \u00E0 d\u00E9truire le collier de Daniffen. Vous nous avez sauv\u00E9s de cette terrible fin.",
+      "Merci infiniment, aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Sans votre courageuse intervention, les dragons auraient certainement r\u00E9ussi \u00E0 d\u00E9truire le collier de Daniffen. Vous nous avez sauv\u00E9s de cette terrible fin.",
       "0",
       "0"
     ],
@@ -14782,7 +14782,7 @@
       }
     ],
     "Text": [
-      "Broyer du noir est d\u00E9j\u00E0 suffisamment mauvais pour la sant\u00E9, alors il ne faudrait surtout pas que vous soyez affam\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E en plus de \u00E7a. N\u0027h\u00E9sitez pas \u00E0 venir me voir quand vous avez un petit creux, surtout\u003C\u003Cnbsp\u003E\u003E!",
+      "Broyer du noir est d\u00E9j\u00E0 suffisamment mauvais pour la sant\u00E9, alors il ne faudrait surtout pas que vous soyez affam\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E en plus de \u00E7a. N\u0027h\u00E9sitez pas \u00E0 venir me voir quand vous avez un petit creux, surtout\u003C\u003Cnbsp\u003E\u003E!",
       "Sire Haurchefant et tous les autres chevaliers de ce camp vous tiennent en si haute estime... Je dois faire de mon mieux pour vous concocter les sp\u00E9cialit\u00E9s ishgardaises les plus d\u00E9licieuses qui soient\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -14821,7 +14821,7 @@
       }
     ],
     "Text": [
-      "\u00C7a me fait plaisir de vous avoir parmi nous, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Haurchefant m\u0027a racont\u00E9 vos derni\u00E8res p\u00E9rip\u00E9ties. Quelle histoire incroyable...",
+      "\u00C7a me fait plaisir de vous avoir parmi nous, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Haurchefant m\u0027a racont\u00E9 vos derni\u00E8res p\u00E9rip\u00E9ties. Quelle histoire incroyable...",
       "Vous m\u0027en voyez sinc\u00E8rement d\u00E9sol\u00E9, mais je n\u0027ai ni le temps ni les moyens de vous aider personnellement \u00E0 l\u0027heure actuelle. J\u0027esp\u00E8re que vous comprenez... et je vous promets qu\u0027un jour, je rembourserai ma dette envers vous.",
       "0"
     ],
@@ -14860,7 +14860,7 @@
       }
     ],
     "Text": [
-      "Content d\u0027voir que tu vas bien, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Y para\u00EEt qu\u0027y a eu du grabuge \u00E0 Ul\u0027dah et que t\u0027as \u00E9t\u00E9 accus\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E du meurtre d\u0027la Sultane\u003C\u003Cnbsp\u003E\u003E? Ha ha, n\u0027importe quoi\u003C\u003Cnbsp\u003E\u003E!",
+      "Content d\u0027voir que tu vas bien, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Y para\u00EEt qu\u0027y a eu du grabuge \u00E0 Ul\u0027dah et que t\u0027as \u00E9t\u00E9 accus\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E du meurtre d\u0027la Sultane\u003C\u003Cnbsp\u003E\u003E? Ha ha, n\u0027importe quoi\u003C\u003Cnbsp\u003E\u003E!",
       "Pour ce qui est des autres H\u00E9ritiers, j\u0027vais moi aussi ouvrir l\u0027\u0153il \u00E0 partir de maintenant. T\u0027inqui\u00E8te pas, j\u0027suis s\u00FBr qu\u0027ils vont bien et que vous serez bient\u00F4t tous de retour ici comme au bon vieux temps\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -14899,7 +14899,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Les Douze soient lou\u00E9s, vous n\u0027avez rien\u003C\u003Cnbsp\u003E\u003E! J\u0027avais peur qu\u0027il vous soit arriv\u00E9 quelque chose apr\u00E8s que les Braves du Cristal ont pris le contr\u00F4le du Refuge des roches.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Les Douze soient lou\u00E9s, vous n\u0027avez rien\u003C\u003Cnbsp\u003E\u003E! J\u0027avais peur qu\u0027il vous soit arriv\u00E9 quelque chose apr\u00E8s que les Braves du Cristal ont pris le contr\u00F4le du Refuge des roches.",
       "J\u0027imagine que vous avez besoin de souffler un peu, c\u0027est pourquoi je ne saurais trop vous conseiller de vous tenir \u00E0 l\u0027\u00E9cart de cet endroit pendant quelque temps. On ne sait jamais ce qui peut arriver au d\u00E9tour d\u0027une ruelle...",
       "0"
     ],
@@ -14938,7 +14938,7 @@
       }
     ],
     "Text": [
-      "Ravi de constater que vous \u00EAtes \u003CIf(gnum4)\u003Esaine et sauve\u003CElse/\u003Esain et sauf\u003C/If\u003E, aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Nous nous inqui\u00E9tions tous pour vous depuis les \u00E9v\u00E9nements au Refuge des roches.",
+      "Ravi de constater que vous \u00EAtes \u003CIf(PlayerParameter(4))\u003Esaine et sauve\u003CElse/\u003Esain et sauf\u003C/If\u003E, aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E. Nous nous inqui\u00E9tions tous pour vous depuis les \u00E9v\u00E9nements au Refuge des roches.",
       "On dirait que les Braves du Cristal ont chang\u00E9 de bord, je me trompe\u003C\u003Cnbsp\u003E\u003E? Quoi qu\u0027il en soit, je souhaite sinc\u00E8rement que votre situation s\u0027am\u00E9liore au plus vite.",
       "0"
     ],
@@ -14977,7 +14977,7 @@
       }
     ],
     "Text": [
-      "Rhalgr soit lou\u00E9, tu es vivant\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Depuis que j\u0027ai vu les Braves du Cristal envahir le Refuge des roches pour y chercher de pr\u00E9tendus rebelles, je me faisais un sang d\u0027encre...",
+      "Rhalgr soit lou\u00E9, tu es vivant\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Depuis que j\u0027ai vu les Braves du Cristal envahir le Refuge des roches pour y chercher de pr\u00E9tendus rebelles, je me faisais un sang d\u0027encre...",
       "\u00C7a sentait le coup fourr\u00E9 \u00E0 plein nez, cette histoire\u003C\u003Cnbsp\u003E\u003E! Comment les h\u00E9ros d\u0027\u00C9orz\u00E9a pourraient-ils se transformer en criminels apr\u00E8s avoir risqu\u00E9 leurs vies pour nous sauver\u003C\u003Cnbsp\u003E\u003E? \u00C7a n\u0027a aucun sens\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -15016,7 +15016,7 @@
       }
     ],
     "Text": [
-      "H\u00E9, vous savez pas quoi\u003C\u003Cnbsp\u003E\u003E? Un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E c\u00E9l\u00E8bre aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E se serait compl\u00E8tement d\u00E9cha\u00EEn\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E pendant le banquet organis\u00E9 pour c\u00E9l\u00E9brer la victoire d\u0027Ishgard et aurait \u00E0 moiti\u00E9 d\u00E9truit la Chambre de l\u0027Encens. Le bruit court qu\u0027\u003CIf(gnum4)\u003Eelle\u003CElse/\u003Eil\u003C/If\u003E serait un\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E espion\u003CIf(gnum4)\u003Ene\u003CElse/\u003E \u003C/If\u003E envoy\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E par les Garlemaldais pour assassiner la Sultane.",
+      "H\u00E9, vous savez pas quoi\u003C\u003Cnbsp\u003E\u003E? Un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E c\u00E9l\u00E8bre aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E se serait compl\u00E8tement d\u00E9cha\u00EEn\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E pendant le banquet organis\u00E9 pour c\u00E9l\u00E9brer la victoire d\u0027Ishgard et aurait \u00E0 moiti\u00E9 d\u00E9truit la Chambre de l\u0027Encens. Le bruit court qu\u0027\u003CIf(PlayerParameter(4))\u003Eelle\u003CElse/\u003Eil\u003C/If\u003E serait un\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E espion\u003CIf(PlayerParameter(4))\u003Ene\u003CElse/\u003E \u003C/If\u003E envoy\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E par les Garlemaldais pour assassiner la Sultane.",
       "0",
       "0"
     ],
@@ -15133,8 +15133,8 @@
       }
     ],
     "Text": [
-      "M-mais c\u0027est \u003CIf(gnum4)\u003Ela Guerri\u00E8re\u003CElse/\u003Ele Guerrier\u003C/If\u003E de la Lumi\u00E8re\u003C\u003Cnbsp\u003E\u003E! Qu\u0027est-ce que vous faites encore \u00E0 Ul\u0027dah, par les Douze\u003C\u003Cnbsp\u003E\u003E? Vous n\u0027\u00EAtes donc pas au courant que tous vos alli\u00E9s sont d\u00E9j\u00E0 derri\u00E8re les barreaux\u003C\u003Cnbsp\u003E\u003E?",
-      "\u00C9coutez, je vais faire semblant de ne pas vous avoir vu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, d\u0027accord\u003C\u003Cnbsp\u003E\u003E? Vous devez partir d\u0027ici sur-le-champ\u003C\u003Cnbsp\u003E\u003E! Je n\u0027ai vraiment pas envie de vous voir subir le m\u00EAme sort que tous les autres...",
+      "M-mais c\u0027est \u003CIf(PlayerParameter(4))\u003Ela Guerri\u00E8re\u003CElse/\u003Ele Guerrier\u003C/If\u003E de la Lumi\u00E8re\u003C\u003Cnbsp\u003E\u003E! Qu\u0027est-ce que vous faites encore \u00E0 Ul\u0027dah, par les Douze\u003C\u003Cnbsp\u003E\u003E? Vous n\u0027\u00EAtes donc pas au courant que tous vos alli\u00E9s sont d\u00E9j\u00E0 derri\u00E8re les barreaux\u003C\u003Cnbsp\u003E\u003E?",
+      "\u00C9coutez, je vais faire semblant de ne pas vous avoir vu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, d\u0027accord\u003C\u003Cnbsp\u003E\u003E? Vous devez partir d\u0027ici sur-le-champ\u003C\u003Cnbsp\u003E\u003E! Je n\u0027ai vraiment pas envie de vous voir subir le m\u00EAme sort que tous les autres...",
       "0"
     ],
     "Unknown0": 0,
@@ -15173,7 +15173,7 @@
     ],
     "Text": [
       "Comment oses-tu te montrer ici, toi\u003C\u003Cnbsp\u003E\u003E!? Tu as vraiment beaucoup de chance, car j\u0027ai pour ordre formel de ne pas cr\u00E9er de remous \u00E0 l\u0027int\u00E9rieur de la cit\u00E9...",
-      "Mais si jamais je te croise au-del\u00E0 de ces remparts, sache que je n\u0027aurai aucune piti\u00E9, tra\u00EEtre\u003CIf(gnum4)\u003Esse\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+      "Mais si jamais je te croise au-del\u00E0 de ces remparts, sache que je n\u0027aurai aucune piti\u00E9, tra\u00EEtre\u003CIf(PlayerParameter(4))\u003Esse\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -15290,7 +15290,7 @@
     ],
     "Text": [
       "La licorne qui figure sur le blason des Fortemps est le symbole de la fiert\u00E9 de notre maison \u00E0 l\u0027\u00E9gard de son histoire et de ses traditions.",
-      "Vous \u00EAtes notre invit\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027honneur, et rien ne nous ferait plus plaisir que de vous voir respecter nos coutumes comme si elles \u00E9taient les v\u00F4tres. Puissiez-vous \u00EAtre aussi hardi\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E et farouche que ce magnifique animal\u003C\u003Cnbsp\u003E\u003E!",
+      "Vous \u00EAtes notre invit\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E d\u0027honneur, et rien ne nous ferait plus plaisir que de vous voir respecter nos coutumes comme si elles \u00E9taient les v\u00F4tres. Puissiez-vous \u00EAtre aussi hardi\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E et farouche que ce magnifique animal\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -15328,7 +15328,7 @@
       }
     ],
     "Text": [
-      "Je regrette, \u00F4 aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, mais je r\u00E9serve mes services aux personnes qui viennent en aide au seigneur Nanapasi.",
+      "Je regrette, \u00F4 aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, mais je r\u00E9serve mes services aux personnes qui viennent en aide au seigneur Nanapasi.",
       "0",
       "0"
     ],
@@ -15640,7 +15640,7 @@
       }
     ],
     "Text": [
-      "Seriez-vous aventuri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, par hasard\u003C\u003Cnbsp\u003E\u003E? Je vous en prie, aidez mon ma\u00EEtre, le seigneur Nanapasi, un riche n\u00E9gociant d\u0027Ul\u0027dah\u003C\u003Cnbsp\u003E\u003E!",
+      "Seriez-vous aventuri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E, par hasard\u003C\u003Cnbsp\u003E\u003E? Je vous en prie, aidez mon ma\u00EEtre, le seigneur Nanapasi, un riche n\u00E9gociant d\u0027Ul\u0027dah\u003C\u003Cnbsp\u003E\u003E!",
       "Il a besoin d\u0027aide pour r\u00E9aliser une installation sur le th\u00E8me de la f\u00EAte des demoiselles. Parlez donc \u00E0 mon coll\u00E8gue, le serviteur distingu\u00E9 \u00E0 Ul\u0027dah, pour en savoir plus\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
@@ -15679,7 +15679,7 @@
       }
     ],
     "Text": [
-      "Merci de votre aide, \u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Gr\u00E2ce \u00E0 vous, le projet de pr\u00E9sentoir \u00E0 poup\u00E9es grandeur nature avance bon train. Mademoiselle Ninimo devrait \u00EAtre combl\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
+      "Merci de votre aide, \u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Gr\u00E2ce \u00E0 vous, le projet de pr\u00E9sentoir \u00E0 poup\u00E9es grandeur nature avance bon train. Mademoiselle Ninimo devrait \u00EAtre combl\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -16261,7 +16261,7 @@
       }
     ],
     "Text": [
-      "Oh, c\u0027est vous, \u003CIf(gnum4)\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!\nComment se portent les chocobos\u003C\u003Cnbsp\u003E\u003E? Observer la course de loin fait battre mon c\u0153ur \u00E0 cent \u00E0 l\u0027heure.",
+      "Oh, c\u0027est vous, \u003CIf(PlayerParameter(4))\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!\nComment se portent les chocobos\u003C\u003Cnbsp\u003E\u003E? Observer la course de loin fait battre mon c\u0153ur \u00E0 cent \u00E0 l\u0027heure.",
       "0",
       "0"
     ],
@@ -16300,7 +16300,7 @@
       }
     ],
     "Text": [
-      "Vous voil\u00E0, \u003CIf(gnum4)\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Triple Triade est l\u0027un de nos jeux les plus populaires. On y rencontre toutes sortes d\u0027adversaires, ces temps-ci.",
+      "Vous voil\u00E0, \u003CIf(PlayerParameter(4))\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! Triple Triade est l\u0027un de nos jeux les plus populaires. On y rencontre toutes sortes d\u0027adversaires, ces temps-ci.",
       "0",
       "0"
     ],
@@ -16339,7 +16339,7 @@
       }
     ],
     "Text": [
-      "Oh, c\u0027est vous, \u003CIf(gnum4)\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! J\u0027aime \u00E0 observer les animations sur sc\u00E8ne. Montez donc sur les planches vous aussi, si les feux de la rampe vous attirent\u003C\u003Cnbsp\u003E\u003E!",
+      "Oh, c\u0027est vous, \u003CIf(PlayerParameter(4))\u003Ech\u00E8re amie\u003CElse/\u003Echer ami\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E! J\u0027aime \u00E0 observer les animations sur sc\u00E8ne. Montez donc sur les planches vous aussi, si les feux de la rampe vous attirent\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -16651,7 +16651,7 @@
       }
     ],
     "Text": [
-      "Bienvenue \u00E0 vous, \u003CIf(gnum4)\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E. Voulez-vous entrer dans le manoir\u003C\u003Cnbsp\u003E\u003E?",
+      "Bienvenue \u00E0 vous, \u003CIf(PlayerParameter(4))\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E. Voulez-vous entrer dans le manoir\u003C\u003Cnbsp\u003E\u003E?",
       "0",
       "0"
     ],
@@ -17113,8 +17113,8 @@
       }
     ],
     "Text": [
-      "Vous savez quoi\u003C\u003Cnbsp\u003E\u003E? Vous avez enti\u00E8rement raison, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Ce n\u0027est pas parce que nous sommes dans de beaux draps que nous devons arr\u00EAter de prendre du bon temps. Je rel\u00E8ve donc votre d\u00E9fi avec grand plaisir\u003C\u003Cnbsp\u003E\u003E!",
-      "Au fait, je ne sais pas si vous \u00EAtes au courant mais je suis une des meilleures duellistes d\u0027\u00C9orz\u00E9a. Vous \u00EAtes vraiment certain\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E que vous voulez m\u0027affronter\u003C\u003Cnbsp\u003E\u003E? Hi hi hi...",
+      "Vous savez quoi\u003C\u003Cnbsp\u003E\u003E? Vous avez enti\u00E8rement raison, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Ce n\u0027est pas parce que nous sommes dans de beaux draps que nous devons arr\u00EAter de prendre du bon temps. Je rel\u00E8ve donc votre d\u00E9fi avec grand plaisir\u003C\u003Cnbsp\u003E\u003E!",
+      "Au fait, je ne sais pas si vous \u00EAtes au courant mais je suis une des meilleures duellistes d\u0027\u00C9orz\u00E9a. Vous \u00EAtes vraiment certain\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E que vous voulez m\u0027affronter\u003C\u003Cnbsp\u003E\u003E? Hi hi hi...",
       "0"
     ],
     "Unknown0": 0,
@@ -17234,7 +17234,7 @@
     ],
     "Text": [
       "Oh nooooon\u003C\u003Cnbsp\u003E\u003E!! J\u0027ai... J\u0027ai vraiment perdu\u003C\u003Cnbsp\u003E\u003E? Mais comment est-ce possible\u003C\u003Cnbsp\u003E\u003E? ",
-      "Ah, je sais... C\u0027est parce que j\u0027ai cru que je pouvais battre \u003CIf(gnum4)\u003Ela Guerri\u00E8re\u003CElse/\u003Ele Guerrier\u003C/If\u003E de la Lumi\u00E8re comme s\u0027il s\u0027agissait d\u0027un adversaire quelconque. Eh bien, f\u00E9licitations\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes d\u00E9sormais \u003CIf(gnum4)\u003Ela\u003CElse/\u003Ele\u003C/If\u003E duelliste num\u00E9ro un parmi les H\u00E9ritiers de la Septi\u00E8me Aube\u003C\u003Cnbsp\u003E\u003E!",
+      "Ah, je sais... C\u0027est parce que j\u0027ai cru que je pouvais battre \u003CIf(PlayerParameter(4))\u003Ela Guerri\u00E8re\u003CElse/\u003Ele Guerrier\u003C/If\u003E de la Lumi\u00E8re comme s\u0027il s\u0027agissait d\u0027un adversaire quelconque. Eh bien, f\u00E9licitations\u003C\u003Cnbsp\u003E\u003E! Vous \u00EAtes d\u00E9sormais \u003CIf(PlayerParameter(4))\u003Ela\u003CElse/\u003Ele\u003C/If\u003E duelliste num\u00E9ro un parmi les H\u00E9ritiers de la Septi\u00E8me Aube\u003C\u003Cnbsp\u003E\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -17389,7 +17389,7 @@
       }
     ],
     "Text": [
-      "Qu\u0027est-ce qui se passe\u003C\u003Cnbsp\u003E\u003E? Tu veux me faire croire que tu es venu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E ici parce que tu as perdu tout espoir, toi aussi\u003C\u003Cnbsp\u003E\u003E? Allons, il me suffit de te regarder dans les yeux pour \u00EAtre certain que ce n\u0027est pas le cas, h\u00E9 h\u00E9\u003C\u003Cnbsp\u003E\u003E!",
+      "Qu\u0027est-ce qui se passe\u003C\u003Cnbsp\u003E\u003E? Tu veux me faire croire que tu es venu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E ici parce que tu as perdu tout espoir, toi aussi\u003C\u003Cnbsp\u003E\u003E? Allons, il me suffit de te regarder dans les yeux pour \u00EAtre certain que ce n\u0027est pas le cas, h\u00E9 h\u00E9\u003C\u003Cnbsp\u003E\u003E!",
       "0",
       "0"
     ],
@@ -18208,7 +18208,7 @@
       }
     ],
     "Text": [
-      "J\u0027ai le regret de vous informer que nos a\u00E9ronefs ne sont pas actuellement en mesure de prendre le d\u00E9part \u00E0 cause d\u0027intemp\u00E9ries dans les environs de notre cit\u00E9. Je vous prie d\u0027\u00EAtre patient\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E. Nous vous informerons lorsque le service reprendra.",
+      "J\u0027ai le regret de vous informer que nos a\u00E9ronefs ne sont pas actuellement en mesure de prendre le d\u00E9part \u00E0 cause d\u0027intemp\u00E9ries dans les environs de notre cit\u00E9. Je vous prie d\u0027\u00EAtre patient\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E. Nous vous informerons lorsque le service reprendra.",
       "0",
       "0"
     ],
@@ -18475,7 +18475,7 @@
       }
     ],
     "Text": [
-      "Bienvenue dans la demeure de mon ma\u00EEtre, \u003CIf(gnum4)\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E. N\u0027h\u00E9sitez pas \u00E0 m\u0027appeler, si vous avez besoin de quoi que ce soit.",
+      "Bienvenue dans la demeure de mon ma\u00EEtre, \u003CIf(PlayerParameter(4))\u003EMadame\u003CElse/\u003EMessire\u003C/If\u003E. N\u0027h\u00E9sitez pas \u00E0 m\u0027appeler, si vous avez besoin de quoi que ce soit.",
       "0",
       "0"
     ],
@@ -18749,7 +18749,7 @@
     ],
     "Text": [
       "Eh bien voil\u00E0, il ne manquait plus qu\u0027un nouveau Primordial pour compliquer encore plus notre mission\u003C\u003Cnbsp\u003E\u003E!",
-      "J\u0027aimerais tellement vous \u00EAtre plus utile, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Si seulement j\u0027avais moi aussi le pouvoir de l\u0027\u00C9cho...",
+      "J\u0027aimerais tellement vous \u00EAtre plus utile, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Si seulement j\u0027avais moi aussi le pouvoir de l\u0027\u00C9cho...",
       "0"
     ],
     "Unknown0": 0,

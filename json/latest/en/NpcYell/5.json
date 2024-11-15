@@ -991,7 +991,7 @@
   },
   {
     "RowId": 2066,
-    "Text": "Not so fast, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E! Voco\u0027s legs tire!",
+    "Text": "Not so fast, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E! Voco\u0027s legs tire!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4021,7 +4021,7 @@
   },
   {
     "RowId": 2268,
-    "Text": "\u003CIf(gnum4)\u003EShe\u003CElse/\u003EHe\u003C/If\u003E must not harm the Lady!",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EShe\u003CElse/\u003EHe\u003C/If\u003E must not harm the Lady!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -5896,7 +5896,7 @@
   },
   {
     "RowId": 2393,
-    "Text": "If you are uncertain as to how to perform, might I suggest pairing with another \u003Cswitch(gnum71,Hyuran,Elezen,Lalafell,Miqo\u0027te,Roegadyn,Au Ra,Hrothgar,Viera)\u003E?",
+    "Text": "If you are uncertain as to how to perform, might I suggest pairing with another \u003Cswitch(PlayerParameter(71),Hyuran,Elezen,Lalafell,Miqo\u0027te,Roegadyn,Au Ra,Hrothgar,Viera)\u003E?",
     "BalloonTime": 1,
     "Unknown0": 1010454,
     "OutputType": 5,
@@ -6106,7 +6106,7 @@
   },
   {
     "RowId": 2407,
-    "Text": "And the winning number for draw \u003CNum\u003Elnum1\u003C/Num\u003E is...\n\u003Cdigit(lnum2,4)\u003E!",
+    "Text": "And the winning number for draw \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E is...\n\u003Cdigit(IntegerParameter(2),4)\u003E!",
     "BalloonTime": 1,
     "Unknown0": 1010471,
     "OutputType": 5,
@@ -6121,7 +6121,7 @@
   },
   {
     "RowId": 2408,
-    "Text": "Whether or not you hit the Cactpot today, just remember: there\u0027s always drawing number \u003CNum\u003Elnum1\u003C/Num\u003E to look forward to!",
+    "Text": "Whether or not you hit the Cactpot today, just remember: there\u0027s always drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E to look forward to!",
     "BalloonTime": 1,
     "Unknown0": 1010471,
     "OutputType": 5,
@@ -6751,7 +6751,7 @@
   },
   {
     "RowId": 2450,
-    "Text": "\u003Csound(1,51)\u003EThe limited-time event \u201C\u003Cswitch(lnum2,Cliffhanger,Vase Off,Skinchange We Can Believe In,The Time of My Life,Any Way the Wind Blows,Leap of Faith,Air Force One,The Slice Is Right)\u003E\u201D is now underway \u003Cswitch(lnum1,in Wonder Square East,in Event Square,in Round Square,at the Cactpot Board)\u003E. All guests are encouraged to participate!",
+    "Text": "\u003Csound(1,51)\u003EThe limited-time event \u201C\u003Cswitch(IntegerParameter(2),Cliffhanger,Vase Off,Skinchange We Can Believe In,The Time of My Life,Any Way the Wind Blows,Leap of Faith,Air Force One,The Slice Is Right)\u003E\u201D is now underway \u003Cswitch(IntegerParameter(1),in Wonder Square East,in Event Square,in Round Square,at the Cactpot Board)\u003E. All guests are encouraged to participate!",
     "BalloonTime": 1,
     "Unknown0": 1010448,
     "OutputType": 5,
@@ -6811,7 +6811,7 @@
   },
   {
     "RowId": 2454,
-    "Text": "\u003Csound(1,51)\u003ETickets for drawing number \u003CNum\u003Elnum2\u003C/Num\u003E of the Jumbo Cactpot are now on sale.\nTo try your luck, visit the Cactpot Board!",
+    "Text": "\u003Csound(1,51)\u003ETickets for drawing number \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E of the Jumbo Cactpot are now on sale.\nTo try your luck, visit the Cactpot Board!",
     "BalloonTime": 1,
     "Unknown0": 1010448,
     "OutputType": 5,
@@ -6886,7 +6886,7 @@
   },
   {
     "RowId": 2459,
-    "Text": "Entries are now being accepted for drawing number \u003CNum\u003Elnum1\u003C/Num\u003E of the Mini Cactpot!\nVenture to Entrance Square to test your luck!",
+    "Text": "Entries are now being accepted for drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the Mini Cactpot!\nVenture to Entrance Square to test your luck!",
     "BalloonTime": 1,
     "Unknown0": 1010448,
     "OutputType": 5,
@@ -6901,7 +6901,7 @@
   },
   {
     "RowId": 2460,
-    "Text": "Tickets for drawing number \u003CNum\u003Elnum1\u003C/Num\u003E of the Mini Cactpot are now on sale.\nTo test your fortunes, make your way to Entrance Square!",
+    "Text": "Tickets for drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the Mini Cactpot are now on sale.\nTo test your fortunes, make your way to Entrance Square!",
     "BalloonTime": 1,
     "Unknown0": 1010448,
     "OutputType": 5,
@@ -6916,7 +6916,7 @@
   },
   {
     "RowId": 2461,
-    "Text": "\u003Csound(1,51)\u003EEntries for drawing number \u003CNum\u003Elnum1\u003C/Num\u003E of the Mini Cactpot will close momentarily.\nThose still wishing to purchase a ticket are encouraged to act quickly!",
+    "Text": "\u003Csound(1,51)\u003EEntries for drawing number \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the Mini Cactpot will close momentarily.\nThose still wishing to purchase a ticket are encouraged to act quickly!",
     "BalloonTime": 1,
     "Unknown0": 1010448,
     "OutputType": 5,
@@ -7096,7 +7096,7 @@
   },
   {
     "RowId": 2473,
-    "Text": "And the Early Bird Bonus grants \u003CIf([lnum1==1])\u003Efirst prize winners\u003CElse/\u003E\u003Cif([lnum1==2],second prize winners,\u003Cif([lnum1==4],third prize winners,\u003Cif([lnum1==8],fourth prize winners,\u003Cif([lnum1==16],consolation prize winners,everyone)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E an extra \u003CNum\u003Elnum2\u003C/Num\u003E%!\nMake sure you lucky folk claim your winnings promptly!  ",
+    "Text": "And the Early Bird Bonus grants \u003CIf(Equal(IntegerParameter(1),1))\u003Efirst prize winners\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2))\u003Esecond prize winners\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),4))\u003Ethird prize winners\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),8))\u003Efourth prize winners\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),16))\u003Econsolation prize winners\u003CElse/\u003Eeveryone\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E an extra \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E%!\nMake sure you lucky folk claim your winnings promptly!  ",
     "BalloonTime": 1,
     "Unknown0": 1010471,
     "OutputType": 5,
@@ -7261,7 +7261,7 @@
   },
   {
     "RowId": 2484,
-    "Text": "...\u003CNum\u003Elnum1\u003C/Num\u003E!",
+    "Text": "...\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,

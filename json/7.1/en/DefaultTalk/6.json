@@ -322,7 +322,7 @@
       }
     ],
     "Text": [
-      "It should be my pleasure to assist you, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, once you have spoken with my superiors.",
+      "It should be my pleasure to assist you, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, once you have spoken with my superiors.",
       "0",
       "0"
     ],
@@ -361,7 +361,7 @@
       }
     ],
     "Text": [
-      "If you have any scrips in your possession, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, I should be glad to offer to you a selection of goods suited to your singular needs.",
+      "If you have any scrips in your possession, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, I should be glad to offer to you a selection of goods suited to your singular needs.",
       "0",
       "0"
     ],
@@ -595,7 +595,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E, yes? Come, come! We have only the best tools and gear for our esteemed suppliers!",
+      "Ah, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E, yes? Come, come! We have only the best tools and gear for our esteemed suppliers!",
       "0",
       "0"
     ],
@@ -790,7 +790,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! The manufactory has never seen so many new recruits! I have even placed firearms into the hands of several curious members of House Dzemael.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! The manufactory has never seen so many new recruits! I have even placed firearms into the hands of several curious members of House Dzemael.",
       "Lord Tedalgrinche, it seems, has been true to his word, and is working to see our growing force of machinists integrated into Ishgard\u0027s defense.",
       "0"
     ],
@@ -868,7 +868,7 @@
       }
     ],
     "Text": [
-      "Got anything good for us \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],this evening,today)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],today,this evening)\u003E\u003C/If\u003E? Go on and show it to our appraiser, then. I\u0027m sure she\u0027s dying to have a look.",
+      "Got anything good for us \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Ethis evening\u003CElse/\u003Etoday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Etoday\u003CElse/\u003Ethis evening\u003C/If\u003E\u003C/If\u003E? Go on and show it to our appraiser, then. I\u0027m sure she\u0027s dying to have a look.",
       "0",
       "0"
     ],
@@ -1219,7 +1219,7 @@
       }
     ],
     "Text": [
-      "\u003CString\u003Egstr1\u003C/String\u003E! I joined the Crystal Braves in the hopes of following in your footsteps, and I do not regret the decision\u2500not even for a moment!",
+      "\u003CString\u003EObjectParameter(1)\u003C/String\u003E! I joined the Crystal Braves in the hopes of following in your footsteps, and I do not regret the decision\u2500not even for a moment!",
       "0",
       "0"
     ],
@@ -2605,7 +2605,7 @@
       }
     ],
     "Text": [
-      "It\u0027s not very sporting of you to beat up on a poor girl who scarcely knows the rules of the game, you know. \u003CIf(gnum4)\u003EBut you\u0027ll not have such luck if you challenge me on the battlefield of love\u003CElse/\u003EAnd here I thought you were a gentleman\u003C/If\u003E.",
+      "It\u0027s not very sporting of you to beat up on a poor girl who scarcely knows the rules of the game, you know. \u003CIf(PlayerParameter(4))\u003EBut you\u0027ll not have such luck if you challenge me on the battlefield of love\u003CElse/\u003EAnd here I thought you were a gentleman\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -2722,7 +2722,7 @@
       }
     ],
     "Text": [
-      "Sorry, \u003CIf(gnum4)\u003Esister\u003CElse/\u003Eson\u003C/If\u003E, but I\u0027m a bit too busy betting on the bo-bo\u2500 I mean, teaching my trainees the angling art\u2500to play at present. Look me up later and I\u0027ll give you a game.",
+      "Sorry, \u003CIf(PlayerParameter(4))\u003Esister\u003CElse/\u003Eson\u003C/If\u003E, but I\u0027m a bit too busy betting on the bo-bo\u2500 I mean, teaching my trainees the angling art\u2500to play at present. Look me up later and I\u0027ll give you a game.",
       "0",
       "0"
     ],
@@ -3697,7 +3697,7 @@
       }
     ],
     "Text": [
-      "Maybe another time, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E\u2500I\u0027ve other things that need attendin\u0027 to first.",
+      "Maybe another time, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E\u2500I\u0027ve other things that need attendin\u0027 to first.",
       "0",
       "0"
     ],
@@ -3736,7 +3736,7 @@
       }
     ],
     "Text": [
-      "Hah! Well, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E, best you find yourself a few new cards.",
+      "Hah! Well, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E, best you find yourself a few new cards.",
       "0",
       "0"
     ],
@@ -4282,7 +4282,7 @@
       }
     ],
     "Text": [
-      "Oh, it\u0027s you, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! I appreciate you coming by, but shouldn\u0027t you be at the Congregation? That\u0027s where the others are gathering, no?",
+      "Oh, it\u0027s you, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! I appreciate you coming by, but shouldn\u0027t you be at the Congregation? That\u0027s where the others are gathering, no?",
       "0",
       "0"
     ],
@@ -4360,7 +4360,7 @@
       }
     ],
     "Text": [
-      "\u003CIf(gnum4)\u003EMiss\\, miss\u003CElse/\u003ESir\\, sir\u003C/If\u003E! You wouldn\u0027t happen to have any amber-encased vilekin for sale, would you? No one in Ishgard will offer you a better price! I promise!",
+      "\u003CIf(PlayerParameter(4))\u003EMiss, miss\u003CElse/\u003ESir, sir\u003C/If\u003E! You wouldn\u0027t happen to have any amber-encased vilekin for sale, would you? No one in Ishgard will offer you a better price! I promise!",
       "0",
       "0"
     ],
@@ -4399,7 +4399,7 @@
       }
     ],
     "Text": [
-      "You there, good \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E! Surely you should be glad to serve a good cause\u2500and receive due compensation as well!",
+      "You there, good \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E! Surely you should be glad to serve a good cause\u2500and receive due compensation as well!",
       "0",
       "0"
     ],
@@ -4516,7 +4516,7 @@
       }
     ],
     "Text": [
-      "This is Durendaire Manor, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. You may not enter without the leave of my lords, but if it is respite from the cold you seek, mayhap you could visit the cathedral.",
+      "This is Durendaire Manor, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. You may not enter without the leave of my lords, but if it is respite from the cold you seek, mayhap you could visit the cathedral.",
       "0",
       "0"
     ],
@@ -4594,7 +4594,7 @@
       }
     ],
     "Text": [
-      "Excuse me, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I\u0027m under strict orders not to permit anyone entry to Haillenarte Manor. I\u0027ll have to ask you to leave.",
+      "Excuse me, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I\u0027m under strict orders not to permit anyone entry to Haillenarte Manor. I\u0027ll have to ask you to leave.",
       "0",
       "0"
     ],
@@ -5218,7 +5218,7 @@
       }
     ],
     "Text": [
-      "Nothing out of the ordinary so far...but who can say what the \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],morning,day)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],evening,morning)\u003E\u003C/If\u003E will bring.",
+      "Nothing out of the ordinary so far...but who can say what the \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Emorning\u003CElse/\u003Eday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eevening\u003CElse/\u003Emorning\u003C/If\u003E\u003C/If\u003E will bring.",
       "0",
       "0"
     ],
@@ -6076,7 +6076,7 @@
       }
     ],
     "Text": [
-      "We should be happy to serve you when you have sufficient funds, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E.",
+      "We should be happy to serve you when you have sufficient funds, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E.",
       "0",
       "0"
     ],
@@ -6712,7 +6712,7 @@
       }
     ],
     "Text": [
-      "Sorry \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but you\u0027ve caught me in the middle of surveillance duty. Whatever your trouble, it will have to wait.",
+      "Sorry \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but you\u0027ve caught me in the middle of surveillance duty. Whatever your trouble, it will have to wait.",
       "0",
       "0"
     ],
@@ -6907,7 +6907,7 @@
       }
     ],
     "Text": [
-      "Welcome to Ok\u0027 Zundu, netherling! Listen, hear cries of young Vanu ring out as they dance\u2500netherling should watch, maybe \u003CIf(gnum4)\u003Eshe\u003CElse/\u003Ehe\u003C/If\u003E dances as well!",
+      "Welcome to Ok\u0027 Zundu, netherling! Listen, hear cries of young Vanu ring out as they dance\u2500netherling should watch, maybe \u003CIf(PlayerParameter(4))\u003Eshe\u003CElse/\u003Ehe\u003C/If\u003E dances as well!",
       "0",
       "0"
     ],
@@ -7141,7 +7141,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u2500I will not judge you by your curious name. What I will judge you by, however, is your performance during my Trials of Trustworthiness, kupo!",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u2500I will not judge you by your curious name. What I will judge you by, however, is your performance during my Trials of Trustworthiness, kupo!",
       "0",
       "0"
     ],
@@ -7921,7 +7921,7 @@
       }
     ],
     "Text": [
-      "Takes a certain kind of person to make it here, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. Us treasure hunters, we don\u0027t always follow the letter of the law, but we\u0027ve got our own codes. If you\u0027re like-minded, maybe you\u0027ve a place here. Elsewise, best find your way back to civilization.",
+      "Takes a certain kind of person to make it here, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. Us treasure hunters, we don\u0027t always follow the letter of the law, but we\u0027ve got our own codes. If you\u0027re like-minded, maybe you\u0027ve a place here. Elsewise, best find your way back to civilization.",
       "0",
       "0"
     ],
@@ -8467,7 +8467,7 @@
       }
     ],
     "Text": [
-      "Can I help you, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? Bowl of beets? Small beer, perhaps?",
+      "Can I help you, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E? Bowl of beets? Small beer, perhaps?",
       "Ah, him? Lost his little girl to the pox. Best leave him be.",
       "0"
     ],
@@ -9127,7 +9127,7 @@
       }
     ],
     "Text": [
-      "A warm welcome to you, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! Please, feel free to visit our many, many shops. You are bound to find something to satisfy your every need.",
+      "A warm welcome to you, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E! Please, feel free to visit our many, many shops. You are bound to find something to satisfy your every need.",
       "0",
       "0"
     ],
@@ -9166,7 +9166,7 @@
       }
     ],
     "Text": [
-      "I am but a humble merchant, my dear \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I pride myself on my selection. From folios for the scholasticate to chocobo fodder, I promise you I have it!",
+      "I am but a humble merchant, my dear \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E, but I pride myself on my selection. From folios for the scholasticate to chocobo fodder, I promise you I have it!",
       "0",
       "0"
     ],
@@ -9244,7 +9244,7 @@
       }
     ],
     "Text": [
-      "May Halone bless you as She has blessed me this \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,day)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],day,evening)\u003E\u003C/If\u003E, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Oh, if only you could have seen the wondrous temptations She saw fit to place before me in the Jeweled Crozier!",
+      "May Halone bless you as She has blessed me this \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Eday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eday\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Oh, if only you could have seen the wondrous temptations She saw fit to place before me in the Jeweled Crozier!",
       "0",
       "0"
     ],
@@ -9322,7 +9322,7 @@
       }
     ],
     "Text": [
-      "I can hardly believe it! House Fortemps granting patronage to a common sellsword? Well, should I chance to meet this ragamuffin, I will say to \u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehim\u003C/If\u003E \u003CItalic\u003E1\u003C/Italic\u003Egood day\u003CItalic\u003E0\u003C/Italic\u003E!",
+      "I can hardly believe it! House Fortemps granting patronage to a common sellsword? Well, should I chance to meet this ragamuffin, I will say to \u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehim\u003C/If\u003E \u003CItalic\u003E1\u003C/Italic\u003Egood day\u003CItalic\u003E0\u003C/Italic\u003E!",
       "0",
       "0"
     ],
@@ -9517,7 +9517,7 @@
       }
     ],
     "Text": [
-      "Oh! Er...pray pay me no mind, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I am merely taking my \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,morning)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],midday,evening)\u003E\u003C/If\u003E constitutional.",
+      "Oh! Er...pray pay me no mind, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. I am merely taking my \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Emorning\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Emidday\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E constitutional.",
       "I am \u003CItalic\u003E1\u003C/Italic\u003Ecertainly\u003CItalic\u003E0\u003C/Italic\u003E not hoping to catch the eye of Lord Artoirel, oh no. Heavens forfend, if a married woman of my station were to become involved with the young lord, why, think of the scandal!",
       "0"
     ],
@@ -10300,7 +10300,7 @@
       }
     ],
     "Text": [
-      "If you\u0027re looking for Ser Jantellot, \u003CIf(gnum4)\u003Emilady\u003CElse/\u003Emilord\u003C/If\u003E, you can find him by the fire.",
+      "If you\u0027re looking for Ser Jantellot, \u003CIf(PlayerParameter(4))\u003Emilady\u003CElse/\u003Emilord\u003C/If\u003E, you can find him by the fire.",
       "0",
       "0"
     ],
@@ -11614,7 +11614,7 @@
       }
     ],
     "Text": [
-      "...Not from Ishgard, are you? I\u0027m from Ul\u0027dah myself. Jus\u0027 come up to serve House Fortemps. The name\u0027s Haimirich, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E, cap\u0027n of Oschon\u0027s Raiders\u2500the finest company o\u0027 sellswords that ever lived!",
+      "...Not from Ishgard, are you? I\u0027m from Ul\u0027dah myself. Jus\u0027 come up to serve House Fortemps. The name\u0027s Haimirich, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E, cap\u0027n of Oschon\u0027s Raiders\u2500the finest company o\u0027 sellswords that ever lived!",
       "0",
       "0"
     ],
@@ -12310,7 +12310,7 @@
       }
     ],
     "Text": [
-      "Once the confusion in Ul\u0027dah has sorted itself out, it should prove a whole lot easier to search for our friends. Never fear, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Tataru Taru is on the case!",
+      "Once the confusion in Ul\u0027dah has sorted itself out, it should prove a whole lot easier to search for our friends. Never fear, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Tataru Taru is on the case!",
       "0",
       "0"
     ],
@@ -12622,7 +12622,7 @@
       }
     ],
     "Text": [
-      "You\u0027re the leading \u003CIf(gnum4)\u003Elady\u003CElse/\u003Eman\u003C/If\u003E, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. You know what they say about the leading \u003CIf(gnum4)\u003Elady\u003CElse/\u003Eman\u003C/If\u003E? \u003CIf(gnum4)\u003EShe\u003CElse/\u003EHe\u003C/If\u003E never dies. Now, go and do me proud!",
+      "You\u0027re the leading \u003CIf(PlayerParameter(4))\u003Elady\u003CElse/\u003Eman\u003C/If\u003E, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. You know what they say about the leading \u003CIf(PlayerParameter(4))\u003Elady\u003CElse/\u003Eman\u003C/If\u003E? \u003CIf(PlayerParameter(4))\u003EShe\u003CElse/\u003EHe\u003C/If\u003E never dies. Now, go and do me proud!",
       "0",
       "0"
     ],
@@ -12661,7 +12661,7 @@
       }
     ],
     "Text": [
-      "There you are, old \u003CIf(gnum4)\u003Egirl\u003CElse/\u003Eboy\u003C/If\u003E! We must go to the tavern together, and soon! My friends all demand to be introduced to the Warrior of Light, and they refuse to take no for an answer!",
+      "There you are, old \u003CIf(PlayerParameter(4))\u003Egirl\u003CElse/\u003Eboy\u003C/If\u003E! We must go to the tavern together, and soon! My friends all demand to be introduced to the Warrior of Light, and they refuse to take no for an answer!",
       "0",
       "0"
     ],
@@ -12814,7 +12814,7 @@
       }
     ],
     "Text": [
-      "Pray pay no heed to Lord Emmanellain, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E. I am certain you have far more pressing demands on your time. And for his part, my lord has \u003CItalic\u003E1\u003C/Italic\u003Elessons\u003CItalic\u003E0\u003C/Italic\u003E to attend...",
+      "Pray pay no heed to Lord Emmanellain, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E. I am certain you have far more pressing demands on your time. And for his part, my lord has \u003CItalic\u003E1\u003C/Italic\u003Elessons\u003CItalic\u003E0\u003C/Italic\u003E to attend...",
       "He has resumed training in the blade, you see, and has shown admirable dedication...for the most part. I believe he has a mind to take up Lord Haurchefant\u0027s mantle\u2500but if he is to succeed in this, he will need all the help he can get, and as few \u003CItalic\u003E1\u003C/Italic\u003Edistractions\u003CItalic\u003E0\u003C/Italic\u003E as possible.",
       "0"
     ],
@@ -13399,7 +13399,7 @@
       }
     ],
     "Text": [
-      "Are you certain you won\u0027t consider joining the Convictors? With a \u003CIf(gnum4)\u003Elass\u003CElse/\u003Efellow\u003C/If\u003E of your abilities under my command, I can only imagine the prestige we might win back in Ishgard...",
+      "Are you certain you won\u0027t consider joining the Convictors? With a \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Efellow\u003C/If\u003E of your abilities under my command, I can only imagine the prestige we might win back in Ishgard...",
       "0",
       "0"
     ],
@@ -14218,7 +14218,7 @@
       }
     ],
     "Text": [
-      "Oh, hello there, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! I\u0027d love to talk, but I have to keep a lookout for suspicious activity. Perhaps we can have a chat later?",
+      "Oh, hello there, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! I\u0027d love to talk, but I have to keep a lookout for suspicious activity. Perhaps we can have a chat later?",
       "0",
       "0"
     ],
@@ -14257,7 +14257,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, good to see you! Thanks again for your help with the Vanu. It was a harsh but necessary reminder of what we\u0027ve been stationed here to do, and morale has never been higher.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, good to see you! Thanks again for your help with the Vanu. It was a harsh but necessary reminder of what we\u0027ve been stationed here to do, and morale has never been higher.",
       "Even Fabrellet has been more cooperative of late! The next time you drop by, perhaps I can convince him to treat us to a nice meal.",
       "0"
     ],
@@ -14530,7 +14530,7 @@
       }
     ],
     "Text": [
-      "Ah, the oddly named \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! I was most impressed by the sheer number of chores that you and your friends were able to complete in such a short amount of time, kupo. If you ever have need of our aid again, I\u0027m sure we can come to some sort of labor-based arrangement...",
+      "Ah, the oddly named \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! I was most impressed by the sheer number of chores that you and your friends were able to complete in such a short amount of time, kupo. If you ever have need of our aid again, I\u0027m sure we can come to some sort of labor-based arrangement...",
       "0",
       "0"
     ],
@@ -14569,7 +14569,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, your name rings oddly in my ears as always. When the day comes that moogles, landlords, and skylords can live peacefully together, I shall prepare a great feast of kupo nuts and moca leaves.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, your name rings oddly in my ears as always. When the day comes that moogles, landlords, and skylords can live peacefully together, I shall prepare a great feast of kupo nuts and moca leaves.",
       "0",
       "0"
     ],
@@ -14608,7 +14608,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, I\u0027ve thought long about this, and it\u0027s finally time to decide on a proper moogle name for you. I think Mog\u003CLower\u003E\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C/Lower\u003E would fit you perfectly, kupo.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, I\u0027ve thought long about this, and it\u0027s finally time to decide on a proper moogle name for you. I think Mog\u003CLower\u003E\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C/Lower\u003E would fit you perfectly, kupo.",
       "0",
       "0"
     ],
@@ -14842,7 +14842,7 @@
       }
     ],
     "Text": [
-      "You told the cap\u0027n of Gevehard\u0027s passin\u0027, I take it? Thank you, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. A man deserves to know when his brother dies a hero.",
+      "You told the cap\u0027n of Gevehard\u0027s passin\u0027, I take it? Thank you, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E. A man deserves to know when his brother dies a hero.",
       "Amazing thing, though, that you\u0027d join the Raiders as a miner and dig up the truth behind the cap\u0027n\u0027s family...",
       "0"
     ],
@@ -15076,7 +15076,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, I understand you\u0027ve bought us a moment\u0027s respite from the primal.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, I understand you\u0027ve bought us a moment\u0027s respite from the primal.",
       "But much as I\u0027d like a rest, it\u0027s not to be. Our foes certainly won\u0027t be napping in that fortress of theirs.",
       "0"
     ],
@@ -15271,7 +15271,7 @@
       }
     ],
     "Text": [
-      "Though you are no \u003CIf(gnum4)\u003Edaughter\u003CElse/\u003Eson\u003C/If\u003E of Ishgard, you have shed blood with us and for us. Though I am no individual of any great import, I would express my gratitude all the same. Thank you, my friend.",
+      "Though you are no \u003CIf(PlayerParameter(4))\u003Edaughter\u003CElse/\u003Eson\u003C/If\u003E of Ishgard, you have shed blood with us and for us. Though I am no individual of any great import, I would express my gratitude all the same. Thank you, my friend.",
       "0",
       "0"
     ],
@@ -15349,7 +15349,7 @@
       }
     ],
     "Text": [
-      "Welcome back, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Thinking of assisting Elde, are we? News travels quickly along the Crozier.",
+      "Welcome back, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. Thinking of assisting Elde, are we? News travels quickly along the Crozier.",
       "0",
       "0"
     ],
@@ -15388,7 +15388,7 @@
       }
     ],
     "Text": [
-      "Hello again, \u003CIf(gnum4)\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. In spite of the recent disturbance, it\u0027s business as usual here on the Crozier, and our merchants peddle on with purpose.",
+      "Hello again, \u003CIf(PlayerParameter(4))\u003Emiss\u003CElse/\u003Esir\u003C/If\u003E. In spite of the recent disturbance, it\u0027s business as usual here on the Crozier, and our merchants peddle on with purpose.",
       "0",
       "0"
     ],
@@ -16249,7 +16249,7 @@
       }
     ],
     "Text": [
-      "\u003CIf(gnum4)\u003EMilady\u003CElse/\u003EMilord\u003C/If\u003E must be a warrior of some renown to keep company with the likes of the Azure Dragoon. Me? I\u0027d be lucky to last three heartbeats with some of them big, nasty Dravanians...",
+      "\u003CIf(PlayerParameter(4))\u003EMilady\u003CElse/\u003EMilord\u003C/If\u003E must be a warrior of some renown to keep company with the likes of the Azure Dragoon. Me? I\u0027d be lucky to last three heartbeats with some of them big, nasty Dravanians...",
       "0",
       "0"
     ],
@@ -16369,7 +16369,7 @@
       }
     ],
     "Text": [
-      "I am a steward at heart, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E, not a merchant. Grateful though I am for the work, the sooner I am free of this shop, the better.",
+      "I am a steward at heart, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E, not a merchant. Grateful though I am for the work, the sooner I am free of this shop, the better.",
       "0",
       "0"
     ],
@@ -16408,7 +16408,7 @@
       }
     ],
     "Text": [
-      "\u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E, you will be happy to learn that Baroness Laurisse has distinguished herself from her fellow squires with her usual...tact.",
+      "\u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E, you will be happy to learn that Baroness Laurisse has distinguished herself from her fellow squires with her usual...tact.",
       "Regardless, she \u003CItalic\u003E1\u003C/Italic\u003Ewill\u003CItalic\u003E0\u003C/Italic\u003E be the shining sword of Ishgard, bright and fearsome as the blade you forged for her. Perhaps you will think me a simple man for saying so, but I do truly have faith in her.",
       "0"
     ],
@@ -16486,7 +16486,7 @@
       }
     ],
     "Text": [
-      "Why, if it isn\u0027t \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E! Once again, allow me to commend you on your sterling craftsmanship.",
+      "Why, if it isn\u0027t \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E! Once again, allow me to commend you on your sterling craftsmanship.",
       "It would be no understatement to say that the twin music boxes you created will stand for an eternity\u2500not only on the mantel of our clients\u2500but in the hearts of all who have laid eyes and ears upon this singular work of genius.",
       "0"
     ],
@@ -16567,7 +16567,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, welcome, welcome! I\u0027ve been so busy, I scarce have time to eat! Keeping my products up to your standards is difficult, but I must\u2500the brand carries your name, after all.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, welcome, welcome! I\u0027ve been so busy, I scarce have time to eat! Keeping my products up to your standards is difficult, but I must\u2500the brand carries your name, after all.",
       "Nor would you believe who my new advisor is\u2500Ser Ortefauchel! The Temple Knights are sure to purchase more and more of my goods, and I\u0027m putting his knowledge of the order to good use.",
       "That is the shape of things for the moment, my friend. I will continue onwards, ever striving for better quality at lower prices."
     ],
@@ -16807,7 +16807,7 @@
       }
     ],
     "Text": [
-      "Did I ever tell you how I met Severian, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E? It began years back in Ul\u0027dah, when I took a simple request from the Alchemists\u0027 Guild as a greenhorn.",
+      "Did I ever tell you how I met Severian, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E? It began years back in Ul\u0027dah, when I took a simple request from the Alchemists\u0027 Guild as a greenhorn.",
       "The guildmaster only needed a few ingredients. But you know how these things get away from you\u2500a bard could easily\u0027ve written a song about what I did for the bloody things. To this day, I\u0027m not sure why I didn\u0027t just give up. Pride, I suppose.",
       "In any case, I gave the ingredients to Severian, and I got \u003CItalic\u003E1\u003C/Italic\u003Ea\u003CItalic\u003E0\u003C/Italic\u003E word of thanks. One. So when I asked him for help with this Waoud business, I\u0027d expected little more than a terse letter. But he sent you in his place, which leads me to wonder if he \u003CItalic\u003E1\u003C/Italic\u003Edid\u003CItalic\u003E0\u003C/Italic\u003E feel indebted to me."
     ],
@@ -16849,7 +16849,7 @@
       }
     ],
     "Text": [
-      "Oh, hello there, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Thank you for coming by, but I\u0027m afraid I have nothing new to report. As ever, that bastard H\u0027mhasi Tia\u0027s bein\u0027 a right pain in the arse.",
+      "Oh, hello there, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Thank you for coming by, but I\u0027m afraid I have nothing new to report. As ever, that bastard H\u0027mhasi Tia\u0027s bein\u0027 a right pain in the arse.",
       "Ack, there I go again with my cussing. Pray forgive me my poor manners\u2500it ill becomes a waitress, I know.",
       "0"
     ],
@@ -16888,8 +16888,8 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, ye\u0027ve got to \u0027ear this! Since \u0027e lost to ye an\u0027 left on \u0027is journey, H\u0027mhasi Tia \u0027asn\u0027t sent me a single letter! Not a bloody one! \\\\\u003Csigh\u003E Even when \u0027e\u0027s not around, \u0027e manages to piss me off...",
-      "In other news, I\u0027ve begun helping out in the kitchen. It seemed to be the most natural thing to do. Just you watch, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u2500next, it\u0027ll be me as \u0027umbles that cocksure whoreson!",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, ye\u0027ve got to \u0027ear this! Since \u0027e lost to ye an\u0027 left on \u0027is journey, H\u0027mhasi Tia \u0027asn\u0027t sent me a single letter! Not a bloody one! \\\\\u003Csigh\u003E Even when \u0027e\u0027s not around, \u0027e manages to piss me off...",
+      "In other news, I\u0027ve begun helping out in the kitchen. It seemed to be the most natural thing to do. Just you watch, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u2500next, it\u0027ll be me as \u0027umbles that cocksure whoreson!",
       "0"
     ],
     "Unknown0": 0,
@@ -17005,7 +17005,7 @@
       }
     ],
     "Text": [
-      "Why, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. I didn\u0027t expect to see you here so soon. Couldn\u0027t wait to get started, I take it?",
+      "Why, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. I didn\u0027t expect to see you here so soon. Couldn\u0027t wait to get started, I take it?",
       "Well, please be my guest and show yourself around. I imagine it\u0027d make things that little bit easier for when we have a task for you.",
       "0"
     ],
@@ -17083,7 +17083,7 @@
       }
     ],
     "Text": [
-      "Good \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,morrow)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],day,evening)\u003E\u003C/If\u003E to you, my fishing friend! Caught any big ones recently? If I hear any promising rumors about where the fish are biting, you\u0027ll be the first to know.",
+      "Good \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Emorrow\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eday\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E to you, my fishing friend! Caught any big ones recently? If I hear any promising rumors about where the fish are biting, you\u0027ll be the first to know.",
       "0",
       "0"
     ],
@@ -17122,7 +17122,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, it\u0027s good to see you! I expect you\u0027re here for the fishing contest. Sad to say, I\u0027ve another battle on my hands at present\u2500the one with my brother for control of House Rougecarpe.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, it\u0027s good to see you! I expect you\u0027re here for the fishing contest. Sad to say, I\u0027ve another battle on my hands at present\u2500the one with my brother for control of House Rougecarpe.",
       "It\u0027s only a matter of time before he gives up the ghost, but I\u0027m afraid our little competition will have to wait till then. I just hope that when the time comes, I\u0027m not too rusty to give you a challenge!",
       "0"
     ],
@@ -17590,7 +17590,7 @@
       }
     ],
     "Text": [
-      "Welcome back, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Word of your deeds continues to spread, and the manufactory is beset daily by a veritable legion of aspiring machinists!",
+      "Welcome back, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Word of your deeds continues to spread, and the manufactory is beset daily by a veritable legion of aspiring machinists!",
       "0",
       "0"
     ],
@@ -18064,8 +18064,8 @@
       }
     ],
     "Text": [
-      "Greetings, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E of the black. I am impressed by the harmony that your destructive magicks and Zhai\u0027a Nelhah\u0027s healing attained. A truly remarkable achievement.",
-      "Though I dream that this small seed of hope might bloom into a new age of cooperation between magi, I know that it cannot happen without magi such as you. I am honored to have known you, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E.",
+      "Greetings, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E of the black. I am impressed by the harmony that your destructive magicks and Zhai\u0027a Nelhah\u0027s healing attained. A truly remarkable achievement.",
+      "Though I dream that this small seed of hope might bloom into a new age of cooperation between magi, I know that it cannot happen without magi such as you. I am honored to have known you, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E.",
       "0"
     ],
     "Unknown0": 0,
@@ -18142,7 +18142,7 @@
       }
     ],
     "Text": [
-      "Ye\u0027ve changed me life, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. I\u0027ve made some mistakes, aye, but me head\u0027s on straight now.",
+      "Ye\u0027ve changed me life, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. I\u0027ve made some mistakes, aye, but me head\u0027s on straight now.",
       "Ye just watch\u2500I\u0027ll take everythin\u0027 I\u0027ve learned, an\u0027 prove to H\u0027naanza that ol\u0027 Blanstyr\u0027s not ready for the scrap heap just yet. That contest is as good as won!",
       "0"
     ],
@@ -18220,7 +18220,7 @@
       }
     ],
     "Text": [
-      "So the Scions have been exonerated... I\u0027m truly happy for you, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. It\u0027s a shame that the Crystal Braves had to be disbanded, though. So much hope had been placed in them.",
+      "So the Scions have been exonerated... I\u0027m truly happy for you, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. It\u0027s a shame that the Crystal Braves had to be disbanded, though. So much hope had been placed in them.",
       "With so many people leaving, the town won\u0027t be as lively as it was before. But no matter where you and yours end up, know that you\u0027ll always have my best wishes.",
       "0"
     ],
@@ -18967,7 +18967,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, I was full glad to hear that the accusations against you had been dropped. And you must be relieved to need no longer check over your shoulder every few steps for the shadows of Ul\u0027dahn agents.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, I was full glad to hear that the accusations against you had been dropped. And you must be relieved to need no longer check over your shoulder every few steps for the shadows of Ul\u0027dahn agents.",
       "0",
       "0"
     ],
@@ -19169,7 +19169,7 @@
     ],
     "Text": [
       "Now that the Flame General has been reinstated to his post, we have regained a semblance of normality.",
-      "There is still much and more to be done, but we can finally see a way forward\u2500and we owe it all to you, \u003CIf([gnum54\u003E0])\u003E\u003Cif([gnum54\u003C127],\u003Chead(\u003Cif([gnum52\u003E0],\u003Csheet(GCRankLimsaMaleText,gnum52,8)\u003E,)\u003E\u003Cif([gnum53\u003E0],\u003Csheet(GCRankGridaniaMaleText,gnum53,8)\u003E,)\u003E\u003Cif([gnum54\u003E0],\u003Csheet(GCRankUldahMaleText,gnum54,8)\u003E,)\u003E)\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E,\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E)\u003E\u003CElse/\u003E\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C/If\u003E.",
+      "There is still much and more to be done, but we can finally see a way forward\u2500and we owe it all to you, \u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003CIf(LessThan(PlayerParameter(54),127))\u003E\u003CHead\u003E\u003CIf(GreaterThan(PlayerParameter(52),0))\u003E\u003Csheet(GCRankLimsaMaleText,PlayerParameter(52),8)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(PlayerParameter(53),0))\u003E\u003Csheet(GCRankGridaniaMaleText,PlayerParameter(53),8)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(PlayerParameter(54),0))\u003E\u003Csheet(GCRankUldahMaleText,PlayerParameter(54),8)\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/Head\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E\u003CElse/\u003E\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C/If\u003E\u003CElse/\u003E\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C/If\u003E.",
       "0"
     ],
     "Unknown0": 0,
@@ -19445,7 +19445,7 @@
     ],
     "Text": [
       "I \u003CItalic\u003E1\u003C/Italic\u003Eknew\u003CItalic\u003E0\u003C/Italic\u003E it could not be true! In my heart of hearts, I knew that Her Grace was still alive!",
-      "It must come as a great comfort to you as well, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, to be able to come and go as you please once more.",
+      "It must come as a great comfort to you as well, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, to be able to come and go as you please once more.",
       "0"
     ],
     "Unknown0": 0,

@@ -1384,7 +1384,7 @@
       }
     ],
     "Text": [
-      "Du fragst dich sicher, warum ich hier in voller Montur unt\u00E4tig herumstehe. Nun, wenn du es wissen willst: Ich hoffe, \u003CIf(gnum4)\u003Eeine mutige Abenteurerin\u003CElse/\u003Eeinen mutigen Abenteurer\u003C/If\u003E zu finden, \u003CIf(gnum4)\u003Edie\u003CElse/\u003Eder\u003C/If\u003E den Parkour auf spektakul\u00E4re Art und Weise meistern kann.",
+      "Du fragst dich sicher, warum ich hier in voller Montur unt\u00E4tig herumstehe. Nun, wenn du es wissen willst: Ich hoffe, \u003CIf(PlayerParameter(4))\u003Eeine mutige Abenteurerin\u003CElse/\u003Eeinen mutigen Abenteurer\u003C/If\u003E zu finden, \u003CIf(PlayerParameter(4))\u003Edie\u003CElse/\u003Eder\u003C/If\u003E den Parkour auf spektakul\u00E4re Art und Weise meistern kann.",
       "Ha, mir kannst du nichts vormachen! Du bist den Amateuren, die ich hier sehe, weit voraus. Warum forderst du dich nicht selbst heraus und versuchst, die H\u00E4lfte des Kurses blind zu schaffen?",
       "0"
     ],
@@ -1423,7 +1423,7 @@
       }
     ],
     "Text": [
-      "Ich bin auf der Suche nach \u003CIf(gnum4)\u003Eeiner wagemutigen Abenteurerin\u003CElse/\u003Eeinem wagemutigen Abenteurer\u003C/If\u003E, \u003CIf(gnum4)\u003Edie\u003CElse/\u003Eder\u003C/If\u003E diesen Parkour mit links absolvieren kann.",
+      "Ich bin auf der Suche nach \u003CIf(PlayerParameter(4))\u003Eeiner wagemutigen Abenteurerin\u003CElse/\u003Eeinem wagemutigen Abenteurer\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Edie\u003CElse/\u003Eder\u003C/If\u003E diesen Parkour mit links absolvieren kann.",
       "Du siehst aus wie jemand, der kein Risiko scheut! Na, wie w\u00E4re es\u003C\u003Cnbsp\u003E\u003E... Wagst du es, den Parkour blind zu absolvieren?",
       "0"
     ],
@@ -1657,7 +1657,7 @@
       }
     ],
     "Text": [
-      "Wundersch\u00F6nen guten \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Abend,Morgen)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Tag,Abend)\u003E\u003C/If\u003E, \u003CIf(gnum4)\u003Emeine Liebe\u003CElse/\u003Emein Lieber\u003C/If\u003E! Ich nehme an, du bist wegen den besten Tacos in ganz Tuliyollal hier? Nur keine falsche Scheu!",
+      "Wundersch\u00F6nen guten \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003EAbend\u003CElse/\u003EMorgen\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003ETag\u003CElse/\u003EAbend\u003C/If\u003E\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emeine Liebe\u003CElse/\u003Emein Lieber\u003C/If\u003E! Ich nehme an, du bist wegen den besten Tacos in ganz Tuliyollal hier? Nur keine falsche Scheu!",
       "0",
       "0"
     ],
@@ -5824,7 +5824,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, ich w\u00FCnsche mir inbr\u00FCnstig, dass du der Krone auch weiterhin dienen wirst.",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, ich w\u00FCnsche mir inbr\u00FCnstig, dass du der Krone auch weiterhin dienen wirst.",
       "0",
       "0"
     ],
@@ -5863,7 +5863,7 @@
       }
     ],
     "Text": [
-      "Ich freue mich, dich zu sehen, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Leider ist der Sonnensitz derzeit nicht zug\u00E4nglich.",
+      "Ich freue mich, dich zu sehen, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Leider ist der Sonnensitz derzeit nicht zug\u00E4nglich.",
       "0",
       "0"
     ],
@@ -6952,7 +6952,7 @@
       }
     ],
     "Text": [
-      "Uhhh! Da bist du ja wieder, \u003CIf(gnum4)\u003Emeine S\u00FC\u00DFe\u003CElse/\u003Emein S\u00FC\u00DFer\u003C/If\u003E. Warst du auch sch\u00F6n brav in der Zwischenzeit und hast dich von anderen Bars ferngehalten? Vergiss nicht: der Neonhumpen \u003CItalic\u003E1\u003C/Italic\u003Ek\u00FCmmert\u003CItalic\u003E0\u003C/Italic\u003E sich um seine liebsten Kunden, hihi!",
+      "Uhhh! Da bist du ja wieder, \u003CIf(PlayerParameter(4))\u003Emeine S\u00FC\u00DFe\u003CElse/\u003Emein S\u00FC\u00DFer\u003C/If\u003E. Warst du auch sch\u00F6n brav in der Zwischenzeit und hast dich von anderen Bars ferngehalten? Vergiss nicht: der Neonhumpen \u003CItalic\u003E1\u003C/Italic\u003Ek\u00FCmmert\u003CItalic\u003E0\u003C/Italic\u003E sich um seine liebsten Kunden, hihi!",
       "0",
       "0"
     ],
@@ -7303,7 +7303,7 @@
       }
     ],
     "Text": [
-      "Hast du jetzt verstanden, wie die Regulatoren so funktionieren? Mach dir nichts draus, falls dir noch der Kopf schwirrt. Da bist du nicht \u003CIf(gnum4)\u003Edie\u003CElse/\u003Eder\u003C/If\u003E Einzige!",
+      "Hast du jetzt verstanden, wie die Regulatoren so funktionieren? Mach dir nichts draus, falls dir noch der Kopf schwirrt. Da bist du nicht \u003CIf(PlayerParameter(4))\u003Edie\u003CElse/\u003Eder\u003C/If\u003E Einzige!",
       "0",
       "0"
     ],
@@ -7885,7 +7885,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Bist du etwa hergekommen, um uns zu besuchen?",
+      "Ah, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Bist du etwa hergekommen, um uns zu besuchen?",
       "0",
       "0"
     ],
@@ -8419,7 +8419,7 @@
       }
     ],
     "Text": [
-      "Oh, hallo, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Ich hoffe, du erfreust dich an den Feierlichkeiten. Mach das Beste draus, solange sie noch anhalten!",
+      "Oh, hallo, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Ich hoffe, du erfreust dich an den Feierlichkeiten. Mach das Beste draus, solange sie noch anhalten!",
       "0",
       "0"
     ],
@@ -9314,7 +9314,7 @@
     ],
     "Text": [
       "Offiziell vom Fl\u00FCgel der Besinnung anerkannt worden zu sein, ist zwar wunderbar, aber\u003C\u003Cnbsp\u003E\u003E... Es freut mich viel mehr, dass sie Frau Rasafbaht gefallen hat! Die F\u00FChrung, meine ich.",
-      "Versteh mich aber nicht falsch, die Unterst\u00FCtzung des Fl\u00FCgels ist ebenfalls ein riesiger Schritt f\u00FCr uns, ja ja! Sie ist die Frucht all unserer Anstrengungen, inklusive deiner, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!",
+      "Versteh mich aber nicht falsch, die Unterst\u00FCtzung des Fl\u00FCgels ist ebenfalls ein riesiger Schritt f\u00FCr uns, ja ja! Sie ist die Frucht all unserer Anstrengungen, inklusive deiner, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -9352,7 +9352,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, ich kann dir nicht genug danken, mich beim Aufbau der Reiseagentur unterst\u00FCtzt zu haben!",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, ich kann dir nicht genug danken, mich beim Aufbau der Reiseagentur unterst\u00FCtzt zu haben!",
       "Mir ist bewusst, dass es noch unz\u00E4hlige gibt. Unz\u00E4hlige Orte, die du erkunden willst, meine ich. Hier festhalten werde ich dich also nicht, aber sei versichert, dass deine Hilfe jederzeit gerne gesehen ist, ja ja!",
       "0"
     ],
@@ -9431,7 +9431,7 @@
     ],
     "Text": [
       "Dank all deiner Hilfe ist sie jetzt endlich er\u00F6ffnet! Die Reiseagentur Tural, meine ich. Nat\u00FCrlich m\u00FCssen wir uns damit auch auf neue Aufgaben einstellen, da wir nun direkt mit G\u00E4sten arbeiten werden.",
-      "Mit anderen Worten, jetzt geht es erst richtig los, ja ja! Ich z\u00E4hle auch weiterhin auf deine Unterst\u00FCtzung, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!",
+      "Mit anderen Worten, jetzt geht es erst richtig los, ja ja! Ich z\u00E4hle auch weiterhin auf deine Unterst\u00FCtzung, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!",
       "0"
     ],
     "Unknown0": 0,
@@ -9625,7 +9625,7 @@
       }
     ],
     "Text": [
-      "Oh, \u003CIf(gnum4)\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E! Seid Ihr hergekommen, um nach den Punutiy zu sehen? Keine Sorge, es geht ihnen pr\u00E4chtig wie nie!",
+      "Oh, \u003CIf(PlayerParameter(4))\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E! Seid Ihr hergekommen, um nach den Punutiy zu sehen? Keine Sorge, es geht ihnen pr\u00E4chtig wie nie!",
       "0",
       "0"
     ],
@@ -9703,7 +9703,7 @@
       }
     ],
     "Text": [
-      "Es freut mich, Euch zu sehen, \u003CIf(gnum4)\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E! Die Punutiy sind ebenfalls in bester Stimmung. Scheinbar gef\u00E4llt es ihnen sehr, wenn sie von den Besuchern gestreichelt werden.",
+      "Es freut mich, Euch zu sehen, \u003CIf(PlayerParameter(4))\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E! Die Punutiy sind ebenfalls in bester Stimmung. Scheinbar gef\u00E4llt es ihnen sehr, wenn sie von den Besuchern gestreichelt werden.",
       "0",
       "0"
     ],
@@ -9742,7 +9742,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003CIf(gnum4)\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E, willkommen! Unsere Punutiy scheinen Euch ebenfalls vermisst zu haben.",
+      "Ah, \u003CIf(PlayerParameter(4))\u003EFrau Sonderbeauftragte\u003CElse/\u003EHerr Sonderbeauftragter\u003C/If\u003E, willkommen! Unsere Punutiy scheinen Euch ebenfalls vermisst zu haben.",
       "Egal, ob ihr Yubli aushelft oder einfach nur in der N\u00E4he seid, es freut mich jedes Mal sehr, Euch hier begr\u00FC\u00DFen zu d\u00FCrfen!",
       "0"
     ],
@@ -9781,7 +9781,7 @@
       }
     ],
     "Text": [
-      "Es freut mich, Eure Bekanntschaft zu machen, \u003CIf(gnum4)\u003Ewerte Frau Sonderbeauftragte\u003CElse/\u003Ewerter Herr Sonderbeauftragter\u003C/If\u003E, ja ja! Mein Name ist Pavli, und ich bin f\u00FCr den Verkauf verschiedener Waren zust\u00E4ndlich.",
+      "Es freut mich, Eure Bekanntschaft zu machen, \u003CIf(PlayerParameter(4))\u003Ewerte Frau Sonderbeauftragte\u003CElse/\u003Ewerter Herr Sonderbeauftragter\u003C/If\u003E, ja ja! Mein Name ist Pavli, und ich bin f\u00FCr den Verkauf verschiedener Waren zust\u00E4ndlich.",
       "Sie hat mich beauftragt, Euch exklusive Produkte im Tausch gegen Fl\u00FCgelm\u00FCnzen bereitzustellen. Gr\u00FCnderin Liplu, meine ich. Scheut Euch also nicht, bei Bedarf jederzeit vorbeizukommen!",
       "0"
     ],
@@ -9820,7 +9820,7 @@
       }
     ],
     "Text": [
-      "He, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Bist du hier, um sie zu begutachten? Meine neuen Waren, meine ich.",
+      "He, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Bist du hier, um sie zu begutachten? Meine neuen Waren, meine ich.",
       "Jetzt, da sie er\u00F6ffnet wurde, also die Reiseagentur, kommt auch der Verkauf mit Souvenirs langsam in Fahrt. Am beliebtesten sind die aus Schilf gefertigten Handarbeiten der Hanuhanu. Dar\u00FCber werden sich die Handwerker bestimmt auch freuen, sobald sie es erfahren, ja ja!",
       "0"
     ],
@@ -9937,7 +9937,7 @@
       }
     ],
     "Text": [
-      "Du \u00FCberraschst mich immer wieder auf ein Neues, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Ihr habt einem Staatsgast eine F\u00FChrung geben d\u00FCrfen, nicht wahr?",
+      "Du \u00FCberraschst mich immer wieder auf ein Neues, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Ihr habt einem Staatsgast eine F\u00FChrung geben d\u00FCrfen, nicht wahr?",
       "Es kam noch nie vor, also in der Geschichte dieses Landes, dass ein privates Unternehmen von einer Regierungseinrichtung um so etwas gebeten wurde! Ich k\u00F6nnte nicht stolzer darauf sein, hier arbeiten zu d\u00FCrfen, ja ja!",
       "0"
     ],
@@ -9976,7 +9976,7 @@
       }
     ],
     "Text": [
-      "Oh, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Ich sehe, du greifst der Reiseagentur Tural nach wie vor unter die Arme?",
+      "Oh, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Ich sehe, du greifst der Reiseagentur Tural nach wie vor unter die Arme?",
       "Beim Verkauf der Souvenirs kann ich mich ebenfalls nicht beklagen. Wir f\u00FChren einen sehr ertragreichen Handel, sowohl f\u00FCr unsere Besucher, die Handwerker und nat\u00FCrlich auch die Agentur selbst, ja ja!",
       "Mit anderen Worten, die gesamte Region profitiert davon! Deine Arbeit bleibt also mitnichten unbemerkt, ja ja! Wir sind dir wirklich \u00FCberaus dankbar!"
     ],
@@ -10015,7 +10015,7 @@
       }
     ],
     "Text": [
-      "Hall\u00F6chen, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Ich hei\u00DFe Shiplu und mein Fachgebiet sind Ausr\u00FCstungsgegenst\u00E4nde aller Art!",
+      "Hall\u00F6chen, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Ich hei\u00DFe Shiplu und mein Fachgebiet sind Ausr\u00FCstungsgegenst\u00E4nde aller Art!",
       "Sei es eine abgestumpfte Klinge oder eine komplett zerst\u00F6rte R\u00FCstung, ich lasse alles wieder in nigelnagelneuem Glanz erstrahlen, ja ja! Umsonst kann ich meine Dienste allerdings nicht anbieten\u003C\u003Cnbsp\u003E\u003E...",
       "0"
     ],
@@ -10210,7 +10210,7 @@
       }
     ],
     "Text": [
-      "Sch\u00F6n, dich zu sehen, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Einmal Rundumreparatur, ja? Du opferst immer so viel f\u00FCr uns, also von deiner Zeit, da werde ich mich ebenfalls ins Zeug legen, ja ja! Dauert nur einen kurzen Moment!",
+      "Sch\u00F6n, dich zu sehen, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Einmal Rundumreparatur, ja? Du opferst immer so viel f\u00FCr uns, also von deiner Zeit, da werde ich mich ebenfalls ins Zeug legen, ja ja! Dauert nur einen kurzen Moment!",
       "0",
       "0"
     ],
@@ -10558,7 +10558,7 @@
       }
     ],
     "Text": [
-      "Wie gut, dass wir die Feierlichkeiten noch einmal herumrei\u00DFen konnten. Alles dank deiner Hilfe, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!",
+      "Wie gut, dass wir die Feierlichkeiten noch einmal herumrei\u00DFen konnten. Alles dank deiner Hilfe, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!",
       "0",
       "0"
     ],
@@ -10597,7 +10597,7 @@
       }
     ],
     "Text": [
-      "Ich hatte so viel Spa\u00DF an unserem kleinen Bastelausflug. Danke daf\u00FCr, \u003CIf(gnum4)\u003Eliebe Abenteurerin\u003CElse/\u003Elieber Abenteurer\u003C/If\u003E!",
+      "Ich hatte so viel Spa\u00DF an unserem kleinen Bastelausflug. Danke daf\u00FCr, \u003CIf(PlayerParameter(4))\u003Eliebe Abenteurerin\u003CElse/\u003Elieber Abenteurer\u003C/If\u003E!",
       "0",
       "0"
     ],
@@ -12329,7 +12329,7 @@
     ],
     "Text": [
       "Seiner Hoheit Koana hingen unglaublich viele verschiedene Ger\u00FCche an. Sicherlich streift er unerm\u00FCdlich durch die Lande und nimmt sich den Problemen der Bev\u00F6lkerung an\u003C\u003Cnbsp\u003E\u003E- \u00E4hnlich wie wir es mit den Rroneek machen.",
-      "Und du, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E... Auch dir h\u00E4ngen nun weitaus mehr Ger\u00FCche an als noch bei unserer ersten Begegnung. ",
+      "Und du, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E... Auch dir h\u00E4ngen nun weitaus mehr Ger\u00FCche an als noch bei unserer ersten Begegnung. ",
       "0"
     ],
     "Unknown0": 0,

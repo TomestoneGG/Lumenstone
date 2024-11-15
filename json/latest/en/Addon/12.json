@@ -213,7 +213,7 @@
   },
   {
     "RowId": 6269,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6270,
@@ -377,7 +377,7 @@
   },
   {
     "RowId": 6312,
-    "Text": "You are about to construct \u003CIf([lnum1==262163])\u003Ean \u003CElse/\u003E\u003Cif([lnum1==262164],an ,\u003Cif([lnum1==262165],an ,\u003Cif([lnum1==262166],an ,\u003Cif([lnum1==262167],an ,\u003Cif([lnum1==262168],an ,\u003Cif([lnum1==262169],an ,\u003Cif([lnum1==262170],an ,\u003Cif([lnum1==262171],an ,a )\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\u003Csheet(HousingPreset,lnum1,0)\u003E. Are you certain you wish to proceed?"
+    "Text": "You are about to construct \u003CIf(Equal(IntegerParameter(1),262163))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262164))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262165))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262166))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262167))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262168))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262169))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262170))\u003Ean \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),262171))\u003Ean \u003CElse/\u003Ea \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003Csheet(HousingPreset,IntegerParameter(1),0)\u003E. Are you certain you wish to proceed?"
   },
   {
     "RowId": 6313,
@@ -421,7 +421,7 @@
   },
   {
     "RowId": 6323,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6324,
@@ -497,7 +497,7 @@
   },
   {
     "RowId": 6342,
-    "Text": "\u003Cswitch(lnum1,Ground,Second)\u003E Floor "
+    "Text": "\u003Cswitch(IntegerParameter(1),Ground,Second)\u003E Floor "
   },
   {
     "RowId": 6343,
@@ -545,7 +545,7 @@
   },
   {
     "RowId": 6355,
-    "Text": "Travel to \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E?"
+    "Text": "Travel to \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E?"
   },
   {
     "RowId": 6357,
@@ -557,11 +557,11 @@
   },
   {
     "RowId": 6359,
-    "Text": "\u003CSec\u003Elnum1\u003C/Sec\u003E \u003Cswitch(lnum2,\uE083\u003Ccolortype(5)\u003E\uE07D\uE07C\u003Ccolortype(0)\u003E,\u003Ccolortype(5)\u003E\uE083\u003Ccolortype(0)\u003E\uE07D\u003Ccolortype(5)\u003E\uE07C\u003Ccolortype(0)\u003E,\u003Ccolortype(5)\u003E\uE083\uE07D\u003Ccolortype(0)\u003E\uE07C)\u003E"
+    "Text": "\u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E \u003Cswitch(IntegerParameter(2),\uE083\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE07D\uE07C\u003C/span\u003E,\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE083\u003C/span\u003E\uE07D\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE07C\u003C/span\u003E,\u003Cspan style=\u0022color: #646464;\u0022\u003E\uE083\uE07D\u003C/span\u003E\uE07C)\u003E"
   },
   {
     "RowId": 6360,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E Gil"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E Gil"
   },
   {
     "RowId": 6361,
@@ -573,11 +573,11 @@
   },
   {
     "RowId": 6363,
-    "Text": "\u003CIf([lnum1\u003C4])\u003E\u003Cswitch(lnum1,1st,2nd,3rd)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003Eth\u003C/If\u003E Ward"
+    "Text": "\u003CIf(LessThan(IntegerParameter(1),4))\u003E\u003Cswitch(IntegerParameter(1),1st,2nd,3rd)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eth\u003C/If\u003E Ward"
   },
   {
     "RowId": 6364,
-    "Text": "\u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E"
+    "Text": "\u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6365,
@@ -625,15 +625,15 @@
   },
   {
     "RowId": 6377,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E Gil"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E Gil"
   },
   {
     "RowId": 6378,
-    "Text": "Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E "
+    "Text": "Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E "
   },
   {
     "RowId": 6379,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E:\u003CSec\u003Elnum3\u003C/Sec\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E:\u003CSec\u003EIntegerParameter(3)\u003C/Sec\u003E"
   },
   {
     "RowId": 6380,
@@ -661,11 +661,11 @@
   },
   {
     "RowId": 6386,
-    "Text": "Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E (\u003Cswitch(lnum4,Small,Medium,Large)\u003E)"
+    "Text": "Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E (\u003Cswitch(IntegerParameter(4),Small,Medium,Large)\u003E)"
   },
   {
     "RowId": 6387,
-    "Text": " \u00AB\u003CString\u003Elstr1\u003C/String\u003E\u00BB"
+    "Text": " \u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
   },
   {
     "RowId": 6388,
@@ -693,7 +693,7 @@
   },
   {
     "RowId": 6394,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6395,
@@ -769,15 +769,15 @@
   },
   {
     "RowId": 6413,
-    "Text": "Prepare the bed with \u003Cennoun(Item,1,lnum1,1,1)\u003E and \u003Cennoun(Item,1,lnum2,1,1)\u003E?"
+    "Text": "Prepare the bed with \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E and \u003Cennoun(Item,1,IntegerParameter(2),1,1)\u003E?"
   },
   {
     "RowId": 6414,
-    "Text": "\u003CHead\u003E\u003Csheet(Item,lnum1,9)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 6415,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6416,
@@ -797,7 +797,7 @@
   },
   {
     "RowId": 6420,
-    "Text": "\u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Bed, \u003COrdinal\u003Elnum1\u003C/Ordinal\u003E Patch"
+    "Text": "\u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Bed, \u003COrdinal\u003EIntegerParameter(1)\u003C/Ordinal\u003E Patch"
   },
   {
     "RowId": 6421,
@@ -821,7 +821,7 @@
   },
   {
     "RowId": 6426,
-    "Text": "Confirm purchase and relocate to this free company plot?\n\u203BIn principle, approximately 15% of the value of your old plot will be refunded to you. Please note that the refunded amount may not exceed the value of this new plot.\nExpected refund: \u003Ckilo(lnum1,\\,)\u003E gil"
+    "Text": "Confirm purchase and relocate to this free company plot?\n\u203BIn principle, approximately 15% of the value of your old plot will be refunded to you. Please note that the refunded amount may not exceed the value of this new plot.\nExpected refund: \u003Ckilo(IntegerParameter(1),,)\u003E gil"
   },
   {
     "RowId": 6427,
@@ -829,7 +829,7 @@
   },
   {
     "RowId": 6428,
-    "Text": "Confirm purchase and relocate to this private plot?\n\u203BIn principle, approximately 15% of the value of your old plot will be refunded to you. Please note that the refunded amount may not exceed the value of this new plot.\nExpected refund: \u003Ckilo(lnum1,\\,)\u003E gil"
+    "Text": "Confirm purchase and relocate to this private plot?\n\u203BIn principle, approximately 15% of the value of your old plot will be refunded to you. Please note that the refunded amount may not exceed the value of this new plot.\nExpected refund: \u003Ckilo(IntegerParameter(1),,)\u003E gil"
   },
   {
     "RowId": 6429,
@@ -837,7 +837,7 @@
   },
   {
     "RowId": 6430,
-    "Text": "Once used, the permit cannot be retrieved. Are you certain you wish to hire \u003Cennoun(ENpcResident,1,lnum1,1,1)\u003E?"
+    "Text": "Once used, the permit cannot be retrieved. Are you certain you wish to hire \u003Cennoun(ENpcResident,1,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6432,
@@ -921,7 +921,7 @@
   },
   {
     "RowId": 6453,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E, Rooms #\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E, Rooms #\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6454,
@@ -945,7 +945,7 @@
   },
   {
     "RowId": 6459,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E-\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E-\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6460,
@@ -953,7 +953,7 @@
   },
   {
     "RowId": 6461,
-    "Text": "Enter \u003CIf([gstr1==gstr3])\u003Eyour\u003CElse/\u003E\u003Cif([gstr1==gstr3],\u003Cif(gnum8,\u003Cennoun(ObjStr,2,gnum8,1,1)\u003E,you)\u003E,\u003Cif(gnum8,\u003Cennoun(ObjStr,2,gnum8,1,1)\u003E,gstr3)\u003E)\u003E\u0027s\u003C/If\u003E room?"
+    "Text": "Enter \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Eyour\u003CElse/\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003Eyou\u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u0027s\u003C/If\u003E room?"
   },
   {
     "RowId": 6462,
@@ -1025,7 +1025,7 @@
   },
   {
     "RowId": 6479,
-    "Text": "Room #\u003CNum\u003Elnum4\u003C/Num\u003E, Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E "
+    "Text": "Room #\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E, Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E "
   },
   {
     "RowId": 6480,
@@ -1049,11 +1049,11 @@
   },
   {
     "RowId": 6485,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6486,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6487,
@@ -1101,7 +1101,7 @@
   },
   {
     "RowId": 6498,
-    "Text": "In \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Em\u003CElse/\u003Eless than 1m\u003C/If\u003E"
+    "Text": "In \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em\u003CElse/\u003Eless than 1m\u003C/If\u003E"
   },
   {
     "RowId": 6499,
@@ -1145,7 +1145,7 @@
   },
   {
     "RowId": 6509,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E-\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E-\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6510,
@@ -1241,11 +1241,11 @@
   },
   {
     "RowId": 6533,
-    "Text": "Purchase this plot of land for \u003Ckilo(lnum1,\\,)\u003E gil?"
+    "Text": "Purchase this plot of land for \u003Ckilo(IntegerParameter(1),,)\u003E gil?"
   },
   {
     "RowId": 6534,
-    "Text": "Purchase this plot of land for \u003Ckilo(lnum1,\\,)\u003E gil?"
+    "Text": "Purchase this plot of land for \u003Ckilo(IntegerParameter(1),,)\u003E gil?"
   },
   {
     "RowId": 6535,
@@ -1257,7 +1257,7 @@
   },
   {
     "RowId": 6537,
-    "Text": "\u00AB\u003CString\u003Elstr1\u003C/String\u003E\u00BB"
+    "Text": "\u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
   },
   {
     "RowId": 6538,
@@ -1273,11 +1273,11 @@
   },
   {
     "RowId": 6541,
-    "Text": "Travel to \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E?"
+    "Text": "Travel to \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E?"
   },
   {
     "RowId": 6542,
-    "Text": "Travel to \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E?"
+    "Text": "Travel to \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E?"
   },
   {
     "RowId": 6543,
@@ -1289,15 +1289,15 @@
   },
   {
     "RowId": 6545,
-    "Text": "Plumage change possible in \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,less than one minute)\u003E\u003C/If\u003E."
+    "Text": "Plumage change possible in \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003Eless than one minute\u003C/If\u003E\u003C/If\u003E."
   },
   {
     "RowId": 6546,
-    "Text": "Train (ready in \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Em\u003CElse/\u003Eless than 1m\u003C/If\u003E)"
+    "Text": "Train (ready in \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em\u003CElse/\u003Eless than 1m\u003C/If\u003E)"
   },
   {
     "RowId": 6547,
-    "Text": "\u003CHead\u003E\u003Cif(gnum8,\u003Csheet(ObjStr,gnum8,0)\u003E,gstr3)\u003E\u003C/Head\u003E\u0027s rank has yet to reach the current cap or is already at the maximum. To raise a chocobo\u0027s rank, it must earn EXP in the field. Feeding your companion \u003Cennoun(Item,1,lnum1,1,1)\u003E will not raise its rank cap.\nProceed anyway?"
+    "Text": "\u003CHead\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Head\u003E\u0027s rank has yet to reach the current cap or is already at the maximum. To raise a chocobo\u0027s rank, it must earn EXP in the field. Feeding your companion \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E will not raise its rank cap.\nProceed anyway?"
   },
   {
     "RowId": 6548,
@@ -1329,7 +1329,7 @@
   },
   {
     "RowId": 6555,
-    "Text": "\u003CHead\u003E\u003Cif(gnum8,\u003Csheet(ObjStr,gnum8,0)\u003E,gstr3)\u003E\u003C/Head\u003E\u0027s rank has reached the maximum. Feeding your companion \u003Cennoun(Item,1,lnum2,1,1)\u003E will not raise its rank further.\nProceed anyway?"
+    "Text": "\u003CHead\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/Head\u003E\u0027s rank has reached the maximum. Feeding your companion \u003Cennoun(Item,1,IntegerParameter(2),1,1)\u003E will not raise its rank further.\nProceed anyway?"
   },
   {
     "RowId": 6556,
@@ -1365,7 +1365,7 @@
   },
   {
     "RowId": 6564,
-    "Text": "\u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E"
+    "Text": "\u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E"
   },
   {
     "RowId": 6565,
@@ -1373,7 +1373,7 @@
   },
   {
     "RowId": 6566,
-    "Text": "EXP: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "EXP: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6567,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 6574,
-    "Text": "\u003CIf([lnum1\u003Elnum2])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003Cnum(lnum1)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/span\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6575,
@@ -1449,7 +1449,7 @@
   },
   {
     "RowId": 6585,
-    "Text": "Use the components selected and \u003CIf([lnum1==1])\u003Ethe following item\u003CElse/\u003E\u003Cnum(lnum1)\u003E of the following items\u003C/If\u003E to outfit and register your airship?"
+    "Text": "Use the components selected and \u003CIf(Equal(IntegerParameter(1),1))\u003Ethe following item\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of the following items\u003C/If\u003E to outfit and register your airship?"
   },
   {
     "RowId": 6586,
@@ -1457,7 +1457,7 @@
   },
   {
     "RowId": 6587,
-    "Text": "Use \u003CIf([lnum4==1])\u003Eyour last \u003Cennoun(Item,3,lnum2,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum3)\u003E of your \u003Cnum(lnum4)\u003E \u003Cennoun(Item,3,lnum2,2,1)\u003E\u003C/If\u003E to repair your vessel\u0027s \u003Cennoun(Item,3,lnum1,1,1)\u003E?"
+    "Text": "Use \u003CIf(Equal(IntegerParameter(4),1))\u003Eyour last \u003Cennoun(Item,3,IntegerParameter(2),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E of your \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(2),2,1)\u003E\u003C/If\u003E to repair your vessel\u0027s \u003Cennoun(Item,3,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6588,
@@ -1501,7 +1501,7 @@
   },
   {
     "RowId": 6598,
-    "Text": "\u25A0\u003CIf([lnum1==0])\u003E \u003CElse/\u003E\u003Cdigit(lnum1,2)\u003Eh\u003C/If\u003E \u003Cdigit(lnum2,2)\u003Em elapsed\u3000\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013"
+    "Text": "\u25A0\u003CIf(Equal(IntegerParameter(1),0))\u003E \u003CElse/\u003E\u003Cdigit(IntegerParameter(1),2)\u003Eh\u003C/If\u003E \u003Cdigit(IntegerParameter(2),2)\u003Em elapsed\u3000\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013\u2013"
   },
   {
     "RowId": 6600,
@@ -1537,15 +1537,15 @@
   },
   {
     "RowId": 6608,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6609,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003Ed\\,\u003CElse/\u003E \u003C/If\u003E \u003CSec\u003Elnum1\u003C/Sec\u003Eh, \u003CSec\u003Elnum2\u003C/Sec\u003Em"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Ed,\u003CElse/\u003E \u003C/If\u003E \u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003Eh, \u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003Em"
   },
   {
     "RowId": 6610,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6611,
@@ -1553,7 +1553,7 @@
   },
   {
     "RowId": 6612,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6613,
@@ -1561,11 +1561,11 @@
   },
   {
     "RowId": 6614,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6615,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6616,
@@ -1585,7 +1585,7 @@
   },
   {
     "RowId": 6620,
-    "Text": "Use \u003Cennoun(Item,1,lnum4,1,1)\u003E to redeploy your vessel on the same course as its last voyage?"
+    "Text": "Use \u003Cennoun(Item,1,IntegerParameter(4),1,1)\u003E to redeploy your vessel on the same course as its last voyage?"
   },
   {
     "RowId": 6621,
@@ -1617,7 +1617,7 @@
   },
   {
     "RowId": 6628,
-    "Text": "Phase: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Phase: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6629,
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 6635,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6636,
@@ -1653,7 +1653,7 @@
   },
   {
     "RowId": 6637,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6638,
@@ -1661,7 +1661,7 @@
   },
   {
     "RowId": 6639,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6640,
@@ -1681,7 +1681,7 @@
   },
   {
     "RowId": 6644,
-    "Text": "\u003Ckilo(lnum1,\\,)\u003E\u003CIf([lnum3\u003E0])\u003E/\uE03C \u003Ckilo(lnum2,\\,)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E/\uE03C \u003Ckilo(IntegerParameter(2),,)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6645,
@@ -1697,7 +1697,7 @@
   },
   {
     "RowId": 6648,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6650,
@@ -1709,7 +1709,7 @@
   },
   {
     "RowId": 6652,
-    "Text": "Contribute \u003CIf([lnum2==1])\u003E\u003Cennoun(Item,1,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,2,1)\u003E\u003C/If\u003E to the company project?"
+    "Text": "Contribute \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E\u003C/If\u003E to the company project?"
   },
   {
     "RowId": 6656,
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 6669,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E:\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 6670,
@@ -1789,15 +1789,15 @@
   },
   {
     "RowId": 6675,
-    "Text": "\u003Cswitch(lnum1,SS,S,A,B,C)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),SS,S,A,B,C)\u003E"
   },
   {
     "RowId": 6676,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 6677,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003E \u003Cif([lnum3==1],day,days)\u003E\u003Cif([lnum1\u003E0],\\, \u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],hour,hours)\u003E,)\u003E\u003Cif([lnum2\u003E0],\u003Cif([lnum1\u003E0],\\,,)\u003E and \u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],minute,minutes)\u003E, and less than 1 minute)\u003E\u003CElse/\u003E\u003Cif([lnum1\u003E0],\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],hour,hours)\u003E,)\u003E\u003Cif([lnum2\u003E0],\u003Cif([lnum1\u003E0], and ,)\u003E\u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],minute,minutes)\u003E,\u003Cif([lnum1\u003E0], and ,)\u003E \u003Cif([lnum1\u003E0],less than 1 minute,Less than 1 minute)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E, \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E,\u003CElse/\u003E \u003C/If\u003E and \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E and less than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eless than 1 minute\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6678,
@@ -1889,11 +1889,11 @@
   },
   {
     "RowId": 6700,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(CompanyCraftDraft,lnum1,0)\u003E\u003C/HeadAll\u003E"
+    "Text": "\u003CHeadAll\u003E\u003Csheet(CompanyCraftDraft,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E"
   },
   {
     "RowId": 6701,
-    "Text": "Craft \u003Cennoun(Item,1,lnum1,1,1)\u003E?"
+    "Text": "Craft \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E?"
   },
   {
     "RowId": 6702,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 6705,
-    "Text": "Adjust Lighting (Current: \u003CNum\u003Elnum1\u003C/Num\u003E)"
+    "Text": "Adjust Lighting (Current: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)"
   },
   {
     "RowId": 6706,
@@ -1917,7 +1917,7 @@
   },
   {
     "RowId": 6707,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6708,
@@ -1941,15 +1941,15 @@
   },
   {
     "RowId": 6713,
-    "Text": "Travel to \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E?"
+    "Text": "Travel to \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E?"
   },
   {
     "RowId": 6714,
-    "Text": "Private Residence Relocation (Plot \u003CNum\u003Elnum3\u003C/Num\u003E, Ward \u003CNum\u003Elnum2\u003C/Num\u003E, \u003Cennoun(PlaceName,2,lnum1,2,1)\u003E)."
+    "Text": "Private Residence Relocation (Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, Ward \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E, \u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E)."
   },
   {
     "RowId": 6715,
-    "Text": "Free Company Estate Relocation (Plot \u003CNum\u003Elnum3\u003C/Num\u003E, Ward \u003CNum\u003Elnum2\u003C/Num\u003E, \u003Cennoun(PlaceName,2,lnum1,2,1)\u003E)."
+    "Text": "Free Company Estate Relocation (Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, Ward \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E, \u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E)."
   },
   {
     "RowId": 6716,
@@ -1973,7 +1973,7 @@
   },
   {
     "RowId": 6721,
-    "Text": "Evict \u003CString\u003Elstr1\u003C/String\u003E from the estate?\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BThe evicted party will no longer be able to access certain estate features.\u003C/span\u003E"
+    "Text": "Evict \u003CString\u003EStringParameter(1)\u003C/String\u003E from the estate?\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BThe evicted party will no longer be able to access certain estate features.\u003C/span\u003E"
   },
   {
     "RowId": 6722,
@@ -1981,15 +1981,15 @@
   },
   {
     "RowId": 6723,
-    "Text": "Welcome \u003CString\u003Elstr1\u003C/String\u003E to the shared estate?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAuthorizations are updated upon closing window.\u003C/span\u003E"
+    "Text": "Welcome \u003CString\u003EStringParameter(1)\u003C/String\u003E to the shared estate?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAuthorizations are updated upon closing window.\u003C/span\u003E"
   },
   {
     "RowId": 6724,
-    "Text": "Shared Estate (Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E)"
+    "Text": "Shared Estate (Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E)"
   },
   {
     "RowId": 6725,
-    "Text": "Shared Estate (Plot \u003CNum\u003Elnum3\u003C/Num\u003E, \u003COrdinal\u003Elnum2\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,lnum1,0)\u003E)"
+    "Text": "Shared Estate (Plot \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E, \u003COrdinal\u003EIntegerParameter(2)\u003C/Ordinal\u003E Ward, \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E)"
   },
   {
     "RowId": 6726,

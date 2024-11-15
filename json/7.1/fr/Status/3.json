@@ -8409,7 +8409,7 @@
   {
     "RowId": 1191,
     "Name": "Rempart",
-    "Description": "Les d\u00E9g\u00E2ts re\u00E7us sont r\u00E9duits\u003CIf([gnum72\u003E=94])\u003E\u003Cif([gnum68==1], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,\u003Cif([gnum68==19], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,\u003Cif([gnum68==3], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,\u003Cif([gnum68==21], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,\u003Cif([gnum68==32], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,\u003Cif([gnum68==37], et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s,)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E.",
+    "Description": "Les d\u00E9g\u00E2ts re\u00E7us sont r\u00E9duits\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),94))\u003E\u003CIf(Equal(PlayerParameter(68),1))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(68),19))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(68),3))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(68),21))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(68),32))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(68),37))\u003E et les effets de r\u00E9cup\u00E9ration de PV sont augment\u00E9s\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E.",
     "Icon": 213911,
     "ParamModifier": -10,
     "VFX": null,
@@ -10480,7 +10480,7 @@
   {
     "RowId": 1238,
     "Name": "Acc\u00E9l\u00E9ration",
-    "Description": "Le prochain \u003CIf([gnum68==35])\u003E\u003Cif([gnum72\u003E=82],M\u00E9ga VerFoudre\\, M\u00E9ga VerVent,VerFoudre\\, VerVent)\u003E\u003CElse/\u003EVerFoudre\\, VerVent\u003C/If\u003E ou \u003CIf([gnum68==35])\u003E\u003Cif([gnum72\u003E=66],Impact,\u00C9parpillement)\u003E\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E peut \u00EAtre lanc\u00E9 instantan\u00E9ment. La puissance d\u0027\u003CIf([gnum68==35])\u003E\u003Cif([gnum72\u003E=66],Impact,\u00C9parpillement)\u003E\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E est augment\u00E9e. VerFeu pr\u00E9par\u00E9 ou VerTerre pr\u00E9par\u00E9e sont respectivement octroy\u00E9s \u00E0 l\u0027utilisation de \u003CIf([gnum68==35])\u003E\u003Cif([gnum72\u003E=82],M\u00E9ga VerFoudre ou M\u00E9ga VerVent,VerFoudre ou VerVent)\u003E\u003CElse/\u003EVerFoudre ou VerVent\u003C/If\u003E.",
+    "Description": "Le prochain \u003CIf(Equal(PlayerParameter(68),35))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),82))\u003EM\u00E9ga VerFoudre, M\u00E9ga VerVent\u003CElse/\u003EVerFoudre, VerVent\u003C/If\u003E\u003CElse/\u003EVerFoudre, VerVent\u003C/If\u003E ou \u003CIf(Equal(PlayerParameter(68),35))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),66))\u003EImpact\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E peut \u00EAtre lanc\u00E9 instantan\u00E9ment. La puissance d\u0027\u003CIf(Equal(PlayerParameter(68),35))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),66))\u003EImpact\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E\u003CElse/\u003E\u00C9parpillement\u003C/If\u003E est augment\u00E9e. VerFeu pr\u00E9par\u00E9 ou VerTerre pr\u00E9par\u00E9e sont respectivement octroy\u00E9s \u00E0 l\u0027utilisation de \u003CIf(Equal(PlayerParameter(68),35))\u003E\u003CIf(GreaterThanOrEqualTo(PlayerParameter(72),82))\u003EM\u00E9ga VerFoudre ou M\u00E9ga VerVent\u003CElse/\u003EVerFoudre ou VerVent\u003C/If\u003E\u003CElse/\u003EVerFoudre ou VerVent\u003C/If\u003E.",
     "Icon": 213405,
     "ParamModifier": 0,
     "VFX": null,
@@ -18119,7 +18119,7 @@
   {
     "RowId": 1411,
     "Name": "Bonus d\u0027exp\u00E9rience de Monde d\u00E9sign\u00E9",
-    "Description": "Les points d\u0027exp\u00E9rience gagn\u00E9s avant le niveau \u003CNum\u003Egnum107\u003C/Num\u003E sont grandement augment\u00E9s.",
+    "Description": "Les points d\u0027exp\u00E9rience gagn\u00E9s avant le niveau \u003CNum\u003EPlayerParameter(107)\u003C/Num\u003E sont grandement augment\u00E9s.",
     "Icon": 216227,
     "ParamModifier": 100,
     "VFX": null,

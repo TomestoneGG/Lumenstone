@@ -53,15 +53,15 @@
   },
   {
     "RowId": 16021,
-    "Text": "\u30E9\u30A6\u30F3\u30C9\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u30E9\u30A6\u30F3\u30C9\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16022,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16023,
-    "Text": "Time Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 16024,
@@ -77,7 +77,7 @@
   },
   {
     "RowId": 16027,
-    "Text": "Previous Location: \u003CIf([lnum1\u003E0])\u003E\u003Cstring(lstr2)\u003E\u003CElse/\u003ENone\u003C/If\u003E"
+    "Text": "Previous Location: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003CElse/\u003ENone\u003C/If\u003E"
   },
   {
     "RowId": 16040,
@@ -121,7 +121,7 @@
   },
   {
     "RowId": 16055,
-    "Text": "Total: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Total: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16060,
@@ -145,7 +145,7 @@
   },
   {
     "RowId": 16065,
-    "Text": "\u003CIf([lnum1\u003Elnum2])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003Clnum3])\u003E\u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum1\u003Elnum2])\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003Clnum3])\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),IntegerParameter(3)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(GreaterThan(IntegerParameter(1),IntegerParameter(2)))\u003E\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),IntegerParameter(3)))\u003E\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 16066,
@@ -181,7 +181,7 @@
   },
   {
     "RowId": 16074,
-    "Text": "Applying filter to: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Applying filter to: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16075,
@@ -221,11 +221,11 @@
   },
   {
     "RowId": 16084,
-    "Text": "\u201C\u003CString\u003Elstr2\u003C/String\u003E\u201D will be removed from the Term Filter List. Proceed?"
+    "Text": "\u201C\u003CString\u003EStringParameter(2)\u003C/String\u003E\u201D will be removed from the Term Filter List. Proceed?"
   },
   {
     "RowId": 16085,
-    "Text": "(Message could not be displayed due to Term Filter \u003CNum\u003Elnum1\u003C/Num\u003E.)"
+    "Text": "(Message could not be displayed due to Term Filter \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.)"
   },
   {
     "RowId": 16086,
@@ -241,11 +241,11 @@
   },
   {
     "RowId": 16101,
-    "Text": "Dynamically scale the resolution of individual render targets to reduce GPU workload and maintain a consistent frame rate.\u003CIf([gnum78==2])\u003E\u003Cbr\u003E\u203BWhen NVIDIA DLSS is selected\\, graphics upscaling will be processed automatically.\u003Cbr\u003E\u203BA target frame rate may still be selected.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum78==3])\u003E\u003Cbr\u003E\u203BA target frame rate may still be selected.\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Dynamically scale the resolution of individual render targets to reduce GPU workload and maintain a consistent frame rate.\u003CIf(Equal(PlayerParameter(78),2))\u003E\n\u203BWhen NVIDIA DLSS is selected, graphics upscaling will be processed automatically.\n\u203BA target frame rate may still be selected.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(78),3))\u003E\n\u203BA target frame rate may still be selected.\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16102,
-    "Text": "Adjust the quality of graphics scaling.\nImprove performance by choosing a value between 50% and 100%.\u003CIf([gnum78==2])\u003E\u003Cbr\u003E\u203BWhen NVIDIA DLSS is selected\\, graphics upscaling will be processed automatically.\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Adjust the quality of graphics scaling.\nImprove performance by choosing a value between 50% and 100%.\u003CIf(Equal(PlayerParameter(78),2))\u003E\n\u203BWhen NVIDIA DLSS is selected, graphics upscaling will be processed automatically.\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16103,
@@ -397,7 +397,7 @@
   },
   {
     "RowId": 16140,
-    "Text": "Set the display resolution for the game.\n\n\u003CIf([gnum75==4])\u003EFull HD\u003Cbr\u003ESets the display resolution to 1920x1080.\u003Cbr\u003ERecommended for superior performance.\u003Cbr\u003E\u003Cbr\u003EWQHD\u003Cbr\u003ESets the display resolution to 2560x1440.\u003Cbr\u003ERecommended for balanced performance.\u003Cbr\u003E\u003Cbr\u003E4K\u003Cbr\u003ESets the display resolution to 3840x2160.\u003Cbr\u003ERecommended for superior graphics.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum106==99])\u003EFull HD\u003Cbr\u003ESets the display resolution to 1920x1080.\u003Cbr\u003ERecommended for superior performance.\u003Cbr\u003E\u003Cbr\u003EWQHD\u003Cbr\u003ESets the display resolution to 2560x1440.\u003Cbr\u003ERecommended for balanced performance.\u003Cbr\u003E\u003Cbr\u003E4K\u003Cbr\u003ESets the display resolution to 3840x2160.\u003Cbr\u003ERecommended for superior graphics.\u003CElse/\u003E \u003C/If\u003E\u003CIf([gnum78==99])\u003E\u003Cif([gnum75==4],,PS4 Standard\u003Cbr\u003ESets the display to Full HD =1920x1080.\u003Cbr\u003E\u003Cbr\u003EPS4 Pro\u003Cbr\u003ESets the display to WQHD =2560x1440.)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Set the display resolution for the game.\n\n\u003CIf(Equal(PlayerParameter(75),4))\u003EFull HD\nSets the display resolution to 1920x1080.\nRecommended for superior performance.\n\nWQHD\nSets the display resolution to 2560x1440.\nRecommended for balanced performance.\n\n4K\nSets the display resolution to 3840x2160.\nRecommended for superior graphics.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(106),99))\u003EFull HD\nSets the display resolution to 1920x1080.\nRecommended for superior performance.\n\nWQHD\nSets the display resolution to 2560x1440.\nRecommended for balanced performance.\n\n4K\nSets the display resolution to 3840x2160.\nRecommended for superior graphics.\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E\u003CIf(Equal(PlayerParameter(75),4))\u003E \u003CElse/\u003EPS4 Standard\nSets the display to Full HD =1920x1080.\n\nPS4 Pro\nSets the display to WQHD =2560x1440.\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 16141,
@@ -513,11 +513,11 @@
   },
   {
     "RowId": 16224,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],day,days)\u003E\u003CElse/\u003ELess than 1 day\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E\u003CElse/\u003ELess than 1 day\u003C/If\u003E"
   },
   {
     "RowId": 16225,
-    "Text": "Remove \u003CString\u003Elstr1\u003C/String\u003E from your list of barred characters and allow them to enter your property?"
+    "Text": "Remove \u003CString\u003EStringParameter(1)\u003C/String\u003E from your list of barred characters and allow them to enter your property?"
   },
   {
     "RowId": 16226,
@@ -625,23 +625,23 @@
   },
   {
     "RowId": 16301,
-    "Text": "\u003CIf([gnum78==3])\u003EMaximum \\(Mac\\)\u003CElse/\u003EMaximum\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EMaximum (Mac)\u003CElse/\u003EMaximum\u003C/If\u003E"
   },
   {
     "RowId": 16302,
-    "Text": "\u003CIf([gnum78==3])\u003EVery High \\(Mac\\)\u003CElse/\u003EHigh \\(Desktop\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EVery High (Mac)\u003CElse/\u003EHigh (Desktop)\u003C/If\u003E"
   },
   {
     "RowId": 16303,
-    "Text": "\u003CIf([gnum78==3])\u003EHigh \\(Mac\\)\u003CElse/\u003EHigh \\(Laptop\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EHigh (Mac)\u003CElse/\u003EHigh (Laptop)\u003C/If\u003E"
   },
   {
     "RowId": 16304,
-    "Text": "\u003CIf([gnum78==3])\u003EMiddle \\(Mac\\)\u003CElse/\u003EStandard \\(Desktop\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EMiddle (Mac)\u003CElse/\u003EStandard (Desktop)\u003C/If\u003E"
   },
   {
     "RowId": 16305,
-    "Text": "\u003CIf([gnum78==3])\u003EStandard \\(Mac\\)\u003CElse/\u003EStandard \\(Laptop\\)\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EStandard (Mac)\u003CElse/\u003EStandard (Laptop)\u003C/If\u003E"
   },
   {
     "RowId": 16306,
@@ -649,23 +649,23 @@
   },
   {
     "RowId": 16307,
-    "Text": "\u003CIf([gnum78==3])\u003EThe highest possible graphical settings.\u003CElse/\u003EThe highest possible graphical settings. Recommended for use with high-end PCs only.\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003EThe highest possible graphical settings.\u003CElse/\u003EThe highest possible graphical settings. Recommended for use with high-end PCs only.\u003C/If\u003E"
   },
   {
     "RowId": 16308,
-    "Text": "Settings optimized for \u003CIf([gnum78==3])\u003Ehigh-end models allowing for superior graphical quality.\u003CElse/\u003Edesktop PCs which meet the recommended specifications.\u003C/If\u003E"
+    "Text": "Settings optimized for \u003CIf(Equal(PlayerParameter(78),3))\u003Ehigh-end models allowing for superior graphical quality.\u003CElse/\u003Edesktop PCs which meet the recommended specifications.\u003C/If\u003E"
   },
   {
     "RowId": 16309,
-    "Text": "Settings optimized for \u003CIf([gnum78==3])\u003Ehigh-end models.\u003CElse/\u003Elaptop PCs which meet the recommended specifications.\u003C/If\u003E"
+    "Text": "Settings optimized for \u003CIf(Equal(PlayerParameter(78),3))\u003Ehigh-end models.\u003CElse/\u003Elaptop PCs which meet the recommended specifications.\u003C/If\u003E"
   },
   {
     "RowId": 16310,
-    "Text": "\u003CIf([gnum78==3])\u003ESettings which ensure optimal performance\u003CElse/\u003ESettings which ensure optimal performance on desktop PCs\u003C/If\u003E without compromising graphical quality."
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003ESettings which ensure optimal performance\u003CElse/\u003ESettings which ensure optimal performance on desktop PCs\u003C/If\u003E without compromising graphical quality."
   },
   {
     "RowId": 16311,
-    "Text": "\u003CIf([gnum78==3])\u003ESettings which ensure balanced performance.\u003CElse/\u003ESettings which ensure balanced performance on laptop PCs.\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003ESettings which ensure balanced performance.\u003CElse/\u003ESettings which ensure balanced performance on laptop PCs.\u003C/If\u003E"
   },
   {
     "RowId": 16312,
@@ -953,7 +953,7 @@
   },
   {
     "RowId": 16409,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16411,
@@ -977,7 +977,7 @@
   },
   {
     "RowId": 16417,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 16418,
@@ -1001,7 +1001,7 @@
   },
   {
     "RowId": 16424,
-    "Text": "Change interior to \u003CString\u003Elstr1\u003C/String\u003E.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAll placed furnishings will be moved to storage.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BChanging interior style may require some time to be completed.\u003C/span\u003E"
+    "Text": "Change interior to \u003CString\u003EStringParameter(1)\u003C/String\u003E.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BAll placed furnishings will be moved to storage.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BChanging interior style may require some time to be completed.\u003C/span\u003E"
   },
   {
     "RowId": 16425,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 16426,
-    "Text": "Unable to \u003Cswitch(lnum1,relocate or renovate,relocate,renovate)\u003E. Your storage is full. "
+    "Text": "Unable to \u003Cswitch(IntegerParameter(1),relocate or renovate,relocate,renovate)\u003E. Your storage is full. "
   },
   {
     "RowId": 16427,
@@ -1021,11 +1021,11 @@
   },
   {
     "RowId": 16429,
-    "Text": "You are now authorized to change interior design to \u003CString\u003Elstr1\u003C/String\u003E."
+    "Text": "You are now authorized to change interior design to \u003CString\u003EStringParameter(1)\u003C/String\u003E."
   },
   {
     "RowId": 16430,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EFee\u3000\u003Ckilo(lnum1,\\,)\u003E\uE049\u003C/span\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EFee\u3000\u003Ckilo(IntegerParameter(1),,)\u003E\uE049\u003C/span\u003E"
   },
   {
     "RowId": 16431,
@@ -1097,7 +1097,7 @@
   },
   {
     "RowId": 16448,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 16449,
@@ -1105,7 +1105,7 @@
   },
   {
     "RowId": 16450,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 16451,
@@ -1129,7 +1129,7 @@
   },
   {
     "RowId": 16456,
-    "Text": "\u003CIf(lnum1)\u003E \u003Ccolortype(500)\u003E\u003Cedgecolortype(501)\u003E\u003Cnum(lnum2)\u003E\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E\u003C/If\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E"
+    "Text": "\u003CIf(IntegerParameter(1))\u003E \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
   },
   {
     "RowId": 16459,
@@ -1397,11 +1397,11 @@
   },
   {
     "RowId": 101082,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Delete \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-translate\u003CIf(gnum94)\u003E\u003Cif([gnum78==99],  \u003Cicon2(11)\u003E Software Keyboard,  \u003Cicon2(11)\u003E On-screen Keyboard)\u003E\u003CElse/\u003E\u003Cnbsp\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Delete \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-translate\u003CIf(PlayerParameter(94))\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E  \u003CIcon2\u003E11\u003C/Icon2\u003E Software Keyboard\u003CElse/\u003E  \u003CIcon2\u003E11\u003C/Icon2\u003E On-screen Keyboard\u003C/If\u003E\u003CElse/\u003E\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E"
   },
   {
     "RowId": 101083,
-    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Previous  \u003CIcon2\u003E4\u003C/Icon2\u003E Next  \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-translate\u003CIf(gnum94)\u003E\u003Cif([gnum78==99],  \u003Cicon2(11)\u003E Software Keyboard,  \u003Cicon2(11)\u003E On-screen Keyboard)\u003E\u003CElse/\u003E\u003Cnbsp\u003E\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E3\u003C/Icon2\u003E Previous  \u003CIcon2\u003E4\u003C/Icon2\u003E Next  \u003CIcon2\u003E13\u003C/Icon2\u003E Auto-translate\u003CIf(PlayerParameter(94))\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003E  \u003CIcon2\u003E11\u003C/Icon2\u003E Software Keyboard\u003CElse/\u003E  \u003CIcon2\u003E11\u003C/Icon2\u003E On-screen Keyboard\u003C/If\u003E\u003CElse/\u003E\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E"
   },
   {
     "RowId": 101084,
@@ -1517,11 +1517,11 @@
   },
   {
     "RowId": 101112,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
   },
   {
     "RowId": 101113,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E10\u003C/Icon2\u003E Subcommand \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum2)\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E10\u003C/Icon2\u003E Subcommand \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(2))\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
   },
   {
     "RowId": 101114,
@@ -1545,11 +1545,11 @@
   },
   {
     "RowId": 101119,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
   },
   {
     "RowId": 101120,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommand \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(lnum2)\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommand \u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E11\u003C/Icon2\u003E \u003CIf(IntegerParameter(2))\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
   },
   {
     "RowId": 101121,
@@ -1709,19 +1709,19 @@
   },
   {
     "RowId": 101160,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
   },
   {
     "RowId": 101161,
-    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum2)\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
+    "Text": "\u003CIcon\u003E13\u003C/Icon\u003E\u002B\u003CIcon\u003E20\u003C/Icon\u003E Move \u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Rotate \u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(2))\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
   },
   {
     "RowId": 101162,
-    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E"
   },
   {
     "RowId": 101163,
-    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum1)\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(lnum2)\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(1))\u003EEnable Grid Snap\u003CElse/\u003EDisable Grid Snap\u003C/If\u003E \u003CIcon2\u003E12\u003C/Icon2\u003E\u002B\u003CIcon2\u003E11\u003C/Icon2\u003E\u003CIf(IntegerParameter(2))\u003EEnable Counter Placement\u003CElse/\u003EDisable Counter Placement\u003C/If\u003E"
   },
   {
     "RowId": 101164,

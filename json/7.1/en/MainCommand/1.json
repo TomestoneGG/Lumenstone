@@ -246,7 +246,7 @@
   {
     "RowId": 19,
     "Name": "System Configuration",
-    "Description": "Adjust system-related settings such as graphics, sound, \u003CIf([gnum75\u003E0])\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E functionality, and more.",
+    "Description": "Adjust system-related settings such as graphics, sound, \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E functionality, and more.",
     "Icon": 29,
     "Category": 6,
     "MainCommandCategory": {
@@ -608,8 +608,8 @@
   },
   {
     "RowId": 49,
-    "Name": "\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Settings",
-    "Description": "Adjust various \u003CIf([gnum75\u003E0])\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E settings such as vibration.",
+    "Name": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E Settings",
+    "Description": "Adjust various \u003CIf(GreaterThan(PlayerParameter(75),0))\u003Econtroller\u003CElse/\u003Egamepad\u003C/If\u003E settings such as vibration.",
     "Icon": 39,
     "Category": 0,
     "MainCommandCategory": null,
@@ -731,7 +731,7 @@
   {
     "RowId": 60,
     "Name": "Challenge Log",
-    "Description": "Displays a list of challenges that you can undertake. Information on progress and rewards is also available. Progress in each category is reset every \u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).",
+    "Description": "Displays a list of challenges that you can undertake. Information on progress and rewards is also available. Progress in each category is reset every \u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).",
     "Icon": 57,
     "Category": 8,
     "MainCommandCategory": {

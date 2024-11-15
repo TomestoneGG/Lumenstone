@@ -161,7 +161,7 @@
   },
   {
     "RowId": 3290,
-    "Text": "Acheter \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cfrnoun(Item,12,lnum1,lnum2,1)\u003E pour \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E sceau\u003CIf([lnum3\u003C=1])\u003E \u003CElse/\u003Ex\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Acheter \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)\u003E pour \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E sceau\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Ex\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3291,
@@ -169,7 +169,7 @@
   },
   {
     "RowId": 3292,
-    "Text": "Seuls les membres \u003CIf([lnum1==1])\u003Edu Maelstrom\u003CElse/\u003E\u003Cif([lnum1==2],de l\u0027ordre des Deux Vip\u00E8res,des Immortels)\u003E\u003C/If\u003E peuvent utiliser des sceaux pour acheter des produits."
+    "Text": "Seuls les membres \u003CIf(Equal(IntegerParameter(1),1))\u003Edu Maelstrom\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2))\u003Ede l\u0027ordre des Deux Vip\u00E8res\u003CElse/\u003Edes Immortels\u003C/If\u003E\u003C/If\u003E peuvent utiliser des sceaux pour acheter des produits."
   },
   {
     "RowId": 3300,
@@ -281,7 +281,7 @@
   },
   {
     "RowId": 3357,
-    "Text": "Titre\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Titre\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 3358,
@@ -297,7 +297,7 @@
   },
   {
     "RowId": 3361,
-    "Text": "\u003Cswitch(lnum1,Tout afficher,Rubriques achev\u00E9es,Rubriques inachev\u00E9es)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Tout afficher,Rubriques achev\u00E9es,Rubriques inachev\u00E9es)\u003E"
   },
   {
     "RowId": 3362,
@@ -305,7 +305,7 @@
   },
   {
     "RowId": 3363,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E / \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E / \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3364,
@@ -437,7 +437,7 @@
   },
   {
     "RowId": 3396,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E-\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E-\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 3401,
@@ -461,11 +461,11 @@
   },
   {
     "RowId": 3406,
-    "Text": "Acheter \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cfrnoun(Item,12,lnum1,lnum2,1)\u003E pour \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum3\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Acheter \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)\u003E pour \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3407,
-    "Text": "Vendre \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cfrnoun(Item,12,lnum1,lnum2,1)\u003E pour \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum3\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Vendre \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)\u003E pour \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3408,
@@ -497,7 +497,7 @@
   },
   {
     "RowId": 3422,
-    "Text": "Acheter le bienfait \u201C\u003Csheet(CompanyAction,lnum1,0)\u003E\u201D pour \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E cr\u00E9dits de compagnie\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Acheter le bienfait \u201C\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201D pour \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E cr\u00E9dits de compagnie\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3423,
@@ -589,7 +589,7 @@
   },
   {
     "RowId": 3458,
-    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\uE049"
+    "Text": "Total\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\uE049"
   },
   {
     "RowId": 3459,
@@ -649,19 +649,19 @@
   },
   {
     "RowId": 3473,
-    "Text": "Acheter \u003CIf([lnum3==1])\u003E\u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum3)\u003E \u003Cfrnoun(Item,12,lnum1,lnum3,1)\u003E\u003C/If\u003E pour \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E cr\u00E9dits de compagnie\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Acheter \u003CIf(Equal(IntegerParameter(3),1))\u003E\u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(3),1)\u003E\u003C/If\u003E pour \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E cr\u00E9dits de compagnie\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3474,
-    "Text": "Ajouter le blason de votre compagnie sur \u003Cfrnoun(Item,2,lnum1,1,1)\u003E pour \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum2\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Ajouter le blason de votre compagnie sur \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E pour \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3475,
-    "Text": "Ajouter le blason de votre compagnie sur tous les objets sp\u00E9cifi\u00E9s pour \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Ajouter le blason de votre compagnie sur tous les objets sp\u00E9cifi\u00E9s pour \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3476,
-    "Text": "Enlever le blason de votre compagnie sur \u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Enlever le blason de votre compagnie sur \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3477,
@@ -693,19 +693,19 @@
   },
   {
     "RowId": 3490,
-    "Text": "\u300A\u003CIf(lnum3)\u003E\u003Csheet(ClassJob,lnum1,1)\u003E\u003CElse/\u003E\u003Chead(\u003Cif([lnum2==0],\u003Csheet(ClassJob,lnum1,0)\u003E,\u003Csheet(ClassJob,lnum1,2)\u003E)\u003E)\u003E\u003C/If\u003E\u300B"
+    "Text": "\u300A\u003CIf(IntegerParameter(3))\u003E\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E\u003CElse/\u003E\u003CHead\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),2)\u003E\u003C/If\u003E\u003C/Head\u003E\u003C/If\u003E\u300B"
   },
   {
     "RowId": 3491,
-    "Text": "\u300A\u003CIf(lnum3)\u003E\u003Csheet(ClassJob,lnum1,1)\u003E\u003CElse/\u003E\u003Chead(\u003Cif([lnum2==0],\u003Csheet(ClassJob,lnum1,0)\u003E,\u003Csheet(ClassJob,lnum1,2)\u003E)\u003E)\u003E\u003C/If\u003E\u300B"
+    "Text": "\u300A\u003CIf(IntegerParameter(3))\u003E\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E\u003CElse/\u003E\u003CHead\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),2)\u003E\u003C/If\u003E\u003C/Head\u003E\u003C/If\u003E\u300B"
   },
   {
     "RowId": 3492,
-    "Text": " \u00AB\u003CIf(lnum3)\u003E\u003Csheet(ClassJob,lnum1,1)\u003E\u003CElse/\u003E\u003Chead(\u003Cif([lnum2==0],\u003Csheet(ClassJob,lnum1,0)\u003E,\u003Csheet(ClassJob,lnum1,2)\u003E)\u003E)\u003E\u003C/If\u003E\u00BB"
+    "Text": " \u00AB\u003CIf(IntegerParameter(3))\u003E\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E\u003CElse/\u003E\u003CHead\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),2)\u003E\u003C/If\u003E\u003C/Head\u003E\u003C/If\u003E\u00BB"
   },
   {
     "RowId": 3493,
-    "Text": "\u00AB\u003CNum\u003Elnum1\u003C/Num\u003E\u00BB"
+    "Text": "\u00AB\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u00BB"
   },
   {
     "RowId": 3500,
@@ -721,15 +721,15 @@
   },
   {
     "RowId": 3503,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3504,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3505,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3510,
@@ -781,15 +781,15 @@
   },
   {
     "RowId": 3535,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 3536,
-    "Text": "Niveau requis\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Niveau requis\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3537,
-    "Text": "\u003Csheet(Item,lnum1,9)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CHeadAll\u003E\u003Csheet(ObjStr,lnum2,0)\u003E\u003C/HeadAll\u003E"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CHeadAll\u003E\u003Csheet(ObjStr,IntegerParameter(2),0)\u003E\u003C/HeadAll\u003E"
   },
   {
     "RowId": 3540,
@@ -877,11 +877,11 @@
   },
   {
     "RowId": 3567,
-    "Text": "\u003CIcon\u003E54\u003C/Icon\u003ELancer de d\u00E9\u003C\u003Cnbsp\u003E\u003E! \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIcon\u003E55\u003C/Icon\u003E"
+    "Text": "\u003CIcon\u003E54\u003C/Icon\u003ELancer de d\u00E9\u003C\u003Cnbsp\u003E\u003E! \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIcon\u003E55\u003C/Icon\u003E"
   },
   {
     "RowId": 3568,
-    "Text": "\u003CIcon\u003E54\u003C/Icon\u003ELancer d\u0027un d\u00E9 \u003CNum\u003Elnum2\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E! \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIcon\u003E55\u003C/Icon\u003E"
+    "Text": "\u003CIcon\u003E54\u003C/Icon\u003ELancer d\u0027un d\u00E9 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E! \u003CIcon\u003E73\u003C/Icon\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIcon\u003E55\u003C/Icon\u003E"
   },
   {
     "RowId": 3569,
@@ -889,7 +889,7 @@
   },
   {
     "RowId": 3570,
-    "Text": " \u003CString\u003Elstr1\u003C/String\u003E \uE06F \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": " \u003CString\u003EStringParameter(1)\u003C/String\u003E \uE06F \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 3571,
@@ -1145,7 +1145,7 @@
   },
   {
     "RowId": 3654,
-    "Text": "\u003CIf([lnum1==3])\u003E\u003Cnum(lnum1)\u003E \uE048\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),3))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \uE048\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 3660,
@@ -1181,7 +1181,7 @@
   },
   {
     "RowId": 3668,
-    "Text": "Remise \u00E0 z\u00E9ro\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eheure\u003CElse/\u003Eheures\u003C/If\u003E \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2\u003C=1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E \u003CSetTime\u003Elnum3\u003C/SetTime\u003E[\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "Remise \u00E0 z\u00E9ro\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eheure\u003CElse/\u003Eheures\u003C/If\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E[\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E]"
   },
   {
     "RowId": 3670,
@@ -1257,7 +1257,7 @@
   },
   {
     "RowId": 3688,
-    "Text": " \uE031 \u003CIf([lnum1\u003E=1])\u003E\u003Cnum(lnum1)\u003E jour\u003Cif([lnum1==1],,s)\u003E\u003CElse/\u003EMoins d\u0027un jour\u003C/If\u003E"
+    "Text": " \uE031 \u003CIf(GreaterThanOrEqualTo(IntegerParameter(1),1))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E jour\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003EMoins d\u0027un jour\u003C/If\u003E"
   },
   {
     "RowId": 3689,
@@ -1277,7 +1277,7 @@
   },
   {
     "RowId": 3693,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\u003CIf([lnum3\u003E0])\u003E/\uE03C \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E/\uE03C \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 3694,
@@ -1289,7 +1289,7 @@
   },
   {
     "RowId": 3696,
-    "Text": "R\u00E9cup\u00E9rer \u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "R\u00E9cup\u00E9rer \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3697,
@@ -1297,11 +1297,11 @@
   },
   {
     "RowId": 3698,
-    "Text": "Cases vides dans l\u0027inventaire\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Cases vides dans l\u0027inventaire\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3699,
-    "Text": "Objets conserv\u00E9s\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Objets conserv\u00E9s\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3700,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 3728,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C/Head\u003E vous sera li\u00E9\u003CIf(\u003Csheet(Item,lnum1,6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E."
+    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E vous sera li\u00E9\u003CIf(\u003Csheet(Item,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E."
   },
   {
     "RowId": 3729,
@@ -1465,7 +1465,7 @@
   },
   {
     "RowId": 3740,
-    "Text": "Voulez-vous r\u00E9initialiser la position de l\u0027\u00E9l\u00E9ment \u201C\u003Csheet(Hud,lnum1,ADDONHUD_NAME)\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Voulez-vous r\u00E9initialiser la position de l\u0027\u00E9l\u00E9ment \u201C\u003Csheet(Hud,IntegerParameter(1),ADDONHUD_NAME)\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3743,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 3766,
-    "Text": "Copier la configuration ATH \u003CNum\u003Elnum2\u003C/Num\u003E dans l\u0027emplacement \u003CNum\u003Elnum1\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Copier la configuration ATH \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E dans l\u0027emplacement \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3767,
@@ -1581,11 +1581,11 @@
   },
   {
     "RowId": 3787,
-    "Text": "Accepter la r\u00E9surrection de \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Accepter la r\u00E9surrection de \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3788,
-    "Text": "\u003Csheet(PlaceName,\u003Csheet(Aetheryte,lnum1,8)\u003E,0)\u003E"
+    "Text": "\u003Csheet(PlaceName,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E"
   },
   {
     "RowId": 3789,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 3790,
-    "Text": "Vous \u00EAtes tomb\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E inconscient\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E. Abandonner la mission\u003C\u003Cnbsp\u003E\u003E?\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E* Vous serez automatiquement expuls\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E si vous n\u0027\u00EAtes pas ressuscit\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E dans les 10 prochaines minutes.\u003C/span\u003E"
+    "Text": "Vous \u00EAtes tomb\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E inconscient\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E. Abandonner la mission\u003C\u003Cnbsp\u003E\u003E?\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E* Vous serez automatiquement expuls\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E si vous n\u0027\u00EAtes pas ressuscit\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E dans les 10 prochaines minutes.\u003C/span\u003E"
   },
   {
     "RowId": 3791,
@@ -1633,19 +1633,19 @@
   },
   {
     "RowId": 3807,
-    "Text": "Points de p\u00EAche d\u00E9couverts\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Points de p\u00EAche d\u00E9couverts\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 3808,
-    "Text": "\uE06C \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE06C \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3809,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E,\u003CNum\u003Elnum2\u003C/Num\u003E ilms"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E ilms"
   },
   {
     "RowId": 3810,
-    "Text": "\uE06C \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE06C \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3811,
@@ -1657,15 +1657,15 @@
   },
   {
     "RowId": 3813,
-    "Text": "\u003Csheet(Item,lnum1,9)\u003E (\u003CIf([lnum2==0])\u003Enon \u003CElse/\u003E \u003C/If\u003Eacquis)"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E (\u003CIf(Equal(IntegerParameter(2),0))\u003Enon \u003CElse/\u003E \u003C/If\u003Eacquis)"
   },
   {
     "RowId": 3814,
-    "Text": "M\u00E9t\u00E9o sp\u00E9cifique\uFF1A\u003Cswitch(lnum1,oui,non,???)\u003E\nHoraire sp\u00E9cifique\uFF1A\u003Cswitch(lnum2,oui,non,???)\u003E\nAutres conditions\uFF1A\u003Cswitch(lnum3,oui,non,???)\u003E"
+    "Text": "M\u00E9t\u00E9o sp\u00E9cifique\uFF1A\u003Cswitch(IntegerParameter(1),oui,non,???)\u003E\nHoraire sp\u00E9cifique\uFF1A\u003Cswitch(IntegerParameter(2),oui,non,???)\u003E\nAutres conditions\uFF1A\u003Cswitch(IntegerParameter(3),oui,non,???)\u003E"
   },
   {
     "RowId": 3815,
-    "Text": "Obtenir cet objet en tant que \u201Ccollectionnable\u201D\u003C\u003Cnbsp\u003E\u003E?\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EValeur de collection\u003C\u003Cnbsp\u003E\u003E:\u003C/span\u003E \u003CNum\u003Elnum1\u003C/Num\u003E\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EUn seul objet collectionnable peut \u00EAtre obtenu \u00E0 la fois. Ce type d\u0027objet ne peut \u00EAtre ni \u00E9chang\u00E9 ni mis en vente.\u003C/span\u003E"
+    "Text": "Obtenir cet objet en tant que \u201Ccollectionnable\u201D\u003C\u003Cnbsp\u003E\u003E?\n\u003Cspan style=\u0022color: #00cc22;\u0022\u003EValeur de collection\u003C\u003Cnbsp\u003E\u003E:\u003C/span\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EUn seul objet collectionnable peut \u00EAtre obtenu \u00E0 la fois. Ce type d\u0027objet ne peut \u00EAtre ni \u00E9chang\u00E9 ni mis en vente.\u003C/span\u003E"
   },
   {
     "RowId": 3816,
@@ -1681,15 +1681,15 @@
   },
   {
     "RowId": 3822,
-    "Text": "\u003CIf([lnum2==0])\u003EPrises p\u00EAch\u00E9es \u00E0 la ligne\u003CElse/\u003EPrises p\u00EAch\u00E9es au harpon\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(lnum1,\\,)\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003EPrises p\u00EAch\u00E9es \u00E0 la ligne\u003CElse/\u003EPrises p\u00EAch\u00E9es au harpon\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(IntegerParameter(1),,)\u003E"
   },
   {
     "RowId": 3823,
-    "Text": "\u003CIf([lnum1==0])\u003EBons coins\u003CElse/\u003EPoints de harponnage\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EBons coins\u003CElse/\u003EPoints de harponnage\u003C/If\u003E"
   },
   {
     "RowId": 3824,
-    "Text": "\u003CIf([lnum4==0])\u003E???\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003Cbr\u003E\u003Cstring(lstr2)\u003E\u003Cbr\u003E\u003Cif([lnum5==0],???,\u003Cstring(lstr3)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(4),0))\u003E???\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003CString\u003EStringParameter(2)\u003C/String\u003E\n\u003CIf(Equal(IntegerParameter(5),0))\u003E???\u003CElse/\u003E\u003CString\u003EStringParameter(3)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 3825,
@@ -1705,11 +1705,11 @@
   },
   {
     "RowId": 3828,
-    "Text": "Objet requis\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum3==0])\u003EL\u00E9gendes ichtyologiques de\u003Cnbsp\u003E???\u003CElse/\u003E\u003Csheet(Item,lnum1,9)\u003E \\(\u003Cif([lnum2==0],non ,)\u003Eacquis\\)\u003C/If\u003E"
+    "Text": "Objet requis\u003C\u003Cnbsp\u003E\u003E: \u003CIf(Equal(IntegerParameter(3),0))\u003EL\u00E9gendes ichtyologiques de\u003C\u003Cnbsp\u003E\u003E???\u003CElse/\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E (\u003CIf(Equal(IntegerParameter(2),0))\u003Enon \u003CElse/\u003E \u003C/If\u003Eacquis)\u003C/If\u003E"
   },
   {
     "RowId": 3829,
-    "Text": "\u003Csheet(GatheringSubCategory,lnum1,5)\u003E (\u003CIf([lnum2==0])\u003Enon obtenu\u003CElse/\u003Eobtenu\u003C/If\u003E)"
+    "Text": "\u003Csheet(GatheringSubCategory,IntegerParameter(1),5)\u003E (\u003CIf(Equal(IntegerParameter(2),0))\u003Enon obtenu\u003CElse/\u003Eobtenu\u003C/If\u003E)"
   },
   {
     "RowId": 3830,
@@ -1801,11 +1801,11 @@
   },
   {
     "RowId": 3855,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIf([lnum2\u003E1])\u003E x \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(GreaterThan(IntegerParameter(2),1))\u003E x \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 3856,
-    "Text": "\u003Cswitch(lnum1,\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605,\u2605\u2605\u2605\u2605\u2605)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u2605,\u2605\u2605,\u2605\u2605\u2605,\u2605\u2605\u2605\u2605,\u2605\u2605\u2605\u2605\u2605)\u003E"
   },
   {
     "RowId": 3857,
@@ -1821,7 +1821,7 @@
   },
   {
     "RowId": 3862,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,lnum1,0)\u003E\u003C/Head\u003E nv \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E nv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 3863,
@@ -1833,7 +1833,7 @@
   },
   {
     "RowId": 3865,
-    "Text": "Choisissez \u201C\u00C9th\u00E9rolyse rapide\u201D pour transformer les autres exemplaires du m\u00EAme objet dans votre inventaire (\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003E1])\u003Erestants\u003CElse/\u003Erestant\u003C/If\u003E)."
+    "Text": "Choisissez \u201C\u00C9th\u00E9rolyse rapide\u201D pour transformer les autres exemplaires du m\u00EAme objet dans votre inventaire (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(GreaterThan(IntegerParameter(1),1))\u003Erestants\u003CElse/\u003Erestant\u003C/If\u003E)."
   },
   {
     "RowId": 3866,
@@ -1841,7 +1841,7 @@
   },
   {
     "RowId": 3867,
-    "Text": "Valeur de collection\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E"
+    "Text": "Valeur de collection\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3868,
@@ -1853,15 +1853,15 @@
   },
   {
     "RowId": 3870,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 3871,
-    "Text": "\n\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\uE049 x \u003CNum\u003Elnum2\u003C/Num\u003E = \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E\uE049"
+    "Text": "\n\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\uE049 x \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E = \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E\uE049"
   },
   {
     "RowId": 3872,
-    "Text": "Racheter \u003CNum\u003Elnum2\u003C/Num\u003E \u003Cfrnoun(Item,12,lnum1,lnum2,1)\u003E pour \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E gil\u003CIf([lnum3\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Racheter \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)\u003E pour \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3879,
@@ -1873,11 +1873,11 @@
   },
   {
     "RowId": 3881,
-    "Text": "Le prix d\u0027achat \u003Cfrnoun(Item,9,lnum1,1,1)\u003E a chang\u00E9. Voulez-vous tout de m\u00EAme poursuivre la transaction\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Le prix d\u0027achat \u003Cfrnoun(Item,9,IntegerParameter(1),1,1)\u003E a chang\u00E9. Voulez-vous tout de m\u00EAme poursuivre la transaction\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3882,
-    "Text": "Le prix de vente \u003Cfrnoun(Item,9,lnum1,1,1)\u003E a chang\u00E9. Voulez-vous tout de m\u00EAme poursuivre la transaction\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Le prix de vente \u003Cfrnoun(Item,9,IntegerParameter(1),1,1)\u003E a chang\u00E9. Voulez-vous tout de m\u00EAme poursuivre la transaction\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 3883,
@@ -1905,11 +1905,11 @@
   },
   {
     "RowId": 3889,
-    "Text": "Ancien prix\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum3\u003C/Num\u003E\uE049"
+    "Text": "Ancien prix\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE049"
   },
   {
     "RowId": 3890,
-    "Text": "Nouveau prix\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum3\u003C/Num\u003E\uE049"
+    "Text": "Nouveau prix\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE049"
   },
   {
     "RowId": 3901,
@@ -1921,7 +1921,7 @@
   },
   {
     "RowId": 3903,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E / \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E / \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 3904,
@@ -1973,7 +1973,7 @@
   },
   {
     "RowId": 3922,
-    "Text": "Conqu\u00EAte\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E%\nProgression\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum2\u003C/Num\u003E%"
+    "Text": "Conqu\u00EAte\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%\nProgression\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E%"
   },
   {
     "RowId": 3923,
@@ -1993,10 +1993,10 @@
   },
   {
     "RowId": 3927,
-    "Text": "Rang\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Rang\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 3928,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   }
 ]

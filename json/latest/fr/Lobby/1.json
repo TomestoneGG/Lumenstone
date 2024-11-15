@@ -109,7 +109,7 @@
   },
   {
     "RowId": 12,
-    "Text": "Version du jeu\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr1\u003C/String\u003E(\u003CString\u003Elstr2\u003C/String\u003E)\u003CIf([lnum3\u003E0])\u003E - ex\u003Cnum(lnum3)\u003E\u003Cnbsp\u003E: \u003Cstring(lstr4)\u003E\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Version du jeu\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(1)\u003C/String\u003E(\u003CString\u003EStringParameter(2)\u003C/String\u003E)\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E - ex\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(4)\u003C/String\u003E\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -226,7 +226,7 @@
   },
   {
     "RowId": 25,
-    "Text": "Se connecter avec \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
+    "Text": "Se connecter avec \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -244,7 +244,7 @@
   },
   {
     "RowId": 27,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EVeuillez obtenir les donn\u00E9es du personnage avant de le renommer.\u003CElse/\u003EVous devez renommer ce personnage pour vous connecter avec.\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EVeuillez obtenir les donn\u00E9es du personnage avant de le renommer.\u003CElse/\u003EVous devez renommer ce personnage pour vous connecter avec.\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -253,7 +253,7 @@
   },
   {
     "RowId": 28,
-    "Text": "Renommer ce personnage \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
+    "Text": "Renommer ce personnage \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -262,7 +262,7 @@
   },
   {
     "RowId": 29,
-    "Text": "Renommer ce servant \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
+    "Text": "Renommer ce servant \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 35,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 37,
-    "Text": "\u003CNum\u003Elnum2\u003C/Num\u003E\u003CIf([lnum2==1])\u003Eer\u003CElse/\u003Ee\u003C/If\u003E soleil de la \u003Cswitch(lnum1,1re lune astrale,1re lune ombrale,2e lune astrale,2e lune ombrale,3e lune astrale,3e lune ombrale,4e lune astrale,4e lune ombrale,5e lune astrale,5e lune ombrale,6e lune astrale,6e lune ombrale)\u003E",
+    "Text": "\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003Eer\u003CElse/\u003Ee\u003C/If\u003E soleil de la \u003Cswitch(IntegerParameter(1),1re lune astrale,1re lune ombrale,2e lune astrale,2e lune ombrale,3e lune astrale,3e lune ombrale,4e lune astrale,4e lune ombrale,5e lune astrale,5e lune ombrale,6e lune astrale,6e lune ombrale)\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 38,
-    "Text": "(\u003CNum\u003Elnum2\u003C/Num\u003E \u003Cswitch(lnum1,janvier,f\u00E9vrier,mars,avril,mai,juin,juillet,ao\u00FBt,septembre,octobre,novembre,d\u00E9cembre)\u003E)",
+    "Text": "(\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cswitch(IntegerParameter(1),janvier,f\u00E9vrier,mars,avril,mai,juin,juillet,ao\u00FBt,septembre,octobre,novembre,d\u00E9cembre)\u003E)",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -478,7 +478,7 @@
   },
   {
     "RowId": 53,
-    "Text": "\u003Cswitch(lnum3,1er,2e,3e,4e,5e,6e,7e,8e,9e,10e,11e,12e,13e,14e,15e,16e,17e,18e,19e,20e,21e,22e,23e,24e,25e,26e,27e,28e,29e,30e,31e,32e)\u003E soleil de la \u003Cswitch(lnum2,1re lune astrale,1re lune ombrale,2e lune astrale,2e lune ombrale,3e lune astrale,3e lune ombrale,4e lune astrale,4e lune ombrale,5e lune astrale,5e lune ombrale,6e lune astrale,6e lune ombrale)\u003E",
+    "Text": "\u003Cswitch(IntegerParameter(3),1er,2e,3e,4e,5e,6e,7e,8e,9e,10e,11e,12e,13e,14e,15e,16e,17e,18e,19e,20e,21e,22e,23e,24e,25e,26e,27e,28e,29e,30e,31e,32e)\u003E soleil de la \u003Cswitch(IntegerParameter(2),1re lune astrale,1re lune ombrale,2e lune astrale,2e lune ombrale,3e lune astrale,3e lune ombrale,4e lune astrale,4e lune ombrale,5e lune astrale,5e lune ombrale,6e lune astrale,6e lune ombrale)\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 56,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \u003CIf([lnum2\u003C7])\u003E\u003Cswitch(lnum2,,\\(Legacy\\),,\\(Legacy\\),,\\(Legacy\\))\u003E\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \u003CIf(LessThan(IntegerParameter(2),7))\u003E\u003Cswitch(IntegerParameter(2),,(Legacy),,(Legacy),,(Legacy))\u003E\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -532,7 +532,7 @@
   },
   {
     "RowId": 59,
-    "Text": "Mettre \u00E0 jour l\u0027\u00E9tat des Mondes. Cette option ne peut \u00EAtre utilis\u00E9e qu\u0027une fois \u003CIf([lnum1\u003C=1])\u003Epar minute\u003CElse/\u003Etoutes les \u003Cnum(lnum1)\u003E minutes\u003C/If\u003E.",
+    "Text": "Mettre \u00E0 jour l\u0027\u00E9tat des Mondes. Cette option ne peut \u00EAtre utilis\u00E9e qu\u0027une fois \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Epar minute\u003CElse/\u003Etoutes les \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E minutes\u003C/If\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -595,7 +595,7 @@
   },
   {
     "RowId": 66,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EVeuillez obtenir les donn\u00E9es du personnage avant de renommer un servant.\u003CElse/\u003EVous devez renommer un servant de ce personnage avant de vous connecter.\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EVeuillez obtenir les donn\u00E9es du personnage avant de renommer un servant.\u003CElse/\u003EVous devez renommer un servant de ce personnage avant de vous connecter.\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -604,7 +604,7 @@
   },
   {
     "RowId": 67,
-    "Text": "La race, le sexe et l\u0027apparence du personnage peuvent \u00EAtre modifi\u00E9s. \u003CIf([lnum1\u003E0])\u003E\\(\u003Cnum(lnum1)\u003E\u003Cif([lnum1\u003C=1], minute restante, minutes restantes)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "La race, le sexe et l\u0027apparence du personnage peuvent \u00EAtre modifi\u00E9s. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E minute restante\u003CElse/\u003E minutes restantes\u003C/If\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -613,7 +613,7 @@
   },
   {
     "RowId": 68,
-    "Text": "Vous ne pouvez pas vous connecter avec ce personnage, car il est dans une zone n\u00E9cessitant \u201C\u003Csheet(ExVersion,lnum1,0)\u003E\u201D.",
+    "Text": "Vous ne pouvez pas vous connecter avec ce personnage, car il est dans une zone n\u00E9cessitant \u201C\u003Csheet(ExVersion,IntegerParameter(1),0)\u003E\u201D.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -622,7 +622,7 @@
   },
   {
     "RowId": 69,
-    "Text": "Vous ne pouvez pas changer la race, le sexe ou l\u0027apparence de ce personnage, car il est dans une zone n\u00E9cessitant \u201C\u003Csheet(ExVersion,lnum1,0)\u003E\u201D.",
+    "Text": "Vous ne pouvez pas changer la race, le sexe ou l\u0027apparence de ce personnage, car il est dans une zone n\u00E9cessitant \u201C\u003Csheet(ExVersion,IntegerParameter(1),0)\u003E\u201D.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -658,7 +658,7 @@
   },
   {
     "RowId": 73,
-    "Text": "La classe sera \u003Csheet(ClassJob,lnum1,0)\u003E. La cit\u00E9 de d\u00E9part sera par cons\u00E9quent \u003Csheet(Town,lnum2,0)\u003E.",
+    "Text": "La classe sera \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E. La cit\u00E9 de d\u00E9part sera par cons\u00E9quent \u003Csheet(Town,IntegerParameter(2),0)\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -775,7 +775,7 @@
   },
   {
     "RowId": 86,
-    "Text": "Bienvenue dans l\u0027univers de FINAL FANTASY XIV.\nCr\u00E9ez un personnage pour commencer l\u0027aventure, ou choisissez un personnage existant.\nVous avez s\u00E9lectionn\u00E9 le Monde \u003CString\u003Elstr1\u003C/String\u003E sur lequel vous avez \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2\u003C=1])\u003Epersonnage\u003CElse/\u003Epersonnages\u003C/If\u003E. Pour voir un autre Monde, appuyez sur le bouton pr\u00E9vu \u00E0 cet effet en haut \u00E0 droite.",
+    "Text": "Bienvenue dans l\u0027univers de FINAL FANTASY XIV.\nCr\u00E9ez un personnage pour commencer l\u0027aventure, ou choisissez un personnage existant.\nVous avez s\u00E9lectionn\u00E9 le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E sur lequel vous avez \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003Epersonnage\u003CElse/\u003Epersonnages\u003C/If\u003E. Pour voir un autre Monde, appuyez sur le bouton pr\u00E9vu \u00E0 cet effet en haut \u00E0 droite.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 95,
-    "Text": "Vous allez vous connecter avec \u003CString\u003Elstr1\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECe personnage se trouve actuellement hors de son Monde d\u0027origine.\nPour quitter le Monde visit\u00E9, interagissez avec l\u0027une des grandes \u00E9th\u00E9rites de Limsa Lominsa, Gridania ou Ul\u0027dah et consultez la rubrique Voyager vers un autre Monde.\u003C/span\u003E",
+    "Text": "Vous allez vous connecter avec \u003CString\u003EStringParameter(1)\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECe personnage se trouve actuellement hors de son Monde d\u0027origine.\nPour quitter le Monde visit\u00E9, interagissez avec l\u0027une des grandes \u00E9th\u00E9rites de Limsa Lominsa, Gridania ou Ul\u0027dah et consultez la rubrique Voyager vers un autre Monde.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 96,
-    "Text": "Vous allez vous connecter avec \u003CString\u003Elstr1\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECe personnage se trouve actuellement dans un Monde hors de son centre de traitement de donn\u00E9es d\u0027origine.\nPour quitter le Monde visit\u00E9, s\u00E9lectionnez \u201CRetourner dans votre Monde d\u0027origine\u201D \u00E0 l\u0027\u00E9cran de choix de personnage.\u003C/span\u003E",
+    "Text": "Vous allez vous connecter avec \u003CString\u003EStringParameter(1)\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECe personnage se trouve actuellement dans un Monde hors de son centre de traitement de donn\u00E9es d\u0027origine.\nPour quitter le Monde visit\u00E9, s\u00E9lectionnez \u201CRetourner dans votre Monde d\u0027origine\u201D \u00E0 l\u0027\u00E9cran de choix de personnage.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 99,
-    "Text": "\n\nAttributs de base\u003C\u003Cnbsp\u003E\u003E:\nForce \u003CNum\u003Elnum1\u003C/Num\u003E / Dext\u00E9rit\u00E9 \u003CNum\u003Elnum3\u003C/Num\u003E / Vitalit\u00E9 \u003CNum\u003Elnum2\u003C/Num\u003E\nIntelligence \u003CNum\u003Elnum4\u003C/Num\u003E / Esprit \u003CNum\u003Elnum5\u003C/Num\u003E",
+    "Text": "\n\nAttributs de base\u003C\u003Cnbsp\u003E\u003E:\nForce \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E / Dext\u00E9rit\u00E9 \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E / Vitalit\u00E9 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\nIntelligence \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E / Esprit \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -991,7 +991,7 @@
   },
   {
     "RowId": 110,
-    "Text": "Hyur\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Hyur\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Mille ans ont pass\u00E9 depuis que les premiers\nHyurs sont arriv\u00E9s en \u00C9orz\u00E9a. Apr\u00E8s trois\nimportantes vagues migratoires, ils constituent\naujourd\u0027hui la race la plus importante de la\np\u00E9ninsule. Une grande diversit\u00E9 de langages\net de cultures les caract\u00E9rise, au d\u00E9triment\nd\u0027un sentiment d\u0027unit\u00E9 nationale. La libert\u00E9\nest ce qu\u0027il y a de plus cher \u00E0 leurs yeux.",
     "TYPE": 0,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 112,
-    "Text": "\u00C9l\u00E9zen\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "\u00C9l\u00E9zen\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Ces nomades, anciens ma\u00EEtres des plaines\n\u00E9orz\u00E9ennes, ont une silhouette longiligne\nadapt\u00E9e \u00E0 la vie dans les \u00E9tendues sauvages,\net une esp\u00E9rance de vie plus longue que\ncelle des Hyurois. Peuple fier de ses origines,\nles \u00C9l\u00E9zens ont mal accept\u00E9 l\u0027installation\nde ces derniers sur leurs terres et les ont\nlongtemps combattus. Les deux races ont\ncependant appris \u00E0 vivre ensemble au fil\ndu temps.",
     "TYPE": 0,
@@ -1027,7 +1027,7 @@
   },
   {
     "RowId": 114,
-    "Text": "Lalafell\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Lalafell\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Ce petit peuple d\u0027agriculteurs est originaire des\n\u00EEles m\u00E9ridionales. Aux yeux des repr\u00E9sentants\ndes autres races, ils ressemblent \u00E0 des enfants,\nmais cette allure est trompeuse. \u00C0 mesure que\nles liens commerciaux avec \u00C9orz\u00E9a se sont\nrenforc\u00E9s, les Lalafells s\u0027y sont \u00E9tablis. Bien qu\u0027ils\nvalorisent les liens familiaux, ils ne sont en aucun\ncas communautaristes et entretiennent des\nrapports amicaux avec toutes les ethnies.",
     "TYPE": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 116,
-    "Text": "Miqo\u0027te\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Miqo\u0027te\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Ce peuple de chasseurs a migr\u00E9 vers \u00C9orz\u00E9a en\nqu\u00EAte de gibier, traversant les oc\u00E9ans gel\u00E9s lors de\nla grande glaciation qui suivit le cinqui\u00E8me fl\u00E9au.\nDot\u00E9s d\u0027un odorat d\u00E9velopp\u00E9, de jambes muscl\u00E9es\net d\u0027une queue qui leur donne un excellent sens\nde l\u0027\u00E9quilibre, les Miqo\u0027tes ont une morphologie\nadapt\u00E9e \u00E0 la chasse. Extr\u00EAmement territoriaux,\nnombre d\u0027entre eux pr\u00E9f\u00E8rent la vie en solitaire.\nCette tendance est particuli\u00E8rement forte chez\nles hommes.",
     "TYPE": 0,
@@ -1063,7 +1063,7 @@
   },
   {
     "RowId": 118,
-    "Text": "Roegadyn\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Roegadyn\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Les Roegadyns sont la race la plus grande et la\nplus robuste d\u0027\u00C9orz\u00E9a. La majorit\u00E9 des individus\nappartient au Clan de la Mer, un peuple connu\npour son temp\u00E9rament plut\u00F4t excessif, direct,\nsouvent insolent et parfois brutal. \u00C0 l\u0027oppos\u00E9,\nles membres du Clan du Feu ont un caract\u00E8re\ncalme, pos\u00E9 et r\u00E9fl\u00E9chi. Bien qu\u0027en minorit\u00E9,\nil n\u0027est pas rare de les voir travailler dans les\nforges ou comme gardes du corps.",
     "TYPE": 0,
@@ -1261,7 +1261,7 @@
   },
   {
     "RowId": 140,
-    "Text": "Ao Ra\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Ao Ra\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Les cornes arrondies et les \u00E9cailles aux motifs\nd\u00E9licats qui caract\u00E9risent les Ao Ra conduisent\nsouvent les gens \u00E0 croire que ce peuple descendrait\ndes dragons. Ce sujet a longtemps \u00E9t\u00E9 d\u00E9battu, et\ndes \u00E9rudits ont mis en avant certaines diff\u00E9rences\nflagrantes pour \u00E9tayer l\u0027absence de connexion\nentre ces deux races, la plus convaincante \u00E9tant\nle fait que les excroissances cr\u00E2niennes des Ao Ra\nleur fournissent une ou\u00EFe et une reconnaissance\nspatiale d\u00E9velopp\u00E9es. La diff\u00E9rence de gabarit\nentre les hommes et les femmes est un autre trait\nde cette esp\u00E8ce que l\u0027on ne retrouve pas chez\nles dragons.",
     "TYPE": 0,
@@ -2431,7 +2431,7 @@
   },
   {
     "RowId": 270,
-    "Text": "Environ \u003CNum\u003Elnum1\u003C/Num\u003E,\u003CNum\u003Elnum2\u003C/Num\u003E cm",
+    "Text": "Environ \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E cm",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4123,7 +4123,7 @@
   },
   {
     "RowId": 458,
-    "Text": "Hrothgar\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Hrothgar\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Originaires du continent d\u0027Ilsabard, les Hrothgars ont une carrure\nrobuste et ressemblent \u00E0 des lions, du moins les hommes ;\nles femmes sont si peu nombreuses qu\u0027elles ne sont que rarement\naper\u00E7ues par les \u00E9trangers. L\u0027apparence intimidante des Hrothgars,\nnon att\u00E9nu\u00E9e par leurs griffes tranchantes et leurs crocs ac\u00E9r\u00E9s, a\nprovoqu\u00E9 la panique lors de leur arriv\u00E9e en \u00C9orz\u00E9a. En raison de leur\nincapacit\u00E9 \u00E0 communiquer, leurs premiers \u00E9changes avec les locaux\nont souvent \u00E9t\u00E9 conflictuels, mais leur apprentissage de la langue\ncommune a progressivement permis de dissiper les m\u00E9sententes.\nLes relations d\u00E9sormais apais\u00E9es, les Hrothgars sont aujourd\u0027hui\nles bienvenus aux quatre coins du continent.",
     "TYPE": 0,
@@ -4141,7 +4141,7 @@
   },
   {
     "RowId": 460,
-    "Text": "Vi\u00E9ra\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Vi\u00E9ra\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Avec leur grande taille et leur silhouette affin\u00E9e, les Vi\u00E9ras\nressembleraient presque aux Hyurs et aux \u00C9l\u00E9zens s\u0027ils n\u0027\u00E9taient pas\ndot\u00E9s de longues oreilles saillantes. Comme le veut le \u0022Vert Mot\u0022,\nle strict code r\u00E9gissant leur communaut\u00E9, il est interdit aux Vi\u00E9ras\nd\u0027entrer en contact avec le monde ext\u00E9rieur sous peine d\u0027\u00EAtre exil\u00E9s.\nLeur soci\u00E9t\u00E9 est matriarcale et les individus m\u00E2les ne sont que\nrarement aper\u00E7us dans l\u0027enceinte des villages. Tapis dans l\u0027ombre,\nils prot\u00E8gent la for\u00EAt et emp\u00EAchent les intrus de p\u00E9n\u00E9trer sur les\nterres sacr\u00E9es de leur peuple.",
     "TYPE": 0,

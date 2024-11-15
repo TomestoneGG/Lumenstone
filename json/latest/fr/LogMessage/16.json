@@ -46,7 +46,7 @@
   },
   {
     "RowId": 7505,
-    "Text": "D\u00E9puration \u003CIf([lnum1==1])\u003Eest pr\u00EAte \u00E0 l\u0027utilisation\u003Cnbsp\u003E!\u003Csound(1,98)\u003E\u003CElse/\u003En\u0027est pas pr\u00EAte \u00E0 l\u0027utilisation\u003Cnbsp\u003E!\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "D\u00E9puration \u003CIf(Equal(IntegerParameter(1),1))\u003Eest pr\u00EAte \u00E0 l\u0027utilisation\u003C\u003Cnbsp\u003E\u003E!\u003Csound(1,98)\u003E\u003CElse/\u003En\u0027est pas pr\u00EAte \u00E0 l\u0027utilisation\u003C\u003Cnbsp\u003E\u003E!\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -55,7 +55,7 @@
   },
   {
     "RowId": 7506,
-    "Text": "D\u00E9charge d\u0027adr\u00E9naline \u003CIf([lnum1==1])\u003Eest pr\u00EAte \u00E0 l\u0027utilisation\u003Cnbsp\u003E!\u003Csound(1,98)\u003E\u003CElse/\u003En\u0027est pas pr\u00EAte \u00E0 l\u0027utilisation\u003Cnbsp\u003E!\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "D\u00E9charge d\u0027adr\u00E9naline \u003CIf(Equal(IntegerParameter(1),1))\u003Eest pr\u00EAte \u00E0 l\u0027utilisation\u003C\u003Cnbsp\u003E\u003E!\u003Csound(1,98)\u003E\u003CElse/\u003En\u0027est pas pr\u00EAte \u00E0 l\u0027utilisation\u003C\u003Cnbsp\u003E\u003E!\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -280,7 +280,7 @@
   },
   {
     "RowId": 7531,
-    "Text": "La locomotive \u00E0 c\u00E9ruleum en provenance de \u201C\u003Csheet(PlaceName,lnum1,0)\u003E\u201D arrive dans 30 secondes\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "La locomotive \u00E0 c\u00E9ruleum en provenance de \u201C\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u201D arrive dans 30 secondes\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -289,7 +289,7 @@
   },
   {
     "RowId": 7532,
-    "Text": "La locomotive \u00E0 c\u00E9ruleum en provenance de \u201C\u003Csheet(PlaceName,lnum1,0)\u003E\u201D est arriv\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "La locomotive \u00E0 c\u00E9ruleum en provenance de \u201C\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u201D est arriv\u00E9e\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -298,7 +298,7 @@
   },
   {
     "RowId": 7533,
-    "Text": "Les \u003CIf([lnum1==0])\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E ont pris le contr\u00F4le de la station\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Les \u003CIf(Equal(IntegerParameter(1),0))\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E ont pris le contr\u00F4le de la station\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -307,7 +307,7 @@
   },
   {
     "RowId": 7534,
-    "Text": "La gare est sous la domination des \u003CIf([lnum1==0])\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E, qui y ont obtenu \u003Cswitch(lnum2,une clef de gobtank,un grand r\u00E9servoir de c\u00E9ruleum,une dose de gobstimulant,une gobcaisse)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "La gare est sous la domination des \u003CIf(Equal(IntegerParameter(1),0))\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E, qui y ont obtenu \u003Cswitch(IntegerParameter(2),une clef de gobtank,un grand r\u00E9servoir de c\u00E9ruleum,une dose de gobstimulant,une gobcaisse)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 7535,
-    "Text": "Un mercenaire gobelin fera son apparition \u003Csheet(PlaceName,lnum1,8,2)\u003E dans 30 secondes\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Un mercenaire gobelin fera son apparition \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E dans 30 secondes\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -325,7 +325,7 @@
   },
   {
     "RowId": 7536,
-    "Text": "Un mercenaire gobelin est apparu \u003Csheet(PlaceName,lnum1,8,2)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Un mercenaire gobelin est apparu \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 7537,
-    "Text": "Le mercenaire gobelin a sign\u00E9 un contrat avec les \u003CIf([lnum1==0])\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Le mercenaire gobelin a sign\u00E9 un contrat avec les \u003CIf(Equal(IntegerParameter(1),0))\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 7538,
-    "Text": "Le mercenaire gobelin s\u0027est en all\u00E9, car le contrat qu\u0027il avait sign\u00E9 avec les \u003CIf([lnum1==0])\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E est termin\u00E9.",
+    "Text": "Le mercenaire gobelin s\u0027est en all\u00E9, car le contrat qu\u0027il avait sign\u00E9 avec les \u003CIf(Equal(IntegerParameter(1),0))\u003EFaucons\u003CElse/\u003ECorbeaux\u003C/If\u003E est termin\u00E9.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
   },
   {
     "RowId": 7539,
-    "Text": "Le champ magitek prot\u00E9geant \u003CIf([lnum1==0])\u003E\u003Cfrnoun(BNpcName,2,6857,1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(BNpcName,2,6858,1,1)\u003E\u003C/If\u003E est affaibli\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Le champ magitek prot\u00E9geant \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003Cfrnoun(BNpcName,2,6857,1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(BNpcName,2,6858,1,1)\u003E\u003C/If\u003E est affaibli\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -361,7 +361,7 @@
   },
   {
     "RowId": 7540,
-    "Text": "Vous avez trouv\u00E9 un caract\u00E8re secret\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr1\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Vous avez trouv\u00E9 un caract\u00E8re secret\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 7556,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Egagnez\u003CElse/\u003Egagne\u003C/If\u003E \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E \u003CIf([lnum1\u003C=1])\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E d\u0027exp\u00E9rience de s\u00E9rie.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Egagnez\u003CElse/\u003Egagne\u003C/If\u003E \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E d\u0027exp\u00E9rience de s\u00E9rie.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -514,7 +514,7 @@
   },
   {
     "RowId": 7557,
-    "Text": "Gain de niveau de s\u00E9rie\u003C\u003Cnbsp\u003E\u003E! \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eatteignez\u003CElse/\u003Eatteint\u003C/If\u003E le niveau \u003CNum\u003Elnum1\u003C/Num\u003E.",
+    "Text": "Gain de niveau de s\u00E9rie\u003C\u003Cnbsp\u003E\u003E! \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eatteignez\u003CElse/\u003Eatteint\u003C/If\u003E le niveau \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -523,7 +523,7 @@
   },
   {
     "RowId": 7558,
-    "Text": "Gain de niveau de s\u00E9rie EX\u003C\u003Cnbsp\u003E\u003E! \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eatteignez\u003CElse/\u003Eatteint\u003C/If\u003E le jalon \u003CNum\u003Elnum1\u003C/Num\u003E.",
+    "Text": "Gain de niveau de s\u00E9rie EX\u003C\u003Cnbsp\u003E\u003E! \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eatteignez\u003CElse/\u003Eatteint\u003C/If\u003E le jalon \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -820,7 +820,7 @@
   },
   {
     "RowId": 7591,
-    "Text": "Dans \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2\u003C=1])\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E, la \u003Csheet(PlaceName,lnum3,0)\u003E de \u003Cswitch(lnum1,rang B,rang A,rang S)\u003E va devenir active\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Dans \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E, la \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E de \u003Cswitch(IntegerParameter(1),rang B,rang A,rang S)\u003E va devenir active\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -829,7 +829,7 @@
   },
   {
     "RowId": 7592,
-    "Text": "La \u003Csheet(PlaceName,lnum2,0)\u003E de \u003Cswitch(lnum1,rang B,rang A,rang S)\u003E est maintenant active\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "La \u003Csheet(PlaceName,IntegerParameter(2),0)\u003E de \u003Cswitch(IntegerParameter(1),rang B,rang A,rang S)\u003E est maintenant active\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -838,7 +838,7 @@
   },
   {
     "RowId": 7593,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003ELe Maelstrom\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E a pass\u00E9,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003EL\u0027ordre des Deux Vip\u00E8res\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E a pass\u00E9,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003ELes Immortels\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E ont pass\u00E9)\u003E un pacte avec la \u003Csheet(PlaceName,lnum3,0)\u003E de \u003Cswitch(lnum2,rang B,rang A,rang S)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003ELe Maelstrom\u003C/span\u003E a pass\u00E9,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003EL\u0027ordre des Deux Vip\u00E8res\u003C/span\u003E a pass\u00E9,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003ELes Immortels\u003C/span\u003E ont pass\u00E9)\u003E un pacte avec la \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E de \u003Cswitch(IntegerParameter(2),rang B,rang A,rang S)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -847,7 +847,7 @@
   },
   {
     "RowId": 7594,
-    "Text": "La \u003Csheet(PlaceName,lnum1,0)\u003E est devenue inactive.",
+    "Text": "La \u003Csheet(PlaceName,IntegerParameter(1),0)\u003E est devenue inactive.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 7595,
-    "Text": "Un membre \u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003Edu Maelstrom\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003Ede l\u0027ordre des Deux Vip\u00E8res\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003Edes Immortels\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E a atteint l\u0027\u00E9tat d\u0027ivresse du combat V\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Un membre \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003Edu Maelstrom\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003Ede l\u0027ordre des Deux Vip\u00E8res\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003Edes Immortels\u003C/span\u003E)\u003E a atteint l\u0027\u00E9tat d\u0027ivresse du combat V\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 7596,
-    "Text": "Le membre \u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003Edu Maelstrom\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003Edes Deux Vip\u00E8res\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003Edes Immortels\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E en \u00E9tat d\u0027ivresse du combat V a \u00E9t\u00E9 mis K.O.\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Le membre \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003Edu Maelstrom\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003Edes Deux Vip\u00E8res\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003Edes Immortels\u003C/span\u003E)\u003E en \u00E9tat d\u0027ivresse du combat V a \u00E9t\u00E9 mis K.O.\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1099,7 +1099,7 @@
   },
   {
     "RowId": 7622,
-    "Text": "[\u00C9quipe JcJ] Vous avez renomm\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "[\u00C9quipe JcJ] Vous avez renomm\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1108,7 +1108,7 @@
   },
   {
     "RowId": 7623,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E renomm\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E renomm\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "RowId": 7625,
-    "Text": "[\u00C9quipe JcJ] Le nom de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 chang\u00E9 par \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] Le nom de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 chang\u00E9 par \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "RowId": 7626,
-    "Text": "L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D a \u00E9t\u00E9 form\u00E9e.",
+    "Text": "L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D a \u00E9t\u00E9 form\u00E9e.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1144,7 +1144,7 @@
   },
   {
     "RowId": 7627,
-    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D a \u00E9t\u00E9 form\u00E9e.",
+    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D a \u00E9t\u00E9 form\u00E9e.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 7631,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E s\u0027est connect\u00E9\u003CIf(gnum7)\u003E\u003Cif(\u003Csheet(BNpcName,gnum7,6)\u003E,e,)\u003E\u003CElse/\u003E\u003Cif(gnum5,e,)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E s\u0027est connect\u00E9\u003CIf(PlayerParameter(7))\u003E\u003CIf(\u003Csheet(BNpcName,PlayerParameter(7),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 7632,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E s\u0027est d\u00E9connect\u00E9\u003CIf(gnum7)\u003E\u003Cif(\u003Csheet(BNpcName,gnum7,6)\u003E,e,)\u003E\u003CElse/\u003E\u003Cif(gnum5,e,)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E s\u0027est d\u00E9connect\u00E9\u003CIf(PlayerParameter(7))\u003E\u003CIf(\u003Csheet(BNpcName,PlayerParameter(7),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1207,7 +1207,7 @@
   },
   {
     "RowId": 7634,
-    "Text": "[\u00C9quipe JcJ] Vous avez invit\u00E9 \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u00E0 rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] Vous avez invit\u00E9 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u00E0 rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1216,7 +1216,7 @@
   },
   {
     "RowId": 7635,
-    "Text": "Vous avez \u00E9t\u00E9 invit\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E par \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u00E0 rejoindre son \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "Vous avez \u00E9t\u00E9 invit\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E par \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u00E0 rejoindre son \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 7636,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E refus\u00E9 de rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E refus\u00E9 de rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1234,7 +1234,7 @@
   },
   {
     "RowId": 7637,
-    "Text": "Vous avez refus\u00E9 l\u0027invitation de \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u00E0 rejoindre son \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "Vous avez refus\u00E9 l\u0027invitation de \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u00E0 rejoindre son \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 7645,
-    "Text": "L\u0027invitation \u00E0 rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u003CIf([gstr1==gstr3])\u003Evous\u003CElse/\u003E\u003Cif(gnum8,\u003Cfrnoun(ObjStr,9,gnum8,1,1)\u003E,\u003Cif([9==9],\u003Cif(gnum67,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr3)\u003E,\u003Cif([9==8],\u003Cif(gnum67,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr3)\u003E,\u003Cif(gnum6,\u003Csheet(Attributive,9,36)\u003E\u003Cstring(gstr3)\u003E,\u003Csheet(Attributive,9,28)\u003E\u003Cstring(gstr3)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E a \u00E9t\u00E9 annul\u00E9e.",
+    "Text": "L\u0027invitation \u00E0 rejoindre l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cfrnoun(ObjStr,9,PlayerParameter(8),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(9,9))\u003E\u003CIf(PlayerParameter(67))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(3)\u003C/String\u003E\u003CElse/\u003E\u003CIf(Equal(9,8))\u003E\u003CIf(PlayerParameter(67))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(3)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(6))\u003E\u003Csheet(Attributive,9,36)\u003E\u003CString\u003EObjectParameter(3)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,9,28)\u003E\u003CString\u003EObjectParameter(3)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E a \u00E9t\u00E9 annul\u00E9e.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1315,7 +1315,7 @@
   },
   {
     "RowId": 7646,
-    "Text": "[\u00C9quipe JcJ] Vous avez rejoint l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "[\u00C9quipe JcJ] Vous avez rejoint l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 77,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 7647,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E rejoint l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E rejoint l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1351,7 +1351,7 @@
   },
   {
     "RowId": 7650,
-    "Text": "Vous avez quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "Vous avez quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1360,7 +1360,7 @@
   },
   {
     "RowId": 7651,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 7655,
-    "Text": "[\u00C9quipe JcJ] Vous avez exclu \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] Vous avez exclu \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 7656,
-    "Text": "Vous avez \u00E9t\u00E9 exclu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "Vous avez \u00E9t\u00E9 exclu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1414,7 +1414,7 @@
   },
   {
     "RowId": 7657,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E quitt\u00E9 l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1450,7 +1450,7 @@
   },
   {
     "RowId": 7661,
-    "Text": "[\u00C9quipe JcJ] Vous avez promu \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E au rang de sous-chef.",
+    "Text": "[\u00C9quipe JcJ] Vous avez promu \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E au rang de sous-chef.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 7662,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E \u00E9t\u00E9 promu\u003CIf(gnum7)\u003E\u003Cif(\u003Csheet(BNpcName,gnum7,6)\u003E,e,)\u003E\u003CElse/\u003E\u003Cif(gnum5,e,)\u003E\u003C/If\u003E au rang de sous-chef.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E \u00E9t\u00E9 promu\u003CIf(PlayerParameter(7))\u003E\u003CIf(\u003Csheet(BNpcName,PlayerParameter(7),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E au rang de sous-chef.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1495,7 +1495,7 @@
   },
   {
     "RowId": 7666,
-    "Text": "[\u00C9quipe JcJ] Vous avez retir\u00E9 le rang de sous-chef \u00E0 \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] Vous avez retir\u00E9 le rang de sous-chef \u00E0 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1504,7 +1504,7 @@
   },
   {
     "RowId": 7667,
-    "Text": "[\u00C9quipe JcJ] Le rang de sous-chef \u003CIf([gstr1==gstr2])\u003Evous a \u00E9t\u00E9 retir\u00E9\u003CElse/\u003Ea \u00E9t\u00E9 retir\u00E9 \u00E0 \u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] Le rang de sous-chef \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous a \u00E9t\u00E9 retir\u00E9\u003CElse/\u003Ea \u00E9t\u00E9 retir\u00E9 \u00E0 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 7670,
-    "Text": "[\u00C9quipe JcJ] Vous avez c\u00E9d\u00E9 le rang de chef \u00E0 \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] Vous avez c\u00E9d\u00E9 le rang de chef \u00E0 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1540,7 +1540,7 @@
   },
   {
     "RowId": 7671,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E obtenu le rang de chef.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E obtenu le rang de chef.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1567,7 +1567,7 @@
   },
   {
     "RowId": 7674,
-    "Text": "Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, vous avez \u00E9t\u00E9 promu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 ce rang.",
+    "Text": "Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, vous avez \u00E9t\u00E9 promu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 ce rang.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1576,7 +1576,7 @@
   },
   {
     "RowId": 7675,
-    "Text": "[\u00C9quipe JcJ] Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, vous avez \u00E9t\u00E9 promu\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 ce rang.",
+    "Text": "[\u00C9quipe JcJ] Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, vous avez \u00E9t\u00E9 promu\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 ce rang.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1585,7 +1585,7 @@
   },
   {
     "RowId": 7676,
-    "Text": "Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, ce rang a \u00E9t\u00E9 c\u00E9d\u00E9 \u00E0 \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, ce rang a \u00E9t\u00E9 c\u00E9d\u00E9 \u00E0 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1594,7 +1594,7 @@
   },
   {
     "RowId": 7677,
-    "Text": "[\u00C9quipe JcJ] Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, ce rang a \u00E9t\u00E9 c\u00E9d\u00E9 \u00E0 \u003CIf([gstr1==gstr2])\u003Evous\u003CElse/\u003E\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E.",
+    "Text": "[\u00C9quipe JcJ] Du fait d\u0027une absence prolong\u00E9e du chef d\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E, ce rang a \u00E9t\u00E9 c\u00E9d\u00E9 \u00E0 \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 7680,
-    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003Cif([gstr1==gstr2],vous,\u003Cif(gnum7,\u003Cfrnoun(ObjStr,2,gnum7,1,1)\u003E,\u003Cif([2==9],\u003Cif(gnum66,d\u0027,de\u003Cnbsp\u003E)\u003E\u003Cstring(gstr2)\u003E,\u003Cif(gnum5,\u003Csheet(Attributive,2,36)\u003E\u003Cstring(gstr2)\u003E,\u003Csheet(Attributive,2,28)\u003E\u003Cstring(gstr2)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E modifi\u00E9 le blason de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
+    "Text": "[\u00C9quipe JcJ] \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Evous\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cfrnoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003E\u003CIf(Equal(2,9))\u003E\u003CIf(PlayerParameter(66))\u003Ed\u0027\u003CElse/\u003Ede\u003C\u003Cnbsp\u003E\u003E\u003C/If\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(5))\u003E\u003Csheet(Attributive,2,36)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003CElse/\u003E\u003Csheet(Attributive,2,28)\u003E\u003CString\u003EObjectParameter(2)\u003C/String\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eavez\u003CElse/\u003Ea\u003C/If\u003E modifi\u00E9 le blason de l\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1657,7 +1657,7 @@
   },
   {
     "RowId": 7684,
-    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 promue \u00E0 l\u0027\u00E9chelon \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 promue \u00E0 l\u0027\u00E9chelon \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1666,7 +1666,7 @@
   },
   {
     "RowId": 7685,
-    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 r\u00E9trograd\u00E9e \u00E0 l\u0027\u00E9chelon \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D.",
+    "Text": "[\u00C9quipe JcJ] L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E a \u00E9t\u00E9 r\u00E9trograd\u00E9e \u00E0 l\u0027\u00E9chelon \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D.",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1702,7 +1702,7 @@
   },
   {
     "RowId": 7689,
-    "Text": "L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201D a \u00E9t\u00E9 dissoute.",
+    "Text": "L\u0027\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u00E9quipe JcJ\u003C/span\u003E \u201C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201D a \u00E9t\u00E9 dissoute.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2215,7 +2215,7 @@
   },
   {
     "RowId": 7746,
-    "Text": "Impossible d\u0027ex\u00E9cuter cette commande en \u00E9tant furti\u003CIf(gnum4)\u003Eve\u003CElse/\u003Ef\u003C/If\u003E.",
+    "Text": "Impossible d\u0027ex\u00E9cuter cette commande en \u00E9tant furti\u003CIf(PlayerParameter(4))\u003Eve\u003CElse/\u003Ef\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2674,7 +2674,7 @@
   },
   {
     "RowId": 7797,
-    "Text": "Action impossible. Vous \u00EAtes d\u00E9guis\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
+    "Text": "Action impossible. Vous \u00EAtes d\u00E9guis\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 7909,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,25)\u003E vous accompagnera d\u00E9sormais lors de vos parties de mahjong domien.",
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),25)\u003E vous accompagnera d\u00E9sormais lors de vos parties de mahjong domien.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 7910,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,25)\u003E portera sa tenue \u201C\u003Csheet(EmjCostumeData,lnum2,0)\u003E\u201D lors de vos parties de mahjong domien.",
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),25)\u003E portera sa tenue \u201C\u003Csheet(EmjCostumeData,IntegerParameter(2),0)\u003E\u201D lors de vos parties de mahjong domien.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 7921,
-    "Text": "Actions enregistr\u00E9es dans le set \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Actions enregistr\u00E9es dans le set \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3799,7 +3799,7 @@
   },
   {
     "RowId": 7922,
-    "Text": "Le set \u003CString\u003Elstr1\u003C/String\u003E a \u00E9t\u00E9 charg\u00E9.",
+    "Text": "Le set \u003CString\u003EStringParameter(1)\u003C/String\u003E a \u00E9t\u00E9 charg\u00E9.",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3907,7 +3907,7 @@
   },
   {
     "RowId": 7934,
-    "Text": "Vous avez quitt\u00E9 l\u0027Ambition avant la fin du pr\u00E9c\u00E9dent voyage et devez attendre avant d\u0027\u00EAtre \u00E0 nouveau accept\u00E9\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 bord.",
+    "Text": "Vous avez quitt\u00E9 l\u0027Ambition avant la fin du pr\u00E9c\u00E9dent voyage et devez attendre avant d\u0027\u00EAtre \u00E0 nouveau accept\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E \u00E0 bord.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4249,7 +4249,7 @@
   },
   {
     "RowId": 7972,
-    "Text": "Vous avez rendu \u003Cfrnoun(EventItem,2,lnum1,1,1)\u003E \u00E0 Khloe Aliapoh.",
+    "Text": "Vous avez rendu \u003Cfrnoun(EventItem,2,IntegerParameter(1),1,1)\u003E \u00E0 Khloe Aliapoh.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4276,7 +4276,7 @@
   },
   {
     "RowId": 7975,
-    "Text": "Un \u00E9quipier ayant r\u00E9ussi cette mission pour la premi\u00E8re fois, le nombre de points de chance dans le carnet de Khloe a augment\u00E9. (\u003CNum\u003Elnum1\u003C/Num\u003E/9)",
+    "Text": "Un \u00E9quipier ayant r\u00E9ussi cette mission pour la premi\u00E8re fois, le nombre de points de chance dans le carnet de Khloe a augment\u00E9. (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/9)",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4303,7 +4303,7 @@
   },
   {
     "RowId": 7978,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E point\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E de chance ont \u00E9t\u00E9 ajout\u00E9\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E au carnet de Khloe.",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E point\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E de chance ont \u00E9t\u00E9 ajout\u00E9\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E au carnet de Khloe.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4321,7 +4321,7 @@
   },
   {
     "RowId": 7980,
-    "Text": "L\u0027\u00E9quipement recommand\u00E9 pour la classe ou le job \u201C\u003Csheet(ClassJob,gnum68,0)\u003E\u201D a \u00E9t\u00E9 appliqu\u00E9.",
+    "Text": "L\u0027\u00E9quipement recommand\u00E9 pour la classe ou le job \u201C\u003Csheet(ClassJob,PlayerParameter(68),0)\u003E\u201D a \u00E9t\u00E9 appliqu\u00E9.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4357,7 +4357,7 @@
   },
   {
     "RowId": 7984,
-    "Text": "Il n\u0027y a pas de meilleur \u00E9quipement pour la classe ou le job \u201C\u003Csheet(ClassJob,gnum68,0)\u003E\u201D dans l\u0027arsenal que celui d\u00E9j\u00E0 port\u00E9.",
+    "Text": "Il n\u0027y a pas de meilleur \u00E9quipement pour la classe ou le job \u201C\u003Csheet(ClassJob,PlayerParameter(68),0)\u003E\u201D dans l\u0027arsenal que celui d\u00E9j\u00E0 port\u00E9.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4366,7 +4366,7 @@
   },
   {
     "RowId": 7985,
-    "Text": "\u003CIf([lnum1==0])\u003EUne partie de l\u0027\u00E9quipement n\u0027a pas pu \u00EAtre appliqu\u00E9.\u003CElse/\u003EL\u0027\u00E9quipement n\u0027a pas pu \u00EAtre chang\u00E9.\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EUne partie de l\u0027\u00E9quipement n\u0027a pas pu \u00EAtre appliqu\u00E9.\u003CElse/\u003EL\u0027\u00E9quipement n\u0027a pas pu \u00EAtre chang\u00E9.\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4429,7 +4429,7 @@
   },
   {
     "RowId": 7992,
-    "Text": "Vous avez donn\u00E9 \u003CNum\u003Elnum2\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E\u003CIf([lnum2==1])\u003E\u003Cfrnoun(Item,12,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(Item,12,lnum1,2,1)\u003E\u003C/If\u003E.",
+    "Text": "Vous avez donn\u00E9 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cfrnoun(Item,12,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(Item,12,IntegerParameter(1),2,1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4438,7 +4438,7 @@
   },
   {
     "RowId": 7993,
-    "Text": "Vous avez donn\u00E9 \u003CNum\u003Elnum2\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E\u003CIf([lnum2==1])\u003E\u003Cfrnoun(Item,12,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(Item,12,lnum1,2,1)\u003E\u003C/If\u003E, et re\u00E7u \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E \u003CIf([lnum3==1])\u003Egil\u003CElse/\u003Egils\u003C/If\u003E en guise de remerciements.",
+    "Text": "Vous avez donn\u00E9 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C\u003Cnbsp\u003E\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cfrnoun(Item,12,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003Cfrnoun(Item,12,IntegerParameter(1),2,1)\u003E\u003C/If\u003E, et re\u00E7u \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Egil\u003CElse/\u003Egils\u003C/If\u003E en guise de remerciements.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,

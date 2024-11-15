@@ -17,7 +17,7 @@
   },
   {
     "RowId": 12214,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12215,
@@ -29,7 +29,7 @@
   },
   {
     "RowId": 12217,
-    "Text": "\u003CIf([lnum1\u003E999])\u003E999\u002B\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E/\uE03C\u003Cif([lnum2\u003E999],999\u002B,\u003Cnum(lnum2)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E/\uE03D\u003Cif([lnum3\u003E99],99\u002B,\u003Cnum(lnum3)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),999))\u003E999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E/\uE03C\u003CIf(GreaterThan(IntegerParameter(2),999))\u003E999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E/\uE03D\u003CIf(GreaterThan(IntegerParameter(3),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12218,
@@ -57,11 +57,11 @@
   },
   {
     "RowId": 12224,
-    "Text": "Onglet\u003C\u003Cnbsp\u003E\u003E:\u003CIf([lnum1\u003E0])\u003E \\[1\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \\[2\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003E \\[3\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E \\[4\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E \\[5\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum6\u003E0])\u003E \\[Cristaux\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum7\u003E0])\u003E \\[7\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum8\u003E0])\u003E \\[8\\]\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Onglet\u003C\u003Cnbsp\u003E\u003E:\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E [1]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E [2]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E [3]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E [4]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E [5]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(6),0))\u003E [Cristaux]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(7),0))\u003E [7]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(8),0))\u003E [8]\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12225,
-    "Text": "Sacoche\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003E0])\u003E\\[1\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\\[2\\]\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Sacoche\u003C\u003Cnbsp\u003E\u003E: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E[1]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E[2]\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12226,
@@ -169,15 +169,15 @@
   },
   {
     "RowId": 12253,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12254,
-    "Text": "Enregistrement du set d\u0027actions dans \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D."
+    "Text": "Enregistrement du set d\u0027actions dans \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D."
   },
   {
     "RowId": 12255,
-    "Text": "Chargement du set d\u0027actions \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D."
+    "Text": "Chargement du set d\u0027actions \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D."
   },
   {
     "RowId": 12256,
@@ -205,11 +205,11 @@
   },
   {
     "RowId": 12262,
-    "Text": "N\u00B0\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "N\u00B0\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12263,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12264,
@@ -229,7 +229,7 @@
   },
   {
     "RowId": 12268,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 12269,
@@ -265,7 +265,7 @@
   },
   {
     "RowId": 12277,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 12278,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 12373,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12374,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 12375,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
   },
   {
     "RowId": 12376,
@@ -681,7 +681,7 @@
   },
   {
     "RowId": 12381,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E"
   },
   {
     "RowId": 12382,
@@ -709,7 +709,7 @@
   },
   {
     "RowId": 12388,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Evictoire\u003CElse/\u003Evictoires\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Evictoire\u003CElse/\u003Evictoires\u003C/If\u003E"
   },
   {
     "RowId": 12389,
@@ -857,7 +857,7 @@
   },
   {
     "RowId": 12425,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E"
   },
   {
     "RowId": 12426,
@@ -965,7 +965,7 @@
   },
   {
     "RowId": 12452,
-    "Text": "Phase \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Phase \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12453,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 12463,
-    "Text": "Fin dans\u003CIf([lnum1\u003E0])\u003E \u003Cnum(lnum1)\u003E heure\u003Cif([lnum1\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \u003Cnum(lnum2)\u003E minute\u003Cif([lnum2\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003Elnum3\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
+    "Text": "Fin dans\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E heure\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E minute\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E)"
   },
   {
     "RowId": 12464,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 12490,
-    "Text": "Nv \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Nv \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12491,
@@ -1129,7 +1129,7 @@
   },
   {
     "RowId": 12493,
-    "Text": "\u003CSec\u003Elnum1\u003C/Sec\u003E. \u003Csheet(ContentFinderCondition,lnum2,43)\u003E"
+    "Text": "\u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E. \u003Csheet(ContentFinderCondition,IntegerParameter(2),43)\u003E"
   },
   {
     "RowId": 12494,
@@ -1137,7 +1137,7 @@
   },
   {
     "RowId": 12495,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 12496,
@@ -1145,7 +1145,7 @@
   },
   {
     "RowId": 12497,
-    "Text": "x \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "x \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12498,
@@ -1157,7 +1157,7 @@
   },
   {
     "RowId": 12500,
-    "Text": "Temps restant\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003Em \u003CSec\u003Elnum2\u003C/Sec\u003Es"
+    "Text": "Temps restant\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em \u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003Es"
   },
   {
     "RowId": 12501,
@@ -1213,7 +1213,7 @@
   },
   {
     "RowId": 12514,
-    "Text": "\u003CIf([lnum1==2])\u003E\u003Ccolortype(514)\u003ELes voyages entre centres de traitement de donn\u00E9es\u003Ccolortype(0)\u003E\u003Cbr\u003ECette fonctionnalit\u00E9 va plus loin que le voyage inter-Monde. Elle permet \u00E0 vos personnages de visiter des Mondes h\u00E9berg\u00E9s sur d\u0027autres centres de traitement de donn\u00E9es pour peu que ces derniers appartiennent \u00E0 la m\u00EAme r\u00E9gion. Toutefois\\, des restrictions sup\u003C-\u003Epl\u00E9\u003C-\u003Emen\u003C-\u003Etai\u003C-\u003Eres s\u0027appliquent.\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(514)\u003ELimitations du voyage entre centres de traitement de donn\u00E9es\u003Ccolortype(0)\u003E\u003Cbr\u003E- Le transfert peut prendre environ 30 minutes suivant la congestion des serveurs.\u003Cbr\u003E- La proc\u00E9dure ne peut \u00EAtre annul\u00E9e une fois lanc\u00E9e. Vous ne pourrez pas vous connecter avec un personnage diff\u00E9rent ou faire quoi que ce soit d\u0027autre qu\u0027attendre.\u003Cbr\u003E- La proc\u00E9dure vous renverra \u00E0 l\u0027\u00E9cran-titre\\, d\u0027o\u00F9 vous devrez ensuite rejoindre le centre de traitement de donn\u00E9es o\u00F9 vous souhaitiez vous rendre.\u003Cbr\u003E- Vous ne pourrez pas jouer sur votre Monde d\u0027origine avec d\u0027autres personnages tant que celui avec lequel vous voyagez ne sera pas rentr\u00E9.\u003Cbr\u003E- Un personnage visitant d\u00E9j\u00E0 un autre centre de traitement de donn\u00E9es ne peut pas directement voyager vers un autre. Il doit d\u0027abord rentrer dans son Monde d\u0027origine.\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C2])\u003E\u003Ccolortype(514)\u003ELes voyages inter-Monde\u003Ccolortype(0)\u003E\u003Cbr\u003EVous pouvez quitter \u003Cif([lnum1==0],votre Monde d\u0027origine,le Monde o\u00F9 vous vous trouvez)\u003E pour en visiter d\u0027autres appartenant au m\u00EAme centre de traitement de donn\u00E9es.\u003Cbr\u003EFormez une \u00E9quipe pr\u00EAte pour l\u0027aventure\\, partez \u00E0 l\u0027assaut de donjons ou faites des emplettes sur ces march\u00E9s exotiques\u003Cnbsp\u003E; le choix est v\u00F4tre\u003Cnbsp\u003E!\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(514)\u003EAvertissement\u003Ccolortype(0)\u003E\u003Cbr\u003ELe niveau de fr\u00E9quentation du Monde choisi au moment de confirmer votre demande peut consid\u00E9rablement augmenter le temps n\u00E9cessaire \u00E0 la proc\u00E9dure pour aboutir. Une fois celle-ci achev\u00E9e\\, vous serez au\u003C-\u003Eto\u003C-\u003Ema\u003C-\u003Eti\u003C-\u003Eque\u003C-\u003Ement transport\u00E9\u003Cif(gnum4,e,)\u003E vers votre destination\\, annulant par la m\u00EAme occasion toutes les activit\u00E9s en cours.\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELimitations dans les \u003CIf([lnum1\u003E0])\u003Ecentres de traitement de donn\u00E9es\u003CElse/\u003EMondes\u003C/If\u003E visit\u00E9s\u003C/span\u003E\n\u003CIf([lnum1==1])\u003EVotre personnage ne se trouve ac\u003C-\u003Etu\u003C-\u003Eel\u003C-\u003Ele\u003C-\u003Ement pas dans son centre de traitement de donn\u00E9es d\u0027origine.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003ECertaines fonctionnalit\u00E9s sont indisponibles \u00E0 l\u0027ext\u00E9rieur de votre \u003CIf([lnum1\u003E0])\u003Ecentre de traitement de donn\u00E9es\u003CElse/\u003EMonde\u003C/If\u003E d\u0027origine.\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003EListe d\u0027amis\u003Ccolortype(0)\u003E\u003Cbr\u003E- Impossible de communiquer avec des amis se trouvant dans un autre centre de traitement de donn\u00E9es\u003Cbr\u003E- Impossible de former une \u00E9quipe avec des amis se trouvant dans un autre centre de traitement de donn\u00E9es\u003Cbr\u003E- Impossible d\u0027afficher les activit\u00E9s des amis se trouvant dans un autre centre de traitement de donn\u00E9es\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ECompagnies libres\u003C/span\u003E\n- Impossible d\u0027en cr\u00E9er ou d\u0027en rejoindre\n- Impossible de consulter les informations de sa compagnie libre\n- Impossible d\u0027augmenter le nombre des cr\u00E9dits de compagnie gr\u00E2ce aux activit\u00E9s dans les Mondes visit\u00E9s\n- Statut de chef automatiquement c\u00E9d\u00E9 \u00E0 un autre membre apr\u00E8s 35 jours d\u0027absence\n- Impossible d\u0027afficher les activit\u00E9s des membres se trouvant dans un autre centre de traitement de donn\u00E9es\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003ELinkshells inter-Monde\u003Ccolortype(0)\u003E\u003Cbr\u003E- Impossible d\u0027en cr\u00E9er de nouvelles\u003Cbr\u003E- Impossible d\u0027en devenir le chef\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELinkshells\u003C/span\u003E\n- Impossible de les utiliser\n- Impossible de consulter les informations de ses linkshells\n- Impossible d\u0027en cr\u00E9er ou d\u0027en rejoindre\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003E\u00C9quipe JcJ\u003Ccolortype(0)\u003E\u003Cbr\u003E- Impossible d\u0027utiliser les fonctionnalit\u00E9s li\u00E9es aux \u00E9quipes JcJ\\, y compris les canaux de discussion\u003Cbr\u003E- Impossible de consulter les in\u003C-\u003Efor\u003C-\u003Ema\u003C-\u003Etions relatives aux \u00E9quipes JcJ\u003Cbr\u003E- Impossible de former ou de rejoindre une \u00E9quipe JcJ\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(514)\u003ECommunaut\u00E9s\u003Ccolortype(0)\u003E\u003Cbr\u003E- Aucune fonctionnalit\u00E9 disponible\\, \u00E0 l\u0027exception de la recherche de communaut\u00E9\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EServant\u003C/span\u003E\n- Impossible d\u0027en engager ou d\u0027en renvoyer d\u00E9finitivement\n- Impossible de vendre des objets sur les march\u00E9s, bien qu\u0027il reste possible d\u0027en acheter\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELogement\u003C/span\u003E\n- Impossible d\u0027acheter des terrains et des appartements\n- Impossible de partager une maison\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELien \u00E9ternel\u003C/span\u003E\n- Impossible d\u0027organiser une c\u00E9r\u00E9monie du lien \u00E9ternel\n- Impossible d\u0027accepter la qu\u00EAte du lien \u00E9ternel\n- Impossible d\u0027inviter \u00E0 une c\u00E9r\u00E9monie des joueurs habitant un autre Monde\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFonctionnalit\u00E9s et \u00E9l\u00E9ments divers\u003C/span\u003E\n\u003CIf([lnum1\u003E0])\u003E- Certains r\u00E9sultats JcJ ne sont pas pris en compte dans les classements\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E- Impossible de participer \u00E0 une partie class\u00E9e de Crystalline Conflict\n- Impossible de participer \u00E0 un tournoi du Choc des mascottes\n- Impossible de participer \u00E0 un tournoi de Triple Triade\n- Impossible de participer ou de retirer un lot au M\u00E9ga Cactpot\n- Impossible d\u0027utiliser le service de courrier Mog\n- Scores obtenus dans les donjons sans fond non pris en compte dans les tableaux des classements\n- Impossible de se t\u00E9l\u00E9porter vers un ami ou un partenaire de lien \u00E9ternel si celui-ci ne se trouve pas dans le m\u00EAme Monde\n- Impossible pour les mineurs et les botanistes de localiser les l\u00E9gendes locales et les points de r\u00E9colte intacts"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),2))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELes voyages entre centres de traitement de donn\u00E9es\u003C/span\u003E\nCette fonctionnalit\u00E9 va plus loin que le voyage inter-Monde. Elle permet \u00E0 vos personnages de visiter des Mondes h\u00E9berg\u00E9s sur d\u0027autres centres de traitement de donn\u00E9es pour peu que ces derniers appartiennent \u00E0 la m\u00EAme r\u00E9gion. Toutefois, des restrictions suppl\u00E9mentaires s\u0027appliquent.\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELimitations du voyage entre centres de traitement de donn\u00E9es\u003C/span\u003E\n- Le transfert peut prendre environ 30 minutes suivant la congestion des serveurs.\n- La proc\u00E9dure ne peut \u00EAtre annul\u00E9e une fois lanc\u00E9e. Vous ne pourrez pas vous connecter avec un personnage diff\u00E9rent ou faire quoi que ce soit d\u0027autre qu\u0027attendre.\n- La proc\u00E9dure vous renverra \u00E0 l\u0027\u00E9cran-titre, d\u0027o\u00F9 vous devrez ensuite rejoindre le centre de traitement de donn\u00E9es o\u00F9 vous souhaitiez vous rendre.\n- Vous ne pourrez pas jouer sur votre Monde d\u0027origine avec d\u0027autres personnages tant que celui avec lequel vous voyagez ne sera pas rentr\u00E9.\n- Un personnage visitant d\u00E9j\u00E0 un autre centre de traitement de donn\u00E9es ne peut pas directement voyager vers un autre. Il doit d\u0027abord rentrer dans son Monde d\u0027origine.\n\n\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),2))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELes voyages inter-Monde\u003C/span\u003E\nVous pouvez quitter \u003CIf(Equal(IntegerParameter(1),0))\u003Evotre Monde d\u0027origine\u003CElse/\u003Ele Monde o\u00F9 vous vous trouvez\u003C/If\u003E pour en visiter d\u0027autres appartenant au m\u00EAme centre de traitement de donn\u00E9es.\nFormez une \u00E9quipe pr\u00EAte pour l\u0027aventure, partez \u00E0 l\u0027assaut de donjons ou faites des emplettes sur ces march\u00E9s exotiques\u003C\u003Cnbsp\u003E\u003E; le choix est v\u00F4tre\u003C\u003Cnbsp\u003E\u003E!\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EAvertissement\u003C/span\u003E\nLe niveau de fr\u00E9quentation du Monde choisi au moment de confirmer votre demande peut consid\u00E9rablement augmenter le temps n\u00E9cessaire \u00E0 la proc\u00E9dure pour aboutir. Une fois celle-ci achev\u00E9e, vous serez automatiquement transport\u00E9\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E vers votre destination, annulant par la m\u00EAme occasion toutes les activit\u00E9s en cours.\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELimitations dans les \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Ecentres de traitement de donn\u00E9es\u003CElse/\u003EMondes\u003C/If\u003E visit\u00E9s\u003C/span\u003E\n\u003CIf(Equal(IntegerParameter(1),1))\u003EVotre personnage ne se trouve actuellement pas dans son centre de traitement de donn\u00E9es d\u0027origine.\n\u003CElse/\u003E \u003C/If\u003ECertaines fonctionnalit\u00E9s sont indisponibles \u00E0 l\u0027ext\u00E9rieur de votre \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Ecentre de traitement de donn\u00E9es\u003CElse/\u003EMonde\u003C/If\u003E d\u0027origine.\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EListe d\u0027amis\u003C/span\u003E\n- Impossible de communiquer avec des amis se trouvant dans un autre centre de traitement de donn\u00E9es\n- Impossible de former une \u00E9quipe avec des amis se trouvant dans un autre centre de traitement de donn\u00E9es\n- Impossible d\u0027afficher les activit\u00E9s des amis se trouvant dans un autre centre de traitement de donn\u00E9es\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ECompagnies libres\u003C/span\u003E\n- Impossible d\u0027en cr\u00E9er ou d\u0027en rejoindre\n- Impossible de consulter les informations de sa compagnie libre\n- Impossible d\u0027augmenter le nombre des cr\u00E9dits de compagnie gr\u00E2ce aux activit\u00E9s dans les Mondes visit\u00E9s\n- Statut de chef automatiquement c\u00E9d\u00E9 \u00E0 un autre membre apr\u00E8s 35 jours d\u0027absence\n- Impossible d\u0027afficher les activit\u00E9s des membres se trouvant dans un autre centre de traitement de donn\u00E9es\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELinkshells inter-Monde\u003C/span\u003E\n- Impossible d\u0027en cr\u00E9er de nouvelles\n- Impossible d\u0027en devenir le chef\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELinkshells\u003C/span\u003E\n- Impossible de les utiliser\n- Impossible de consulter les informations de ses linkshells\n- Impossible d\u0027en cr\u00E9er ou d\u0027en rejoindre\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003E\u00C9quipe JcJ\u003C/span\u003E\n- Impossible d\u0027utiliser les fonctionnalit\u00E9s li\u00E9es aux \u00E9quipes JcJ, y compris les canaux de discussion\n- Impossible de consulter les informations relatives aux \u00E9quipes JcJ\n- Impossible de former ou de rejoindre une \u00E9quipe JcJ\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ECommunaut\u00E9s\u003C/span\u003E\n- Aucune fonctionnalit\u00E9 disponible, \u00E0 l\u0027exception de la recherche de communaut\u00E9\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EServant\u003C/span\u003E\n- Impossible d\u0027en engager ou d\u0027en renvoyer d\u00E9finitivement\n- Impossible de vendre des objets sur les march\u00E9s, bien qu\u0027il reste possible d\u0027en acheter\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELogement\u003C/span\u003E\n- Impossible d\u0027acheter des terrains et des appartements\n- Impossible de partager une maison\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELien \u00E9ternel\u003C/span\u003E\n- Impossible d\u0027organiser une c\u00E9r\u00E9monie du lien \u00E9ternel\n- Impossible d\u0027accepter la qu\u00EAte du lien \u00E9ternel\n- Impossible d\u0027inviter \u00E0 une c\u00E9r\u00E9monie des joueurs habitant un autre Monde\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFonctionnalit\u00E9s et \u00E9l\u00E9ments divers\u003C/span\u003E\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E- Certains r\u00E9sultats JcJ ne sont pas pris en compte dans les classements\n\u003CElse/\u003E \u003C/If\u003E- Impossible de participer \u00E0 une partie class\u00E9e de Crystalline Conflict\n- Impossible de participer \u00E0 un tournoi du Choc des mascottes\n- Impossible de participer \u00E0 un tournoi de Triple Triade\n- Impossible de participer ou de retirer un lot au M\u00E9ga Cactpot\n- Impossible d\u0027utiliser le service de courrier Mog\n- Scores obtenus dans les donjons sans fond non pris en compte dans les tableaux des classements\n- Impossible de se t\u00E9l\u00E9porter vers un ami ou un partenaire de lien \u00E9ternel si celui-ci ne se trouve pas dans le m\u00EAme Monde\n- Impossible pour les mineurs et les botanistes de localiser les l\u00E9gendes locales et les points de r\u00E9colte intacts"
   },
   {
     "RowId": 12515,
@@ -1233,7 +1233,7 @@
   },
   {
     "RowId": 12519,
-    "Text": "Voulez-vous vraiment visiter \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Voulez-vous vraiment visiter \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12520,
@@ -1241,7 +1241,7 @@
   },
   {
     "RowId": 12521,
-    "Text": "Destination\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Destination\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12522,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 12523,
-    "Text": "Temps \u00E9coul\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003Elnum1\u003C/Num\u003Em\u003CSec\u003Elnum2\u003C/Sec\u003Es/Temps d\u0027attente moyen\u003C\u003Cnbsp\u003E\u003E: "
+    "Text": "Temps \u00E9coul\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003Es/Temps d\u0027attente moyen\u003C\u003Cnbsp\u003E\u003E: "
   },
   {
     "RowId": 12524,
@@ -1261,11 +1261,11 @@
   },
   {
     "RowId": 12526,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12527,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12528,
@@ -1285,23 +1285,23 @@
   },
   {
     "RowId": 12532,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum1\u003C=1])\u003Eer\u003CElse/\u003Ee\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eer\u003CElse/\u003Ee\u003C/If\u003E"
   },
   {
     "RowId": 12533,
-    "Text": "Au moins \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Epersonne\u003CElse/\u003Epersonnes\u003C/If\u003E en attente"
+    "Text": "Au moins \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Epersonne\u003CElse/\u003Epersonnes\u003C/If\u003E en attente"
   },
   {
     "RowId": 12534,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003Em"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
   },
   {
     "RowId": 12535,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003Em et plus"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em et plus"
   },
   {
     "RowId": 12536,
-    "Text": "Moins de \u003CNum\u003Elnum1\u003C/Num\u003Em"
+    "Text": "Moins de \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
   },
   {
     "RowId": 12537,
@@ -1313,15 +1313,15 @@
   },
   {
     "RowId": 12539,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12540,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12541,
-    "Text": "\u003CIf([lnum1==1])\u003EBaroudeuse\u003CElse/\u003EBaroudeur\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003EBaroudeuse\u003CElse/\u003EBaroudeur\u003C/If\u003E"
   },
   {
     "RowId": 12542,
@@ -1357,7 +1357,7 @@
   },
   {
     "RowId": 12550,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12551,
@@ -1377,7 +1377,7 @@
   },
   {
     "RowId": 12555,
-    "Text": "Fin dans\u003CIf([lnum1\u003E0])\u003E \u003Cnum(lnum1)\u003E heure\u003Cif([lnum1\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \u003Cnum(lnum2)\u003E minute\u003Cif([lnum2\u003C=1],,s)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003Elnum3\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E)"
+    "Text": "Fin dans\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E heure\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E minute\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E (\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E)"
   },
   {
     "RowId": 12556,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 12562,
-    "Text": "\u003Cswitch(lnum1,\u003Chead(\u003Csheet(ClassJob,9,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,10,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,11,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,8,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,12,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,13,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,14,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,15,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,16,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,17,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,18,0)\u003E)\u003E)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CHead\u003E\u003Csheet(ClassJob,9,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,10,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,11,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,8,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,12,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,13,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,14,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,15,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,16,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,17,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,18,0)\u003E\u003C/Head\u003E)\u003E"
   },
   {
     "RowId": 12563,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 12565,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\uE03C\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\uE03C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12566,
@@ -1445,7 +1445,7 @@
   },
   {
     "RowId": 12572,
-    "Text": "\u003Cswitch(lnum1,M\u00E9tallurgistes,Fa\u00E7onniers,Pr\u00E9parateurs,Naturalistes,P\u00EAcheurs)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),M\u00E9tallurgistes,Fa\u00E7onniers,Pr\u00E9parateurs,Naturalistes,P\u00EAcheurs)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12573,
@@ -1465,7 +1465,7 @@
   },
   {
     "RowId": 12577,
-    "Text": "\u003Cswitch(lnum1,M\u00E9tallurgistes,Fa\u00E7onniers,Pr\u00E9parateurs,Naturalistes,P\u00EAcheurs)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),M\u00E9tallurgistes,Fa\u00E7onniers,Pr\u00E9parateurs,Naturalistes,P\u00EAcheurs)\u003E\u003C\u003Cnbsp\u003E\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12578,
@@ -1473,7 +1473,7 @@
   },
   {
     "RowId": 12579,
-    "Text": "La limite ayant \u00E9t\u00E9 atteinte, vous ne pourrez pas recevoir tous \u003Cfrnoun(Item,2,lnum1,2,1)\u003E. Continuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "La limite ayant \u00E9t\u00E9 atteinte, vous ne pourrez pas recevoir tous \u003Cfrnoun(Item,2,IntegerParameter(1),2,1)\u003E. Continuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12580,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 12589,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E objet\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E en vente"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E objet\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E en vente"
   },
   {
     "RowId": 12590,
@@ -1521,7 +1521,7 @@
   },
   {
     "RowId": 12591,
-    "Text": "Fin de la t\u00E2che dans \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,moins d\u0027une minute)\u003E\u003C/If\u003E"
+    "Text": "Fin de la t\u00E2che dans \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003Emoins d\u0027une minute\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12592,
@@ -1545,7 +1545,7 @@
   },
   {
     "RowId": 12597,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E objet\u003CIf([lnum1\u003C=1])\u003E \u003CElse/\u003Es\u003C/If\u003E en vente jusqu\u0027au \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E objet\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E en vente jusqu\u0027au \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
   },
   {
     "RowId": 12598,
@@ -1553,11 +1553,11 @@
   },
   {
     "RowId": 12599,
-    "Text": "\u003CIf([lnum1\u003E0])\u003ENv \u003Cnum(lnum1)\u003E \u003CElse/\u003E \u003C/If\u003E\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003ENv \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CElse/\u003E \u003C/If\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12600,
-    "Text": "Retour de \u003CString\u003Elstr1\u003C/String\u003E dans \u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Eh\u003Cif([lnum3\u003E0], \u003Cnum(lnum3)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum3\u003E0],\u003Cnum(lnum3)\u003Em,moins d\u0027une minute)\u003E\u003C/If\u003E"
+    "Text": "Retour de \u003CString\u003EStringParameter(1)\u003C/String\u003E dans \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Eh\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em\u003CElse/\u003Emoins d\u0027une minute\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12601,
@@ -1609,7 +1609,7 @@
   },
   {
     "RowId": 12613,
-    "Text": "Entrez un nouveau nom pour le set \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D. Laissez la zone de saisie vierge pour utiliser le nom par d\u00E9faut."
+    "Text": "Entrez un nouveau nom pour le set \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D. Laissez la zone de saisie vierge pour utiliser le nom par d\u00E9faut."
   },
   {
     "RowId": 12614,
@@ -1633,11 +1633,11 @@
   },
   {
     "RowId": 12624,
-    "Text": "Voulez-vous vraiment visiter \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EVous ne pouvez pas utiliser le voyage inter-Monde en faisant partie d\u0027une \u00E9quipe standard.\nVous pouvez n\u00E9anmoins faire partie d\u0027une \u00E9quipe inter-Monde ou \u00EAtre en cours de recherche d\u0027\u00E9quipe.\u003C/span\u003E"
+    "Text": "Voulez-vous vraiment visiter \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D\u003C\u003Cnbsp\u003E\u003E?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EVous ne pouvez pas utiliser le voyage inter-Monde en faisant partie d\u0027une \u00E9quipe standard.\nVous pouvez n\u00E9anmoins faire partie d\u0027une \u00E9quipe inter-Monde ou \u00EAtre en cours de recherche d\u0027\u00E9quipe.\u003C/span\u003E"
   },
   {
     "RowId": 12625,
-    "Text": "\u003CIf([lnum1==1])\u003EExploratrice\u003CElse/\u003EExplorateur\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003EExploratrice\u003CElse/\u003EExplorateur\u003C/If\u003E"
   },
   {
     "RowId": 12626,
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 12627,
-    "Text": "\u003CIf([lnum1==1])\u003EVoyageuse\u003CElse/\u003EVoyageur\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003EVoyageuse\u003CElse/\u003EVoyageur\u003C/If\u003E"
   },
   {
     "RowId": 12628,
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 12634,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E gil\u003Cif([lnum1\u003C=1],,s)\u003E / \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E insigne\u003Cif([lnum2\u003C=1],,s)\u003E de chasse / \u003Ckilo(lnum3,\u003Cnbsp\u003E)\u003E Exp\u003CElse/\u003E\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E gil\u003Cif([lnum1\u003C=1],,s)\u003E / \u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E insigne\u003Cif([lnum2\u003C=1],,s)\u003E de chasse\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E insigne\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E de chasse / \u003Ckilo(IntegerParameter(3),\u003C\u003Cnbsp\u003E\u003E)\u003E Exp\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E / \u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E insigne\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E de chasse\u003C/If\u003E"
   },
   {
     "RowId": 12635,
@@ -1677,15 +1677,15 @@
   },
   {
     "RowId": 12636,
-    "Text": "\u003Cswitch(lnum1,Contrat du clan Kupo \\(d\u00E9butant\\),Contrat du clan Kupo \\(interm\u00E9diaire\\),Contrat du clan Kupo \\(avanc\u00E9\\),Contrat d\u0027\u00E9lite du clan Kupo)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrat du clan Kupo (d\u00E9butant),Contrat du clan Kupo (interm\u00E9diaire),Contrat du clan Kupo (avanc\u00E9),Contrat d\u0027\u00E9lite du clan Kupo)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12637,
-    "Text": "\u003Cswitch(lnum1,Contrat du clan \\(d\u00E9butant\\),Contrat du clan \\(interm\u00E9diaire\\),Contrat du clan \\(avanc\u00E9\\),Contrat d\u0027\u00E9lite du clan)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrat du clan (d\u00E9butant),Contrat du clan (interm\u00E9diaire),Contrat du clan (avanc\u00E9),Contrat d\u0027\u00E9lite du clan)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12638,
-    "Text": "\u003Cswitch(lnum1,Contrat de chasse,Contrat d\u0027\u00E9lite)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrat de chasse,Contrat d\u0027\u00E9lite)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12639,
@@ -1709,7 +1709,7 @@
   },
   {
     "RowId": 12644,
-    "Text": "\u003Cswitch(lnum1,Contrat du coll\u00E8ge des glaneurs \\(d\u00E9butant\\),Contrat du coll\u00E8ge des glaneurs \\(interm\u00E9diaire\\),Contrat du coll\u00E8ge des glaneurs \\(avanc\u00E9\\),Contrat d\u0027\u00E9lite du coll\u00E8ge des glaneurs)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrat du coll\u00E8ge des glaneurs (d\u00E9butant),Contrat du coll\u00E8ge des glaneurs (interm\u00E9diaire),Contrat du coll\u00E8ge des glaneurs (avanc\u00E9),Contrat d\u0027\u00E9lite du coll\u00E8ge des glaneurs)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12645,
@@ -1733,7 +1733,7 @@
   },
   {
     "RowId": 12650,
-    "Text": "\u003Cswitch(lnum1,Contrat de la coop\u00E9rative turalienne \\(d\u00E9butant\\),Contrat de la coop\u00E9rative turalienne \\(interm\u00E9diaire\\),Contrat de la coop\u00E9rative turalienne \\(avanc\u00E9\\),Contrat d\u0027\u00E9lite de la coop\u00E9rative turalienne)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Contrat de la coop\u00E9rative turalienne (d\u00E9butant),Contrat de la coop\u00E9rative turalienne (interm\u00E9diaire),Contrat de la coop\u00E9rative turalienne (avanc\u00E9),Contrat d\u0027\u00E9lite de la coop\u00E9rative turalienne)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12670,
@@ -1745,11 +1745,11 @@
   },
   {
     "RowId": 12672,
-    "Text": "\u003Cswitch(lnum1,Point de r\u00E9colte intact,L\u00E9gende locale,Points de r\u00E9colte \u00E9ph\u00E9m\u00E8res)\u003E\nHoraire(s) d\u0027apparition (Heure \u00E9orz\u00E9enne)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Point de r\u00E9colte intact,L\u00E9gende locale,Points de r\u00E9colte \u00E9ph\u00E9m\u00E8res)\u003E\nHoraire(s) d\u0027apparition (Heure \u00E9orz\u00E9enne)"
   },
   {
     "RowId": 12673,
-    "Text": "Entre \u003CNum\u003Elnum1\u003C/Num\u003Eh\u003CSec\u003Elnum2\u003C/Sec\u003E et \u003CNum\u003Elnum3\u003C/Num\u003Eh\u003CSec\u003Elnum4\u003C/Sec\u003E"
+    "Text": "Entre \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E et \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Eh\u003CSec\u003EIntegerParameter(4)\u003C/Sec\u003E"
   },
   {
     "RowId": 12674,
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 12677,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u002B?"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u002B?"
   },
   {
     "RowId": 12678,
@@ -1785,7 +1785,7 @@
   },
   {
     "RowId": 12682,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \u2267 \u003CNum\u003Elnum2\u003C/Num\u003E n\u00E9cessaire"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \u2267 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E n\u00E9cessaire"
   },
   {
     "RowId": 12683,
@@ -1905,7 +1905,7 @@
   },
   {
     "RowId": 12727,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\uE033Nv. d\u0027objet moyen\u003Cnbsp\u003E: \u003Cnum(lnum1)\u003E ou plus\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E     \uE0BDNv. d\u0027objet synchronis\u00E9\u003Cnbsp\u003E: \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\uE033Nv. d\u0027objet moyen\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E ou plus\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E     \uE0BDNv. d\u0027objet synchronis\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12728,
@@ -1961,7 +1961,7 @@
   },
   {
     "RowId": 12742,
-    "Text": "Vous \u00EAtes sur le point de d\u0027envoyer une requ\u00EAte d\u0027ami \u00E0 \u003CString\u003Elstr1\u003C/String\u003E, dont le Monde d\u0027origine se trouve dans un centre de donn\u00E9e d\u0027une autre r\u00E9gion. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "Vous \u00EAtes sur le point de d\u0027envoyer une requ\u00EAte d\u0027ami \u00E0 \u003CString\u003EStringParameter(1)\u003C/String\u003E, dont le Monde d\u0027origine se trouve dans un centre de donn\u00E9e d\u0027une autre r\u00E9gion. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 12750,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 12754,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12755,
@@ -1997,6 +1997,6 @@
   },
   {
     "RowId": 12758,
-    "Text": "\uE03D \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE03D \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   }
 ]

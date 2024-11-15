@@ -317,7 +317,7 @@
   },
   {
     "RowId": 22810,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Accrochez-vous\u003C\u003Cnbsp\u003E\u003E! Je devrais pouvoir vous aider avec \u00C9den\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Accrochez-vous\u003C\u003Cnbsp\u003E\u003E! Je devrais pouvoir vous aider avec \u00C9den\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 22811,
@@ -329,7 +329,7 @@
   },
   {
     "RowId": 22813,
-    "Text": "Vous allez pouvoir respirer, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "Vous allez pouvoir respirer, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 22814,
@@ -1205,7 +1205,7 @@
   },
   {
     "RowId": 23525,
-    "Text": "On a bien fait de demander un coup de main \u00E0 l\u0027\u003CIf(gnum4)\u003E\u00E9trang\u00E8re\u003CElse/\u003E\u00E9tranger\u003C/If\u003E."
+    "Text": "On a bien fait de demander un coup de main \u00E0 l\u0027\u003CIf(PlayerParameter(4))\u003E\u00E9trang\u00E8re\u003CElse/\u003E\u00E9tranger\u003C/If\u003E."
   },
   {
     "RowId": 23526,
@@ -1629,7 +1629,7 @@
   },
   {
     "RowId": 23700,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\n\u003Cswitch(lnum2,Rang B,Rang A,Rang S)\u003E\n\u003Cswitch(lnum3,Temps restant jusqu\u0027\u00E0 activation\uFF1A\u003Cnum(lnum4)\u003E:\u003Csec(lnum5)\u003E,Active,Captur\u00E9e \u003Cicon(51)\u003E,Captur\u00E9e \u003Cicon(52)\u003E,Captur\u00E9e \u003Cicon(53)\u003E)\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\n\u003Cswitch(IntegerParameter(2),Rang B,Rang A,Rang S)\u003E\n\u003Cswitch(IntegerParameter(3),Temps restant jusqu\u0027\u00E0 activation\uFF1A\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(5)\u003C/Sec\u003E,Active,Captur\u00E9e \u003CIcon\u003E51\u003C/Icon\u003E,Captur\u00E9e \u003CIcon\u003E52\u003C/Icon\u003E,Captur\u00E9e \u003CIcon\u003E53\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 23701,
@@ -1941,11 +1941,11 @@
   },
   {
     "RowId": 23906,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! \u00C0 votre signal, je fais le m\u00E9nage et je recrache \u00E7a un peu plus loin\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! \u00C0 votre signal, je fais le m\u00E9nage et je recrache \u00E7a un peu plus loin\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 23907,
-    "Text": "C\u0027est parti\u003C\u003Cnbsp\u003E\u003E! J\u0027esp\u00E8re que t\u0027es pr\u00EAt\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "C\u0027est parti\u003C\u003Cnbsp\u003E\u003E! J\u0027esp\u00E8re que t\u0027es pr\u00EAt\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 23908,
@@ -1953,7 +1953,7 @@
   },
   {
     "RowId": 23909,
-    "Text": "L\u00E0 aussi, \u00E7a va mal... Ezel II\u003C\u003Cnbsp\u003E\u003E! Aspire d\u00E8s que \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E t\u0027en donne l\u0027ordre\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "L\u00E0 aussi, \u00E7a va mal... Ezel II\u003C\u003Cnbsp\u003E\u003E! Aspire d\u00E8s que \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E t\u0027en donne l\u0027ordre\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 23910,
@@ -1973,7 +1973,7 @@
   },
   {
     "RowId": 23914,
-    "Text": "Fais attention, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Il a l\u0027air costaud celui-l\u00E0\u003C\u003Cnbsp\u003E\u003E!"
+    "Text": "Fais attention, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E! Il a l\u0027air costaud celui-l\u00E0\u003C\u003Cnbsp\u003E\u003E!"
   },
   {
     "RowId": 23915,

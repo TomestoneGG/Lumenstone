@@ -21,7 +21,7 @@
   },
   {
     "RowId": 3934,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E/\u003Ckilo(lnum2,\u003Cnbsp\u003E)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E/\u003Ckilo(IntegerParameter(2),\u003C\u003Cnbsp\u003E\u003E)\u003E"
   },
   {
     "RowId": 3960,
@@ -93,7 +93,7 @@
   },
   {
     "RowId": 4002,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E img/s"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E img/s"
   },
   {
     "RowId": 4003,
@@ -557,7 +557,7 @@
   },
   {
     "RowId": 4124,
-    "Text": "Les manettes support\u00E9es peuvent utiliser les fonctions de vibration et de lecture d\u0027effets sonores. \u003Cswitch(gnum78,\\(\u003Cicon(63)\u003EDirectX 11 uniquement\\),,\\(\u003Cicon(63)\u003EWindows\u00AE uniquement\\))\u003E"
+    "Text": "Les manettes support\u00E9es peuvent utiliser les fonctions de vibration et de lecture d\u0027effets sonores. \u003Cswitch(PlayerParameter(78),(\u003CIcon\u003E63\u003C/Icon\u003EDirectX 11 uniquement),,(\u003CIcon\u003E63\u003C/Icon\u003EWindows\u00AE uniquement))\u003E"
   },
   {
     "RowId": 4125,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 4149,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E \uE033\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E \uE033\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4150,
@@ -713,7 +713,7 @@
   },
   {
     "RowId": 4165,
-    "Text": "Optimise automatiquement la r\u00E9solution.\n\u003CIf([gnum78==3])\u003E\u003Cicon(63)\u003ECette fonction est indisponible sur Mac.\u003CElse/\u003E* Cette fonction est ac\u003C-\u003Etu\u003C-\u003Eel\u003C-\u003Ele\u003C-\u003Ement en version b\u00EAta.\u003C/If\u003E"
+    "Text": "Optimise automatiquement la r\u00E9solution.\n\u003CIf(Equal(PlayerParameter(78),3))\u003E\u003CIcon\u003E63\u003C/Icon\u003ECette fonction est indisponible sur Mac.\u003CElse/\u003E* Cette fonction est actuellement en version b\u00EAta.\u003C/If\u003E"
   },
   {
     "RowId": 4166,
@@ -745,7 +745,7 @@
   },
   {
     "RowId": 4174,
-    "Text": "Param\u00E8tres \u003CIf([gnum75==0])\u003Emanette\u003CElse/\u003E\u003Cif([gnum78==99],manette sans fil,manette sans fil Xbox)\u003E\u003C/If\u003E"
+    "Text": "Param\u00E8tres \u003CIf(Equal(PlayerParameter(75),0))\u003Emanette\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(78),99))\u003Emanette sans fil\u003CElse/\u003Emanette sans fil Xbox\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 4175,
@@ -825,7 +825,7 @@
   },
   {
     "RowId": 4195,
-    "Text": "Voulez-vous conserver cette r\u00E9solution\u003C\u003Cnbsp\u003E\u003E?\nLes param\u00E8tres pr\u00E9c\u00E9dents seront r\u00E9tablis dans \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E."
+    "Text": "Voulez-vous conserver cette r\u00E9solution\u003C\u003Cnbsp\u003E\u003E?\nLes param\u00E8tres pr\u00E9c\u00E9dents seront r\u00E9tablis dans \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E."
   },
   {
     "RowId": 4196,
@@ -1049,7 +1049,7 @@
   },
   {
     "RowId": 4306,
-    "Text": "\u00C9tape \u003CNum\u003Elnum1\u003C/Num\u003E/24"
+    "Text": "\u00C9tape \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24"
   },
   {
     "RowId": 4307,
@@ -1093,103 +1093,103 @@
   },
   {
     "RowId": 4320,
-    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers le haut.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers le haut.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4321,
-    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers le bas.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers le bas.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4322,
-    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers la gauche.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers la gauche.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4323,
-    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers la droite.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick gauche \u003CIcon\u003E20\u003C/Icon\u003E vers la droite.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4324,
-    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers le haut.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers le haut.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4325,
-    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers le bas.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers le bas.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4326,
-    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers la gauche.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers la gauche.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4327,
-    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers la droite.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Poussez le stick droit \u003CIcon\u003E23\u003C/Icon\u003E vers la droite.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4328,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E1\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E1\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4329,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E2\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E2\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4330,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E3\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E3\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4331,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E4\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E4\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4332,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E11\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E11\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4333,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E8\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E8\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4334,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E9\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E9\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4335,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E10\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E10\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4336,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E12\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E12\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4337,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E14\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E14\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4338,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E13\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E13\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4339,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E15\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E15\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4340,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E19\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E19\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4341,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E18\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E18\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4342,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E16\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E16\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4343,
-    "Text": "Appuyez sur la touche \u003CIcon\u003E17\u003C/Icon\u003E.\n(\u003CNum\u003Elnum1\u003C/Num\u003E/24)"
+    "Text": "Appuyez sur la touche \u003CIcon\u003E17\u003C/Icon\u003E.\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/24)"
   },
   {
     "RowId": 4350,
-    "Text": "\uE033\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE033\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 4351,
@@ -1213,11 +1213,11 @@
   },
   {
     "RowId": 4356,
-    "Text": "La tenue n\u00B0\u003CNum\u003Elnum2\u003C/Num\u003E \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D va \u00EAtre remplac\u00E9e par votre \u00E9quipement actuel. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "La tenue n\u00B0\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D va \u00EAtre remplac\u00E9e par votre \u00E9quipement actuel. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 4357,
-    "Text": "La tenue n\u00B0\u003CNum\u003Elnum2\u003C/Num\u003E \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D va \u00EAtre supprim\u00E9e. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "La tenue n\u00B0\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D va \u00EAtre supprim\u00E9e. Confirmer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 4358,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 4359,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E Nv \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E Nv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4360,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 4365,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E nv \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E nv \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 4366,
@@ -1321,7 +1321,7 @@
   },
   {
     "RowId": 4383,
-    "Text": "\u003Csheet(ClassJob,lnum1,1)\u003E (\uE033\u003CNum\u003Elnum2\u003C/Num\u003E)"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),1)\u003E (\uE033\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
   },
   {
     "RowId": 4384,
@@ -1329,7 +1329,7 @@
   },
   {
     "RowId": 4385,
-    "Text": "L\u0027objet de la main directrice n\u0027est pas dans l\u0027arsenal. Le remplacer par \u003Cfrnoun(Item,1,lnum2,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "L\u0027objet de la main directrice n\u0027est pas dans l\u0027arsenal. Le remplacer par \u003Cfrnoun(Item,1,IntegerParameter(2),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 4386,
@@ -1341,7 +1341,7 @@
   },
   {
     "RowId": 4388,
-    "Text": "L\u0027objet de la main directrice ne peut pas \u00EAtre \u00E9quip\u00E9 actuellement. Le remplacer par \u003Cfrnoun(Item,1,lnum2,1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "L\u0027objet de la main directrice ne peut pas \u00EAtre \u00E9quip\u00E9 actuellement. Le remplacer par \u003Cfrnoun(Item,1,IntegerParameter(2),1,1)\u003E\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 4390,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 4408,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
   },
   {
     "RowId": 4409,
@@ -1561,7 +1561,7 @@
   },
   {
     "RowId": 4446,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E,\u003CSec\u003Elnum2\u003C/Sec\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E%"
   },
   {
     "RowId": 4447,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 4454,
-    "Text": "Sertissage impossible \u00E0 ce niveau.\n(Condition requise\u003C\u003Cnbsp\u003E\u003E: classe d\u0027artisanat nv \u003CNum\u003Elnum1\u003C/Num\u003E)"
+    "Text": "Sertissage impossible \u00E0 ce niveau.\n(Condition requise\u003C\u003Cnbsp\u003E\u003E: classe d\u0027artisanat nv \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)"
   },
   {
     "RowId": 4455,
@@ -1641,7 +1641,7 @@
   },
   {
     "RowId": 4467,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\uE049"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\uE049"
   },
   {
     "RowId": 4468,
@@ -1685,7 +1685,7 @@
   },
   {
     "RowId": 4478,
-    "Text": "\u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E \u003Cfrnoun(Item,12,lnum2,lnum1,1)\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E \u003Cfrnoun(Item,12,IntegerParameter(2),IntegerParameter(1),1)\u003E"
   },
   {
     "RowId": 4479,
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 4483,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,lnum1,1,1)\u003E\u003C/Head\u003E deviendra \u003Cfrnoun(Item,1,lnum2,1,1)\u003E. Continuer\u003C\u003Cnbsp\u003E\u003E?"
+    "Text": "\u003CHead\u003E\u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E deviendra \u003Cfrnoun(Item,1,IntegerParameter(2),1,1)\u003E. Continuer\u003C\u003Cnbsp\u003E\u003E?"
   },
   {
     "RowId": 4484,
@@ -1757,7 +1757,7 @@
   },
   {
     "RowId": 4496,
-    "Text": "Co\u00FBt\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(lnum1,\u003Cnbsp\u003E)\u003E\uE049"
+    "Text": "Co\u00FBt\u003C\u003Cnbsp\u003E\u003E: \u003Ckilo(IntegerParameter(1),\u003C\u003Cnbsp\u003E\u003E)\u003E\uE049"
   },
   {
     "RowId": 4497,
@@ -1949,7 +1949,7 @@
   },
   {
     "RowId": 4544,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CSec\u003Et_year\u003C/Sec\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CSec\u003Et_day\u003C/Sec\u003E.\u003CSec\u003Et_mon\u003C/Sec\u003E.\u003CSec\u003Et_year\u003C/Sec\u003E"
   },
   {
     "RowId": 4545,

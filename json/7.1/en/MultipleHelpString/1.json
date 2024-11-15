@@ -32,7 +32,7 @@
   {
     "RowId": 6,
     "Unknown0": "Progress Record",
-    "Unknown1": "Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.\n\nProgress is reset every week on \u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf([t_hour\u003E=12])\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).\n"
+    "Unknown1": "Progress within the latest Savage duty is periodically saved, allowing for continuation from that point.\n\nProgress is reset every week on \u003Csetresettime(17,2)\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E (Earth time).\n"
   },
   {
     "RowId": 7,

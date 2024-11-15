@@ -13,7 +13,7 @@
   },
   {
     "RowId": 5614,
-    "Text": "x \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "x \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5615,
@@ -29,7 +29,7 @@
   },
   {
     "RowId": 5618,
-    "Text": "\u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5619,
@@ -41,19 +41,19 @@
   },
   {
     "RowId": 5621,
-    "Text": "\u003CIf([lnum2\u003E=1])\u003EComplete the following duty:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003Cbr\u003E \\(Second Chance Bonus: \u003Cnum(lnum2)\u003E Points\\)\u003CElse/\u003EComplete the following duty:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EComplete the following duty:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\n (Second Chance Bonus: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Points)\u003CElse/\u003EComplete the following duty:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5622,
-    "Text": "\u003CIf([lnum2\u003E=1])\u003ECommence a dungeon in the following category:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003Cbr\u003E \\(Second Chance Bonus: \u003Cnum(lnum2)\u003E Points\\)\u003CElse/\u003ECommence a dungeon in the following category:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003ECommence a dungeon in the following category:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\n (Second Chance Bonus: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Points)\u003CElse/\u003ECommence a dungeon in the following category:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5623,
-    "Text": "\u003CIf([lnum2\u003E=1])\u003EParticipate in the following:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003Cbr\u003E \\(Second Chance Bonus: \u003Cnum(lnum2)\u003E Points\\)\u003CElse/\u003EParticipate in the following:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EParticipate in the following:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\n (Second Chance Bonus: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Points)\u003CElse/\u003EParticipate in the following:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5624,
-    "Text": "\u003CIf([lnum2\u003E=1])\u003EComplete a duty in the following category:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003Cbr\u003E \\(Second Chance Bonus: \u003Cnum(lnum2)\u003E Points\\)\u003CElse/\u003EComplete a duty in the following category:\u003Cbr\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),1))\u003EComplete a duty in the following category:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\n (Second Chance Bonus: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Points)\u003CElse/\u003EComplete a duty in the following category:\n\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5625,
@@ -61,7 +61,7 @@
   },
   {
     "RowId": 5626,
-    "Text": "Second Chance Points: \u003CNum\u003Elnum1\u003C/Num\u003E/9"
+    "Text": "Second Chance Points: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/9"
   },
   {
     "RowId": 5627,
@@ -109,7 +109,7 @@
   },
   {
     "RowId": 5638,
-    "Text": "Level \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5640,
@@ -237,7 +237,7 @@
   },
   {
     "RowId": 5677,
-    "Text": "\u003CIf([lnum1==5678])\u003EPledge your allegiance to a Grand Company.\u003Cbr\u003EAllegiance can be changed at a later date.\u003CElse/\u003ESelect the path you wish to take through the main scenario. The quest you did not select can be played at a later time.\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),5678))\u003EPledge your allegiance to a Grand Company.\nAllegiance can be changed at a later date.\u003CElse/\u003ESelect the path you wish to take through the main scenario. The quest you did not select can be played at a later time.\u003C/If\u003E"
   },
   {
     "RowId": 5678,
@@ -309,7 +309,7 @@
   },
   {
     "RowId": 5706,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5707,
@@ -317,11 +317,11 @@
   },
   {
     "RowId": 5708,
-    "Text": "\uE03D\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE03D\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5709,
-    "Text": "Custom Deliveries (\u003CString\u003Elstr1\u003C/String\u003E)"
+    "Text": "Custom Deliveries (\u003CString\u003EStringParameter(1)\u003C/String\u003E)"
   },
   {
     "RowId": 5710,
@@ -329,11 +329,11 @@
   },
   {
     "RowId": 5711,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u003CIf([lnum2==lnum1])\u003E \u003CElse/\u003E\uFF5E\u003Cif([lnum2==0],,\u003Cnum(lnum2)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(Equal(IntegerParameter(2),IntegerParameter(1)))\u003E \u003CElse/\u003E\uFF5E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5712,
-    "Text": "Time Remaining: \u003CNum\u003Elnum1\u003C/Num\u003Eh \u003CNum\u003Elnum2\u003C/Num\u003Em \u003CSetTime\u003Elnum3\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
   },
   {
     "RowId": 5713,
@@ -353,15 +353,15 @@
   },
   {
     "RowId": 5717,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 5718,
-    "Text": "Deliveries Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Deliveries Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5719,
-    "Text": "Unable to receive the following items:\n\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E \u003Csheet(Item,lnum2,9)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003E\u003Cbr\u003E \u003Csheet(Item,lnum4,9)\u003E\u003CElse/\u003E \u003C/If\u003E\n\nProceed?"
+    "Text": "Unable to receive the following items:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n \u003Csheet(Item,IntegerParameter(2),9)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n \u003Csheet(Item,IntegerParameter(4),9)\u003E\u003CElse/\u003E \u003C/If\u003E\n\nProceed?"
   },
   {
     "RowId": 5720,
@@ -369,7 +369,7 @@
   },
   {
     "RowId": 5721,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 5722,
@@ -381,7 +381,7 @@
   },
   {
     "RowId": 5724,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum1)\u003E/\u003Cnum(lnum2)\u003E\u003CElse/\u003E\u003C--\u003E/\u003C--\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E"
   },
   {
     "RowId": 5725,
@@ -393,7 +393,7 @@
   },
   {
     "RowId": 5727,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 5728,
@@ -481,7 +481,7 @@
   },
   {
     "RowId": 5749,
-    "Text": "\u003CIf([lnum2==0])\u003EFishing Hole\u003CElse/\u003ESpearfishing Area\u003C/If\u003E\nDeliver to: \u003Csheet(ENpcResident,lnum1,0)\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(2),0))\u003EFishing Hole\u003CElse/\u003ESpearfishing Area\u003C/If\u003E\nDeliver to: \u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 5750,
@@ -609,7 +609,7 @@
   },
   {
     "RowId": 5783,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 5784,
@@ -617,7 +617,7 @@
   },
   {
     "RowId": 5785,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E%"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
   },
   {
     "RowId": 5786,
@@ -641,7 +641,7 @@
   },
   {
     "RowId": 5791,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 5792,
@@ -809,15 +809,15 @@
   },
   {
     "RowId": 5840,
-    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003EYou are unable to receive rewards due to the following:\n\u003CIf([lnum1\u003E0])\u003E  You are not a Disciple of War or Magic.\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E  You are currently playing a limited job.\u003CElse/\u003E \u003C/If\u003E\u003C/span\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003EYou are unable to receive rewards due to the following:\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E  You are not a Disciple of War or Magic.\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  You are currently playing a limited job.\u003CElse/\u003E \u003C/If\u003E\u003C/span\u003E"
   },
   {
     "RowId": 5841,
-    "Text": "You will be unable to receive all of the following rewards: \n\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E  Experience Points\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E  Allagan Tomestones\u003CElse/\u003E \u003C/If\u003E\n\nDo you still wish to proceed?"
+    "Text": "You will be unable to receive all of the following rewards: \n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n  Experience Points\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  Allagan Tomestones\u003CElse/\u003E \u003C/If\u003E\n\nDo you still wish to proceed?"
   },
   {
     "RowId": 5842,
-    "Text": "You already possess the following minion:\n\u003CHeadAll\u003E\u003Cif([lnum1\u003E0],\u003Cbr\u003E  \u003Csheet(ActStr,lnum1,0)\u003E,)\u003E\u003Cif([lnum2\u003E0],\u003Cbr\u003E  \u003Csheet(ActStr,lnum2,0)\u003E,)\u003E\u003Cif([lnum3\u003E0],\u003Cbr\u003E  \u003Csheet(ActStr,lnum3,0)\u003E,)\u003E\u003Cif([lnum4\u003E0],\u003Cbr\u003E  \u003Csheet(ActStr,lnum4,0)\u003E,)\u003E\u003C/HeadAll\u003E\nDo you still wish to proceed?"
+    "Text": "You already possess the following minion:\n\u003CHeadAll\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n  \u003Csheet(ActStr,IntegerParameter(1),0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n  \u003Csheet(ActStr,IntegerParameter(2),0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n  \u003Csheet(ActStr,IntegerParameter(3),0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\n  \u003Csheet(ActStr,IntegerParameter(4),0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/HeadAll\u003E\nDo you still wish to proceed?"
   },
   {
     "RowId": 5843,
@@ -833,7 +833,7 @@
   },
   {
     "RowId": 5861,
-    "Text": "Quantity: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Quantity: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5862,
@@ -853,7 +853,7 @@
   },
   {
     "RowId": 5866,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 5867,
@@ -865,11 +865,11 @@
   },
   {
     "RowId": 5880,
-    "Text": "\u003CIf([gnum80==0])\u003E\uE052Drag: Rotate Camera\u003Cbr\u003E\u003Cif([lnum2==0],,\uE057: Zoom\u003Cbr\u003E)\u003E\uE051Click: Execute \u003Csheet(Snipe,lnum1,104)\u003E\u003CElse/\u003E\u003Cicon2(23)\u003E: Rotate Camera\u003Cbr\u003E\u003Cif([lnum2==0],,\u003Cicon2(12)\u003E\uFF0B\u003Cicon2(24)\u003E/\u003Cicon2(21)\u003E: Zoom \\(\u003Cicon2(5)\u003E: Quick Zoom\\)\u003Cbr\u003E)\u003E\u003Cicon2(15)\u003E/\u003Cicon2(8)\u003E: Execute \u003Csheet(Snipe,lnum1,104)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(80),0))\u003E\uE052Drag: Rotate Camera\n\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\uE057: Zoom\n\u003C/If\u003E\uE051Click: Execute \u003Csheet(Snipe,IntegerParameter(1),104)\u003E\u003CElse/\u003E\u003CIcon2\u003E23\u003C/Icon2\u003E: Rotate Camera\n\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIcon2\u003E12\u003C/Icon2\u003E\uFF0B\u003CIcon2\u003E24\u003C/Icon2\u003E/\u003CIcon2\u003E21\u003C/Icon2\u003E: Zoom (\u003CIcon2\u003E5\u003C/Icon2\u003E: Quick Zoom)\n\u003C/If\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E/\u003CIcon2\u003E8\u003C/Icon2\u003E: Execute \u003Csheet(Snipe,IntegerParameter(1),104)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 5881,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIf([lnum3\u003E1])\u003E \u003Cnum(lnum2)\u003E/\u003Cnum(lnum3)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(GreaterThan(IntegerParameter(3),1))\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 5882,
@@ -881,7 +881,7 @@
   },
   {
     "RowId": 5884,
-    "Text": "Magnification: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Magnification: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 5900,
@@ -913,7 +913,7 @@
   },
   {
     "RowId": 5907,
-    "Text": "Value (f/\u003CString\u003Elstr1\u003C/String\u003E)"
+    "Text": "Value (f/\u003CString\u003EStringParameter(1)\u003C/String\u003E)"
   },
   {
     "RowId": 5908,
@@ -961,39 +961,39 @@
   },
   {
     "RowId": 5920,
-    "Text": "Face Camera:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Jump\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E11\u003C/Icon2\u003E Button"
+    "Text": "Face Camera:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Jump\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E11\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5921,
-    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Target Filters\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button"
+    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Target Filters\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5922,
-    "Text": "Disable/Enable Target Motion\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E#1 - Slot \\[#2\\]\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E15\u003C/Icon2\u003E Button"
+    "Text": "Disable/Enable Target Motion\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n#1 - Slot [#2]\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E15\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5923,
-    "Text": "Disable/Enable All Motion\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E#1 - Slot \\[#1\\]\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E14\u003C/Icon2\u003E Button"
+    "Text": "Disable/Enable All Motion\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n#1 - Slot [#1]\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E14\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5924,
-    "Text": "Disable/Enable Camera Angle Toggle:\nMouse: \uE051 Left Click\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Confirm\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E8\u003C/Icon2\u003E Button"
+    "Text": "Disable/Enable Camera Angle Toggle:\nMouse: \uE051 Left Click\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Confirm\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E8\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5925,
-    "Text": "Toggle Camera Angle:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Cycle Tabs =Forward\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75==0])\u003EGamepad\u003CElse/\u003EController\u003C/If\u003E: \u003CIcon2\u003E6\u003C/Icon2\u003E \u003CIf([gnum106==99])\u003ED-pad\u003CElse/\u003EDirectional Buttons\u003C/If\u003E"
+    "Text": "Toggle Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Cycle Tabs =Forward\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(Equal(PlayerParameter(75),0))\u003EGamepad\u003CElse/\u003EController\u003C/If\u003E: \u003CIcon2\u003E6\u003C/Icon2\u003E \u003CIf(Equal(PlayerParameter(106),99))\u003ED-pad\u003CElse/\u003EDirectional Buttons\u003C/If\u003E"
   },
   {
     "RowId": 5926,
-    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
   },
   {
     "RowId": 5927,
-    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\nKeyboard: Movement Keys\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\nKeyboard: Movement Keys\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
   },
   {
     "RowId": 5928,
-    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
+    "Text": "Reset Camera Angle:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Draw/Sheathe Weapon\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon\u003E16\u003C/Icon\u003E Button\nCamera Controls:\n \u30FBDirection: Movement Keys\n \u30FBRotation: Strafe Left/Right\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E20\u003C/Icon2\u003E Stick"
   },
   {
     "RowId": 5929,
@@ -1053,7 +1053,7 @@
   },
   {
     "RowId": 5943,
-    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf([lstr1==gstr0])\u003ENot Set\u003Cbr\u003E Default: Target Filters\u003CElse/\u003E\u003Cstring(lstr1)\u003E\u003C/If\u003E\n\u003CIf([gnum75\u003E0])\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button"
+    "Text": "Disable/Enable Camera Lighting 1:\nKeyboard: \u003CIf(Equal(StringParameter(1),ObjectParameter(0)))\u003ENot Set\n Default: Target Filters\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E\n\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EController\u003CElse/\u003EGamepad\u003C/If\u003E: \u003CIcon2\u003E13\u003C/Icon2\u003E Button"
   },
   {
     "RowId": 5944,
@@ -1329,7 +1329,7 @@
   },
   {
     "RowId": 6012,
-    "Text": "\u003CIf([gnum75\u003E0])\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E"
   },
   {
     "RowId": 6013,
@@ -1489,7 +1489,7 @@
   },
   {
     "RowId": 6062,
-    "Text": "\u003CIf([gnum75\u003E0])\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003EDirectional Buttons\u003CElse/\u003ED-pad\u003C/If\u003E"
   },
   {
     "RowId": 6063,
@@ -1569,27 +1569,27 @@
   },
   {
     "RowId": 6088,
-    "Text": "Client Settings Backup Data \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Client Settings Backup Data \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6089,
-    "Text": "Created\n\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
+    "Text": "Created\n\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
   },
   {
     "RowId": 6090,
-    "Text": "\u003CHeadAll\u003E\u003Cstring(lstr1)\u003E\u003C/HeadAll\u003E Backup Data \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CHeadAll\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/HeadAll\u003E Backup Data \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6091,
-    "Text": "Created\n\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
+    "Text": "Created\n\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
   },
   {
     "RowId": 6092,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E Duty Record #\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E Duty Record #\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6093,
-    "Text": "\u003CHead\u003E\u003Csheet(InstanceContent,lnum1,3)\u003E\u003C/Head\u003E\n\u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
+    "Text": "\u003CHead\u003E\u003Csheet(InstanceContent,IntegerParameter(1),3)\u003E\u003C/Head\u003E\n\u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E:\u003CSec\u003Et_sec\u003C/Sec\u003E"
   },
   {
     "RowId": 6094,
@@ -1609,11 +1609,11 @@
   },
   {
     "RowId": 6098,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6099,
-    "Text": "Lv. \u003CNum\u003Elnum1\u003C/Num\u003E \u003CHead\u003E\u003Csheet(ClassJob,lnum2,0)\u003E\u003C/Head\u003E\nArea: \u003Csheet(PlaceName,lnum3,0)\u003E\nWorld: \u003CString\u003Elstr4\u003C/String\u003E"
+    "Text": "Lv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\u003C/Head\u003E\nArea: \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E\nWorld: \u003CString\u003EStringParameter(4)\u003C/String\u003E"
   },
   {
     "RowId": 6100,
@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 6101,
-    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CNum\u003Elnum1\u003C/Num\u003E \u003Cswitch(lnum2,bytes,KB,MB,GB)\u003E of space is required.\nOpen the hard drive utility?"
+    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cswitch(IntegerParameter(2),bytes,KB,MB,GB)\u003E of space is required.\nOpen the hard drive utility?"
   },
   {
     "RowId": 6102,
@@ -1645,15 +1645,15 @@
   },
   {
     "RowId": 6107,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6108,
-    "Text": "Lv. \u003CNum\u003Elnum1\u003C/Num\u003E \u003Csheet(ClassJob,lnum2,0)\u003E\nArea: \u003Csheet(PlaceName,lnum3,0)\u003E\nWorld: \u003CString\u003Elstr4\u003C/String\u003E"
+    "Text": "Lv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\nArea: \u003Csheet(PlaceName,IntegerParameter(3),0)\u003E\nWorld: \u003CString\u003EStringParameter(4)\u003C/String\u003E"
   },
   {
     "RowId": 6109,
-    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CNum\u003Elnum1\u003C/Num\u003E \u003Cswitch(lnum2,bytes,KB,MB,GB)\u003E of space is required."
+    "Text": "There is not enough space on your hard drive to create character config data.\nAn additional \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cswitch(IntegerParameter(2),bytes,KB,MB,GB)\u003E of space is required."
   },
   {
     "RowId": 6110,
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 6115,
-    "Text": "\u003CIf([gnum75\u003E0])\u003E\u003Cswitch(gnum75,PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,,)\u003E\u003CElse/\u003E \u003C/If\u003E users can adjust the game\u0027s display area to match the TV screen under Display Area Settings."
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),0))\u003E\u003Cswitch(PlayerParameter(75),PlayStation\u00AE3,PlayStation\u00AE4,PlayStation\u00AE4,PlayStation\u00AE5,,)\u003E\u003CElse/\u003E \u003C/If\u003E users can adjust the game\u0027s display area to match the TV screen under Display Area Settings."
   },
   {
     "RowId": 6120,
@@ -1793,7 +1793,7 @@
   },
   {
     "RowId": 6161,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E of \u003CNum\u003Elnum2\u003C/Num\u003E Complete"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E of \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Complete"
   },
   {
     "RowId": 6162,
@@ -1809,11 +1809,11 @@
   },
   {
     "RowId": 6165,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6166,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,less than one minute)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003Eless than one minute\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6167,
@@ -1869,7 +1869,7 @@
   },
   {
     "RowId": 6180,
-    "Text": "Voyages completed: \u003CNum\u003Elnum1\u003C/Num\u003E (\u003CNum\u003Elnum2\u003C/Num\u003E/\u003CNum\u003Elnum3\u003C/Num\u003E remaining)"
+    "Text": "Voyages completed: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E (\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E remaining)"
   },
   {
     "RowId": 6181,
@@ -1885,11 +1885,11 @@
   },
   {
     "RowId": 6184,
-    "Text": "\u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E"
+    "Text": "\u003CItalic\u003E1\u003C/Italic\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CItalic\u003E0\u003C/Italic\u003E"
   },
   {
     "RowId": 6185,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Cnum(lnum3)\u003E \u003Cif([lnum3==1],day,days)\u003E\u003Cif([lnum1\u003E0],\\, \u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],hour,hours)\u003E,)\u003E\u003Cif([lnum2\u003E0],\u003Cif([lnum1\u003E0],\\,,)\u003E and \u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],minute,minutes)\u003E, and less than 1 minute)\u003E\u003CElse/\u003E\u003Cif([lnum1\u003E0],\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],hour,hours)\u003E,)\u003E\u003Cif([lnum2\u003E0],\u003Cif([lnum1\u003E0], and ,)\u003E\u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],minute,minutes)\u003E,\u003Cif([lnum1\u003E0], and ,)\u003E\u003Cif([lnum1\u003E0],less than 1 minute,Less than 1 minute)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Eday\u003CElse/\u003Edays\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E, \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E,\u003CElse/\u003E \u003C/If\u003E and \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E and less than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eless than 1 minute\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6186,
@@ -1997,6 +1997,6 @@
   },
   {
     "RowId": 6213,
-    "Text": "Adjust Lighting (Current: \u003CNum\u003Elnum1\u003C/Num\u003E)"
+    "Text": "Adjust Lighting (Current: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)"
   }
 ]

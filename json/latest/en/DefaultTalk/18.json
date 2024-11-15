@@ -1114,7 +1114,7 @@
       }
     ],
     "Text": [
-      "I am sorry, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, but the lift is presently out of service. I apologize for the inconvenience.",
+      "I am sorry, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E, but the lift is presently out of service. I apologize for the inconvenience.",
       "0",
       "0"
     ],
@@ -1234,7 +1234,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E? You\u0027re back early! Come to check on us?",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E? You\u0027re back early! Come to check on us?",
       "If so, you\u0027ll be pleased to know that\u2500together with our allies near and far\u2500our Scions in the field have everything well in hand regarding the towers, lunar primals, and whatnot. You needn\u0027t worry about us!",
       "0"
     ],
@@ -1312,7 +1312,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, how lovely to see you! You are doing well, I trust?",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, how lovely to see you! You are doing well, I trust?",
       "I\u0027ve been busy writing letters to those who lent aid to the Scions, thanking them and asking for their continued support.",
       "And wouldn\u0027t you know it, I received a reply from Lady Ameliance herself! She\u0027s invited me to visit the Leveilleur estate and meet with her in person. I\u0027m quite looking forward to it!"
     ],
@@ -1597,7 +1597,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Are you enjoying the hot springs as well? With such a lovely view, I admit that I have a tendency to linger overlong...",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Are you enjoying the hot springs as well? With such a lovely view, I admit that I have a tendency to linger overlong...",
       "Grandfather and I will remain in Kugane for a time, but after that it\u0027s off to Doma, where we\u0027ll make our way to Nagxia as planned.",
       "The Eastern alliance was kind enough to handle the arrangements, and it looks like our guide is to be someone named Atori. Oh, how I have longed for another adventure like this!"
     ],
@@ -1639,7 +1639,7 @@
       }
     ],
     "Text": [
-      "Well, if it isn\u0027t \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E! I just reunited with some of my former Maelstrom comrades. \u0027Twas quite a relief to see them in such good health!",
+      "Well, if it isn\u0027t \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E! I just reunited with some of my former Maelstrom comrades. \u0027Twas quite a relief to see them in such good health!",
       "Commander Rhiki even asked if I would like to rejoin their ranks. While I was flattered by the offer, I told her I did not regret shedding the red!",
       "Instead, I\u0027ll reminisce over the old days with a pint or two, and then sober up so I can help Bluomwyda plot out a course for our next voyage!"
     ],
@@ -1681,7 +1681,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, what a pleasant surprise! Aergmhus and I\u2500emphasis on \u003CItalic\u003E1\u003C/Italic\u003EI\u003CItalic\u003E0\u003C/Italic\u003E\u2500are in the midst of mapping out a way to reach our next destination: the isle of Aerslaent in the Northern Empty.",
+      "Ah, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, what a pleasant surprise! Aergmhus and I\u2500emphasis on \u003CItalic\u003E1\u003C/Italic\u003EI\u003CItalic\u003E0\u003C/Italic\u003E\u2500are in the midst of mapping out a way to reach our next destination: the isle of Aerslaent in the Northern Empty.",
       "Aerslaent is the ancestral homeland of we Roegadyn, and we would see it with our own two eyes. Unfortunately, information regarding the current state of the isle has been scarce in recent days. If we learn aught of note, you\u0027ll be the first to know.",
       "0"
     ],
@@ -2260,7 +2260,7 @@
       }
     ],
     "Text": [
-      "My friends and I were just discussing the Mhachi and the practice of black magic. Did you know that...wait, is it \u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],evening,morning)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],afternoon,evening)\u003E\u003C/If\u003E already? How long have we been sitting here!?",
+      "My friends and I were just discussing the Mhachi and the practice of black magic. Did you know that...wait, is it \u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003Eevening\u003CElse/\u003Emorning\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003Eafternoon\u003CElse/\u003Eevening\u003C/If\u003E\u003C/If\u003E already? How long have we been sitting here!?",
       "0",
       "0"
     ],
@@ -2494,7 +2494,7 @@
       }
     ],
     "Text": [
-      "There\u0027s no mention of it in print yet, but word is that Eorzea\u0027s champion is leading the charge to the ends of the heavens. I find myself praying for \u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E  success despite my distaste for \u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E methods.",
+      "There\u0027s no mention of it in print yet, but word is that Eorzea\u0027s champion is leading the charge to the ends of the heavens. I find myself praying for \u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E  success despite my distaste for \u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E methods.",
       "0",
       "0"
     ],
@@ -6016,7 +6016,7 @@
       }
     ],
     "Text": [
-      "Ho there, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! Surprised I know your name? Well, you shouldn\u0027t be\u2500you\u0027re practically a living legend!",
+      "Ho there, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! Surprised I know your name? Well, you shouldn\u0027t be\u2500you\u0027re practically a living legend!",
       "0",
       "0"
     ],
@@ -7663,7 +7663,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! I have come to this \u201CStudium\u201D in order to study the ways of pudding. Alas, my creations don\u0027t jiggle as they should just yet...but I persevere!",
+      "Ah, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! I have come to this \u201CStudium\u201D in order to study the ways of pudding. Alas, my creations don\u0027t jiggle as they should just yet...but I persevere!",
       "0",
       "0"
     ],
@@ -8575,7 +8575,7 @@
       }
     ],
     "Text": [
-      "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E!? What are you doing? Gods, has something happened to the others?",
+      "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E!? What are you doing? Gods, has something happened to the others?",
       "No... No, I\u0027m sure they\u0027re all right. When you return to Ultima Thule, tell the others I said to be careful out there.",
       "0"
     ],
@@ -8653,7 +8653,7 @@
       }
     ],
     "Text": [
-      "Well met, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E! I should have you know that, while Curious Gorge made a noble contribution to the cause, \u0027twas I who truly helped bring an end to the primal of La Noscea. ",
+      "Well met, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E! I should have you know that, while Curious Gorge made a noble contribution to the cause, \u0027twas I who truly helped bring an end to the primal of La Noscea. ",
       "You\u0027ve become quite the impressive warrior in your own right, but make no mistake: I\u0027ll surpass you someday yet!",
       "0"
     ],
@@ -8731,7 +8731,7 @@
       }
     ],
     "Text": [
-      "Oh, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. Thanks to you, we may continue protecting our precious wood.",
+      "Oh, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. Thanks to you, we may continue protecting our precious wood.",
       "...That\u0027s what Brother E\u2013Sumi\u2013Yan was saying, anyway. I\u0027m not sure what he meant by that...but I hope you\u0027ll tell me more of your stories again sometime!",
       "0"
     ],
@@ -9016,7 +9016,7 @@
       }
     ],
     "Text": [
-      "Your entrance papers appear to be in order. Do you wish to descend into Labyrinthos, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E?",
+      "Your entrance papers appear to be in order. Do you wish to descend into Labyrinthos, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E?",
       "0",
       "0"
     ],
@@ -9055,7 +9055,7 @@
       }
     ],
     "Text": [
-      "Will you be returning above ground to Old Sharlayan, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E?",
+      "Will you be returning above ground to Old Sharlayan, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E?",
       "0",
       "0"
     ],
@@ -9211,7 +9211,7 @@
       }
     ],
     "Text": [
-      "\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Good evening,Good morning)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Good afternoon,Good evening)\u003E\u003C/If\u003E, \u003CIf(gnum4)\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E. Will you be leaving to the Outer Circuit?",
+      "\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003EGood evening\u003CElse/\u003EGood morning\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003EGood afternoon\u003CElse/\u003EGood evening\u003C/If\u003E\u003C/If\u003E, \u003CIf(PlayerParameter(4))\u003Emadam\u003CElse/\u003Esir\u003C/If\u003E. Will you be leaving to the Outer Circuit?",
       "0",
       "0"
     ],
@@ -9328,7 +9328,7 @@
       }
     ],
     "Text": [
-      "Ah, \u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E. I have been made aware of your coming. Please use the lift here.",
+      "Ah, \u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E. I have been made aware of your coming. Please use the lift here.",
       "0",
       "0"
     ],
@@ -11938,7 +11938,7 @@
       }
     ],
     "Text": [
-      "Ah, the hero of our star makes \u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E triumphant return! The troops\u0027 morale has skyrocketed, with folks left and right more eager than ever to live up to your shining example!",
+      "Ah, the hero of our star makes \u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehis\u003C/If\u003E triumphant return! The troops\u0027 morale has skyrocketed, with folks left and right more eager than ever to live up to your shining example!",
       "0",
       "0"
     ],
@@ -12214,7 +12214,7 @@
       }
     ],
     "Text": [
-      "\u003CIf(gnum4)\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003Cstring(gstr1)\u003E, ,2)\u003E! Glad I am to see you safely returned.",
+      "\u003CIf(PlayerParameter(4))\u003EMistress\u003CElse/\u003EMaster\u003C/If\u003E \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,2)\u003E! Glad I am to see you safely returned.",
       "\u0027Tis not only Ishgard, but every nation upon this star which now owes a debt to your selfless heroism.",
       "Should you ever require a place to rest your weary wings, may my home ever serve as sanctuary. I know my three sons would joyfully stand by me in providing you the warmest welcome."
     ],
@@ -18649,7 +18649,7 @@
       }
     ],
     "Text": [
-      "Oh, you there, \u003CIf(gnum4)\u003Ema\u0027am\u003CElse/\u003Esir\u003C/If\u003E\u2500you\u0027ve the look of one who knows a thing or two about fine craftsmanship. Perhaps I could interest you in what I\u0027ve on offer? I carry only the best, after all.",
+      "Oh, you there, \u003CIf(PlayerParameter(4))\u003Ema\u0027am\u003CElse/\u003Esir\u003C/If\u003E\u2500you\u0027ve the look of one who knows a thing or two about fine craftsmanship. Perhaps I could interest you in what I\u0027ve on offer? I carry only the best, after all.",
       "0",
       "0"
     ],

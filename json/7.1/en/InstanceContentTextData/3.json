@@ -805,15 +805,15 @@
   },
   {
     "RowId": 8900,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum2,Rank B,Rank A,Rank S)\u003E\n\u003Cswitch(lnum3,Unoccupied,Occupied \u003Cicon(51)\u003E,Occupied \u003Cicon(52)\u003E,Occupied \u003Cicon(53)\u003E)\u003E\nData Remaining: \u003CNum\u003Elnum4\u003C/Num\u003E%"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(2),Rank B,Rank A,Rank S)\u003E\n\u003Cswitch(IntegerParameter(3),Unoccupied,Occupied \u003CIcon\u003E51\u003C/Icon\u003E,Occupied \u003CIcon\u003E52\u003C/Icon\u003E,Occupied \u003CIcon\u003E53\u003C/Icon\u003E)\u003E\nData Remaining: \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E%"
   },
   {
     "RowId": 8901,
-    "Text": "\u003Cswitch(lnum3,Unoccupied,Occupied \u003Cicon(51)\u003E,Occupied \u003Cicon(52)\u003E,Occupied \u003Cicon(53)\u003E)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(3),Unoccupied,Occupied \u003CIcon\u003E51\u003C/Icon\u003E,Occupied \u003CIcon\u003E52\u003C/Icon\u003E,Occupied \u003CIcon\u003E53\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 8902,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum3,Deactivated,Activation in: \u003Cnum(lnum4)\u003E:\u003Csec(lnum5)\u003E,Ice Strength: \u003Cnum(lnum2)\u003E%)\u003E "
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(3),Deactivated,Activation in: \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(5)\u003C/Sec\u003E,Ice Strength: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E%)\u003E "
   },
   {
     "RowId": 8903,
@@ -821,7 +821,7 @@
   },
   {
     "RowId": 8910,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\n\u003Cswitch(lnum2,Spawns in: \u003Cnum(lnum3)\u003E:\u003Csec(lnum4)\u003E,HP: \u003Cnum(lnum5)\u003E%)\u003E "
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n\u003Cswitch(IntegerParameter(2),Spawns in: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(4)\u003C/Sec\u003E,HP: \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E%)\u003E "
   },
   {
     "RowId": 9000,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 10423,
-    "Text": "\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, Lord Emmanellain\u2500attend to the marked ones!"
+    "Text": "\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, Lord Emmanellain\u2500attend to the marked ones!"
   },
   {
     "RowId": 10424,
@@ -1633,7 +1633,7 @@
   },
   {
     "RowId": 10433,
-    "Text": "You hear me, old \u003CIf(gnum4)\u003Egirl\u003CElse/\u003Eboy\u003C/If\u003E!? Don\u0027t you dare lose!"
+    "Text": "You hear me, old \u003CIf(PlayerParameter(4))\u003Egirl\u003CElse/\u003Eboy\u003C/If\u003E!? Don\u0027t you dare lose!"
   },
   {
     "RowId": 10434,
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 10436,
-    "Text": "Strength, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E, strength! Now is your chance!"
+    "Text": "Strength, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E, strength! Now is your chance!"
   },
   {
     "RowId": 10437,
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 10511,
-    "Text": "Keep it up, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\nYer almost at the end of it!"
+    "Text": "Keep it up, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\nYer almost at the end of it!"
   },
   {
     "RowId": 10512,
@@ -1953,15 +1953,15 @@
   },
   {
     "RowId": 10707,
-    "Text": "Remember the order I told ye, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,9,0)\u003E first! \u003Csheet(Action,15,0)\u003E second!"
+    "Text": "Remember the order I told ye, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,9,0)\u003E first! \u003Csheet(Action,15,0)\u003E second!"
   },
   {
     "RowId": 10708,
-    "Text": "Remember the order I told ye, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,31,0)\u003E first! \u003Csheet(Action,37,0)\u003E second!"
+    "Text": "Remember the order I told ye, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,31,0)\u003E first! \u003Csheet(Action,37,0)\u003E second!"
   },
   {
     "RowId": 10709,
-    "Text": "Remember the order I told ye, \u003CIf(gnum4)\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,3617,0)\u003E first! \u003Csheet(Action,3623,0)\u003E second!"
+    "Text": "Remember the order I told ye, \u003CIf(PlayerParameter(4))\u003Elass\u003CElse/\u003Elad\u003C/If\u003E!\n\u003Csheet(Action,3617,0)\u003E first! \u003Csheet(Action,3623,0)\u003E second!"
   },
   {
     "RowId": 10710,

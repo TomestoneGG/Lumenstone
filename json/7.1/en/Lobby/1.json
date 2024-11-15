@@ -109,7 +109,7 @@
   },
   {
     "RowId": 12,
-    "Text": "Version: \u003CString\u003Elstr1\u003C/String\u003E(\u003CString\u003Elstr2\u003C/String\u003E)\u003CIf([lnum3\u003E0])\u003E - ex\u003Cnum(lnum3)\u003E : \u003Cstring(lstr4)\u003E\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Version: \u003CString\u003EStringParameter(1)\u003C/String\u003E(\u003CString\u003EStringParameter(2)\u003C/String\u003E)\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E - ex\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E : \u003CString\u003EStringParameter(4)\u003C/String\u003E\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -190,7 +190,7 @@
   },
   {
     "RowId": 21,
-    "Text": "Delete \u003CString\u003Elstr1\u003C/String\u003E?\nPlease be aware that if you delete this character, you will lose all items, gil, and hired retainers in their possession.\nIf this character is master of a free company for which there is no eligible successor, the free company will be automatically disbanded, causing company estates and all items within the company chest to be deleted as well.",
+    "Text": "Delete \u003CString\u003EStringParameter(1)\u003C/String\u003E?\nPlease be aware that if you delete this character, you will lose all items, gil, and hired retainers in their possession.\nIf this character is master of a free company for which there is no eligible successor, the free company will be automatically disbanded, causing company estates and all items within the company chest to be deleted as well.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -226,7 +226,7 @@
   },
   {
     "RowId": 25,
-    "Text": "Log in with \u003CString\u003Elstr1\u003C/String\u003E?",
+    "Text": "Log in with \u003CString\u003EStringParameter(1)\u003C/String\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -244,7 +244,7 @@
   },
   {
     "RowId": 27,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EPlease change your character\u0027s name after retrieving character data.\u003CElse/\u003EA name change is required to log in with this character.\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EPlease change your character\u0027s name after retrieving character data.\u003CElse/\u003EA name change is required to log in with this character.\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -253,7 +253,7 @@
   },
   {
     "RowId": 28,
-    "Text": "Change this character\u0027s name to \u003CString\u003Elstr1\u003C/String\u003E?",
+    "Text": "Change this character\u0027s name to \u003CString\u003EStringParameter(1)\u003C/String\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -262,7 +262,7 @@
   },
   {
     "RowId": 29,
-    "Text": "Change this retainer\u0027s name to \u003CString\u003Elstr1\u003C/String\u003E?",
+    "Text": "Change this retainer\u0027s name to \u003CString\u003EStringParameter(1)\u003C/String\u003E?",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 35,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E",
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 37,
-    "Text": "\u003Cswitch(lnum2,1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th,21st,22nd,23rd,24th,25th,26th,27th,28th,29th,30th,31st,32nd)\u003E Sun of the \u003Cswitch(lnum1,1st Astral,1st Umbral,2nd Astral,2nd Umbral,3rd Astral,3rd Umbral,4th Astral,4th Umbral,5th Astral,5th Umbral,6th Astral,6th Umbral)\u003E Moon",
+    "Text": "\u003Cswitch(IntegerParameter(2),1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th,21st,22nd,23rd,24th,25th,26th,27th,28th,29th,30th,31st,32nd)\u003E Sun of the \u003Cswitch(IntegerParameter(1),1st Astral,1st Umbral,2nd Astral,2nd Umbral,3rd Astral,3rd Umbral,4th Astral,4th Umbral,5th Astral,5th Umbral,6th Astral,6th Umbral)\u003E Moon",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 38,
-    "Text": "\uFF08\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E\uFF09",
+    "Text": "\uFF08\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\uFF09",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -478,7 +478,7 @@
   },
   {
     "RowId": 53,
-    "Text": "\u003Cswitch(lnum3,1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th,21st,22nd,23rd,24th,25th,26th,27th,28th,29th,30th,31st,32nd)\u003E Sun of the \u003Cswitch(lnum2,1st Astral,1st Umbral,2nd Astral,2nd Umbral,3rd Astral,3rd Umbral,4th Astral,4th Umbral,5th Astral,5th Umbral,6th Astral,6th Umbral)\u003E Moon",
+    "Text": "\u003Cswitch(IntegerParameter(3),1st,2nd,3rd,4th,5th,6th,7th,8th,9th,10th,11th,12th,13th,14th,15th,16th,17th,18th,19th,20th,21st,22nd,23rd,24th,25th,26th,27th,28th,29th,30th,31st,32nd)\u003E Sun of the \u003Cswitch(IntegerParameter(2),1st Astral,1st Umbral,2nd Astral,2nd Umbral,3rd Astral,3rd Umbral,4th Astral,4th Umbral,5th Astral,5th Umbral,6th Astral,6th Umbral)\u003E Moon",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 56,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIf([lnum2\u003C7])\u003E\u003Cswitch(lnum2,, \\(Legacy\\),, \\(Legacy\\),, \\(Legacy\\))\u003E\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(LessThan(IntegerParameter(2),7))\u003E\u003Cswitch(IntegerParameter(2),, (Legacy),, (Legacy),, (Legacy))\u003E\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -532,7 +532,7 @@
   },
   {
     "RowId": 59,
-    "Text": "Obtain updated World information. This feature can only be used once every \u003CIf(lnum1)\u003E\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E \u003CIf([lnum1==1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.",
+    "Text": "Obtain updated World information. This feature can only be used once every \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -595,7 +595,7 @@
   },
   {
     "RowId": 66,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EPlease change your retainer\u0027s name after retrieving your character\u0027s data.\u003CElse/\u003ETo log in with this character you must first change your retainer\u0027s name.\u003C/If\u003E",
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EPlease change your retainer\u0027s name after retrieving your character\u0027s data.\u003CElse/\u003ETo log in with this character you must first change your retainer\u0027s name.\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -604,7 +604,7 @@
   },
   {
     "RowId": 67,
-    "Text": "If you wish, you can edit your character\u0027s race, sex, and appearance. \u003CIf([lnum1\u003E0])\u003E\\(\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],minute,minutes)\u003E remaining\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "If you wish, you can edit your character\u0027s race, sex, and appearance. \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E remaining)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -613,7 +613,7 @@
   },
   {
     "RowId": 68,
-    "Text": "To log in with this character you must first install \u003Csheet(ExVersion,lnum1,0)\u003E.",
+    "Text": "To log in with this character you must first install \u003Csheet(ExVersion,IntegerParameter(1),0)\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -622,7 +622,7 @@
   },
   {
     "RowId": 69,
-    "Text": "To edit this character\u0027s race, sex, or appearance you must first install \u003Csheet(ExVersion,lnum1,0)\u003E.",
+    "Text": "To edit this character\u0027s race, sex, or appearance you must first install \u003Csheet(ExVersion,IntegerParameter(1),0)\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -658,7 +658,7 @@
   },
   {
     "RowId": 73,
-    "Text": "You have elected to begin FINAL FANTASY XIV: A Realm Reborn as \u003CIf([lnum1==10])\u003Ean \u003Csheet(ClassJob,lnum1,0)\u003E\u003CElse/\u003E\u003Cif([lnum1==14],an \u003Csheet(ClassJob,lnum1,0)\u003E,\u003Cif([lnum1==5],an \u003Csheet(ClassJob,lnum1,0)\u003E,\u003Cif([lnum1==26],an \u003Csheet(ClassJob,lnum1,0)\u003E,\u003Cif([lnum1==33],an \u003Csheet(ClassJob,lnum1,0)\u003E,a \u003Csheet(ClassJob,lnum1,0)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E. You will start your new adventure in \u003Csheet(Town,lnum2,0)\u003E.",
+    "Text": "You have elected to begin FINAL FANTASY XIV: A Realm Reborn as \u003CIf(Equal(IntegerParameter(1),10))\u003Ean \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003Ean \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),5))\u003Ean \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),26))\u003Ean \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003Ean \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003CElse/\u003Ea \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E. You will start your new adventure in \u003Csheet(Town,IntegerParameter(2),0)\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -775,7 +775,7 @@
   },
   {
     "RowId": 86,
-    "Text": "Welcome to Eorzea!\nStart your adventure by selecting an existing character, or creating a new one.\nYou currently have \u003CIf(lnum2)\u003E\u003Cif([lnum2\u003C=10],\u003Cswitch(lnum2,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum2)\u003E)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E\u003C/If\u003E \u003CIf([lnum1==1])\u003Echaracter\u003CElse/\u003Echaracters\u003C/If\u003E on \u003CString\u003Elstr1\u003C/String\u003E. To select another World, press the World button in the upper right of your screen.",
+    "Text": "Welcome to Eorzea!\nStart your adventure by selecting an existing character, or creating a new one.\nYou currently have \u003CIf(IntegerParameter(2))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(2),10))\u003E\u003Cswitch(IntegerParameter(2),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Echaracter\u003CElse/\u003Echaracters\u003C/If\u003E on \u003CString\u003EStringParameter(1)\u003C/String\u003E. To select another World, press the World button in the upper right of your screen.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 95,
-    "Text": "Logging in with \u003CString\u003Elstr1\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYour character is currently on a World Server different from your Home World. Visit an aetheryte in either Limsa Lominsa, Gridania, or Ul\u0027dah to return.\u003C/span\u003E",
+    "Text": "Logging in with \u003CString\u003EStringParameter(1)\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYour character is currently on a World Server different from your Home World. Visit an aetheryte in either Limsa Lominsa, Gridania, or Ul\u0027dah to return.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 96,
-    "Text": "Logging in with \u003CString\u003Elstr1\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYour character is currently in a data center different from your Home World\u0027s. To return, select \u201CReturn to Home World\u201D from the character subcommand menu before logging in.\u003C/span\u003E",
+    "Text": "Logging in with \u003CString\u003EStringParameter(1)\u003C/String\u003E.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYour character is currently in a data center different from your Home World\u0027s. To return, select \u201CReturn to Home World\u201D from the character subcommand menu before logging in.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 99,
-    "Text": "\n\nStarting Attributes: STR \u003CNum\u003Elnum1\u003C/Num\u003E/DEX \u003CNum\u003Elnum3\u003C/Num\u003E/VIT \u003CNum\u003Elnum2\u003C/Num\u003E/INT \u003CNum\u003Elnum4\u003C/Num\u003E/MND \u003CNum\u003Elnum5\u003C/Num\u003E",
+    "Text": "\n\nStarting Attributes: STR \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/DEX \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E/VIT \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/INT \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E/MND \u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -991,7 +991,7 @@
   },
   {
     "RowId": 110,
-    "Text": "Hyur\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Hyur\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "The Hyur are said to have first traveled to Eorzea from her surrounding\ncontinents and islands. Three great migratory waves later, they are now\nthe most populous of all the civilized races. They exhibit a relatively\nmodest physique, both in height and build, and are known for their\npeculiarly short, rounded ears. Hyurs are well suited for traveling long\ndistances by foot, a trait thought to account for their swift proliferation.\n\nTheir espousal of an eclectic variety of languages and traditions is\na legacy of their diverse heritage\uFF0Das is their resulting lack of a\nunified cultural identity.",
     "TYPE": 0,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 112,
-    "Text": "Elezen\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Elezen\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "In former times, the Elezen were the sole inhabitants of Eorzea,\nclaiming dominion over her. Traditionally a nomadic people, the tall,\nslender Elezen believed the realm to be theirs by divine right.\nUnfortunately, this belief made the eventual appearance of the\nHyur in their multitudes akin to an invasion, and a long history of\nconflict ensued.\n\nUltimately, the Elezen diverged into the two clans that exist today.\nThe Wildwood Elezen took to the forests to protect their homeland,\nwhile the Duskwight Elezen withdrew to caves and subterrane, opting\ninstead to avoid all contact with any but their own.",
     "TYPE": 0,
@@ -1027,7 +1027,7 @@
   },
   {
     "RowId": 114,
-    "Text": "Lalafell\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Lalafell\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "A wee people sporting short, rotund bodies, the Lalafell appear as\nno more than children to the eyes of most. Many of these nimble\nlittle folk hail from the islands of the south seas, where they practice\na simple agricultural lifestyle. It was not until the opening of maritime\ntrade routes that the gradual migration of Lalafells to Eorzea began.\n\nNow one of the most well-established races in the realm, Lalafells\ncan be found in great numbers in nearly every city. Though Lalafellin\nculture places great emphasis on blood relations, individuals are known\nfor getting along amicably with members of all races.",
     "TYPE": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 116,
-    "Text": "Miqo\u0027te\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Miqo\u0027te\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "The ancestors of the Miqo\u0027te made their way to Eorzea during the\nAge of Endless Frost, traversing the frozen seas in pursuit of the\nwildlife upon which they subsisted. Adaptation to a hunting lifestyle\nhas fashioned them with a keen sense of smell, powerful legs, and\na tail which provides them with exceptional balance.\n\nMiqo\u0027te are known to be very territorial, and many individuals tend\nto lead solitary lifestyles, particularly males.",
     "TYPE": 0,
@@ -1063,7 +1063,7 @@
   },
   {
     "RowId": 118,
-    "Text": "Roegadyn\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Roegadyn\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Known for their brawny builds and piercing eyes, the Roegadyn\nare the largest and most rugged of Eorzea\u0027s races. The majority\nof the realm\u0027s Roegadyn belong to the Sea Wolf clan, a maritime\npeople who earn their keep on or by the sea, be it as sailors,\nfishermen, or pirates. Comparatively fewer in number are the\nHellsguard, who are known for their more earnest demeanors\nand can often be found working as bodyguards and smithies.",
     "TYPE": 0,
@@ -1261,7 +1261,7 @@
   },
   {
     "RowId": 140,
-    "Text": "Au Ra\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Au Ra\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "The curved horns and beautifully patterned scales that characterize\nthe Au Ra oft give rise to speculation that members of this Hyur-like\nrace native to the Far Eastern continent of Othard are, in fact, the\nprogeny of dragons. This, however, has long been disputed, with\nscholars citing several distinct differences in the two races as\nevidence of decidedly dissimilar roots\u2500the first and foremost being\nthe enhanced hearing and spatial recognition granted by an Au Ra\u0027s\ncranial projections (traits not attributed to draconian horns), and the\nsecond being the gross disproportion in body mass between Auri\nmales and females (again, a trait widely unseen in dragons).",
     "TYPE": 0,
@@ -2431,7 +2431,7 @@
   },
   {
     "RowId": 270,
-    "Text": "Approximately \u003CNum\u003Elnum1\u003C/Num\u003E.\u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum3\u003E0])\u003Einches\u003CElse/\u003Ecm\u003C/If\u003E",
+    "Text": "Approximately \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(GreaterThan(IntegerParameter(3),0))\u003Einches\u003CElse/\u003Ecm\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -4123,7 +4123,7 @@
   },
   {
     "RowId": 458,
-    "Text": "Hrothgar\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Hrothgar\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Hailing from the distant shores of Ilsabard, the Hrothgar are a burly\npeople of lionlike appearance\u2014or the males are, at least. Females\nnumber staggeringly few among their population, and thus are\nrarely so much as glimpsed by the other races.\n\nThe Hrothgar\u0027s imposing countenance\u2500mitigated not at all by their\nsharp claws and still sharper fangs\u2014incited panic amongst\nEorzeans upon their arrival. As they were also unable to\ncommunicate, initial interactions with the commonfolk often\nescalated into conflict. It was not until the Hrothgar gained mastery\nof the common tongue that fears were allayed, and in time they\nwould be as neighbors, welcome in all corners of the realm.",
     "TYPE": 0,
@@ -4141,7 +4141,7 @@
   },
   {
     "RowId": 460,
-    "Text": "Viera\u003Cswitch(lnum1, \u00A9, \u00AE,)\u003E",
+    "Text": "Viera\u003Cswitch(IntegerParameter(1), \u00A9, \u00AE,)\u003E",
     "Unknown0": "",
     "Unknown1": "Of tall stature and slender frame, the Viera\u0027s physical appearance is\nstrikingly similar to that of the Hyur and Elezen, save for their\ndistinctive long ears. Adhering to a strict code known as the Green\nWord, they are prohibited from contact with the outside world under\nthreat of exile. Their society is purely matriarchal, and males of age\nare seldom, if ever, found within the bounds of any village. They\ninstead serve as protectors of the wood from the shadows, that no\nevil may ever encroach on their sacred lands.",
     "TYPE": 0,

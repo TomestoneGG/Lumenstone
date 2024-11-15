@@ -541,7 +541,7 @@
   },
   {
     "RowId": 10060,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E has been severed!",
+    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been severed!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -568,7 +568,7 @@
   },
   {
     "RowId": 10063,
-    "Text": "Nald\u0027thal suffers \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E of damage!",
+    "Text": "Nald\u0027thal suffers \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Epoint\u003CElse/\u003Epoints\u003C/If\u003E of damage!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -892,7 +892,7 @@
   },
   {
     "RowId": 10099,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E does not have the dark matter required for repairs.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E does not have the dark matter required for repairs.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -901,7 +901,7 @@
   },
   {
     "RowId": 10100,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E lacks either the required class or level to repair \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u0027s equipped items.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E lacks either the required class or level to repair \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u0027s equipped items.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -910,7 +910,7 @@
   },
   {
     "RowId": 10101,
-    "Text": "\u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E is not equipped with gear that can be repaired by \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E.",
+    "Text": "\u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E is not equipped with gear that can be repaired by \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -928,7 +928,7 @@
   },
   {
     "RowId": 10103,
-    "Text": "Unable to execute command. \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E is currently repairing another player\u0027s gear.",
+    "Text": "Unable to execute command. \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E is currently repairing another player\u0027s gear.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -955,7 +955,7 @@
   },
   {
     "RowId": 10106,
-    "Text": "You receive \u003Ckilo(lnum1,\\,)\u003E gil for repairs made.",
+    "Text": "You receive \u003Ckilo(IntegerParameter(1),,)\u003E gil for repairs made.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -973,7 +973,7 @@
   },
   {
     "RowId": 10108,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,2,lnum1,1,1)\u003E\u003C/Head\u003E has been repaired.",
+    "Text": "\u003CHead\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E has been repaired.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -982,7 +982,7 @@
   },
   {
     "RowId": 10109,
-    "Text": "\u003CHead\u003E\u003Cif(lnum1,\u003Cif([lnum1\u003C=10],\u003Cswitch(lnum1,one,two,three,four,five,six,seven,eight,nine,ten)\u003E,\u003Cnum(lnum1)\u003E)\u003E,\u003Cnum(lnum1)\u003E)\u003E\u003C/Head\u003E items repaired.",
+    "Text": "\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E items repaired.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 10124,
-    "Text": "Unable to claim. Obtainable \u003Cennoun(Item,3,lnum1,2,1)\u003E exceed maximum isleventory space.",
+    "Text": "Unable to claim. Obtainable \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E exceed maximum isleventory space.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1171,7 +1171,7 @@
   },
   {
     "RowId": 10130,
-    "Text": "You export \u003CIf([lnum2==1])\u003E\u003Cennoun(Item,1,lnum1,1,1)\u003E\u003CElse/\u003E\u003Cnum(lnum2)\u003E \u003Cennoun(Item,3,lnum1,lnum2,1)\u003E\u003C/If\u003E.",
+    "Text": "You export \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 10131,
-    "Text": "You export applicable items in excess of \u003CNum\u003Elnum1\u003C/Num\u003E.",
+    "Text": "You export applicable items in excess of \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 10132,
-    "Text": "You cannot carry any more \u003Cennoun(Item,3,lnum1,2,1)\u003E.",
+    "Text": "You cannot carry any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 10147,
-    "Text": "\u003CIf(lnum3)\u003EYou took a step toward realizing\u003CElse/\u003EYou realized\u003C/If\u003E the vision \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D!",
+    "Text": "\u003CIf(IntegerParameter(3))\u003EYou took a step toward realizing\u003CElse/\u003EYou realized\u003C/If\u003E the vision \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D!",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1342,7 +1342,7 @@
   },
   {
     "RowId": 10149,
-    "Text": "You release \u003Cennoun(BNpcName,2,lnum1,1,1)\u003E.",
+    "Text": "You release \u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1675,7 +1675,7 @@
   },
   {
     "RowId": 10186,
-    "Text": "\u201C\u003CHead\u003E\u003Csheet(VVDNotebookContents,lnum1,2)\u003E\u003C/Head\u003E\u201D is added to the Sil\u0027dih survey record.",
+    "Text": "\u201C\u003CHead\u003E\u003Csheet(VVDNotebookContents,IntegerParameter(1),2)\u003E\u003C/Head\u003E\u201D is added to the Sil\u0027dih survey record.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 10210,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E has visited your island.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E has visited your island.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1918,7 +1918,7 @@
   },
   {
     "RowId": 10213,
-    "Text": "Registered \u003Cennoun(Item,2,lnum1,1,1)\u003E to glamour list.",
+    "Text": "Registered \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E to glamour list.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 10217,
-    "Text": "Unable to process request due to lack of \u003Cennoun(Item,3,lnum1,2,1)\u003E.",
+    "Text": "Unable to process request due to lack of \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -2134,7 +2134,7 @@
   },
   {
     "RowId": 10237,
-    "Text": "Rotated \u003Csheet(MJIText,lnum1,0)\u003E.",
+    "Text": "Rotated \u003Csheet(MJIText,IntegerParameter(1),0)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2152,7 +2152,7 @@
   },
   {
     "RowId": 10239,
-    "Text": "Construction of \u003Csheet(MJIText,lnum2,0)\u003E is complete. Access \u003Cennoun(EObj,2,lnum1,1,1)\u003E to perform a final inspection of the structure.",
+    "Text": "Construction of \u003Csheet(MJIText,IntegerParameter(2),0)\u003E is complete. Access \u003Cennoun(EObj,2,IntegerParameter(1),1,1)\u003E to perform a final inspection of the structure.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2449,7 +2449,7 @@
   },
   {
     "RowId": 10272,
-    "Text": "\u003Cifself(lnum1,You transform,\u003Chead(\u003Cpcname(lnum1)\u003E)\u003E transforms)\u003E into a dreadnaught!",
+    "Text": "\u003Cifself(IntegerParameter(1),You transform,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E transforms)\u003E into a dreadnaught!",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2566,7 +2566,7 @@
   },
   {
     "RowId": 10285,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],you,\u003Cif(gnum7,\u003Cennoun(ObjStr,2,gnum7,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(DeepDungeonDemiclone,1,lnum1,1,1)\u003E.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2575,7 +2575,7 @@
   },
   {
     "RowId": 10286,
-    "Text": "The party obtains \u003Cennoun(DeepDungeonDemiclone,1,lnum1,1,1)\u003E.",
+    "Text": "The party obtains \u003Cennoun(DeepDungeonDemiclone,1,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2584,7 +2584,7 @@
   },
   {
     "RowId": 10287,
-    "Text": "You return \u003Cennoun(DeepDungeonDemiclone,2,lnum1,1,1)\u003E to the coffer. You cannot carry any more of that item.",
+    "Text": "You return \u003Cennoun(DeepDungeonDemiclone,2,IntegerParameter(1),1,1)\u003E to the coffer. You cannot carry any more of that item.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2593,7 +2593,7 @@
   },
   {
     "RowId": 10288,
-    "Text": "\u003Cifself(lnum1,You use,\u003Chead(\u003Cpcname(lnum1)\u003E)\u003E uses)\u003E \u003Cennoun(DeepDungeonDemiclone,1,lnum2,1,1)\u003E.",
+    "Text": "\u003Cifself(IntegerParameter(1),You use,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E uses)\u003E \u003Cennoun(DeepDungeonDemiclone,1,IntegerParameter(2),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 10409,
-    "Text": "Rral Soj now considers you \u003Cswitch(lnum1,a \u201CMettlesome Metalworker.\u201D,a \u201CMarvelous Metalworker.\u201D,a \u201CMetal Miracle Worker.\u201D,a \u201CMaster of Metal.\u201D)\u003E",
+    "Text": "Rral Soj now considers you \u003Cswitch(IntegerParameter(1),a \u201CMettlesome Metalworker.\u201D,a \u201CMarvelous Metalworker.\u201D,a \u201CMetal Miracle Worker.\u201D,a \u201CMaster of Metal.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Pameka now considers you \u003Cswitch(lnum1,a \u201CCover Collaborator.\u201D,a \u201CBeneficial Binder.\u201D,a \u201CTalented Talebinder.\u201D,a \u201CBinding Authority.\u201D,a \u201CConnoisseur of Covers.\u201D)\u003E",
+    "Text": "Pameka now considers you \u003Cswitch(IntegerParameter(1),a \u201CCover Collaborator.\u201D,a \u201CBeneficial Binder.\u201D,a \u201CTalented Talebinder.\u201D,a \u201CBinding Authority.\u201D,a \u201CConnoisseur of Covers.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3700,7 +3700,7 @@
   },
   {
     "RowId": 10411,
-    "Text": "Xeerol Ja now considers you \u003Cswitch(lnum1,a \u201CMamool Ja Moisturizer.\u201D,a \u201CMoblin Motivator.\u201D,a \u201CHanuhanu Hydrator.\u201D,a \u201CPelupelu Panacea Provider.\u201D)\u003E",
+    "Text": "Xeerol Ja now considers you \u003Cswitch(IntegerParameter(1),a \u201CMamool Ja Moisturizer.\u201D,a \u201CMoblin Motivator.\u201D,a \u201CHanuhanu Hydrator.\u201D,a \u201CPelupelu Panacea Provider.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3709,7 +3709,7 @@
   },
   {
     "RowId": 10412,
-    "Text": "Shunye now considers you \u003Cswitch(lnum1,a \u201CGreenhorn Gatherer.\u201D,a \u201CGreat Gatherer.\u201D,a \u201CGifted Gatherer.\u201D,a \u201CGlorious Gatherer.\u201D)\u003E",
+    "Text": "Shunye now considers you \u003Cswitch(IntegerParameter(1),a \u201CGreenhorn Gatherer.\u201D,a \u201CGreat Gatherer.\u201D,a \u201CGifted Gatherer.\u201D,a \u201CGlorious Gatherer.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 10413,
-    "Text": "Donuhanu now considers you \u003Cswitch(lnum1,a \u201CFriendly Fish Finder.\u201D,a \u201CFirm Fish Finder.\u201D,a \u201CFortitudinous Fish Finder.\u201D,a \u201CPhenomenal Fish Finder.\u201D,the \u201CFanciest Fish Finder.\u201D)\u003E",
+    "Text": "Donuhanu now considers you \u003Cswitch(IntegerParameter(1),a \u201CFriendly Fish Finder.\u201D,a \u201CFirm Fish Finder.\u201D,a \u201CFortitudinous Fish Finder.\u201D,a \u201CPhenomenal Fish Finder.\u201D,the \u201CFanciest Fish Finder.\u201D)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 10420,
-    "Text": "The map cannot be opened because your current class/job is not level \u003CNum\u003Elnum1\u003C/Num\u003E or higher.",
+    "Text": "The map cannot be opened because your current class/job is not level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E or higher.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 10421,
-    "Text": "The following classes or jobs are required to open this map:\n\u003Csheet(ClassJobCategory,lnum1,0)\u003E",
+    "Text": "The following classes or jobs are required to open this map:\n\u003Csheet(ClassJobCategory,IntegerParameter(1),0)\u003E",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3970,7 +3970,7 @@
   },
   {
     "RowId": 10441,
-    "Text": "Unable to proceed with \u201C\u003Csheet(Quest,lnum1,0)\u003E.\u201D You are registered to join a duty.",
+    "Text": "Unable to proceed with \u201C\u003Csheet(Quest,IntegerParameter(1),0)\u003E.\u201D You are registered to join a duty.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3979,7 +3979,7 @@
   },
   {
     "RowId": 10442,
-    "Text": "Unable to complete \u201C\u003Csheet(Quest,lnum1,0)\u003E.\u201D You are registered to join a duty.",
+    "Text": "Unable to complete \u201C\u003Csheet(Quest,IntegerParameter(1),0)\u003E.\u201D You are registered to join a duty.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4051,7 +4051,7 @@
   },
   {
     "RowId": 10450,
-    "Text": "The enemy is weak\u2500use \u003Cennoun(EventItem,2,lnum1,1,1)\u003E!",
+    "Text": "The enemy is weak\u2500use \u003Cennoun(EventItem,2,IntegerParameter(1),1,1)\u003E!",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,

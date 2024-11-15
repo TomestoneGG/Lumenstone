@@ -33,11 +33,11 @@
   },
   {
     "RowId": 6736,
-    "Text": "\u003CIf([lnum1\u003E1])\u003E\u003Ckilo(lnum1,.)\u003E Gil bezahlen und mit der pers\u00F6nlichen Unterkunft umziehen?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B 15 % des Mindestwertes des alten Grundst\u00FCcks wurden auf den neuen Kaufpreis angerechnet.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C1])\u003EMit der pers\u00F6nlichen Unterkunft umziehen?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B Nach Abzug von 15 % des Mindestwertes des alten Grundst\u00FCcks betr\u00E4gt der Kaufpreis des neuen Grundst\u00FCcks \u003Cbold(1)\u003E0 Gil\u003Cbold(0)\u003E.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),1))\u003E\u003Ckilo(IntegerParameter(1),.)\u003E Gil bezahlen und mit der pers\u00F6nlichen Unterkunft umziehen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B 15 % des Mindestwertes des alten Grundst\u00FCcks wurden auf den neuen Kaufpreis angerechnet.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),1))\u003EMit der pers\u00F6nlichen Unterkunft umziehen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Nach Abzug von 15 % des Mindestwertes des alten Grundst\u00FCcks betr\u00E4gt der Kaufpreis des neuen Grundst\u00FCcks \u003CBold\u003E1\u003C/Bold\u003E0 Gil\u003CBold\u003E0\u003C/Bold\u003E.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6737,
-    "Text": "\u003CIf([lnum1\u003E1])\u003E\u003Ckilo(lnum1,.)\u003E Gil bezahlen und mit der Unterkunft der Freien Ge\u003C-\u003Esell\u003C-\u003Eschaft umziehen?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B 15 % des Mindestwertes des alten Grundst\u00FCcks wurden auf den neuen Kaufpreis angerechnet.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C1])\u003EMit der Unterkunft der Freien Ge\u003C-\u003Esell\u003C-\u003Eschaft umziehen?\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003E\u203B Nach Abzug von 15 % des Mindestwertes des alten Grundst\u00FCcks betr\u00E4gt der Kaufpreis des neuen Grundst\u00FCcks \u003Cbold(1)\u003E0 Gil\u003Cbold(0)\u003E.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),1))\u003E\u003Ckilo(IntegerParameter(1),.)\u003E Gil bezahlen und mit der Unterkunft der Freien Gesellschaft umziehen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B 15 % des Mindestwertes des alten Grundst\u00FCcks wurden auf den neuen Kaufpreis angerechnet.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),1))\u003EMit der Unterkunft der Freien Gesellschaft umziehen?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Nach Abzug von 15 % des Mindestwertes des alten Grundst\u00FCcks betr\u00E4gt der Kaufpreis des neuen Grundst\u00FCcks \u003CBold\u003E1\u003C/Bold\u003E0 Gil\u003CBold\u003E0\u003C/Bold\u003E.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6738,
@@ -89,7 +89,7 @@
   },
   {
     "RowId": 6752,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E in die Vase stellen?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E in die Vase stellen?"
   },
   {
     "RowId": 6753,
@@ -97,7 +97,7 @@
   },
   {
     "RowId": 6755,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E in die Vase stellen?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDer folgende vorhandene Gegenstand wird dabei verworfen:\u003C/span\u003E"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E in die Vase stellen?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EDer folgende vorhandene Gegenstand wird dabei verworfen:\u003C/span\u003E"
   },
   {
     "RowId": 6760,
@@ -165,7 +165,7 @@
   },
   {
     "RowId": 6776,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, \u003CIf([lnum1==425])\u003E\u003Csheet(PlaceName,1805,0)\u003E\\,\u003CElse/\u003E\u003Cif([lnum1==426],\u003Csheet(PlaceName,1807,0)\u003E\\,,\u003Cif([lnum1==427],\u003Csheet(PlaceName,1809,0)\u003E\\,,\u003Cif([lnum1==2412],\u003Csheet(PlaceName,1905,0)\u003E,\u003Cif([lnum1==4139],\u003Csheet(PlaceName,3718,0)\u003E,Wohnung in)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E \u003CIf([lnum3==129])\u003EGeb\u00E4ude 1\u003CElse/\u003EGeb\u00E4ude 2\u003C/If\u003E, Zimmer \u003CNum\u003Elnum4\u003C/Num\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, \u003CIf(Equal(IntegerParameter(1),425))\u003E\u003Csheet(PlaceName,1805,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),426))\u003E\u003Csheet(PlaceName,1807,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),427))\u003E\u003Csheet(PlaceName,1809,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2412))\u003E\u003Csheet(PlaceName,1905,0)\u003E\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),4139))\u003E\u003Csheet(PlaceName,3718,0)\u003E\u003CElse/\u003EWohnung in\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),129))\u003EGeb\u00E4ude 1\u003CElse/\u003EGeb\u00E4ude 2\u003C/If\u003E, Zimmer \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E"
   },
   {
     "RowId": 6777,
@@ -197,7 +197,7 @@
   },
   {
     "RowId": 6784,
-    "Text": "Wohnung Nr. \u003CNum\u003Elnum1\u003C/Num\u003E von \u003CIf([gstr1==gstr3])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,1,1)\u003E,gstr3)\u003E\u003C/If\u003E betreten?"
+    "Text": "Wohnung Nr. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E betreten?"
   },
   {
     "RowId": 6790,
@@ -265,7 +265,7 @@
   },
   {
     "RowId": 6812,
-    "Text": "Umgebung: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Umgebung: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6813,
@@ -277,7 +277,7 @@
   },
   {
     "RowId": 6815,
-    "Text": "\u003Cswitch(lnum1,S,M,L,XL)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),S,M,L,XL)\u003E"
   },
   {
     "RowId": 6816,
@@ -285,7 +285,7 @@
   },
   {
     "RowId": 6817,
-    "Text": "\u003CIf([lnum1\u003E99])\u003E99\u002B\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E/\uE03C\u003Cif([lnum2\u003E99],99\u002B,\u003Cnum(lnum2)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E/\uE03D\u003Cif([lnum3\u003E99],99\u002B,\u003Cnum(lnum3)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E/\uE03C\u003CIf(GreaterThan(IntegerParameter(2),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E/\uE03D\u003CIf(GreaterThan(IntegerParameter(3),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 6818,
@@ -321,11 +321,11 @@
   },
   {
     "RowId": 6826,
-    "Text": "\u003CIf([lnum1==1])\u003EEorzea Incognita\u003CElse/\u003E\u003Cif([lnum1==2],Landschaft,\u003Cif([lnum1==3],Portraits,)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),1))\u003EEorzea Incognita\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2))\u003ELandschaft\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),3))\u003EPortraits\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6827,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E einrahmen?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E einrahmen?"
   },
   {
     "RowId": 6828,
@@ -333,7 +333,7 @@
   },
   {
     "RowId": 6829,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E platzieren?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der folgende Gegenstand geht dabei verloren.\u003C/span\u003E"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E platzieren?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der folgende Gegenstand geht dabei verloren.\u003C/span\u003E"
   },
   {
     "RowId": 6830,
@@ -405,7 +405,7 @@
   },
   {
     "RowId": 6847,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6848,
@@ -453,7 +453,7 @@
   },
   {
     "RowId": 6859,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E anbringen?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E anbringen?"
   },
   {
     "RowId": 6860,
@@ -461,7 +461,7 @@
   },
   {
     "RowId": 6861,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E anbringen und die derzeit angebrachte Tapete verlieren?"
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E anbringen und die derzeit angebrachte Tapete verlieren?"
   },
   {
     "RowId": 6862,
@@ -521,11 +521,11 @@
   },
   {
     "RowId": 6876,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, \u003CIf([lnum1==425])\u003E\u003Csheet(PlaceName,1805,0)\u003E\\,\u003CElse/\u003E\u003Cif([lnum1==426],\u003Csheet(PlaceName,1807,0)\u003E\\,,\u003Cif([lnum1==427],\u003Csheet(PlaceName,1809,0)\u003E\\,,\u003Cif([lnum1==2412],\u003Csheet(PlaceName,1905,0)\u003E\\,,\u003Cif([lnum1==4139],\u003Csheet(PlaceName,3718,0)\u003E,Wohnung in)\u003E)\u003E)\u003E)\u003E \u003Cif([lnum3==129],Geb\u00E4ude 1,Geb\u00E4ude 2)\u003E\u003C/If\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, \u003CIf(Equal(IntegerParameter(1),425))\u003E\u003Csheet(PlaceName,1805,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),426))\u003E\u003Csheet(PlaceName,1807,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),427))\u003E\u003Csheet(PlaceName,1809,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),2412))\u003E\u003Csheet(PlaceName,1905,0)\u003E,\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),4139))\u003E\u003Csheet(PlaceName,3718,0)\u003E\u003CElse/\u003EWohnung in\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),129))\u003EGeb\u00E4ude 1\u003CElse/\u003EGeb\u00E4ude 2\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 6877,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, \u003CNum\u003Elnum3\u003C/Num\u003E (\u003Cswitch(lnum4,H\u00FCtte,Haus,Residenz)\u003E)"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E (\u003Cswitch(IntegerParameter(4),H\u00FCtte,Haus,Residenz)\u003E)"
   },
   {
     "RowId": 6878,
@@ -561,7 +561,7 @@
   },
   {
     "RowId": 6886,
-    "Text": "Das Tauchboot mit den gew\u00E4hlten Bauteilen registrieren?\nVerbraucht \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003EExemplar\u003CElse/\u003EExemplare\u003C/If\u003E des folgenden Gegenstands:"
+    "Text": "Das Tauchboot mit den gew\u00E4hlten Bauteilen registrieren?\nVerbraucht \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EExemplar\u003CElse/\u003EExemplare\u003C/If\u003E des folgenden Gegenstands:"
   },
   {
     "RowId": 6887,
@@ -601,7 +601,7 @@
   },
   {
     "RowId": 6896,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E, \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E, \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr"
   },
   {
     "RowId": 6897,
@@ -617,7 +617,7 @@
   },
   {
     "RowId": 6900,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E Mal"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E Mal"
   },
   {
     "RowId": 6902,
@@ -645,11 +645,11 @@
   },
   {
     "RowId": 6908,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E, \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E, \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr"
   },
   {
     "RowId": 6909,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6910,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 6911,
-    "Text": "Noch m\u00F6glich: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Noch m\u00F6glich: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 6912,
@@ -709,7 +709,7 @@
   },
   {
     "RowId": 6924,
-    "Text": "M\u00F6chtest du den folgenden Eintrag l\u00F6schen?\n\n\u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C"
+    "Text": "M\u00F6chtest du den folgenden Eintrag l\u00F6schen?\n\n\u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C"
   },
   {
     "RowId": 6925,
@@ -717,23 +717,23 @@
   },
   {
     "RowId": 6926,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6927,
-    "Text": "Klasse/Job: \u003Csheet(ClassJob,lnum1,0)\u003E"
+    "Text": "Klasse/Job: \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6928,
-    "Text": "Volk: \u003Csheet(Race,lnum1,0)\u003E"
+    "Text": "Volk: \u003Csheet(Race,IntegerParameter(1),0)\u003E"
   },
   {
     "RowId": 6929,
-    "Text": "Geschlecht: \u003CIf([lnum1==0])\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
+    "Text": "Geschlecht: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
   },
   {
     "RowId": 6930,
-    "Text": "Pose: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Pose: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6931,
@@ -741,11 +741,11 @@
   },
   {
     "RowId": 6932,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 6933,
-    "Text": "Warenkapazit\u00E4t: \u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Warenkapazit\u00E4t: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 6934,
@@ -845,7 +845,7 @@
   },
   {
     "RowId": 6959,
-    "Text": "Auswahl f\u00FCr \u003Ckilo(lnum1,.)\u003E Gil kaufen?"
+    "Text": "Auswahl f\u00FCr \u003Ckilo(IntegerParameter(1),.)\u003E Gil kaufen?"
   },
   {
     "RowId": 6960,
@@ -1137,15 +1137,15 @@
   },
   {
     "RowId": 7032,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDas Sammlerst\u00FCck \u201E\u003Csheet(Item,lnum1,9)\u003E\u201C\u003CElse/\u003E\u003Chead(\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E)\u003E\u003C/If\u003E abdr\u00FCcken und im Rahmen anbringen?\n\u003CIf([lnum2\u003E0])\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDas Sammlerst\u00FCck \u201E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u201C\u003CElse/\u003E\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E\u003C/If\u003E abdr\u00FCcken und im Rahmen anbringen?\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E"
   },
   {
     "RowId": 7033,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EIn dem Rahmen befindet sich bereits ein Abdruck des gleichen Fisches.\u003C/span\u003E\n\nDen vorhandenen Gegenstand verwerfen und durch den folgenden ersetzen?\n\n\u003CIf([lnum2\u003E0])\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E"
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EIn dem Rahmen befindet sich bereits ein Abdruck des gleichen Fisches.\u003C/span\u003E\n\nDen vorhandenen Gegenstand verwerfen und durch den folgenden ersetzen?\n\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E"
   },
   {
     "RowId": 7034,
-    "Text": "\u003CIf([lnum2\u003E0])\u003EDas Sammlerst\u00FCck \u201E\u003Csheet(Item,lnum1,9)\u003E\u201C\u003CElse/\u003E\u003Chead(\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E)\u003E\u003C/If\u003E abdr\u00FCcken und im Rahmen anbringen?\n\u003CIf([lnum2\u003E0])\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der folgende Gegenstand geht dabei verloren.\u003C/span\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003EDas Sammlerst\u00FCck \u201E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u201C\u003CElse/\u003E\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E\u003C/If\u003E abdr\u00FCcken und im Rahmen anbringen?\n\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u203B St\u00FCcke mit geringerem Sammlerwert werden zuerst verwertet.\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B HQ-Gegenst\u00E4nde und Sammlerst\u00FCcke werden als normale Varianten des Gegenstands dargestellt.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der folgende Gegenstand geht dabei verloren.\u003C/span\u003E"
   },
   {
     "RowId": 7035,
@@ -1169,11 +1169,11 @@
   },
   {
     "RowId": 7040,
-    "Text": "\u003Cswitch(lnum1,F\u00FCr Freie Ge\u003C-\u003Esell\u003C-\u003Eschaften,Nicht f\u00FCr Freie Ge\u003C-\u003Esell\u003C-\u003Eschaften)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),F\u00FCr Freie Gesellschaften,Nicht f\u00FCr Freie Gesellschaften)\u003E"
   },
   {
     "RowId": 7041,
-    "Text": " \u003Cswitch(lnum1,F\u00FCr private K\u00E4ufer,Nicht f\u00FCr private K\u00E4ufer)\u003E"
+    "Text": " \u003Cswitch(IntegerParameter(1),F\u00FCr private K\u00E4ufer,Nicht f\u00FCr private K\u00E4ufer)\u003E"
   },
   {
     "RowId": 7042,
@@ -1181,11 +1181,11 @@
   },
   {
     "RowId": 7043,
-    "Text": "\u003Cswitch(lnum1,Freier Verkauf,Verkauf per Auslosung \\(aktuell \u003Cnum(lnum2)\u003E Teilnehmer\\),In Vorbereitung)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Freier Verkauf,Verkauf per Auslosung (aktuell \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Teilnehmer),In Vorbereitung)\u003E"
   },
   {
     "RowId": 7044,
-    "Text": "\u003Cswitch(lnum2,Die Bewerbungsphase endet am \u003Csettime(lnum1)\u003E\u003Cnum(t_day)\u003E.\u003Cnum(t_mon)\u003E.\u003Cnum(t_year)\u003E um \u003Cnum(t_hour)\u003E:\u003Csec(t_min)\u003E Uhr.,Die Ergebnisphase endet am \u003Csettime(lnum1)\u003E\u003Cnum(t_day)\u003E.\u003Cnum(t_mon)\u003E.\u003Cnum(t_year)\u003E um \u003Cnum(t_hour)\u003E:\u003Csec(t_min)\u003E Uhr.)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(2),Die Bewerbungsphase endet am \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr.,Die Ergebnisphase endet am \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr.)\u003E"
   },
   {
     "RowId": 7045,
@@ -1193,7 +1193,7 @@
   },
   {
     "RowId": 7046,
-    "Text": "Es kann immer nur an einer Auslosung zum Grundst\u00FCckskauf teilgenommen werden. M\u00F6chtest du\u003CIf([lnum2==3])\u003E\u003Cif([lnum3==0], als \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EEinzelperson\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E, f\u00FCr deine \u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EFreie Ge\u003C-\u003Esell\u003C-\u003Eschaft\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E an der Auslosung teilnehmen und\u003CElse/\u003E \u003C/If\u003E ein Los f\u00FCr \u003Ckilo(lnum1,.)\u003E Gil kaufen?\n\n- Dieses Grundst\u00FCck ist momentan \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003Cswitch(lnum2,f\u00FCr Freie Ge\u003C-\u003Esell\u003C-\u003Eschaften,als Privatgrundst\u00FCck,ohne Kaufbeschr\u00E4nkung)\u003E\u003C/span\u003E ausgeschrieben.\n- Die Teilnahme an der Auslosung kann nicht zur\u00FCckgezogen werden.\n- Das Ergebnis der Ziehung wird f\u00FCr eine bestimmte Zeit an der Informationstafel angezeigt.\n- Wurde deine Nummer nicht gezogen, kannst du dir den Kaufpreis des Loses an der Informationstafel erstatten lassen.\n- Wurde deine Nummer gezogen, werden dir ca. 15\u003C\u003Cnbsp\u003E\u003E% des Mindestwertes des alten Grundst\u00FCcks r\u00FCckerstattet. Diese R\u00FCckerstattung ist jedoch maximal so hoch wie der Preis des neuen Grundst\u00FCcks.\n- Wurde deine Nummer gezogen und du lehnst den Kauf ab, f\u00E4llt eine Stornogeb\u00FChr in H\u00F6he von 50\u003C\u003Cnbsp\u003E\u003E% des Kaufpreises an. Die \u00FCbrigen 50\u003C\u003Cnbsp\u003E\u003E% R\u00FCckerstattung kannst du an der Informationstafel erhalten.\n- Jegliche R\u00FCckerstattungen sind f\u00FCr 90 Tage ab der Ziehung g\u00FCltig. Danach ist keine R\u00FCckerstattung mehr m\u00F6glich.\n- W\u00E4hrend du ein offenes Kaufangebot oder eine offene R\u00FCckerstattung hast, kannst du an keinen weiteren Auslosungen teilnehmen.\n\u003CIf([lnum2==1])\u003E- Der Grundst\u00FCckskauf ist erst 30 Tage nach dem Beitritt in eine Freie Ge\u003C-\u003Esell\u003C-\u003Eschaft m\u00F6glich.\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EBitte beachte:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Verl\u00E4sst du die Freie Ge\u003C-\u003Esell\u003C-\u003Eschaft\\, nachdem du ein Los f\u00FCr sie gekauft hast\\, kannst du 30 Tage kein Grundst\u00FCck erwerben.\u003CElse/\u003E\u003Cif([lnum2==3],\u003Cif([lnum3==1],- Der Grundst\u00FCckskauf ist erst 30 Tage nach dem Beitritt in eine Freie Ge\u003C-\u003Esell\u003C-\u003Eschaft m\u00F6glich.\u003Cbr\u003E\u003Ccolortype(506)\u003E\u003Cedgecolortype(507)\u003EBitte beachte:\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E Verl\u00E4sst du die Freie Ge\u003C-\u003Esell\u003C-\u003Eschaft\\, nachdem du ein Los f\u00FCr sie gekauft hast\\, kannst du 30 Tage kein Grundst\u00FCck erwerben.\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,)\u003E,)\u003E\u003C/If\u003E"
+    "Text": "Es kann immer nur an einer Auslosung zum Grundst\u00FCckskauf teilgenommen werden. M\u00F6chtest du\u003CIf(Equal(IntegerParameter(2),3))\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E als \u003Cspan style=\u0022color: #ffff66;\u0022\u003EEinzelperson\u003C/span\u003E\u003CElse/\u003E f\u00FCr deine \u003Cspan style=\u0022color: #ffff66;\u0022\u003EFreie Gesellschaft\u003C/span\u003E\u003C/If\u003E an der Auslosung teilnehmen und\u003CElse/\u003E \u003C/If\u003E ein Los f\u00FCr \u003Ckilo(IntegerParameter(1),.)\u003E Gil kaufen?\n\n- Dieses Grundst\u00FCck ist momentan \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003Cswitch(IntegerParameter(2),f\u00FCr Freie Gesellschaften,als Privatgrundst\u00FCck,ohne Kaufbeschr\u00E4nkung)\u003E\u003C/span\u003E ausgeschrieben.\n- Die Teilnahme an der Auslosung kann nicht zur\u00FCckgezogen werden.\n- Das Ergebnis der Ziehung wird f\u00FCr eine bestimmte Zeit an der Informationstafel angezeigt.\n- Wurde deine Nummer nicht gezogen, kannst du dir den Kaufpreis des Loses an der Informationstafel erstatten lassen.\n- Wurde deine Nummer gezogen, werden dir ca. 15\u003C\u003Cnbsp\u003E\u003E% des Mindestwertes des alten Grundst\u00FCcks r\u00FCckerstattet. Diese R\u00FCckerstattung ist jedoch maximal so hoch wie der Preis des neuen Grundst\u00FCcks.\n- Wurde deine Nummer gezogen und du lehnst den Kauf ab, f\u00E4llt eine Stornogeb\u00FChr in H\u00F6he von 50\u003C\u003Cnbsp\u003E\u003E% des Kaufpreises an. Die \u00FCbrigen 50\u003C\u003Cnbsp\u003E\u003E% R\u00FCckerstattung kannst du an der Informationstafel erhalten.\n- Jegliche R\u00FCckerstattungen sind f\u00FCr 90 Tage ab der Ziehung g\u00FCltig. Danach ist keine R\u00FCckerstattung mehr m\u00F6glich.\n- W\u00E4hrend du ein offenes Kaufangebot oder eine offene R\u00FCckerstattung hast, kannst du an keinen weiteren Auslosungen teilnehmen.\n\u003CIf(Equal(IntegerParameter(2),1))\u003E- Der Grundst\u00FCckskauf ist erst 30 Tage nach dem Beitritt in eine Freie Gesellschaft m\u00F6glich.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EBitte beachte:\u003C/span\u003E Verl\u00E4sst du die Freie Gesellschaft, nachdem du ein Los f\u00FCr sie gekauft hast, kannst du 30 Tage kein Grundst\u00FCck erwerben.\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(2),3))\u003E\u003CIf(Equal(IntegerParameter(3),1))\u003E- Der Grundst\u00FCckskauf ist erst 30 Tage nach dem Beitritt in eine Freie Gesellschaft m\u00F6glich.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EBitte beachte:\u003C/span\u003E Verl\u00E4sst du die Freie Gesellschaft, nachdem du ein Los f\u00FCr sie gekauft hast, kannst du 30 Tage kein Grundst\u00FCck erwerben.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7047,
@@ -1245,11 +1245,11 @@
   },
   {
     "RowId": 7063,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (\u003CIf([lnum2==65535])\u003E\u2015\u003CElse/\u003E\u003Cdigit(lnum2,3)\u003E\u003C/If\u003E)"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003CIf(Equal(IntegerParameter(2),65535))\u003E\u2015\u003CElse/\u003E\u003Cdigit(IntegerParameter(2),3)\u003E\u003C/If\u003E)"
   },
   {
     "RowId": 7064,
-    "Text": "\u003CString\u003Elstr2\u003C/String\u003E (\u003CIf([lnum1==0])\u003ENoch nicht erhalten\u003CElse/\u003EErhalten\u003C/If\u003E)"
+    "Text": "\u003CString\u003EStringParameter(2)\u003C/String\u003E (\u003CIf(Equal(IntegerParameter(1),0))\u003ENoch nicht erhalten\u003CElse/\u003EErhalten\u003C/If\u003E)"
   },
   {
     "RowId": 7065,
@@ -1281,15 +1281,15 @@
   },
   {
     "RowId": 7072,
-    "Text": "\u201E\u003CString\u003Elstr2\u003C/String\u003E\u201C abspielen?\n(Wiedergabemodus: \u003CString\u003Elstr1\u003C/String\u003E)\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
+    "Text": "\u201E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u201C abspielen?\n(Wiedergabemodus: \u003CString\u003EStringParameter(1)\u003C/String\u003E)\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
   },
   {
     "RowId": 7073,
-    "Text": "Die Wiedergabe von \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wirklich anhalten?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
+    "Text": "Die Wiedergabe von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wirklich anhalten?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
   },
   {
     "RowId": 7074,
-    "Text": "Zum Wiedergabemodus \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wechseln?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
+    "Text": "Zum Wiedergabemodus \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wechseln?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die \u00C4nderung betrifft auch andere Spieler im gleichen Raum.\u003C/span\u003E"
   },
   {
     "RowId": 7075,
@@ -1393,11 +1393,11 @@
   },
   {
     "RowId": 7108,
-    "Text": "Kategorie: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Kategorie: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 7109,
-    "Text": "Titel: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Titel: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 7110,
@@ -1417,11 +1417,11 @@
   },
   {
     "RowId": 7114,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\nDiesen Titel in der Unterkunft bzw. im G\u00E4stezimmer wiedergeben?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Auch alle anderen Spieler dort h\u00F6ren dann den Titel.\n\u203B Musik, die andere Spieler wiedergeben, kann in den noch nicht erhaltenen Titeln des Orchestrions angeh\u00F6rt werden.\u003C/span\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\nDiesen Titel in der Unterkunft bzw. im G\u00E4stezimmer wiedergeben?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Auch alle anderen Spieler dort h\u00F6ren dann den Titel.\n\u203B Musik, die andere Spieler wiedergeben, kann in den noch nicht erhaltenen Titeln des Orchestrions angeh\u00F6rt werden.\u003C/span\u003E"
   },
   {
     "RowId": 7115,
-    "Text": "Die Wiedergabe von \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C anhalten?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die Wiedergabe wird auch f\u00FCr alle anderen anwesenden Spieler beendet und durch die Standard-Hintergrundmusik ersetzt.\u003C/span\u003E"
+    "Text": "Die Wiedergabe von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C anhalten?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203B Die Wiedergabe wird auch f\u00FCr alle anderen anwesenden Spieler beendet und durch die Standard-Hintergrundmusik ersetzt.\u003C/span\u003E"
   },
   {
     "RowId": 7116,
@@ -1433,7 +1433,7 @@
   },
   {
     "RowId": 7118,
-    "Text": "\u003CIf([lnum1==65535])\u003E\u2015\u003CElse/\u003E\u003Cdigit(lnum1,3)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),65535))\u003E\u2015\u003CElse/\u003E\u003Cdigit(IntegerParameter(1),3)\u003E\u003C/If\u003E"
   },
   {
     "RowId": 7119,
@@ -1449,15 +1449,15 @@
   },
   {
     "RowId": 7122,
-    "Text": "Die Gewinnzahl ist \u003CNum\u003Elnum1\u003C/Num\u003E. Herzlichen Gl\u00FCckwunsch, du hast gewonnen! M\u00F6chtest du den Kauf des Grundst\u00FCcks abschlie\u00DFen?\n\n\u203B Das Angebot ist bis \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr g\u00FCltig."
+    "Text": "Die Gewinnzahl ist \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. Herzlichen Gl\u00FCckwunsch, du hast gewonnen! M\u00F6chtest du den Kauf des Grundst\u00FCcks abschlie\u00DFen?\n\n\u203B Das Angebot ist bis \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr g\u00FCltig."
   },
   {
     "RowId": 7123,
-    "Text": "Die Frist zum Kauf des Grundst\u00FCcks ist abgelaufen und es f\u00E4llt eine Stornogeb\u00FChr in H\u00F6he von 50\u003C\u003Cnbsp\u003E\u003E% an. Willst du die r\u00FCckerstatteten \u003Ckilo(lnum1,.)\u003E Gil erhalten?\n\n\u203B Die R\u00FCckerstattung ist bis \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr m\u00F6glich."
+    "Text": "Die Frist zum Kauf des Grundst\u00FCcks ist abgelaufen und es f\u00E4llt eine Stornogeb\u00FChr in H\u00F6he von 50\u003C\u003Cnbsp\u003E\u003E% an. Willst du die r\u00FCckerstatteten \u003Ckilo(IntegerParameter(1),.)\u003E Gil erhalten?\n\n\u203B Die R\u00FCckerstattung ist bis \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr m\u00F6glich."
   },
   {
     "RowId": 7124,
-    "Text": "Die Gewinnzahl ist \u003CNum\u003Elnum1\u003C/Num\u003E. Diesmal war dir das Gl\u00FCck leider nicht hold. M\u00F6chtest du die R\u00FCckerstattung \u00FCber \u003Ckilo(lnum2,.)\u003E Gil erhalten?\n\n\u203B Die R\u00FCckerstattung ist bis \u003CSetTime\u003Elnum3\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr m\u00F6glich."
+    "Text": "Die Gewinnzahl ist \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. Diesmal war dir das Gl\u00FCck leider nicht hold. M\u00F6chtest du die R\u00FCckerstattung \u00FCber \u003Ckilo(IntegerParameter(2),.)\u003E Gil erhalten?\n\n\u203B Die R\u00FCckerstattung ist bis \u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr m\u00F6glich."
   },
   {
     "RowId": 7125,
@@ -1465,7 +1465,7 @@
   },
   {
     "RowId": 7126,
-    "Text": "\u003CIf([lnum1\u003E0])\u003EDie Gewinnzahl dieses Grundst\u00FCcks ist \u003Cnum(lnum1)\u003E.\u003CElse/\u003EF\u00FCr diese Verlosung gab es keine Teilnehmer.\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003EDie Gewinnzahl dieses Grundst\u00FCcks ist \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.\u003CElse/\u003EF\u00FCr diese Verlosung gab es keine Teilnehmer.\u003C/If\u003E"
   },
   {
     "RowId": 7127,
@@ -1473,7 +1473,7 @@
   },
   {
     "RowId": 7128,
-    "Text": "Herzlichen Gl\u00FCckwunsch! Da es keine weiteren Teilnehmer an der Auslosung gab, hast du automatisch gewonnen! M\u00F6chtest du den Kauf des Grundst\u00FCcks abschlie\u00DFen?\n\n\u203B Das Angebot ist bis \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr g\u00FCltig."
+    "Text": "Herzlichen Gl\u00FCckwunsch! Da es keine weiteren Teilnehmer an der Auslosung gab, hast du automatisch gewonnen! M\u00F6chtest du den Kauf des Grundst\u00FCcks abschlie\u00DFen?\n\n\u203B Das Angebot ist bis \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E um \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E Uhr g\u00FCltig."
   },
   {
     "RowId": 7129,
@@ -1497,11 +1497,11 @@
   },
   {
     "RowId": 7134,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E. \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 7135,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E. \u003CString\u003Elstr2\u003C/String\u003E\n\uE0D3 \u003CIf([lnum3==0])\u003E\u003Csettime(lnum4)\u003E\u003Cnum(t_hour)\u003E:\u003Csec(t_min)\u003E\u003CElse/\u003E\u003Csettime(lnum4)\u003E\u003Cif([t_hour\u003C 12],\u003Cnum(t_hour)\u003E,\u003Cnum(t_hour)\u003E)\u003E:\u003Csec(t_min)\u003E\u003C/If\u003E [\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E]"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E. \u003CString\u003EStringParameter(2)\u003C/String\u003E\n\uE0D3 \u003CIf(Equal(IntegerParameter(3),0))\u003E\u003CSetTime\u003EIntegerParameter(4)\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003CElse/\u003E\u003CSetTime\u003EIntegerParameter(4)\u003C/SetTime\u003E\u003CIf(LessThan(t_hour, 12))\u003E\u003CNum\u003Et_hour\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_hour\u003C/Num\u003E\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003C/If\u003E [\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E]"
   },
   {
     "RowId": 7136,
@@ -1521,7 +1521,7 @@
   },
   {
     "RowId": 7140,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 7141,
@@ -1593,7 +1593,7 @@
   },
   {
     "RowId": 7162,
-    "Text": "Runde \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Runde \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 7181,

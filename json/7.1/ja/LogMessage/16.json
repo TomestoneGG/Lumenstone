@@ -46,7 +46,7 @@
   },
   {
     "RowId": 7505,
-    "Text": "\u6D44\u5316\u304C\u003CIf([lnum1==1])\u003E\u4F7F\u3048\u307E\u3059\uFF01\u003Csound(1,98)\u003E\u003CElse/\u003E\u4F7F\u3048\u307E\u305B\u3093\uFF01\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "\u6D44\u5316\u304C\u003CIf(Equal(IntegerParameter(1),1))\u003E\u4F7F\u3048\u307E\u3059\uFF01\u003Csound(1,98)\u003E\u003CElse/\u003E\u4F7F\u3048\u307E\u305B\u3093\uFF01\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -55,7 +55,7 @@
   },
   {
     "RowId": 7506,
-    "Text": "\u30A2\u30C9\u30EC\u30CA\u30EA\u30F3\u30E9\u30C3\u30B7\u30E5\u4F7F\u7528\u003CIf([lnum1==1])\u003E\u53EF\u80FD\uFF01\u003Csound(1,98)\u003E\u003CElse/\u003E\u4E0D\u53EF\u3067\u3059\uFF01\u003Csound(1,99)\u003E\u003C/If\u003E",
+    "Text": "\u30A2\u30C9\u30EC\u30CA\u30EA\u30F3\u30E9\u30C3\u30B7\u30E5\u4F7F\u7528\u003CIf(Equal(IntegerParameter(1),1))\u003E\u53EF\u80FD\uFF01\u003Csound(1,98)\u003E\u003CElse/\u003E\u4E0D\u53EF\u3067\u3059\uFF01\u003Csound(1,99)\u003E\u003C/If\u003E",
     "LogKind": 32,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -280,7 +280,7 @@
   },
   {
     "RowId": 7531,
-    "Text": "\u9752\u71D0\u6A5F\u95A2\u8ECA\u304C\u300130\u79D2\u5F8C\u306B\u003Csheet(PlaceName,lnum1,0)\u003E\u65B9\u9762\u304B\u3089\u51FA\u73FE\u3059\u308B\uFF01",
+    "Text": "\u9752\u71D0\u6A5F\u95A2\u8ECA\u304C\u300130\u79D2\u5F8C\u306B\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u65B9\u9762\u304B\u3089\u51FA\u73FE\u3059\u308B\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -289,7 +289,7 @@
   },
   {
     "RowId": 7532,
-    "Text": "\u9752\u71D0\u6A5F\u95A2\u8ECA\u304C\u3001\u003Csheet(PlaceName,lnum1,0)\u003E\u65B9\u9762\u304B\u3089\u51FA\u73FE\u3057\u305F\uFF01",
+    "Text": "\u9752\u71D0\u6A5F\u95A2\u8ECA\u304C\u3001\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u65B9\u9762\u304B\u3089\u51FA\u73FE\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -298,7 +298,7 @@
   },
   {
     "RowId": 7533,
-    "Text": "\u003CIf([lnum1==0])\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u304C\u30B9\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u5360\u62E0\u3057\u305F\uFF01",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u304C\u30B9\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u5360\u62E0\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -307,7 +307,7 @@
   },
   {
     "RowId": 7534,
-    "Text": "\u003CIf([lnum1==0])\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u304C\u30B9\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u5236\u5727\u3057\u3001\u003Cswitch(lnum2,\u30B4\u30D6\u30EA\u30BF\u30F3\u30AF\u8A8D\u8A3C\u9375,\u5927\u5BB9\u91CF\u9752\u71D0\u6C34\u30BF\u30F3\u30AF,\u30B4\u30D6\u5F0F\u8208\u596E\u5264,\u30B4\u30D6\u5F0F\u7279\u76DB\u30BB\u30C3\u30C8)\u003E\u3092\u7372\u5F97\u3057\u305F\uFF01",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u304C\u30B9\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u5236\u5727\u3057\u3001\u003Cswitch(IntegerParameter(2),\u30B4\u30D6\u30EA\u30BF\u30F3\u30AF\u8A8D\u8A3C\u9375,\u5927\u5BB9\u91CF\u9752\u71D0\u6C34\u30BF\u30F3\u30AF,\u30B4\u30D6\u5F0F\u8208\u596E\u5264,\u30B4\u30D6\u5F0F\u7279\u76DB\u30BB\u30C3\u30C8)\u003E\u3092\u7372\u5F97\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -316,7 +316,7 @@
   },
   {
     "RowId": 7535,
-    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u300130\u79D2\u5F8C\u306B\u003Csheet(PlaceName,lnum1,0)\u003E\u306B\u51FA\u73FE\u3059\u308B\uFF01",
+    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u300130\u79D2\u5F8C\u306B\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u306B\u51FA\u73FE\u3059\u308B\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -325,7 +325,7 @@
   },
   {
     "RowId": 7536,
-    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u003Csheet(PlaceName,lnum1,0)\u003E\u306B\u51FA\u73FE\u3057\u305F\uFF01",
+    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u306B\u51FA\u73FE\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -334,7 +334,7 @@
   },
   {
     "RowId": 7537,
-    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u003CIf([lnum1==0])\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u3068\u5951\u7D04\u3092\u4EA4\u308F\u3057\u305F\uFF01",
+    "Text": "\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u003CIf(Equal(IntegerParameter(1),0))\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u3068\u5951\u7D04\u3092\u4EA4\u308F\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -343,7 +343,7 @@
   },
   {
     "RowId": 7538,
-    "Text": "\u003CIf([lnum1==0])\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u306B\u5473\u65B9\u3057\u3066\u3044\u305F\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u5951\u7D04\u6E80\u4E86\u306B\u3064\u304D\u64A4\u9000\u3057\u305F\u2026\u2026\u3002",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u003CElse/\u003E\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u003C/If\u003E\u306B\u5473\u65B9\u3057\u3066\u3044\u305F\u30B4\u30D6\u30EA\u30F3\u30FB\u30DE\u30FC\u30B7\u30CA\u30EA\u30FC\u304C\u3001\u5951\u7D04\u6E80\u4E86\u306B\u3064\u304D\u64A4\u9000\u3057\u305F\u2026\u2026\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -352,7 +352,7 @@
   },
   {
     "RowId": 7539,
-    "Text": "\u003CIf([lnum1==0])\u003E\u300C\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u300D\u306E\u300C\u003Csheet(BNpcName,6857,0)\u003E\u300D\u003CElse/\u003E\u300C\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u300D\u306E\u300C\u003Csheet(BNpcName,6858,0)\u003E\u300D\u003C/If\u003E\u3092\u8B77\u308B\u9B54\u5C0E\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u52B9\u679C\u304C\u5F31\u307E\u3063\u305F\uFF01",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u300C\u30C1\u30FC\u30E0\u30D5\u30A1\u30EB\u30B3\u30F3\u300D\u306E\u300C\u003Csheet(BNpcName,6857,0)\u003E\u300D\u003CElse/\u003E\u300C\u30C1\u30FC\u30E0\u30EC\u30A4\u30F4\u30F3\u300D\u306E\u300C\u003Csheet(BNpcName,6858,0)\u003E\u300D\u003C/If\u003E\u3092\u8B77\u308B\u9B54\u5C0E\u30D5\u30A3\u30FC\u30EB\u30C9\u306E\u52B9\u679C\u304C\u5F31\u307E\u3063\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -361,7 +361,7 @@
   },
   {
     "RowId": 7540,
-    "Text": "\u306A\u305E\u306E\u3082\u3058\u300C\u003CString\u003Elstr1\u003C/String\u003E\u300D\u3092 \u306F\u3063\u3051\u3093\u3057\u305F\uFF01",
+    "Text": "\u306A\u305E\u306E\u3082\u3058\u300C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u300D\u3092 \u306F\u3063\u3051\u3093\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 7556,
-    "Text": "\u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306F\u003Ckilo(lnum1,\\,)\u003E\u30DD\u30A4\u30F3\u30C8\u306E\u30B7\u30EA\u30FC\u30BAEXP\u3092\u5F97\u305F\u3002",
+    "Text": "\u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306F\u003Ckilo(IntegerParameter(1),,)\u003E\u30DD\u30A4\u30F3\u30C8\u306E\u30B7\u30EA\u30FC\u30BAEXP\u3092\u5F97\u305F\u3002",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -514,7 +514,7 @@
   },
   {
     "RowId": 7557,
-    "Text": "\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01  \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306F\u3001\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u003CNum\u003Elnum1\u003C/Num\u003E\u306B\u306A\u3063\u305F\u3002",
+    "Text": "\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01  \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306F\u3001\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u306B\u306A\u3063\u305F\u3002",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -523,7 +523,7 @@
   },
   {
     "RowId": 7558,
-    "Text": "EX\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01  \u30DE\u30EB\u30E0\u30B9\u30C8\u30FC\u30F3\u304C\u003CNum\u003Elnum1\u003C/Num\u003E\u306B\u306A\u3063\u305F\u3002",
+    "Text": "EX\u30B7\u30EA\u30FC\u30BA\u30EC\u30D9\u30EB\u30A2\u30C3\u30D7\uFF01  \u30DE\u30EB\u30E0\u30B9\u30C8\u30FC\u30F3\u304C\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u306B\u306A\u3063\u305F\u3002",
     "LogKind": 64,
     "Unknown0": 1,
     "Unknown1": 1,
@@ -820,7 +820,7 @@
   },
   {
     "RowId": 7591,
-    "Text": "\u003CNum\u003Elnum2\u003C/Num\u003E\u79D2\u5F8C\u306B\u003Cswitch(lnum1,\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,lnum3,0)\u003E\u304C\u6709\u52B9\u72B6\u614B\u306B\u306A\u308B\u3088\u3046\u3060\u2026\u2026\uFF01",
+    "Text": "\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u79D2\u5F8C\u306B\u003Cswitch(IntegerParameter(1),\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,IntegerParameter(3),0)\u003E\u304C\u6709\u52B9\u72B6\u614B\u306B\u306A\u308B\u3088\u3046\u3060\u2026\u2026\uFF01",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -829,7 +829,7 @@
   },
   {
     "RowId": 7592,
-    "Text": "\u003Cswitch(lnum1,\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,lnum2,0)\u003E\u304C\u6709\u52B9\u72B6\u614B\u306B\u306A\u3063\u305F\uFF01",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,IntegerParameter(2),0)\u003E\u304C\u6709\u52B9\u72B6\u614B\u306B\u306A\u3063\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -838,7 +838,7 @@
   },
   {
     "RowId": 7593,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003E\u9ED2\u6E26\u56E3\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003E\u53CC\u86C7\u515A\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003E\u4E0D\u6EC5\u968A\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E\u304C\u003Cswitch(lnum2,\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,lnum3,0)\u003E\u3068\u5951\u7D04\u3057\u305F\uFF01",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003E\u9ED2\u6E26\u56E3\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003E\u53CC\u86C7\u515A\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003E\u4E0D\u6EC5\u968A\u003C/span\u003E)\u003E\u304C\u003Cswitch(IntegerParameter(2),\u30E9\u30F3\u30AFB,\u30E9\u30F3\u30AFA,\u30E9\u30F3\u30AFS)\u003E\u306E\u003Csheet(PlaceName,IntegerParameter(3),0)\u003E\u3068\u5951\u7D04\u3057\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -847,7 +847,7 @@
   },
   {
     "RowId": 7594,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E\u304C\u7121\u52B9\u72B6\u614B\u3068\u306A\u3063\u305F\u3002",
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u304C\u7121\u52B9\u72B6\u614B\u3068\u306A\u3063\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -856,7 +856,7 @@
   },
   {
     "RowId": 7595,
-    "Text": "\u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003E\u9ED2\u6E26\u56E3\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003E\u53CC\u86C7\u515A\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003E\u4E0D\u6EC5\u968A\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E\u306E\u4E00\u54E1\u304C\u3001\u6226\u610F\u9AD8\u63DAV\u72B6\u614B\u306B\u306A\u3063\u305F\uFF01",
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003E\u9ED2\u6E26\u56E3\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003E\u53CC\u86C7\u515A\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003E\u4E0D\u6EC5\u968A\u003C/span\u003E)\u003E\u306E\u4E00\u54E1\u304C\u3001\u6226\u610F\u9AD8\u63DAV\u72B6\u614B\u306B\u306A\u3063\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -865,7 +865,7 @@
   },
   {
     "RowId": 7596,
-    "Text": "\u6226\u610F\u9AD8\u63DAV\u72B6\u614B\u306E\u003Cswitch(lnum1,\u003Cicon(51)\u003E\u003Ccolortype(533)\u003E\u003Cedgecolortype(534)\u003E\u9ED2\u6E26\u56E3\u6240\u5C5E\u8005\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(52)\u003E\u003Ccolortype(535)\u003E\u003Cedgecolortype(536)\u003E\u53CC\u86C7\u515A\u6240\u5C5E\u8005\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E,\u003Cicon(53)\u003E\u003Ccolortype(537)\u003E\u003Cedgecolortype(538)\u003E\u4E0D\u6EC5\u968A\u6240\u5C5E\u8005\u003Cedgecolortype(0)\u003E\u003Ccolortype(0)\u003E)\u003E\u304C\u3001\u6226\u95D8\u4E0D\u80FD\u72B6\u614B\u306B\u9665\u3063\u305F\u2026\u2026\uFF01",
+    "Text": "\u6226\u610F\u9AD8\u63DAV\u72B6\u614B\u306E\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc8c8;\u0022\u003E\u9ED2\u6E26\u56E3\u6240\u5C5E\u8005\u003C/span\u003E,\u003CIcon\u003E52\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffffc0;\u0022\u003E\u53CC\u86C7\u515A\u6240\u5C5E\u8005\u003C/span\u003E,\u003CIcon\u003E53\u003C/Icon\u003E\u003Cspan style=\u0022color: #ffc0ff;\u0022\u003E\u4E0D\u6EC5\u968A\u6240\u5C5E\u8005\u003C/span\u003E)\u003E\u304C\u3001\u6226\u95D8\u4E0D\u80FD\u72B6\u614B\u306B\u9665\u3063\u305F\u2026\u2026\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1099,7 +1099,7 @@
   },
   {
     "RowId": 7622,
-    "Text": "PvPTeam - PvP\u30C1\u30FC\u30E0\u540D\u3092\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - PvP\u30C1\u30FC\u30E0\u540D\u3092\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1108,7 +1108,7 @@
   },
   {
     "RowId": 7623,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304CPvP\u30C1\u30FC\u30E0\u540D\u3092\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304CPvP\u30C1\u30FC\u30E0\u540D\u3092\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "RowId": 7625,
-    "Text": "PvPTeam - PvP\u30C1\u30FC\u30E0\u540D\u304C\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - PvP\u30C1\u30FC\u30E0\u540D\u304C\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u5909\u66F4\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "RowId": 7626,
-    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u304C\u7D50\u6210\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u304C\u7D50\u6210\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1144,7 +1144,7 @@
   },
   {
     "RowId": 7627,
-    "Text": "PvPTeam - \u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u3092\u7D50\u6210\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u3092\u7D50\u6210\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 7631,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u30ED\u30B0\u30A4\u30F3\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u30ED\u30B0\u30A4\u30F3\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 7632,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u30ED\u30B0\u30A2\u30A6\u30C8\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u30ED\u30B0\u30A2\u30A6\u30C8\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 78,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1207,7 +1207,7 @@
   },
   {
     "RowId": 7634,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u3092\u62DB\u5F85\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u3092\u62DB\u5F85\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1216,7 +1216,7 @@
   },
   {
     "RowId": 7635,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u304B\u3089PvP\u30C1\u30FC\u30E0\u306B\u62DB\u5F85\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u304B\u3089PvP\u30C1\u30FC\u30E0\u306B\u62DB\u5F85\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 7636,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u62DB\u5F85\u3092\u8F9E\u9000\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u62DB\u5F85\u3092\u8F9E\u9000\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1234,7 +1234,7 @@
   },
   {
     "RowId": 7637,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u304B\u3089\u306EPvP\u30C1\u30FC\u30E0\u62DB\u5F85\u3092\u8F9E\u9000\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u304B\u3089\u306EPvP\u30C1\u30FC\u30E0\u62DB\u5F85\u3092\u8F9E\u9000\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 7645,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u304B\u3089\u306EPvP\u30C1\u30FC\u30E0\u62DB\u5F85\u304C\u30AD\u30E3\u30F3\u30BB\u30EB\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u304B\u3089\u306EPvP\u30C1\u30FC\u30E0\u62DB\u5F85\u304C\u30AD\u30E3\u30F3\u30BB\u30EB\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1315,7 +1315,7 @@
   },
   {
     "RowId": 7646,
-    "Text": "PvPTeam - \u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u52A0\u5165\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u52A0\u5165\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1324,7 +1324,7 @@
   },
   {
     "RowId": 7647,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u52A0\u5165\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u52A0\u5165\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1351,7 +1351,7 @@
   },
   {
     "RowId": 7650,
-    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u304B\u3089\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u304B\u3089\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1360,7 +1360,7 @@
   },
   {
     "RowId": 7651,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 7655,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u3092\u9664\u540D\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u3092\u9664\u540D\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 7656,
-    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u304B\u3089\u9664\u540D\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u304B\u3089\u9664\u540D\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1414,7 +1414,7 @@
   },
   {
     "RowId": 7657,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u8131\u9000\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1450,7 +1450,7 @@
   },
   {
     "RowId": 7661,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u3092\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u306B\u4EFB\u547D\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u3092\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u306B\u4EFB\u547D\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 7662,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u306B\u4EFB\u547D\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u306B\u4EFB\u547D\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1495,7 +1495,7 @@
   },
   {
     "RowId": 7666,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u3092\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u304B\u3089\u89E3\u4EFB\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u3092\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u304B\u3089\u89E3\u4EFB\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1504,7 +1504,7 @@
   },
   {
     "RowId": 7667,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u304B\u3089\u89E3\u4EFB\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u30B5\u30D6\u30EA\u30FC\u30C0\u30FC\u304B\u3089\u89E3\u4EFB\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 7670,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306B\u30C1\u30FC\u30E0\u30EA\u30FC\u30C0\u30FC\u3092\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306B\u30C1\u30FC\u30E0\u30EA\u30FC\u30C0\u30FC\u3092\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1540,7 +1540,7 @@
   },
   {
     "RowId": 7671,
-    "Text": "PvPTeam - \u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1585,7 +1585,7 @@
   },
   {
     "RowId": 7676,
-    "Text": "\u4E00\u5B9A\u671F\u9593\u30EA\u30FC\u30C0\u30FC\u304C\u4E0D\u5728\u306E\u305F\u3081\u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "\u4E00\u5B9A\u671F\u9593\u30EA\u30FC\u30C0\u30FC\u304C\u4E0D\u5728\u306E\u305F\u3081\u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1594,7 +1594,7 @@
   },
   {
     "RowId": 7677,
-    "Text": "PvPTeam - \u4E00\u5B9A\u671F\u9593\u30EA\u30FC\u30C0\u30FC\u304C\u4E0D\u5728\u306E\u305F\u3081\u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u4E00\u5B9A\u671F\u9593\u30EA\u30FC\u30C0\u30FC\u304C\u4E0D\u5728\u306E\u305F\u3081\u30EA\u30FC\u30C0\u30FC\u304C\u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u306B\u59D4\u8B72\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 7680,
-    "Text": "PvPTeam - \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E\u304C\u30C1\u30FC\u30E0\u30AF\u30EC\u30B9\u30C8\u30C7\u30B6\u30A4\u30F3\u3092\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u304C\u30C1\u30FC\u30E0\u30AF\u30EC\u30B9\u30C8\u30C7\u30B6\u30A4\u30F3\u3092\u5909\u66F4\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1657,7 +1657,7 @@
   },
   {
     "RowId": 7684,
-    "Text": "PvPTeam - \u30C1\u30FC\u30E0\u968E\u7D1A\u304C\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u6607\u7D1A\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u30C1\u30FC\u30E0\u968E\u7D1A\u304C\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u6607\u7D1A\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1666,7 +1666,7 @@
   },
   {
     "RowId": 7685,
-    "Text": "PvPTeam - \u30C1\u30FC\u30E0\u968E\u7D1A\u304C\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u306B\u964D\u7D1A\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvPTeam - \u30C1\u30FC\u30E0\u968E\u7D1A\u304C\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u306B\u964D\u7D1A\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 77,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1702,7 +1702,7 @@
   },
   {
     "RowId": 7689,
-    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u300D\u3092\u89E3\u6563\u3057\u307E\u3057\u305F\u3002",
+    "Text": "PvP\u30C1\u30FC\u30E0\u300C\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u300D\u3092\u89E3\u6563\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 7909,
-    "Text": "\u30DC\u30A4\u30B9\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u3092\u300C\u003Csheet(EmjVoiceNpc,lnum1,26)\u003E\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u30DC\u30A4\u30B9\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u3092\u300C\u003Csheet(EmjVoiceNpc,IntegerParameter(1),26)\u003E\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 7910,
-    "Text": "\u30DC\u30A4\u30B9\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u300C\u003Csheet(EmjVoiceNpc,lnum1,26)\u003E\u300D\u306E\u8863\u88C5\u3092\u300C\u003Csheet(EmjCostumeData,lnum2,0)\u003E\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u30DC\u30A4\u30B9\u30AD\u30E3\u30E9\u30AF\u30BF\u30FC\u300C\u003Csheet(EmjVoiceNpc,IntegerParameter(1),26)\u003E\u300D\u306E\u8863\u88C5\u3092\u300C\u003Csheet(EmjCostumeData,IntegerParameter(2),0)\u003E\u300D\u306B\u8A2D\u5B9A\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3790,7 +3790,7 @@
   },
   {
     "RowId": 7921,
-    "Text": "\u30A2\u30AF\u30C6\u30A3\u30D6\u30A2\u30AF\u30B7\u30E7\u30F3\u306E\u5185\u5BB9\u3092\u300C\u003CString\u003Elstr1\u003C/String\u003E\u300D\u306B\u4FDD\u5B58\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u30A2\u30AF\u30C6\u30A3\u30D6\u30A2\u30AF\u30B7\u30E7\u30F3\u306E\u5185\u5BB9\u3092\u300C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u300D\u306B\u4FDD\u5B58\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -3799,7 +3799,7 @@
   },
   {
     "RowId": 7922,
-    "Text": "\u30A2\u30AF\u30C6\u30A3\u30D6\u30A2\u30AF\u30B7\u30E7\u30F3\u306E\u5185\u5BB9\u3092\u300C\u003CString\u003Elstr1\u003C/String\u003E\u300D\u306B\u7F6E\u304D\u63DB\u3048\u307E\u3057\u305F\u3002",
+    "Text": "\u30A2\u30AF\u30C6\u30A3\u30D6\u30A2\u30AF\u30B7\u30E7\u30F3\u306E\u5185\u5BB9\u3092\u300C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u300D\u306B\u7F6E\u304D\u63DB\u3048\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 513,
     "Unknown1": 0,
@@ -4249,7 +4249,7 @@
   },
   {
     "RowId": 7972,
-    "Text": "\u003Csheet(EventItem,lnum1,0)\u003E\u3092\u8FD4\u5374\u3057\u305F\u3002",
+    "Text": "\u003Csheet(EventItem,IntegerParameter(1),0)\u003E\u3092\u8FD4\u5374\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4276,7 +4276,7 @@
   },
   {
     "RowId": 7975,
-    "Text": "\u672A\u5236\u8987\u306E\u53C2\u52A0\u30E1\u30F3\u30D0\u30FC\u304C\u3044\u305F\u305F\u3081\u300C\u30AF\u30ED\u306E\u7A7A\u60F3\u5E33\u300D\u306B\u30C1\u30E3\u30F3\u30B9\u30DD\u30A4\u30F3\u30C8\u304C\u52A0\u7B97\u3055\u308C\u307E\u3057\u305F\u3002\uFF08\u003CNum\u003Elnum1\u003C/Num\u003E/9\uFF09",
+    "Text": "\u672A\u5236\u8987\u306E\u53C2\u52A0\u30E1\u30F3\u30D0\u30FC\u304C\u3044\u305F\u305F\u3081\u300C\u30AF\u30ED\u306E\u7A7A\u60F3\u5E33\u300D\u306B\u30C1\u30E3\u30F3\u30B9\u30DD\u30A4\u30F3\u30C8\u304C\u52A0\u7B97\u3055\u308C\u307E\u3057\u305F\u3002\uFF08\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/9\uFF09",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4303,7 +4303,7 @@
   },
   {
     "RowId": 7978,
-    "Text": "\u300C\u30AF\u30ED\u306E\u7A7A\u60F3\u5E33\u300D\u306E\u30C1\u30E3\u30F3\u30B9\u30DD\u30A4\u30F3\u30C8\u304C\u003CNum\u003Elnum1\u003C/Num\u003E\u30DD\u30A4\u30F3\u30C8\u52A0\u7B97\u3055\u308C\u307E\u3057\u305F\u3002",
+    "Text": "\u300C\u30AF\u30ED\u306E\u7A7A\u60F3\u5E33\u300D\u306E\u30C1\u30E3\u30F3\u30B9\u30DD\u30A4\u30F3\u30C8\u304C\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u30DD\u30A4\u30F3\u30C8\u52A0\u7B97\u3055\u308C\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4321,7 +4321,7 @@
   },
   {
     "RowId": 7980,
-    "Text": "\u003Csheet(ClassJob,gnum68,0)\u003E\u306B\u5FDC\u3058\u305F\u3001\u3055\u3044\u304D\u3087\u3046\u3092\u9069\u7528\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u003Csheet(ClassJob,PlayerParameter(68),0)\u003E\u306B\u5FDC\u3058\u305F\u3001\u3055\u3044\u304D\u3087\u3046\u3092\u9069\u7528\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4357,7 +4357,7 @@
   },
   {
     "RowId": 7984,
-    "Text": "\u003Csheet(ClassJob,gnum68,0)\u003E\u306B\u5FDC\u3058\u305F\u3001\u3053\u308C\u4EE5\u4E0A\u306E\u88C5\u5099\u306F\u30A2\u30FC\u30DE\u30EA\u30FC\u30C1\u30A7\u30B9\u30C8\u306B\u3042\u308A\u307E\u305B\u3093\u3002",
+    "Text": "\u003Csheet(ClassJob,PlayerParameter(68),0)\u003E\u306B\u5FDC\u3058\u305F\u3001\u3053\u308C\u4EE5\u4E0A\u306E\u88C5\u5099\u306F\u30A2\u30FC\u30DE\u30EA\u30FC\u30C1\u30A7\u30B9\u30C8\u306B\u3042\u308A\u307E\u305B\u3093\u3002",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4366,7 +4366,7 @@
   },
   {
     "RowId": 7985,
-    "Text": "\u003CIf([lnum1==0])\u003E\u4E00\u90E8\u306E\u30A2\u30A4\u30C6\u30E0\u3092\u88C5\u5099\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002\u003CElse/\u003E\u88C5\u5099\u5909\u66F4\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002\u003C/If\u003E",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E\u4E00\u90E8\u306E\u30A2\u30A4\u30C6\u30E0\u3092\u88C5\u5099\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002\u003CElse/\u003E\u88C5\u5099\u5909\u66F4\u3067\u304D\u307E\u305B\u3093\u3067\u3057\u305F\u3002\u003C/If\u003E",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -4429,7 +4429,7 @@
   },
   {
     "RowId": 7992,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u00D7\u003CNum\u003Elnum2\u003C/Num\u003E\u3092\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u00D7\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u3092\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4438,7 +4438,7 @@
   },
   {
     "RowId": 7993,
-    "Text": "\u003Csheet(Item,lnum1,0)\u003E\u00D7\u003CNum\u003Elnum2\u003C/Num\u003E\u3092\u003Ckilo(lnum3,\\,)\u003E\u30AE\u30EB\u3067\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
+    "Text": "\u003Csheet(Item,IntegerParameter(1),0)\u003E\u00D7\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u3092\u003Ckilo(IntegerParameter(3),,)\u003E\u30AE\u30EB\u3067\u8B72\u6E21\u3057\u307E\u3057\u305F\u3002",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,

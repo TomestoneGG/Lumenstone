@@ -1,5 +1,4 @@
 using System;
-using System.Linq.Expressions;
 using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -11,6 +10,8 @@ using Lumina.Text.ReadOnly;
 using Lumina.Text.Payloads;
 using SixLabors.ImageSharp.Formats;
 using System.Xml.XPath;
+using Lumina.Text.Expressions;
+using Microsoft.VisualBasic;
 
 public class SeStringConverter : JsonConverter<ReadOnlySeString>
 {
@@ -87,36 +88,34 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
 
     public String ConvertExpression(Lumina.Text.ReadOnly.ReadOnlySeExpression expression)
     {
+        if (expression.TryGetParameterExpression(out byte paramType, out ReadOnlySeExpression paramExpression))
+            return ConvertParameterExpression(paramExpression, (ExpressionType)paramType);
+        if (expression.TryGetBinaryExpression(out byte type, out ReadOnlySeExpression one, out ReadOnlySeExpression two))
+            return ConvertBinaryExpression(one, two, (ExpressionType)type);
+        if (expression.TryGetString(out ReadOnlySeString seString))
+            return ConvertSeString(seString);
+    
         return expression.AsSpan().ToString();
-        /*
-        if (expression is Lumina.Text.Expressions.StringExpression se)
-            return ConvertSeString(se.Value);
-        if (expression is Lumina.Text.Expressions.BinaryExpression be)
-            return ConvertBinaryExpression(be);
-         if (expression is Lumina.Text.Expressions.ParameterExpression pe)
-            return ConvertParameterExpression(pe);
-        return expression.ToString();
-        */
     }
 
-    /*public String ConvertParameterExpression(Lumina.Text.Expressions.ParameterExpression expression)
+    public String ConvertParameterExpression(ReadOnlySeExpression expression, ExpressionType type)
     {
-        return expression.ExpressionType switch
+        return type switch
         {
-            Lumina.Text.Expressions.ExpressionType.IntegerParameter => $"IntegerParameter({ConvertExpression(expression.Operand)})",
-            Lumina.Text.Expressions.ExpressionType.PlayerParameter => $"PlayerParameter({ConvertExpression(expression.Operand)})",
-            Lumina.Text.Expressions.ExpressionType.StringParameter => $"StringParameter({ConvertExpression(expression.Operand)})",
-            Lumina.Text.Expressions.ExpressionType.ObjectParameter => $"ObjectParameter({ConvertExpression(expression.Operand)})",
+            Lumina.Text.Expressions.ExpressionType.IntegerParameter => $"IntegerParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.PlayerParameter => $"PlayerParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.StringParameter => $"StringParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.ObjectParameter => $"ObjectParameter({ConvertExpression(expression)})",
             _ => throw new NotImplementedException() // cannot reach, as this instance is immutable and this field is filtered from constructor
         };
     }
 
-    public String ConvertBinaryExpression(Lumina.Text.Expressions.BinaryExpression expression)
-    {
-        var first = ConvertExpression(expression.Operand1);
-        var second = ConvertExpression(expression.Operand2);
-        
-        var result = expression.ExpressionType switch
+    public String ConvertBinaryExpression(ReadOnlySeExpression firstExpression, ReadOnlySeExpression secondExpression, ExpressionType type)
+    { 
+        string first = ConvertExpression(firstExpression);
+        string second = ConvertExpression(secondExpression);
+
+        var result = type switch
         {
             Lumina.Text.Expressions.ExpressionType.GreaterThanOrEqualTo => $"GreaterThanOrEqualTo({first},{second})",
             Lumina.Text.Expressions.ExpressionType.GreaterThan => $"GreaterThan({first},{second})",
@@ -136,7 +135,6 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
         // This allows us to dynamically construct the replacement string based on the matched digits
         return Regex.Replace(result, pattern, match => $"PlayerParameter({match.Groups[1].Value})");
     }
-*/
 
     public String ConvertPayload(ReadOnlySePayload payload)
     {
@@ -166,9 +164,7 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
 
                     var originalPayloadTag = payload.MacroCode.ToString();
                     var payloadTag = originalPayloadTag.ToLower();
-                 
-                    //return payloadTag + ":" + expressionCount;
-
+                        
                     if (payloadTag == "if" && expressionCount == 3) {
                         string expression1 = ConvertExpression(expressions.ElementAt(0));
                         string expression2 = ConvertExpression(expressions.ElementAt(1));
@@ -177,7 +173,7 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                         string expression3 = ConvertExpression(expressions.ElementAt(2));
                         if (expression3.Length == 0)
                             expression3 = " ";
-                        return $"<If({expression1})>{expression2}<Else/>{expression3}</If>";
+                        return  $"<If({expression1})>{expression2}<Else/>{expression3}</If>";
                     }
                     
                     if (expressions.Count == 1) {

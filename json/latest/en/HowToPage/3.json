@@ -3278,7 +3278,7 @@
   {
     "RowId": 1273,
     "Text": [
-      "The second method is to first target an enemy, then press \u003CIcon2\u003E19\u003C/Icon2\u003E to access the \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003Eduty list\u003C/span\u003E. Use the \u003CIf([gnum106==99])\u003ED-pad\u003CElse/\u003Edirectional keys\u003C/If\u003E to select the key item icon and press \u003CIcon2\u003E8\u003C/Icon2\u003E to complete the action.",
+      "The second method is to first target an enemy, then press \u003CIcon2\u003E19\u003C/Icon2\u003E to access the \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003Eduty list\u003C/span\u003E. Use the \u003CIf(Equal(PlayerParameter(106),99))\u003ED-pad\u003CElse/\u003Edirectional keys\u003C/If\u003E to select the key item icon and press \u003CIcon2\u003E8\u003C/Icon2\u003E to complete the action.",
       "",
       ""
     ],
@@ -4586,7 +4586,7 @@
   {
     "RowId": 1382,
     "Text": [
-      "Reward eligibility is reset \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eevery \u003CSetTime\u003E1285056000\u003C/SetTime\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf([t_hour\u003C12])\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E (Earth time)\u003C/span\u003E.\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BDuty reward restrictions are listed under Duty Finder information.\u003C/span\u003E",
+      "Reward eligibility is reset \u003Cspan style=\u0022color: #ffff66;\u0022\u003Eevery \u003CSetTime\u003E1285056000\u003C/SetTime\u003E\u003Cswitch(t_wday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday)\u003E at \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:00 \u003CIf(LessThan(t_hour,12))\u003Ea.m.\u003CElse/\u003Ep.m.\u003C/If\u003E (Earth time)\u003C/span\u003E.\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BDuty reward restrictions are listed under Duty Finder information.\u003C/span\u003E",
       "",
       ""
     ],

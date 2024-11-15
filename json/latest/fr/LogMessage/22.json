@@ -73,7 +73,7 @@
   },
   {
     "RowId": 10508,
-    "Text": "Vous teignez \u003Cfrnoun(Item,2,lnum1,1,1)\u003E avec \u003Cfrnoun(Item,1,lnum3,1,1)\u003E comme teinture \u003CNum\u003Elnum2\u003C/Num\u003E.",
+    "Text": "Vous teignez \u003Cfrnoun(Item,2,IntegerParameter(1),1,1)\u003E avec \u003Cfrnoun(Item,1,IntegerParameter(3),1,1)\u003E comme teinture \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -100,7 +100,7 @@
   },
   {
     "RowId": 10511,
-    "Text": "Vous r\u00E9tablissez la couleur d\u0027origine \u003Cfrnoun(Item,9,lnum1,1,1)\u003E pour la teinture \u003CNum\u003Elnum2\u003C/Num\u003E.",
+    "Text": "Vous r\u00E9tablissez la couleur d\u0027origine \u003Cfrnoun(Item,9,IntegerParameter(1),1,1)\u003E pour la teinture \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -127,7 +127,7 @@
   },
   {
     "RowId": 10514,
-    "Text": "Encore \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E avant la fin de la manche...",
+    "Text": "Encore \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eseconde\u003CElse/\u003Esecondes\u003C/If\u003E avant la fin de la manche...",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -163,7 +163,7 @@
   },
   {
     "RowId": 10518,
-    "Text": "Vous \u00EAtes \u003CIf(gnum4)\u003E\u00E9limin\u00E9e\u003CElse/\u003E\u00E9limin\u00E9\u003C/If\u003E et participez en mode spectateur.\nVous pouvez quitter l\u0027\u00E9mission en appuyant sur le bouton Quitter.",
+    "Text": "Vous \u00EAtes \u003CIf(PlayerParameter(4))\u003E\u00E9limin\u00E9e\u003CElse/\u003E\u00E9limin\u00E9\u003C/If\u003E et participez en mode spectateur.\nVous pouvez quitter l\u0027\u00E9mission en appuyant sur le bouton Quitter.",
     "LogKind": 57,
     "Unknown0": 65,
     "Unknown1": 0,
@@ -262,7 +262,7 @@
   },
   {
     "RowId": 10529,
-    "Text": "\u25CF\u30D1\u30FC\u30C4\u306B\u653B\u6483\u3092\u52A0\u3048\u305F\u3053\u3068\u3067\u3001\u30DC\u30B9\u306B\u003CNum\u003Elnum2\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
+    "Text": "\u25CF\u30D1\u30FC\u30C4\u306B\u653B\u6483\u3092\u52A0\u3048\u305F\u3053\u3068\u3067\u3001\u30DC\u30B9\u306B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u305F\uFF01",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -442,7 +442,7 @@
   },
   {
     "RowId": 10549,
-    "Text": "Vous obtenez l\u0027accessoire de visage \u201C\u003Csheet(GlassesStyle,lnum1,23)\u003E\u201D.",
+    "Text": "Vous obtenez l\u0027accessoire de visage \u201C\u003Csheet(GlassesStyle,IntegerParameter(1),23)\u003E\u201D.",
     "LogKind": 64,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -460,7 +460,7 @@
   },
   {
     "RowId": 10551,
-    "Text": "Vous avez \u00E9chang\u00E9 l\u0027accessoire de mode \u201C\u003CHead\u003E\u003Csheet(Ornament,lnum1,8)\u003E\u003C/Head\u003E\u201D contre l\u0027accessoire de visage \u201C\u003Csheet(GlassesStyle,lnum2,23)\u003E\u201D.",
+    "Text": "Vous avez \u00E9chang\u00E9 l\u0027accessoire de mode \u201C\u003CHead\u003E\u003Csheet(Ornament,IntegerParameter(1),8)\u003E\u003C/Head\u003E\u201D contre l\u0027accessoire de visage \u201C\u003Csheet(GlassesStyle,IntegerParameter(2),23)\u003E\u201D.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -622,7 +622,7 @@
   },
   {
     "RowId": 10569,
-    "Text": "Vous vous \u00E9quipez \u003Cfrnoun(Glasses,9,lnum1,1,1)\u003E.",
+    "Text": "Vous vous \u00E9quipez \u003Cfrnoun(Glasses,9,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -631,7 +631,7 @@
   },
   {
     "RowId": 10570,
-    "Text": "Vous enlevez \u003Cfrnoun(Glasses,2,lnum1,1,1)\u003E.",
+    "Text": "Vous enlevez \u003Cfrnoun(Glasses,2,IntegerParameter(1),1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -847,7 +847,7 @@
   },
   {
     "RowId": 10594,
-    "Text": "Le temps de recharge de \u003Csheet(Action,lnum1,0)\u003E a \u00E9t\u00E9 exceptionnellement r\u00E9initialis\u00E9 pour les besoins du tutoriel.",
+    "Text": "Le temps de recharge de \u003Csheet(Action,IntegerParameter(1),0)\u003E a \u00E9t\u00E9 exceptionnellement r\u00E9initialis\u00E9 pour les besoins du tutoriel.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "RowId": 10626,
-    "Text": "\u00C9vitez d\u0027\u00EAtre \u003CIf(gnum4)\u003Eprojet\u00E9e\u003CElse/\u003Eprojet\u00E9\u003C/If\u003E dans le cercle \u00E9lectrique\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u00C9vitez d\u0027\u00EAtre \u003CIf(PlayerParameter(4))\u003Eprojet\u00E9e\u003CElse/\u003Eprojet\u00E9\u003C/If\u003E dans le cercle \u00E9lectrique\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 4097,
     "Unknown1": 0,
@@ -1207,7 +1207,7 @@
   },
   {
     "RowId": 10634,
-    "Text": "Attendez d\u0027\u00EAtre \u003CIf(gnum4)\u003Egu\u00E9rie\u003CElse/\u003Egu\u00E9ri\u003C/If\u003E puis \u00E9vitez l\u0027attaque\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Attendez d\u0027\u00EAtre \u003CIf(PlayerParameter(4))\u003Egu\u00E9rie\u003CElse/\u003Egu\u00E9ri\u003C/If\u003E puis \u00E9vitez l\u0027attaque\u003C\u003Cnbsp\u003E\u003E!",
     "LogKind": 57,
     "Unknown0": 4097,
     "Unknown1": 0,
@@ -3601,7 +3601,7 @@
   },
   {
     "RowId": 10900,
-    "Text": "\u003Csheet(EmjVoiceNpc,lnum1,25)\u003E peut d\u00E9sormais commenter vos parties de mahjong domien.",
+    "Text": "\u003Csheet(EmjVoiceNpc,IntegerParameter(1),25)\u003E peut d\u00E9sormais commenter vos parties de mahjong domien.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

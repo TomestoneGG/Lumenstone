@@ -1276,7 +1276,7 @@
   },
   {
     "RowId": 4085,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,1,lnum1,1,1)\u003E\u003C/Head\u003E \u003CIf([lnum1==7626])\u003Esont apparu\u003Cif(\u003Csheet(BNpcName,lnum1,6)\u003E,e,)\u003Es\u003CElse/\u003E\u003Cif([lnum1==8792],sont apparu\u003Cif(\u003Csheet(BNpcName,lnum1,6)\u003E,e,)\u003Es,\u003Cif([lnum1==13283],sont apparu\u003Cif(\u003Csheet(BNpcName,lnum1,6)\u003E,e,)\u003Es,est apparu\u003Cif(\u003Csheet(BNpcName,lnum1,6)\u003E,e,)\u003E)\u003E)\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E \u003CIf(Equal(IntegerParameter(1),7626))\u003Esont apparu\u003CIf(\u003Csheet(BNpcName,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003Es\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),8792))\u003Esont apparu\u003CIf(\u003Csheet(BNpcName,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003Es\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),13283))\u003Esont apparu\u003CIf(\u003Csheet(BNpcName,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003Es\u003CElse/\u003Eest apparu\u003CIf(\u003Csheet(BNpcName,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1291,7 +1291,7 @@
   },
   {
     "RowId": 4086,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E a disparu...",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E a disparu...",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1306,7 +1306,7 @@
   },
   {
     "RowId": 4087,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E a laiss\u00E9 un \u003Csheet(Treasure,lnum2,0)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E a laiss\u00E9 un \u003Csheet(Treasure,IntegerParameter(2),0)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -1321,7 +1321,7 @@
   },
   {
     "RowId": 4088,
-    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,lnum1,1,1)\u003E\u003C/Head\u003E s\u0027est enfui\u003CIf(\u003Csheet(BNpcName,lnum1,6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CHead\u003E\u003Cfrnoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E s\u0027est enfui\u003CIf(\u003Csheet(BNpcName,IntegerParameter(1),6)\u003E)\u003Ee\u003CElse/\u003E \u003C/If\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 4,
@@ -2071,7 +2071,7 @@
   },
   {
     "RowId": 4138,
-    "Text": "\u00C0 tes ordres\u003C\u003Cnbsp\u003E\u003E!\u003C\u003Cnbsp\u003E\u003E... \u00C0 nous deux, Guerri\u003CIf(gnum4)\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de la Lumi\u00E8re\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u00C0 tes ordres\u003C\u003Cnbsp\u003E\u003E!\u003C\u003Cnbsp\u003E\u003E... \u00C0 nous deux, Guerri\u003CIf(PlayerParameter(4))\u003E\u00E8re\u003CElse/\u003Eer\u003C/If\u003E de la Lumi\u00E8re\u003C\u003Cnbsp\u003E\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -2776,7 +2776,7 @@
   },
   {
     "RowId": 4185,
-    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez que pass\u00E9 \u003CNum\u003Elnum2\u003C/Num\u003E \u003CIf([lnum2\u003C=1])\u003Eminute restante\u003CElse/\u003Eminutes restantes\u003C/If\u003E, vous ne pourrez plus jouer \u00E0 Triple Triade.",
+    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez que pass\u00E9 \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003Eminute restante\u003CElse/\u003Eminutes restantes\u003C/If\u003E, vous ne pourrez plus jouer \u00E0 Triple Triade.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2791,7 +2791,7 @@
   },
   {
     "RowId": 4186,
-    "Text": "Votre temps de pr\u00E9sence restant dans l\u0027ar\u00E8ne ayant atteint \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E, vous ne pouvez plus jouer \u00E0 Triple Triade.\nNotez qu\u0027une fois le temps de pr\u00E9sence \u00E9coul\u00E9, vous serez automatiquement \u003CIf(gnum4)\u003Eexpuls\u00E9e\u003CElse/\u003Eexpuls\u00E9\u003C/If\u003E de l\u0027ar\u00E8ne.",
+    "Text": "Votre temps de pr\u00E9sence restant dans l\u0027ar\u00E8ne ayant atteint \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E, vous ne pouvez plus jouer \u00E0 Triple Triade.\nNotez qu\u0027une fois le temps de pr\u00E9sence \u00E9coul\u00E9, vous serez automatiquement \u003CIf(PlayerParameter(4))\u003Eexpuls\u00E9e\u003CElse/\u003Eexpuls\u00E9\u003C/If\u003E de l\u0027ar\u00E8ne.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2806,7 +2806,7 @@
   },
   {
     "RowId": 4187,
-    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez qu\u0027une fois ce temps \u00E9coul\u00E9, vous serez automatiquement \u003CIf(gnum4)\u003Eexpuls\u00E9e\u003CElse/\u003Eexpuls\u00E9\u003C/If\u003E.",
+    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez qu\u0027une fois ce temps \u00E9coul\u00E9, vous serez automatiquement \u003CIf(PlayerParameter(4))\u003Eexpuls\u00E9e\u003CElse/\u003Eexpuls\u00E9\u003C/If\u003E.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -2821,7 +2821,7 @@
   },
   {
     "RowId": 4188,
-    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez que l\u0027ar\u00E8ne ne peut plus \u00EAtre rejointe par d\u0027autres joueurs.",
+    "Text": "Votre temps de pr\u00E9sence dans l\u0027ar\u00E8ne sera \u00E9coul\u00E9 dans \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E.\nNotez que l\u0027ar\u00E8ne ne peut plus \u00EAtre rejointe par d\u0027autres joueurs.",
     "BalloonTime": 1,
     "Unknown0": 0,
     "OutputType": 5,
@@ -3721,7 +3721,7 @@
   },
   {
     "RowId": 4248,
-    "Text": "Soyez sur vos gardes, \u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "Soyez sur vos gardes, \u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,
@@ -6841,7 +6841,7 @@
   },
   {
     "RowId": 4456,
-    "Text": "\u003CIf(gnum4)\u003EElle\u003CElse/\u003EIl\u003C/If\u003E est trop fort\u003CIf(gnum4)\u003Ee\u003CElse/\u003E \u003C/If\u003E...",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EElle\u003CElse/\u003EIl\u003C/If\u003E est trop fort\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E...",
     "BalloonTime": 4,
     "Unknown0": 0,
     "OutputType": 2,

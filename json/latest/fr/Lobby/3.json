@@ -1000,7 +1000,7 @@
   },
   {
     "RowId": 1111,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre Monde\u003C/If\u003E actuellement. Votre personnage a quitt\u00E9 le jeu ou a \u00E9t\u00E9 d\u00E9connect\u00E9 alors qu\u0027il se trouvait dans une instance.\nVeuillez vous connecter \u00E0 nouveau avant de r\u00E9essayer.",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre Monde\u003C/If\u003E actuellement. Votre personnage a quitt\u00E9 le jeu ou a \u00E9t\u00E9 d\u00E9connect\u00E9 alors qu\u0027il se trouvait dans une instance.\nVeuillez vous connecter \u00E0 nouveau avant de r\u00E9essayer.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1018,7 +1018,7 @@
   },
   {
     "RowId": 1113,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre Monde\u003C/If\u003E actuellement. Votre personnage se trouve dans la ge\u00F4le de Mordion.",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre Monde\u003C/If\u003E actuellement. Votre personnage se trouve dans la ge\u00F4le de Mordion.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1045,7 +1045,7 @@
   },
   {
     "RowId": 1116,
-    "Text": "Le transfert de votre personnage vers un autre Monde a r\u00E9ussi. Vous pouvez maintenant vous connecter sur \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Le transfert de votre personnage vers un autre Monde a r\u00E9ussi. Vous pouvez maintenant vous connecter sur \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1387,7 +1387,7 @@
   },
   {
     "RowId": 1154,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (\u003CString\u003Elstr2\u003C/String\u003E)",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1459,7 +1459,7 @@
   },
   {
     "RowId": 1162,
-    "Text": "Choisissez le centre de traitement de donn\u00E9es et le Monde vers lesquels vous d\u00E9sirez voyager.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C60])\u003Emoins d\u0027une minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],moins de deux minutes,\u003Cif([lnum1\u003C180],moins de trois minutes,\u003Cif([lnum1\u003C300],moins de 5 minutes,\u003Cif([lnum1\u003C600],moins de 10 minutes,\u003Cif([lnum1\u003C1200],moins de 20 minutes,ind\u00E9termin\u00E9 \\(Monde encombr\u00E9\\))\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Choisissez le centre de traitement de donn\u00E9es et le Monde vers lesquels vous d\u00E9sirez voyager.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),60))\u003Emoins d\u0027une minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Emoins de deux minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Emoins de trois minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Emoins de 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Emoins de 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Emoins de 20 minutes\u003CElse/\u003Eind\u00E9termin\u00E9 (Monde encombr\u00E9)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1468,7 +1468,7 @@
   },
   {
     "RowId": 1163,
-    "Text": "Retourner dans son centre de traitement de donn\u00E9es et son Monde d\u0027origine\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C60])\u003Emoins d\u0027une minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],moins de deux minutes,\u003Cif([lnum1\u003C180],moins de trois minutes,\u003Cif([lnum1\u003C300],moins de 5 minutes,\u003Cif([lnum1\u003C600],moins de 10 minutes,\u003Cif([lnum1\u003C1200],moins de 20 minutes,ind\u00E9termin\u00E9 \\(Monde encombr\u00E9\\))\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Retourner dans son centre de traitement de donn\u00E9es et son Monde d\u0027origine\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),60))\u003Emoins d\u0027une minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Emoins de deux minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Emoins de trois minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Emoins de 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Emoins de 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Emoins de 20 minutes\u003CElse/\u003Eind\u00E9termin\u00E9 (Monde encombr\u00E9)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 1168,
-    "Text": "\u2756\u003CString\u003Elstr1\u003C/String\u003E",
+    "Text": "\u2756\u003CString\u003EStringParameter(1)\u003C/String\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 1170,
-    "Text": "Le voyage de \u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E vers le Monde \u003CString\u003Elstr4\u003C/String\u003E dans le centre de traitement de donn\u00E9es \u003CString\u003Elstr3\u003C/String\u003E va commencer.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C60])\u003Emoins d\u0027une minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],moins de deux minutes,\u003Cif([lnum1\u003C180],moins de trois minutes,\u003Cif([lnum1\u003C300],moins de 5 minutes,\u003Cif([lnum1\u003C600],moins de 10 minutes,\u003Cif([lnum1\u003C1200],moins de 20 minutes,ind\u00E9termin\u00E9 \\(Monde encombr\u00E9\\))\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPour assurer la s\u00E9curit\u00E9 de votre personnage pendant son transfert\u003C\u003Cnbsp\u003E\u003E:\n\u30FBcette proc\u00E9dure ne peut en aucun cas \u00EAtre annul\u00E9e\n\u30FBil est impossible de se connecter avec un autre personnage\nNous vous remercions de votre compr\u00E9hension.\u003C/span\u003E",
+    "Text": "Le voyage de \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E vers le Monde \u003CString\u003EStringParameter(4)\u003C/String\u003E dans le centre de traitement de donn\u00E9es \u003CString\u003EStringParameter(3)\u003C/String\u003E va commencer.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),60))\u003Emoins d\u0027une minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Emoins de deux minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Emoins de trois minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Emoins de 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Emoins de 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Emoins de 20 minutes\u003CElse/\u003Eind\u00E9termin\u00E9 (Monde encombr\u00E9)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPour assurer la s\u00E9curit\u00E9 de votre personnage pendant son transfert\u003C\u003Cnbsp\u003E\u003E:\n\u30FBcette proc\u00E9dure ne peut en aucun cas \u00EAtre annul\u00E9e\n\u30FBil est impossible de se connecter avec un autre personnage\nNous vous remercions de votre compr\u00E9hension.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1558,7 +1558,7 @@
   },
   {
     "RowId": 1173,
-    "Text": "Veuillez patienter. Votre personnage est en route vers un autre centre de traitement de donn\u00E9es.\n* La proc\u00E9dure peut prendre plus de temps suivant l\u0027affluence.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C60])\u003Emoins d\u0027une minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],moins de deux minutes,\u003Cif([lnum1\u003C180],moins de trois minutes,\u003Cif([lnum1\u003C300],moins de 5 minutes,\u003Cif([lnum1\u003C600],moins de 10 minutes,\u003Cif([lnum1\u003C1200],moins de 20 minutes,ind\u00E9termin\u00E9 \\(Monde encombr\u00E9\\))\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E",
+    "Text": "Veuillez patienter. Votre personnage est en route vers un autre centre de traitement de donn\u00E9es.\n* La proc\u00E9dure peut prendre plus de temps suivant l\u0027affluence.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),60))\u003Emoins d\u0027une minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Emoins de deux minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Emoins de trois minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Emoins de 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Emoins de 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Emoins de 20 minutes\u003CElse/\u003Eind\u00E9termin\u00E9 (Monde encombr\u00E9)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1567,7 +1567,7 @@
   },
   {
     "RowId": 1174,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E vient d\u0027arriver sur \u003CString\u003Elstr4\u003C/String\u003E dans le centre de traitement de donn\u00E9es \u003CString\u003Elstr3\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E!",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E vient d\u0027arriver sur \u003CString\u003EStringParameter(4)\u003C/String\u003E dans le centre de traitement de donn\u00E9es \u003CString\u003EStringParameter(3)\u003C/String\u003E\u003C\u003Cnbsp\u003E\u003E!",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1576,7 +1576,7 @@
   },
   {
     "RowId": 1175,
-    "Text": "Ce personnage est actuellement en voyage dans le centre de traitement de donn\u00E9es \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Ce personnage est actuellement en voyage dans le centre de traitement de donn\u00E9es \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1720,7 +1720,7 @@
   },
   {
     "RowId": 1191,
-    "Text": "Le retour de \u003CString\u003Elstr1\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003Elstr2\u003C/String\u003E dans son centre de traitement de donn\u00E9es (\u003CString\u003Elstr3\u003C/String\u003E) et son Monde d\u0027origine (\u003CString\u003Elstr4\u003C/String\u003E) va commencer.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf([lnum1\u003C60])\u003Emoins d\u0027une minute\u003CElse/\u003E\u003Cif([lnum1\u003C120],moins de deux minutes,\u003Cif([lnum1\u003C180],moins de trois minutes,\u003Cif([lnum1\u003C300],moins de 5 minutes,\u003Cif([lnum1\u003C600],moins de 10 minutes,\u003Cif([lnum1\u003C1200],moins de 20 minutes,ind\u00E9termin\u00E9 \\(Monde encombr\u00E9\\))\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPour assurer la s\u00E9curit\u00E9 de votre personnage pendant son transfert\u003C\u003Cnbsp\u003E\u003E:\n\u30FBcette proc\u00E9dure ne peut en aucun cas \u00EAtre annul\u00E9e\n\u30FBil est impossible de se connecter avec un autre personnage\nNous vous remercions de votre compr\u00E9hension.\u003C/span\u003E",
+    "Text": "Le retour de \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E dans son centre de traitement de donn\u00E9es (\u003CString\u003EStringParameter(3)\u003C/String\u003E) et son Monde d\u0027origine (\u003CString\u003EStringParameter(4)\u003C/String\u003E) va commencer.\nTemps d\u0027attente escompt\u00E9\u003C\u003Cnbsp\u003E\u003E: \u003CIf(LessThan(IntegerParameter(1),60))\u003Emoins d\u0027une minute\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),120))\u003Emoins de deux minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),180))\u003Emoins de trois minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),300))\u003Emoins de 5 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),600))\u003Emoins de 10 minutes\u003CElse/\u003E\u003CIf(LessThan(IntegerParameter(1),1200))\u003Emoins de 20 minutes\u003CElse/\u003Eind\u00E9termin\u00E9 (Monde encombr\u00E9)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\n\n\u003Cspan style=\u0022color: #ffffff;\u0022\u003EPour assurer la s\u00E9curit\u00E9 de votre personnage pendant son transfert\u003C\u003Cnbsp\u003E\u003E:\n\u30FBcette proc\u00E9dure ne peut en aucun cas \u00EAtre annul\u00E9e\n\u30FBil est impossible de se connecter avec un autre personnage\nNous vous remercions de votre compr\u00E9hension.\u003C/span\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1801,7 +1801,7 @@
   },
   {
     "RowId": 1200,
-    "Text": "Impossible de \u003CIf([lnum2\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E pour le moment.\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E pour le moment.\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1819,7 +1819,7 @@
   },
   {
     "RowId": 1202,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Veuillez patienter un moment, puis r\u00E9essayer.",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Veuillez patienter un moment, puis r\u00E9essayer.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1846,7 +1846,7 @@
   },
   {
     "RowId": 1205,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Votre personnage se trouve dans la ge\u00F4le de Mordion.",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Votre personnage se trouve dans la ge\u00F4le de Mordion.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1873,7 +1873,7 @@
   },
   {
     "RowId": 1208,
-    "Text": "Le transfert de votre personnage vers \u003CIf([lnum2\u003E0])\u003Eson Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E a \u00E9chou\u00E9. Veuillez patienter un moment avant de r\u00E9essayer.\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\[\u003Cnum(lnum1)\u003E\\]\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Le transfert de votre personnage vers \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Eson Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E a \u00E9chou\u00E9. Veuillez patienter un moment avant de r\u00E9essayer.\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n[\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E]\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1882,7 +1882,7 @@
   },
   {
     "RowId": 1209,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Le service est temporairement inaccessible.\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E actuellement. Le service est temporairement inaccessible.\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1891,7 +1891,7 @@
   },
   {
     "RowId": 1210,
-    "Text": "Le transfert de votre personnage vers \u003CIf([lnum2\u003E0])\u003Eson Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E a \u00E9chou\u00E9. Veuillez patienter un moment, puis r\u00E9essayer.",
+    "Text": "Le transfert de votre personnage vers \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Eson Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E a \u00E9chou\u00E9. Veuillez patienter un moment, puis r\u00E9essayer.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1900,7 +1900,7 @@
   },
   {
     "RowId": 1211,
-    "Text": "Impossible de voyager vers \u003CIf([lnum1\u003E0])\u003Evotre Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E. Votre personnage a quitt\u00E9 le jeu ou a \u00E9t\u00E9 d\u00E9connect\u00E9 alors qu\u0027il se trouvait dans une instance.\nVeuillez vous connecter \u00E0 nouveau avant de r\u00E9essayer.",
+    "Text": "Impossible de voyager vers \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Evotre Monde d\u0027origine\u003CElse/\u003Eun autre centre de traitement de donn\u00E9es\u003C/If\u003E. Votre personnage a quitt\u00E9 le jeu ou a \u00E9t\u00E9 d\u00E9connect\u00E9 alors qu\u0027il se trouvait dans une instance.\nVeuillez vous connecter \u00E0 nouveau avant de r\u00E9essayer.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 1212,
-    "Text": "Impossible de se rendre dans le centre de traitement de donn\u00E9es \u003CString\u003Elstr1\u003C/String\u003E. Vous y avez d\u00E9j\u00E0 atteint la limite de personnages.",
+    "Text": "Impossible de se rendre dans le centre de traitement de donn\u00E9es \u003CString\u003EStringParameter(1)\u003C/String\u003E. Vous y avez d\u00E9j\u00E0 atteint la limite de personnages.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1927,7 +1927,7 @@
   },
   {
     "RowId": 1214,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E n\u0027est pas le Monde d\u0027origine de ce personnage.",
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E n\u0027est pas le Monde d\u0027origine de ce personnage.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 1216,
-    "Text": "Impossible de voyager vers le Monde \u003CString\u003Elstr1\u003C/String\u003E. Son centre de traitement de donn\u00E9es n\u0027est pas dans la m\u00EAme r\u00E9gion que le v\u00F4tre.",
+    "Text": "Impossible de voyager vers le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E. Son centre de traitement de donn\u00E9es n\u0027est pas dans la m\u00EAme r\u00E9gion que le v\u00F4tre.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 1217,
-    "Text": "Vous \u00EAtes d\u00E9j\u00E0 dans le Monde \u003CString\u003Elstr1\u003C/String\u003E. Annulation de la demande.",
+    "Text": "Vous \u00EAtes d\u00E9j\u00E0 dans le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E. Annulation de la demande.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1963,7 +1963,7 @@
   },
   {
     "RowId": 1218,
-    "Text": "Le Monde \u003CString\u003Elstr1\u003C/String\u003E ne peut actuellement pas \u00EAtre choisi comme destination pour \u003CIf([lnum2\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E.",
+    "Text": "Le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E ne peut actuellement pas \u00EAtre choisi comme destination pour \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1972,7 +1972,7 @@
   },
   {
     "RowId": 1219,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E en raison d\u0027un probl\u00E8me avec les donn\u00E9es du jeu. Veuillez contacter le service client si le probl\u00E8me persiste.\u003CIf([lnum2\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum2)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E en raison d\u0027un probl\u00E8me avec les donn\u00E9es du jeu. Veuillez contacter le service client si le probl\u00E8me persiste.\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n(\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 1220,
-    "Text": "Erreur. Le serveur n\u0027a pas pu traiter la demande.\u003CIf([lnum1\u003E0])\u003E\u003Cbr\u003E\\(\u003Cnum(lnum1)\u003E\\)\u003CElse/\u003E \u003C/If\u003E",
+    "Text": "Erreur. Le serveur n\u0027a pas pu traiter la demande.\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\n(\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)\u003CElse/\u003E \u003C/If\u003E",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -1990,7 +1990,7 @@
   },
   {
     "RowId": 1221,
-    "Text": "Impossible de \u003CIf([lnum1\u003E0])\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E. Ce personnage fait actuellement partie d\u0027une \u00E9quipe.",
+    "Text": "Impossible de \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eretourner dans votre Monde d\u0027origine\u003CElse/\u003Evoyager vers un autre centre de traitement de donn\u00E9es\u003C/If\u003E. Ce personnage fait actuellement partie d\u0027une \u00E9quipe.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2107,7 +2107,7 @@
   },
   {
     "RowId": 1234,
-    "Text": "Le voyage vers le Monde \u003CString\u003Elstr1\u003C/String\u003E n\u0027a pas pu \u00EAtre effectu\u00E9, faute d\u0027une connexion pr\u00E9alable \u00E0 un centre de traitement de donn\u00E9es de la m\u00EAme r\u00E9gion.\nVeuillez retourner \u00E0 l\u0027\u00E9cran titre et s\u00E9lectionner un des centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003Elstr2\u003C/String\u003E lors du choix de personnage. Vous pourrez ensuite utiliser le voyage inter-Monde ou entre centres de traitement de donn\u00E9es pour vous rendre dans le Monde \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Le voyage vers le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E n\u0027a pas pu \u00EAtre effectu\u00E9, faute d\u0027une connexion pr\u00E9alable \u00E0 un centre de traitement de donn\u00E9es de la m\u00EAme r\u00E9gion.\nVeuillez retourner \u00E0 l\u0027\u00E9cran titre et s\u00E9lectionner un des centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003EStringParameter(2)\u003C/String\u003E lors du choix de personnage. Vous pourrez ensuite utiliser le voyage inter-Monde ou entre centres de traitement de donn\u00E9es pour vous rendre dans le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2116,7 +2116,7 @@
   },
   {
     "RowId": 1235,
-    "Text": "Le nombre maximum de personnages \u00E0 votre disposition a \u00E9t\u00E9 atteint pour les centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003Elstr2\u003C/String\u003E.\nPour vous rendre dans un Monde dans un centre de traitement de donn\u00E9es d\u0027une r\u00E9gion autre que celle de votre Monde d\u0027origine, vous devez avoir la possibilit\u00E9 d\u0027y cr\u00E9er au moins un personnage. Veuillez ajuster le nombre de personnages que vous poss\u00E9dez dans la r\u00E9gion \u003CString\u003Elstr2\u003C/String\u003E au pr\u00E9alable.",
+    "Text": "Le nombre maximum de personnages \u00E0 votre disposition a \u00E9t\u00E9 atteint pour les centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003EStringParameter(2)\u003C/String\u003E.\nPour vous rendre dans un Monde dans un centre de traitement de donn\u00E9es d\u0027une r\u00E9gion autre que celle de votre Monde d\u0027origine, vous devez avoir la possibilit\u00E9 d\u0027y cr\u00E9er au moins un personnage. Veuillez ajuster le nombre de personnages que vous poss\u00E9dez dans la r\u00E9gion \u003CString\u003EStringParameter(2)\u003C/String\u003E au pr\u00E9alable.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -2188,7 +2188,7 @@
   },
   {
     "RowId": 1243,
-    "Text": "Le voyage vers le Monde \u003CString\u003Elstr1\u003C/String\u003E n\u0027a pas pu \u00EAtre effectu\u00E9 car une mise \u00E0 jour des donn\u00E9es du compte de service est n\u00E9cessaire.\nVeuillez retourner \u00E0 l\u0027\u00E9cran titre et s\u00E9lectionner un des centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003Elstr2\u003C/String\u003E lors du choix de personnage. Vous pourrez ensuite utiliser le voyage inter-Monde ou entre centres de traitement de donn\u00E9es pour vous rendre dans le Monde \u003CString\u003Elstr1\u003C/String\u003E.",
+    "Text": "Le voyage vers le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E n\u0027a pas pu \u00EAtre effectu\u00E9 car une mise \u00E0 jour des donn\u00E9es du compte de service est n\u00E9cessaire.\nVeuillez retourner \u00E0 l\u0027\u00E9cran titre et s\u00E9lectionner un des centres de traitement de donn\u00E9es de la r\u00E9gion \u003CString\u003EStringParameter(2)\u003C/String\u003E lors du choix de personnage. Vous pourrez ensuite utiliser le voyage inter-Monde ou entre centres de traitement de donn\u00E9es pour vous rendre dans le Monde \u003CString\u003EStringParameter(1)\u003C/String\u003E.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

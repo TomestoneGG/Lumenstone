@@ -5,7 +5,7 @@
   },
   {
     "RowId": 11645,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E,\u003CSec\u003Elnum2\u003C/Sec\u003E %"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E %"
   },
   {
     "RowId": 11646,
@@ -13,7 +13,7 @@
   },
   {
     "RowId": 11647,
-    "Text": "Die Erinnerungsextraktion war erfolgreich!\nAktiviere \u003CIf([lnum1\u003E1])\u003Ebis zu zwei Logos-Kommandos\u003CElse/\u003Eein Logos-Kommando\u003C/If\u003E, um \u003CIf([lnum1\u003E1])\u003Esie\u003CElse/\u003Ees\u003C/If\u003E als Spezial-Kommando einzurichten."
+    "Text": "Die Erinnerungsextraktion war erfolgreich!\nAktiviere \u003CIf(GreaterThan(IntegerParameter(1),1))\u003Ebis zu zwei Logos-Kommandos\u003CElse/\u003Eein Logos-Kommando\u003C/If\u003E, um \u003CIf(GreaterThan(IntegerParameter(1),1))\u003Esie\u003CElse/\u003Ees\u003C/If\u003E als Spezial-Kommando einzurichten."
   },
   {
     "RowId": 11648,
@@ -45,7 +45,7 @@
   },
   {
     "RowId": 11655,
-    "Text": "\u201E\u003Csheet(Action,lnum1,0)\u003E\u201C \u003CIf([lnum2\u003E0])\u003Eund \u201E\u003Csheet(Action,lnum2,0)\u003E\u201C\u003CElse/\u003E \u003C/If\u003E aufgeben und durch die extrahierte Erinnerung ersetzen?"
+    "Text": "\u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C \u003CIf(GreaterThan(IntegerParameter(2),0))\u003Eund \u201E\u003Csheet(Action,IntegerParameter(2),0)\u003E\u201C\u003CElse/\u003E \u003C/If\u003E aufgeben und durch die extrahierte Erinnerung ersetzen?"
   },
   {
     "RowId": 11656,
@@ -125,7 +125,7 @@
   },
   {
     "RowId": 11675,
-    "Text": "Neue Parameter verwerfen und die vorherigen beibehalten?\n\u203B \u003CHead\u003E\u003Cif([lnum2==1],\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E wird,\u003Cdenoun(Item,2,lnum1,2,1,1)\u003E werden)\u003E\u003C/Head\u003E nicht zur\u00FCckerstattet."
+    "Text": "Neue Parameter verwerfen und die vorherigen beibehalten?\n\u203B \u003CHead\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E wird\u003CElse/\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,1,1)\u003E werden\u003C/If\u003E\u003C/Head\u003E nicht zur\u00FCckerstattet."
   },
   {
     "RowId": 11676,
@@ -133,7 +133,7 @@
   },
   {
     "RowId": 11677,
-    "Text": "\u003CIf([gnum80==1])\u003E  \u003Cicon2(11)\u003ELogos-Kommando\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(80),1))\u003E  \u003CIcon2\u003E11\u003C/Icon2\u003ELogos-Kommando\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 11678,
@@ -157,7 +157,7 @@
   },
   {
     "RowId": 11683,
-    "Text": "\u003CIf([lnum2\u003E0])\u003ELogos-Kommandos \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C und \u201E\u003Csheet(Action,lnum2,0)\u003E\u201C\u003CElse/\u003ELogos-Kommando \u201E\u003Csheet(Action,lnum1,0)\u003E\u201C\u003C/If\u003E verwerfen?"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003ELogos-Kommandos \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C und \u201E\u003Csheet(Action,IntegerParameter(2),0)\u003E\u201C\u003CElse/\u003ELogos-Kommando \u201E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u201C\u003C/If\u003E verwerfen?"
   },
   {
     "RowId": 11684,
@@ -169,7 +169,7 @@
   },
   {
     "RowId": 11686,
-    "Text": "\u002B\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 11687,
@@ -185,7 +185,7 @@
   },
   {
     "RowId": 11700,
-    "Text": "\u003Cswitch(lnum1,Alle anzeigen,Nur Erledigte,Nur Unerledigte)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Alle anzeigen,Nur Erledigte,Nur Unerledigte)\u003E"
   },
   {
     "RowId": 11701,
@@ -217,7 +217,7 @@
   },
   {
     "RowId": 11716,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E - Ich eskortiere jetzt den Kristall!\u003Csound(1,101)\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E - Ich eskortiere jetzt den Kristall!\u003Csound(1,101)\u003E"
   },
   {
     "RowId": 11717,
@@ -225,7 +225,7 @@
   },
   {
     "RowId": 11718,
-    "Text": "Ich decke \u003CIf([lnum1==37])\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf([lnum1==6])\u003EDruiden\u003CElse/\u003E\u003Cif([lnum1==7],Thaumaturgen,\u003Cif([lnum1==14],Alchemisten,\u003Cif([lnum1==23],Barden,\u003Cif([lnum1==28],Gelehrten,\u003Cif([lnum1==29],Schurken,\u003Cif([lnum1==31],Maschinisten,\u003Cif([lnum1==33],Astrologen,\u003Cif([lnum1==40],Weisen,\u003Csheet(ClassJob,lnum1,0)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003C/If\u003E!\u003Csound(1,98)\u003E"
+    "Text": "Ich decke \u003CIf(Equal(IntegerParameter(1),37))\u003Edie\u003CElse/\u003Eden\u003C/If\u003E \u003CIf(Equal(IntegerParameter(1),6))\u003EDruiden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),7))\u003EThaumaturgen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),14))\u003EAlchemisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),23))\u003EBarden\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),28))\u003EGelehrten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),29))\u003ESchurken\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),31))\u003EMaschinisten\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),33))\u003EAstrologen\u003CElse/\u003E\u003CIf(Equal(IntegerParameter(1),40))\u003EWeisen\u003CElse/\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E!\u003Csound(1,98)\u003E"
   },
   {
     "RowId": 11720,
@@ -357,7 +357,7 @@
   },
   {
     "RowId": 11756,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E von \u003CNum\u003Elnum2\u003C/Num\u003E Mitgliedern online"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E von \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Mitgliedern online"
   },
   {
     "RowId": 11758,
@@ -453,19 +453,19 @@
   },
   {
     "RowId": 11786,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E in dein PvP-Team einladen?"
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E in dein PvP-Team einladen?"
   },
   {
     "RowId": 11787,
-    "Text": "Einladung in das PvP-Team von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E annehmen?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EWenn unangemessenes Verhalten oder Bel\u00E4stigungen durch einen oder mehrere Mitglieder festgestellt werden, kann das Team zwangsweise aufgel\u00F6st werden.\u003C/span\u003E"
+    "Text": "Einladung in das PvP-Team von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E annehmen?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EWenn unangemessenes Verhalten oder Bel\u00E4stigungen durch einen oder mehrere Mitglieder festgestellt werden, kann das Team zwangsweise aufgel\u00F6st werden.\u003C/span\u003E"
   },
   {
     "RowId": 11788,
-    "Text": "Einladung in das PvP-Team von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E ablehnen?"
+    "Text": "Einladung in das PvP-Team von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E ablehnen?"
   },
   {
     "RowId": 11789,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E aus dem PvP-Team entfernen?"
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E aus dem PvP-Team entfernen?"
   },
   {
     "RowId": 11792,
@@ -493,7 +493,7 @@
   },
   {
     "RowId": 11798,
-    "Text": "(Siegrate \u003CString\u003Elstr1\u003C/String\u003E %)"
+    "Text": "(Siegrate \u003CString\u003EStringParameter(1)\u003C/String\u003E %)"
   },
   {
     "RowId": 11799,
@@ -501,7 +501,7 @@
   },
   {
     "RowId": 11800,
-    "Text": "Bef\u00F6rderung auf \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C bei Wert:"
+    "Text": "Bef\u00F6rderung auf \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C bei Wert:"
   },
   {
     "RowId": 11801,
@@ -525,7 +525,7 @@
   },
   {
     "RowId": 11806,
-    "Text": "Die aktuellen Ranglisten k\u00F6nnen auf dem Lodestone eingesehen werden.\n\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Die aktuellen Ranglisten k\u00F6nnen auf dem Lodestone eingesehen werden.\n\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 11807,
@@ -545,7 +545,7 @@
   },
   {
     "RowId": 11812,
-    "Text": "vor \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003ETage\u003CElse/\u003ETagen\u003C/If\u003E"
+    "Text": "vor \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003ETage\u003CElse/\u003ETagen\u003C/If\u003E"
   },
   {
     "RowId": 11813,
@@ -605,7 +605,7 @@
   },
   {
     "RowId": 11829,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E zum Anf\u00FChrer des PvP-Teams machen?"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E zum Anf\u00FChrer des PvP-Teams machen?"
   },
   {
     "RowId": 11830,
@@ -649,11 +649,11 @@
   },
   {
     "RowId": 11847,
-    "Text": "Die Gr\u00FCndung des PvP-Teams \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C vorschlagen?\n\u203B Der Teamname kann sp\u00E4ter ge\u00E4ndert werden."
+    "Text": "Die Gr\u00FCndung des PvP-Teams \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C vorschlagen?\n\u203B Der Teamname kann sp\u00E4ter ge\u00E4ndert werden."
   },
   {
     "RowId": 11848,
-    "Text": "Den Namen des PvP-Teams in \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C \u00E4ndern?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der Teamname kann erst in 30 Tagen (Erdenzeit) wieder ge\u00E4ndert werden.\u003C/span\u003E"
+    "Text": "Den Namen des PvP-Teams in \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C \u00E4ndern?\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203B Der Teamname kann erst in 30 Tagen (Erdenzeit) wieder ge\u00E4ndert werden.\u003C/span\u003E"
   },
   {
     "RowId": 11850,
@@ -665,7 +665,7 @@
   },
   {
     "RowId": 11852,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E hat vorgeschlagen, das PvP-Team \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C zu bilden. \nUm das Team zu bilden, m\u00FCssen alle Mitglieder zustimmen.\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EWenn unangemessenes Verhalten oder Bel\u00E4stigungen durch einen oder mehrere Mitglieder festgestellt werden, kann das Team zwangsweise aufgel\u00F6st werden.\u003C/span\u003E\nStimmst du der Gr\u00FCndung des PvP-Teams zu?"
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E hat vorgeschlagen, das PvP-Team \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C zu bilden. \nUm das Team zu bilden, m\u00FCssen alle Mitglieder zustimmen.\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EWenn unangemessenes Verhalten oder Bel\u00E4stigungen durch einen oder mehrere Mitglieder festgestellt werden, kann das Team zwangsweise aufgel\u00F6st werden.\u003C/span\u003E\nStimmst du der Gr\u00FCndung des PvP-Teams zu?"
   },
   {
     "RowId": 11853,
@@ -673,15 +673,15 @@
   },
   {
     "RowId": 11855,
-    "Text": "Sieg gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E"
+    "Text": "Sieg gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E"
   },
   {
     "RowId": 11856,
-    "Text": "Niederlage gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E"
+    "Text": "Niederlage gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E"
   },
   {
     "RowId": 11857,
-    "Text": "Unentschieden gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003Elstr1\u003C/String\u003E\u003C/span\u003E"
+    "Text": "Unentschieden gegen \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/span\u003E"
   },
   {
     "RowId": 11858,
@@ -765,7 +765,7 @@
   },
   {
     "RowId": 11886,
-    "Text": "\u003CIf([lnum1\u003E=25])\u003EUm \u003Cnum(lnum2)\u003E:\u003Cdigit(lnum4,2)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E=25],Ab \u003Cnum(lnum1)\u003E:\u003Cdigit(lnum3,2)\u003E,Von \u003Cnum(lnum1)\u003E:\u003Cdigit(lnum3,2)\u003E bis \u003Cnum(lnum2)\u003E:\u003Cdigit(lnum4,2)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThanOrEqualTo(IntegerParameter(1),25))\u003EUm \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(4),2)\u003E\u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),25))\u003EAb \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(3),2)\u003E\u003CElse/\u003EVon \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(3),2)\u003E bis \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(4),2)\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 11887,
@@ -781,7 +781,7 @@
   },
   {
     "RowId": 11890,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E , \u003CIf([lnum2\u003E=25])\u003EUm \u003Cnum(lnum3)\u003E:\u003Cdigit(lnum5,2)\u003E\u003CElse/\u003E\u003Cif([lnum3\u003E=25],Ab \u003Cnum(lnum2)\u003E:\u003Cdigit(lnum4,2)\u003E,Von \u003Cnum(lnum2)\u003E:\u003Cdigit(lnum4,2)\u003E bis \u003Cnum(lnum3)\u003E:\u003Cdigit(lnum5,2)\u003E)\u003E\u003C/If\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E , \u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),25))\u003EUm \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(5),2)\u003E\u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(3),25))\u003EAb \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(4),2)\u003E\u003CElse/\u003EVon \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(4),2)\u003E bis \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E:\u003Cdigit(IntegerParameter(5),2)\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 11891,
@@ -849,11 +849,11 @@
   },
   {
     "RowId": 11907,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E "
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E "
   },
   {
     "RowId": 11908,
-    "Text": "\u003Csheet(ClassJob,lnum1,0)\u003E / \u003Csheet(ClassJob,lnum2,0)\u003E"
+    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E / \u003Csheet(ClassJob,IntegerParameter(2),0)\u003E"
   },
   {
     "RowId": 11909,
@@ -873,7 +873,7 @@
   },
   {
     "RowId": 11913,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 11916,
@@ -925,7 +925,7 @@
   },
   {
     "RowId": 11928,
-    "Text": "Projektionsprismen in Besitz: \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Projektionsprismen in Besitz: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 11929,
@@ -1161,7 +1161,7 @@
   },
   {
     "RowId": 11989,
-    "Text": "Keine Gegenst\u00E4nde der Kategorie \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C vorhanden."
+    "Text": "Keine Gegenst\u00E4nde der Kategorie \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C vorhanden."
   },
   {
     "RowId": 11990,
@@ -1181,11 +1181,11 @@
   },
   {
     "RowId": 11994,
-    "Text": "Wenn ein Gegenstand in eine Projektion verwandelt wird, gehen alle Anpassungen (z. B. Materia, \u00C4therboni, Signaturen, Projektionen und Wappen) verloren und die Bindung wird auf 0\u003C\u003Cnbsp\u003E\u003E% und der Zustand auf 100\u003C\u003Cnbsp\u003E\u003E% zur\u00FCckgesetzt. Bei Entnahme aus der Kommode und Zur\u00FCckverwandlung in einen Gegenstand wird dieser pers\u00F6nlich gebunden.\n1 \u003CHead\u003E\u003Cdenoun(Item,5,lnum1,1,4,1)\u003E\u003C/Head\u003E verbrauchen und fortfahren?"
+    "Text": "Wenn ein Gegenstand in eine Projektion verwandelt wird, gehen alle Anpassungen (z. B. Materia, \u00C4therboni, Signaturen, Projektionen und Wappen) verloren und die Bindung wird auf 0\u003C\u003Cnbsp\u003E\u003E% und der Zustand auf 100\u003C\u003Cnbsp\u003E\u003E% zur\u00FCckgesetzt. Bei Entnahme aus der Kommode und Zur\u00FCckverwandlung in einen Gegenstand wird dieser pers\u00F6nlich gebunden.\n1 \u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E verbrauchen und fortfahren?"
   },
   {
     "RowId": 11995,
-    "Text": "Wenn ein Gegenstand in eine Projektion verwandelt wird, gehen alle Anpassungen (z. B. Materia, \u00C4therboni, Signaturen, Projektionen und Wappen) verloren und die Bindung wird auf 0\u003C\u003Cnbsp\u003E\u003E% und der Zustand auf 100\u003C\u003Cnbsp\u003E\u003E% zur\u00FCckgesetzt. Bei Entnahme aus der Kommode und Zur\u00FCckverwandlung in einen Gegenstand wird dieser pers\u00F6nlich gebunden.\n\u003CNum\u003Elnum2\u003C/Num\u003E \u003CHead\u003E\u003Cdenoun(Item,5,lnum1,2,4,1)\u003E\u003C/Head\u003E verbrauchen und fortfahren, um die ausgew\u00E4hlten Gegenst\u00E4nde gemeinsam in eine Projektion zu verwandeln?"
+    "Text": "Wenn ein Gegenstand in eine Projektion verwandelt wird, gehen alle Anpassungen (z. B. Materia, \u00C4therboni, Signaturen, Projektionen und Wappen) verloren und die Bindung wird auf 0\u003C\u003Cnbsp\u003E\u003E% und der Zustand auf 100\u003C\u003Cnbsp\u003E\u003E% zur\u00FCckgesetzt. Bei Entnahme aus der Kommode und Zur\u00FCckverwandlung in einen Gegenstand wird dieser pers\u00F6nlich gebunden.\n\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E\u003C/Head\u003E verbrauchen und fortfahren, um die ausgew\u00E4hlten Gegenst\u00E4nde gemeinsam in eine Projektion zu verwandeln?"
   },
   {
     "RowId": 11996,
@@ -1357,15 +1357,15 @@
   },
   {
     "RowId": 12041,
-    "Text": "\u003CIf([gnum78==3])\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Eoption\u003CElse/\u003EAlt\u003C/If\u003E"
   },
   {
     "RowId": 12042,
-    "Text": "\u003CIf([gnum78==3])\u003Econtrol\u003CElse/\u003EStrg\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Econtrol\u003CElse/\u003EStrg\u003C/If\u003E"
   },
   {
     "RowId": 12043,
-    "Text": "\u003CIf([gnum78==3])\u003Eshift\u003CElse/\u003EUmschalt\u003C/If\u003E"
+    "Text": "\u003CIf(Equal(PlayerParameter(78),3))\u003Eshift\u003CElse/\u003EUmschalt\u003C/If\u003E"
   },
   {
     "RowId": 12044,
@@ -1517,7 +1517,7 @@
   },
   {
     "RowId": 12081,
-    "Text": "Dr\u00FCcke \u003CIf([gnum78==3])\u003Eesc\u003CElse/\u003EEsc\u003C/If\u003E, um den Auff\u00FChrungsmodus zu verlassen."
+    "Text": "Dr\u00FCcke \u003CIf(Equal(PlayerParameter(78),3))\u003Eesc\u003CElse/\u003EEsc\u003C/If\u003E, um den Auff\u00FChrungsmodus zu verlassen."
   },
   {
     "RowId": 12082,
@@ -1645,11 +1645,11 @@
   },
   {
     "RowId": 12114,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E / \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E / \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12115,
-    "Text": "Nach 24 Stunden ohne ein zweites Mitglied wird der WKK aufgel\u00F6st. (\u003CIf([lnum3\u003E0])\u003EDie Frist ist verstrichen und der Welten-Kontaktkreis wird automatisch aufgel\u00F6st.\u003CElse/\u003EVerbleibende Zeit: \u003Cif([lnum1\u003E0],\u003Cnum(lnum1)\u003E \u003Cif([lnum1==1],Stunde,Stunden)\u003E,)\u003E\u003Cif([lnum2==0],\u003Cif([lnum1==0],weniger als eine Minute,)\u003E, \u003Cnum(lnum2)\u003E \u003Cif([lnum2==1],Minute,Minuten)\u003E)\u003E\u003C/If\u003E)"
+    "Text": "Nach 24 Stunden ohne ein zweites Mitglied wird der WKK aufgel\u00F6st. (\u003CIf(GreaterThan(IntegerParameter(3),0))\u003EDie Frist ist verstrichen und der Welten-Kontaktkreis wird automatisch aufgel\u00F6st.\u003CElse/\u003EVerbleibende Zeit: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003EStunde\u003CElse/\u003EStunden\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E\u003CIf(Equal(IntegerParameter(1),0))\u003Eweniger als eine Minute\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003EMinute\u003CElse/\u003EMinuten\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E)"
   },
   {
     "RowId": 12116,
@@ -1725,19 +1725,19 @@
   },
   {
     "RowId": 12134,
-    "Text": "Wirklich dem Welten-Kontaktkreis \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C beitreten?"
+    "Text": "Wirklich dem Welten-Kontaktkreis \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C beitreten?"
   },
   {
     "RowId": 12135,
-    "Text": "Wirklich die Einladung in den Welten-Kontaktkreis \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C ablehnen?"
+    "Text": "Wirklich die Einladung in den Welten-Kontaktkreis \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C ablehnen?"
   },
   {
     "RowId": 12136,
-    "Text": "Wirklich den Welten-Kontaktkreis \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C verlassen?"
+    "Text": "Wirklich den Welten-Kontaktkreis \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C verlassen?"
   },
   {
     "RowId": 12137,
-    "Text": "Wirklich den Welten-Kontaktkreis \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C aufl\u00F6sen? Der Vorgang kann nicht r\u00FCckg\u00E4ngig gemacht werden."
+    "Text": "Wirklich den Welten-Kontaktkreis \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C aufl\u00F6sen? Der Vorgang kann nicht r\u00FCckg\u00E4ngig gemacht werden."
   },
   {
     "RowId": 12138,
@@ -1745,19 +1745,19 @@
   },
   {
     "RowId": 12139,
-    "Text": "Wirklich \u003CString\u003Elstr1\u003C/String\u003E aus dem Welten-Kontaktkreis ausschlie\u00DFen?"
+    "Text": "Wirklich \u003CString\u003EStringParameter(1)\u003C/String\u003E aus dem Welten-Kontaktkreis ausschlie\u00DFen?"
   },
   {
     "RowId": 12140,
-    "Text": "Wirklich \u003CString\u003Elstr1\u003C/String\u003E zum Kontaktkreis-Anf\u00FChrer ernennen?"
+    "Text": "Wirklich \u003CString\u003EStringParameter(1)\u003C/String\u003E zum Kontaktkreis-Anf\u00FChrer ernennen?"
   },
   {
     "RowId": 12141,
-    "Text": "Wirklich \u003CString\u003Elstr1\u003C/String\u003E als Kontaktkreis-Anf\u00FChrer absetzen?"
+    "Text": "Wirklich \u003CString\u003EStringParameter(1)\u003C/String\u003E als Kontaktkreis-Anf\u00FChrer absetzen?"
   },
   {
     "RowId": 12142,
-    "Text": "Wirklich alle Rechte als Kontaktkreis-Meister an \u003CString\u003Elstr1\u003C/String\u003E \u00FCbertragen?"
+    "Text": "Wirklich alle Rechte als Kontaktkreis-Meister an \u003CString\u003EStringParameter(1)\u003C/String\u003E \u00FCbertragen?"
   },
   {
     "RowId": 12143,
@@ -1765,11 +1765,11 @@
   },
   {
     "RowId": 12144,
-    "Text": "Wirklich die Einladung in den Welten-Kontaktkreis an \u003CString\u003Elstr1\u003C/String\u003E zur\u00FCckziehen?"
+    "Text": "Wirklich die Einladung in den Welten-Kontaktkreis an \u003CString\u003EStringParameter(1)\u003C/String\u003E zur\u00FCckziehen?"
   },
   {
     "RowId": 12145,
-    "Text": "Wirklich als Kontaktkreis-Anf\u00FChrer von \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C zur\u00FCcktreten?"
+    "Text": "Wirklich als Kontaktkreis-Anf\u00FChrer von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C zur\u00FCcktreten?"
   },
   {
     "RowId": 12146,
@@ -1793,11 +1793,11 @@
   },
   {
     "RowId": 12151,
-    "Text": "Welten-Kontaktkreis den Namen \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C geben?"
+    "Text": "Welten-Kontaktkreis den Namen \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C geben?"
   },
   {
     "RowId": 12152,
-    "Text": "WKK #\u003CNum\u003Elnum1\u003C/Num\u003E:"
+    "Text": "WKK #\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:"
   },
   {
     "RowId": 12153,
@@ -1809,11 +1809,11 @@
   },
   {
     "RowId": 12155,
-    "Text": "Erstellt am \u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "Erstellt am \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
   },
   {
     "RowId": 12156,
-    "Text": "M\u00F6chtest du den Welten-Kontaktkreis \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wirklich verlassen?\nDer neue Kontaktkreis-Meister wird automatisch aus den verbleibenden Mitgliedern ausgew\u00E4hlt."
+    "Text": "M\u00F6chtest du den Welten-Kontaktkreis \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wirklich verlassen?\nDer neue Kontaktkreis-Meister wird automatisch aus den verbleibenden Mitgliedern ausgew\u00E4hlt."
   },
   {
     "RowId": 12157,
@@ -1837,15 +1837,15 @@
   },
   {
     "RowId": 12162,
-    "Text": "Lege eine neue Nummer f\u00FCr WKK #\u003CNum\u003Elnum1\u003C/Num\u003E fest.\nWenn die Nummer bereits vergeben ist, wird sie mit dem anderen Kanal getauscht."
+    "Text": "Lege eine neue Nummer f\u00FCr WKK #\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E fest.\nWenn die Nummer bereits vergeben ist, wird sie mit dem anderen Kanal getauscht."
   },
   {
     "RowId": 12163,
-    "Text": "\u003Cswitch(lnum1,\u003Ccolor(gnum35)\u003E,\u003Ccolor(gnum84)\u003E,\u003Ccolor(gnum85)\u003E,\u003Ccolor(gnum86)\u003E,\u003Ccolor(gnum87)\u003E,\u003Ccolor(gnum88)\u003E,\u003Ccolor(gnum89)\u003E,\u003Ccolor(gnum90)\u003E)\u003ECWLS #\u003CNum\u003Elnum1\u003C/Num\u003E: \u003CString\u003Elstr2\u003C/String\u003E\u003CColor\u003Estackcolor\u003C/Color\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CColor\u003EPlayerParameter(35)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(84)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(85)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(86)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(87)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(88)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(89)\u003C/Color\u003E,\u003CColor\u003EPlayerParameter(90)\u003C/Color\u003E)\u003ECWLS #\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E\u003CColor\u003Estackcolor\u003C/Color\u003E"
   },
   {
     "RowId": 12164,
-    "Text": "In den Welten-Kontaktkreis #\u003CNum\u003Elnum1\u003C/Num\u003E: \u003CString\u003Elstr2\u003C/String\u003E einladen"
+    "Text": "In den Welten-Kontaktkreis #\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E einladen"
   },
   {
     "RowId": 12165,
@@ -1933,7 +1933,7 @@
   },
   {
     "RowId": 12187,
-    "Text": "Die \u003CIf([lnum2==1])\u003Egew\u00E4hlte Projektion\u003CElse/\u003Egew\u00E4hlten Projektionen\u003C/If\u003E entfernen?\nBen\u00F6tigte \u003Cdenoun(Item,5,lnum1,2,1,1)\u003E: \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Die \u003CIf(Equal(IntegerParameter(2),1))\u003Egew\u00E4hlte Projektion\u003CElse/\u003Egew\u00E4hlten Projektionen\u003C/If\u003E entfernen?\nBen\u00F6tigte \u003Cdenoun(Item,5,IntegerParameter(1),2,1,1)\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12188,
@@ -1941,7 +1941,7 @@
   },
   {
     "RowId": 12195,
-    "Text": "\u003CIf([lnum2\u003E0])\u003E\u2605\u003CElse/\u003E \u003C/If\u003E\u003Cswitch(lnum1,\u003Cicon(51)\u003E,\u003Cicon(52)\u003E,\u003Cicon(53)\u003E)\u003E\u003Cdenoun(GrandCompany,5,lnum1,1,1,1)\u003E\nPunkte"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u2605\u003CElse/\u003E \u003C/If\u003E\u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E,\u003CIcon\u003E52\u003C/Icon\u003E,\u003CIcon\u003E53\u003C/Icon\u003E)\u003E\u003Cdenoun(GrandCompany,5,IntegerParameter(1),1,1,1)\u003E\nPunkte"
   },
   {
     "RowId": 12196,
@@ -1949,15 +1949,15 @@
   },
   {
     "RowId": 12197,
-    "Text": "Wird erobert von \u003Cswitch(lnum1,\u003Cicon(51)\u003E,\u003Cicon(52)\u003E,\u003Cicon(53)\u003E)\u003E"
+    "Text": "Wird erobert von \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E,\u003CIcon\u003E52\u003C/Icon\u003E,\u003CIcon\u003E53\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 12198,
-    "Text": "Verbunden mit \u003Cswitch(lnum1,\u003Cicon(51)\u003E,\u003Cicon(52)\u003E,\u003Cicon(53)\u003E)\u003E"
+    "Text": "Verbunden mit \u003Cswitch(IntegerParameter(1),\u003CIcon\u003E51\u003C/Icon\u003E,\u003CIcon\u003E52\u003C/Icon\u003E,\u003CIcon\u003E53\u003C/Icon\u003E)\u003E"
   },
   {
     "RowId": 12199,
-    "Text": "\u003Csheet(PlaceName,lnum1,0)\u003E \u003Cswitch(lnum2,Rang B,Rang A,Rang S)\u003E"
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E \u003Cswitch(IntegerParameter(2),Rang B,Rang A,Rang S)\u003E"
   },
   {
     "RowId": 12200,
@@ -1973,7 +1973,7 @@
   },
   {
     "RowId": 12203,
-    "Text": "\u003Csheet(Item,lnum1,9)\u003E"
+    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E"
   },
   {
     "RowId": 12204,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 12205,
-    "Text": "\u003Ckilo(lnum1,.)\u003E\u003CIf([lnum4\u003E0])\u003E / \uE03C\u003Ckilo(lnum2,.)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E / \uE03D\u003Ckilo(lnum3,.)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003Ckilo(IntegerParameter(1),.)\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E / \uE03C\u003Ckilo(IntegerParameter(2),.)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E / \uE03D\u003Ckilo(IntegerParameter(3),.)\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12206,

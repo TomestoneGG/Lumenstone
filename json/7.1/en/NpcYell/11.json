@@ -481,7 +481,7 @@
   },
   {
     "RowId": 5032,
-    "Text": "Out of your beds, soft ones!\n\u003CIf([gnum11\u003C12])\u003E\u003Cif([gnum11\u003C4],Tonight,Today)\u003E\u003CElse/\u003E\u003Cif([gnum11\u003C17],Today,Tonight)\u003E\u003C/If\u003E, you perish by my blade!",
+    "Text": "Out of your beds, soft ones!\n\u003CIf(LessThan(PlayerParameter(11),12))\u003E\u003CIf(LessThan(PlayerParameter(11),4))\u003ETonight\u003CElse/\u003EToday\u003C/If\u003E\u003CElse/\u003E\u003CIf(LessThan(PlayerParameter(11),17))\u003EToday\u003CElse/\u003ETonight\u003C/If\u003E\u003C/If\u003E, you perish by my blade!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 3,
@@ -1171,7 +1171,7 @@
   },
   {
     "RowId": 5078,
-    "Text": "Impressive. You say\n\u003CIf(gnum4)\u003Eshe\u0027s\u003CElse/\u003Ehe\u0027s\u003C/If\u003E an adventurer?",
+    "Text": "Impressive. You say\n\u003CIf(PlayerParameter(4))\u003Eshe\u0027s\u003CElse/\u003Ehe\u0027s\u003C/If\u003E an adventurer?",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -1471,7 +1471,7 @@
   },
   {
     "RowId": 5098,
-    "Text": "Thank you kindly, \u003CIf(gnum4)\u003Emilady\u003CElse/\u003Emilord\u003C/If\u003E.\nI\u0027ll learn the plow, just like\nmy da wanted. Promise!",
+    "Text": "Thank you kindly, \u003CIf(PlayerParameter(4))\u003Emilady\u003CElse/\u003Emilord\u003C/If\u003E.\nI\u0027ll learn the plow, just like\nmy da wanted. Promise!",
     "BalloonTime": 5,
     "Unknown0": 0,
     "OutputType": 3,
@@ -4516,7 +4516,7 @@
   },
   {
     "RowId": 5301,
-    "Text": "\u003CIf(gnum4)\u003EHer\u003CElse/\u003EHis\u003C/If\u003E tongue we cook first!",
+    "Text": "\u003CIf(PlayerParameter(4))\u003EHer\u003CElse/\u003EHis\u003C/If\u003E tongue we cook first!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -4546,7 +4546,7 @@
   },
   {
     "RowId": 5303,
-    "Text": "Not \u003CItalic\u003E1\u003C/Italic\u003Ean\u003CItalic\u003E0\u003C/Italic\u003E adventurer,\n\u003CItalic\u003E1\u003C/Italic\u003Ethe\u003CItalic\u003E0\u003C/Italic\u003E adventurer!\n\u003CString\u003Egstr1\u003C/String\u003E!",
+    "Text": "Not \u003CItalic\u003E1\u003C/Italic\u003Ean\u003CItalic\u003E0\u003C/Italic\u003E adventurer,\n\u003CItalic\u003E1\u003C/Italic\u003Ethe\u003CItalic\u003E0\u003C/Italic\u003E adventurer!\n\u003CString\u003EObjectParameter(1)\u003C/String\u003E!",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7066,7 +7066,7 @@
   },
   {
     "RowId": 5471,
-    "Text": "There is not a knight in all\nthe See who hasn\u0027t heard of\n\u003Csplit(\u003Cstring(gstr1)\u003E, ,1)\u003E\u0027s heroism...",
+    "Text": "There is not a knight in all\nthe See who hasn\u0027t heard of\n\u003Csplit(\u003CString\u003EObjectParameter(1)\u003C/String\u003E, ,1)\u003E\u0027s heroism...",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,
@@ -7081,7 +7081,7 @@
   },
   {
     "RowId": 5472,
-    "Text": "Or who does not dream of\ntesting his mettle against\n\u003CIf(gnum4)\u003Eher\u003CElse/\u003Ehim\u003C/If\u003E.",
+    "Text": "Or who does not dream of\ntesting his mettle against\n\u003CIf(PlayerParameter(4))\u003Eher\u003CElse/\u003Ehim\u003C/If\u003E.",
     "BalloonTime": 3,
     "Unknown0": 0,
     "OutputType": 2,

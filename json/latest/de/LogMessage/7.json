@@ -379,7 +379,7 @@
   },
   {
     "RowId": 3042,
-    "Text": "Du hast die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C gegr\u00FCndet.",
+    "Text": "Du hast die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C gegr\u00FCndet.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -388,7 +388,7 @@
   },
   {
     "RowId": 3043,
-    "Text": "Hiermit ist die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C gegr\u00FCndet.",
+    "Text": "Hiermit ist die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C gegr\u00FCndet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -397,7 +397,7 @@
   },
   {
     "RowId": 3044,
-    "Text": "Du hast \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,4,1)\u003E,gstr2)\u003E\u003C/If\u003E gebeten, den Gr\u00FCndungsantrag der Freien Gesellschaft zu unterzeichnen.",
+    "Text": "Du hast \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(4,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,4,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E gebeten, den Gr\u00FCndungsantrag der Freien Gesellschaft zu unterzeichnen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -406,7 +406,7 @@
   },
   {
     "RowId": 3045,
-    "Text": "Du hast den Gr\u00FCndungsantrag der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C unterzeichnet.",
+    "Text": "Du hast den Gr\u00FCndungsantrag der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C unterzeichnet.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -415,7 +415,7 @@
   },
   {
     "RowId": 3046,
-    "Text": "Du hast abgelehnt, den Gr\u00FCndungsantrag der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zu unterzeichnen.",
+    "Text": "Du hast abgelehnt, den Gr\u00FCndungsantrag der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zu unterzeichnen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -433,7 +433,7 @@
   },
   {
     "RowId": 3048,
-    "Text": "Du hast den Gr\u00FCndungsantrag \u003CIf([gstr1==gstr2])\u003Edeiner Freien Ge\u003C-\u003Esell\u003C-\u003Eschaft\u003CElse/\u003Eder Freien Ge\u003C-\u003Esell\u003C-\u003Eschaft von \u003Cif([gstr1==gstr2],\u003Cswitch(3,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E)\u003E\u003C/If\u003E vernichtet.",
+    "Text": "Du hast den Gr\u00FCndungsantrag \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Edeiner Freien Gesellschaft\u003CElse/\u003Eder Freien Gesellschaft von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E vernichtet.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -451,7 +451,7 @@
   },
   {
     "RowId": 3050,
-    "Text": "Die Bitte um Unterzeichnung des Gr\u00FCndungsantrags der Freien Gesellschaft \u201E\u003CIf([gstr1==gstr3])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum8,\u003Cdenoun(ObjStr,2,gnum8,1,3,1)\u003E,gstr3)\u003E\u003C/If\u003E\u201C wurde zur\u00FCckgezogen.",
+    "Text": "Die Bitte um Unterzeichnung des Gr\u00FCndungsantrags der Freien Gesellschaft \u201E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,3,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u201C wurde zur\u00FCckgezogen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -478,7 +478,7 @@
   },
   {
     "RowId": 3053,
-    "Text": "Du wurdest gebeten, den Antrag zur Gr\u00FCndung der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zu unterzeichnen.",
+    "Text": "Du wurdest gebeten, den Antrag zur Gr\u00FCndung der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zu unterzeichnen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -487,7 +487,7 @@
   },
   {
     "RowId": 3054,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Gr\u00FCndungsantrag der Freien Gesellschaft unterzeichnet.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Gr\u00FCndungsantrag der Freien Gesellschaft unterzeichnet.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -496,7 +496,7 @@
   },
   {
     "RowId": 3055,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E es abgelehnt, den Gr\u00FCndungsantrag der Freien Gesellschaft zu unterzeichnen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E es abgelehnt, den Gr\u00FCndungsantrag der Freien Gesellschaft zu unterzeichnen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 3056,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Unterschrift f\u00FCr den Gr\u00FCndungsantrag zur\u00FCckgezogen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Unterschrift f\u00FCr den Gr\u00FCndungsantrag zur\u00FCckgezogen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -550,7 +550,7 @@
   },
   {
     "RowId": 3061,
-    "Text": "Die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde hiermit gegr\u00FCndet.",
+    "Text": "Die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde hiermit gegr\u00FCndet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -559,7 +559,7 @@
   },
   {
     "RowId": 3062,
-    "Text": "Du hast den Namen der Freien Gesellschaft in \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "Du hast den Namen der Freien Gesellschaft in \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -568,7 +568,7 @@
   },
   {
     "RowId": 3063,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen der Freien Gesellschaft in \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen der Freien Gesellschaft in \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -604,7 +604,7 @@
   },
   {
     "RowId": 3067,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Gr\u00FCndungsantrag der Freien Gesellschaft zur\u00FCckgezogen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Gr\u00FCndungsantrag der Freien Gesellschaft zur\u00FCckgezogen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -613,7 +613,7 @@
   },
   {
     "RowId": 3068,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(3,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E wurde der Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zugewiesen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E wurde der Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zugewiesen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -622,7 +622,7 @@
   },
   {
     "RowId": 3069,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(3,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E wurden die Rechte des Meisters \u00FCbertragen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E wurden die Rechte des Meisters \u00FCbertragen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -631,7 +631,7 @@
   },
   {
     "RowId": 3070,
-    "Text": "Die Einstellungen des Ranges \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurden ge\u00E4ndert.",
+    "Text": "Die Einstellungen des Ranges \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurden ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -640,7 +640,7 @@
   },
   {
     "RowId": 3071,
-    "Text": "Der Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde hinzugef\u00FCgt.",
+    "Text": "Der Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde hinzugef\u00FCgt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 3072,
-    "Text": "Der Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C wurde entfernt.",
+    "Text": "Der Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C wurde entfernt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -667,7 +667,7 @@
   },
   {
     "RowId": 3074,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E nun den Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C inne.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E nun den Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C inne.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -676,7 +676,7 @@
   },
   {
     "RowId": 3075,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E nun den Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C inne.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E nun den Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C inne.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -685,7 +685,7 @@
   },
   {
     "RowId": 3076,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Einstellungen des Ranges \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Einstellungen des Ranges \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -694,7 +694,7 @@
   },
   {
     "RowId": 3077,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C hinzugef\u00FCgt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C hinzugef\u00FCgt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -703,7 +703,7 @@
   },
   {
     "RowId": 3078,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C entfernt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C entfernt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -721,7 +721,7 @@
   },
   {
     "RowId": 3080,
-    "Text": "Der Rang wurde in \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C umbenannt.",
+    "Text": "Der Rang wurde in \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C umbenannt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -748,7 +748,7 @@
   },
   {
     "RowId": 3083,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Anschlagbrett der Freien Gesellschaft aktualisiert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Anschlagbrett der Freien Gesellschaft aktualisiert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -757,7 +757,7 @@
   },
   {
     "RowId": 3084,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Memos aktualisiert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E die Memos aktualisiert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -766,7 +766,7 @@
   },
   {
     "RowId": 3085,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast dich\u003CElse/\u003Ehat sich\u003C/If\u003E eingeloggt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast dich\u003CElse/\u003Ehat sich\u003C/If\u003E eingeloggt.",
     "LogKind": 70,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -775,7 +775,7 @@
   },
   {
     "RowId": 3086,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast dich\u003CElse/\u003Ehat sich\u003C/If\u003E ausgeloggt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast dich\u003CElse/\u003Ehat sich\u003C/If\u003E ausgeloggt.",
     "LogKind": 70,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -784,7 +784,7 @@
   },
   {
     "RowId": 3087,
-    "Text": "Anschlagbrett der Freien Gesellschaft: \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C",
+    "Text": "Anschlagbrett der Freien Gesellschaft: \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -793,7 +793,7 @@
   },
   {
     "RowId": 3088,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen des Ranges zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E den Namen des Ranges zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1108,7 +1108,7 @@
   },
   {
     "RowId": 3123,
-    "Text": "Der Rang der Freien Gesellschaft ist auf \u003CNum\u003Elnum1\u003C/Num\u003E gestiegen! ",
+    "Text": "Der Rang der Freien Gesellschaft ist auf \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E gestiegen! ",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 3124,
-    "Text": "Du hast das Recht \u201E\u003Csheet(FCRights,lnum1,0)\u003E\u201C erhalten.",
+    "Text": "Du hast das Recht \u201E\u003Csheet(FCRights,IntegerParameter(1),0)\u003E\u201C erhalten.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1126,7 +1126,7 @@
   },
   {
     "RowId": 3125,
-    "Text": "Das Verh\u00E4ltnis der Freien Gesellschaft \u003Csheet(GrandCompany,lnum1,8,1)\u003E hat sich auf \u201E\u003Csheet(FCReputation,lnum2,4)\u003E\u201C verbessert.",
+    "Text": "Das Verh\u00E4ltnis der Freien Gesellschaft \u003Csheet(GrandCompany,IntegerParameter(1),8,1)\u003E hat sich auf \u201E\u003Csheet(FCReputation,IntegerParameter(2),4)\u003E\u201C verbessert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1135,7 +1135,7 @@
   },
   {
     "RowId": 3126,
-    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C wurde eingesetzt!",
+    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C wurde eingesetzt!",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 1,
@@ -1144,7 +1144,7 @@
   },
   {
     "RowId": 3127,
-    "Text": "Die Wirkung des Gesellschaftskommandos \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C hat geendet.",
+    "Text": "Die Wirkung des Gesellschaftskommandos \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C hat geendet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1153,7 +1153,7 @@
   },
   {
     "RowId": 3128,
-    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C verwendet.",
+    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C verwendet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1162,7 +1162,7 @@
   },
   {
     "RowId": 3129,
-    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum2,0)\u003E\u201C wurde verwendet.",
+    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(2),0)\u003E\u201C wurde verwendet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1171,7 +1171,7 @@
   },
   {
     "RowId": 3130,
-    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C wurde beendet.",
+    "Text": "Das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C wurde beendet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1180,7 +1180,7 @@
   },
   {
     "RowId": 3131,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum2,0)\u003E\u201C abgebrochen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(2),0)\u003E\u201C abgebrochen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1189,7 +1189,7 @@
   },
   {
     "RowId": 3132,
-    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C erhalten.",
+    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C erhalten.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1198,7 +1198,7 @@
   },
   {
     "RowId": 3133,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum2,0)\u003E\u201C erhalten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(2),0)\u003E\u201C erhalten.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1207,7 +1207,7 @@
   },
   {
     "RowId": 3134,
-    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum1,0)\u003E\u201C verworfen.",
+    "Text": "Du hast das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(1),0)\u003E\u201C verworfen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1216,7 +1216,7 @@
   },
   {
     "RowId": 3135,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,lnum2,0)\u003E\u201C verworfen.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftskommando \u201E\u003Csheet(CompanyAction,IntegerParameter(2),0)\u003E\u201C verworfen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1225,7 +1225,7 @@
   },
   {
     "RowId": 3136,
-    "Text": "Du hast das K\u00FCrzel der Freien Gesellschaft zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "Du hast das K\u00FCrzel der Freien Gesellschaft zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1234,7 +1234,7 @@
   },
   {
     "RowId": 3137,
-    "Text": "Das K\u00FCrzel der Freien Gesellschaft wurde zu \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C ge\u00E4ndert.",
+    "Text": "Das K\u00FCrzel der Freien Gesellschaft wurde zu \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C ge\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1252,7 +1252,7 @@
   },
   {
     "RowId": 3139,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftswappen ver\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Gesellschaftswappen ver\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1288,7 +1288,7 @@
   },
   {
     "RowId": 3143,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Profil der Freien Gesellschaft ver\u00E4ndert.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Profil der Freien Gesellschaft ver\u00E4ndert.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1297,7 +1297,7 @@
   },
   {
     "RowId": 3144,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E in den Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C erhoben.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewurdest\u003CElse/\u003Ewurde\u003C/If\u003E in den Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C erhoben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1378,7 +1378,7 @@
   },
   {
     "RowId": 3153,
-    "Text": "Du hast ein Beitrittsgesuch an die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C geschickt.",
+    "Text": "Du hast ein Beitrittsgesuch an die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C geschickt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1387,7 +1387,7 @@
   },
   {
     "RowId": 3154,
-    "Text": "Ein Beitrittsgesuch von \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E\u003C/If\u003E ist eingetroffen.",
+    "Text": "Ein Beitrittsgesuch von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E ist eingetroffen.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1396,7 +1396,7 @@
   },
   {
     "RowId": 3155,
-    "Text": "Ein Beitrittsgesuch von \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E\u003C/If\u003E ist eingetroffen.",
+    "Text": "Ein Beitrittsgesuch von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E ist eingetroffen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1414,7 +1414,7 @@
   },
   {
     "RowId": 3157,
-    "Text": "Die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C hat dein Beitrittsgesuch abgelehnt.",
+    "Text": "Die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C hat dein Beitrittsgesuch abgelehnt.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1423,7 +1423,7 @@
   },
   {
     "RowId": 3158,
-    "Text": "Bei der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C sind zu viele Beitrittsgesuche eingegangen. Dein Gesuch konnte deshalb nicht angenommen werden.",
+    "Text": "Bei der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C sind zu viele Beitrittsgesuche eingegangen. Dein Gesuch konnte deshalb nicht angenommen werden.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1504,7 +1504,7 @@
   },
   {
     "RowId": 3167,
-    "Text": "Du hast dein Beitrittsgesuch an die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zur\u00FCckgezogen.",
+    "Text": "Du hast dein Beitrittsgesuch an die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zur\u00FCckgezogen.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 3168,
-    "Text": "\u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E hat \u003CIf(gnum4)\u003Eihr\u003CElse/\u003Esein\u003C/If\u003E Beitrittsgesuch zur\u00FCckgezogen.",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E hat \u003CIf(PlayerParameter(4))\u003Eihr\u003CElse/\u003Esein\u003C/If\u003E Beitrittsgesuch zur\u00FCckgezogen.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1522,7 +1522,7 @@
   },
   {
     "RowId": 3169,
-    "Text": "\u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E hat \u003CIf(gnum4)\u003Eihr\u003CElse/\u003Esein\u003C/If\u003E Beitrittsgesuch zur\u00FCckgezogen.",
+    "Text": "\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E hat \u003CIf(PlayerParameter(4))\u003Eihr\u003CElse/\u003Esein\u003C/If\u003E Beitrittsgesuch zur\u00FCckgezogen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1531,7 +1531,7 @@
   },
   {
     "RowId": 3170,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C beigetreten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C beigetreten.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1540,7 +1540,7 @@
   },
   {
     "RowId": 3171,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E der Freien Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C beigetreten.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E der Freien Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C beigetreten.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1549,7 +1549,7 @@
   },
   {
     "RowId": 3172,
-    "Text": "Die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C hat dein Beitrittsgesuch akzeptiert.",
+    "Text": "Die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C hat dein Beitrittsgesuch akzeptiert.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1558,7 +1558,7 @@
   },
   {
     "RowId": 3173,
-    "Text": "Das Beitrittsgesuch von \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E\u003C/If\u003E wurde abgelehnt.",
+    "Text": "Das Beitrittsgesuch von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E wurde abgelehnt.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1567,7 +1567,7 @@
   },
   {
     "RowId": 3174,
-    "Text": "Das Beitrittsgesuch von \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,3,1)\u003E,gstr2)\u003E\u003C/If\u003E wurde abgelehnt.",
+    "Text": "Das Beitrittsgesuch von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E wurde abgelehnt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1576,7 +1576,7 @@
   },
   {
     "RowId": 3175,
-    "Text": "Die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C hat dein Beitrittsgesuch abgelehnt.",
+    "Text": "Die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C hat dein Beitrittsgesuch abgelehnt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1603,7 +1603,7 @@
   },
   {
     "RowId": 3178,
-    "Text": "Dein Beitrittsgesuch konnte nicht bearbeitet werden, weil sich die Freie Gesellschaft \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C aufgel\u00F6st hat.",
+    "Text": "Dein Beitrittsgesuch konnte nicht bearbeitet werden, weil sich die Freie Gesellschaft \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C aufgel\u00F6st hat.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1612,7 +1612,7 @@
   },
   {
     "RowId": 3179,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E kann nicht eingeladen werden, da \u003CIf(gnum4)\u003Esie\u003CElse/\u003Eer\u003C/If\u003E auf Aufnahme in eine andere Freie Gesellschaft wartet.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E kann nicht eingeladen werden, da \u003CIf(PlayerParameter(4))\u003Esie\u003CElse/\u003Eer\u003C/If\u003E auf Aufnahme in eine andere Freie Gesellschaft wartet.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -1756,7 +1756,7 @@
   },
   {
     "RowId": 3195,
-    "Text": "Da \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E nicht anwesend ist, wurde dir der Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zugewiesen.",
+    "Text": "Da \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E nicht anwesend ist, wurde dir der Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zugewiesen.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 3196,
-    "Text": "Da \u003CIf(gnum7)\u003E\u003Csheet(ObjStr,gnum7,0)\u003E\u003CElse/\u003Egstr2\u003C/If\u003E nicht anwesend ist, wurde dir der Rang \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C zugewiesen.",
+    "Text": "Da \u003CIf(PlayerParameter(7))\u003E\u003Csheet(ObjStr,PlayerParameter(7),0)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E nicht anwesend ist, wurde dir der Rang \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C zugewiesen.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -1774,7 +1774,7 @@
   },
   {
     "RowId": 3197,
-    "Text": "Da \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E nicht anwesend \u003CIf([gstr1==gstr2])\u003Ewarst\u003CElse/\u003Eist\u003C/If\u003E, wurden die Rechte als \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C weitergegeben.",
+    "Text": "Da \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E nicht anwesend \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewarst\u003CElse/\u003Eist\u003C/If\u003E, wurden die Rechte als \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C weitergegeben.",
     "LogKind": 57,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -1783,7 +1783,7 @@
   },
   {
     "RowId": 3198,
-    "Text": "Da \u003CIf([gstr1==gstr2])\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E\u003C/If\u003E nicht anwesend \u003CIf([gstr1==gstr2])\u003Ewarst\u003CElse/\u003Eist\u003C/If\u003E, wurden die Rechte als \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C weitergegeben.",
+    "Text": "Da \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E nicht anwesend \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ewarst\u003CElse/\u003Eist\u003C/If\u003E, wurden die Rechte als \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C weitergegeben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -2071,7 +2071,7 @@
   },
   {
     "RowId": 3230,
-    "Text": "Die Verbundenheit ist auf \u201E\u003Csheet(BeastReputationRank,lnum1,1)\u003E\u201C gewachsen.",
+    "Text": "Die Verbundenheit ist auf \u201E\u003Csheet(BeastReputationRank,IntegerParameter(1),1)\u003E\u201C gewachsen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2080,7 +2080,7 @@
   },
   {
     "RowId": 3231,
-    "Text": "Die Verbundenheit zwischen dir und \u003Cdenoun(BeastTribe,2,lnum1,2,3,1)\u003E ist um \u003CNum\u003Elnum2\u003C/Num\u003E gestiegen.",
+    "Text": "Die Verbundenheit zwischen dir und \u003Cdenoun(BeastTribe,2,IntegerParameter(1),2,3,1)\u003E ist um \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E gestiegen.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2089,7 +2089,7 @@
   },
   {
     "RowId": 3232,
-    "Text": "Die Verbundenheit zwischen dir und \u003Cdenoun(BeastTribe,2,lnum1,2,3,1)\u003E ist bereits maximal.",
+    "Text": "Die Verbundenheit zwischen dir und \u003Cdenoun(BeastTribe,2,IntegerParameter(1),2,3,1)\u003E ist bereits maximal.",
     "LogKind": 60,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2107,7 +2107,7 @@
   },
   {
     "RowId": 3234,
-    "Text": "Du erm\u00FCdest und l\u00E4sst \u003Cdenoun(EObj,2,lnum1,1,4,1)\u003E fallen.",
+    "Text": "Du erm\u00FCdest und l\u00E4sst \u003Cdenoun(EObj,2,IntegerParameter(1),1,4,1)\u003E fallen.",
     "LogKind": 57,
     "Unknown0": 17,
     "Unknown1": 0,
@@ -2188,7 +2188,7 @@
   },
   {
     "RowId": 3243,
-    "Text": "Stufe als Postbot\u003CIf(gnum4)\u003Ein\u003CElse/\u003Ee\u003C/If\u003E gestiegen ...?",
+    "Text": "Stufe als Postbot\u003CIf(PlayerParameter(4))\u003Ein\u003CElse/\u003Ee\u003C/If\u003E gestiegen ...?",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -2197,7 +2197,7 @@
   },
   {
     "RowId": 3244,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Eerh\u00E4ltst\u003CElse/\u003Eerh\u00E4lt\u003C/If\u003E \u003CNum\u003Elnum2\u003C/Num\u003E Sollpunkt\u003CIf([lnum2==1])\u003E \u003CElse/\u003Ee\u003C/If\u003E f\u00FCr die Ablieferung von \u003CIf([lnum3==1])\u003Eeinem\u003CElse/\u003E\u003Cnum(lnum3)\u003E\u003C/If\u003E Exemplar\u003CIf([lnum3==1])\u003E \u003CElse/\u003Een\u003C/If\u003E des Gegenstands \u003Cdenoun(Item,5,lnum1,1,1,1)\u003E.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eerh\u00E4ltst\u003CElse/\u003Eerh\u00E4lt\u003C/If\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E Sollpunkt\u003CIf(Equal(IntegerParameter(2),1))\u003E \u003CElse/\u003Ee\u003C/If\u003E f\u00FCr die Ablieferung von \u003CIf(Equal(IntegerParameter(3),1))\u003Eeinem\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E Exemplar\u003CIf(Equal(IntegerParameter(3),1))\u003E \u003CElse/\u003Een\u003C/If\u003E des Gegenstands \u003Cdenoun(Item,5,IntegerParameter(1),1,1,1)\u003E.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3151,7 +3151,7 @@
   },
   {
     "RowId": 3350,
-    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E - \u003CNum\u003Elnum3\u003C/Num\u003E wurde erworben.",
+    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde erworben.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3160,7 +3160,7 @@
   },
   {
     "RowId": 3351,
-    "Text": "Du hast das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E - \u003CNum\u003Elnum3\u003C/Num\u003E aufgegeben.",
+    "Text": "Du hast das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E aufgegeben.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3169,7 +3169,7 @@
   },
   {
     "RowId": 3352,
-    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E - \u003CNum\u003Elnum3\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
+    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3178,7 +3178,7 @@
   },
   {
     "RowId": 3353,
-    "Text": "Auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E - \u003CNum\u003Elnum3\u003C/Num\u003E wurde ein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,lnum4,0)\u003E\u201C errichtet.",
+    "Text": "Auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde ein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,IntegerParameter(4),0)\u003E\u201C errichtet.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3187,7 +3187,7 @@
   },
   {
     "RowId": 3354,
-    "Text": "Das Geb\u00E4ude \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurde entfernt.",
+    "Text": "Das Geb\u00E4ude \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde entfernt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3241,7 +3241,7 @@
   },
   {
     "RowId": 3360,
-    "Text": "Du hast das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E f\u00FCr die Freie Gesellschaft erworben.",
+    "Text": "Du hast das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E f\u00FCr die Freie Gesellschaft erworben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3250,7 +3250,7 @@
   },
   {
     "RowId": 3361,
-    "Text": "Du hast das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E aufgegeben.",
+    "Text": "Du hast das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E aufgegeben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3259,7 +3259,7 @@
   },
   {
     "RowId": 3362,
-    "Text": "Das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E \u003CNum\u003Elnum2\u003C/Num\u003E - \u003CNum\u003Elnum3\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
+    "Text": "Das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3268,7 +3268,7 @@
   },
   {
     "RowId": 3363,
-    "Text": "Du hast auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E ein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,lnum4,0)\u003E\u201C errichtet.",
+    "Text": "Du hast auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E ein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,IntegerParameter(4),0)\u003E\u201C errichtet.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3277,7 +3277,7 @@
   },
   {
     "RowId": 3364,
-    "Text": "Das Geb\u00E4ude \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C der Freien Gesellschaft wurde entfernt.",
+    "Text": "Das Geb\u00E4ude \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C der Freien Gesellschaft wurde entfernt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3286,7 +3286,7 @@
   },
   {
     "RowId": 3365,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E erworben.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E erworben.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3295,7 +3295,7 @@
   },
   {
     "RowId": 3366,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E aufgegeben.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E aufgegeben.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3304,7 +3304,7 @@
   },
   {
     "RowId": 3367,
-    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
+    "Text": "Das Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3313,7 +3313,7 @@
   },
   {
     "RowId": 3368,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E auf dem Grundst\u00FCck \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E \u003CIf([lnum4==262148])\u003Eein \u003CElse/\u003E\u003Cif([lnum4==262149],ein ,\u003Cif([lnum4==262150],ein ,\u003Cif([lnum4==262157],ein ,\u003Cif([lnum4==262158],ein ,\u003Cif([lnum4==262159],ein ,\u003Cif([lnum4==262166],ein ,\u003Cif([lnum4==262167],ein ,\u003Cif([lnum4==262168],ein ,eine )\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E)\u003E\u003Csheet(HousingPreset,lnum4,0)\u003E\u003C/If\u003E errichtet.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E auf dem Grundst\u00FCck \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(4),262148))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262149))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262150))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262157))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262158))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262159))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262166))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262167))\u003Eein \u003CElse/\u003E\u003CIf(Equal(IntegerParameter(4),262168))\u003Eein \u003CElse/\u003Eeine \u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E\u003Csheet(HousingPreset,IntegerParameter(4),0)\u003E\u003C/If\u003E errichtet.",
     "LogKind": 69,
     "Unknown0": 32,
     "Unknown1": 0,
@@ -3322,7 +3322,7 @@
   },
   {
     "RowId": 3369,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C entfernt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C entfernt.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3331,7 +3331,7 @@
   },
   {
     "RowId": 3370,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E ein Grundst\u00FCck f\u00FCr die Freie Gesellschaft erworben.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E ein Grundst\u00FCck f\u00FCr die Freie Gesellschaft erworben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3340,7 +3340,7 @@
   },
   {
     "RowId": 3371,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E aufgegeben.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E aufgegeben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3349,7 +3349,7 @@
   },
   {
     "RowId": 3372,
-    "Text": "Das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
+    "Text": "Das Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E wurde automatisch zur\u00FCckgegeben.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3358,7 +3358,7 @@
   },
   {
     "RowId": 3373,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,lnum1,8,2)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk - \u003CNum\u003Elnum3\u003C/Num\u003E\nein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,lnum4,0)\u003E\u201C errichtet.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E auf dem Grundst\u00FCck der Freien Gesellschaft \u003Csheet(PlaceName,IntegerParameter(1),8,2)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk - \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\nein Geb\u00E4ude vom Typ \u201E\u003Csheet(HousingPreset,IntegerParameter(4),0)\u003E\u201C errichtet.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3367,7 +3367,7 @@
   },
   {
     "RowId": 3374,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E \u003CIf([gstr1==gstr2])\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Geb\u00E4ude \u201E\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E\u201C der Freien Gesellschaft entfernt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E das Geb\u00E4ude \u201E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u201C der Freien Gesellschaft entfernt.",
     "LogKind": 69,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3412,7 +3412,7 @@
   },
   {
     "RowId": 3379,
-    "Text": "Du hast \u003Csheet(PlaceName,lnum1,8,3)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, betreten.",
+    "Text": "Du hast \u003Csheet(PlaceName,IntegerParameter(1),8,3)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, betreten.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3421,7 +3421,7 @@
   },
   {
     "RowId": 3380,
-    "Text": "Das Geb\u00E4ude wurde in \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C umbenannt.",
+    "Text": "Das Geb\u00E4ude wurde in \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C umbenannt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3439,7 +3439,7 @@
   },
   {
     "RowId": 3382,
-    "Text": "Die Au\u00DFenelemente von \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurden ge\u00E4ndert.",
+    "Text": "Die Au\u00DFenelemente von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurden ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3448,7 +3448,7 @@
   },
   {
     "RowId": 3383,
-    "Text": "Die Innenelemente von \u201E\u003CString\u003Elstr1\u003C/String\u003E\u201C wurden ge\u00E4ndert.",
+    "Text": "Die Innenelemente von \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurden ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3511,7 +3511,7 @@
   },
   {
     "RowId": 3390,
-    "Text": "Du hast kein Element der Kategorie \u201E\u003Csheet(Addon,lnum1,0)\u003E\u201C.",
+    "Text": "Du hast kein Element der Kategorie \u201E\u003Csheet(Addon,IntegerParameter(1),0)\u003E\u201C.",
     "LogKind": 60,
     "Unknown0": 8,
     "Unknown1": 0,
@@ -3610,7 +3610,7 @@
   },
   {
     "RowId": 3401,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E teilt bereits mit \u003CNum\u003Elnum1\u003C/Num\u003E anderen eine Unterkunft,\ndaher kannst du diesen Charakter nicht als Mitbewohner festlegen.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E teilt bereits mit \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E anderen eine Unterkunft,\ndaher kannst du diesen Charakter nicht als Mitbewohner festlegen.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3673,7 +3673,7 @@
   },
   {
     "RowId": 3408,
-    "Text": "Du wurdest von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E zum Mitbewohner gemacht.",
+    "Text": "Du wurdest von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E zum Mitbewohner gemacht.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3682,7 +3682,7 @@
   },
   {
     "RowId": 3409,
-    "Text": "Die Rechte von \u003CIf([gstr1==gstr3])\u003Edir\u003CElse/\u003E\u003Cif(gnum8,\u003Csheet(ObjStr,gnum8,0)\u003E,gstr3)\u003E\u003C/If\u003E an der Unterkunft wurden ver\u00E4ndert.",
+    "Text": "Die Rechte von \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Edir\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E an der Unterkunft wurden ver\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3691,7 +3691,7 @@
   },
   {
     "RowId": 3410,
-    "Text": "Du und \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E seid keine Mitbewohner mehr.",
+    "Text": "Du und \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E seid keine Mitbewohner mehr.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 1,
@@ -3700,7 +3700,7 @@
   },
   {
     "RowId": 3411,
-    "Text": "Du bist nicht mehr mit \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E befreundet, deshalb k\u00F6nnt ihr keine Wohngemeinschaft bilden.",
+    "Text": "Du bist nicht mehr mit \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E befreundet, deshalb k\u00F6nnt ihr keine Wohngemeinschaft bilden.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 3413,
-    "Text": "Die Rechte von \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E wurden ver\u00E4ndert.",
+    "Text": "Die Rechte von \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E wurden ver\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3727,7 +3727,7 @@
   },
   {
     "RowId": 3414,
-    "Text": "Du hast \u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E zum Mitbewohner gemacht.",
+    "Text": "Du hast \u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E zum Mitbewohner gemacht.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3736,7 +3736,7 @@
   },
   {
     "RowId": 3415,
-    "Text": "\u003CIf(gnum8)\u003E\u003Csheet(ObjStr,gnum8,0)\u003E\u003CElse/\u003Egstr3\u003C/If\u003E ist im Chocobo-Stall der Unterkunft deines Mitbewohners untergebracht.",
+    "Text": "\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E ist im Chocobo-Stall der Unterkunft deines Mitbewohners untergebracht.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -3871,7 +3871,7 @@
   },
   {
     "RowId": 3430,
-    "Text": "Die \u003Csheet(Item,lnum1,9)\u003E wurde deinem Orchestrion hinzugef\u00FCgt.",
+    "Text": "Die \u003Csheet(Item,IntegerParameter(1),9)\u003E wurde deinem Orchestrion hinzugef\u00FCgt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3898,7 +3898,7 @@
   },
   {
     "RowId": 3433,
-    "Text": "\u201E\u003Csheet(Orchestrion,lnum1,0)\u003E\u201C wird nun wiedergegeben.",
+    "Text": "\u201E\u003Csheet(Orchestrion,IntegerParameter(1),0)\u003E\u201C wird nun wiedergegeben.",
     "LogKind": 76,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -3907,7 +3907,7 @@
   },
   {
     "RowId": 3434,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E hat eingestellt, dass \u201E\u003Csheet(Orchestrion,lnum2,0)\u003E\u201C wiedergegeben wird.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E hat eingestellt, dass \u201E\u003Csheet(Orchestrion,IntegerParameter(2),0)\u003E\u201C wiedergegeben wird.",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3916,7 +3916,7 @@
   },
   {
     "RowId": 3435,
-    "Text": "Die Wiedergabe von \u201E\u003Csheet(Orchestrion,lnum1,0)\u003E\u201C wurde angehalten.",
+    "Text": "Die Wiedergabe von \u201E\u003Csheet(Orchestrion,IntegerParameter(1),0)\u003E\u201C wurde angehalten.",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3925,7 +3925,7 @@
   },
   {
     "RowId": 3436,
-    "Text": "\u003CPcName\u003Elnum1\u003C/PcName\u003E hat die Wiedergabe von \u201E\u003Csheet(Orchestrion,lnum2,0)\u003E\u201C angehalten.",
+    "Text": "\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E hat die Wiedergabe von \u201E\u003Csheet(Orchestrion,IntegerParameter(2),0)\u003E\u201C angehalten.",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -3952,7 +3952,7 @@
   },
   {
     "RowId": 3439,
-    "Text": "Eine Vorschau auf \u201E\u003Csheet(Orchestrion,lnum1,0)\u003E\u201C wird nun wiedergegeben.",
+    "Text": "Eine Vorschau auf \u201E\u003Csheet(Orchestrion,IntegerParameter(1),0)\u003E\u201C wird nun wiedergegeben.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4060,7 +4060,7 @@
   },
   {
     "RowId": 3451,
-    "Text": "Du hast \u003Cdenoun(Item,2,lnum1,1,4,1)\u003E in die Vase gestellt.",
+    "Text": "Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E in die Vase gestellt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4168,7 +4168,7 @@
   },
   {
     "RowId": 3463,
-    "Text": "\u201E\u003Csheet(Orchestrion,lnum2,0)\u003E\u201C wird nun\u003Cswitch(lnum1, als erster Titel in der Liste, als zuf\u00E4lliger Titel,)\u003E wiedergegeben.",
+    "Text": "\u201E\u003Csheet(Orchestrion,IntegerParameter(2),0)\u003E\u201C wird nun\u003Cswitch(IntegerParameter(1), als erster Titel in der Liste, als zuf\u00E4lliger Titel,)\u003E wiedergegeben.",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4177,7 +4177,7 @@
   },
   {
     "RowId": 3464,
-    "Text": "Der Wiedergabemodus wurde zu \u201E\u003Cswitch(lnum1,Alle wiedergeben,Zuf\u00E4llige Wiedergabe,Ein Titel)\u003E\u201C ge\u00E4ndert.",
+    "Text": "Der Wiedergabemodus wurde zu \u201E\u003Cswitch(IntegerParameter(1),Alle wiedergeben,Zuf\u00E4llige Wiedergabe,Ein Titel)\u003E\u201C ge\u00E4ndert.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4213,7 +4213,7 @@
   },
   {
     "RowId": 3468,
-    "Text": "Dieser Fisch kann nicht in das Aquarium gegeben werden, da die Umgebung auf \u201E\u003Cswitch(lnum1,S\u00FC\u00DFwasser,Salzwasser)\u003E\u201C gestellt ist.",
+    "Text": "Dieser Fisch kann nicht in das Aquarium gegeben werden, da die Umgebung auf \u201E\u003Cswitch(IntegerParameter(1),S\u00FC\u00DFwasser,Salzwasser)\u003E\u201C gestellt ist.",
     "LogKind": 60,
     "Unknown0": 9,
     "Unknown1": 0,
@@ -4240,7 +4240,7 @@
   },
   {
     "RowId": 3471,
-    "Text": "\u003CIf([lnum1==gstr1])\u003EDu hast\u003CElse/\u003E\u003Cpcname(lnum1)\u003E hat\u003C/If\u003E die Wiedergabe von \u201E\u003Csheet(Orchestrion,lnum3,0)\u003E\u201C begonnen. (Modus: \u003Cswitch(lnum2,nacheinander abspielen,in zuf\u00E4lliger Folge abspielen,nur einen Titel abspielen)\u003E)",
+    "Text": "\u003CIf(Equal(IntegerParameter(1),ObjectParameter(1)))\u003EDu hast\u003CElse/\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E hat\u003C/If\u003E die Wiedergabe von \u201E\u003Csheet(Orchestrion,IntegerParameter(3),0)\u003E\u201C begonnen. (Modus: \u003Cswitch(IntegerParameter(2),nacheinander abspielen,in zuf\u00E4lliger Folge abspielen,nur einen Titel abspielen)\u003E)",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4249,7 +4249,7 @@
   },
   {
     "RowId": 3472,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,4,1)\u003E\u003C/Head\u003E wurde eingerahmt.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003C/Head\u003E wurde eingerahmt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4267,7 +4267,7 @@
   },
   {
     "RowId": 3474,
-    "Text": "\u201E\u003Csheet(Orchestrion,lnum1,0)\u003E\u201C wird wiedergegeben.",
+    "Text": "\u201E\u003Csheet(Orchestrion,IntegerParameter(1),0)\u003E\u201C wird wiedergegeben.",
     "LogKind": 76,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4294,7 +4294,7 @@
   },
   {
     "RowId": 3477,
-    "Text": "Du hast das Grundst\u00FCck \u201E\u003Csheet(PlaceName,lnum1,0)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003Elnum3\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
+    "Text": "Du hast das Grundst\u00FCck \u201E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4303,7 +4303,7 @@
   },
   {
     "RowId": 3478,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat das Grundst\u00FCck \u201E\u003Csheet(PlaceName,lnum1,0)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003Elnum3\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat das Grundst\u00FCck \u201E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
     "LogKind": 69,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4312,7 +4312,7 @@
   },
   {
     "RowId": 3479,
-    "Text": "\u003CHead\u003E\u003Cif([gstr1==gstr2],\u003Cswitch(1,du,deiner,dir,dich)\u003E,\u003Cif(gnum7,\u003Cdenoun(ObjStr,2,gnum7,1,1,1)\u003E,gstr2)\u003E)\u003E\u003C/Head\u003E hat das Grundst\u00FCck \u201E\u003Csheet(PlaceName,lnum1,0)\u003E, \u003CNum\u003Elnum2\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003Elnum3\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
+    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E hat das Grundst\u00FCck \u201E\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E, \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E. Bezirk, Hausnummer \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u201C gekauft und das Haus dorthin verlegt.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,
@@ -4384,7 +4384,7 @@
   },
   {
     "RowId": 3487,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E\u003C/Head\u003E wurde im Lagerhaus untergebracht.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E wurde im Lagerhaus untergebracht.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4393,7 +4393,7 @@
   },
   {
     "RowId": 3488,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,lnum1,1,1,1)\u003E\u003C/Head\u003E wurde ins Inventar gelegt.",
+    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E wurde ins Inventar gelegt.",
     "LogKind": 57,
     "Unknown0": 1,
     "Unknown1": 0,
@@ -4420,7 +4420,7 @@
   },
   {
     "RowId": 3491,
-    "Text": "Du wendest das Muster \u003Cdenoun(Item,2,lnum1,1,2,1)\u003E auf das Wandteil an.",
+    "Text": "Du wendest das Muster \u003Cdenoun(Item,2,IntegerParameter(1),1,2,1)\u003E auf das Wandteil an.",
     "LogKind": 57,
     "Unknown0": 33,
     "Unknown1": 0,

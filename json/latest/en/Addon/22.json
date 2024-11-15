@@ -17,7 +17,7 @@
   },
   {
     "RowId": 12214,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12215,
@@ -29,7 +29,7 @@
   },
   {
     "RowId": 12217,
-    "Text": "\u003CIf([lnum1\u003E999])\u003E999\u002B\u003CElse/\u003E\u003Cnum(lnum1)\u003E\u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E/\uE03C\u003Cif([lnum2\u003E999],999\u002B,\u003Cnum(lnum2)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E/\uE03D\u003Cif([lnum3\u003E99],99\u002B,\u003Cnum(lnum3)\u003E)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),999))\u003E999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E/\uE03C\u003CIf(GreaterThan(IntegerParameter(2),999))\u003E999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E/\uE03D\u003CIf(GreaterThan(IntegerParameter(3),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12218,
@@ -57,11 +57,11 @@
   },
   {
     "RowId": 12224,
-    "Text": "Block: \u003CIf([lnum1\u003E0])\u003E \\[1\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \\[2\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum3\u003E0])\u003E \\[3\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum4\u003E0])\u003E \\[4\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum5\u003E0])\u003E \\[5\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum6\u003E0])\u003E \\[Crystals\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum7\u003E0])\u003E \u003Cstring(lstr8)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Block: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E [1]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E [2]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E [3]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E [4]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E [5]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(6),0))\u003E [Crystals]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(7),0))\u003E \u003CString\u003EStringParameter(8)\u003C/String\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12225,
-    "Text": "Bag: \u003CIf([lnum1\u003E0])\u003E \\[1\\]\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E \\[2\\]\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Bag: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E [1]\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E [2]\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12226,
@@ -173,11 +173,11 @@
   },
   {
     "RowId": 12254,
-    "Text": "Save actions to \u201C\u003CString\u003Elstr1\u003C/String\u003E?\u201D "
+    "Text": "Save actions to \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E?\u201D "
   },
   {
     "RowId": 12255,
-    "Text": "Load active set \u201C\u003CString\u003Elstr1\u003C/String\u003E\u201D?"
+    "Text": "Load active set \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D?"
   },
   {
     "RowId": 12256,
@@ -205,11 +205,11 @@
   },
   {
     "RowId": 12262,
-    "Text": "#\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "#\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12263,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12264,
@@ -229,7 +229,7 @@
   },
   {
     "RowId": 12268,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 12269,
@@ -261,11 +261,11 @@
   },
   {
     "RowId": 12276,
-    "Text": "Required to complete the level \u003CNum\u003Elnum1\u003C/Num\u003E blue mage quest, \u201C\u003CString\u003Elstr2\u003C/String\u003E.\u201D"
+    "Text": "Required to complete the level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E blue mage quest, \u201C\u003CString\u003EStringParameter(2)\u003C/String\u003E.\u201D"
   },
   {
     "RowId": 12277,
-    "Text": "\u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E"
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
   },
   {
     "RowId": 12278,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 12373,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12374,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 12375,
-    "Text": "\u003CSetTime\u003Elnum1\u003C/SetTime\u003E\u003CSec\u003Et_mon\u003C/Sec\u003E/\u003CSec\u003Et_day\u003C/Sec\u003E/\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CSec\u003Et_mon\u003C/Sec\u003E/\u003CSec\u003Et_day\u003C/Sec\u003E/\u003CNum\u003Et_year\u003C/Num\u003E"
   },
   {
     "RowId": 12376,
@@ -681,7 +681,7 @@
   },
   {
     "RowId": 12381,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E pts"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E pts"
   },
   {
     "RowId": 12382,
@@ -709,7 +709,7 @@
   },
   {
     "RowId": 12388,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E Wins"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Wins"
   },
   {
     "RowId": 12389,
@@ -857,7 +857,7 @@
   },
   {
     "RowId": 12425,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E points"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E points"
   },
   {
     "RowId": 12426,
@@ -965,7 +965,7 @@
   },
   {
     "RowId": 12452,
-    "Text": "Act \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Act \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12453,
@@ -1009,7 +1009,7 @@
   },
   {
     "RowId": 12463,
-    "Text": "Time Remaining:  \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Em \u003CElse/\u003E\u003Cif([lnum1\u003E0],,less than 1 minute)\u003E\u003C/If\u003E\u003CSetTime\u003Elnum3\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "Time Remaining:  \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em \u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CElse/\u003Eless than 1 minute\u003C/If\u003E\u003C/If\u003E\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
   },
   {
     "RowId": 12464,
@@ -1117,7 +1117,7 @@
   },
   {
     "RowId": 12490,
-    "Text": "Lv. \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "Lv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12491,
@@ -1129,7 +1129,7 @@
   },
   {
     "RowId": 12493,
-    "Text": "\u003CSec\u003Elnum1\u003C/Sec\u003E. \u003Csheet(ContentFinderCondition,lnum2,43)\u003E"
+    "Text": "\u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E. \u003Csheet(ContentFinderCondition,IntegerParameter(2),43)\u003E"
   },
   {
     "RowId": 12494,
@@ -1137,7 +1137,7 @@
   },
   {
     "RowId": 12495,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003Em \u003CSec\u003Elnum2\u003C/Sec\u003Es"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em \u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003Es"
   },
   {
     "RowId": 12496,
@@ -1145,7 +1145,7 @@
   },
   {
     "RowId": 12497,
-    "Text": "x\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "x\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12498,
@@ -1157,7 +1157,7 @@
   },
   {
     "RowId": 12500,
-    "Text": "Time Remaining: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E"
+    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
   },
   {
     "RowId": 12501,
@@ -1213,7 +1213,7 @@
   },
   {
     "RowId": 12514,
-    "Text": "\u003CIf([lnum1==2])\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Ccolortype(514)\u003EData Center Travel System\u003Ccolortype(0)\u003E\u003Cbr\u003EThe Data Center Travel system is an extension of the World Visit system\\, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel\\, including those dictated by the World Visit system.\u003Cbr\u003E\u003Cbr\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Ccolortype(514)\u003EVisiting Other Data Centers\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBUntil you have returned from visiting another data center\\, you may not log in or perform other actions with characters in your Home World.\u003Cbr\u003E\u3000\u30FBYou may only travel to other data centers from your Home World. If you wish to travel to a data center different from the one you are currently visiting\\, you must first return to your Home World and submit a Data Center Visit request from there.\u003Cbr\u003E\u3000\u30FBWhen logging out from another World\\, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout\\, you may be returned after more than 30 days have passed.\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum1\u003C2])\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Ccolortype(514)\u003EWorld Visit System\u003Ccolortype(0)\u003E\u003Cbr\u003EThe World Visit System allows you to travel from \u003Cif([lnum1==0],your Home World,the World you are currently visiting)\u003E to different World servers within the same data center. While visiting different Worlds\\, you may party with friends\\, purchase items\\, tackle duties\\, and more.\u003Cbr\u003E\u003Cbr\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Ccolortype(514)\u003EVisiting Other Worlds\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBDepending on the congestion of the target World\\, travel may take several minutes.\u003Cbr\u003E\u3000\u30FBOnce preparations have been completed\\, travel will occur automatically and cancel all current actions/duties.\u003Cbr\u003E\u3000\u30FBWhen logging out from another World\\, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout\\, you may be returned after more than 30 days have passed.\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003ERestrictions While Visiting \u003CIf([lnum1\u003E0])\u003EOther Data Centers\u003CElse/\u003EOther Worlds\u003C/If\u003E\u003C/span\u003E\n\u003CIf([lnum1==1])\u003EYou are currently outside your Home Data Center. \u003CElse/\u003E \u003C/If\u003EThe following restrictions apply when playing \u003CIf([lnum1\u003E0])\u003Ein another data center\u003CElse/\u003Eon other World servers\u003C/If\u003E:\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003EFriend List\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBFriends in different data centers cannot communicate\u003Cbr\u003E\u3000\u30FBParties cannot be formed with friends in different data centers\u003Cbr\u003E\u3000\u30FBLogin details for friends in different regions cannot be displayed\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFree Companies\u003C/span\u003E\n\u3000\u30FBFree companies cannot be formed or joined\n\u3000\u30FBFree company information cannot be viewed\n\u3000\u30FBCompany credits cannot be earned\n\u3000\u30FBShould the company master spend 35 consecutive days away from their Home World, their rank will be automatically transferred to another member\n\u3000\u30FBLogin details for members in different regions cannot be displayed\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003ECross-world Linkshells\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBCross-world linkshells cannot be created\u003Cbr\u003E\u3000\u30FBCross-world linkshell master privileges cannot be attained\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELinkshells\u003C/span\u003E\n\u3000\u30FBLinkshells cannot be used\n\u3000\u30FBLinkshell information cannot be viewed\n\u3000\u30FBLinkshells cannot be created or joined\n\n\u003CIf([lnum1\u003E0])\u003E\u003Ccolortype(514)\u003EPvP Teams\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBPvP teams cannot be used\u003Cbr\u003E\u3000\u30FBPvP team information cannot be viewed\u003Cbr\u003E\u3000\u30FBPvP teams cannot be created or joined\u003Cbr\u003E\u003Cbr\u003E\u003Ccolortype(514)\u003EFellowships\u003Ccolortype(0)\u003E\u003Cbr\u003E\u3000\u30FBAll functions for fellowships\\, excluding recruitment search\\, are inaccessible\u003Cbr\u003E\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ERetainers\u003C/span\u003E\n\u3000\u30FBRetainers cannot be summoned, hired, or released from service\n\u3000\u30FBItems cannot be put up to market (but can be purchased)\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EHousing\u003C/span\u003E\n\u3000\u30FBLand and apartments cannot be purchased\n\u3000\u30FBResidence sharing is unavailable\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EEternal Bonding\u003C/span\u003E\n\u3000\u30FBCeremonies of Eternal Bonding are unavailable\n\u3000\u30FBEternal Bonding quests are unavailable\n\u3000\u30FBOthers\u0027 ceremonies cannot be attended\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EDuties/Features\u003C/span\u003E\n\u003CIf([lnum1\u003E0])\u003E\u3000\u30FBCrystalline Conflict ranked matches cannot be entered\u003Cbr\u003E\u003CElse/\u003E \u003C/If\u003E\u3000\u30FBLord of Verminion tournaments cannot be entered\n\u3000\u30FBTriple Triad tournaments cannot be entered\n\u3000\u30FBCactpot tickets cannot be purchased\n\u3000\u30FBThe Moogle Delivery Service is unavailable\n\u3000\u30FBDeep Dungeon results will not be saved to the leaderboards\n\u3000\u30FBFriendship circlet and eternal bonding teleportation is\n\u3000\u3000available only if both parties are on the same World\n\u3000\u30FBLegendary and unspoiled gathering nodes are inaccessible\n"
+    "Text": "\u003CIf(Equal(IntegerParameter(1),2))\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003EData Center Travel System\u003C/span\u003E\nThe Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003EVisiting Other Data Centers\u003C/span\u003E\n\u3000\u30FBUntil you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.\n\u3000\u30FBYou may only travel to other data centers from your Home World. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home World and submit a Data Center Visit request from there.\n\u3000\u30FBWhen logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n\u003CElse/\u003E \u003C/If\u003E\u003CIf(LessThan(IntegerParameter(1),2))\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003EWorld Visit System\u003C/span\u003E\nThe World Visit System allows you to travel from \u003CIf(Equal(IntegerParameter(1),0))\u003Eyour Home World\u003CElse/\u003Ethe World you are currently visiting\u003C/If\u003E to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003EVisiting Other Worlds\u003C/span\u003E\n\u3000\u30FBDepending on the congestion of the target World, travel may take several minutes.\n\u3000\u30FBOnce preparations have been completed, travel will occur automatically and cancel all current actions/duties.\n\u3000\u30FBWhen logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n\u003CElse/\u003E \u003C/If\u003E\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u003Cspan style=\u0022color: #e1c500;\u0022\u003ERestrictions While Visiting \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EOther Data Centers\u003CElse/\u003EOther Worlds\u003C/If\u003E\u003C/span\u003E\n\u003CIf(Equal(IntegerParameter(1),1))\u003EYou are currently outside your Home Data Center. \u003CElse/\u003E \u003C/If\u003EThe following restrictions apply when playing \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Ein another data center\u003CElse/\u003Eon other World servers\u003C/If\u003E:\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFriend List\u003C/span\u003E\n\u3000\u30FBFriends in different data centers cannot communicate\n\u3000\u30FBParties cannot be formed with friends in different data centers\n\u3000\u30FBLogin details for friends in different regions cannot be displayed\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFree Companies\u003C/span\u003E\n\u3000\u30FBFree companies cannot be formed or joined\n\u3000\u30FBFree company information cannot be viewed\n\u3000\u30FBCompany credits cannot be earned\n\u3000\u30FBShould the company master spend 35 consecutive days away from their Home World, their rank will be automatically transferred to another member\n\u3000\u30FBLogin details for members in different regions cannot be displayed\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ECross-world Linkshells\u003C/span\u003E\n\u3000\u30FBCross-world linkshells cannot be created\n\u3000\u30FBCross-world linkshell master privileges cannot be attained\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ELinkshells\u003C/span\u003E\n\u3000\u30FBLinkshells cannot be used\n\u3000\u30FBLinkshell information cannot be viewed\n\u3000\u30FBLinkshells cannot be created or joined\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003EPvP Teams\u003C/span\u003E\n\u3000\u30FBPvP teams cannot be used\n\u3000\u30FBPvP team information cannot be viewed\n\u3000\u30FBPvP teams cannot be created or joined\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EFellowships\u003C/span\u003E\n\u3000\u30FBAll functions for fellowships, excluding recruitment search, are inaccessible\n\n\u003CElse/\u003E \u003C/If\u003E\u003Cspan style=\u0022color: #e1c500;\u0022\u003ERetainers\u003C/span\u003E\n\u3000\u30FBRetainers cannot be summoned, hired, or released from service\n\u3000\u30FBItems cannot be put up to market (but can be purchased)\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EHousing\u003C/span\u003E\n\u3000\u30FBLand and apartments cannot be purchased\n\u3000\u30FBResidence sharing is unavailable\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EEternal Bonding\u003C/span\u003E\n\u3000\u30FBCeremonies of Eternal Bonding are unavailable\n\u3000\u30FBEternal Bonding quests are unavailable\n\u3000\u30FBOthers\u0027 ceremonies cannot be attended\n\n\u003Cspan style=\u0022color: #e1c500;\u0022\u003EDuties/Features\u003C/span\u003E\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u3000\u30FBCrystalline Conflict ranked matches cannot be entered\n\u003CElse/\u003E \u003C/If\u003E\u3000\u30FBLord of Verminion tournaments cannot be entered\n\u3000\u30FBTriple Triad tournaments cannot be entered\n\u3000\u30FBCactpot tickets cannot be purchased\n\u3000\u30FBThe Moogle Delivery Service is unavailable\n\u3000\u30FBDeep Dungeon results will not be saved to the leaderboards\n\u3000\u30FBFriendship circlet and eternal bonding teleportation is\n\u3000\u3000available only if both parties are on the same World\n\u3000\u30FBLegendary and unspoiled gathering nodes are inaccessible\n"
   },
   {
     "RowId": 12515,
@@ -1233,7 +1233,7 @@
   },
   {
     "RowId": 12519,
-    "Text": "Travel to \u003CString\u003Elstr1\u003C/String\u003E?"
+    "Text": "Travel to \u003CString\u003EStringParameter(1)\u003C/String\u003E?"
   },
   {
     "RowId": 12520,
@@ -1241,7 +1241,7 @@
   },
   {
     "RowId": 12521,
-    "Text": "Destination: \u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "Destination: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12522,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 12523,
-    "Text": "Time Elapsed: \u003CNum\u003Elnum1\u003C/Num\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E Average Wait Time: "
+    "Text": "Time Elapsed: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E Average Wait Time: "
   },
   {
     "RowId": 12524,
@@ -1261,11 +1261,11 @@
   },
   {
     "RowId": 12526,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12527,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12528,
@@ -1285,23 +1285,23 @@
   },
   {
     "RowId": 12532,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12533,
-    "Text": "More than \u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "More than \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12534,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003Em"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
   },
   {
     "RowId": 12535,
-    "Text": "More than \u003CNum\u003Elnum1\u003C/Num\u003Em"
+    "Text": "More than \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
   },
   {
     "RowId": 12536,
-    "Text": "Less than \u003CNum\u003Elnum1\u003C/Num\u003Em"
+    "Text": "Less than \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
   },
   {
     "RowId": 12537,
@@ -1313,11 +1313,11 @@
   },
   {
     "RowId": 12539,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12540,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E"
   },
   {
     "RowId": 12541,
@@ -1357,7 +1357,7 @@
   },
   {
     "RowId": 12550,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12551,
@@ -1377,7 +1377,7 @@
   },
   {
     "RowId": 12555,
-    "Text": "Time Remaining: \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Em \u003CElse/\u003E\u003Cif([lnum1\u003E0],,less than 1 minute)\u003E\u003C/If\u003E\u003CSetTime\u003Elnum3\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "Time Remaining: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em \u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CElse/\u003Eless than 1 minute\u003C/If\u003E\u003C/If\u003E\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E[\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
   },
   {
     "RowId": 12556,
@@ -1405,7 +1405,7 @@
   },
   {
     "RowId": 12562,
-    "Text": "\u003Cswitch(lnum1,\u003Chead(\u003Csheet(ClassJob,9,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,10,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,11,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,8,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,12,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,13,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,14,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,15,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,16,0)\u003E)\u003E / \u003Chead(\u003Csheet(ClassJob,17,0)\u003E)\u003E,\u003Chead(\u003Csheet(ClassJob,18,0)\u003E)\u003E)\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),\u003CHead\u003E\u003Csheet(ClassJob,9,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,10,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,11,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,8,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,12,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,13,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,14,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,15,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,16,0)\u003E\u003C/Head\u003E / \u003CHead\u003E\u003Csheet(ClassJob,17,0)\u003E\u003C/Head\u003E,\u003CHead\u003E\u003Csheet(ClassJob,18,0)\u003E\u003C/Head\u003E)\u003E"
   },
   {
     "RowId": 12563,
@@ -1417,7 +1417,7 @@
   },
   {
     "RowId": 12565,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E/\uE03C\u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\uE03C\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12566,
@@ -1445,7 +1445,7 @@
   },
   {
     "RowId": 12572,
-    "Text": "\u003Cswitch(lnum1,Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12573,
@@ -1465,7 +1465,7 @@
   },
   {
     "RowId": 12577,
-    "Text": "\u003Cswitch(lnum1,Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)\u003E: \u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003Cswitch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)\u003E: \u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12578,
@@ -1473,7 +1473,7 @@
   },
   {
     "RowId": 12579,
-    "Text": "You are unable to carry any more \u003Cennoun(Item,3,lnum1,2,1)\u003E and will not receive full compensation. Proceed with the transaction?"
+    "Text": "You are unable to carry any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E and will not receive full compensation. Proceed with the transaction?"
   },
   {
     "RowId": 12580,
@@ -1513,7 +1513,7 @@
   },
   {
     "RowId": 12589,
-    "Text": "Selling \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1\u003C=1])\u003Eitem\u003CElse/\u003Eitems\u003C/If\u003E"
+    "Text": "Selling \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Eitem\u003CElse/\u003Eitems\u003C/If\u003E"
   },
   {
     "RowId": 12590,
@@ -1521,7 +1521,7 @@
   },
   {
     "RowId": 12591,
-    "Text": "Complete in \u003CIf([lnum1\u003E0])\u003E\u003Cnum(lnum1)\u003Eh \u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum2\u003E0],\u003Cnum(lnum2)\u003Em,1m)\u003E\u003C/If\u003E"
+    "Text": "Complete in \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Eh \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Em\u003CElse/\u003E1m\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12592,
@@ -1545,7 +1545,7 @@
   },
   {
     "RowId": 12597,
-    "Text": "Selling \u003CNum\u003Elnum1\u003C/Num\u003E \u003CIf([lnum1==1])\u003Eitem\u003CElse/\u003Eitems\u003C/If\u003E until \u003CSetTime\u003Elnum2\u003C/SetTime\u003E\u003CIf([gnum77==3])\u003E\u003Cnum(t_day)\u003E/\u003Cnum(t_mon)\u003E/\u003Cnum(t_year)\u003E\u003CElse/\u003E\u003Cnum(t_mon)\u003E/\u003Cnum(t_day)\u003E/\u003Cnum(t_year)\u003E\u003C/If\u003E"
+    "Text": "Selling \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eitem\u003CElse/\u003Eitems\u003C/If\u003E until \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E"
   },
   {
     "RowId": 12598,
@@ -1553,11 +1553,11 @@
   },
   {
     "RowId": 12599,
-    "Text": "\u003CIf([lnum1\u003E0])\u003ELv. \u003Cnum(lnum1)\u003E \u003CElse/\u003E \u003C/If\u003E\u003CString\u003Elstr2\u003C/String\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003ELv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CElse/\u003E \u003C/If\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E"
   },
   {
     "RowId": 12600,
-    "Text": "\u003CString\u003Elstr1\u003C/String\u003E (complete in \u003CIf([lnum2\u003E0])\u003E\u003Cnum(lnum2)\u003Eh \u003Cif([lnum3\u003E0],\u003Cnum(lnum3)\u003Em,)\u003E\u003CElse/\u003E\u003Cif([lnum3\u003E0],\u003Cnum(lnum3)\u003Em,1m)\u003E\u003C/If\u003E)"
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (complete in \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Eh \u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em\u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003Em\u003CElse/\u003E1m\u003C/If\u003E\u003C/If\u003E)"
   },
   {
     "RowId": 12601,
@@ -1609,7 +1609,7 @@
   },
   {
     "RowId": 12613,
-    "Text": "Input a new name for \u003CString\u003Elstr1\u003C/String\u003E. Leaving the entry field blank will restore the default set name."
+    "Text": "Input a new name for \u003CString\u003EStringParameter(1)\u003C/String\u003E. Leaving the entry field blank will restore the default set name."
   },
   {
     "RowId": 12614,
@@ -1633,7 +1633,7 @@
   },
   {
     "RowId": 12624,
-    "Text": "Travel to \u003CString\u003Elstr1\u003C/String\u003E?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EPlease be advised you must be playing solo or in a cross-world party for your transfer to be processed.\u003C/span\u003E"
+    "Text": "Travel to \u003CString\u003EStringParameter(1)\u003C/String\u003E?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EPlease be advised you must be playing solo or in a cross-world party for your transfer to be processed.\u003C/span\u003E"
   },
   {
     "RowId": 12625,
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 12634,
-    "Text": "\u003CIf([lnum3\u003E0])\u003E\u003Ckilo(lnum1,\\,)\u003E Gil / \u003Ckilo(lnum2,\\,)\u003E \u003Cif([lnum2==1],Sack,Sacks)\u003E of Nuts / \u003Ckilo(lnum3,\\,)\u003E EXP\u003CElse/\u003E\u003Ckilo(lnum1,\\,)\u003E Gil / \u003Ckilo(lnum2,\\,)\u003E \u003Cif([lnum2==1],Sack,Sacks)\u003E of Nuts\u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003Ckilo(IntegerParameter(1),,)\u003E Gil / \u003Ckilo(IntegerParameter(2),,)\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003ESack\u003CElse/\u003ESacks\u003C/If\u003E of Nuts / \u003Ckilo(IntegerParameter(3),,)\u003E EXP\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),,)\u003E Gil / \u003Ckilo(IntegerParameter(2),,)\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003ESack\u003CElse/\u003ESacks\u003C/If\u003E of Nuts\u003C/If\u003E"
   },
   {
     "RowId": 12635,
@@ -1677,15 +1677,15 @@
   },
   {
     "RowId": 12636,
-    "Text": "\u003Cswitch(lnum1,One-nut Clan Marks,Two-nut Clan Marks,Three-nut Clan Marks,Elite Clan Nutsy Marks)\u003E\uFF08\u003CString\u003Elstr2\u003C/String\u003E\uFF09"
+    "Text": "\u003Cswitch(IntegerParameter(1),One-nut Clan Marks,Two-nut Clan Marks,Three-nut Clan Marks,Elite Clan Nutsy Marks)\u003E\uFF08\u003CString\u003EStringParameter(2)\u003C/String\u003E\uFF09"
   },
   {
     "RowId": 12637,
-    "Text": "\u003Cswitch(lnum1,Level 1 Clan Marks,Level 2 Clan Marks,Level 3 Clan Marks,Elite Clan Marks)\u003E\uFF08\u003CString\u003Elstr2\u003C/String\u003E\uFF09"
+    "Text": "\u003Cswitch(IntegerParameter(1),Level 1 Clan Marks,Level 2 Clan Marks,Level 3 Clan Marks,Elite Clan Marks)\u003E\uFF08\u003CString\u003EStringParameter(2)\u003C/String\u003E\uFF09"
   },
   {
     "RowId": 12638,
-    "Text": "\u003Cswitch(lnum1,Clan Marks,Elite Clan Marks)\u003E\uFF08\u003CString\u003Elstr2\u003C/String\u003E\uFF09"
+    "Text": "\u003Cswitch(IntegerParameter(1),Clan Marks,Elite Clan Marks)\u003E\uFF08\u003CString\u003EStringParameter(2)\u003C/String\u003E\uFF09"
   },
   {
     "RowId": 12639,
@@ -1709,7 +1709,7 @@
   },
   {
     "RowId": 12644,
-    "Text": "\u003Cswitch(lnum1,Junior Guildship Marks,Associate Guildship Marks,Senior Guildship Marks,Elite Guildship Marks)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Junior Guildship Marks,Associate Guildship Marks,Senior Guildship Marks,Elite Guildship Marks)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12645,
@@ -1733,7 +1733,7 @@
   },
   {
     "RowId": 12650,
-    "Text": "\u003Cswitch(lnum1,Beginner Dawn Hunt Marks,Intermediate Dawn Hunt Marks,Advanced Dawn Hunt Marks,Elite Dawn Hunt Marks)\u003E (\u003CString\u003Elstr2\u003C/String\u003E)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Beginner Dawn Hunt Marks,Intermediate Dawn Hunt Marks,Advanced Dawn Hunt Marks,Elite Dawn Hunt Marks)\u003E (\u003CString\u003EStringParameter(2)\u003C/String\u003E)"
   },
   {
     "RowId": 12670,
@@ -1745,11 +1745,11 @@
   },
   {
     "RowId": 12672,
-    "Text": "\u003Cswitch(lnum1,Unspoiled Node,Legendary Node,Ephemeral Node)\u003E\nTime of Appearance (Eorzea Time)"
+    "Text": "\u003Cswitch(IntegerParameter(1),Unspoiled Node,Legendary Node,Ephemeral Node)\u003E\nTime of Appearance (Eorzea Time)"
   },
   {
     "RowId": 12673,
-    "Text": "From \u003CSec\u003Elnum1\u003C/Sec\u003E:\u003CSec\u003Elnum2\u003C/Sec\u003E to \u003CSec\u003Elnum3\u003C/Sec\u003E:\u003CSec\u003Elnum4\u003C/Sec\u003E"
+    "Text": "From \u003CSec\u003EIntegerParameter(1)\u003C/Sec\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E to \u003CSec\u003EIntegerParameter(3)\u003C/Sec\u003E:\u003CSec\u003EIntegerParameter(4)\u003C/Sec\u003E"
   },
   {
     "RowId": 12674,
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 12677,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E\u002B?"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u002B?"
   },
   {
     "RowId": 12678,
@@ -1785,7 +1785,7 @@
   },
   {
     "RowId": 12682,
-    "Text": "Required \u003CHead\u003E\u003Cstring(lstr1)\u003E\u003C/Head\u003E: \u003CNum\u003Elnum2\u003C/Num\u003E"
+    "Text": "Required \u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
   },
   {
     "RowId": 12683,
@@ -1905,7 +1905,7 @@
   },
   {
     "RowId": 12727,
-    "Text": "\u003CIf([lnum1\u003E0])\u003E\uE033Avg. Item Level: \u003Cnum(lnum1)\u003E\u3000\u003CElse/\u003E \u003C/If\u003E\u003CIf([lnum2\u003E0])\u003E\uE0BDItem Level Sync: \u003Cnum(lnum2)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\uE033Avg. Item Level: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u3000\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\uE0BDItem Level Sync: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 12728,
@@ -1961,7 +1961,7 @@
   },
   {
     "RowId": 12742,
-    "Text": "The Home World of \u003CString\u003Elstr1\u003C/String\u003E is on a data center in a region different to you. Send friend request?"
+    "Text": "The Home World of \u003CString\u003EStringParameter(1)\u003C/String\u003E is on a data center in a region different to you. Send friend request?"
   },
   {
     "RowId": 12750,
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 12754,
-    "Text": "\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   },
   {
     "RowId": 12755,
@@ -1997,6 +1997,6 @@
   },
   {
     "RowId": 12758,
-    "Text": "\uE03D\u003CNum\u003Elnum1\u003C/Num\u003E"
+    "Text": "\uE03D\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
   }
 ]
