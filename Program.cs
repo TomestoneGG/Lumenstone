@@ -83,9 +83,9 @@ class Program
             constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
         }
         
-        // ExtractIcons(1, 250000, luminaEN, full);
-        // ExtractMaps(luminaEN, full);
-        // ExtractLoadingImages(luminaEN, full);
+        ExtractIcons(1, 250000, luminaEN, full);
+        ExtractMaps(luminaEN, full);
+        ExtractLoadingImages(luminaEN, full);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
