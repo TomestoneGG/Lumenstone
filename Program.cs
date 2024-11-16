@@ -9,6 +9,7 @@ using Lumina.Data.Files;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
 using Lumina.Text;
+using Lumina.Text.ReadOnly;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing.Processors.Normalization;
@@ -298,12 +299,12 @@ class Program
 
         foreach (var map in sheet) {
             var idProperty = typeof(Map).GetProperty("Id");
-            if (idProperty == null || idProperty.PropertyType != typeof(SeString))
+            if (idProperty == null || idProperty.PropertyType != typeof(ReadOnlySeString))
                 continue;
             var idValue = idProperty.GetValue(map);
             if (idValue == null)
                 continue;
-            var idString = ((SeString)idValue).RawString;
+            var idString = ((ReadOnlySeString)idValue).AsSpan().ToString();
 
             // Assuming idString is in the format "xxx/yyy"
             string[] parts = idString.Split('/');
@@ -336,11 +337,8 @@ class Program
 
                 var image = GetImage(file);
                 image.SaveAsJpeg(outputFilePath);
-            
             }
-
         }
-
     }
 
     private static void ExtractLoadingImages(Lumina.GameData lumina, bool fullImport)
@@ -358,12 +356,12 @@ class Program
 
         foreach (var loadingImage in sheet) {
             var fileName = typeof(LoadingImage).GetProperty("Unknown0");
-            if (fileName == null || fileName.PropertyType != typeof(SeString))
+            if (fileName == null || fileName.PropertyType != typeof(ReadOnlySeString))
                 continue;
             var fileValue = fileName.GetValue(loadingImage);
             if (fileValue == null)
                 continue;
-            var fileString = ((SeString)fileValue).RawString;
+            var fileString = ((ReadOnlySeString)fileValue).AsSpan().ToString();
 
             var outputFilePath = Path.Combine(directoryPath, fileString + ".jpg");
         
