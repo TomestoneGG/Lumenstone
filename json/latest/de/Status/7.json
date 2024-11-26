@@ -1519,7 +1519,7 @@
   {
     "RowId": 3034,
     "Name": "Dunkle K\u00FCnste",
-    "Description": "\u003Cspan style=\u0022color: #40bfff;\u0022\u003EBlutvergie\u00DFen\u003C/span\u003E kann ohne LP-Kosten ausgef\u00FChrt werden.",
+    "Description": "\u003Cspan style=\u0022color: #40bfff;\u0022\u003ESchattenbringer\u003C/span\u003E kann ohne LP-Kosten ausgef\u00FChrt werden.",
     "Icon": 213107,
     "ParamModifier": 0,
     "VFX": null,
@@ -4658,7 +4658,7 @@
   {
     "RowId": 3105,
     "Name": "S\u00E4ule der Herrlichkeit",
-    "Description": "Ausgeteilter Schaden und erhaltene Heileffekte sind erh\u00F6ht.",
+    "Description": "Ausgeteilter Schaden und Wirkung von Heilmagie sind erh\u00F6ht.",
     "Icon": 218327,
     "ParamModifier": 10,
     "VFX": null,
@@ -4702,7 +4702,7 @@
   {
     "RowId": 3106,
     "Name": "Schein der Herrlichkeit",
-    "Description": "Ausgeteilter Schaden und erhaltene Heileffekte sind verringert.",
+    "Description": "Ausgeteilter Schaden und Wirkung von Heilmagie sind verringert.",
     "Icon": 218351,
     "ParamModifier": -10,
     "VFX": null,
@@ -6603,7 +6603,7 @@
   {
     "RowId": 3149,
     "Name": "\u00DCberhitzung",
-    "Description": "\u003Cspan style=\u0022color: #40bfff;\u0022\u003EHitzeschuss\u003C/span\u003E kann ausgef\u00FChrt werden und Bewegungsgeschwindigkeit ist erh\u00F6ht.",
+    "Description": "\u003Cspan style=\u0022color: #40bfff;\u0022\u003EBrandschuss\u003C/span\u003E kann ausgef\u00FChrt werden und Bewegungsgeschwindigkeit ist erh\u00F6ht.",
     "Icon": 214918,
     "ParamModifier": 0,
     "VFX": {
@@ -9707,7 +9707,7 @@
   {
     "RowId": 3219,
     "Name": "Tiefk\u00FChlung",
-    "Description": "In Eis eingeschlossen. Keine Handlungen m\u00F6glich und erleidet schrittweise Schaden.",
+    "Description": "Steif gefroren und handlungsunf\u00E4hig.",
     "Icon": 215637,
     "ParamModifier": 0,
     "VFX": {
@@ -11657,18 +11657,24 @@
   },
   {
     "RowId": 3263,
-    "Name": "",
-    "Description": "",
-    "Icon": 0,
+    "Name": "Krallen des heiligen Drachen",
+    "Description": "Wenn der Z\u00E4hler null erreicht, tritt Kampfunf\u00E4higkeit ein.",
+    "Icon": 215241,
     "ParamModifier": 0,
     "VFX": null,
     "Log": 0,
     "Unknown0": 0,
     "MaxStacks": 0,
-    "ClassJobCategory": null,
-    "StatusCategory": 0,
-    "HitEffect": null,
-    "PartyListPriority": 0,
+    "ClassJobCategory": {
+      "RowId": 1,
+      "SheetName": "ClassJobCategory"
+    },
+    "StatusCategory": 2,
+    "HitEffect": {
+      "RowId": 17,
+      "SheetName": "StatusHitEffect"
+    },
+    "PartyListPriority": 199,
     "CanIncreaseRewards": 0,
     "ParamEffect": 0,
     "TargetType": 0,
@@ -11687,7 +11693,7 @@
     "IsPermanent": false,
     "NoLogVfx": false,
     "Unknown5": false,
-    "CanStatusOff": false,
+    "CanStatusOff": true,
     "IsFcBuff": false,
     "Invisibility": false,
     "Unknown6": false,
@@ -11695,18 +11701,24 @@
   },
   {
     "RowId": 3264,
-    "Name": "",
-    "Description": "",
-    "Icon": 0,
+    "Name": "Rei\u00DFz\u00E4hne des heiligen Drachen",
+    "Description": "Wenn der Z\u00E4hler null erreicht, tritt Kampfunf\u00E4higkeit ein.",
+    "Icon": 215242,
     "ParamModifier": 0,
     "VFX": null,
     "Log": 0,
     "Unknown0": 0,
     "MaxStacks": 0,
-    "ClassJobCategory": null,
-    "StatusCategory": 0,
-    "HitEffect": null,
-    "PartyListPriority": 0,
+    "ClassJobCategory": {
+      "RowId": 1,
+      "SheetName": "ClassJobCategory"
+    },
+    "StatusCategory": 2,
+    "HitEffect": {
+      "RowId": 17,
+      "SheetName": "StatusHitEffect"
+    },
+    "PartyListPriority": 199,
     "CanIncreaseRewards": 0,
     "ParamEffect": 0,
     "TargetType": 0,
@@ -11725,7 +11737,7 @@
     "IsPermanent": false,
     "NoLogVfx": false,
     "Unknown5": false,
-    "CanStatusOff": false,
+    "CanStatusOff": true,
     "IsFcBuff": false,
     "Invisibility": false,
     "Unknown6": false,
