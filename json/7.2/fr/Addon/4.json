@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 1532,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1533,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1534,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1535,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1536,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1537,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1538,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1539,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1540,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1541,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1542,
+    "Text": "Vous pouvez choisir le style de c\u00E9r\u00E9monie parmi les trois suivants.\n\nLe Baiser de Menphina\nPr\u00E9sid\u00E9e par un Mog, la c\u00E9r\u00E9monie se d\u00E9roule dans une atmosph\u00E8re fantastique et se termine par un baiser entre les deux conjoints.\n\nLa Main de Nymeia\nUne pr\u00EAtresse dirige le sacrement dans une ambiance paisible, que les partenaires nouvellement unis et leurs invit\u00E9s concluent une coupe \u00E0 la main.\n\nLe Serment d\u0027Azeyma\nConduite solennellement par un pr\u00EAtre, la c\u00E9r\u00E9monie conna\u00EEt son apoth\u00E9ose lorsque les deux conjoints signent le registre du lien \u00E9ternel devant leurs convives."
+  },
+  {
+    "RowId": 1543,
+    "Text": "Cette section concerne les d\u00E9corations de la chapelle.\n\u003CIf(LessThan(IntegerParameter(1),2))\u003E \u003CElse/\u003EIl s\u0027agit d\u0027un \u00E9l\u00E9ment important de l\u0027ambiance de la c\u00E9r\u00E9monie.\n\u003C/If\u003E\nLa chapelle baignera dans une lumi\u00E8re naturelle\u003CIf(LessThan(IntegerParameter(1),2))\u003E.\u003CElse/\u003E, \u00E0 moins que vous n\u0027optiez pour l\u0027\u00E9clairage romantique.\u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),Nous d\u00E9terminerons la couleur du tapis et des fleurs pour vous.,Vous pouvez choisir parmi trois couleurs pour le tapis et les fleurs.,Vous pouvez choisir parmi cinq couleurs pour le tapis et les fleurs.)\u003E\u003CElse/\u003E \u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),Les murs seront nus, sans tentures.,Vous pouvez d\u00E9corer les murs de tentures, et avez le choix entre trois couleurs diff\u00E9rentes.,Vous pouvez d\u00E9corer les murs de tentures, et avez le choix entre cinq couleurs diff\u00E9rentes.)\u003E\u003CElse/\u003E \u003C/If\u003E"
+  },
+  {
+    "RowId": 1544,
+    "Text": "Ici est d\u00E9termin\u00E9e la fa\u00E7on dont les deux partenaires font leur entr\u00E9e.\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EVous marcherez c\u00F4te \u00E0 c\u00F4te, de la porte \u00E0 l\u0027autel\u003CElse/\u003EVous pouvez choisir de marcher jusqu\u0027\u00E0 l\u0027autel depuis la porte ou d\u0027arriver \u003CIf(GreaterThan(IntegerParameter(1),2))\u003Edans l\u0027une des gondoles \u00E0 votre disposition\u003CElse/\u003Een gondole\u003C/If\u003E.\u003C/If\u003E"
+  },
+  {
+    "RowId": 1545,
+    "Text": "C\u0027est ici que se d\u00E9cide la mani\u00E8re dont les partenaires sortent de la chapelle.\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EVous effectuerez une lente procession, le long du tapis, jusqu\u0027\u00E0 la porte.\u003CElse/\u003EVous pouvez choisir de marcher c\u00F4te \u00E0 c\u00F4te ou de partir ensemble sur le m\u00EAme chocobo.\u003C/If\u003E"
+  },
+  {
+    "RowId": 1546,
+    "Text": "Ici, vous pouvez d\u00E9cider de qui tiendra le bouquet.\n\nCette personne sera \u00E0 gauche de l\u0027autre partenaire lors de la c\u00E9r\u00E9monie."
+  },
+  {
+    "RowId": 1547,
+    "Text": "Cette partie concerne l\u0027ambiance musicale de la c\u00E9r\u00E9monie.\n\u003CIf(LessThan(IntegerParameter(1),2))\u003E \u003CElse/\u003EVous pouvez choisir les morceaux qui seront jou\u00E9s lors de l\u0027attente avant la c\u00E9r\u00E9monie et pendant la petite r\u00E9ception qui la suivra.\n\u003C/If\u003E\n\u003CIf(LessThan(IntegerParameter(1),2))\u003ELes musiques interpr\u00E9t\u00E9es seront d\u00E9termin\u00E9es par nos soins.\u003CElse/\u003EUne s\u00E9lection de \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E musique\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E \u003CElse/\u003Es\u003C/If\u003E est \u00E0 votre disposition pour chacun de ces instants.\u003C/If\u003E"
+  },
+  {
+    "RowId": 1548,
+    "Text": "Sauvegarder ces param\u00E8tres?"
+  },
+  {
+    "RowId": 1549,
+    "Text": "Les changements ne seront pas sauvegard\u00E9s. Confirmer?"
+  },
+  {
+    "RowId": 1550,
+    "Text": "Date du lien \u00E9ternel"
+  },
+  {
+    "RowId": 1551,
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1552,
+    "Text": "C\u00E9r\u00E9monie du lien \u00E9ternel"
+  },
+  {
+    "RowId": 1553,
+    "Text": "Date et heure"
+  },
+  {
+    "RowId": 1554,
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CIf(Equal(t_min,0))\u003E \u003CElse/\u003E\u003CSec\u003Et_min\u003C/Sec\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1555,
+    "Text": "Invitation"
+  },
+  {
+    "RowId": 1556,
+    "Text": "Nombre"
+  },
+  {
+    "RowId": 1557,
+    "Text": "Encore \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1558,
+    "Text": "??.??.????"
+  },
+  {
+    "RowId": 1559,
+    "Text": "??.??.????"
+  },
+  {
+    "RowId": 1560,
+    "Text": "Encore?"
+  },
+  {
+    "RowId": 1561,
+    "Text": "Cr\u00E9er un faire-part?\nIl suffira de le remettre \u00E0 un autre joueur pour qu\u0027il puisse assister \u00E0 votre c\u00E9r\u00E9monie du lien \u00E9ternel."
+  },
+  {
+    "RowId": 1562,
+    "Text": "Aucune"
+  },
+  {
+    "RowId": 1563,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1564,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1565,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1566,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1567,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1570,
+    "Text": "world"
+  },
+  {
+    "RowId": 1571,
+    "Text": "monde"
+  },
+  {
+    "RowId": 1572,
+    "Text": "Limsa Lominsa"
+  },
+  {
+    "RowId": 1573,
+    "Text": "limsa"
+  },
+  {
+    "RowId": 1574,
+    "Text": "La Noscea"
+  },
+  {
+    "RowId": 1575,
+    "Text": "noscea"
+  },
+  {
+    "RowId": 1576,
+    "Text": "Gridania"
+  },
+  {
+    "RowId": 1577,
+    "Text": "gridania"
+  },
+  {
+    "RowId": 1578,
+    "Text": "The Black Shroud"
+  },
+  {
+    "RowId": 1579,
+    "Text": "sombrelinceul"
+  },
+  {
+    "RowId": 1580,
+    "Text": "Ul\u0027dah"
+  },
+  {
+    "RowId": 1581,
+    "Text": "uldah"
+  },
+  {
+    "RowId": 1582,
+    "Text": "Thanalan"
+  },
+  {
+    "RowId": 1583,
+    "Text": "thanalan"
+  },
+  {
+    "RowId": 1584,
+    "Text": "Ishgard"
+  },
+  {
+    "RowId": 1585,
+    "Text": "ishgard"
+  },
+  {
+    "RowId": 1586,
+    "Text": "Coerthas"
+  },
+  {
+    "RowId": 1587,
+    "Text": "coerthas"
+  },
+  {
+    "RowId": 1588,
+    "Text": "Mor Dhona"
+  },
+  {
+    "RowId": 1589,
+    "Text": "mordhona"
+  },
+  {
+    "RowId": 1590,
+    "Text": "Abalathia\u0027s Spine"
+  },
+  {
+    "RowId": 1591,
+    "Text": "abalathia"
+  },
+  {
+    "RowId": 1592,
+    "Text": "Dravania"
+  },
+  {
+    "RowId": 1593,
+    "Text": "dravania"
+  },
+  {
+    "RowId": 1594,
+    "Text": "Kugane"
+  },
+  {
+    "RowId": 1595,
+    "Text": "kugane"
+  },
+  {
+    "RowId": 1596,
+    "Text": "Gyr Abania"
+  },
+  {
+    "RowId": 1597,
+    "Text": "gyrabania"
+  },
+  {
+    "RowId": 1598,
+    "Text": "Othard"
+  },
+  {
+    "RowId": 1599,
+    "Text": "othard"
+  },
+  {
+    "RowId": 1600,
+    "Text": "The Crystarium"
+  },
+  {
+    "RowId": 1601,
+    "Text": "cristarium"
+  },
+  {
+    "RowId": 1602,
+    "Text": "Eulmore"
+  },
+  {
+    "RowId": 1603,
+    "Text": "eulmore"
+  },
+  {
+    "RowId": 1604,
+    "Text": "Norvrandt"
+  },
+  {
+    "RowId": 1605,
+    "Text": "norvrandt"
+  },
+  {
+    "RowId": 1612,
+    "Text": "Votre anniversaire de lien \u00E9ternel est enfin arriv\u00E9! Adressez-vous \u00E0 Hawu Bajihri, au Sanctuaire des Douze, dans la For\u00EAt de l\u0027est pour organiser une nouvelle c\u00E9r\u00E9monie."
+  },
+  {
+    "RowId": 1613,
+    "Text": "Ne plus afficher ce message"
+  },
+  {
+    "RowId": 1614,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1615,
+    "Text": "C\u00E9r\u00E9monie du lien \u00E9ternel"
+  },
+  {
+    "RowId": 1616,
+    "Text": "Notification d\u0027anniversaire"
+  },
+  {
+    "RowId": 1617,
+    "Text": "FOR/DEX/VIT/INT/ESP"
+  },
+  {
+    "RowId": 1618,
+    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
+  },
+  {
+    "RowId": 1619,
+    "Text": "Tank"
+  },
+  {
+    "RowId": 1620,
+    "Text": "Soigneur"
+  },
+  {
+    "RowId": 1621,
+    "Text": "M\u00EAl\u00E9e"
+  },
+  {
+    "RowId": 1622,
+    "Text": "Phys. dist."
+  },
+  {
+    "RowId": 1623,
+    "Text": "Mag. dist."
+  },
+  {
+    "RowId": 1626,
+    "Text": "\u003CIcon\u003E105\u003C/Icon\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E y"
+  },
+  {
+    "RowId": 1627,
+    "Text": "\u003CIcon\u003E106\u003C/Icon\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E y"
+  },
+  {
+    "RowId": 1628,
+    "Text": "\u003CIcon\u003E105\u003C/Icon\u003E[haut]"
+  },
+  {
+    "RowId": 1629,
+    "Text": "\u003CIcon\u003E106\u003C/Icon\u003E[bas]"
+  },
+  {
+    "RowId": 1630,
+    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+  },
+  {
+    "RowId": 1631,
+    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Z: \u003CIf(LessThan(IntegerParameter(7),0))\u003E-\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(6))\u003E\u003Cswitch(IntegerParameter(6),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+  },
+  {
+    "RowId": 1632,
+    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+  },
+  {
+    "RowId": 1635,
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003Cfloat(IntegerParameter(2),10,.)\u003E, \u003Cfloat(IntegerParameter(3),10,.)\u003E)"
+  },
+  {
+    "RowId": 1636,
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (\u003Cfloat(IntegerParameter(2),10,.)\u003E, \u003Cfloat(IntegerParameter(3),10,.)\u003E, \u003CIf(LessThan(IntegerParameter(5),0))\u003E-\u003CElse/\u003E \u003C/If\u003E\u003Cfloat(IntegerParameter(4),10,.)\u003E)"
+  },
+  {
+    "RowId": 1637,
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n (\u003Cfloat(IntegerParameter(2),10,.)\u003E, \u003Cfloat(IntegerParameter(3),10,.)\u003E)"
+  },
+  {
+    "RowId": 1640,
+    "Text": "\u003CHead\u003EStringParameter(1)\u003C/Head\u003E"
+  },
+  {
+    "RowId": 1643,
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
+  },
+  {
+    "RowId": 1644,
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003E\uE06E\u003CElse/\u003E\uE06D\u003C/If\u003E"
+  },
+  {
+    "RowId": 1652,
+    "Text": ", "
+  },
+  {
+    "RowId": 1653,
+    "Text": " ["
+  },
+  {
+    "RowId": 1654,
+    "Text": "]"
+  },
+  {
+    "RowId": 1655,
+    "Text": "Liste des tenues"
+  },
+  {
+    "RowId": 1656,
+    "Text": ""
+  },
+  {
+    "RowId": 1657,
+    "Text": "Inventaire (\u00E9quipement/consommables)"
+  },
+  {
+    "RowId": 1658,
+    "Text": "Inventaire (ext\u00E9rieur/int\u00E9rieur/mobilier)"
+  },
+  {
+    "RowId": 1659,
+    "Text": "Recyclage: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u2713 [\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E,00]\u003CElse/\u003E\u00D7\u003C/If\u003E"
+  },
+  {
+    "RowId": 1660,
+    "Text": ""
+  },
+  {
+    "RowId": 1661,
+    "Text": "\u2605"
+  },
+  {
+    "RowId": 1662,
+    "Text": "\u25CF"
+  },
+  {
+    "RowId": 1663,
+    "Text": "\u25B2"
+  },
+  {
+    "RowId": 1664,
+    "Text": "\u2666"
+  },
+  {
+    "RowId": 1665,
+    "Text": "\u2665"
+  },
+  {
+    "RowId": 1666,
+    "Text": "\u2660"
+  },
+  {
+    "RowId": 1667,
+    "Text": "\u2663"
+  },
+  {
+    "RowId": 1668,
+    "Text": "Groupe \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1669,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 1670,
+    "Text": "Tout afficher"
+  },
+  {
+    "RowId": 1671,
+    "Text": "Filtrer par groupe"
+  },
+  {
+    "RowId": 1672,
+    "Text": "Changer le nom du groupe"
+  },
+  {
+    "RowId": 1673,
+    "Text": "Chronologique"
+  },
+  {
+    "RowId": 1674,
+    "Text": "Ant\u00E9chronologique"
+  },
+  {
+    "RowId": 1675,
+    "Text": "Alphab\u00E9tique"
+  },
+  {
+    "RowId": 1676,
+    "Text": "Num\u00E9ral"
+  },
+  {
+    "RowId": 1677,
+    "Text": "Changer l\u0027ordre"
+  },
+  {
+    "RowId": 1678,
+    "Text": "Choisir un groupe d\u0027amis"
+  },
+  {
+    "RowId": 1679,
+    "Text": "Groupe d\u0027amis"
+  },
+  {
+    "RowId": 1680,
+    "Text": ""
+  },
+  {
+    "RowId": 1681,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1682,
+    "Text": "Dur\u00E9e de l\u0027amiti\u00E9"
+  },
+  {
+    "RowId": 1683,
+    "Text": "\u003Ckilo(IntegerParameter(1),)\u003E jour\u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003E \u003CElse/\u003Es\u003C/If\u003E"
+  },
+  {
+    "RowId": 1684,
+    "Text": "Modifier"
+  },
+  {
+    "RowId": 1685,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1686,
+    "Text": "Saisissez un nouveau nom pour \u003CString\u003EStringParameter(1)\u003C/String\u003EGroupe \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E."
+  },
+  {
+    "RowId": 1687,
+    "Text": "OK"
+  },
+  {
+    "RowId": 1688,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1689,
+    "Text": "Groupe"
+  },
+  {
+    "RowId": 1690,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu"
+  },
+  {
+    "RowId": 1691,
+    "Text": "\u00C9th\u00E9rolyse: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003Eoui\u003CElse/\u003Enon\u003C/If\u003E"
+  },
+  {
+    "RowId": 1692,
+    "Text": "Indisponible \u00E0 l\u0027achat chez les PNJ"
+  },
+  {
+    "RowId": 1693,
+    "Text": "Valeur d\u0027achat \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E(QN) \u003C/If\u003Eaux PNJ: \u003Ckilo(IntegerParameter(1),,)\u003E\uE049"
+  },
+  {
+    "RowId": 1694,
+    "Text": "Valeur d\u0027achat \u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E(QN) \u003C/If\u003Eaux PNJ: \u003Ckilo(IntegerParameter(1),,)\u003E\uE049 (sous conditions)"
+  },
+  {
+    "RowId": 1695,
+    "Text": "Affich\u00E9: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+  },
+  {
+    "RowId": 1696,
+    "Text": "Nombre d\u0027amis dans le groupe: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1697,
+    "Text": "Les linkshells sont indisponibles pour les joueurs visitant d\u0027autres Mondes ou centres de donn\u00E9es. Il leur est donc impossible de communiquer avec les autres membres via ces canaux."
+  },
+  {
+    "RowId": 1700,
+    "Text": "Recherche de recettes"
+  },
+  {
+    "RowId": 1701,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1702,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 1703,
+    "Text": "Recettes recherch\u00E9es"
+  },
+  {
+    "RowId": 1704,
+    "Text": "Recettes utilis\u00E9es pour une recherche"
+  },
+  {
+    "RowId": 1705,
+    "Text": "Conditions de filtrage"
+  },
+  {
+    "RowId": 1706,
+    "Text": "Cacher les recettes d\u00E9j\u00E0 effectu\u00E9es"
+  },
+  {
+    "RowId": 1707,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1708,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1709,
+    "Text": "Valeur de collection"
+  },
+  {
+    "RowId": 1710,
+    "Text": "Recettes normales"
+  },
+  {
+    "RowId": 1711,
+    "Text": "Recettes sp\u00E9ciales"
+  },
+  {
+    "RowId": 1712,
+    "Text": "Diagramme de la synth\u00E8se"
+  },
+  {
+    "RowId": 1713,
+    "Text": ""
+  },
+  {
+    "RowId": 1714,
+    "Text": "Liste des mat\u00E9riaux de base"
+  },
+  {
+    "RowId": 1715,
+    "Text": "Afficher la liste des emplacements de recherches"
+  },
+  {
+    "RowId": 1716,
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1717,
+    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1718,
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9 999\u002B\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),)\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1719,
+    "Text": "Liste des mat\u00E9riaux de base"
+  },
+  {
+    "RowId": 1720,
+    "Text": ""
+  },
+  {
+    "RowId": 1721,
+    "Text": "Emplacements de recherches"
+  },
+  {
+    "RowId": 1722,
+    "Text": ""
+  },
+  {
+    "RowId": 1723,
+    "Text": "Diagramme de la synth\u00E8se"
+  },
+  {
+    "RowId": 1724,
+    "Text": "Liste des mat\u00E9riaux de base"
+  },
+  {
+    "RowId": 1725,
+    "Text": "Rafra\u00EEchir le diagramme"
+  },
+  {
+    "RowId": 1726,
+    "Text": "Rafra\u00EEchir la liste"
+  },
+  {
+    "RowId": 1727,
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),)\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1728,
+    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),)\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1729,
+    "Text": "Chance accrue d\u0027obtenir des objets rares."
+  },
+  {
+    "RowId": 1730,
+    "Text": "Ajouter aux favoris (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+  },
+  {
+    "RowId": 1731,
+    "Text": "Retirer des favoris (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+  },
+  {
+    "RowId": 1732,
+    "Text": "Recettes pouvant \u00EAtre not\u00E9es uniquement"
+  },
+  {
+    "RowId": 1733,
+    "Text": "Jamais synth\u00E9tis\u00E9es uniquement"
+  },
+  {
+    "RowId": 1748,
+    "Text": "Vendre/Donner"
+  },
+  {
+    "RowId": 1749,
+    "Text": "Trier/Annuler le tri"
+  },
+  {
+    "RowId": 1750,
+    "Text": "Donner"
+  },
+  {
+    "RowId": 1751,
+    "Text": "Placer"
+  },
+  {
+    "RowId": 1752,
+    "Text": "\u00C9quiper (personnage/appareil)"
+  },
+  {
+    "RowId": 1753,
+    "Text": "Utiliser"
+  },
+  {
+    "RowId": 1754,
+    "Text": "Enlever"
+  },
+  {
+    "RowId": 1755,
+    "Text": "???"
+  },
+  {
+    "RowId": 1756,
+    "Text": "Cette option est utilisable en rapport avec l\u0027artisanat."
+  },
+  {
+    "RowId": 1757,
+    "Text": "Cette option est utilisable en rapport avec la r\u00E9colte."
+  },
+  {
+    "RowId": 1758,
+    "Text": "Cette option est utilisable lors de la teinture d\u0027objets."
+  },
+  {
+    "RowId": 1759,
+    "Text": "Cette option est utilisable avec les prismes mirage."
+  },
+  {
+    "RowId": 1760,
+    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),1))\u003ECette commande est utilisable uniquement lors du jeu \u00E0 la manette.\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(75),1))\u003ECette commande est utilisable uniquement \u00E0 partir de la croix de raccourcis.\u003CElse/\u003ECette commande est utilisable uniquement lors du jeu \u00E0 la manette.\u003C/If\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 1761,
+    "Text": "Quelle partie du sous-menu voulez-vous r\u00E9initialiser?"
+  },
+  {
+    "RowId": 1762,
+    "Text": "Ordre des \u00E9l\u00E9ments dans le niveau principal"
+  },
+  {
+    "RowId": 1763,
+    "Text": "Ordre des \u00E9l\u00E9ments dans le niveau \u201CAutres\u201D"
+  },
+  {
+    "RowId": 1764,
+    "Text": "Tout"
+  },
+  {
+    "RowId": 1765,
+    "Text": "R\u00E9initialiser l\u0027ordre des options dans le niveau principal?"
+  },
+  {
+    "RowId": 1766,
+    "Text": "R\u00E9initialiser l\u0027ordre des options dans le niveau \u201CAutres\u201D?"
+  },
+  {
+    "RowId": 1767,
+    "Text": "Cette option est utilisable lors des transactions dans les \u00E9choppes."
+  },
+  {
+    "RowId": 1768,
+    "Text": "Cette option est utilisable dans le cadre du courrier mog."
+  },
+  {
+    "RowId": 1769,
+    "Text": "Cette option est utilisable lors des \u00E9changes d\u0027objets."
+  },
+  {
+    "RowId": 1770,
+    "Text": "Cette option est utilisable dans le cadre du logement."
+  },
+  {
+    "RowId": 1771,
+    "Text": "Cette option est utilisable avec les mat\u00E9rias."
+  },
+  {
+    "RowId": 1772,
+    "Text": "Cette option est utilisable dans le cadre des courses de chocobos."
+  },
+  {
+    "RowId": 1773,
+    "Text": "Cette option est utilisable avec les servants."
+  },
+  {
+    "RowId": 1774,
+    "Text": "Cette option est utilisable avec les cartes au tr\u00E9sor."
+  },
+  {
+    "RowId": 1775,
+    "Text": "Cette option est utilisable par d\u00E9faut."
+  },
+  {
+    "RowId": 1776,
+    "Text": "Placer dans le niveau principal"
+  },
+  {
+    "RowId": 1777,
+    "Text": "Placer dans le niveau \u201CAutres\u201D"
+  },
+  {
+    "RowId": 1778,
+    "Text": "D\u00E9placer vers le haut"
+  },
+  {
+    "RowId": 1779,
+    "Text": "D\u00E9placer vers le bas"
+  },
+  {
+    "RowId": 1780,
+    "Text": "Param\u00E8tres du sous-menu"
+  },
+  {
+    "RowId": 1781,
+    "Text": ""
+  },
+  {
+    "RowId": 1782,
+    "Text": "Affichage"
+  },
+  {
+    "RowId": 1783,
+    "Text": "Options"
+  },
+  {
+    "RowId": 1784,
+    "Text": "Niveau principal"
+  },
+  {
+    "RowId": 1785,
+    "Text": "Niveau \u201CAutres\u201D"
+  },
+  {
+    "RowId": 1786,
+    "Text": "R\u00E9initialiser"
+  },
+  {
+    "RowId": 1787,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1788,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1789,
+    "Text": "R\u00E9initialiser les param\u00E8tres du sous-menu?"
+  },
+  {
+    "RowId": 1790,
+    "Text": "Appliquer les choix personnalis\u00E9s au sous-menu?"
+  },
+  {
+    "RowId": 1791,
+    "Text": "Les changements seront perdus si vous ne les appliquez pas. Quitter la personnalisation des param\u00E8tres du sous-menu?"
+  },
+  {
+    "RowId": 1792,
+    "Text": "\u003Cspan\u003ESert \u00E0 personnaliser le sous-menu pour les objets en votre possession.\u003C/span\u003E"
+  },
+  {
+    "RowId": 1793,
+    "Text": "Les \u00E9l\u00E9ments plac\u00E9s ici appara\u00EEtront\ndans un second niveau de menu hi\u00E9rarchique\n\u00E0 partir d\u0027une option \u201CAutres\u201D\nqui sera alors ajout\u00E9e au sous-menu."
+  },
+  {
+    "RowId": 1794,
+    "Text": "Cette option appara\u00EEt uniquement si des \u00E9l\u00E9ments ont \u00E9t\u00E9 plac\u00E9s dans le niveau \u201CAutres\u201D du sous-menu."
+  },
+  {
+    "RowId": 1795,
+    "Text": "Cette option permet d\u0027ouvrir la pr\u00E9sente fen\u00EAtre de personnalisation \u00E0 partir du sous-menu."
+  },
+  {
+    "RowId": 1796,
+    "Text": "Cette option sert par exemple pour la livraison d\u0027objets."
+  },
+  {
+    "RowId": 1797,
+    "Text": "Cette option permet de visualiser une peinture."
+  },
+  {
+    "RowId": 1798,
+    "Text": "Cette option est utilisable avec la sacoche chocobo."
+  },
+  {
+    "RowId": 1799,
+    "Text": "Cette option est utilisable dans la F\u00E9licit\u00E9 insulaire."
+  },
+  {
+    "RowId": 1800,
+    "Text": "Voulez-vous vous t\u00E9l\u00E9porter vers la destination \u003Csheet(PlaceName,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E?"
+  },
+  {
+    "RowId": 1801,
+    "Text": "Accepter"
+  },
+  {
+    "RowId": 1802,
+    "Text": "Refuser"
+  },
+  {
+    "RowId": 1803,
+    "Text": "R\u00E9fl\u00E9chir"
+  },
+  {
+    "RowId": 1804,
+    "Text": "Offre de t\u00E9l\u00E9portation"
+  },
+  {
+    "RowId": 1805,
+    "Text": "\u003CHead\u003E\u003Csheet(PlaceName,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,0)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 1806,
+    "Text": "Se t\u00E9l\u00E9porter \u00E0 une \u00E9th\u00E9rite \u00E0 proximit\u00E9"
+  },
+  {
+    "RowId": 1807,
+    "Text": "Amis"
+  },
+  {
+    "RowId": 1808,
+    "Text": "Objets bonus et optionnels"
+  },
+  {
+    "RowId": 1809,
+    "Text": "Ma\u00EEtres de jeu"
+  },
+  {
+    "RowId": 1810,
+    "Text": "Requ\u00EAte d\u0027objets bonus et optionnels"
+  },
+  {
+    "RowId": 1811,
+    "Text": "Vous pouvez envoyer une requ\u00EAte afin d\u0027obtenir les objets bonus qui vous ont \u00E9t\u00E9 envoy\u00E9s et les articles que vous avez achet\u00E9s. Il faudra attendre un certain temps avant de pouvoir utiliser cette fonction \u00E0 nouveau.\n\u003Cspan\u003EPour recevoir le nouveau courrier, il faut fermer puis rouvrir la fen\u00EAtre du Mog postier ou de la bo\u00EEte \u00E0 lettres mog.\u003C/span\u003E"
+  },
+  {
+    "RowId": 1812,
+    "Text": "Envoyer"
+  },
+  {
+    "RowId": 1813,
+    "Text": "Retour"
+  },
+  {
+    "RowId": 1814,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1815,
+    "Text": "Recycler"
+  },
+  {
+    "RowId": 1816,
+    "Text": "Recyclage"
+  },
+  {
+    "RowId": 1817,
+    "Text": ""
+  },
+  {
+    "RowId": 1818,
+    "Text": "Objet \u00E0 recycler"
+  },
+  {
+    "RowId": 1819,
+    "Text": "Objet"
+  },
+  {
+    "RowId": 1820,
+    "Text": "Classe"
+  },
+  {
+    "RowId": 1821,
+    "Text": "Recyclage"
+  },
+  {
+    "RowId": 1822,
+    "Text": ""
+  },
+  {
+    "RowId": 1823,
+    "Text": "Objet d\u0027origine"
+  },
+  {
+    "RowId": 1824,
+    "Text": "Classe / comp\u00E9tence actuelle"
+  },
+  {
+    "RowId": 1825,
+    "Text": "Chances de r\u00E9ussite"
+  },
+  {
+    "RowId": 1826,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E%"
+  },
+  {
+    "RowId": 1827,
+    "Text": "La r\u00E9ussite du recyclage est garantie."
+  },
+  {
+    "RowId": 1828,
+    "Text": "Le recyclage a des chances d\u0027\u00E9chouer."
+  },
+  {
+    "RowId": 1829,
+    "Text": "Le recyclage a de grandes chances d\u0027\u00E9chouer."
+  },
+  {
+    "RowId": 1830,
+    "Text": "Le recyclage a de tr\u00E8s grandes chances d\u0027\u00E9chouer."
+  },
+  {
+    "RowId": 1831,
+    "Text": "Recycler un objet unique/personnel"
+  },
+  {
+    "RowId": 1832,
+    "Text": "Recycler un objet serti"
+  },
+  {
+    "RowId": 1833,
+    "Text": "Recycler"
+  },
+  {
+    "RowId": 1834,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1835,
+    "Text": "Le recyclage a r\u00E9ussi."
+  },
+  {
+    "RowId": 1836,
+    "Text": "Recycl\u00E9"
+  },
+  {
+    "RowId": 1837,
+    "Text": "R\u00E9sultat"
+  },
+  {
+    "RowId": 1838,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1839,
+    "Text": "Cet objet est actuellement \u00E9quip\u00E9. Voulez-vous vraiment le recycler?"
+  },
+  {
+    "RowId": 1840,
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 1841,
+    "Text": "Nv \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1842,
+    "Text": "Comp\u00E9tence de recyclage "
+  },
+  {
+    "RowId": 1843,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
+  },
+  {
+    "RowId": 1844,
+    "Text": "Recyclage impossible: les chances de r\u00E9ussite sont nulles."
+  },
+  {
+    "RowId": 1845,
+    "Text": "Vous n\u0027avez aucun objet recyclable."
+  },
+  {
+    "RowId": 1846,
+    "Text": "\u00CAtes-vous s\u00FBr\u003CIf(PlayerParameter(4))\u003Ee\u003CElse/\u003E \u003C/If\u003E de vouloir r\u00E9initialiser la comp\u00E9tence de recyclage pour la classe \u201C\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u201D?"
+  },
+  {
+    "RowId": 1847,
+    "Text": "Recycler un objet collectionnable"
+  },
+  {
+    "RowId": 1848,
+    "Text": "[Comp\u00E9tence optimale: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E,00]"
+  },
+  {
+    "RowId": 1849,
+    "Text": "Afficher uniquement les lettres non lues, ainsi que les objets et les gils non r\u00E9cup\u00E9r\u00E9s"
+  },
+  {
+    "RowId": 1850,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu"
+  },
+  {
+    "RowId": 1851,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu  \u003CIcon2\u003E9\u003C/Icon2\u003E Retour"
+  },
+  {
+    "RowId": 1852,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu  \u003CIcon2\u003E9\u003C/Icon2\u003E Retour"
+  },
+  {
+    "RowId": 1853,
+    "Text": "Cette cat\u00E9gorie est vide."
+  },
+  {
+    "RowId": 1854,
+    "Text": "Le maximum de lettres syst\u00E8me est atteint. Effacez-en quelques-unes pour en recevoir de nouvelles."
+  },
+  {
+    "RowId": 1855,
+    "Text": "Le maximum de lettres avec objets bonus ou optionnels est atteint. Pour permettre de nouvelles livraisons, r\u00E9cup\u00E9rez les objets pr\u00E9sents dans cette cat\u00E9gorie, puis effacez les messages auxquels ils \u00E9taient joints."
+  },
+  {
+    "RowId": 1856,
+    "Text": "Le nombre maximum de 20 objets joints aux lettres d\u0027amis est atteint. Transf\u00E9rez-en dans votre inventaire afin de pouvoir en recevoir de nouveaux. (Les gils ne comptent pas dans cette limite.)"
+  },
+  {
+    "RowId": 1857,
+    "Text": "Le maximum de lettres d\u0027amis est atteint. Effacez-en quelques-unes pour en recevoir de nouvelles."
+  },
+  {
+    "RowId": 1858,
+    "Text": "Choix du destinataire"
+  },
+  {
+    "RowId": 1859,
+    "Text": ""
+  },
+  {
+    "RowId": 1860,
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Accepter  \u003CIcon2\u003E11\u003C/Icon2\u003E Ouvrir le journal  \u003CIcon2\u003E24\u003C/Icon2\u003E D\u00E9filer"
+  },
+  {
+    "RowId": 1861,
+    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003E Accepter  \u003CIcon2\u003E11\u003C/Icon2\u003E Ouvrir le journal  \u003CIcon2\u003E24\u003C/Icon2\u003E D\u00E9filer"
+  },
+  {
+    "RowId": 1862,
+    "Text": "Exp\u00E9diteur d\u0027une lettre re\u00E7ue"
+  },
+  {
+    "RowId": 1863,
+    "Text": "Historique des destinataires"
+  },
+  {
+    "RowId": 1864,
+    "Text": "Afficher tous les amis"
+  },
+  {
+    "RowId": 1865,
+    "Text": "Ce groupe ne contient aucun ami."
+  },
+  {
+    "RowId": 1866,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1867,
+    "Text": "Cette cat\u00E9gorie est \u00E0 plus de 80 % de sa capacit\u00E9."
+  },
+  {
+    "RowId": 1868,
+    "Text": "Cette cat\u00E9gorie est pleine."
+  },
+  {
+    "RowId": 1869,
+    "Text": "Cette cat\u00E9gorie contient trop d\u0027objets joints."
+  },
+  {
+    "RowId": 1870,
+    "Text": "%"
+  },
+  {
+    "RowId": 1871,
+    "Text": "Traitement du courrier en cours."
+  },
+  {
+    "RowId": 1872,
+    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E - \u003Csheet(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+  },
+  {
+    "RowId": 1873,
+    "Text": "Nombre d\u0027objets joints (gils non compris)"
+  },
+  {
+    "RowId": 1874,
+    "Text": "Il n\u0027y a rien \u00E0 afficher"
+  },
+  {
+    "RowId": 1875,
+    "Text": "\u003Cswitch(IntegerParameter(1),Tout afficher,Rubriques achev\u00E9es,Rubriques inachev\u00E9es)\u003E"
+  },
+  {
+    "RowId": 1876,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1877,
+    "Text": "Rang \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1878,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1879,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1880,
+    "Text": "Bestiaire"
+  },
+  {
+    "RowId": 1881,
+    "Text": ""
+  },
+  {
+    "RowId": 1882,
+    "Text": "Classe"
+  },
+  {
+    "RowId": 1883,
+    "Text": "Rang"
+  },
+  {
+    "RowId": 1884,
+    "Text": "Achev\u00E9!"
+  },
+  {
+    "RowId": 1885,
+    "Text": "R\u00E9compense"
+  },
+  {
+    "RowId": 1886,
+    "Text": "Exp"
+  },
+  {
+    "RowId": 1887,
+    "Text": "R\u00E9compense"
+  },
+  {
+    "RowId": 1888,
+    "Text": "Bestiaire"
+  },
+  {
+    "RowId": 1889,
+    "Text": "Rubrique achev\u00E9e"
+  },
+  {
+    "RowId": 1890,
+    "Text": "Rang achev\u00E9"
+  },
+  {
+    "RowId": 1891,
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E rang \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1892,
+    "Text": "\u003Csheet(GrandCompany,IntegerParameter(1),0)\u003E rang \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1893,
+    "Text": "Conditions d\u0027acc\u00E8s au rang \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1894,
+    "Text": "Achever le rang \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 1895,
+    "Text": "Niveau \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E0 ou plus"
+  },
+  {
+    "RowId": 1896,
+    "Text": "Tous"
+  },
+  {
+    "RowId": 1897,
+    "Text": "Par d\u00E9faut"
+  },
+  {
+    "RowId": 1898,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1899,
+    "Text": "Quantit\u00E9"
+  },
+  {
+    "RowId": 1900,
+    "Text": "Couleurs du log"
+  },
+  {
+    "RowId": 1901,
+    "Text": ""
+  },
+  {
+    "RowId": 1902,
+    "Text": "Annonces"
+  },
+  {
+    "RowId": 1903,
+    "Text": "Combat"
+  },
+  {
+    "RowId": 1904,
+    "Text": "R\u00E9initialiser"
+  },
+  {
+    "RowId": 1905,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1906,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1907,
+    "Text": "Dire"
+  },
+  {
+    "RowId": 1908,
+    "Text": "Hurler"
+  },
+  {
+    "RowId": 1909,
+    "Text": "Murmurer"
+  },
+  {
+    "RowId": 1910,
+    "Text": "\u00C9quipe"
+  },
+  {
+    "RowId": 1911,
+    "Text": "Emotes"
+  },
+  {
+    "RowId": 1912,
+    "Text": "\u00C9cho"
+  },
+  {
+    "RowId": 1913,
+    "Text": "Messages syst\u00E8me"
+  },
+  {
+    "RowId": 1914,
+    "Text": "Messages syst\u00E8me de combat"
+  },
+  {
+    "RowId": 1915,
+    "Text": "Messages syst\u00E8me de r\u00E9colte"
+  },
+  {
+    "RowId": 1916,
+    "Text": "Messages d\u0027erreur"
+  },
+  {
+    "RowId": 1917,
+    "Text": "Dialogue des PNJ"
+  },
+  {
+    "RowId": 1918,
+    "Text": "Butin"
+  },
+  {
+    "RowId": 1919,
+    "Text": "Gain de niveau"
+  },
+  {
+    "RowId": 1920,
+    "Text": "Distribution du butin"
+  },
+  {
+    "RowId": 1921,
+    "Text": "Synth\u00E8se"
+  },
+  {
+    "RowId": 1922,
+    "Text": "R\u00E9colte"
+  },
+  {
+    "RowId": 1923,
+    "Text": "D\u00E9g\u00E2ts inflig\u00E9s"
+  },
+  {
+    "RowId": 1924,
+    "Text": "Attaques manqu\u00E9es"
+  },
+  {
+    "RowId": 1925,
+    "Text": "Actions"
+  },
+  {
+    "RowId": 1926,
+    "Text": "Objets"
+  },
+  {
+    "RowId": 1927,
+    "Text": "Soins"
+  },
+  {
+    "RowId": 1928,
+    "Text": "Effets b\u00E9n\u00E9fiques"
+  },
+  {
+    "RowId": 1929,
+    "Text": "Effets n\u00E9fastes"
+  },
+  {
+    "RowId": 1930,
+    "Text": "R\u00E9initialiser les couleurs du log?"
+  },
+  {
+    "RowId": 1931,
+    "Text": "Crier"
+  },
+  {
+    "RowId": 1932,
+    "Text": "Alliance"
+  },
+  {
+    "RowId": 1933,
+    "Text": "Compagnie libre"
+  },
+  {
+    "RowId": 1934,
+    "Text": "Annonces de compagnie libre"
+  },
+  {
+    "RowId": 1935,
+    "Text": "Discussion 1"
+  },
+  {
+    "RowId": 1936,
+    "Text": "Discussion 2"
+  },
+  {
+    "RowId": 1937,
+    "Text": "Mat\u00E9rias"
+  },
+  {
+    "RowId": 1938,
+    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Rechercher"
+  },
+  {
+    "RowId": 1939,
+    "Text": "Vous ne pourrez jamais vous \u00E9quiper de cet objet. Continuer?"
+  },
+  {
+    "RowId": 1940,
+    "Text": "Recherche d\u0027objets"
+  },
+  {
+    "RowId": 1941,
+    "Text": ""
+  },
+  {
+    "RowId": 1942,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1943,
+    "Text": "Cat\u00E9gories"
+  },
+  {
+    "RowId": 1944,
+    "Text": "Main directrice/non directrice"
+  },
+  {
+    "RowId": 1945,
+    "Text": "Renseignez un nom d\u0027objet ou s\u00E9lectionnez une cat\u00E9gorie."
+  },
+  {
+    "RowId": 1946,
+    "Text": "Aucun r\u00E9sultat"
+  },
+  {
+    "RowId": 1947,
+    "Text": "Trier selon le crit\u00E8re sp\u00E9cifi\u00E9 (100 r\u00E9sultats maximum)."
+  },
+  {
+    "RowId": 1948,
+    "Text": "Afficher \u003CIf(Equal(IntegerParameter(1),1))\u003Ele r\u00E9sultat suivant\u003CElse/\u003Eles \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E r\u00E9sultats suivants\u003C/If\u003E."
+  },
+  {
+    "RowId": 1949,
+    "Text": "Afficher \u003CIf(Equal(IntegerParameter(1),1))\u003Ele r\u00E9sultat pr\u00E9c\u00E9dant\u003CElse/\u003Eles \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E r\u00E9sultats pr\u00E9c\u00E9dants\u003C/If\u003E."
+  },
+  {
+    "RowId": 1950,
+    "Text": "R\u00E9sultats"
+  },
+  {
+    "RowId": 1951,
+    "Text": ""
+  },
+  {
+    "RowId": 1952,
+    "Text": "Prix unitaire"
+  },
+  {
+    "RowId": 1953,
+    "Text": "Total"
+  },
+  {
+    "RowId": 1954,
+    "Text": "Qt\u00E9"
+  },
+  {
+    "RowId": 1955,
+    "Text": "HQ"
+  },
+  {
+    "RowId": 1956,
+    "Text": "Servant"
+  },
+  {
+    "RowId": 1957,
+    "Text": "Prix le plus bas: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE049"
+  },
+  {
+    "RowId": 1958,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Er\u00E9sultat\u003CElse/\u003Er\u00E9sultats\u003C/If\u003E"
+  },
+  {
+    "RowId": 1959,
+    "Text": "Cet objet n\u0027est pas en vente."
+  },
+  {
+    "RowId": 1960,
+    "Text": "Recherche avanc\u00E9e"
+  },
+  {
+    "RowId": 1961,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1962,
+    "Text": "Vous ne pouvez pas vous \u00E9quiper de cet objet. Continuer?"
+  },
+  {
+    "RowId": 1963,
+    "Text": "Acheter \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cfrnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)\u003E pour \u003Ckilo(IntegerParameter(3),)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E (taxe de \u003Ckilo(IntegerParameter(4),,)\u003E\uE049 incluse)\u003CElse/\u003E \u003C/If\u003E?"
+  },
+  {
+    "RowId": 1964,
+    "Text": "Acheter \u003Cfrnoun(Item,1,IntegerParameter(1),1,1)\u003E pour \u003Ckilo(IntegerParameter(3),)\u003E gil\u003CIf(LessThanOrEqualTo(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E (taxe de \u003Ckilo(IntegerParameter(4),,)\u003E\uE049 incluse)\u003CElse/\u003E \u003C/If\u003E?"
+  },
+  {
+    "RowId": 1965,
+    "Text": "\u00C9quipement"
+  },
+  {
+    "RowId": 1966,
+    "Text": "Objets"
+  },
+  {
+    "RowId": 1967,
+    "Text": "Rechercher"
+  },
+  {
+    "RowId": 1968,
+    "Text": "Nv"
+  },
+  {
+    "RowId": 1969,
+    "Text": "Nv 1"
+  },
+  {
+    "RowId": 1970,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1971,
+    "Text": ""
+  },
+  {
+    "RowId": 1972,
+    "Text": "Prix"
+  },
+  {
+    "RowId": 1973,
+    "Text": "Qt\u00E9"
+  },
+  {
+    "RowId": 1974,
+    "Text": "HQ"
+  },
+  {
+    "RowId": 1975,
+    "Text": "Acheteur"
+  },
+  {
+    "RowId": 1976,
+    "Text": "Date"
+  },
+  {
+    "RowId": 1977,
+    "Text": "Derni\u00E8res transactions"
+  },
+  {
+    "RowId": 1978,
+    "Text": "Il n\u0027y a pas d\u0027historique."
+  },
+  {
+    "RowId": 1979,
+    "Text": "Votre niveau de p\u00EAche n\u0027est pas assez \u00E9lev\u00E9 pour utiliser cet app\u00E2t. Acheter?"
+  },
+  {
+    "RowId": 1980,
+    "Text": "Recherche avanc\u00E9e"
+  },
+  {
+    "RowId": 1981,
+    "Text": ""
+  },
+  {
+    "RowId": 1982,
+    "Text": "S\u00E9lectionnez vos param\u00E8tres"
+  },
+  {
+    "RowId": 1983,
+    "Text": "Rechercher"
+  },
+  {
+    "RowId": 1984,
+    "Text": "Afficher uniquement les objets HQ"
+  },
+  {
+    "RowId": 1985,
+    "Text": "Cacher les objets vendus en tenue"
+  },
+  {
+    "RowId": 1986,
+    "Text": "Renseignez les premi\u00E8res lettres de l\u0027objet recherch\u00E9 et appuyez sur le bouton Rechercher. Saisir une ou deux lettres listera les 20 premiers r\u00E9sultats, en saisir trois ou plus listera tous les r\u00E9sultats.\nUtilisez \u003CIcon2\u003E5\u003C/Icon2\u003E ou les touches directionnelles vers le haut ou le bas pour voir l\u0027historique de saisie."
+  },
+  {
+    "RowId": 1987,
+    "Text": "S\u00E9lectionnez le niveau d\u0027\u00E9quipement et appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1988,
+    "Text": "S\u00E9lectionnez la classe et le niveau d\u0027\u00E9quipement, puis appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1989,
+    "Text": "Appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1990,
+    "Text": "Ne pas prendre en compte les mat\u00E9rias"
+  },
+  {
+    "RowId": 1991,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(LessThanOrEqualTo(IntegerParameter(1),1))\u003Esertie\u003CElse/\u003Eserties\u003C/If\u003E"
+  },
+  {
+    "RowId": 1992,
+    "Text": "\u003Ckilo(IntegerParameter(1),)\u003E\uE049"
+  },
+  {
+    "RowId": 1993,
+    "Text": "\u003Ckilo(IntegerParameter(1),)\u003E\uE049"
+  },
+  {
+    "RowId": 1994,
+    "Text": "\u003Ckilo(IntegerParameter(1),)\u003E"
+  },
+  {
+    "RowId": 1995,
+    "Text": "\u003Ckilo(IntegerParameter(1),)\u003E-\u003Ckilo(IntegerParameter(2),)\u003E"
+  },
+  {
+    "RowId": 1996,
+    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E"
+  },
+  {
+    "RowId": 1997,
+    "Text": "Attendez un peu et retentez la recherche."
+  },
+  {
+    "RowId": 1998,
+    "Text": "Attendez un peu et retentez la recherche."
+  },
+  {
+    "RowId": 1999,
+    "Text": "Logement"
+  },
+  {
+    "RowId": 2001,
+    "Text": "Nv"
+  },
+  {
+    "RowId": 2002,
+    "Text": "PV"
+  },
+  {
+    "RowId": 2003,
+    "Text": "PM"
+  },
+  {
+    "RowId": 2004,
+    "Text": "PT"
+  },
+  {
+    "RowId": 2005,
+    "Text": "PR"
+  },
+  {
+    "RowId": 2006,
+    "Text": "PS"
+  },
+  {
+    "RowId": 2007,
+    "Text": "PF"
+  },
+  {
+    "RowId": 2008,
+    "Text": "\u002B"
+  },
+  {
+    "RowId": 2009,
+    "Text": "-"
+  },
+  {
+    "RowId": 2011,
+    "Text": "Force"
+  },
+  {
+    "RowId": 2012,
+    "Text": "Vitalit\u00E9"
+  },
+  {
+    "RowId": 2013,
+    "Text": "Dext\u00E9rit\u00E9"
+  },
+  {
+    "RowId": 2014,
+    "Text": "Intelligence"
+  },
+  {
+    "RowId": 2015,
+    "Text": "Esprit"
+  },
+  {
+    "RowId": 2020,
+    "Text": "\u003CIf(IntegerParameter(2))\u003E\u003Cspan\u003E\u003Ci\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/i\u003E\u003C/span\u003E\u003CElse/\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 2021,
+    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E"
+  },
+  {
+    "RowId": 2022,
+    "Text": "\u003CHead\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 2023,
+    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 2024,
+    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 2025,
+    "Text": "\u003CHead\u003E\u003Csheet(ObjStr,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 2026,
+    "Text": "\u003CHead\u003E\u003Csheet(ActStr,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+  },
+  {
+    "RowId": 2027,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2028,
+    "Text": "\uE048"
+  },
+  {
+    "RowId": 2029,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2030,
+    "Text": "\u003Cswitch(IntegerParameter(1),\uE061,\uE062,\uE063,\uE064,\uE065,\uE066,\uE067)\u003E"
+  },
+  {
+    "RowId": 2031,
+    "Text": "\uE048"
+  },
+  {
+    "RowId": 2032,
+    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E"
+  },
+  {
+    "RowId": 2033,
+    "Text": "\u003Csheet(GrandCompany,IntegerParameter(1),0)\u003E"
+  },
+  {
+    "RowId": 2034,
+    "Text": "\uE06C \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+  },
+  {
+    "RowId": 2035,
+    "Text": "??"
+  },
+  {
+    "RowId": 2036,
+    "Text": " \u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
+  },
+  {
+    "RowId": 2037,
+    "Text": "\uE034"
+  },
+  {
+    "RowId": 2038,
+    "Text": "\uE035"
+  },
+  {
+    "RowId": 2039,
+    "Text": "\uE03A \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+  },
+  {
+    "RowId": 2041,
+    "Text": "x \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2042,
+    "Text": "x 10k\u002B"
+  },
+  {
+    "RowId": 2043,
+    "Text": "Tout"
+  },
+  {
+    "RowId": 2044,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2045,
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\uE06C \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/i\u003E\u003CElse/\u003E\uE06C \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 2046,
+    "Text": "NOUVEAU"
+  },
+  {
+    "RowId": 2047,
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/i\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 2048,
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E%\u003C/i\u003E\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E%\u003C/If\u003E"
+  },
+  {
+    "RowId": 2049,
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\uE03A \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/i\u003E\u003CElse/\u003E\uE03A \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
+  },
+  {
+    "RowId": 2050,
+    "Text": "Alliance"
+  },
+  {
+    "RowId": 2051,
+    "Text": "Membres de l\u0027alliance"
+  },
+  {
+    "RowId": 2052,
+    "Text": ""
+  },
+  {
+    "RowId": 2053,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 2054,
+    "Text": "Classe/Job"
+  },
+  {
+    "RowId": 2055,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 2056,
+    "Text": "???"
+  },
+  {
+    "RowId": 2057,
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cdigit(IntegerParameter(1),2)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E,\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E%"
+  },
+  {
+    "RowId": 2058,
+    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E-\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2060,
+    "Text": "Achever le rang \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2061,
+    "Text": "\u003CHead\u003E\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(2),\u003Csheet(GCRankLimsaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankGridaniaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankUldahFemaleText,IntegerParameter(3),0)\u003E)\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\u003Csheet(GCRankLimsaMaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankGridaniaMaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankUldahMaleText,IntegerParameter(3),0)\u003E)\u003E\u003C/If\u003E\u003C/Head\u003E ou plus"
+  },
+  {
+    "RowId": 2063,
+    "Text": "Dialogues lus automatiquement"
+  },
+  {
+    "RowId": 2064,
+    "Text": "Tous"
+  },
+  {
+    "RowId": 2065,
+    "Text": "Doubl\u00E9s seulement"
+  },
+  {
+    "RowId": 2066,
+    "Text": "Dialogues non doubl\u00E9s"
+  },
+  {
+    "RowId": 2067,
+    "Text": "Vitesse de lecture auto."
+  },
+  {
+    "RowId": 2068,
+    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+  },
+  {
+    "RowId": 2069,
+    "Text": "Param\u00E8tres"
+  },
+  {
+    "RowId": 2070,
+    "Text": "Liste d\u0027envies"
+  },
+  {
+    "RowId": 2071,
+    "Text": "Liste d\u0027envies"
+  },
+  {
+    "RowId": 2072,
+    "Text": "Vous pouvez enregistrer jusqu\u0027\u00E0 10 objets dans votre liste d\u0027envies. Les autres joueurs ne peuvent pas la consulter, mais le total des personnes de votre Monde d\u00E9sirant un objet est affich\u00E9 dans les r\u00E9sultats de recherche.\n\n\u003Cspan\u003E* Toutes les donn\u00E9es des listes d\u0027envie sont effac\u00E9es lors des maintenances du serveur.\u003C/span\u003E"
+  },
+  {
+    "RowId": 2073,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu  \u003CIcon2\u003E8\u003C/Icon2\u003E Voir les r\u00E9sultats  \u003CIcon2\u003E9\u003C/Icon2\u003E Retour"
+  },
+  {
+    "RowId": 2074,
+    "Text": "Ajouter \u00E0 la liste d\u0027envies (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+  },
+  {
+    "RowId": 2075,
+    "Text": "Retirer de la liste d\u0027envies (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+  },
+  {
+    "RowId": 2076,
+    "Text": "Demande"
+  },
+  {
+    "RowId": 2077,
+    "Text": "Demande"
+  },
+  {
+    "RowId": 2078,
+    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Sous-menu  \u003CIcon2\u003E8\u003C/Icon2\u003E Voir les r\u00E9sultats  \u003CIcon2\u003E9\u003C/Icon2\u003E Retour  \u003CIcon2\u003E12\u003C/Icon2\u003E\u003CIcon2\u003E13\u003C/Icon2\u003E Changer de page"
+  },
+  {
+    "RowId": 2079,
+    "Text": "Chercher dans la m\u00EAme cat\u00E9gorie"
+  }
+]
