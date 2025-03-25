@@ -70,7 +70,7 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                 uint num = uint.Parse(numStr); // Convert the string to an integer
                 var row = _uiColors.GetRow(num);
                 
-                var colorProperty = typeof(UIColor).GetProperty("UIForeground");
+                var colorProperty = typeof(UIColor).GetProperty("Dark");
                 if (colorProperty != null && colorProperty.PropertyType == typeof(uint)) {
                     uint colorValue = (uint)colorProperty.GetValue(row);
                     string hexValue = colorValue.ToString("x");
