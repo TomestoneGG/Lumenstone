@@ -8689,7 +8689,7 @@
       "RowId": 1,
       "SheetName": "ClassJobCategory"
     },
-    "StatusCategory": 2,
+    "StatusCategory": 1,
     "HitEffect": {
       "RowId": 16,
       "SheetName": "StatusHitEffect"
@@ -8779,7 +8779,7 @@
       "RowId": 1,
       "SheetName": "ClassJobCategory"
     },
-    "StatusCategory": 2,
+    "StatusCategory": 1,
     "HitEffect": {
       "RowId": 16,
       "SheetName": "StatusHitEffect"
@@ -8869,7 +8869,7 @@
       "RowId": 1,
       "SheetName": "ClassJobCategory"
     },
-    "StatusCategory": 2,
+    "StatusCategory": 1,
     "HitEffect": {
       "RowId": 16,
       "SheetName": "StatusHitEffect"
@@ -10517,7 +10517,7 @@
   {
     "RowId": 4235,
     "Name": "Fureur",
-    "Description": "Utilise continuellement des attaques automatiques sur l\u0027ennemi le plus proche.\nCertaines alt\u00E9rations d\u0027\u00E9tat sont annul\u00E9es et la plupart des projections et attractions sont sans effet.",
+    "Description": "Effectue continuellement des attaques physiques dans une zone en \u00E9ventail vers les ennemis \u00E0 proximit\u00E9.\nCertaines alt\u00E9rations d\u0027\u00E9tat sont annul\u00E9es et la plupart des projections et attractions sont sans effet.",
     "Icon": 229904,
     "ParamModifier": 7751,
     "VFX": {
@@ -10745,7 +10745,7 @@
   {
     "RowId": 4240,
     "Name": "Ciblage",
-    "Description": "Les chances de critiques et de coups nets sont augment\u00E9es.",
+    "Description": "Les chances de critiques et de coups nets sont augment\u00E9es.\nNe s\u0027applique pas aux actions curatives.",
     "Icon": 229907,
     "ParamModifier": 10,
     "VFX": null,
@@ -10790,7 +10790,7 @@
   {
     "RowId": 4241,
     "Name": "Ciblage s\u00FBr",
-    "Description": "Les chances de critiques et de coups nets sont augment\u00E9es et les attaques touchent \u00E0 coup s\u00FBr.",
+    "Description": "Les chances de critiques et de coups nets sont augment\u00E9es et les attaques touchent \u00E0 coup s\u00FBr.\nNe s\u0027applique pas aux actions curatives.",
     "Icon": 229908,
     "ParamModifier": 50,
     "VFX": null,
@@ -14126,7 +14126,10 @@
     "Description": "L\u0027utilisation de certaines actions inflige des d\u00E9g\u00E2ts suppl\u00E9mentaires \u00E0 la cible et aux ennemis autour.",
     "Icon": 214733,
     "ParamModifier": 0,
-    "VFX": null,
+    "VFX": {
+      "RowId": 973,
+      "SheetName": "StatusLoopVFX"
+    },
     "Log": 0,
     "Unknown0": 166,
     "MaxStacks": 0,
@@ -14171,7 +14174,10 @@
     "Description": "Les d\u00E9g\u00E2ts re\u00E7us sont r\u00E9duits, et des d\u00E9g\u00E2ts sont inflig\u00E9s pour chaque attaque re\u00E7ue.",
     "Icon": 214734,
     "ParamModifier": -10,
-    "VFX": null,
+    "VFX": {
+      "RowId": 974,
+      "SheetName": "StatusLoopVFX"
+    },
     "Log": 0,
     "Unknown0": 166,
     "MaxStacks": 0,
@@ -18144,7 +18150,7 @@
     "RowId": 4405,
     "Name": "Gain de puissance",
     "Description": "Le Super carotto-canon peut \u00EAtre utilis\u00E9.",
-    "Icon": 215589,
+    "Icon": 216256,
     "ParamModifier": 0,
     "VFX": null,
     "Log": 0,
@@ -18568,17 +18574,26 @@
   },
   {
     "RowId": 4415,
-    "Name": "",
-    "Description": "",
-    "Icon": 0,
+    "Name": "Marque de contributeur exemplaire",
+    "Description": "Prouve l\u0027obtention du titre de contributeur exemplaire sur une p\u00E9riode donn\u00E9e. Artisans et r\u00E9colteurs uniquement.",
+    "Icon": 216255,
     "ParamModifier": 0,
-    "VFX": null,
+    "VFX": {
+      "RowId": 897,
+      "SheetName": "StatusLoopVFX"
+    },
     "Log": 0,
     "Unknown0": 0,
     "MaxStacks": 0,
-    "ClassJobCategory": null,
-    "StatusCategory": 0,
-    "HitEffect": null,
+    "ClassJobCategory": {
+      "RowId": 1,
+      "SheetName": "ClassJobCategory"
+    },
+    "StatusCategory": 1,
+    "HitEffect": {
+      "RowId": 16,
+      "SheetName": "StatusHitEffect"
+    },
     "PartyListPriority": 0,
     "CanIncreaseRewards": 0,
     "ParamEffect": 0,
@@ -18594,7 +18609,7 @@
     "Transfiguration": false,
     "IsGaze": false,
     "CanDispel": false,
-    "InflictedByActor": false,
+    "InflictedByActor": true,
     "IsPermanent": false,
     "NoLogVfx": false,
     "Unknown5": false,
