@@ -49,7 +49,7 @@
   },
   {
     "RowId": 10410,
-    "Text": null
+    "Text": "Convertir la sauvegarde de la progression en \u00E9quipe pr\u00E9form\u00E9e pour le groupement automatique?\n\nUne sauvegarde en groupement automatique permet de former une \u00E9quipe avec des joueurs ayant la m\u00EAme progression que soi et d\u0027ajouter automatiquement des \u00E9quipiers manquants.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ELes donn\u00E9es relatives aux objets sp\u00E9ciaux poss\u00E9d\u00E9s ne sont pas conserv\u00E9es lors de la conversion.\u003C/span\u003E\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EAucun score n\u0027est calcul\u00E9 pour les incursions en \u00E9quipe form\u00E9e par groupement automatique.\u003C/span\u003E\n\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003E* Attention: la conversion d\u0027une sauvegarde ne peut pas \u00EAtre annul\u00E9e.\u003C/span\u003E"
   },
   {
     "RowId": 10411,
@@ -57,7 +57,7 @@
   },
   {
     "RowId": 10412,
-    "Text": null
+    "Text": "Effacer la sauvegarde afin de recommencer depuis le d\u00E9but?\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECe choix r\u00E9initialisera la progression et le niveau, mais les degr\u00E9s d\u0027am\u00E9lioration du \u003CLower\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Lower\u003E et du \u003CLower\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003C/Lower\u003E seront conserv\u00E9s.\u003C/span\u003E\n\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003E* Attention: la suppression d\u0027une sauvegarde ne peut pas \u00EAtre annul\u00E9e.\u003C/span\u003E"
   },
   {
     "RowId": 10413,
@@ -117,7 +117,7 @@
   },
   {
     "RowId": 10427,
-    "Text": null
+    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Cspan style=\u0022color: #f9e846;\u0022\u003E\u003Ci\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003C/i\u003E\u003C/span\u003E\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
   },
   {
     "RowId": 10428,
@@ -413,7 +413,7 @@
   },
   {
     "RowId": 10518,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003ENombre de catalyseurs insuffisant.\nImpossible d\u0027appliquer les changements.\u003C/span\u003E"
   },
   {
     "RowId": 10519,
@@ -429,7 +429,7 @@
   },
   {
     "RowId": 10522,
-    "Text": null
+    "Text": "Commencer la mission \u201C\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201D?\n\nRetour: \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E \u00E0 \u003CNum\u003Et_hour\u003C/Num\u003Eh\u003CSec\u003Et_min\u003C/Sec\u003E (\u003CIf(Equal(IntegerParameter(3),0))\u003Eimminent\u003CElse/\u003Edans \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E heure\u003CIf(Equal(IntegerParameter(3),1))\u003E \u003CElse/\u003Es\u003C/If\u003E\u003C/If\u003E)\n\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Les affinit\u00E9s non activ\u00E9es seront perdues.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EUne seule mission sp\u00E9ciale peut \u00EAtre r\u00E9ussie par semaine. Il faudra ensuite attendre la prochaine remise \u00E0 z\u00E9ro hebdomadaire pour pouvoir en effectuer une autre.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10523,
@@ -657,7 +657,7 @@
   },
   {
     "RowId": 10580,
-    "Text": null
+    "Text": "L\u0027escouade va suivre l\u0027entra\u00EEnement \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Attention: le total des capacit\u00E9s de l\u0027escouade ayant atteint le maximum pour son rang, certaines valeurs vont \u00EAtre r\u00E9duites.\u003C/span\u003E"
   },
   {
     "RowId": 10581,
@@ -689,11 +689,11 @@
   },
   {
     "RowId": 10588,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EMirages disponibles \u00E0 partir du niveau 51\u003C/span\u003E"
   },
   {
     "RowId": 10589,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ES\u0027adresser \u00E0 la recrue pour appliquer des mirages\u003C/span\u003E"
   },
   {
     "RowId": 10590,
@@ -737,7 +737,7 @@
   },
   {
     "RowId": 10600,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EMirages non disponibles\u003C/span\u003E"
   },
   {
     "RowId": 10603,
@@ -929,7 +929,7 @@
   },
   {
     "RowId": 10676,
-    "Text": null
+    "Text": "La classe de ce personnage va \u00EAtre chang\u00E9e en \u003Csheet(ClassJob,IntegerParameter(4),0)\u003E gr\u00E2ce \u00E0 l\u0027utilisation d\u0027\u003Cfrnoun(Item,1,IntegerParameter(1),1,1)\u003E.\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EDu fait du changement d\u0027\u00E9quipement, tous les mirages ont \u00E9t\u00E9 retir\u00E9s.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
   },
   {
     "RowId": 10677,
@@ -1033,7 +1033,7 @@
   },
   {
     "RowId": 10707,
-    "Text": null
+    "Text": "Cette fonction permet d\u0027organiser un combat JcJ personnalis\u00E9.\nL\u0027affrontement peut se faire entre deux petites \u00E9quipes ou deux \u00E9quipes compl\u00E8tes.\nUne fois que tout est pr\u00EAt, le chef d\u0027\u00E9quipe du camp des Griffes doit s\u00E9lectionner \u201CParticiper\u201D pour commencer le combat.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* L\u0027\u00E9quipe de spectateurs doit compter au moins deux personnages.\n* Une \u00E9quipe de spectateurs ne peut \u00EAtre invit\u00E9e qu\u0027apr\u00E8s que le camp adverse a accept\u00E9 l\u0027invitation.\n* Les chefs des deux camps et de l\u0027\u00E9quipe de spectateurs doivent se trouver dans la m\u00EAme zone au moment de commencer le combat.\n* L\u0027option \u201CSans restriction\u201D est ignor\u00E9e lors des combats JcJ personnalis\u00E9s.\n\n* L\u0027enregistrement du combat est annul\u00E9 dans les cas suivants:\n - Changement de zone du chef d\u0027\u00E9quipe\n - Changement de chef d\u0027\u00E9quipe\n - D\u00E9connexion d\u0027un membre d\u0027une \u00E9quipe\n - Ajout d\u0027un personnage \u00E0 l\u0027une des \u00E9quipes\n - D\u00E9part d\u0027un personnage d\u0027une des \u00E9quipes\n - Dissolution d\u0027une \u00E9quipe\n - Refus de l\u0027autre \u00E9quipe de participer au combat\n - S\u00E9lection du bouton \u201CTout annuler\u201D\u003C/span\u003E"
   },
   {
     "RowId": 10708,
@@ -1105,7 +1105,7 @@
   },
   {
     "RowId": 10725,
-    "Text": null
+    "Text": "Quitter l\u0027ar\u00E8ne du combat JcJ personnalis\u00E9?\n\nIl suffit qu\u0027un des joueurs adverses quitte l\u0027instance pour mettre fin aux affrontements.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Le d\u00E9part des spectateurs n\u0027affecte pas l\u0027organisation d\u0027un nouveau combat.\u003C/span\u003E"
   },
   {
     "RowId": 10726,
@@ -1237,7 +1237,7 @@
   },
   {
     "RowId": 10811,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* \u201CD\u00E9j\u00E0 termin\u00E9\u201D n\u0027est disponible que pour les missions pr\u00E9alablement r\u00E9ussies.\n* Sp\u00E9cifier une phase ne permet pas de sauter celles pr\u00E9c\u00E9dentes.\u003C/span\u003E"
   },
   {
     "RowId": 10812,
@@ -1249,7 +1249,7 @@
   },
   {
     "RowId": 10814,
-    "Text": null
+    "Text": "Permet de participer \u00E0 une bataille du Front par groupement automatique sans restriction d\u0027all\u00E9geance \u00E0 une grande compagnie.\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003E* En cas d\u0027enregistrement en \u00E9quipe, le groupement automatique se fait syst\u00E9matiquement sans restriction d\u0027all\u00E9geance, quel que soit l\u0027\u00E9tat de ce param\u00E8tre.\u003C/span\u003E"
   },
   {
     "RowId": 10815,
@@ -1289,7 +1289,7 @@
   },
   {
     "RowId": 10824,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* S\u0027enregistrer pour cette mission n\u0027est possible qu\u0027en ayant form\u00E9 une \u00E9quipe compl\u00E8te (structure libre). Les param\u00E8tres de condition de groupement ne sont donc pas disponibles.\u003C/span\u003E"
   },
   {
     "RowId": 10825,
@@ -1425,7 +1425,7 @@
   },
   {
     "RowId": 10871,
-    "Text": null
+    "Text": "Vous vous appr\u00EAtez \u00E0 nous signaler que \u003CString\u003EStringParameter(1)\u003C/String\u003E fait de la publicit\u00E9 pour de la vente de donn\u00E9es de jeu contre argent r\u00E9el (\u201CRMT\u201D).\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003EAttention! Tout signalement abusif sera puni.\u003C/span\u003E"
   },
   {
     "RowId": 10872,
@@ -1637,7 +1637,7 @@
   },
   {
     "RowId": 10938,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ELes conditions choisies ne sont qu\u0027une indication pour le recrutement. Elles devront \u00EAtre s\u00E9lectionn\u00E9es dans l\u0027outil de mission pour \u00EAtre appliqu\u00E9es.\u003C/span\u003E"
   },
   {
     "RowId": 10939,
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 10946,
-    "Text": null
+    "Text": "Ajouter \u003CString\u003EStringParameter(1)\u003C/String\u003E \u00E0 votre liste noire?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Les noms de personnages des autres Mondes sont sauvegard\u00E9s dans le client.\u003C/span\u003E"
   },
   {
     "RowId": 10947,
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 10955,
-    "Text": null
+    "Text": "\n \u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Les noms de personnages des autres Mondes sont sauvegard\u00E9s dans le client.\u003C/span\u003E"
   },
   {
     "RowId": 10956,
@@ -1713,7 +1713,7 @@
   },
   {
     "RowId": 10957,
-    "Text": null
+    "Text": "Le personnage \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D va \u00EAtre ajout\u00E9 \u00E0 votre liste noire. Dor\u00E9navant, vous ne le verrez plus dans le jeu et ses messages seront cach\u00E9s. Ceci s\u0027appliquera \u00E9galement \u00E0 tous les autres personnages du m\u00EAme compte de service.\nLe nom et le monde d\u0027origine du personnage enregistr\u00E9 seront sauvegard\u00E9s localement.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ESi vous d\u00E9sirez simplement cacher les messages de ce personnage, vous pouvez l\u0027ajouter \u00E0 votre liste muette.\u003C/span\u003E"
   },
   {
     "RowId": 10958,
@@ -1729,7 +1729,7 @@
   },
   {
     "RowId": 10961,
-    "Text": null
+    "Text": "Cet \u00E9tat en ligne n\u0027est accessible qu\u0027aux personnages inactifs depuis un minimum de 45 jours et ayant au moins une classe \u00E0 un niveau sup\u00E9rieur ou \u00E9gal \u00E0 50.\n\nIl permet de b\u00E9n\u00E9ficier des avantages suivants:\n  \u003Cspan style=\u0022color: #ffff66;\u0022\u003E- Participation au r\u00E9seau des novices\n  - Bonus de points d\u0027exp\u00E9rience pour chaque classe jusqu\u0027au niveau 90 lorsqu\u0027en \u00E9quipe avec un \u201CMentor\u201D (\u003CIcon\u003E78\u003C/Icon\u003E).\u003C/span\u003E\n\nL\u0027\u00E9tat en ligne \u201CRappel\u00E9(e)\u201D est retir\u00E9 apr\u00E8s cumulation de 72 heures de jeu ou en cas d\u0027utilisation de la commande texte \u201C\u003Csheet(TextCommand,238,8)\u003E\u201D.\n"
   },
   {
     "RowId": 10962,
@@ -1737,7 +1737,7 @@
   },
   {
     "RowId": 10963,
-    "Text": null
+    "Text": "Vous \u00EAtes sur le point de retirer l\u0027\u00E9tat en ligne \u201CRappel\u00E9(e)\u201D.\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E* Vous ne pourrez plus en b\u00E9n\u00E9ficier tant que les conditions requises ne seront pas \u00E0 nouveau remplies.\u003C/span\u003E"
   },
   {
     "RowId": 10964,
@@ -1753,7 +1753,7 @@
   },
   {
     "RowId": 10967,
-    "Text": null
+    "Text": "Vous \u00EAtes sur le point de remettre \u00E0 plus tard la d\u00E9cision de jouer ou non en tant que \u201Crappel\u00E9(e)\u201D.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003ELe choix vous sera \u00E0 nouveau offert lors de votre prochaine connexion.\u003C/span\u003E"
   },
   {
     "RowId": 10968,
@@ -1937,7 +1937,7 @@
   },
   {
     "RowId": 11014,
-    "Text": null
+    "Text": "Accomplir un d\u00E9fi irr\u00E9el permet de jouer \u00E0 Touch\u00E9-tourn\u00E9 une fois par semaine (temps r\u00E9el).\nCe mini-jeu est disponible aupr\u00E8s du \u201Cpr\u00E9sident\u201D une fois le d\u00E9fi termin\u00E9.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Lorsqu\u0027un essai bonus est obtenu, il est possible de tenter sa chance \u00E0 Touch\u00E9-tourn\u00E9 une deuxi\u00E8me fois au cours de la m\u00EAme semaine apr\u00E8s avoir \u00E0 nouveau termin\u00E9 le d\u00E9fi irr\u00E9el.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* \u201CD\u00E9j\u00E0 termin\u00E9\u201D n\u0027est disponible que pour les missions pr\u00E9alablement r\u00E9ussies.\u003C/span\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E* Sp\u00E9cifier une phase ne permet pas de sauter celles pr\u00E9c\u00E9dentes.\u003C/span\u003E"
   },
   {
     "RowId": 11015,
@@ -1949,7 +1949,7 @@
   },
   {
     "RowId": 11017,
-    "Text": null
+    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EEssai \u00E0 Touch\u00E9-tourn\u00E9: accompli\u003C/span\u003E"
   },
   {
     "RowId": 11018,
