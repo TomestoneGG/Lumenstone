@@ -252,8 +252,8 @@ class Program
                     }
 
                     var image = GetImage(icon);
-                
-                    image.Save(iconFilePath);
+                    if (image != null)
+                        image.Save(iconFilePath);
                 }
             }
 
@@ -269,8 +269,8 @@ class Program
                     }
 
                     var image = GetImage(iconHD);
-                
-                    image.Save(iconHDFilePath);
+                    if (image != null)
+                        image.Save(iconHDFilePath);
                 }
             }
         }
@@ -279,10 +279,16 @@ class Program
     private static Image<Bgra32> GetImage(TexFile tex)
     {
         // Create a new image from the raw pixel data
-        var image = Image.LoadPixelData<Bgra32>(tex.ImageData, tex.Header.Width, tex.Header.Height);
-
-        return image;
-    }
+        try
+        {
+            var image = Image.LoadPixelData<Bgra32>(tex.ImageData, tex.Header.Width, tex.Header.Height);
+            return image;
+        }
+        catch (System.NotSupportedException e)
+        {
+            Console.WriteLine("Failed to extract image!");
+            return null;
+        }    }
 
     private static void ExtractMaps(Lumina.GameData lumina, bool fullImport)
     {
@@ -336,7 +342,8 @@ class Program
                 }
 
                 var image = GetImage(file);
-                image.SaveAsJpeg(outputFilePath);
+                if (image != null)
+                    image.SaveAsJpeg(outputFilePath);
             }
         }
     }
@@ -378,7 +385,8 @@ class Program
                 var file = lumina.GetFile<TexFile>(filePath);
 
                 var image = GetImage(file);
-                image.SaveAsJpeg(outputFilePath);
+                if (image != null)
+                    image.SaveAsJpeg(outputFilePath);
             }
         }
     }
