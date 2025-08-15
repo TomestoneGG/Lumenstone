@@ -106,7 +106,7 @@
   },
   {
     "RowId": 2009,
-    "Text": "\u003CIf(Equal(IntegerParameter(2),1))\u003EAn enemy approaches\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E enemies approach\u003C/If\u003E!",
+    "Text": "<If(Equal(IntegerParameter(2),1))>An enemy approaches<Else/><Num>IntegerParameter(2)</Num> enemies approach</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -118,7 +118,7 @@
   },
   {
     "RowId": 2010,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>obtain<Else/>obtains</If> <ennoun(Item,1,IntegerParameter(1),1,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -130,7 +130,7 @@
   },
   {
     "RowId": 2011,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>obtain<Else/>obtains</If> <If(Equal(IntegerParameter(2),1))><ennoun(Item,1,IntegerParameter(1),1,1)><Else/><Num>IntegerParameter(2)</Num> <ennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)></If>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -142,7 +142,7 @@
   },
   {
     "RowId": 2012,
-    "Text": "\u003CHead\u003E\u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E will be sealed off in \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Esecond\u003CElse/\u003Eseconds\u003C/If\u003E!",
+    "Text": "<Head><ennoun(PlaceName,2,IntegerParameter(1),2,1)></Head> will be sealed off in <Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>second<Else/>seconds</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -154,7 +154,7 @@
   },
   {
     "RowId": 2013,
-    "Text": "\u003CHead\u003E\u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E is sealed off!",
+    "Text": "<Head><ennoun(PlaceName,2,IntegerParameter(1),2,1)></Head> is sealed off!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -166,7 +166,7 @@
   },
   {
     "RowId": 2014,
-    "Text": "\u003CHead\u003E\u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E is no longer sealed!",
+    "Text": "<Head><ennoun(PlaceName,2,IntegerParameter(1),2,1)></Head> is no longer sealed!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -190,7 +190,7 @@
   },
   {
     "RowId": 2016,
-    "Text": "The skin falls off Graffias\u0027s tail!",
+    "Text": "The skin falls off Graffias's tail!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -214,7 +214,7 @@
   },
   {
     "RowId": 2018,
-    "Text": "An exit has appeared. You have less than \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E remaining in the area.",
+    "Text": "An exit has appeared. You have less than <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>minute<Else/>minutes</If> remaining in the area.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -346,7 +346,7 @@
   },
   {
     "RowId": 2029,
-    "Text": "The blasting device won\u0027t work without firesand in the powder chamber.",
+    "Text": "The blasting device won't work without firesand in the powder chamber.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -370,7 +370,7 @@
   },
   {
     "RowId": 2031,
-    "Text": "You obtain \u003Cennoun(EventItem,1,IntegerParameter(1),1,1)\u003E.",
+    "Text": "You obtain <ennoun(EventItem,1,IntegerParameter(1),1,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -382,7 +382,7 @@
   },
   {
     "RowId": 2032,
-    "Text": "You obtain \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(EventItem,3,IntegerParameter(1),IntegerParameter(2),1)\u003E.",
+    "Text": "You obtain <Num>IntegerParameter(2)</Num> <ennoun(EventItem,3,IntegerParameter(1),IntegerParameter(2),1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -454,7 +454,7 @@
   },
   {
     "RowId": 2038,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E releases \u003Cennoun(BNpcName,2,IntegerParameter(2),2,1)\u003E!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> releases <ennoun(BNpcName,2,IntegerParameter(2),2,1)>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -478,7 +478,7 @@
   },
   {
     "RowId": 2040,
-    "Text": "Bubbles begin forming on the water\u0027s surface.",
+    "Text": "Bubbles begin forming on the water's surface.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -502,7 +502,7 @@
   },
   {
     "RowId": 2042,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E appears!",
+    "Text": "<Head><ennoun(BNpcName,1,IntegerParameter(1),1,1)></Head> appears!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -682,7 +682,7 @@
   },
   {
     "RowId": 2057,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E emits a discordant shrill.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> emits a discordant shrill.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -694,7 +694,7 @@
   },
   {
     "RowId": 2058,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is placed upon the scales.",
+    "Text": "<Head><ennoun(Item,2,IntegerParameter(1),1,1)></Head> is placed upon the scales.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -706,7 +706,7 @@
   },
   {
     "RowId": 2059,
-    "Text": "\u003CHead\u003E\u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E opens. ",
+    "Text": "<Head><ennoun(PlaceName,2,IntegerParameter(1),2,1)></Head> opens. ",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -790,7 +790,7 @@
   },
   {
     "RowId": 2066,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is attempting to break through the wall.",
+    "Text": "<Head><ennoun(BNpcName,1,IntegerParameter(1),1,1)></Head> is attempting to break through the wall.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -826,7 +826,7 @@
   },
   {
     "RowId": 2069,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E drops \u003Cennoun(EventItem,1,IntegerParameter(2),1,1)\u003E.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> drops <ennoun(EventItem,1,IntegerParameter(2),1,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -838,7 +838,7 @@
   },
   {
     "RowId": 2070,
-    "Text": "You are \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E or more levels above the recommended level for this FATE.\nTo join, use the level sync function located in the duty list.",
+    "Text": "You are <Num>IntegerParameter(1)</Num> or more levels above the recommended level for this FATE.\nTo join, use the level sync function located in the duty list.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -850,7 +850,7 @@
   },
   {
     "RowId": 2071,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>obtain<Else/>obtains</If> <ennoun(Item,1,IntegerParameter(1),1,1)>.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -862,7 +862,7 @@
   },
   {
     "RowId": 2072,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eobtain\u003CElse/\u003Eobtains\u003C/If\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>obtain<Else/>obtains</If> <Num>IntegerParameter(2)</Num> <ennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)>.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -898,7 +898,7 @@
   },
   {
     "RowId": 2075,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eyou\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(7),1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Eare\u003CElse/\u003Eis\u003C/If\u003E unable to obtain \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>are<Else/>is</If> unable to obtain <ennoun(Item,2,IntegerParameter(1),1,1)>.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -946,7 +946,7 @@
   },
   {
     "RowId": 2079,
-    "Text": "\u003CHead\u003E\u003Cennoun(EObj,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E begins counting down.",
+    "Text": "<Head><ennoun(EObj,3,IntegerParameter(1),1,1)></Head> begins counting down.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -958,7 +958,7 @@
   },
   {
     "RowId": 2080,
-    "Text": "\u003CHead\u003E\u003Cennoun(EObj,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E\u0027s timer resets.",
+    "Text": "<Head><ennoun(EObj,3,IntegerParameter(1),1,1)></Head>'s timer resets.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1018,7 +1018,7 @@
   },
   {
     "RowId": 2085,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,1,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E appears!",
+    "Text": "<Head><ennoun(BNpcName,1,IntegerParameter(1),1,1)></Head> appears!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1030,7 +1030,7 @@
   },
   {
     "RowId": 2086,
-    "Text": "\u003CHead\u003E\u003Cennoun(EObj,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E\u0027s countdown completes.",
+    "Text": "<Head><ennoun(EObj,3,IntegerParameter(1),1,1)></Head>'s countdown completes.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1042,7 +1042,7 @@
   },
   {
     "RowId": 2087,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is no longer invulnerable to attack!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is no longer invulnerable to attack!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1054,7 +1054,7 @@
   },
   {
     "RowId": 2088,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is invulnerable to attack!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is invulnerable to attack!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1066,7 +1066,7 @@
   },
   {
     "RowId": 2089,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E begins sowing its seeds.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> begins sowing its seeds.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1078,7 +1078,7 @@
   },
   {
     "RowId": 2090,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E takes a moment to reconsider...",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> takes a moment to reconsider...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1150,7 +1150,7 @@
   },
   {
     "RowId": 2096,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E senses danger and summons an army of \u003Cennoun(BNpcName,3,IntegerParameter(2),2,1)\u003E.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> senses danger and summons an army of <ennoun(BNpcName,3,IntegerParameter(2),2,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1162,7 +1162,7 @@
   },
   {
     "RowId": 2097,
-    "Text": "The ram\u0027s eyes now burn blue.",
+    "Text": "The ram's eyes now burn blue.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1174,7 +1174,7 @@
   },
   {
     "RowId": 2098,
-    "Text": "The dragon\u0027s eyes now burn violet.",
+    "Text": "The dragon's eyes now burn violet.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1186,7 +1186,7 @@
   },
   {
     "RowId": 2099,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E\u0027s eyes focus on a single target.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head>'s eyes focus on a single target.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1198,7 +1198,7 @@
   },
   {
     "RowId": 2100,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is no longer invulnerable to attack!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is no longer invulnerable to attack!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1210,7 +1210,7 @@
   },
   {
     "RowId": 2101,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is invulnerable to attack!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is invulnerable to attack!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1282,7 +1282,7 @@
   },
   {
     "RowId": 2107,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E senses danger and summons an army of \u003Cennoun(BNpcName,3,IntegerParameter(2),2,1)\u003E.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> senses danger and summons an army of <ennoun(BNpcName,3,IntegerParameter(2),2,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1354,7 +1354,7 @@
   },
   {
     "RowId": 2113,
-    "Text": "Charge complete in...\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Eclick\u003CElse/\u003Eclicks\u003C/If\u003E.",
+    "Text": "Charge complete in...<Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>click<Else/>clicks</If>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1378,7 +1378,7 @@
   },
   {
     "RowId": 2115,
-    "Text": "Do not allow \u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E to catch you!",
+    "Text": "Do not allow <ennoun(BNpcName,2,IntegerParameter(1),1,1)> to catch you!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1390,7 +1390,7 @@
   },
   {
     "RowId": 2116,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E begins quivering in time, as if sending a message to her minions.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> begins quivering in time, as if sending a message to her minions.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1402,7 +1402,7 @@
   },
   {
     "RowId": 2117,
-    "Text": "Take refuge in the tower and avoid Garuda\u0027s Great Whirlwind!",
+    "Text": "Take refuge in the tower and avoid Garuda's Great Whirlwind!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1462,7 +1462,7 @@
   },
   {
     "RowId": 2122,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E claws back up from the seven hells.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> claws back up from the seven hells.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1498,7 +1498,7 @@
   },
   {
     "RowId": 2125,
-    "Text": "The voidsent form the Demon\u0027s Sword.",
+    "Text": "The voidsent form the Demon's Sword.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1534,7 +1534,7 @@
   },
   {
     "RowId": 2128,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is attempting to flee!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is attempting to flee!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1546,7 +1546,7 @@
   },
   {
     "RowId": 2129,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E unleashes his fury.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> unleashes his fury.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1558,7 +1558,7 @@
   },
   {
     "RowId": 2130,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E chooses his next victim.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> chooses his next victim.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1570,7 +1570,7 @@
   },
   {
     "RowId": 2131,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E begins to growl...",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> begins to growl...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1582,7 +1582,7 @@
   },
   {
     "RowId": 2132,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E tires of the chase and returns to the darkness.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> tires of the chase and returns to the darkness.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1594,7 +1594,7 @@
   },
   {
     "RowId": 2133,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E spews void pitch at his feet.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> spews void pitch at his feet.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1750,7 +1750,7 @@
   },
   {
     "RowId": 2146,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E strikes the earth, bringing a shower of bomb boulders!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> strikes the earth, bringing a shower of bomb boulders!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1762,7 +1762,7 @@
   },
   {
     "RowId": 2147,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E gives up chase and returns to his lair.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> gives up chase and returns to his lair.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1786,7 +1786,7 @@
   },
   {
     "RowId": 2149,
-    "Text": "The king\u0027s pent-up rancor fades!",
+    "Text": "The king's pent-up rancor fades!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1810,7 +1810,7 @@
   },
   {
     "RowId": 2151,
-    "Text": "An imperial identification key falls from the soldier\u0027s hand.",
+    "Text": "An imperial identification key falls from the soldier's hand.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1954,7 +1954,7 @@
   },
   {
     "RowId": 2163,
-    "Text": "A bonus of \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Ckilo(IntegerParameter(1),,)\u003E experience points and \u003CElse/\u003E \u003C/If\u003E\u003Ckilo(IntegerParameter(2),,)\u003E gil has been awarded for swift first-time completion of duty objectives.",
+    "Text": "A bonus of <If(GreaterThan(IntegerParameter(1),0))><kilo(IntegerParameter(1),,)> experience points and <Else/> </If><kilo(IntegerParameter(2),,)> gil has been awarded for swift first-time completion of duty objectives.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1966,7 +1966,7 @@
   },
   {
     "RowId": 2164,
-    "Text": "You obtain \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(2),IntegerParameter(1),1)\u003E.",
+    "Text": "You obtain <Num>IntegerParameter(1)</Num> <ennoun(Item,3,IntegerParameter(2),IntegerParameter(1),1)>.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1978,7 +1978,7 @@
   },
   {
     "RowId": 2165,
-    "Text": "You obtain \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(2),IntegerParameter(1),1)\u003E.",
+    "Text": "You obtain <Num>IntegerParameter(1)</Num> <ennoun(Item,3,IntegerParameter(2),IntegerParameter(1),1)>.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -2026,7 +2026,7 @@
   },
   {
     "RowId": 2169,
-    "Text": "\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E members aboard. Waiting for activation.",
+    "Text": "<Head><If(IntegerParameter(1))><If(LessThanOrEqualTo(IntegerParameter(1),10))><switch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)><Else/><Num>IntegerParameter(1)</Num></If><Else/><Num>IntegerParameter(1)</Num></If></Head> members aboard. Waiting for activation.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2038,7 +2038,7 @@
   },
   {
     "RowId": 2170,
-    "Text": "You\u0027ve been discovered by a high-speed imperial assault craft!",
+    "Text": "You've been discovered by a high-speed imperial assault craft!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2062,7 +2062,7 @@
   },
   {
     "RowId": 2172,
-    "Text": "The assault craft\u0027s hull integrity is compromised!",
+    "Text": "The assault craft's hull integrity is compromised!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2074,7 +2074,7 @@
   },
   {
     "RowId": 2173,
-    "Text": "You cannot carry any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
+    "Text": "You cannot carry any more <ennoun(Item,3,IntegerParameter(1),2,1)>.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2086,7 +2086,7 @@
   },
   {
     "RowId": 2174,
-    "Text": "You cannot receive any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E this week.",
+    "Text": "You cannot receive any more <ennoun(Item,3,IntegerParameter(1),2,1)> this week.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2098,7 +2098,7 @@
   },
   {
     "RowId": 2175,
-    "Text": "You cannot carry any more \u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E.",
+    "Text": "You cannot carry any more <ennoun(Item,3,IntegerParameter(1),2,1)>.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2110,7 +2110,7 @@
   },
   {
     "RowId": 2176,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is readying magitek missiles!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> is readying magitek missiles!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2122,7 +2122,7 @@
   },
   {
     "RowId": 2177,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E gives the order to attack!",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),1,1)></Head> gives the order to attack!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2470,7 +2470,7 @@
   },
   {
     "RowId": 2206,
-    "Text": "Ouranos\u0027s attack shatters the crystallized rock!",
+    "Text": "Ouranos's attack shatters the crystallized rock!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2482,7 +2482,7 @@
   },
   {
     "RowId": 2207,
-    "Text": "A fire spawns at the hecatoncheir mastermind\u0027s feet!",
+    "Text": "A fire spawns at the hecatoncheir mastermind's feet!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2566,7 +2566,7 @@
   },
   {
     "RowId": 2214,
-    "Text": "The blasting device\u0027s lever is destroyed!",
+    "Text": "The blasting device's lever is destroyed!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2650,7 +2650,7 @@
   },
   {
     "RowId": 2221,
-    "Text": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E takes aim!",
+    "Text": "<sheet(BNpcName,IntegerParameter(1),0)> takes aim!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2662,7 +2662,7 @@
   },
   {
     "RowId": 2222,
-    "Text": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E creates a pool of poison!",
+    "Text": "<sheet(BNpcName,IntegerParameter(1),0)> creates a pool of poison!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2674,7 +2674,7 @@
   },
   {
     "RowId": 2223,
-    "Text": "\u003Csheet(BNpcName,IntegerParameter(1),0)\u003E calls down the stars!",
+    "Text": "<sheet(BNpcName,IntegerParameter(1),0)> calls down the stars!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2782,7 +2782,7 @@
   },
   {
     "RowId": 2232,
-    "Text": "The manor claviger summons a creature of the void with the Wood Wailer\u0027s blood!",
+    "Text": "The manor claviger summons a creature of the void with the Wood Wailer's blood!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2926,7 +2926,7 @@
   },
   {
     "RowId": 2244,
-    "Text": "A bonus of \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Ckilo(IntegerParameter(1),,)\u003E experience points and \u003CElse/\u003E \u003C/If\u003E\u003Ckilo(IntegerParameter(2),,)\u003E gil has been awarded for being an adventurer in need.",
+    "Text": "A bonus of <If(GreaterThan(IntegerParameter(1),0))><kilo(IntegerParameter(1),,)> experience points and <Else/> </If><kilo(IntegerParameter(2),,)> gil has been awarded for being an adventurer in need.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -2950,7 +2950,7 @@
   },
   {
     "RowId": 2246,
-    "Text": "A bonus of \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Ckilo(IntegerParameter(1),,)\u003E experience points and \u003CElse/\u003E \u003C/If\u003E\u003Ckilo(IntegerParameter(2),,)\u003E gil has been awarded for using the duty roulette.",
+    "Text": "A bonus of <If(GreaterThan(IntegerParameter(1),0))><kilo(IntegerParameter(1),,)> experience points and <Else/> </If><kilo(IntegerParameter(2),,)> gil has been awarded for using the duty roulette.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -3034,7 +3034,7 @@
   },
   {
     "RowId": 2253,
-    "Text": "The fetid fluid sends \u003Cennoun(BNpcName,2,IntegerParameter(1),1,1)\u003E into a fit of frenzy!",
+    "Text": "The fetid fluid sends <ennoun(BNpcName,2,IntegerParameter(1),1,1)> into a fit of frenzy!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3118,7 +3118,7 @@
   },
   {
     "RowId": 2260,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003Eyou\u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E is splashed with digestive fluid!",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(3)))><If(PlayerParameter(8))><ennoun(ObjStr,2,PlayerParameter(8),1,1)><Else/>you</If><Else/><If(PlayerParameter(8))><ennoun(ObjStr,2,PlayerParameter(8),1,1)><Else/>ObjectParameter(3)</If></If></Head> is splashed with digestive fluid!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3130,7 +3130,7 @@
   },
   {
     "RowId": 2261,
-    "Text": "The catoblepas\u0027s eye shines an eerie blue.",
+    "Text": "The catoblepas's eye shines an eerie blue.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3142,7 +3142,7 @@
   },
   {
     "RowId": 2262,
-    "Text": "The catoblepas\u0027s eye takes on a yellow glow.",
+    "Text": "The catoblepas's eye takes on a yellow glow.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3154,7 +3154,7 @@
   },
   {
     "RowId": 2263,
-    "Text": "The catoblepas\u0027s eye blazes a fiery red.",
+    "Text": "The catoblepas's eye blazes a fiery red.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3202,7 +3202,7 @@
   },
   {
     "RowId": 2267,
-    "Text": "Thal\u0027s scepter manifests!",
+    "Text": "Thal's scepter manifests!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3214,7 +3214,7 @@
   },
   {
     "RowId": 2268,
-    "Text": "The decaying gourmand begins devouring \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003Eyou\u003C/If\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cennoun(ObjStr,2,PlayerParameter(8),1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E!",
+    "Text": "The decaying gourmand begins devouring <If(Equal(ObjectParameter(1),ObjectParameter(3)))><If(PlayerParameter(8))><ennoun(ObjStr,2,PlayerParameter(8),1,1)><Else/>you</If><Else/><If(PlayerParameter(8))><ennoun(ObjStr,2,PlayerParameter(8),1,1)><Else/>ObjectParameter(3)</If></If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3226,7 +3226,7 @@
   },
   {
     "RowId": 2269,
-    "Text": "Arioch catches scent of the wamoura\u0027s scale flakes!",
+    "Text": "Arioch catches scent of the wamoura's scale flakes!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3262,7 +3262,7 @@
   },
   {
     "RowId": 2272,
-    "Text": "Hostile presence detected. Deactivating \u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E teleporter.",
+    "Text": "Hostile presence detected. Deactivating <ennoun(PlaceName,2,IntegerParameter(1),2,1)> teleporter.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3274,7 +3274,7 @@
   },
   {
     "RowId": 2273,
-    "Text": "\u003CHead\u003E\u003Cennoun(PlaceName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E teleporter reactivated.",
+    "Text": "<Head><ennoun(PlaceName,2,IntegerParameter(1),2,1)></Head> teleporter reactivated.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3706,7 +3706,7 @@
   },
   {
     "RowId": 2309,
-    "Text": "The life force released from the creature\u0027s corporeal shell has gathered to form an aetherial flow.",
+    "Text": "The life force released from the creature's corporeal shell has gathered to form an aetherial flow.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3718,7 +3718,7 @@
   },
   {
     "RowId": 2310,
-    "Text": "The projectile is repelled by the creature\u0027s shell!",
+    "Text": "The projectile is repelled by the creature's shell!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3964,7 +3964,7 @@
   },
   {
     "RowId": 2331,
-    "Text": "\u003Cifself(IntegerParameter(1),You are,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E is)\u003E picked up by the kraken and tossed aside like a rag doll.",
+    "Text": "<ifself(IntegerParameter(1),You are,<Head><PcName>IntegerParameter(1)</PcName></Head> is)> picked up by the kraken and tossed aside like a rag doll.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3976,7 +3976,7 @@
   },
   {
     "RowId": 2332,
-    "Text": "\u003Cifself(IntegerParameter(1),Your,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E\u0027s)\u003E level is too low to join the battle.",
+    "Text": "<ifself(IntegerParameter(1),Your,<Head><PcName>IntegerParameter(1)</PcName></Head>'s)> level is too low to join the battle.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3988,7 +3988,7 @@
   },
   {
     "RowId": 2333,
-    "Text": "\u003Cifself(IntegerParameter(1),You are,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E is)\u003E neither a Disciple of War nor Magic.",
+    "Text": "<ifself(IntegerParameter(1),You are,<Head><PcName>IntegerParameter(1)</PcName></Head> is)> neither a Disciple of War nor Magic.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4000,7 +4000,7 @@
   },
   {
     "RowId": 2334,
-    "Text": "\u003Cifself(IntegerParameter(1),You are,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E is)\u003E KO\u0027d.",
+    "Text": "<ifself(IntegerParameter(1),You are,<Head><PcName>IntegerParameter(1)</PcName></Head> is)> KO'd.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4012,7 +4012,7 @@
   },
   {
     "RowId": 2335,
-    "Text": "\u003Cifself(IntegerParameter(1),You have,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E has)\u003E not unlocked this duty.",
+    "Text": "<ifself(IntegerParameter(1),You have,<Head><PcName>IntegerParameter(1)</PcName></Head> has)> not unlocked this duty.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4024,7 +4024,7 @@
   },
   {
     "RowId": 2336,
-    "Text": "\u003Cifself(IntegerParameter(1),You are,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E is)\u003E currently bound by another duty.",
+    "Text": "<ifself(IntegerParameter(1),You are,<Head><PcName>IntegerParameter(1)</PcName></Head> is)> currently bound by another duty.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4036,7 +4036,7 @@
   },
   {
     "RowId": 2337,
-    "Text": "\u003Cifself(IntegerParameter(1),You have,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E has)\u003E not met all the conditions required for this duty.",
+    "Text": "<ifself(IntegerParameter(1),You have,<Head><PcName>IntegerParameter(1)</PcName></Head> has)> not met all the conditions required for this duty.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4048,7 +4048,7 @@
   },
   {
     "RowId": 2338,
-    "Text": "\u003Cifself(IntegerParameter(1),You have,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E has)\u003E proceeded further in the duty than the party leader.",
+    "Text": "<ifself(IntegerParameter(1),You have,<Head><PcName>IntegerParameter(1)</PcName></Head> has)> proceeded further in the duty than the party leader.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4060,7 +4060,7 @@
   },
   {
     "RowId": 2339,
-    "Text": "\u003Cifself(IntegerParameter(1),You need,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E needs)\u003E to take a break.",
+    "Text": "<ifself(IntegerParameter(1),You need,<Head><PcName>IntegerParameter(1)</PcName></Head> needs)> to take a break.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4072,7 +4072,7 @@
   },
   {
     "RowId": 2340,
-    "Text": "\u003Cifself(IntegerParameter(1),You have,\u003CHead\u003E\u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E\u003C/Head\u003E has)\u003E voted to \u003CIf(Equal(IntegerParameter(2),0))\u003Ecommence the battle\u003CElse/\u003Ewait\u003C/If\u003E.",
+    "Text": "<ifself(IntegerParameter(1),You have,<Head><PcName>IntegerParameter(1)</PcName></Head> has)> voted to <If(Equal(IntegerParameter(2),0))>commence the battle<Else/>wait</If>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4168,7 +4168,7 @@
   },
   {
     "RowId": 2348,
-    "Text": "A star sphere rolls from the slain tomb raider\u0027s hand.",
+    "Text": "A star sphere rolls from the slain tomb raider's hand.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4384,7 +4384,7 @@
   },
   {
     "RowId": 2366,
-    "Text": "The door to the Sultana\u0027s Lap opens.",
+    "Text": "The door to the Sultana's Lap opens.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4633,7 +4633,7 @@
   },
   {
     "RowId": 2388,
-    "Text": "The vicegerent\u0027s sword emits an impure light...",
+    "Text": "The vicegerent's sword emits an impure light...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4762,7 +4762,7 @@
   },
   {
     "RowId": 2399,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E emergency systems now online.",
+    "Text": "<Head><ennoun(BNpcName,3,IntegerParameter(1),1,1)></Head> emergency systems now online.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4774,7 +4774,7 @@
   },
   {
     "RowId": 2400,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,3,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is dismantled and its energy absorbed.",
+    "Text": "<Head><ennoun(BNpcName,3,IntegerParameter(1),1,1)></Head> is dismantled and its energy absorbed.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4846,7 +4846,7 @@
   },
   {
     "RowId": 2406,
-    "Text": "You move to the \u003Ci\u003EAgrius\u003C/i\u003E forecastle.",
+    "Text": "You move to the <i>Agrius</i> forecastle.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4858,7 +4858,7 @@
   },
   {
     "RowId": 2407,
-    "Text": "You move to the \u003Ci\u003EAgrius\u003C/i\u003E quarterdeck.",
+    "Text": "You move to the <i>Agrius</i> quarterdeck.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4870,7 +4870,7 @@
   },
   {
     "RowId": 2408,
-    "Text": "You move to the \u003Ci\u003EAgrius\u003C/i\u003E stern.",
+    "Text": "You move to the <i>Agrius</i> stern.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5101,7 +5101,7 @@
   },
   {
     "RowId": 2429,
-    "Text": "Cerberus\u0027s hunger is sated.",
+    "Text": "Cerberus's hunger is sated.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5113,7 +5113,7 @@
   },
   {
     "RowId": 2430,
-    "Text": "The duration of all current enhancements and enfeeblements has been extended \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003Efold.",
+    "Text": "The duration of all current enhancements and enfeeblements has been extended <If(IntegerParameter(1))><If(LessThanOrEqualTo(IntegerParameter(1),10))><switch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)><Else/><Num>IntegerParameter(1)</Num></If><Else/><Num>IntegerParameter(1)</Num></If>fold.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5293,7 +5293,7 @@
   },
   {
     "RowId": 2445,
-    "Text": "The target is not yet in the snare\u0027s range.",
+    "Text": "The target is not yet in the snare's range.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5305,7 +5305,7 @@
   },
   {
     "RowId": 2446,
-    "Text": "\u003CHead\u003E\u003Cennoun(BNpcName,2,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E begins channeling aether to \u003Cennoun(BNpcName,2,IntegerParameter(2),2,1)\u003E.",
+    "Text": "<Head><ennoun(BNpcName,2,IntegerParameter(1),2,1)></Head> begins channeling aether to <ennoun(BNpcName,2,IntegerParameter(2),2,1)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5437,7 +5437,7 @@
   },
   {
     "RowId": 2457,
-    "Text": "The door to the lord commander\u0027s seat opens.",
+    "Text": "The door to the lord commander's seat opens.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5722,7 +5722,7 @@
   },
   {
     "RowId": 2485,
-    "Text": "The minotaur is drawn to the bait\u0027s stench!",
+    "Text": "The minotaur is drawn to the bait's stench!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5806,7 +5806,7 @@
   },
   {
     "RowId": 2492,
-    "Text": "The Bibliotaph\u0027s seal is broken.",
+    "Text": "The Bibliotaph's seal is broken.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5830,7 +5830,7 @@
   },
   {
     "RowId": 2494,
-    "Text": "Battle fever has come over the Heavens\u0027 Ward!",
+    "Text": "Battle fever has come over the Heavens' Ward!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"

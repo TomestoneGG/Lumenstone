@@ -53,19 +53,19 @@
   },
   {
     "RowId": 1542,
-    "Text": "Ceremony Style\n\nThe Lover\u0027s Kiss\nPresided over by a choir moogle, this ceremony is conducted in a light-hearted fashion and is sealed with a kiss.\n\nThe Spinner\u0027s Hand\nPresided over by a female Officiant of the Graces, this traditional ceremony dedicated to the Twelve concludes with a symbolic toast to mark the start of your lives together.\n\nThe Solemn Oath\nPresided over by a male Officiant of the Vows, this undenominational ceremony closes with the signing of an official pact before the assembled guests."
+    "Text": "Ceremony Style\n\nThe Lover's Kiss\nPresided over by a choir moogle, this ceremony is conducted in a light-hearted fashion and is sealed with a kiss.\n\nThe Spinner's Hand\nPresided over by a female Officiant of the Graces, this traditional ceremony dedicated to the Twelve concludes with a symbolic toast to mark the start of your lives together.\n\nThe Solemn Oath\nPresided over by a male Officiant of the Vows, this undenominational ceremony closes with the signing of an official pact before the assembled guests."
   },
   {
     "RowId": 1543,
-    "Text": "Chapel Decoration\n\n\u203B\u003CIf(LessThan(IntegerParameter(1),2))\u003ENatural lighting will be used in the chapel\u003CElse/\u003EYou may choose between natural or romantic lighting options for the chapel\u003C/If\u003E.\n\n\u203B\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),A rug and flower combination will be selected for you,You may choose one of three colors for both the chapel carpeting and the hall\u0027s floral decoration,You may choose one of five colors for both the chapel carpeting and the hall\u0027s floral decoration)\u003E\u003CElse/\u003E \u003C/If\u003E.\n\n\u203B\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cswitch(IntegerParameter(1),Decorative fabric will not be used in the chapel,You may choose one of three fabric colors for chapel decoration,You may choose one of five fabric colors for chapel decoration)\u003E\u003CElse/\u003E \u003C/If\u003E."
+    "Text": "Chapel Decoration\n\n※<If(LessThan(IntegerParameter(1),2))>Natural lighting will be used in the chapel<Else/>You may choose between natural or romantic lighting options for the chapel</If>.\n\n※<If(GreaterThan(IntegerParameter(1),0))><switch(IntegerParameter(1),A rug and flower combination will be selected for you,You may choose one of three colors for both the chapel carpeting and the hall's floral decoration,You may choose one of five colors for both the chapel carpeting and the hall's floral decoration)><Else/> </If>.\n\n※<If(GreaterThan(IntegerParameter(1),0))><switch(IntegerParameter(1),Decorative fabric will not be used in the chapel,You may choose one of three fabric colors for chapel decoration,You may choose one of five fabric colors for chapel decoration)><Else/> </If>."
   },
   {
     "RowId": 1544,
-    "Text": "Procession\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EYou and your partner will enter the Ivory Chapel on foot\u003CElse/\u003EYou and your partner may choose to enter the Ivory Chapel on foot, or seated upon \u003CIf(GreaterThan(IntegerParameter(1),2))\u003Eone of three enchanted gondolas\u003CElse/\u003Ean enchanted gondola\u003C/If\u003E\u003C/If\u003E."
+    "Text": "Procession\n\n<If(LessThan(IntegerParameter(1),2))>You and your partner will enter the Ivory Chapel on foot<Else/>You and your partner may choose to enter the Ivory Chapel on foot, or seated upon <If(GreaterThan(IntegerParameter(1),2))>one of three enchanted gondolas<Else/>an enchanted gondola</If></If>."
   },
   {
     "RowId": 1545,
-    "Text": "Recession\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EYou and your partner will leave the Ivory Chapel on foot\u003CElse/\u003EYou and your partner may choose to leave the Ivory Chapel on foot, or astride a chocobo\u003C/If\u003E."
+    "Text": "Recession\n\n<If(LessThan(IntegerParameter(1),2))>You and your partner will leave the Ivory Chapel on foot<Else/>You and your partner may choose to leave the Ivory Chapel on foot, or astride a chocobo</If>."
   },
   {
     "RowId": 1546,
@@ -73,7 +73,7 @@
   },
   {
     "RowId": 1547,
-    "Text": "Music\n\n\u003CIf(LessThan(IntegerParameter(1),2))\u003EMusic to be played before the procession and during the reception will be selected for you\u003CElse/\u003EYou may choose the music to be played before the procession and during the reception. \u003CHead\u003E\u003CIf(IntegerParameter(2))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(2),10))\u003E\u003Cswitch(IntegerParameter(2),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E unique songs are available\u003C/If\u003E."
+    "Text": "Music\n\n<If(LessThan(IntegerParameter(1),2))>Music to be played before the procession and during the reception will be selected for you<Else/>You may choose the music to be played before the procession and during the reception. <Head><If(IntegerParameter(2))><If(LessThanOrEqualTo(IntegerParameter(2),10))><switch(IntegerParameter(2),one,two,three,four,five,six,seven,eight,nine,ten)><Else/><Num>IntegerParameter(2)</Num></If><Else/><Num>IntegerParameter(2)</Num></If></Head> unique songs are available</If>."
   },
   {
     "RowId": 1548,
@@ -89,7 +89,7 @@
   },
   {
     "RowId": 1551,
-    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E.\u003CNum\u003Et_day\u003C/Num\u003E.\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>.<Num>t_day</Num>.<Num>t_year</Num>"
   },
   {
     "RowId": 1552,
@@ -101,7 +101,7 @@
   },
   {
     "RowId": 1554,
-    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E "
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If> "
   },
   {
     "RowId": 1555,
@@ -113,7 +113,7 @@
   },
   {
     "RowId": 1557,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E remaining"
+    "Text": "<Num>IntegerParameter(1)</Num> remaining"
   },
   {
     "RowId": 1558,
@@ -197,7 +197,7 @@
   },
   {
     "RowId": 1580,
-    "Text": "Ul\u0027dah"
+    "Text": "Ul'dah"
   },
   {
     "RowId": 1581,
@@ -237,7 +237,7 @@
   },
   {
     "RowId": 1590,
-    "Text": "Abalathia\u0027s Spine"
+    "Text": "Abalathia's Spine"
   },
   {
     "RowId": 1591,
@@ -325,7 +325,7 @@
   },
   {
     "RowId": 1618,
-    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
+    "Text": "+<Num>IntegerParameter(1)</Num>%"
   },
   {
     "RowId": 1619,
@@ -349,55 +349,55 @@
   },
   {
     "RowId": 1626,
-    "Text": "\u003CIcon\u003E105\u003C/Icon\u003E \u003CString\u003EStringParameter(1)\u003C/String\u003Ey"
+    "Text": "<Icon>105</Icon> <String>StringParameter(1)</String>y"
   },
   {
     "RowId": 1627,
-    "Text": "\u003CIcon\u003E106\u003C/Icon\u003E \u003CString\u003EStringParameter(1)\u003C/String\u003Ey"
+    "Text": "<Icon>106</Icon> <String>StringParameter(1)</String>y"
   },
   {
     "RowId": 1628,
-    "Text": "\u003CIcon\u003E105\u003C/Icon\u003E [Up]"
+    "Text": "<Icon>105</Icon> [Up]"
   },
   {
     "RowId": 1629,
-    "Text": "\u003CIcon\u003E106\u003C/Icon\u003E [Down]"
+    "Text": "<Icon>106</Icon> [Down]"
   },
   {
     "RowId": 1630,
-    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
   },
   {
     "RowId": 1631,
-    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Z: \u003CIf(LessThan(IntegerParameter(7),0))\u003E-\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(6))\u003E\u003Cswitch(IntegerParameter(6),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Z: <If(LessThan(IntegerParameter(7),0))>-<Else/> </If><Num>IntegerParameter(5)</Num>\uE03F<If(IntegerParameter(6))><switch(IntegerParameter(6),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
   },
   {
     "RowId": 1632,
-    "Text": "X: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(2))\u003E\u003Cswitch(IntegerParameter(2),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E Y: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\uE03F\u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(4),\u2081,\u2082,\u2083,\u2084,\u2085,\u2086,\u2087,\u2088,\u2089)\u003E\u003CElse/\u003E\u2080\u003C/If\u003E"
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
   },
   {
     "RowId": 1635,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E ( \u003Cfloat(IntegerParameter(2),10,.)\u003E  , \u003Cfloat(IntegerParameter(3),10,.)\u003E )"
+    "Text": "<String>StringParameter(1)</String> ( <float(IntegerParameter(2),10,.)>  , <float(IntegerParameter(3),10,.)> )"
   },
   {
     "RowId": 1636,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E ( \u003Cfloat(IntegerParameter(2),10,.)\u003E  , \u003Cfloat(IntegerParameter(3),10,.)\u003E ) Z: \u003CIf(LessThan(IntegerParameter(5),0))\u003E-\u003CElse/\u003E \u003C/If\u003E\u003Cfloat(IntegerParameter(4),10,.)\u003E"
+    "Text": "<String>StringParameter(1)</String> ( <float(IntegerParameter(2),10,.)>  , <float(IntegerParameter(3),10,.)> ) Z: <If(LessThan(IntegerParameter(5),0))>-<Else/> </If><float(IntegerParameter(4),10,.)>"
   },
   {
     "RowId": 1637,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\n ( \u003Cfloat(IntegerParameter(2),10,.)\u003E  , \u003Cfloat(IntegerParameter(3),10,.)\u003E )"
+    "Text": "<String>StringParameter(1)</String>\n ( <float(IntegerParameter(2),10,.)>  , <float(IntegerParameter(3),10,.)> )"
   },
   {
     "RowId": 1640,
-    "Text": "\u003CHead\u003EStringParameter(1)\u003C/Head\u003E"
+    "Text": "<Head>StringParameter(1)</Head>"
   },
   {
     "RowId": 1643,
-    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E"
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_hour</Num>:<Sec>t_min</Sec>"
   },
   {
     "RowId": 1644,
-    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003E\uE06E\u003CElse/\u003E\uE06D\u003C/If\u003E"
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>\uE06E<Else/>\uE06D</If>"
   },
   {
     "RowId": 1652,
@@ -429,7 +429,7 @@
   },
   {
     "RowId": 1659,
-    "Text": "Desynthesizable: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E.00 (\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E)\u003CElse/\u003ENo\u003C/If\u003E"
+    "Text": "Desynthesizable: <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(2)</Num>.00 (<Head><sheet(ClassJob,IntegerParameter(1),0)></Head>)<Else/>No</If>"
   },
   {
     "RowId": 1660,
@@ -437,35 +437,35 @@
   },
   {
     "RowId": 1661,
-    "Text": "\u2605"
+    "Text": "★"
   },
   {
     "RowId": 1662,
-    "Text": "\u25CF"
+    "Text": "●"
   },
   {
     "RowId": 1663,
-    "Text": "\u25B2"
+    "Text": "▲"
   },
   {
     "RowId": 1664,
-    "Text": "\u2666"
+    "Text": "♦"
   },
   {
     "RowId": 1665,
-    "Text": "\u2665"
+    "Text": "♥"
   },
   {
     "RowId": 1666,
-    "Text": "\u2660"
+    "Text": "♠"
   },
   {
     "RowId": 1667,
-    "Text": "\u2663"
+    "Text": "♣"
   },
   {
     "RowId": 1668,
-    "Text": "Group \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Group <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1669,
@@ -525,7 +525,7 @@
   },
   {
     "RowId": 1683,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1684,
@@ -537,7 +537,7 @@
   },
   {
     "RowId": 1686,
-    "Text": "Input a new name for \u003CString\u003EStringParameter(1)\u003C/String\u003EGroup \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E."
+    "Text": "Input a new name for <String>StringParameter(1)</String>Group <Num>IntegerParameter(2)</Num>."
   },
   {
     "RowId": 1687,
@@ -553,11 +553,11 @@
   },
   {
     "RowId": 1690,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands"
+    "Text": "<Icon2>10</Icon2> Subcommands"
   },
   {
     "RowId": 1691,
-    "Text": "Reducible: \u003CIf(GreaterThan(IntegerParameter(1),0))\u003EYes\u003CElse/\u003ENo\u003C/If\u003E"
+    "Text": "Reducible: <If(GreaterThan(IntegerParameter(1),0))>Yes<Else/>No</If>"
   },
   {
     "RowId": 1692,
@@ -565,19 +565,19 @@
   },
   {
     "RowId": 1693,
-    "Text": "Shop Selling Price\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E (NQ)\u003C/If\u003E: \u003Ckilo(IntegerParameter(1),,)\u003E\uE049"
+    "Text": "Shop Selling Price<If(GreaterThan(IntegerParameter(2),0))> <Else/> (NQ)</If>: <kilo(IntegerParameter(1),,)>\uE049"
   },
   {
     "RowId": 1694,
-    "Text": "Shop Selling Price\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E \u003CElse/\u003E (NQ)\u003C/If\u003E: \u003Ckilo(IntegerParameter(1),,)\u003E\uE049 (Restricted)"
+    "Text": "Shop Selling Price<If(GreaterThan(IntegerParameter(2),0))> <Else/> (NQ)</If>: <kilo(IntegerParameter(1),,)>\uE049 (Restricted)"
   },
   {
     "RowId": 1695,
-    "Text": "Displaying: \u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
+    "Text": "Displaying: <Head><String>StringParameter(1)</String></Head>"
   },
   {
     "RowId": 1696,
-    "Text": "Groups: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Groups: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1697,
@@ -649,15 +649,15 @@
   },
   {
     "RowId": 1716,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(1),99))>99+<Else/><Num>IntegerParameter(1)</Num></If>"
   },
   {
     "RowId": 1717,
-    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),99))\u003E99\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "/\uE03C<If(GreaterThan(IntegerParameter(1),99))>99+<Else/><Num>IntegerParameter(1)</Num></If>"
   },
   {
     "RowId": 1718,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),,)\u003E\u003C/If\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(1),9999))>9999+<Else/><kilo(IntegerParameter(1),,)></If>"
   },
   {
     "RowId": 1719,
@@ -693,11 +693,11 @@
   },
   {
     "RowId": 1727,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(1),9999))>9999+<Else/><Num>IntegerParameter(1)</Num></If>"
   },
   {
     "RowId": 1728,
-    "Text": "/\uE03C\u003CIf(GreaterThan(IntegerParameter(1),9999))\u003E9999\u002B\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "/\uE03C<If(GreaterThan(IntegerParameter(1),9999))>9999+<Else/><Num>IntegerParameter(1)</Num></If>"
   },
   {
     "RowId": 1729,
@@ -705,11 +705,11 @@
   },
   {
     "RowId": 1730,
-    "Text": "Add to Favorites (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "Add to Favorites (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 1731,
-    "Text": "Remove from Favorites (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "Remove from Favorites (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 1732,
@@ -769,7 +769,7 @@
   },
   {
     "RowId": 1760,
-    "Text": "\u003CIf(GreaterThan(PlayerParameter(75),1))\u003EUsed when playing with a controller.\u003CElse/\u003E\u003CIf(Equal(PlayerParameter(75),1))\u003EUsed when employing the cross hotbar.\u003CElse/\u003EUsed when playing with a gamepad.\u003C/If\u003E\u003C/If\u003E"
+    "Text": "<If(GreaterThan(PlayerParameter(75),1))>Used when playing with a controller.<Else/><If(Equal(PlayerParameter(75),1))>Used when employing the cross hotbar.<Else/>Used when playing with a gamepad.</If></If>"
   },
   {
     "RowId": 1761,
@@ -897,7 +897,7 @@
   },
   {
     "RowId": 1792,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ECustomize the subcommands that appear.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">Customize the subcommands that appear.</span>"
   },
   {
     "RowId": 1793,
@@ -929,7 +929,7 @@
   },
   {
     "RowId": 1800,
-    "Text": "Accept Teleport to \u003Cennoun(PlaceName,2,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,2,1)\u003E?"
+    "Text": "Accept Teleport to <ennoun(PlaceName,2,<sheet(Aetheryte,IntegerParameter(1),8)>,2,1)>?"
   },
   {
     "RowId": 1801,
@@ -949,7 +949,7 @@
   },
   {
     "RowId": 1805,
-    "Text": "\u003CHeadAll\u003E\u003Cennoun(PlaceName,2,\u003Csheet(Aetheryte,IntegerParameter(1),8)\u003E,2,1)\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><ennoun(PlaceName,2,<sheet(Aetheryte,IntegerParameter(1),8)>,2,1)></HeadAll>"
   },
   {
     "RowId": 1806,
@@ -961,7 +961,7 @@
   },
   {
     "RowId": 1808,
-    "Text": "Purchases \u0026 Rewards"
+    "Text": "Purchases & Rewards"
   },
   {
     "RowId": 1809,
@@ -973,7 +973,7 @@
   },
   {
     "RowId": 1811,
-    "Text": "Send a request to have recently acquired special rewards or purchases delivered immediately. Speak with a delivery moogle or access your moogle letter box once again upon completing the request to claim the items.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EOnce you have sent a request, you must wait a few moments before placing another.\u003C/span\u003E"
+    "Text": "Send a request to have recently acquired special rewards or purchases delivered immediately. Speak with a delivery moogle or access your moogle letter box once again upon completing the request to claim the items.\n\n<span style=\"color: #ffff66;\">Once you have sent a request, you must wait a few moments before placing another.</span>"
   },
   {
     "RowId": 1812,
@@ -985,7 +985,7 @@
   },
   {
     "RowId": 1814,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 1815,
@@ -1033,7 +1033,7 @@
   },
   {
     "RowId": 1826,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E%"
+    "Text": "<Num>IntegerParameter(1)</Num>.<Sec>IntegerParameter(2)</Sec>%"
   },
   {
     "RowId": 1827,
@@ -1085,15 +1085,15 @@
   },
   {
     "RowId": 1839,
-    "Text": "\u003CHead\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003C/Head\u003E is currently equipped. Proceed with desynthesis?"
+    "Text": "<Head><ennoun(Item,2,IntegerParameter(1),1,1)></Head> is currently equipped. Proceed with desynthesis?"
   },
   {
     "RowId": 1840,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head>"
   },
   {
     "RowId": 1841,
-    "Text": "Lv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Lv. <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1842,
@@ -1101,7 +1101,7 @@
   },
   {
     "RowId": 1843,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>.<Sec>IntegerParameter(2)</Sec>"
   },
   {
     "RowId": 1844,
@@ -1113,7 +1113,7 @@
   },
   {
     "RowId": 1846,
-    "Text": "Reset your desynthesis skill for \u003Csheet(ClassJob,IntegerParameter(1),0)\u003E?"
+    "Text": "Reset your desynthesis skill for <sheet(ClassJob,IntegerParameter(1),0)>?"
   },
   {
     "RowId": 1847,
@@ -1121,7 +1121,7 @@
   },
   {
     "RowId": 1848,
-    "Text": "[Optimal Skill Rating for Desynthesis: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E.00]"
+    "Text": "[Optimal Skill Rating for Desynthesis: <Num>IntegerParameter(1)</Num>.00]"
   },
   {
     "RowId": 1849,
@@ -1129,15 +1129,15 @@
   },
   {
     "RowId": 1850,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands"
+    "Text": "<Icon2>10</Icon2> Subcommands"
   },
   {
     "RowId": 1851,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands\u3000\u003CIcon2\u003E9\u003C/Icon2\u003E Return"
+    "Text": "<Icon2>10</Icon2> Subcommands\u3000<Icon2>9</Icon2> Return"
   },
   {
     "RowId": 1852,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands\u3000\u003CIcon2\u003E9\u003C/Icon2\u003E Return"
+    "Text": "<Icon2>10</Icon2> Subcommands\u3000<Icon2>9</Icon2> Return"
   },
   {
     "RowId": 1853,
@@ -1169,11 +1169,11 @@
   },
   {
     "RowId": 1860,
-    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003EAccept\u3000\u003CIcon2\u003E11\u003C/Icon2\u003EOpen Journal  \u003CIcon2\u003E24\u003C/Icon2\u003E Scroll"
+    "Text": "<Icon2>8</Icon2>Accept\u3000<Icon2>11</Icon2>Open Journal  <Icon2>24</Icon2> Scroll"
   },
   {
     "RowId": 1861,
-    "Text": "\u003CIcon2\u003E8\u003C/Icon2\u003EAccept\u3000\u003CIcon2\u003E11\u003C/Icon2\u003EOpen Journal  \u003CIcon2\u003E24\u003C/Icon2\u003E Scroll"
+    "Text": "<Icon2>8</Icon2>Accept\u3000<Icon2>11</Icon2>Open Journal  <Icon2>24</Icon2> Scroll"
   },
   {
     "RowId": 1862,
@@ -1217,7 +1217,7 @@
   },
   {
     "RowId": 1872,
-    "Text": "\u003Csheet(PlaceName,IntegerParameter(1),0)\u003E\u003CIf(IntegerParameter(2))\u003E - \u003Csheet(PlaceName,IntegerParameter(2),0)\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "<sheet(PlaceName,IntegerParameter(1),0)><If(IntegerParameter(2))> - <sheet(PlaceName,IntegerParameter(2),0)><Else/> </If>"
   },
   {
     "RowId": 1873,
@@ -1229,23 +1229,23 @@
   },
   {
     "RowId": 1875,
-    "Text": "\u003Cswitch(IntegerParameter(1),Show All,Show Complete,Show Incomplete)\u003E"
+    "Text": "<switch(IntegerParameter(1),Show All,Show Complete,Show Incomplete)>"
   },
   {
     "RowId": 1876,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 1877,
-    "Text": "Difficulty \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Difficulty <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1878,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 1879,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 1880,
@@ -1293,23 +1293,23 @@
   },
   {
     "RowId": 1891,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/Head\u003E Rank \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head> Rank <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 1892,
-    "Text": "\u003Csheet(GrandCompany,IntegerParameter(1),0)\u003E Rank \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<sheet(GrandCompany,IntegerParameter(1),0)> Rank <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 1893,
-    "Text": "Requirements for rank \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:"
+    "Text": "Requirements for rank <Num>IntegerParameter(1)</Num>:"
   },
   {
     "RowId": 1894,
-    "Text": "Complete rank \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E objectives"
+    "Text": "Complete rank <Num>IntegerParameter(1)</Num> objectives"
   },
   {
     "RowId": 1895,
-    "Text": "Achieve level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E0 or above"
+    "Text": "Achieve level <Num>IntegerParameter(1)</Num>0 or above"
   },
   {
     "RowId": 1896,
@@ -1481,7 +1481,7 @@
   },
   {
     "RowId": 1938,
-    "Text": "\u003CIcon2\u003E11\u003C/Icon2\u003E Execute Search"
+    "Text": "<Icon2>11</Icon2> Execute Search"
   },
   {
     "RowId": 1939,
@@ -1521,11 +1521,11 @@
   },
   {
     "RowId": 1948,
-    "Text": "Display \u003CIf(Equal(IntegerParameter(1),1))\u003Eremaining result\u003CElse/\u003Enext \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E results\u003C/If\u003E."
+    "Text": "Display <If(Equal(IntegerParameter(1),1))>remaining result<Else/>next <Num>IntegerParameter(1)</Num> results</If>."
   },
   {
     "RowId": 1949,
-    "Text": "Display previous \u003CIf(Equal(IntegerParameter(1),1))\u003Eresult\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E results\u003C/If\u003E."
+    "Text": "Display previous <If(Equal(IntegerParameter(1),1))>result<Else/><Num>IntegerParameter(1)</Num> results</If>."
   },
   {
     "RowId": 1950,
@@ -1557,11 +1557,11 @@
   },
   {
     "RowId": 1957,
-    "Text": "Lowest Selling Price: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\uE049"
+    "Text": "Lowest Selling Price: <Num>IntegerParameter(1)</Num>\uE049"
   },
   {
     "RowId": 1958,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehit\u003CElse/\u003Ehits\u003C/If\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>hit<Else/>hits</If>"
   },
   {
     "RowId": 1959,
@@ -1581,11 +1581,11 @@
   },
   {
     "RowId": 1963,
-    "Text": "Purchase \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E for \u003Ckilo(IntegerParameter(3),,)\u003E gil\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E (\u003Ckilo(IntegerParameter(4),,)\u003E\uE049 fee included)\u003CElse/\u003E \u003C/If\u003E?"
+    "Text": "Purchase <Num>IntegerParameter(2)</Num> <ennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)> for <kilo(IntegerParameter(3),,)> gil<If(GreaterThan(IntegerParameter(4),0))> (<kilo(IntegerParameter(4),,)>\uE049 fee included)<Else/> </If>?"
   },
   {
     "RowId": 1964,
-    "Text": "Purchase \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E for \u003Ckilo(IntegerParameter(3),,)\u003E gil\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E (\u003Ckilo(IntegerParameter(4),,)\u003E\uE049 fee included)\u003CElse/\u003E \u003C/If\u003E?"
+    "Text": "Purchase <ennoun(Item,1,IntegerParameter(1),1,1)> for <kilo(IntegerParameter(3),,)> gil<If(GreaterThan(IntegerParameter(4),0))> (<kilo(IntegerParameter(4),,)>\uE049 fee included)<Else/> </If>?"
   },
   {
     "RowId": 1965,
@@ -1673,7 +1673,7 @@
   },
   {
     "RowId": 1986,
-    "Text": "Type in the first few letters of the item you seek\nand press the Search button.\nSearches containing less than three characters\nwill yield a maximum of 20 results.\nUse the cursor keys or \u003CIcon2\u003E5\u003C/Icon2\u003E up/down to view history."
+    "Text": "Type in the first few letters of the item you seek\nand press the Search button.\nSearches containing less than three characters\nwill yield a maximum of 20 results.\nUse the cursor keys or <Icon2>5</Icon2> up/down to view history."
   },
   {
     "RowId": 1987,
@@ -1693,27 +1693,27 @@
   },
   {
     "RowId": 1991,
-    "Text": "\u003CHead\u003E\u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003C/Head\u003E materia affixed"
+    "Text": "<Head><If(IntegerParameter(1))><If(LessThanOrEqualTo(IntegerParameter(1),10))><switch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)><Else/><Num>IntegerParameter(1)</Num></If><Else/><Num>IntegerParameter(1)</Num></If></Head> materia affixed"
   },
   {
     "RowId": 1992,
-    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\uE049"
+    "Text": "<kilo(IntegerParameter(1),,)>\uE049"
   },
   {
     "RowId": 1993,
-    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E\uE049"
+    "Text": "<kilo(IntegerParameter(1),,)>\uE049"
   },
   {
     "RowId": 1994,
-    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E"
+    "Text": "<kilo(IntegerParameter(1),,)>"
   },
   {
     "RowId": 1995,
-    "Text": "\u003Ckilo(IntegerParameter(1),,)\u003E-\u003Ckilo(IntegerParameter(2),,)\u003E"
+    "Text": "<kilo(IntegerParameter(1),,)>-<kilo(IntegerParameter(2),,)>"
   },
   {
     "RowId": 1996,
-    "Text": "\u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E\u003C/If\u003E \u003CIf(t_hour)\u003E\u003Cswitch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)\u003E\u003CElse/\u003E12\u003C/If\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E \u003CIf(GreaterThanOrEqualTo(t_hour,12))\u003Ep.m.\u003CElse/\u003Ea.m.\u003C/If\u003E"
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num></If> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
   },
   {
     "RowId": 1997,
@@ -1757,7 +1757,7 @@
   },
   {
     "RowId": 2008,
-    "Text": "\u002B"
+    "Text": "+"
   },
   {
     "RowId": 2009,
@@ -1785,35 +1785,35 @@
   },
   {
     "RowId": 2020,
-    "Text": "\u003CIf(IntegerParameter(2))\u003E\u003Cspan style=\u0022color: #f9e846;\u0022\u003E\u003Ci\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/i\u003E\u003C/span\u003E\u003CElse/\u003E\u003Csheet(Item,IntegerParameter(1),9)\u003E\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(2))><span style=\"color: #f9e846;\"><i><sheet(Item,IntegerParameter(1),9)></i></span><Else/><sheet(Item,IntegerParameter(1),9)></If>"
   },
   {
     "RowId": 2021,
-    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E"
+    "Text": "<sheet(Item,IntegerParameter(1),9)>"
   },
   {
     "RowId": 2022,
-    "Text": "\u003Csheet(Item,IntegerParameter(1),9)\u003E"
+    "Text": "<sheet(Item,IntegerParameter(1),9)>"
   },
   {
     "RowId": 2023,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><sheet(ClassJob,IntegerParameter(1),0)></HeadAll>"
   },
   {
     "RowId": 2024,
-    "Text": "\u003CHeadAll\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><String>StringParameter(1)</String></HeadAll>"
   },
   {
     "RowId": 2025,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ObjStr,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><sheet(ObjStr,IntegerParameter(1),0)></HeadAll>"
   },
   {
     "RowId": 2026,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ActStr,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><sheet(ActStr,IntegerParameter(1),0)></HeadAll>"
   },
   {
     "RowId": 2027,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 2028,
@@ -1821,11 +1821,11 @@
   },
   {
     "RowId": 2029,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 2030,
-    "Text": "\u003Cswitch(IntegerParameter(1),\uE061,\uE062,\uE063,\uE064,\uE065,\uE066,\uE067)\u003E "
+    "Text": "<switch(IntegerParameter(1),\uE061,\uE062,\uE063,\uE064,\uE065,\uE066,\uE067)> "
   },
   {
     "RowId": 2031,
@@ -1833,15 +1833,15 @@
   },
   {
     "RowId": 2032,
-    "Text": "\u003CHeadAll\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E\u003C/HeadAll\u003E \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "<HeadAll><String>StringParameter(2)</String></HeadAll> <String>StringParameter(1)</String>"
   },
   {
     "RowId": 2033,
-    "Text": "\u003Csheet(GrandCompany,IntegerParameter(1),0)\u003E"
+    "Text": "<sheet(GrandCompany,IntegerParameter(1),0)>"
   },
   {
     "RowId": 2034,
-    "Text": "\uE06A\u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "\uE06A<String>StringParameter(1)</String>"
   },
   {
     "RowId": 2035,
@@ -1849,7 +1849,7 @@
   },
   {
     "RowId": 2036,
-    "Text": " \u00AB\u003CString\u003EStringParameter(1)\u003C/String\u003E\u00BB"
+    "Text": " «<String>StringParameter(1)</String>»"
   },
   {
     "RowId": 2037,
@@ -1861,15 +1861,15 @@
   },
   {
     "RowId": 2039,
-    "Text": "\uE03A\u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "\uE03A<String>StringParameter(1)</String>"
   },
   {
     "RowId": 2041,
-    "Text": "x \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "x <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 2042,
-    "Text": "x10k\u002B"
+    "Text": "x10k+"
   },
   {
     "RowId": 2043,
@@ -1877,11 +1877,11 @@
   },
   {
     "RowId": 2044,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 2045,
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\uE06A \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/i\u003E\u003CElse/\u003E\uE06A \u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon>\uE06A <String>StringParameter(1)</String></i><Else/>\uE06A <String>StringParameter(1)</String></If>"
   },
   {
     "RowId": 2046,
@@ -1889,15 +1889,15 @@
   },
   {
     "RowId": 2047,
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/i\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon> <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num></i><Else/><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num></If>"
   },
   {
     "RowId": 2048,
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E%\u003C/i\u003E\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E%\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon><String>StringParameter(1)</String>%</i><Else/><String>StringParameter(1)</String>%</If>"
   },
   {
     "RowId": 2049,
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Ci\u003E\u003CIcon\u003E62\u003C/Icon\u003E\uE03A\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/i\u003E\u003CElse/\u003E\uE03A\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon>\uE03A<String>StringParameter(1)</String></i><Else/>\uE03A<String>StringParameter(1)</String></If>"
   },
   {
     "RowId": 2050,
@@ -1929,19 +1929,19 @@
   },
   {
     "RowId": 2057,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u003Cdigit(IntegerParameter(1),2)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E.\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E%"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><digit(IntegerParameter(1),2)><Else/><Num>IntegerParameter(1)</Num></If>.<Num>IntegerParameter(2)</Num>%"
   },
   {
     "RowId": 2058,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E-\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>-<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 2060,
-    "Text": "Complete rank \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E objectives"
+    "Text": "Complete rank <Num>IntegerParameter(1)</Num> objectives"
   },
   {
     "RowId": 2061,
-    "Text": "Achieve the rank of \u003CIf(IntegerParameter(4))\u003E\u003Cswitch(IntegerParameter(2),\u003Csheet(GCRankLimsaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankGridaniaFemaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankUldahFemaleText,IntegerParameter(3),0)\u003E)\u003E\u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\u003Csheet(GCRankLimsaMaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankGridaniaMaleText,IntegerParameter(3),0)\u003E,\u003Csheet(GCRankUldahMaleText,IntegerParameter(3),0)\u003E)\u003E\u003C/If\u003E or higher"
+    "Text": "Achieve the rank of <If(IntegerParameter(4))><switch(IntegerParameter(2),<sheet(GCRankLimsaFemaleText,IntegerParameter(3),0)>,<sheet(GCRankGridaniaFemaleText,IntegerParameter(3),0)>,<sheet(GCRankUldahFemaleText,IntegerParameter(3),0)>)><Else/><switch(IntegerParameter(2),<sheet(GCRankLimsaMaleText,IntegerParameter(3),0)>,<sheet(GCRankGridaniaMaleText,IntegerParameter(3),0)>,<sheet(GCRankUldahMaleText,IntegerParameter(3),0)>)></If> or higher"
   },
   {
     "RowId": 2063,
@@ -1965,7 +1965,7 @@
   },
   {
     "RowId": 2068,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>+<Else/> </If><Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 2069,
@@ -1981,19 +1981,19 @@
   },
   {
     "RowId": 2072,
-    "Text": "Your wish list is currently empty.\n\nUp to ten items can be added to your wish list. While the contents of your list cannot be viewed by other players, the total number of people who desire a given item on your World will be displayed in search results.\n\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BPlease be advised that all wish list data will be cleared when Worlds undergo maintenance.\u003C/span\u003E"
+    "Text": "Your wish list is currently empty.\n\nUp to ten items can be added to your wish list. While the contents of your list cannot be viewed by other players, the total number of people who desire a given item on your World will be displayed in search results.\n\n<span style=\"color: #ff7b1a;\">※Please be advised that all wish list data will be cleared when Worlds undergo maintenance.</span>"
   },
   {
     "RowId": 2073,
-    "Text": "\u003CIcon2\u003E10\u003C/Icon2\u003E Subcommands \u003CIcon2\u003E8\u003C/Icon2\u003E View Search Results \u003CIcon2\u003E9\u003C/Icon2\u003E Back"
+    "Text": "<Icon2>10</Icon2> Subcommands <Icon2>8</Icon2> View Search Results <Icon2>9</Icon2> Back"
   },
   {
     "RowId": 2074,
-    "Text": "Add to Wish List (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "Add to Wish List (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 2075,
-    "Text": "Remove from Wish List (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "Remove from Wish List (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 2076,

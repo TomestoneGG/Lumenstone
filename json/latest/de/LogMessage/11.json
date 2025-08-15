@@ -1621,7 +1621,7 @@
   },
   {
     "RowId": 5180,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ew\u00FCrfelst\u003CElse/\u003Ew\u00FCrfelt\u003C/If\u003E um \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E\u003C/If\u003E.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>würfelst<Else/>würfelt</If> um <If(LessThanOrEqualTo(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,4,1)><Else/><denoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)></If>.",
     "LogKind": {
       "RowId": 65,
       "SheetName": "LogKind"
@@ -1633,7 +1633,7 @@
   },
   {
     "RowId": 5181,
-    "Text": "Die Beuteregel ist \u201E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EAnf\u00FChrer\u003C/span\u003E\u201C.",
+    "Text": "Die Beuteregel ist „<span style=\"color: #ff7b1a;\">Anführer</span>“.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1645,7 +1645,7 @@
   },
   {
     "RowId": 5182,
-    "Text": "Die Beuteregel ist \u201E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003ENur Gier\u003C/span\u003E\u201C.",
+    "Text": "Die Beuteregel ist „<span style=\"color: #ff7b1a;\">Nur Gier</span>“.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1657,7 +1657,7 @@
   },
   {
     "RowId": 5183,
-    "Text": "\u003CIf(Equal(IntegerParameter(3),1))\u003EKurzzeitbonus! \u003CElse/\u003E \u003C/If\u003E\u003CHead\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E wurde\u003CElse/\u003E\u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(2),1,1)\u003E wurden\u003C/If\u003E\u003C/Head\u003E dem Beutegut hinzugef\u00FCgt.",
+    "Text": "<If(Equal(IntegerParameter(3),1))>Kurzzeitbonus! <Else/> </If><Head><If(LessThanOrEqualTo(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,1,1)> wurde<Else/><denoun(Item,1,IntegerParameter(1),IntegerParameter(2),1,1)> wurden</If></Head> dem Beutegut hinzugefügt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 5184,
-    "Text": "Die Verteilungsregel f\u00FCr \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E wurde auf \u201EGier\u201C festgelegt.",
+    "Text": "Die Verteilungsregel für <If(LessThanOrEqualTo(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,4,1)><Else/><denoun(Item,2,IntegerParameter(1),2,4,1)></If> wurde auf „Gier“ festgelegt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1681,7 +1681,7 @@
   },
   {
     "RowId": 5185,
-    "Text": "Die Verteilungsregel f\u00FCr \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E wurde zur\u00FCckgesetzt.",
+    "Text": "Die Verteilungsregel für <If(LessThanOrEqualTo(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,4,1)><Else/><denoun(Item,2,IntegerParameter(1),2,4,1)></If> wurde zurückgesetzt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1693,7 +1693,7 @@
   },
   {
     "RowId": 5186,
-    "Text": "Da vom Gruppenanf\u00FChrer keine Verteilungsregel festgelegt wurde, kann nicht gew\u00FCrfelt werden.",
+    "Text": "Da vom Gruppenanführer keine Verteilungsregel festgelegt wurde, kann nicht gewürfelt werden.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 5187,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E erhalten.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If> <denoun(Item,2,IntegerParameter(1),1,4,1)> erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1717,7 +1717,7 @@
   },
   {
     "RowId": 5188,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)\u003E erhalten.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If> <denoun(Item,1,IntegerParameter(1),IntegerParameter(2),4,1)> erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1729,7 +1729,7 @@
   },
   {
     "RowId": 5189,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E  bereits Beutegut erhalten und \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ekannst\u003CElse/\u003Ekann\u003C/If\u003E erst nach Zur\u00FCcksetzung des Timers wieder neues erhalten. ",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If>  bereits Beutegut erhalten und <If(Equal(ObjectParameter(1),ObjectParameter(2)))>kannst<Else/>kann</If> erst nach Zurücksetzung des Timers wieder neues erhalten. ",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1741,7 +1741,7 @@
   },
   {
     "RowId": 5190,
-    "Text": "Bei dieser Verteilungsregel ist \u201EBedarf\u201C nicht w\u00E4hlbar.",
+    "Text": "Bei dieser Verteilungsregel ist „Bedarf“ nicht wählbar.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1753,7 +1753,7 @@
   },
   {
     "RowId": 5191,
-    "Text": "Kein Empf\u00E4nger. Der Gegenstand kann nicht \u00FCbergeben werden.",
+    "Text": "Kein Empfänger. Der Gegenstand kann nicht übergeben werden.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1765,7 +1765,7 @@
   },
   {
     "RowId": 5192,
-    "Text": "Bedarf und Gier sind f\u00FCr pers\u00F6nlich gebundene oder unverk\u00E4ufliche Gegenst\u00E4nde, die du schon besitzt, nicht w\u00E4hlbar.",
+    "Text": "Bedarf und Gier sind für persönlich gebundene oder unverkäufliche Gegenstände, die du schon besitzt, nicht wählbar.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1777,7 +1777,7 @@
   },
   {
     "RowId": 5193,
-    "Text": "Bedarf und Gier sind f\u00FCr pers\u00F6nlich gebundene oder unverk\u00E4ufliche Begleiter, die du schon besitzt, nicht w\u00E4hlbar.",
+    "Text": "Bedarf und Gier sind für persönlich gebundene oder unverkäufliche Begleiter, die du schon besitzt, nicht wählbar.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1789,7 +1789,7 @@
   },
   {
     "RowId": 5194,
-    "Text": "Bitte um das Beutegut w\u00FCrfeln.",
+    "Text": "Bitte um das Beutegut würfeln.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1801,7 +1801,7 @@
   },
   {
     "RowId": 5195,
-    "Text": "Der Gruppenanf\u00FChrer muss die Verteilungsregel festlegen.",
+    "Text": "Der Gruppenanführer muss die Verteilungsregel festlegen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1813,7 +1813,7 @@
   },
   {
     "RowId": 5196,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E besitzt diesen Gegenstand (pers\u00F6nlich gebunden/unverk\u00E4uflich) bereits,\ndaher ist die Zuteilung zu \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(3,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,3,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E nicht m\u00F6glich.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> besitzt diesen Gegenstand (persönlich gebunden/unverkäuflich) bereits,\ndaher ist die Zuteilung zu <If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(3,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,3,1)><Else/>ObjectParameter(2)</If></If> nicht möglich.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1825,7 +1825,7 @@
   },
   {
     "RowId": 5197,
-    "Text": "Diese Aktion ist vor\u00FCbergehend nicht m\u00F6glich.\nDies ist eine Ma\u00DFnahme zur Suchtpr\u00E4vention.",
+    "Text": "Diese Aktion ist vorübergehend nicht möglich.\nDies ist eine Maßnahme zur Suchtprävention.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1837,7 +1837,7 @@
   },
   {
     "RowId": 5198,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ebist\u003CElse/\u003Eist\u003C/If\u003E nicht berechtigt, um  \u003CIf(LessThanOrEqualTo(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\u003CElse/\u003E\u003Cdenoun(Item,2,IntegerParameter(1),2,4,1)\u003E\u003C/If\u003E zu w\u00FCrfeln,\ndaher ist die Zuteilung nicht m\u00F6glich.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>bist<Else/>ist</If> nicht berechtigt, um  <If(LessThanOrEqualTo(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,4,1)><Else/><denoun(Item,2,IntegerParameter(1),2,4,1)></If> zu würfeln,\ndaher ist die Zuteilung nicht möglich.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1849,7 +1849,7 @@
   },
   {
     "RowId": 5199,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cdenoun(Item,2,IntegerParameter(1),1,1,1)\u003E wurde\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),2,1,1)\u003E wurden\u003C/If\u003E\u003C/Head\u003E mit \u003CIf(Equal(IntegerParameter(4),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(3),1,3,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(3),2,3,1)\u003E\u003C/If\u003E \u00FCberschrieben, weil die Beutegut-Liste voll war.",
+    "Text": "<Head><If(Equal(IntegerParameter(2),1))><denoun(Item,2,IntegerParameter(1),1,1,1)> wurde<Else/><Num>IntegerParameter(2)</Num> <denoun(Item,5,IntegerParameter(1),2,1,1)> wurden</If></Head> mit <If(Equal(IntegerParameter(4),1))><denoun(Item,1,IntegerParameter(3),1,3,1)><Else/><Num>IntegerParameter(4)</Num> <denoun(Item,5,IntegerParameter(3),2,3,1)></If> überschrieben, weil die Beutegut-Liste voll war.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1861,7 +1861,7 @@
   },
   {
     "RowId": 5200,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><kilo(IntegerParameter(1),.)> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> <If(Equal(IntegerParameter(3),0))> <Else/>(+<Num>IntegerParameter(3)</Num>%) </If>erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1873,7 +1873,7 @@
   },
   {
     "RowId": 5201,
-    "Text": "Du kannst keine weiteren \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
+    "Text": "Du kannst keine weiteren <denoun(Item,5,IntegerParameter(1),2,4,1)> erhalten.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1885,7 +1885,7 @@
   },
   {
     "RowId": 5202,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><kilo(IntegerParameter(1),.)> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> <If(Equal(IntegerParameter(3),0))> <Else/>(+<Num>IntegerParameter(3)</Num>%) </If>erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1897,7 +1897,7 @@
   },
   {
     "RowId": 5203,
-    "Text": "Du kannst keine weiteren \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
+    "Text": "Du kannst keine weiteren <denoun(Item,5,IntegerParameter(1),2,4,1)> erhalten.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1909,7 +1909,7 @@
   },
   {
     "RowId": 5204,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><kilo(IntegerParameter(1),.)> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> <If(Equal(IntegerParameter(3),0))> <Else/>(+<Num>IntegerParameter(3)</Num>%) </If>erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -1921,7 +1921,7 @@
   },
   {
     "RowId": 5205,
-    "Text": "Aktion kann nicht ausgef\u00FChrt werden. Nicht gen\u00FCgend EP.",
+    "Text": "Aktion kann nicht ausgeführt werden. Nicht genügend EP.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1933,7 +1933,7 @@
   },
   {
     "RowId": 5206,
-    "Text": "  \uE06F \u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(8))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(8),1,1,1)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(3)))\u003Eregenerierst\u003CElse/\u003Eregeneriert\u003C/If\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%)\u003CElse/\u003E(\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%)\u003C/If\u003E\u003C/If\u003E EP.",
+    "Text": "  \uE06F <Head><If(Equal(ObjectParameter(1),ObjectParameter(3)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(8))><denoun(ObjStr,2,PlayerParameter(8),1,1,1)><Else/>ObjectParameter(3)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(3)))>regenerierst<Else/>regeneriert</If> <Num>IntegerParameter(2)</Num><If(Equal(IntegerParameter(3),0))> <Else/><If(GreaterThan(IntegerParameter(3),0))>(+<Num>IntegerParameter(3)</Num>%)<Else/>(<Num>IntegerParameter(3)</Num>%)</If></If> EP.",
     "LogKind": {
       "RowId": 45,
       "SheetName": "LogKind"
@@ -1945,7 +1945,7 @@
   },
   {
     "RowId": 5207,
-    "Text": "\u00DCber \u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E wurde die Todesstrafe verh\u00E4ngt ...",
+    "Text": "Über <PcName>IntegerParameter(1)</PcName> wurde die Todesstrafe verhängt ...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1957,7 +1957,7 @@
   },
   {
     "RowId": 5208,
-    "Text": "Das luminiszente \u00C4theroplasma an \u003CPcName\u003EIntegerParameter(1)\u003C/PcName\u003E beginnt, Abgase auszusto\u00DFen.",
+    "Text": "Das luminiszente Ätheroplasma an <PcName>IntegerParameter(1)</PcName> beginnt, Abgase auszustoßen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -1981,7 +1981,7 @@
   },
   {
     "RowId": 5210,
-    "Text": "Wiedergabe nicht m\u00F6glich, da \u003Csheet(ExVersion,IntegerParameter(1),0)\u003E nicht registriert ist.",
+    "Text": "Wiedergabe nicht möglich, da <sheet(ExVersion,IntegerParameter(1),0)> nicht registriert ist.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -1993,7 +1993,7 @@
   },
   {
     "RowId": 5211,
-    "Text": "Du hast das Emote \u201E\u003Csheet(Emote,IntegerParameter(1),0)\u003E\u201C erlernt.",
+    "Text": "Du hast das Emote „<sheet(Emote,IntegerParameter(1),0)>“ erlernt.",
     "LogKind": {
       "RowId": 64,
       "SheetName": "LogKind"
@@ -2017,7 +2017,7 @@
   },
   {
     "RowId": 5213,
-    "Text": "Wenn du mit einem Neuling befreundet bist, kannst du dich nun geb\u00FChrenfrei zu dem ihm n\u00E4chstgelegenen \u00C4theryten teleportieren.",
+    "Text": "Wenn du mit einem Neuling befreundet bist, kannst du dich nun gebührenfrei zu dem ihm nächstgelegenen Ätheryten teleportieren.",
     "LogKind": {
       "RowId": 64,
       "SheetName": "LogKind"
@@ -2029,7 +2029,7 @@
   },
   {
     "RowId": 5214,
-    "Text": "Du wurdest von dem Reittier geworfen und kehrst zum Ausgangspunkt zur\u00FCck.",
+    "Text": "Du wurdest von dem Reittier geworfen und kehrst zum Ausgangspunkt zurück.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2041,7 +2041,7 @@
   },
   {
     "RowId": 5215,
-    "Text": "An diesen Gegenstand l\u00E4sst sich keine Materia mit riskanten Techniken anbringen.",
+    "Text": "An diesen Gegenstand lässt sich keine Materia mit riskanten Techniken anbringen.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2053,7 +2053,7 @@
   },
   {
     "RowId": 5216,
-    "Text": "Du kannst dieses Rezept nicht ausf\u00FChren, weil du kein Spezialist bist.",
+    "Text": "Du kannst dieses Rezept nicht ausführen, weil du kein Spezialist bist.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2077,7 +2077,7 @@
   },
   {
     "RowId": 5218,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E in \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E einsetzen lassen.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If> <denoun(Item,1,IntegerParameter(2),1,4,1)> in <denoun(Item,1,IntegerParameter(1),1,4,1)> einsetzen lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2101,7 +2101,7 @@
   },
   {
     "RowId": 5220,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Treffer",
+    "Text": "<Num>IntegerParameter(1)</Num> Treffer",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2113,7 +2113,7 @@
   },
   {
     "RowId": 5221,
-    "Text": "Die Suche ergab \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Treffer. Die ersten \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E werden angezeigt.",
+    "Text": "Die Suche ergab <Num>IntegerParameter(1)</Num> Treffer. Die ersten <Num>IntegerParameter(2)</Num> werden angezeigt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2125,7 +2125,7 @@
   },
   {
     "RowId": 5222,
-    "Text": "Du hast die Emotes \u201ERoter Bombattant I\u201C und \u201ERoter Bombattant II\u201C erlernt.",
+    "Text": "Du hast die Emotes „Roter Bombattant I“ und „Roter Bombattant II“ erlernt.",
     "LogKind": {
       "RowId": 64,
       "SheetName": "LogKind"
@@ -2137,7 +2137,7 @@
   },
   {
     "RowId": 5223,
-    "Text": "Du hast die Emotes \u201ESchwarze Bombattantin I\u201C und \u201ESchwarze Bombattantin II\u201C erlernt.",
+    "Text": "Du hast die Emotes „Schwarze Bombattantin I“ und „Schwarze Bombattantin II“ erlernt.",
     "LogKind": {
       "RowId": 64,
       "SheetName": "LogKind"
@@ -2149,7 +2149,7 @@
   },
   {
     "RowId": 5224,
-    "Text": "Du hast die Emotes \u201EGelber Bombattant I\u201C und \u201EGelber Bombattant II\u201C erlernt.",
+    "Text": "Du hast die Emotes „Gelber Bombattant I“ und „Gelber Bombattant II“ erlernt.",
     "LogKind": {
       "RowId": 64,
       "SheetName": "LogKind"
@@ -2161,7 +2161,7 @@
   },
   {
     "RowId": 5225,
-    "Text": "\u00C4nderungen wurden verworfen.",
+    "Text": "Änderungen wurden verworfen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2173,7 +2173,7 @@
   },
   {
     "RowId": 5226,
-    "Text": "\u00C4nderungen wurden \u00FCbernommen.",
+    "Text": "Änderungen wurden übernommen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2185,7 +2185,7 @@
   },
   {
     "RowId": 5227,
-    "Text": " \uE06F  Nahrungseffekt verl\u00E4ngert.",
+    "Text": " \uE06F  Nahrungseffekt verlängert.",
     "LogKind": {
       "RowId": 46,
       "SheetName": "LogKind"
@@ -2197,7 +2197,7 @@
   },
   {
     "RowId": 5228,
-    "Text": "Maximal-HP vor\u00FCbergehend erh\u00F6ht!",
+    "Text": "Maximal-HP vorübergehend erhöht!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2221,7 +2221,7 @@
   },
   {
     "RowId": 5230,
-    "Text": "Momentan sind keine Pl\u00E4tze frei. Bitte versuch es sp\u00E4ter noch einmal.",
+    "Text": "Momentan sind keine Plätze frei. Bitte versuch es später noch einmal.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2233,7 +2233,7 @@
   },
   {
     "RowId": 5231,
-    "Text": "Das Steinpuppen-Training kann nicht gestartet werden, w\u00E4hrend du in einer Gruppe bist.",
+    "Text": "Das Steinpuppen-Training kann nicht gestartet werden, während du in einer Gruppe bist.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2245,7 +2245,7 @@
   },
   {
     "RowId": 5232,
-    "Text": "Das Steinpuppen-Training kann nicht gestartet werden,\nw\u00E4hrend du an einem anderen Inhalt teilnimmst.",
+    "Text": "Das Steinpuppen-Training kann nicht gestartet werden,\nwährend du an einem anderen Inhalt teilnimmst.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2281,7 +2281,7 @@
   },
   {
     "RowId": 5235,
-    "Text": "Du hast das Trainingsareal verlassen.\nWenn du nicht innerhalb des Zeitlimits dorthin zur\u00FCckkehrst, wird der Inhalt abgebrochen.",
+    "Text": "Du hast das Trainingsareal verlassen.\nWenn du nicht innerhalb des Zeitlimits dorthin zurückkehrst, wird der Inhalt abgebrochen.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2293,7 +2293,7 @@
   },
   {
     "RowId": 5236,
-    "Text": "Du kannst keine weiteren \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
+    "Text": "Du kannst keine weiteren <denoun(Item,5,IntegerParameter(1),2,4,1)> erhalten.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2317,7 +2317,7 @@
   },
   {
     "RowId": 5238,
-    "Text": "Die Einstellungen wurden ge\u00E4ndert.",
+    "Text": "Die Einstellungen wurden geändert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2329,7 +2329,7 @@
   },
   {
     "RowId": 5239,
-    "Text": "Du bist zum PvP-Kommandoset \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C gewechselt.",
+    "Text": "Du bist zum PvP-Kommandoset <Num>IntegerParameter(2)</Num> „<String>StringParameter(1)</String>“ gewechselt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2341,7 +2341,7 @@
   },
   {
     "RowId": 5240,
-    "Text": "Du musst in der Klasse (Job) sein, f\u00FCr die das PvP-Kommandoset erstellt wurde.",
+    "Text": "Du musst in der Klasse (Job) sein, für die das PvP-Kommandoset erstellt wurde.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2389,7 +2389,7 @@
   },
   {
     "RowId": 5244,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E \u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E(\u002B\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E%) \u003C/If\u003Eerhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><kilo(IntegerParameter(1),.)> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> <If(Equal(IntegerParameter(3),0))> <Else/>(+<Num>IntegerParameter(3)</Num>%) </If>erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -2401,7 +2401,7 @@
   },
   {
     "RowId": 5245,
-    "Text": "Die \u00C4nderungen wurden verworfen.",
+    "Text": "Die Änderungen wurden verworfen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2413,7 +2413,7 @@
   },
   {
     "RowId": 5246,
-    "Text": "Die Einstellungen wurden ge\u00E4ndert.",
+    "Text": "Die Einstellungen wurden geändert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2425,7 +2425,7 @@
   },
   {
     "RowId": 5247,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E erhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><Num>IntegerParameter(1)</Num> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -2437,7 +2437,7 @@
   },
   {
     "RowId": 5248,
-    "Text": "Das Kommandoset \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde erstellt.",
+    "Text": "Das Kommandoset <Num>IntegerParameter(2)</Num> „<String>StringParameter(1)</String>“ wurde erstellt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2449,7 +2449,7 @@
   },
   {
     "RowId": 5249,
-    "Text": "Das Kommandoset \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u201E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201C wurde gel\u00F6scht.",
+    "Text": "Das Kommandoset <Num>IntegerParameter(2)</Num> „<String>StringParameter(1)</String>“ wurde gelöscht.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2461,7 +2461,7 @@
   },
   {
     "RowId": 5250,
-    "Text": "Der Name des Kommandosets wurde ge\u00E4ndert.",
+    "Text": "Der Name des Kommandosets wurde geändert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2473,7 +2473,7 @@
   },
   {
     "RowId": 5251,
-    "Text": "Die Nummer des Kommandosets wurde ge\u00E4ndert.",
+    "Text": "Die Nummer des Kommandosets wurde geändert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2497,7 +2497,7 @@
   },
   {
     "RowId": 5253,
-    "Text": "Du bist \u003Cdenoun(GrandCompany,2,IntegerParameter(1),1,3,1)\u003E als K\u00E4mpfer an der PvP-Front beigetreten.",
+    "Text": "Du bist <denoun(GrandCompany,2,IntegerParameter(1),1,3,1)> als Kämpfer an der PvP-Front beigetreten.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2509,7 +2509,7 @@
   },
   {
     "RowId": 5254,
-    "Text": "Du kannst keine weiteren \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
+    "Text": "Du kannst keine weiteren <denoun(Item,5,IntegerParameter(1),2,4,1)> erhalten.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2521,7 +2521,7 @@
   },
   {
     "RowId": 5255,
-    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Sekunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E bis Kampfbeginn!\n(\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)\u003E\u003C/If\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E)\u003Csound(1,95)\u003E",
+    "Text": "Noch <Num>IntegerParameter(1)</Num> Sekunde<If(Equal(IntegerParameter(1),1))> <Else/>n</If> bis Kampfbeginn!\n(<If(Equal(IntegerParameter(2),0))> <Else/><switch(IntegerParameter(2),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)></If><If(PlayerParameter(8))><sheet(ObjStr,PlayerParameter(8),0)><Else/>ObjectParameter(3)</If>)<sound(1,95)>",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2545,7 +2545,7 @@
   },
   {
     "RowId": 5257,
-    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003E \u003CElse/\u003E\u003Cswitch(IntegerParameter(1),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)\u003E\u003C/If\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E hat den Countdown abgebrochen.",
+    "Text": "<If(Equal(IntegerParameter(1),0))> <Else/><switch(IntegerParameter(1),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)></If><If(PlayerParameter(8))><sheet(ObjStr,PlayerParameter(8),0)><Else/>ObjectParameter(3)</If> hat den Countdown abgebrochen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2581,7 +2581,7 @@
   },
   {
     "RowId": 5260,
-    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Sekunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E!",
+    "Text": "Noch <Num>IntegerParameter(1)</Num> Sekunde<If(Equal(IntegerParameter(1),1))> <Else/>n</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2593,7 +2593,7 @@
   },
   {
     "RowId": 5261,
-    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Sekunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E!",
+    "Text": "Noch <Num>IntegerParameter(1)</Num> Sekunde<If(Equal(IntegerParameter(1),1))> <Else/>n</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2605,7 +2605,7 @@
   },
   {
     "RowId": 5262,
-    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Sekunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E bis Kampfbeginn!\n(\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003Cswitch(IntegerParameter(2),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)\u003E\u003C/If\u003E\u003CIf(PlayerParameter(8))\u003E\u003Csheet(ObjStr,PlayerParameter(8),0)\u003E\u003CElse/\u003EObjectParameter(3)\u003C/If\u003E)\u003Csound(1,95)\u003E",
+    "Text": "Noch <Num>IntegerParameter(1)</Num> Sekunde<If(Equal(IntegerParameter(1),1))> <Else/>n</If> bis Kampfbeginn!\n(<If(Equal(IntegerParameter(2),0))> <Else/><switch(IntegerParameter(2),\uE071,\uE072,\uE073,\uE074,\uE075,\uE076)></If><If(PlayerParameter(8))><sheet(ObjStr,PlayerParameter(8),0)><Else/>ObjectParameter(3)</If>)<sound(1,95)>",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2617,7 +2617,7 @@
   },
   {
     "RowId": 5263,
-    "Text": "Noch \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Sekunde\u003CIf(Equal(IntegerParameter(1),1))\u003E \u003CElse/\u003En\u003C/If\u003E!",
+    "Text": "Noch <Num>IntegerParameter(1)</Num> Sekunde<If(Equal(IntegerParameter(1),1))> <Else/>n</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2653,7 +2653,7 @@
   },
   {
     "RowId": 5266,
-    "Text": "Gegenstand konnte aus unbestimmten Gr\u00FCnden nicht verwendet werden, weil er beispielsweise nicht mehr verf\u00FCgbar ist.",
+    "Text": "Gegenstand konnte aus unbestimmten Gründen nicht verwendet werden, weil er beispielsweise nicht mehr verfügbar ist.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2677,7 +2677,7 @@
   },
   {
     "RowId": 5268,
-    "Text": "Du hast \u003CIf(Equal(IntegerParameter(1),1))\u003E\u003Cdenoun(Item,1,IntegerParameter(2),1,4,1)\u003E\u003CElse/\u003E\u003Ckilo(IntegerParameter(1),.)\u003E \u003Cdenoun(Item,5,IntegerParameter(2),2,4,1)\u003E\u003C/If\u003E erhalten.",
+    "Text": "Du hast <If(Equal(IntegerParameter(1),1))><denoun(Item,1,IntegerParameter(2),1,4,1)><Else/><kilo(IntegerParameter(1),.)> <denoun(Item,5,IntegerParameter(2),2,4,1)></If> erhalten.",
     "LogKind": {
       "RowId": 62,
       "SheetName": "LogKind"
@@ -2701,7 +2701,7 @@
   },
   {
     "RowId": 5270,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Beutel genie\u00DFbaren Kristallsand erhalten.",
+    "Text": "<Num>IntegerParameter(1)</Num> Beutel genießbaren Kristallsand erhalten.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2713,7 +2713,7 @@
   },
   {
     "RowId": 5271,
-    "Text": "Du hast bereits das Maximum an genie\u00DFbarem Kristallsand.\nF\u00FCttere zuerst die synthetische Seele, bevor du neuen erwirbst.",
+    "Text": "Du hast bereits das Maximum an genießbarem Kristallsand.\nFüttere zuerst die synthetische Seele, bevor du neuen erwirbst.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2725,7 +2725,7 @@
   },
   {
     "RowId": 5272,
-    "Text": "Du hast die synthetische Seele mit Kristallsand gef\u00FCttert.",
+    "Text": "Du hast die synthetische Seele mit Kristallsand gefüttert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2737,7 +2737,7 @@
   },
   {
     "RowId": 5273,
-    "Text": "Du hast nicht genug genie\u00DFbaren Kristallsand.",
+    "Text": "Du hast nicht genug genießbaren Kristallsand.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2749,7 +2749,7 @@
   },
   {
     "RowId": 5274,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,5,IntegerParameter(1),1,1,1)\u003E\u003C/Head\u003E kann nicht weiter erh\u00F6ht werden.",
+    "Text": "<Head><denoun(Item,5,IntegerParameter(1),1,1,1)></Head> kann nicht weiter erhöht werden.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2761,7 +2761,7 @@
   },
   {
     "RowId": 5275,
-    "Text": "Die Parameter der synthetischen Seele wurden ge\u00E4ndert.",
+    "Text": "Die Parameter der synthetischen Seele wurden geändert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2785,7 +2785,7 @@
   },
   {
     "RowId": 5277,
-    "Text": "Du hast nicht genug \u003Cdenoun(Item,5,IntegerParameter(1),1,4,1)\u003E.",
+    "Text": "Du hast nicht genug <denoun(Item,5,IntegerParameter(1),1,4,1)>.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2815,7 +2815,7 @@
   },
   {
     "RowId": 5280,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003Cdenoun(Item,1,IntegerParameter(1),1,4,1)\u003E erhalten.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If> <denoun(Item,1,IntegerParameter(1),1,4,1)> erhalten.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2827,7 +2827,7 @@
   },
   {
     "RowId": 5281,
-    "Text": "\u003CHead\u003E\u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003E\u003Cswitch(1,du,deiner,dir,dich)\u003E\u003CElse/\u003E\u003CIf(PlayerParameter(7))\u003E\u003Cdenoun(ObjStr,2,PlayerParameter(7),1,1,1)\u003E\u003CElse/\u003EObjectParameter(2)\u003C/If\u003E\u003C/If\u003E\u003C/Head\u003E \u003CIf(Equal(ObjectParameter(1),ObjectParameter(2)))\u003Ehast\u003CElse/\u003Ehat\u003C/If\u003E \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cdenoun(Item,5,IntegerParameter(1),2,4,1)\u003E erhalten.",
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))><switch(1,du,deiner,dir,dich)><Else/><If(PlayerParameter(7))><denoun(ObjStr,2,PlayerParameter(7),1,1,1)><Else/>ObjectParameter(2)</If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>hast<Else/>hat</If> <Num>IntegerParameter(2)</Num> <denoun(Item,5,IntegerParameter(1),2,4,1)> erhalten.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2839,7 +2839,7 @@
   },
   {
     "RowId": 5282,
-    "Text": "Der Tausch konnte nicht durchgef\u00FChrt werden, weil du die ben\u00F6tigten Gegenst\u00E4nde nicht hast.",
+    "Text": "Der Tausch konnte nicht durchgeführt werden, weil du die benötigten Gegenstände nicht hast.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2851,7 +2851,7 @@
   },
   {
     "RowId": 5283,
-    "Text": "Der Tausch konnte nicht durchgef\u00FChrt werden, weil dein Inventar voll ist.",
+    "Text": "Der Tausch konnte nicht durchgeführt werden, weil dein Inventar voll ist.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2863,7 +2863,7 @@
   },
   {
     "RowId": 5284,
-    "Text": "Anzeige nicht m\u00F6glich.\nDu hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E nicht angelegt.",
+    "Text": "Anzeige nicht möglich.\nDu hast <denoun(Item,2,IntegerParameter(1),1,4,1)> nicht angelegt.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2875,7 +2875,7 @@
   },
   {
     "RowId": 5285,
-    "Text": "Anzeige nicht m\u00F6glich. Du hast \u003Cdenoun(Item,2,IntegerParameter(1),1,4,1)\u003E\nund \u003Cdenoun(Item,2,IntegerParameter(2),1,4,1)\u003E nicht angelegt.",
+    "Text": "Anzeige nicht möglich. Du hast <denoun(Item,2,IntegerParameter(1),1,4,1)>\nund <denoun(Item,2,IntegerParameter(2),1,4,1)> nicht angelegt.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2896,7 +2896,7 @@
   },
   {
     "RowId": 5287,
-    "Text": "Der ausgew\u00E4hlte Auftrag wurde entweder nicht angenommen oder nicht abgeschlossen.",
+    "Text": "Der ausgewählte Auftrag wurde entweder nicht angenommen oder nicht abgeschlossen.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2929,7 +2929,7 @@
   },
   {
     "RowId": 5290,
-    "Text": "Das Medaillium kann nicht ohne Yo-kai Watch ge\u00F6ffnet werden.",
+    "Text": "Das Medaillium kann nicht ohne Yo-kai Watch geöffnet werden.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2989,7 +2989,7 @@
   },
   {
     "RowId": 5296,
-    "Text": "Du hast ein PvP-Areal betreten.\nWenn du einen Krieger oder Magier spielst, werden deine Werte und\ndas Kommandomen\u00FC auf die entsprechende PvP-Version umgestellt.",
+    "Text": "Du hast ein PvP-Areal betreten.\nWenn du einen Krieger oder Magier spielst, werden deine Werte und\ndas Kommandomenü auf die entsprechende PvP-Version umgestellt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3001,7 +3001,7 @@
   },
   {
     "RowId": 5297,
-    "Text": "Die \u00C4nderungen wurden verworfen.",
+    "Text": "Die Änderungen wurden verworfen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3013,7 +3013,7 @@
   },
   {
     "RowId": 5298,
-    "Text": "Kann nicht ausgef\u00FChrt werden, da kein erg\u00E4nzendes Kommando f\u00FCr PvP zugewiesen wurde.",
+    "Text": "Kann nicht ausgeführt werden, da kein ergänzendes Kommando für PvP zugewiesen wurde.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -3025,7 +3025,7 @@
   },
   {
     "RowId": 5299,
-    "Text": "W\u00E4hrend einer Saison k\u00F6nnen keine neuen Mitglieder aufgenommen werden.",
+    "Text": "Während einer Saison können keine neuen Mitglieder aufgenommen werden.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -3037,7 +3037,7 @@
   },
   {
     "RowId": 5300,
-    "Text": "Rollenkommandos k\u00F6nnen nur am Startpunkt ge\u00E4ndert werden.",
+    "Text": "Rollenkommandos können nur am Startpunkt geändert werden.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -3049,7 +3049,7 @@
   },
   {
     "RowId": 5301,
-    "Text": "Die Erinnerung an deine erbitterten K\u00E4mpfe weckt die Urkraft in dir, wodurch dein Jobkristall neue Kr\u00E4fte freisetzt.",
+    "Text": "Die Erinnerung an deine erbitterten Kämpfe weckt die Urkraft in dir, wodurch dein Jobkristall neue Kräfte freisetzt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3061,7 +3061,7 @@
   },
   {
     "RowId": 5302,
-    "Text": "Der eiserne Wille des jungen Paladins l\u00E4sst deinen Jobkristall erstrahlen!",
+    "Text": "Der eiserne Wille des jungen Paladins lässt deinen Jobkristall erstrahlen!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3073,7 +3073,7 @@
   },
   {
     "RowId": 5303,
-    "Text": "Die Rechtschaffenheit des jungen Paladins l\u00E4sst deinen Jobkristall erstrahlen!",
+    "Text": "Die Rechtschaffenheit des jungen Paladins lässt deinen Jobkristall erstrahlen!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3097,7 +3097,7 @@
   },
   {
     "RowId": 5305,
-    "Text": "Die Entschlossenheit des jungen Paladins l\u00E4sst deinen Jobkristall erstrahlen!",
+    "Text": "Die Entschlossenheit des jungen Paladins lässt deinen Jobkristall erstrahlen!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3109,7 +3109,7 @@
   },
   {
     "RowId": 5306,
-    "Text": "Das Herz eines wahren Paladins l\u00E4sst deinen Jobkristall erstrahlen!",
+    "Text": "Das Herz eines wahren Paladins lässt deinen Jobkristall erstrahlen!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3205,7 +3205,7 @@
   },
   {
     "RowId": 5314,
-    "Text": "Der Stolz eines Seesoldaten erf\u00FCllt dich. Du hast weiteres nymisches Wissen entdeckt!",
+    "Text": "Der Stolz eines Seesoldaten erfüllt dich. Du hast weiteres nymisches Wissen entdeckt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3217,7 +3217,7 @@
   },
   {
     "RowId": 5315,
-    "Text": "Der Stolz eines Seesoldaten erf\u00FCllt dich. Du hast weiteres nymisches Wissen entdeckt!",
+    "Text": "Der Stolz eines Seesoldaten erfüllt dich. Du hast weiteres nymisches Wissen entdeckt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3229,7 +3229,7 @@
   },
   {
     "RowId": 5316,
-    "Text": "Der Stolz eines Seesoldaten erf\u00FCllt dich. Du hast weiteres nymisches Wissen entdeckt!",
+    "Text": "Der Stolz eines Seesoldaten erfüllt dich. Du hast weiteres nymisches Wissen entdeckt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3241,7 +3241,7 @@
   },
   {
     "RowId": 5317,
-    "Text": "Du lernst, die Dunkelheit in dir zu b\u00E4ndigen!",
+    "Text": "Du lernst, die Dunkelheit in dir zu bändigen!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3373,7 +3373,7 @@
   },
   {
     "RowId": 5328,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3385,7 +3385,7 @@
   },
   {
     "RowId": 5329,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3397,7 +3397,7 @@
   },
   {
     "RowId": 5330,
-    "Text": "Stephanivien \u00FCbergibt dir seine neueste Erfindung!",
+    "Text": "Stephanivien übergibt dir seine neueste Erfindung!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3409,7 +3409,7 @@
   },
   {
     "RowId": 5331,
-    "Text": "Stephanivien verbessert deinen \u00C4thertransformator!",
+    "Text": "Stephanivien verbessert deinen Äthertransformator!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3421,7 +3421,7 @@
   },
   {
     "RowId": 5332,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3433,7 +3433,7 @@
   },
   {
     "RowId": 5333,
-    "Text": "Stephanivien verbessert deinen \u00C4thertransformator!",
+    "Text": "Stephanivien verbessert deinen Äthertransformator!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3445,7 +3445,7 @@
   },
   {
     "RowId": 5334,
-    "Text": "Stephanivien verbessert deinen \u00C4thertransformator!",
+    "Text": "Stephanivien verbessert deinen Äthertransformator!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3457,7 +3457,7 @@
   },
   {
     "RowId": 5335,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3469,7 +3469,7 @@
   },
   {
     "RowId": 5336,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3481,7 +3481,7 @@
   },
   {
     "RowId": 5337,
-    "Text": "Stephanivien verbessert deinen \u00C4thertransformator!",
+    "Text": "Stephanivien verbessert deinen Äthertransformator!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3493,7 +3493,7 @@
   },
   {
     "RowId": 5338,
-    "Text": "Rostnsthal bringt dir eine neue Schie\u00DFtechnik bei!",
+    "Text": "Rostnsthal bringt dir eine neue Schießtechnik bei!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3517,7 +3517,7 @@
   },
   {
     "RowId": 5340,
-    "Text": "Das Sternbild der Eiche erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel der Erde!",
+    "Text": "Das Sternbild der Eiche ergleißt und öffnet dir das Tor zum Elementarhimmel der Erde!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3529,7 +3529,7 @@
   },
   {
     "RowId": 5341,
-    "Text": "Das Sternbild der Waage erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel des Feuers!",
+    "Text": "Das Sternbild der Waage ergleißt und öffnet dir das Tor zum Elementarhimmel des Feuers!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3541,7 +3541,7 @@
   },
   {
     "RowId": 5342,
-    "Text": "Das Sternbild des Turms erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel des Blitzes!",
+    "Text": "Das Sternbild des Turms ergleißt und öffnet dir das Tor zum Elementarhimmel des Blitzes!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3553,7 +3553,7 @@
   },
   {
     "RowId": 5343,
-    "Text": "Das Sternbild des Pfeils erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel des Windes!",
+    "Text": "Das Sternbild des Pfeils ergleißt und öffnet dir das Tor zum Elementarhimmel des Windes!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3565,7 +3565,7 @@
   },
   {
     "RowId": 5344,
-    "Text": "Das Sternbild des Krugs erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel des Wassers!",
+    "Text": "Das Sternbild des Krugs ergleißt und öffnet dir das Tor zum Elementarhimmel des Wassers!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3577,7 +3577,7 @@
   },
   {
     "RowId": 5345,
-    "Text": "Das Sternbild des Speers erglei\u00DFt und \u00F6ffnet dir das Tor zum Elementarhimmel des Eises!",
+    "Text": "Das Sternbild des Speers ergleißt und öffnet dir das Tor zum Elementarhimmel des Eises!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3589,7 +3589,7 @@
   },
   {
     "RowId": 5346,
-    "Text": "\u003CHead\u003E\u003Cdenoun(EObj,2,2006369,1,1,1)\u003E\u003C/Head\u003E wurde erobert.",
+    "Text": "<Head><denoun(EObj,2,2006369,1,1,1)></Head> wurde erobert.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3613,7 +3613,7 @@
   },
   {
     "RowId": 5348,
-    "Text": "Die Verbundenheit ist auf \u201E\u003Csheet(BeastReputationRank,IntegerParameter(1),2)\u003E\u201C gewachsen.",
+    "Text": "Die Verbundenheit ist auf „<sheet(BeastReputationRank,IntegerParameter(1),2)>“ gewachsen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 5351,
-    "Text": "Im Wettstreit mit den besten Schwertk\u00E4mpfern Eorzeas hast du eine neue Kampftechnik erlernt!",
+    "Text": "Im Wettstreit mit den besten Schwertkämpfern Eorzeas hast du eine neue Kampftechnik erlernt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3658,7 +3658,7 @@
   },
   {
     "RowId": 5352,
-    "Text": "Wissbegierige Klamms Gef\u00FChle f\u00FCr Dorgono lassen die Urkraft heftigst aufwallen! ",
+    "Text": "Wissbegierige Klamms Gefühle für Dorgono lassen die Urkraft heftigst aufwallen! ",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3670,7 +3670,7 @@
   },
   {
     "RowId": 5353,
-    "Text": "Aus dem Dunkelritter-Kristall str\u00F6mt eine neue Kraft ...",
+    "Text": "Aus dem Dunkelritter-Kristall strömt eine neue Kraft ...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3730,7 +3730,7 @@
   },
   {
     "RowId": 5358,
-    "Text": "Du hast alle Pr\u00FCfungen bestanden und das Geheimnis des gro\u00DFen Sari erfahren!",
+    "Text": "Du hast alle Prüfungen bestanden und das Geheimnis des großen Sari erfahren!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3766,7 +3766,7 @@
   },
   {
     "RowId": 5361,
-    "Text": "Du hast dem Padjal-M\u00E4dchen beigestanden und eine m\u00E4chtige Heilkraft wurde in dir geweckt!",
+    "Text": "Du hast dem Padjal-Mädchen beigestanden und eine mächtige Heilkraft wurde in dir geweckt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3883,7 +3883,7 @@
   },
   {
     "RowId": 5372,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,17741,1,1,1)\u003E\u003C/Head\u003E resoniert im Einklang mit deiner Rechtschaffenheit, da du \u00FCber das B\u00F6se gesiegt hast.",
+    "Text": "<Head><denoun(Item,2,17741,1,1,1)></Head> resoniert im Einklang mit deiner Rechtschaffenheit, da du über das Böse gesiegt hast.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3895,7 +3895,7 @@
   },
   {
     "RowId": 5373,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,17741,1,1,1)\u003E\u003C/Head\u003E resoniert im Einklang mit deiner Rechtschaffenheit, da du \u00FCber das B\u00F6se gesiegt hast.",
+    "Text": "<Head><denoun(Item,2,17741,1,1,1)></Head> resoniert im Einklang mit deiner Rechtschaffenheit, da du über das Böse gesiegt hast.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3907,7 +3907,7 @@
   },
   {
     "RowId": 5374,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,17741,1,1,1)\u003E\u003C/Head\u003E resoniert im Einklang mit deiner Rechtschaffenheit, da du \u00FCber das B\u00F6se gesiegt hast.",
+    "Text": "<Head><denoun(Item,2,17741,1,1,1)></Head> resoniert im Einklang mit deiner Rechtschaffenheit, da du über das Böse gesiegt hast.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3919,7 +3919,7 @@
   },
   {
     "RowId": 5375,
-    "Text": "\u003CHead\u003E\u003Cdenoun(Item,2,17741,1,1,1)\u003E\u003C/Head\u003E resoniert im Einklang mit deiner Rechtschaffenheit, da du \u00FCber das B\u00F6se gesiegt hast.",
+    "Text": "<Head><denoun(Item,2,17741,1,1,1)></Head> resoniert im Einklang mit deiner Rechtschaffenheit, da du über das Böse gesiegt hast.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3943,7 +3943,7 @@
   },
   {
     "RowId": 5377,
-    "Text": "Der erbitterte Kampf gegen den ersten Sch\u00FCler deines Meisters erweckt eine neue Macht in dir ...!",
+    "Text": "Der erbitterte Kampf gegen den ersten Schüler deines Meisters erweckt eine neue Macht in dir ...!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3967,7 +3967,7 @@
   },
   {
     "RowId": 5379,
-    "Text": "Gatty hat ihre Fassung zur\u00FCckgewonnen.",
+    "Text": "Gatty hat ihre Fassung zurückgewonnen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3979,7 +3979,7 @@
   },
   {
     "RowId": 5380,
-    "Text": "Gattys Lebensenergie wird schw\u00E4cher ...",
+    "Text": "Gattys Lebensenergie wird schwächer ...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3991,7 +3991,7 @@
   },
   {
     "RowId": 5381,
-    "Text": "Gattys Lebensenergie ist gef\u00E4hrlich schwach ...",
+    "Text": "Gattys Lebensenergie ist gefährlich schwach ...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4003,7 +4003,7 @@
   },
   {
     "RowId": 5382,
-    "Text": "Der Zorn des H\u00FCters wurde beschwichtigt!",
+    "Text": "Der Zorn des Hüters wurde beschwichtigt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4015,7 +4015,7 @@
   },
   {
     "RowId": 5383,
-    "Text": "Der Zorn des H\u00FCters hat sich manifestiert!",
+    "Text": "Der Zorn des Hüters hat sich manifestiert!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4027,7 +4027,7 @@
   },
   {
     "RowId": 5384,
-    "Text": "Der Schmerz des H\u00FCters wurde beschwichtigt!",
+    "Text": "Der Schmerz des Hüters wurde beschwichtigt!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4039,7 +4039,7 @@
   },
   {
     "RowId": 5385,
-    "Text": "Der Schmerz des H\u00FCters hat sich manifestiert!",
+    "Text": "Der Schmerz des Hüters hat sich manifestiert!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4075,7 +4075,7 @@
   },
   {
     "RowId": 5388,
-    "Text": "\u4ECA\u65E5\u306E\u307E\u304B\u306A\u3044\uFF1A\u767D\u8EAB\u9B5A\u306E\u30BD\u30C6\u30FC",
+    "Text": "今日のまかない：白身魚のソテー",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4099,7 +4099,7 @@
   },
   {
     "RowId": 5390,
-    "Text": "Liliths Beh\u00E4ltnis ist mit einem magischen Siegel verschlossen ...",
+    "Text": "Liliths Behältnis ist mit einem magischen Siegel verschlossen ...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4111,7 +4111,7 @@
   },
   {
     "RowId": 5391,
-    "Text": "Du sp\u00FCrst eine feindliche Pr\u00E4senz!",
+    "Text": "Du spürst eine feindliche Präsenz!",
     "LogKind": {
       "RowId": 58,
       "SheetName": "LogKind"
@@ -4123,7 +4123,7 @@
   },
   {
     "RowId": 5392,
-    "Text": "\u003CHead\u003E\u003Csheet(ENpcResident,IntegerParameter(1),0)\u003E\u003C/Head\u003E nimmt deine Lieferung\u003Cswitch(IntegerParameter(2),, dankend, begeistert)\u003E entgegen.",
+    "Text": "<Head><sheet(ENpcResident,IntegerParameter(1),0)></Head> nimmt deine Lieferung<switch(IntegerParameter(2),, dankend, begeistert)> entgegen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4135,7 +4135,7 @@
   },
   {
     "RowId": 5393,
-    "Text": "Iola h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),den Hoffnungsschimmer,das verborgene Juwel,die Trumpfkarte,die Geheimwaffe)\u003E der Schmiede.",
+    "Text": "Iola hält dich jetzt für <switch(IntegerParameter(1),den Hoffnungsschimmer,das verborgene Juwel,die Trumpfkarte,die Geheimwaffe)> der Schmiede.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4147,7 +4147,7 @@
   },
   {
     "RowId": 5394,
-    "Text": "Thiuna h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine Unterst\u00FCtzerin\u003CElse/\u003Eeinen Unterst\u00FCtzer\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine Meisterin\u003CElse/\u003Eeinen Meister\u003C/If\u003E,eine lebende Legende,\u003CIf(PlayerParameter(4))\u003Edie Schutzpatronin\u003CElse/\u003Eden Schutzpatron\u003C/If\u003E)\u003E der Erinnerungswerkstatt.",
+    "Text": "Thiuna hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>eine Unterstützerin<Else/>einen Unterstützer</If>,<If(PlayerParameter(4))>eine Meisterin<Else/>einen Meister</If>,eine lebende Legende,<If(PlayerParameter(4))>die Schutzpatronin<Else/>den Schutzpatron</If>)> der Erinnerungswerkstatt.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4159,7 +4159,7 @@
   },
   {
     "RowId": 5395,
-    "Text": "Bethric h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003ESkips Retterin\u003CElse/\u003ESkips Retter\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine Heilerin\u003CElse/\u003Eeinen Heiler\u003C/If\u003E der Amaros,\u003CIf(PlayerParameter(4))\u003Eeine Amaro-Versteherin\u003CElse/\u003Eeinen Amaro-Versteher\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine Amaro-Sympathin\u003CElse/\u003Eeinen Amaro-Sympath\u003C/If\u003E)\u003E.",
+    "Text": "Bethric hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>Skips Retterin<Else/>Skips Retter</If>,<If(PlayerParameter(4))>eine Heilerin<Else/>einen Heiler</If> der Amaros,<If(PlayerParameter(4))>eine Amaro-Versteherin<Else/>einen Amaro-Versteher</If>,<If(PlayerParameter(4))>eine Amaro-Sympathin<Else/>einen Amaro-Sympath</If>)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4171,7 +4171,7 @@
   },
   {
     "RowId": 5396,
-    "Text": "Qeshi-Rae h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Edie allerengagierteste Samiel-Suchtrupp-Kommandantin\u003CElse/\u003Eden allerengagiertesten Samiel-Suchtrupp-Kommandanten\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Edie allerverl\u00E4sslichste Samiel-Suchtrupp-Kommandantin\u003CElse/\u003Eden allerverl\u00E4sslichsten Samiel-Suchtrupp-Kommandanten\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Edie allertalentierteste Samiel-Suchtrupp-Kommandantin\u003CElse/\u003Eden allertalentiertesten Samiel-Suchtrupp-Kommandanten\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Edie allergenialste Samiel-Suchtrupp-Kommandantin\u003CElse/\u003Eden allergenialsten Samiel-Suchtrupp-Kommandanten\u003C/If\u003E)\u003E, \u003CIf(PlayerParameter(4))\u003Edie\u003CElse/\u003Eden\u003C/If\u003E es jemals gab.",
+    "Text": "Qeshi-Rae hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>die allerengagierteste Samiel-Suchtrupp-Kommandantin<Else/>den allerengagiertesten Samiel-Suchtrupp-Kommandanten</If>,<If(PlayerParameter(4))>die allerverlässlichste Samiel-Suchtrupp-Kommandantin<Else/>den allerverlässlichsten Samiel-Suchtrupp-Kommandanten</If>,<If(PlayerParameter(4))>die allertalentierteste Samiel-Suchtrupp-Kommandantin<Else/>den allertalentiertesten Samiel-Suchtrupp-Kommandanten</If>,<If(PlayerParameter(4))>die allergenialste Samiel-Suchtrupp-Kommandantin<Else/>den allergenialsten Samiel-Suchtrupp-Kommandanten</If>)>, <If(PlayerParameter(4))>die<Else/>den</If> es jemals gab.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4183,7 +4183,7 @@
   },
   {
     "RowId": 5397,
-    "Text": "Frithrik h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eseine einzige Unterst\u00FCtzerin\u003CElse/\u003Eseinen einzigen Unterst\u00FCtzer\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eseine engste Vertraute\u003CElse/\u003Eseinen engsten Vertrauten\u003C/If\u003E,eine gleichgesinnte \u003CIf(PlayerParameter(4))\u003EFischerinnenseele\u003CElse/\u003EFischerseele\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine Pionierin\u003CElse/\u003Eeinen Pionier\u003C/If\u003E der Verbesserung und Ausweitung)\u003E der Abteilung Fischerei.",
+    "Text": "Frithrik hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>seine einzige Unterstützerin<Else/>seinen einzigen Unterstützer</If>,<If(PlayerParameter(4))>seine engste Vertraute<Else/>seinen engsten Vertrauten</If>,eine gleichgesinnte <If(PlayerParameter(4))>Fischerinnenseele<Else/>Fischerseele</If>,<If(PlayerParameter(4))>eine Pionierin<Else/>einen Pionier</If> der Verbesserung und Ausweitung)> der Abteilung Fischerei.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4195,7 +4195,7 @@
   },
   {
     "RowId": 5398,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Iola erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur Meisterin\u003CElse/\u003Ezum Meister\u003C/If\u003E der Schwarzeisen-Schmiede!",
+    "Text": "Du hast alle Aufträge für Iola erfüllt! Überglücklich ernennt sie dich damit <If(PlayerParameter(4))>zur Meisterin<Else/>zum Meister</If> der Schwarzeisen-Schmiede!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4207,7 +4207,7 @@
   },
   {
     "RowId": 5399,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Thiuna erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur Restaurateurin\u003CElse/\u003Ezum Restaurateur\u003C/If\u003E der Familienbande!",
+    "Text": "Du hast alle Aufträge für Thiuna erfüllt! Überglücklich ernennt sie dich damit <If(PlayerParameter(4))>zur Restaurateurin<Else/>zum Restaurateur</If> der Familienbande!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4219,7 +4219,7 @@
   },
   {
     "RowId": 5400,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Bethric erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(PlayerParameter(4))\u003Ezur Amaro-Fl\u00FCsterin\u003CElse/\u003Ezum Amaro-Fl\u00FCsterer\u003C/If\u003E!",
+    "Text": "Du hast alle Aufträge für Bethric erfüllt! Überglücklich ernennt er dich damit <If(PlayerParameter(4))>zur Amaro-Flüsterin<Else/>zum Amaro-Flüsterer</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4231,7 +4231,7 @@
   },
   {
     "RowId": 5401,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Qeshi-Rae erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur Ehrenkommandantin\u003CElse/\u003Ezum Ehrenkommandanten\u003C/If\u003E des Samiel-Suchtrupps!",
+    "Text": "Du hast alle Aufträge für Qeshi-Rae erfüllt! Überglücklich ernennt sie dich damit <If(PlayerParameter(4))>zur Ehrenkommandantin<Else/>zum Ehrenkommandanten</If> des Samiel-Suchtrupps!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4243,7 +4243,7 @@
   },
   {
     "RowId": 5402,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Frithrik erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit \u003CIf(PlayerParameter(4))\u003Ezur Ehrenfischerin\u003CElse/\u003Ezum Ehrenfischer\u003C/If\u003E der Abteilung.",
+    "Text": "Du hast alle Aufträge für Frithrik erfüllt! Überglücklich ernennt er dich damit <If(PlayerParameter(4))>zur Ehrenfischerin<Else/>zum Ehrenfischer</If> der Abteilung.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4255,7 +4255,7 @@
   },
   {
     "RowId": 5403,
-    "Text": "Du hast alle gew\u00FCnschten Gegenst\u00E4nde geliefert!",
+    "Text": "Du hast alle gewünschten Gegenstände geliefert!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4267,7 +4267,7 @@
   },
   {
     "RowId": 5404,
-    "Text": "Dein Mut hat den Bund zu deiner Revolverklinge gest\u00E4rkt und dir eine neue Technik offenbart!",
+    "Text": "Dein Mut hat den Bund zu deiner Revolverklinge gestärkt und dir eine neue Technik offenbart!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4291,7 +4291,7 @@
   },
   {
     "RowId": 5406,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Alphinaud verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Alphinaud verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4303,7 +4303,7 @@
   },
   {
     "RowId": 5407,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Alisaie verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Alisaie verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4315,7 +4315,7 @@
   },
   {
     "RowId": 5408,
-    "Text": "Du sp\u00FCrst eine weitere feindliche Pr\u00E4senz!",
+    "Text": "Du spürst eine weitere feindliche Präsenz!",
     "LogKind": {
       "RowId": 58,
       "SheetName": "LogKind"
@@ -4327,7 +4327,7 @@
   },
   {
     "RowId": 5409,
-    "Text": "Du kannst das Areal nicht wechseln, weil du den Auftrag \u201E\u003Csheet(Quest,IntegerParameter(1),0)\u003E\u201C noch nicht abgeschlossen hast.",
+    "Text": "Du kannst das Areal nicht wechseln, weil du den Auftrag „<sheet(Quest,IntegerParameter(1),0)>“ noch nicht abgeschlossen hast.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -4339,7 +4339,7 @@
   },
   {
     "RowId": 5410,
-    "Text": "Interaktion nicht m\u00F6glich. Ziel ist in Bewegung.",
+    "Text": "Interaktion nicht möglich. Ziel ist in Bewegung.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -4351,7 +4351,7 @@
   },
   {
     "RowId": 5411,
-    "Text": "Die Entschlossenheit deiner Gef\u00E4hrten vertieft dein Verst\u00E4ndnis \u00FCber das Leben selbst- und wie du Leben sch\u00FCtzen kannst.",
+    "Text": "Die Entschlossenheit deiner Gefährten vertieft dein Verständnis über das Leben selbst- und wie du Leben schützen kannst.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4375,7 +4375,7 @@
   },
   {
     "RowId": 5413,
-    "Text": "Rurusha h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eihre Restaurierungsassistentin\u003CElse/\u003Eihren Restaurierungsassistenten\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine ehrenwerte Restaurateurin\u003CElse/\u003Eeinen ehrenwerten Restaurateur\u003C/If\u003E,das R\u00FCckgrat des Restaurierungsprojekts,ein Ehrenmitglied des Restaurierungsprojekts)\u003E!",
+    "Text": "Rurusha hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>ihre Restaurierungsassistentin<Else/>ihren Restaurierungsassistenten</If>,<If(PlayerParameter(4))>eine ehrenwerte Restaurateurin<Else/>einen ehrenwerten Restaurateur</If>,das Rückgrat des Restaurierungsprojekts,ein Ehrenmitglied des Restaurierungsprojekts)>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4387,7 +4387,7 @@
   },
   {
     "RowId": 5414,
-    "Text": "Jules h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),eine nur wenig angsteinfl\u00F6\u00DFende Person,eine nicht unangenehm in seinen pers\u00F6nlichen Nahbereich eindringende Person,eine freundliche Person,eine absolute Vertrauensperson)\u003E!",
+    "Text": "Jules hält dich jetzt für <switch(IntegerParameter(1),eine nur wenig angsteinflößende Person,eine nicht unangenehm in seinen persönlichen Nahbereich eindringende Person,eine freundliche Person,eine absolute Vertrauensperson)>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4399,7 +4399,7 @@
   },
   {
     "RowId": 5415,
-    "Text": "Debroye h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine zuverl\u00E4ssige Handwerkerin\u003CElse/\u003Eeinen zuverl\u00E4ssigen Handwerker\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine geschickte Handwerkerin\u003CElse/\u003Eeinen geschickten Handwerker\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine wertvolle Handwerkerin\u003CElse/\u003Eeinen wertvollen Handwerker\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine unentbehrliche Handwerkerin\u003CElse/\u003Eeinen unentbehrlichen Handwerker\u003C/If\u003E)\u003E!",
+    "Text": "Debroye hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>eine zuverlässige Handwerkerin<Else/>einen zuverlässigen Handwerker</If>,<If(PlayerParameter(4))>eine geschickte Handwerkerin<Else/>einen geschickten Handwerker</If>,<If(PlayerParameter(4))>eine wertvolle Handwerkerin<Else/>einen wertvollen Handwerker</If>,<If(PlayerParameter(4))>eine unentbehrliche Handwerkerin<Else/>einen unentbehrlichen Handwerker</If>)>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4411,7 +4411,7 @@
   },
   {
     "RowId": 5416,
-    "Text": "Hinageshi h\u00E4lt dich jetzt f\u00FCr \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Eeine angehende Heiratsvermittlerin\u003CElse/\u003Eeinen angehenden Heiratsvermittler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine fortgeschrittene Heiratsvermittlerin\u003CElse/\u003Eeinen fortgeschrittenen Heiratsvermittler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine erfahrene Heiratsvermittlerin\u003CElse/\u003Eeinen erfahrenen Heiratsvermittler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Eeine brillante Heiratsvermittlerin\u003CElse/\u003Eeinen brillanten Heiratsvermittler\u003C/If\u003E)\u003E!",
+    "Text": "Hinageshi hält dich jetzt für <switch(IntegerParameter(1),<If(PlayerParameter(4))>eine angehende Heiratsvermittlerin<Else/>einen angehenden Heiratsvermittler</If>,<If(PlayerParameter(4))>eine fortgeschrittene Heiratsvermittlerin<Else/>einen fortgeschrittenen Heiratsvermittler</If>,<If(PlayerParameter(4))>eine erfahrene Heiratsvermittlerin<Else/>einen erfahrenen Heiratsvermittler</If>,<If(PlayerParameter(4))>eine brillante Heiratsvermittlerin<Else/>einen brillanten Heiratsvermittler</If>)>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4423,7 +4423,7 @@
   },
   {
     "RowId": 5417,
-    "Text": "T\u0027laqa Tia betrachtet dich jetzt als \u003Cswitch(IntegerParameter(1),\u003CIf(PlayerParameter(4))\u003Ehilfsbereite Probensammlerin\u003CElse/\u003Ehilfsbereiten Probensammler\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Ewissenschaftliche Hilfskraft\u003CElse/\u003Ewissenschaftliche Hilfskraft\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Everl\u00E4ssliche Forschungsassistentin\u003CElse/\u003Everl\u00E4sslichen Forschungsassistenten\u003C/If\u003E,\u003CIf(PlayerParameter(4))\u003Evertrauensvolle Forschungsberaterin\u003CElse/\u003Evertrauensvollen Forschungsberater\u003C/If\u003E)\u003E der \u00C4therologie!",
+    "Text": "T'laqa Tia betrachtet dich jetzt als <switch(IntegerParameter(1),<If(PlayerParameter(4))>hilfsbereite Probensammlerin<Else/>hilfsbereiten Probensammler</If>,<If(PlayerParameter(4))>wissenschaftliche Hilfskraft<Else/>wissenschaftliche Hilfskraft</If>,<If(PlayerParameter(4))>verlässliche Forschungsassistentin<Else/>verlässlichen Forschungsassistenten</If>,<If(PlayerParameter(4))>vertrauensvolle Forschungsberaterin<Else/>vertrauensvollen Forschungsberater</If>)> der Ätherologie!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4435,7 +4435,7 @@
   },
   {
     "RowId": 5418,
-    "Text": "Du hast dem Restaurierungsprojekt zum Erfolg verholfen. Rurusha h\u00E4lt dich jetzt f\u00FCr \u003CIf(PlayerParameter(4))\u003Edie Erweckerin\u003CElse/\u003Eden Erwecker\u003C/If\u003E alter Sprachen.",
+    "Text": "Du hast dem Restaurierungsprojekt zum Erfolg verholfen. Rurusha hält dich jetzt für <If(PlayerParameter(4))>die Erweckerin<Else/>den Erwecker</If> alter Sprachen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4447,7 +4447,7 @@
   },
   {
     "RowId": 5419,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Jules erf\u00FCllt. \u00DCbergl\u00FCcklich ernennt er dich damit zu \u003CIf(PlayerParameter(4))\u003Eeiner Freundin\u003CElse/\u003Eeinem Freund\u003C/If\u003E f\u00FCrs Leben!",
+    "Text": "Du hast alle Aufträge für Jules erfüllt. Überglücklich ernennt er dich damit zu <If(PlayerParameter(4))>einer Freundin<Else/>einem Freund</If> fürs Leben!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4459,7 +4459,7 @@
   },
   {
     "RowId": 5420,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Debroye erf\u00FCllt. \u00DCbergl\u00FCcklich ernennt sie dich damit zu \u003CIf(PlayerParameter(4))\u003Eeiner Meisterhandwerkerin\u003CElse/\u003Eeinem Meisterhandwerker\u003C/If\u003E!",
+    "Text": "Du hast alle Aufträge für Debroye erfüllt. Überglücklich ernennt sie dich damit zu <If(PlayerParameter(4))>einer Meisterhandwerkerin<Else/>einem Meisterhandwerker</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4471,7 +4471,7 @@
   },
   {
     "RowId": 5421,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr Hinageshi erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt sie dich damit \u003CIf(PlayerParameter(4))\u003Ezur Kriegerin der Liebe\u003CElse/\u003Ezum Krieger der Liebe\u003C/If\u003E!",
+    "Text": "Du hast alle Aufträge für Hinageshi erfüllt! Überglücklich ernennt sie dich damit <If(PlayerParameter(4))>zur Kriegerin der Liebe<Else/>zum Krieger der Liebe</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4483,7 +4483,7 @@
   },
   {
     "RowId": 5422,
-    "Text": "Du hast alle Auftr\u00E4ge f\u00FCr T\u0027laqa Tia erf\u00FCllt! \u00DCbergl\u00FCcklich ernennt er dich damit zu \u003CIf(PlayerParameter(4))\u003Eeiner Wohlt\u00E4terin der Wissenschaft\u003CElse/\u003Eeinem Wohlt\u00E4ter der Wissenschaft\u003C/If\u003E!",
+    "Text": "Du hast alle Aufträge für T'laqa Tia erfüllt! Überglücklich ernennt er dich damit zu <If(PlayerParameter(4))>einer Wohltäterin der Wissenschaft<Else/>einem Wohltäter der Wissenschaft</If>!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4495,7 +4495,7 @@
   },
   {
     "RowId": 5423,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Krile verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Krile verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4507,7 +4507,7 @@
   },
   {
     "RowId": 5424,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast G\u0027raha Tia verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast G'raha Tia verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4519,7 +4519,7 @@
   },
   {
     "RowId": 5425,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Matsya verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Matsya verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4531,7 +4531,7 @@
   },
   {
     "RowId": 5426,
-    "Text": "Du bist dabei, das g\u00FCltige Areal f\u00FCr den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung. ",
+    "Text": "Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung. ",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4543,7 +4543,7 @@
   },
   {
     "RowId": 5427,
-    "Text": "Du hast das g\u00FCltige Areal f\u00FCr den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
+    "Text": "Du hast das gültige Areal für den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4555,7 +4555,7 @@
   },
   {
     "RowId": 5428,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Estinien verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Estinien verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4567,7 +4567,7 @@
   },
   {
     "RowId": 5429,
-    "Text": "Du bist dabei, das g\u00FCltige Areal f\u00FCr den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verkleidung.",
+    "Text": "Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verkleidung.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4579,7 +4579,7 @@
   },
   {
     "RowId": 5430,
-    "Text": "Du hast das g\u00FCltige Areal f\u00FCr den Auftrag verlassen. Deine Verkleidung ist daher erloschen.",
+    "Text": "Du hast das gültige Areal für den Auftrag verlassen. Deine Verkleidung ist daher erloschen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4591,7 +4591,7 @@
   },
   {
     "RowId": 5431,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Kan-E-Senna verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Kan-E-Senna verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4603,7 +4603,7 @@
   },
   {
     "RowId": 5432,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Growingway verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Growingway verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4615,7 +4615,7 @@
   },
   {
     "RowId": 5433,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Cookingway verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Cookingway verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4627,7 +4627,7 @@
   },
   {
     "RowId": 5434,
-    "Text": "Du bist dabei, das g\u00FCltige Areal f\u00FCr den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung.",
+    "Text": "Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4639,7 +4639,7 @@
   },
   {
     "RowId": 5435,
-    "Text": "Du hast das g\u00FCltige Areal f\u00FCr den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
+    "Text": "Du hast das gültige Areal für den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4651,7 +4651,7 @@
   },
   {
     "RowId": 5436,
-    "Text": "Alisaie hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Alisaie hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4663,7 +4663,7 @@
   },
   {
     "RowId": 5437,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast den wandernden Pilger verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast den wandernden Pilger verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4675,7 +4675,7 @@
   },
   {
     "RowId": 5438,
-    "Text": "Ailouros hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Ailouros hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4687,7 +4687,7 @@
   },
   {
     "RowId": 5439,
-    "Text": "Die torkelnde Deepa hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Die torkelnde Deepa hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4699,7 +4699,7 @@
   },
   {
     "RowId": 5440,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Raubahn verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Raubahn verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4711,7 +4711,7 @@
   },
   {
     "RowId": 5441,
-    "Text": "Der glei\u00DFende Hund hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Der gleißende Hund hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4723,7 +4723,7 @@
   },
   {
     "RowId": 5442,
-    "Text": "Der junge Wissenschaftler hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Der junge Wissenschaftler hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4735,7 +4735,7 @@
   },
   {
     "RowId": 5443,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Merlwyb verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Merlwyb verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4747,7 +4747,7 @@
   },
   {
     "RowId": 5444,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDie Beschattung ist gescheitert! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Die Beschattung ist gescheitert! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4759,7 +4759,7 @@
   },
   {
     "RowId": 5445,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast deine Begleitperson verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast deine Begleitperson verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4771,7 +4771,7 @@
   },
   {
     "RowId": 5446,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast dich zu weit von der Zielperson entfernt. Die Beschattung ist gescheitert! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast dich zu weit von der Zielperson entfernt. Die Beschattung ist gescheitert! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4783,7 +4783,7 @@
   },
   {
     "RowId": 5447,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Yugiri verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Yugiri verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4795,7 +4795,7 @@
   },
   {
     "RowId": 5448,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Hien verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Hien verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4807,7 +4807,7 @@
   },
   {
     "RowId": 5449,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Aymeric verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Aymeric verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4819,7 +4819,7 @@
   },
   {
     "RowId": 5450,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast deine Begleitperson verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast deine Begleitperson verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4831,7 +4831,7 @@
   },
   {
     "RowId": 5451,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Meteion verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Meteion verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4843,7 +4843,7 @@
   },
   {
     "RowId": 5452,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast das unbekannte Lebewesen verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast das unbekannte Lebewesen verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4855,7 +4855,7 @@
   },
   {
     "RowId": 5453,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Puddingway verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Puddingway verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4867,7 +4867,7 @@
   },
   {
     "RowId": 5454,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast die blauhaarige Studentin verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast die blauhaarige Studentin verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4879,7 +4879,7 @@
   },
   {
     "RowId": 5455,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast das vermisste M\u00E4dchen verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast das vermisste Mädchen verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4891,7 +4891,7 @@
   },
   {
     "RowId": 5456,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast die blonde Soldatin verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast die blonde Soldatin verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4903,7 +4903,7 @@
   },
   {
     "RowId": 5457,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast die blonde Soldatin verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast die blonde Soldatin verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4915,7 +4915,7 @@
   },
   {
     "RowId": 5458,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Debroye verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Debroye verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4927,7 +4927,7 @@
   },
   {
     "RowId": 5459,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDie Beschattung ist gescheitert! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Die Beschattung ist gescheitert! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4939,7 +4939,7 @@
   },
   {
     "RowId": 5460,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDie Beschattung ist gescheitert! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Die Beschattung ist gescheitert! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4951,7 +4951,7 @@
   },
   {
     "RowId": 5461,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Charmion verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Charmion verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4963,7 +4963,7 @@
   },
   {
     "RowId": 5462,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Verpaulaine verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Verpaulaine verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4975,7 +4975,7 @@
   },
   {
     "RowId": 5463,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Flauschi verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Flauschi verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4987,7 +4987,7 @@
   },
   {
     "RowId": 5464,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EWenn du jemanden verfolgst, wird der Zielort nicht auf der Karte angezeigt.\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "<Icon>63</Icon>Wenn du jemanden verfolgst, wird der Zielort nicht auf der Karte angezeigt.\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -4999,7 +4999,7 @@
   },
   {
     "RowId": 5465,
-    "Text": "Alphinaud und Alisaie haben die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Alphinaud und Alisaie haben die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5011,7 +5011,7 @@
   },
   {
     "RowId": 5466,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Appius verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Appius verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5023,7 +5023,7 @@
   },
   {
     "RowId": 5467,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Jullus verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Jullus verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5035,7 +5035,7 @@
   },
   {
     "RowId": 5468,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Emet-Selch verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Emet-Selch verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5047,7 +5047,7 @@
   },
   {
     "RowId": 5469,
-    "Text": "Du bist dabei, das g\u00FCltige Areal f\u00FCr den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung.",
+    "Text": "Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verwandlung.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5059,7 +5059,7 @@
   },
   {
     "RowId": 5470,
-    "Text": "Du hast das g\u00FCltige Areal f\u00FCr den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
+    "Text": "Du hast das gültige Areal für den Auftrag verlassen. Deine Verwandlung ist daher erloschen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5071,7 +5071,7 @@
   },
   {
     "RowId": 5471,
-    "Text": "Der seltsame Hanuman-Langur hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Der seltsame Hanuman-Langur hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5083,7 +5083,7 @@
   },
   {
     "RowId": 5472,
-    "Text": "Das aufgew\u00FChlte M\u00E4dchen hat die F\u00FChrung \u00FCbernommen!\nW\u00E4hle das Symbol \u003CIcon\u003E182\u003C/Icon\u003E in der Aufgabenliste, um eine Erkl\u00E4rung anzeigen zu lassen.",
+    "Text": "Das aufgewühlte Mädchen hat die Führung übernommen!\nWähle das Symbol <Icon>182</Icon> in der Aufgabenliste, um eine Erklärung anzeigen zu lassen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5095,7 +5095,7 @@
   },
   {
     "RowId": 5473,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Y\u0027shtola verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Y'shtola verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5107,7 +5107,7 @@
   },
   {
     "RowId": 5474,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Nhagi\u0027a Jakkya verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Nhagi'a Jakkya verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5119,7 +5119,7 @@
   },
   {
     "RowId": 5475,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Ameliance verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Ameliance verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5131,7 +5131,7 @@
   },
   {
     "RowId": 5476,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Nashu Mhakaracca verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Nashu Mhakaracca verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5143,7 +5143,7 @@
   },
   {
     "RowId": 5477,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Alpha verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Alpha verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5155,7 +5155,7 @@
   },
   {
     "RowId": 5478,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Omega verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Omega verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5167,7 +5167,7 @@
   },
   {
     "RowId": 5479,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Fourchenault verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Fourchenault verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5179,7 +5179,7 @@
   },
   {
     "RowId": 5480,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Trna verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Trna verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5191,7 +5191,7 @@
   },
   {
     "RowId": 5481,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast das aufgeweckte Flusspferdkalb verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast das aufgeweckte Flusspferdkalb verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5203,7 +5203,7 @@
   },
   {
     "RowId": 5482,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast das ruhige Flusspferdkalb verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast das ruhige Flusspferdkalb verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5215,7 +5215,7 @@
   },
   {
     "RowId": 5483,
-    "Text": "Du bist dabei, das g\u00FCltige Areal f\u00FCr den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verkleidung.",
+    "Text": "Du bist dabei, das gültige Areal für den Auftrag zu verlassen. Wenn du weitergehst, erlischt deine Verkleidung.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5227,7 +5227,7 @@
   },
   {
     "RowId": 5484,
-    "Text": "Du hast das g\u00FCltige Areal f\u00FCr den Auftrag verlassen. Deine Verkleidung ist daher erloschen.",
+    "Text": "Du hast das gültige Areal für den Auftrag verlassen. Deine Verkleidung ist daher erloschen.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5239,7 +5239,7 @@
   },
   {
     "RowId": 5485,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Zero verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Zero verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5251,7 +5251,7 @@
   },
   {
     "RowId": 5486,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Varshahn verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Varshahn verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5263,7 +5263,7 @@
   },
   {
     "RowId": 5487,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Delion verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Delion verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5275,7 +5275,7 @@
   },
   {
     "RowId": 5488,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Hildibrand verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Hildibrand verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5287,7 +5287,7 @@
   },
   {
     "RowId": 5489,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Emilie verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Emilie verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5299,7 +5299,7 @@
   },
   {
     "RowId": 5490,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Leofard verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Leofard verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5311,7 +5311,7 @@
   },
   {
     "RowId": 5491,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Koyo-Koyo verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Koyo-Koyo verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5323,7 +5323,7 @@
   },
   {
     "RowId": 5492,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast die Drachenministerin verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast die Drachenministerin verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5335,7 +5335,7 @@
   },
   {
     "RowId": 5493,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast das Dragobo-K\u00FCken verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast das Dragobo-Küken verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5347,7 +5347,7 @@
   },
   {
     "RowId": 5494,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Dreamingway verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Dreamingway verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5359,7 +5359,7 @@
   },
   {
     "RowId": 5495,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Suzaku verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Suzaku verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5371,7 +5371,7 @@
   },
   {
     "RowId": 5496,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Seiryu verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Seiryu verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5383,7 +5383,7 @@
   },
   {
     "RowId": 5497,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Ryne verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Ryne verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5395,7 +5395,7 @@
   },
   {
     "RowId": 5498,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Emmanellain verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Emmanellain verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5407,7 +5407,7 @@
   },
   {
     "RowId": 5499,
-    "Text": "\u003CIcon\u003E63\u003C/Icon\u003EDu hast Sicard verloren! Beginne von vorne!",
+    "Text": "<Icon>63</Icon>Du hast Sicard verloren! Beginne von vorne!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
