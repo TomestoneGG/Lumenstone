@@ -5,7 +5,7 @@
   },
   {
     "RowId": 10394,
-    "Text": "Use \u003CIf(Equal(IntegerParameter(2),1))\u003E\u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003Cennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)\u003E\u003C/If\u003E to reallocate growth?"
+    "Text": "Use <If(Equal(IntegerParameter(2),1))><ennoun(Item,2,IntegerParameter(1),1,1)><Else/><Num>IntegerParameter(2)</Num> <ennoun(Item,3,IntegerParameter(1),IntegerParameter(2),1)></If> to reallocate growth?"
   },
   {
     "RowId": 10400,
@@ -21,7 +21,7 @@
   },
   {
     "RowId": 10403,
-    "Text": "Save Slot \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Save Slot <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10404,
@@ -29,11 +29,11 @@
   },
   {
     "RowId": 10405,
-    "Text": "Floor \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Floor <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10406,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E\n\u003CString\u003EStringParameter(2)\u003C/String\u003E"
+    "Text": "<HeadAll><sheet(ClassJob,IntegerParameter(1),0)></HeadAll>\n<String>StringParameter(2)</String>"
   },
   {
     "RowId": 10407,
@@ -49,7 +49,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Proceed and your \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003Efixed party\u003C/span\u003E save data will be converted to \u003Cspan style=\u0022color: #ff7b1a;\u0022\u003Ematched party\u003C/span\u003E save data.\n\nMatched party save data still allows for the creation of preformed parties as long as the party is formed before returning to the deep dungeon, and the progression of all members is identical. Any open party slots will be filled automatically via the matching system.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EAll special items (pomanders) will be lost upon data conversion.\u003C/span\u003E\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EScores will not be recorded for matched parties.\u003C/span\u003E\n\n\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E \u003CElse/\u003E\u003Cspan style=\u0022color: #ffff66;\u0022\u003ESave data that has progressed to levels which require a fixed party cannot be converted to matched party save data.\u003C/span\u003E\n\n\u003C/If\u003E\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u203BConverted data cannot be restored to its original state.\u003C/span\u003E"
+    "Text": "Proceed and your <span style=\"color: #ff7b1a;\">fixed party</span> save data will be converted to <span style=\"color: #ff7b1a;\">matched party</span> save data.\n\nMatched party save data still allows for the creation of preformed parties as long as the party is formed before returning to the deep dungeon, and the progression of all members is identical. Any open party slots will be filled automatically via the matching system.\n\n<span style=\"color: #ffff66;\">All special items (pomanders) will be lost upon data conversion.</span>\n\n<span style=\"color: #ffff66;\">Scores will not be recorded for matched parties.</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">Save data that has progressed to levels which require a fixed party cannot be converted to matched party save data.</span>\n\n</If><span style=\"color: #ff8080;\">※Converted data cannot be restored to its original state.</span>"
   },
   {
     "RowId": 10411,
@@ -57,7 +57,7 @@
   },
   {
     "RowId": 10412,
-    "Text": "Proceed and your save data will be deleted, allowing you reentry to the deep dungeon from floor 1.\n\nFloor progression and character level will be reset, but aetherpool arm and gear strength will remain unchanged.\n\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u203BData cannot be restored once deleted.\u003C/span\u003E"
+    "Text": "Proceed and your save data will be deleted, allowing you reentry to the deep dungeon from floor 1.\n\nFloor progression and character level will be reset, but aetherpool arm and gear strength will remain unchanged.\n\n<span style=\"color: #ff8080;\">※Data cannot be restored once deleted.</span>"
   },
   {
     "RowId": 10413,
@@ -65,7 +65,7 @@
   },
   {
     "RowId": 10414,
-    "Text": "Gear Strength: \u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Gear Strength: +<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10415,
@@ -77,7 +77,7 @@
   },
   {
     "RowId": 10417,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E\u002B\u003CElse/\u003E \u003C/If\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>+<Else/> </If><Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10418,
@@ -117,7 +117,7 @@
   },
   {
     "RowId": 10427,
-    "Text": "\u003CIf(IntegerParameter(3))\u003E\u003Cspan style=\u0022color: #f9e846;\u0022\u003E\u003Ci\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003C/i\u003E\u003C/span\u003E\u003CElse/\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIf(Equal(IntegerParameter(2),0))\u003E \u003CElse/\u003E\u003CIf(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))\u003E\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/span\u003E\u003CElse/\u003E \u002B\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003C/If\u003E\u003C/If\u003E\u003C/If\u003E"
+    "Text": "<If(IntegerParameter(3))><span style=\"color: #f9e846;\"><i><String>StringParameter(1)</String><If(Equal(IntegerParameter(2),0))> <Else/><If(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))><span style=\"color: #ff7b1a;\"> +<Num>IntegerParameter(2)</Num></span><Else/> +<Num>IntegerParameter(2)</Num></If></If></i></span><Else/><String>StringParameter(1)</String><If(Equal(IntegerParameter(2),0))> <Else/><If(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))><span style=\"color: #ff7b1a;\"> +<Num>IntegerParameter(2)</Num></span><Else/> +<Num>IntegerParameter(2)</Num></If></If></If>"
   },
   {
     "RowId": 10428,
@@ -141,7 +141,7 @@
   },
   {
     "RowId": 10433,
-    "Text": "Lock/Unlock the Character Info window so that it does/does not close upon pressing \u003CIcon2\u003E9\u003C/Icon2\u003E or the Esc key, or accessing the main menu."
+    "Text": "Lock/Unlock the Character Info window so that it does/does not close upon pressing <Icon2>9</Icon2> or the Esc key, or accessing the main menu."
   },
   {
     "RowId": 10434,
@@ -153,7 +153,7 @@
   },
   {
     "RowId": 10436,
-    "Text": "Lock/Unlock the map so that it does/does not close upon pressing the Esc key, \u003CIcon2\u003E9\u003C/Icon2\u003E, or \u003CIcon\u003E10\u003C/Icon\u003E."
+    "Text": "Lock/Unlock the map so that it does/does not close upon pressing the Esc key, <Icon2>9</Icon2>, or <Icon>10</Icon>."
   },
   {
     "RowId": 10437,
@@ -181,7 +181,7 @@
   },
   {
     "RowId": 10443,
-    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
+    "Text": "Time Remaining: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
   },
   {
     "RowId": 10444,
@@ -209,11 +209,11 @@
   },
   {
     "RowId": 10450,
-    "Text": "\u2013-"
+    "Text": "–-"
   },
   {
     "RowId": 10451,
-    "Text": "Party KO: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Party KO: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10452,
@@ -233,7 +233,7 @@
   },
   {
     "RowId": 10456,
-    "Text": "Appraise \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E?"
+    "Text": "Appraise <ennoun(Item,2,IntegerParameter(1),1,1)>?"
   },
   {
     "RowId": 10457,
@@ -277,7 +277,7 @@
   },
   {
     "RowId": 10469,
-    "Text": "\u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E\u003C/HeadAll\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E / \u003CHeadAll\u003E\u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\u003C/HeadAll\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "<HeadAll><sheet(ClassJob,IntegerParameter(1),0)></HeadAll><If(GreaterThan(IntegerParameter(2),0))> / <HeadAll><sheet(ClassJob,IntegerParameter(2),0)></HeadAll><Else/> </If>"
   },
   {
     "RowId": 10470,
@@ -285,11 +285,11 @@
   },
   {
     "RowId": 10471,
-    "Text": "Current Deep Dungeon rankings can be viewed on the Lodestone!\n\u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "Current Deep Dungeon rankings can be viewed on the Lodestone!\n<String>StringParameter(1)</String>"
   },
   {
     "RowId": 10472,
-    "Text": "\u003CHeadAll\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/HeadAll\u003E"
+    "Text": "<HeadAll><String>StringParameter(1)</String></HeadAll>"
   },
   {
     "RowId": 10475,
@@ -377,7 +377,7 @@
   },
   {
     "RowId": 10509,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E, \u003CString\u003EStringParameter(2)\u003C/String\u003E."
+    "Text": "<String>StringParameter(1)</String>, <String>StringParameter(2)</String>."
   },
   {
     "RowId": 10510,
@@ -393,7 +393,7 @@
   },
   {
     "RowId": 10513,
-    "Text": "Level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003CIf(GreaterThan(IntegerParameter(2),IntegerParameter(1)))\u003E\uFF5E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E (level synced if higher)\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\n\uE033Average Item Level: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\u3000\n\uE0BDItem Level Sync: \u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Level <Num>IntegerParameter(1)</Num><If(GreaterThan(IntegerParameter(2),IntegerParameter(1)))>～<Num>IntegerParameter(2)</Num><Else/> </If> (level synced if higher)<If(GreaterThan(IntegerParameter(3),0))>\n\uE033Average Item Level: <Num>IntegerParameter(3)</Num><Else/> </If><If(GreaterThan(IntegerParameter(4),0))>\u3000\n\uE0BDItem Level Sync: <Num>IntegerParameter(4)</Num><Else/> </If>"
   },
   {
     "RowId": 10514,
@@ -413,7 +413,7 @@
   },
   {
     "RowId": 10518,
-    "Text": "\u003Cspan style=\u0022color: #ff8080;\u0022\u003EYou do not possess enough glamour prisms.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ff8080;\">You do not possess enough glamour prisms.</span>"
   },
   {
     "RowId": 10519,
@@ -429,7 +429,7 @@
   },
   {
     "RowId": 10522,
-    "Text": "Commence \u201C\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E\u201D?\n\nEstimated Time of Return: \u003CSetTime\u003EIntegerParameter(2)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E\u003CIf(Equal(IntegerParameter(3),0))\u003E \u003CElse/\u003E (In \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(3),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E)\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(4),0))\u003E\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BUnassigned chemistry is lost upon deployment.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E\n\u003CIf(GreaterThan(IntegerParameter(5),0))\u003E\n\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003E\u203BIf a mission is successful, another may not be undertaken until the mission list resets.\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Commence “<sheet(GcArmyExpedition,IntegerParameter(1),8)>”?\n\nEstimated Time of Return: <SetTime>IntegerParameter(2)</SetTime><Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec><If(Equal(IntegerParameter(3),0))> <Else/> (In <Num>IntegerParameter(3)</Num> <If(Equal(IntegerParameter(3),1))>hour<Else/>hours</If>)</If><If(GreaterThan(IntegerParameter(4),0))>\n\n<span style=\"color: #ffff66;\">※Unassigned chemistry is lost upon deployment.</span><Else/> </If>\n<If(GreaterThan(IntegerParameter(5),0))>\n<span style=\"color: #ff7b1a;\">※If a mission is successful, another may not be undertaken until the mission list resets.</span><Else/> </If>"
   },
   {
     "RowId": 10523,
@@ -449,11 +449,11 @@
   },
   {
     "RowId": 10528,
-    "Text": "Squadron Attributes: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
+    "Text": "Squadron Attributes: <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>/<Num>IntegerParameter(3)</Num>"
   },
   {
     "RowId": 10529,
-    "Text": "Squadron Rank: \u003CIf(Equal(IntegerParameter(1),0))\u003E\u2013\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E"
+    "Text": "Squadron Rank: <If(Equal(IntegerParameter(1),0))>–<Else/><Num>IntegerParameter(1)</Num></If>"
   },
   {
     "RowId": 10530,
@@ -461,7 +461,7 @@
   },
   {
     "RowId": 10531,
-    "Text": "\uE031 \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E remaining [\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "\uE031 <If(Equal(IntegerParameter(1),0))><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>minute<Else/>minutes</If><Else/>Less than 1 minute</If><Else/><Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>hour<Else/>hours</If><If(GreaterThan(IntegerParameter(2),0))><If(GreaterThan(IntegerParameter(1),0))> and <Else/> </If><Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>minute<Else/>minutes</If><Else/> </If></If> remaining [<SetTime>IntegerParameter(3)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
   },
   {
     "RowId": 10532,
@@ -469,11 +469,11 @@
   },
   {
     "RowId": 10533,
-    "Text": "\u003Csheet(GcArmyExpedition,IntegerParameter(1),8)\u003E"
+    "Text": "<sheet(GcArmyExpedition,IntegerParameter(1),8)>"
   },
   {
     "RowId": 10534,
-    "Text": "\u003Csheet(GcArmyTraining,IntegerParameter(1),4)\u003E"
+    "Text": "<sheet(GcArmyTraining,IntegerParameter(1),4)>"
   },
   {
     "RowId": 10535,
@@ -489,11 +489,11 @@
   },
   {
     "RowId": 10538,
-    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ENo\u003CElse/\u003EYes (Return to barracks to review enlistment papers)\u003C/If\u003E"
+    "Text": "<If(Equal(IntegerParameter(1),0))>No<Else/>Yes (Return to barracks to review enlistment papers)</If>"
   },
   {
     "RowId": 10539,
-    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EMission\u003CElse/\u003ETraining\u003C/If\u003E Complete (Return to barracks for debriefing)"
+    "Text": "<If(Equal(IntegerParameter(1),0))>Mission<Else/>Training</If> Complete (Return to barracks for debriefing)"
   },
   {
     "RowId": 10540,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 10542,
-    "Text": "Mission: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "Mission: <String>StringParameter(1)</String>"
   },
   {
     "RowId": 10543,
@@ -529,7 +529,7 @@
   },
   {
     "RowId": 10548,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num><Else/>–/–</If>"
   },
   {
     "RowId": 10549,
@@ -537,7 +537,7 @@
   },
   {
     "RowId": 10550,
-    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "+<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10551,
@@ -549,11 +549,11 @@
   },
   {
     "RowId": 10553,
-    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003EMission Underway\u003CElse/\u003EMission Complete\u003C/If\u003E"
+    "Text": "<If(Equal(IntegerParameter(1),0))>Mission Underway<Else/>Mission Complete</If>"
   },
   {
     "RowId": 10554,
-    "Text": "\u003CIf(Equal(IntegerParameter(1),0))\u003ETraining\u003CElse/\u003ETraining Complete\u003C/If\u003E"
+    "Text": "<If(Equal(IntegerParameter(1),0))>Training<Else/>Training Complete</If>"
   },
   {
     "RowId": 10555,
@@ -585,11 +585,11 @@
   },
   {
     "RowId": 10562,
-    "Text": "New Battle Tactic Acquired: \u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E"
+    "Text": "New Battle Tactic Acquired: <Head><String>StringParameter(1)</String></Head>"
   },
   {
     "RowId": 10563,
-    "Text": "\u003CHead\u003E\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003C/Head\u003E Tactic Mastery: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Head><String>StringParameter(1)</String></Head> Tactic Mastery: <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 10564,
@@ -649,19 +649,19 @@
   },
   {
     "RowId": 10578,
-    "Text": "EXP Reward: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "EXP Reward: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10579,
-    "Text": "Commence \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D?"
+    "Text": "Commence “<String>StringParameter(1)</String>”?"
   },
   {
     "RowId": 10580,
-    "Text": "Commence \u201C\u003CString\u003EStringParameter(1)\u003C/String\u003E\u201D?\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BSquadron attribute total exceeds value allowed by current squadron rank. One or more squadron attributes will be capped.\u003C/span\u003E"
+    "Text": "Commence “<String>StringParameter(1)</String>”?\n<span style=\"color: #ffff66;\">※Squadron attribute total exceeds value allowed by current squadron rank. One or more squadron attributes will be capped.</span>"
   },
   {
     "RowId": 10581,
-    "Text": "Daily Sessions Remaining:\n\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Daily Sessions Remaining:\n<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10582,
@@ -689,11 +689,11 @@
   },
   {
     "RowId": 10588,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ESquadron glamours are available from level 51.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">Squadron glamours are available from level 51.</span>"
   },
   {
     "RowId": 10589,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ETo apply a glamour, speak to a squadron member.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">To apply a glamour, speak to a squadron member.</span>"
   },
   {
     "RowId": 10590,
@@ -709,7 +709,7 @@
   },
   {
     "RowId": 10593,
-    "Text": "\uE031 \u003CIf(Equal(IntegerParameter(1),0))\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003ELess than 1 minute\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(1),1))\u003Ehour\u003CElse/\u003Ehours\u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CIf(GreaterThan(IntegerParameter(1),0))\u003E and \u003CElse/\u003E \u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIf(Equal(IntegerParameter(2),1))\u003Eminute\u003CElse/\u003Eminutes\u003C/If\u003E\u003CElse/\u003E \u003C/If\u003E\u003C/If\u003E [\u003CSetTime\u003EIntegerParameter(3)\u003C/SetTime\u003E\u003CIf(Equal(PlayerParameter(77),3))\u003E\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003CElse/\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E\u003C/If\u003E \u003CNum\u003Et_hour\u003C/Num\u003E:\u003CSec\u003Et_min\u003C/Sec\u003E]"
+    "Text": "\uE031 <If(Equal(IntegerParameter(1),0))><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>minute<Else/>minutes</If><Else/>Less than 1 minute</If><Else/><Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>hour<Else/>hours</If><If(GreaterThan(IntegerParameter(2),0))><If(GreaterThan(IntegerParameter(1),0))> and <Else/> </If><Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>minute<Else/>minutes</If><Else/> </If></If> [<SetTime>IntegerParameter(3)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
   },
   {
     "RowId": 10594,
@@ -733,19 +733,19 @@
   },
   {
     "RowId": 10599,
-    "Text": "EXP Earned: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "EXP Earned: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10600,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003ESquadron glamours unavailable.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">Squadron glamours unavailable.</span>"
   },
   {
     "RowId": 10603,
-    "Text": "Squadron Attributes: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E"
+    "Text": "Squadron Attributes: <Num>IntegerParameter(2)</Num>/<Num>IntegerParameter(3)</Num>"
   },
   {
     "RowId": 10604,
-    "Text": "\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 10609,
@@ -801,15 +801,15 @@
   },
   {
     "RowId": 10635,
-    "Text": "I\u0027ll be blunt. The squadron isn\u0027t ready for this mission."
+    "Text": "I'll be blunt. The squadron isn't ready for this mission."
   },
   {
     "RowId": 10636,
-    "Text": "I\u0027ll be blunt. The squadron isn\u0027t ready for this mission."
+    "Text": "I'll be blunt. The squadron isn't ready for this mission."
   },
   {
     "RowId": 10637,
-    "Text": "I\u0027ll be blunt. The squadron isn\u0027t ready for this mission."
+    "Text": "I'll be blunt. The squadron isn't ready for this mission."
   },
   {
     "RowId": 10638,
@@ -861,7 +861,7 @@
   },
   {
     "RowId": 10659,
-    "Text": "\u003Csheet(Race,IntegerParameter(1),0)\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003E\u2642\u003CElse/\u003E\u2640\u003C/If\u003E"
+    "Text": "<sheet(Race,IntegerParameter(1),0)> <If(Equal(IntegerParameter(2),0))>♂<Else/>♀</If>"
   },
   {
     "RowId": 10660,
@@ -881,11 +881,11 @@
   },
   {
     "RowId": 10664,
-    "Text": "\u003CIf(GreaterThan(IntegerParameter(3),0))\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E\u003CElse/\u003E\u2013/\u2013\u003C/If\u003E"
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num><Else/>–/–</If>"
   },
   {
     "RowId": 10665,
-    "Text": "Enlisted \u003CSetTime\u003EIntegerParameter(1)\u003C/SetTime\u003E\u003CNum\u003Et_mon\u003C/Num\u003E/\u003CNum\u003Et_day\u003C/Num\u003E/\u003CNum\u003Et_year\u003C/Num\u003E"
+    "Text": "Enlisted <SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num>"
   },
   {
     "RowId": 10666,
@@ -913,7 +913,7 @@
   },
   {
     "RowId": 10672,
-    "Text": "\u003Csheet(ClassJob,IntegerParameter(1),0)\u003E Lv. \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<sheet(ClassJob,IntegerParameter(1),0)> Lv. <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 10673,
@@ -921,15 +921,15 @@
   },
   {
     "RowId": 10674,
-    "Text": "Dismiss \u003CString\u003EStringParameter(1)\u003C/String\u003E?"
+    "Text": "Dismiss <String>StringParameter(1)</String>?"
   },
   {
     "RowId": 10675,
-    "Text": "Discharge \u003CString\u003EStringParameter(1)\u003C/String\u003E and recruit \u003CString\u003EStringParameter(2)\u003C/String\u003E?"
+    "Text": "Discharge <String>StringParameter(1)</String> and recruit <String>StringParameter(2)</String>?"
   },
   {
     "RowId": 10676,
-    "Text": "Use \u003Cennoun(Item,1,IntegerParameter(1),1,1)\u003E to order the class change?\u003CIf(GreaterThan(IntegerParameter(2),0))\u003E\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E(All glamours will be removed.)\u003C/span\u003E\u003CElse/\u003E \u003C/If\u003E"
+    "Text": "Use <ennoun(Item,1,IntegerParameter(1),1,1)> to order the class change?<If(GreaterThan(IntegerParameter(2),0))>\n<span style=\"color: #ffff66;\">(All glamours will be removed.)</span><Else/> </If>"
   },
   {
     "RowId": 10677,
@@ -981,19 +981,19 @@
   },
   {
     "RowId": 10689,
-    "Text": "\u002B\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
+    "Text": "+<Num>IntegerParameter(1)</Num>%"
   },
   {
     "RowId": 10690,
-    "Text": "-\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%"
+    "Text": "-<Num>IntegerParameter(1)</Num>%"
   },
   {
     "RowId": 10691,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E  (Mastery: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "<String>StringParameter(1)</String>  (Mastery: <Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 10692,
-    "Text": "\u2013"
+    "Text": "–"
   },
   {
     "RowId": 10697,
@@ -1025,7 +1025,7 @@
   },
   {
     "RowId": 10705,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E (Invited)"
+    "Text": "<String>StringParameter(1)</String> (Invited)"
   },
   {
     "RowId": 10706,
@@ -1033,7 +1033,7 @@
   },
   {
     "RowId": 10707,
-    "Text": "To organize a custom match, you must have two light or full parties willing to participate. Once invitations have been sent, the leader of the Claws can continue the registration process by pressing the Join button.\n\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BSpectator parties must have at least two members.\n\u203BInvitations for spectator parties cannot be sent until participating parties have been formed.\n\u203BWhen organizing a custom match, the leaders of the participating and spectating parties must be in the same area.\n\u203BUndersized party settings are ignored in custom matches.\n\n\u203BThe following will cancel match registration:\n\u3000\u30FBA party leader leaves the area\n\u3000\u30FBA party leader is changed\n\u3000\u30FBA party member logs out\n\u3000\u30FBA new member joins a party\n\u3000\u30FBA member leaves a party\n\u3000\u30FBA party is disbanded\n\u3000\u30FBA party declines the match registration\n\u3000\u30FBThe \u201CCancel All\u201D button is pressed\n\u003C/span\u003E"
+    "Text": "To organize a custom match, you must have two light or full parties willing to participate. Once invitations have been sent, the leader of the Claws can continue the registration process by pressing the Join button.\n\n<span style=\"color: #ffff66;\">※Spectator parties must have at least two members.\n※Invitations for spectator parties cannot be sent until participating parties have been formed.\n※When organizing a custom match, the leaders of the participating and spectating parties must be in the same area.\n※Undersized party settings are ignored in custom matches.\n\n※The following will cancel match registration:\n\u3000・A party leader leaves the area\n\u3000・A party leader is changed\n\u3000・A party member logs out\n\u3000・A new member joins a party\n\u3000・A member leaves a party\n\u3000・A party is disbanded\n\u3000・A party declines the match registration\n\u3000・The “Cancel All” button is pressed\n</span>"
   },
   {
     "RowId": 10708,
@@ -1053,11 +1053,11 @@
   },
   {
     "RowId": 10712,
-    "Text": "Challenge \u003CString\u003EStringParameter(1)\u003C/String\u003E\u0027s party to a custom match."
+    "Text": "Challenge <String>StringParameter(1)</String>'s party to a custom match."
   },
   {
     "RowId": 10713,
-    "Text": "Invite \u003CString\u003EStringParameter(1)\u003C/String\u003E\u0027s party to view a custom match."
+    "Text": "Invite <String>StringParameter(1)</String>'s party to view a custom match."
   },
   {
     "RowId": 10714,
@@ -1069,15 +1069,15 @@
   },
   {
     "RowId": 10716,
-    "Text": "You have been challenged by \u003CString\u003EStringParameter(1)\u003C/String\u003E to a custom match in the Wolves\u0027 Den. Accept challenge?"
+    "Text": "You have been challenged by <String>StringParameter(1)</String> to a custom match in the Wolves' Den. Accept challenge?"
   },
   {
     "RowId": 10717,
-    "Text": "You have been invited by \u003CString\u003EStringParameter(1)\u003C/String\u003E to spectate at a custom match in the Wolves\u0027 Den. Accept invitation?"
+    "Text": "You have been invited by <String>StringParameter(1)</String> to spectate at a custom match in the Wolves' Den. Accept invitation?"
   },
   {
     "RowId": 10718,
-    "Text": "Decline \u003CString\u003EStringParameter(1)\u003C/String\u003E\u0027s invitation to a custom match?"
+    "Text": "Decline <String>StringParameter(1)</String>'s invitation to a custom match?"
   },
   {
     "RowId": 10719,
@@ -1093,7 +1093,7 @@
   },
   {
     "RowId": 10722,
-    "Text": "Confirming... (\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E)"
+    "Text": "Confirming... (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
   },
   {
     "RowId": 10723,
@@ -1141,7 +1141,7 @@
   },
   {
     "RowId": 10734,
-    "Text": "Rematches Left: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Rematches Left: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10735,
@@ -1173,11 +1173,11 @@
   },
   {
     "RowId": 10742,
-    "Text": "Match Camera: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Match Camera: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10743,
-    "Text": "\u003CIcon2\u003E14\u003C/Icon2\u003E\u003CIcon2\u003E15\u003C/Icon2\u003E Switch Camera  \u003CIcon2\u003E18\u003C/Icon2\u003E Display Menu"
+    "Text": "<Icon2>14</Icon2><Icon2>15</Icon2> Switch Camera  <Icon2>18</Icon2> Display Menu"
   },
   {
     "RowId": 10744,
@@ -1201,19 +1201,19 @@
   },
   {
     "RowId": 10802,
-    "Text": "\u203BRole and item level restrictions are lifted for parties meeting minimum size requirements."
+    "Text": "※Role and item level restrictions are lifted for parties meeting minimum size requirements."
   },
   {
     "RowId": 10803,
-    "Text": "\u203BRole and item level restrictions are lifted for alliances."
+    "Text": "※Role and item level restrictions are lifted for alliances."
   },
   {
     "RowId": 10804,
-    "Text": "Time Limit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E-\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E minutes"
+    "Text": "Time Limit: <Num>IntegerParameter(1)</Num>-<Num>IntegerParameter(2)</Num> minutes"
   },
   {
     "RowId": 10805,
-    "Text": "1-\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E Players"
+    "Text": "1-<Num>IntegerParameter(1)</Num> Players"
   },
   {
     "RowId": 10806,
@@ -1233,11 +1233,11 @@
   },
   {
     "RowId": 10810,
-    "Text": "\u003Csheet(ContentFinderCondition,IntegerParameter(1),43)\u003E"
+    "Text": "<sheet(ContentFinderCondition,IntegerParameter(1),43)>"
   },
   {
     "RowId": 10811,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously\n\u3000completed duties.\n\u203BPractice phase selection does not entail the actual skipping of\n\u3000phases.\u003C/span\u003E\n"
+    "Text": "<span style=\"color: #ffff66;\">※The “Duty Complete” option is only available for previously\n\u3000completed duties.\n※Practice phase selection does not entail the actual skipping of\n\u3000phases.</span>\n"
   },
   {
     "RowId": 10812,
@@ -1249,31 +1249,31 @@
   },
   {
     "RowId": 10814,
-    "Text": "Freelancers can participate in Frontline campaigns without being bound to their Grand Company of allegiance.\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003E\u203BWhen joining as a party, members will default to the freelance status.\u003C/span\u003E"
+    "Text": "Freelancers can participate in Frontline campaigns without being bound to their Grand Company of allegiance.\n<span style=\"color: #ff8080;\">※When joining as a party, members will default to the freelance status.</span>"
   },
   {
     "RowId": 10815,
-    "Text": "\u003CIcon\u003E82\u003C/Icon\u003E:\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E \u003CIcon\u003E83\u003C/Icon\u003E:\u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(4)\u003C/Num\u003E \u003CIcon\u003E84\u003C/Icon\u003E:\u003CNum\u003EIntegerParameter(5)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(6)\u003C/Num\u003E"
+    "Text": "<Icon>82</Icon>:<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num> <Icon>83</Icon>:<Num>IntegerParameter(3)</Num>/<Num>IntegerParameter(4)</Num> <Icon>84</Icon>:<Num>IntegerParameter(5)</Num>/<Num>IntegerParameter(6)</Num>"
   },
   {
     "RowId": 10816,
-    "Text": "\u003CIcon\u003E87\u003C/Icon\u003E:\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E/\u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "<Icon>87</Icon>:<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 10817,
-    "Text": "Time Elapsed: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E/Average Wait Time: \u003CString\u003EStringParameter(3)\u003C/String\u003E"
+    "Text": "Time Elapsed: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>/Average Wait Time: <String>StringParameter(3)</String>"
   },
   {
     "RowId": 10818,
-    "Text": "Role Waiting List Number: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "Role Waiting List Number: <String>StringParameter(1)</String>"
   },
   {
     "RowId": 10819,
-    "Text": "Time Elapsed: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E:\u003CSec\u003EIntegerParameter(2)\u003C/Sec\u003E"
+    "Text": "Time Elapsed: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
   },
   {
     "RowId": 10820,
-    "Text": "\u003CHead\u003E\u003Csheet(ContentType,IntegerParameter(1),0)\u003E\u003C/Head\u003E (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
+    "Text": "<Head><sheet(ContentType,IntegerParameter(1),0)></Head> (ARR, Heavensward, Stormblood, Shadowbringers, Endwalker)"
   },
   {
     "RowId": 10821,
@@ -1289,11 +1289,11 @@
   },
   {
     "RowId": 10824,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BThis duty is only open for full parties without role requirements. Matching requirements cannot be set.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">※This duty is only open for full parties without role requirements. Matching requirements cannot be set.</span>"
   },
   {
     "RowId": 10825,
-    "Text": "\u203BThree parties with at least one member each are necessary when the Unrestricted Party option is in effect."
+    "Text": "※Three parties with at least one member each are necessary when the Unrestricted Party option is in effect."
   },
   {
     "RowId": 10826,
@@ -1301,7 +1301,7 @@
   },
   {
     "RowId": 10827,
-    "Text": "Participating Parties: Two \u003CIf(IntegerParameter(1))\u003E\u003CIf(LessThanOrEqualTo(IntegerParameter(1),10))\u003E\u003Cswitch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E\u003CElse/\u003E\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E\u003C/If\u003E-player parties\nSpectator Party: 1-8 players"
+    "Text": "Participating Parties: Two <If(IntegerParameter(1))><If(LessThanOrEqualTo(IntegerParameter(1),10))><switch(IntegerParameter(1),one,two,three,four,five,six,seven,eight,nine,ten)><Else/><Num>IntegerParameter(1)</Num></If><Else/><Num>IntegerParameter(1)</Num></If>-player parties\nSpectator Party: 1-8 players"
   },
   {
     "RowId": 10828,
@@ -1309,7 +1309,7 @@
   },
   {
     "RowId": 10829,
-    "Text": "\u203BLimited jobs can participate only in a preformed party meeting party size requirements or an unrestricted party, and if duty rules allow."
+    "Text": "※Limited jobs can participate only in a preformed party meeting party size requirements or an unrestricted party, and if duty rules allow."
   },
   {
     "RowId": 10830,
@@ -1349,7 +1349,7 @@
   },
   {
     "RowId": 10847,
-    "Text": "Item Level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Item Level <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10848,
@@ -1373,7 +1373,7 @@
   },
   {
     "RowId": 10853,
-    "Text": "Time Remaining: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Time Remaining: <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10854,
@@ -1397,15 +1397,15 @@
   },
   {
     "RowId": 10859,
-    "Text": "Decline \u003CString\u003EStringParameter(1)\u003C/String\u003E\u0027s challenge?"
+    "Text": "Decline <String>StringParameter(1)</String>'s challenge?"
   },
   {
     "RowId": 10860,
-    "Text": "\uE033\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "\uE033<Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10861,
-    "Text": "Lv. \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E"
+    "Text": "Lv. <Num>IntegerParameter(1)</Num>"
   },
   {
     "RowId": 10862,
@@ -1425,7 +1425,7 @@
   },
   {
     "RowId": 10871,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E will be reported as conducting RMT activity.\n\u003Cspan style=\u0022color: #ff8080;\u0022\u003EIf this report is found to be baseless and/or of malicious intent, you may face punishment.\u003C/span\u003E\nProceed?"
+    "Text": "<String>StringParameter(1)</String> will be reported as conducting RMT activity.\n<span style=\"color: #ff8080;\">If this report is found to be baseless and/or of malicious intent, you may face punishment.</span>\nProceed?"
   },
   {
     "RowId": 10872,
@@ -1509,7 +1509,7 @@
   },
   {
     "RowId": 10906,
-    "Text": "\u2013-"
+    "Text": "–-"
   },
   {
     "RowId": 10907,
@@ -1533,11 +1533,11 @@
   },
   {
     "RowId": 10912,
-    "Text": "\uE06A\u003CString\u003EStringParameter(1)\u003C/String\u003E \u003CIf(IntegerParameter(3))\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003EStringParameter(2)\u003C/String\u003E"
+    "Text": "\uE06A<String>StringParameter(1)</String> <If(IntegerParameter(3))><Icon>88</Icon><Else/> </If> <String>StringParameter(2)</String>"
   },
   {
     "RowId": 10913,
-    "Text": "\uE06A??? \u003CIf(IntegerParameter(2))\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CElse/\u003E \u003C/If\u003E \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "\uE06A??? <If(IntegerParameter(2))><Icon>88</Icon><Else/> </If> <String>StringParameter(1)</String>"
   },
   {
     "RowId": 10914,
@@ -1569,11 +1569,11 @@
   },
   {
     "RowId": 10921,
-    "Text": "Current Location: \u003CString\u003EStringParameter(1)\u003C/String\u003E"
+    "Text": "Current Location: <String>StringParameter(1)</String>"
   },
   {
     "RowId": 10922,
-    "Text": "Time Limit: \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003Em"
+    "Text": "Time Limit: <Num>IntegerParameter(1)</Num>m"
   },
   {
     "RowId": 10923,
@@ -1601,7 +1601,7 @@
   },
   {
     "RowId": 10929,
-    "Text": "\u003CIcon\u003E77\u003C/Icon\u003EBeginners/first-timers welcome"
+    "Text": "<Icon>77</Icon>Beginners/first-timers welcome"
   },
   {
     "RowId": 10930,
@@ -1637,11 +1637,11 @@
   },
   {
     "RowId": 10938,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BSettings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">※Settings assigned here are for display only. To change actual settings, you must access the Duty Finder interface.</span>"
   },
   {
     "RowId": 10939,
-    "Text": "Selecting \u201CDuty Complete\u201D signifies that only players who have completed a certain duty may join the party. Selecting \u201CDuty Incomplete\u201D signifies the opposite."
+    "Text": "Selecting “Duty Complete” signifies that only players who have completed a certain duty may join the party. Selecting “Duty Incomplete” signifies the opposite."
   },
   {
     "RowId": 10940,
@@ -1653,7 +1653,7 @@
   },
   {
     "RowId": 10942,
-    "Text": "A list of the 50 players with whom you most recently partied. Class/Job information reflects a player\u0027s class/job at the time of party formation."
+    "Text": "A list of the 50 players with whom you most recently partied. Class/Job information reflects a player's class/job at the time of party formation."
   },
   {
     "RowId": 10943,
@@ -1669,7 +1669,7 @@
   },
   {
     "RowId": 10946,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EThe names of blacklisted players from other World servers will be saved to your PC.\u003C/span\u003E\n\nAdd \u003CString\u003EStringParameter(1)\u003C/String\u003E to your blacklist?"
+    "Text": "<span style=\"color: #ffff66;\">The names of blacklisted players from other World servers will be saved to your PC.</span>\n\nAdd <String>StringParameter(1)</String> to your blacklist?"
   },
   {
     "RowId": 10947,
@@ -1677,7 +1677,7 @@
   },
   {
     "RowId": 10948,
-    "Text": "\u2013-"
+    "Text": "–-"
   },
   {
     "RowId": 10949,
@@ -1689,7 +1689,7 @@
   },
   {
     "RowId": 10951,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E\u003CIcon\u003E88\u003C/Icon\u003E\u003CString\u003EStringParameter(2)\u003C/String\u003E"
+    "Text": "<String>StringParameter(1)</String><Icon>88</Icon><String>StringParameter(2)</String>"
   },
   {
     "RowId": 10952,
@@ -1697,7 +1697,7 @@
   },
   {
     "RowId": 10953,
-    "Text": "\u2013"
+    "Text": "–"
   },
   {
     "RowId": 10954,
@@ -1705,7 +1705,7 @@
   },
   {
     "RowId": 10955,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\n\u203BNames of characters on other Worlds are saved to the client.\u003C/span\u003E"
+    "Text": "<span style=\"color: #ffff66;\">\n※Names of characters on other Worlds are saved to the client.</span>"
   },
   {
     "RowId": 10956,
@@ -1713,7 +1713,7 @@
   },
   {
     "RowId": 10957,
-    "Text": "\u003CString\u003EStringParameter(1)\u003C/String\u003E will be registered to your blacklist. Messages from this character will no longer be displayed, and their character model will be hidden. Any other characters registered to this player\u0027s account will also be blacklisted.\nThis character\u0027s name and Home World at the time of registration will be saved locally.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003EIf you wish to simply mute this character, you can instead add them to your mute list.\u003C/span\u003E"
+    "Text": "<String>StringParameter(1)</String> will be registered to your blacklist. Messages from this character will no longer be displayed, and their character model will be hidden. Any other characters registered to this player's account will also be blacklisted.\nThis character's name and Home World at the time of registration will be saved locally.\n<span style=\"color: #ffff66;\">If you wish to simply mute this character, you can instead add them to your mute list.</span>"
   },
   {
     "RowId": 10958,
@@ -1725,11 +1725,11 @@
   },
   {
     "RowId": 10960,
-    "Text": "\u003CIcon\u003E95\u003C/Icon\u003EReturner Status"
+    "Text": "<Icon>95</Icon>Returner Status"
   },
   {
     "RowId": 10961,
-    "Text": "The \u003CIcon\u003E95\u003C/Icon\u003EReturner status is applied to players who have at least one class at level 50 or above, have not visited Eorzea in more than 45 days, and have accepted the Returner\u0027s Bounty.\n\nThe Returner\u0027s Bounty consists of the following:\n  \u003Cspan style=\u0022color: #ffff66;\u0022\u003ENovice Network Access\n  EXP bonus when partying with a \u003CIcon\u003E78\u003C/Icon\u003EMentor (up to Lv. 90)\n  Returner online status icon\u003C/span\u003E\n\nReturner status is removed after accumulating 72 hours of gameplay after accepting the Bounty, or by using the text command \u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u003Csheet(TextCommand,238,8)\u003E\u003C/span\u003E."
+    "Text": "The <Icon>95</Icon>Returner status is applied to players who have at least one class at level 50 or above, have not visited Eorzea in more than 45 days, and have accepted the Returner's Bounty.\n\nThe Returner's Bounty consists of the following:\n  <span style=\"color: #ffff66;\">Novice Network Access\n  EXP bonus when partying with a <Icon>78</Icon>Mentor (up to Lv. 90)\n  Returner online status icon</span>\n\nReturner status is removed after accumulating 72 hours of gameplay after accepting the Bounty, or by using the text command <span style=\"color: #ffff66;\"><sheet(TextCommand,238,8)></span>."
   },
   {
     "RowId": 10962,
@@ -1737,7 +1737,7 @@
   },
   {
     "RowId": 10963,
-    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EOnce Returner status has been removed, it cannot be obtained again until certain conditions are met.\u003C/span\u003E\n\nProceed?"
+    "Text": "<span style=\"color: #ff7b1a;\">Once Returner status has been removed, it cannot be obtained again until certain conditions are met.</span>\n\nProceed?"
   },
   {
     "RowId": 10964,
@@ -1753,7 +1753,7 @@
   },
   {
     "RowId": 10967,
-    "Text": "\u003Cspan style=\u0022color: #ffff66;\u0022\u003EYou will be granted another opportunity to accept the Returner\u0027s Bounty upon your next login.\u003C/span\u003E\n\nProceed?"
+    "Text": "<span style=\"color: #ffff66;\">You will be granted another opportunity to accept the Returner's Bounty upon your next login.</span>\n\nProceed?"
   },
   {
     "RowId": 10968,
@@ -1781,7 +1781,7 @@
   },
   {
     "RowId": 10974,
-    "Text": "\u003CIcon\u003E79\u003C/Icon\u003E Battle Mentor"
+    "Text": "<Icon>79</Icon> Battle Mentor"
   },
   {
     "RowId": 10975,
@@ -1789,7 +1789,7 @@
   },
   {
     "RowId": 10976,
-    "Text": "\u003CIcon\u003E80\u003C/Icon\u003E Trade Mentor"
+    "Text": "<Icon>80</Icon> Trade Mentor"
   },
   {
     "RowId": 10977,
@@ -1825,11 +1825,11 @@
   },
   {
     "RowId": 10985,
-    "Text": "3: Complete any level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E tank role quest."
+    "Text": "3: Complete any level <Num>IntegerParameter(1)</Num> tank role quest."
   },
   {
     "RowId": 10986,
-    "Text": "4: Complete any level \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E healer role quest."
+    "Text": "4: Complete any level <Num>IntegerParameter(1)</Num> healer role quest."
   },
   {
     "RowId": 10987,
@@ -1857,7 +1857,7 @@
   },
   {
     "RowId": 10993,
-    "Text": "Adjust level of all items equipped by both parties to the lowest level item (\uE0BD\u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E)."
+    "Text": "Adjust level of all items equipped by both parties to the lowest level item (\uE0BD<Num>IntegerParameter(1)</Num>)."
   },
   {
     "RowId": 10994,
@@ -1905,11 +1905,11 @@
   },
   {
     "RowId": 11005,
-    "Text": "Open \u003Cennoun(Item,2,IntegerParameter(1),1,1)\u003E?\n\n\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E remaining: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\nAttempts remaining: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "Open <ennoun(Item,2,IntegerParameter(1),1,1)>?\n\n<Head><ennoun(Item,3,IntegerParameter(1),2,1)></Head> remaining: <Num>IntegerParameter(3)</Num>\nAttempts remaining: <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 11006,
-    "Text": "Open \u003Cennoun(Item,2,IntegerParameter(1),2,1)\u003E?\n\n\u003CHead\u003E\u003Cennoun(Item,3,IntegerParameter(1),2,1)\u003E\u003C/Head\u003E remaining: \u003CNum\u003EIntegerParameter(3)\u003C/Num\u003E\nAttempts remaining: \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003E"
+    "Text": "Open <ennoun(Item,2,IntegerParameter(1),2,1)>?\n\n<Head><ennoun(Item,3,IntegerParameter(1),2,1)></Head> remaining: <Num>IntegerParameter(3)</Num>\nAttempts remaining: <Num>IntegerParameter(2)</Num>"
   },
   {
     "RowId": 11007,
@@ -1937,7 +1937,7 @@
   },
   {
     "RowId": 11014,
-    "Text": "Once per week, completion of an unreal trial grants access to Faux Hollows.\n\u003Cspan style=\u0022color: #ffff66;\u0022\u003E\u203BThe \u201CDuty Complete\u201D option is only available for previously completed duties.\n\u203BEarn a retelling while playing Faux Hollows to unlock one additional play per week.\n\u203BPractice phase selection does not entail the actual skipping of phases.\u003C/span\u003E"
+    "Text": "Once per week, completion of an unreal trial grants access to Faux Hollows.\n<span style=\"color: #ffff66;\">※The “Duty Complete” option is only available for previously completed duties.\n※Earn a retelling while playing Faux Hollows to unlock one additional play per week.\n※Practice phase selection does not entail the actual skipping of phases.</span>"
   },
   {
     "RowId": 11015,
@@ -1949,7 +1949,7 @@
   },
   {
     "RowId": 11017,
-    "Text": "\u003Cspan style=\u0022color: #ff7b1a;\u0022\u003EFaux Hollows Unavailable\u003C/span\u003E"
+    "Text": "<span style=\"color: #ff7b1a;\">Faux Hollows Unavailable</span>"
   },
   {
     "RowId": 11018,
@@ -1973,30 +1973,30 @@
   },
   {
     "RowId": 11025,
-    "Text": "\u003CHead\u003E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u003C/Head\u003E"
+    "Text": "<Head><sheet(Action,IntegerParameter(1),0)></Head>"
   },
   {
     "RowId": 11030,
-    "Text": "Hello.\u003Csound(1,96)\u003E"
+    "Text": "Hello.<sound(1,96)>"
   },
   {
     "RowId": 11031,
-    "Text": "Good match!\u003Csound(1,96)\u003E"
+    "Text": "Good match!<sound(1,96)>"
   },
   {
     "RowId": 11032,
-    "Text": "Thank you.\u003Csound(1,97)\u003E"
+    "Text": "Thank you.<sound(1,97)>"
   },
   {
     "RowId": 11033,
-    "Text": "Nice job!\u003Csound(1,97)\u003E"
+    "Text": "Nice job!<sound(1,97)>"
   },
   {
     "RowId": 11034,
-    "Text": "\u003CHead\u003E\u003Csheet(Action,IntegerParameter(1),0)\u003E\u003C/Head\u003E \u003CIf(Equal(IntegerParameter(2),0))\u003Eready!\u003Csound(1,98)\u003E\u003CElse/\u003Eready in \u003CNum\u003EIntegerParameter(2)\u003C/Num\u003Es!\u003Csound(1,99)\u003E\u003C/If\u003E"
+    "Text": "<Head><sheet(Action,IntegerParameter(1),0)></Head> <If(Equal(IntegerParameter(2),0))>ready!<sound(1,98)><Else/>ready in <Num>IntegerParameter(2)</Num>s!<sound(1,99)></If>"
   },
   {
     "RowId": 11035,
-    "Text": "\u003CHead\u003E\u003Csheet(ClassJob,IntegerParameter(2),0)\u003E\u003C/Head\u003E: Limit break \u003CIf(Equal(IntegerParameter(1),100))\u003Eready!\u003Csound(1,98)\u003E\u003CElse/\u003Eat \u003CNum\u003EIntegerParameter(1)\u003C/Num\u003E%!\u003Csound(1,99)\u003E\u003C/If\u003E"
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(2),0)></Head>: Limit break <If(Equal(IntegerParameter(1),100))>ready!<sound(1,98)><Else/>at <Num>IntegerParameter(1)</Num>%!<sound(1,99)></If>"
   }
 ]
