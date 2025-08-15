@@ -37,6 +37,7 @@ class Program
         JsonSerializerOptions options = new() {
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             WriteIndented = true,
+            Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
             Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() }
         };
        
