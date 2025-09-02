@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 9275,
+    "Text": "購入"
+  },
+  {
+    "RowId": 9276,
+    "Text": "ジャンボ・くじテンダーの<digit(IntegerParameter(2),4)>番を、<kilo(IntegerParameter(3),,)>MGPで購入します。\nよろしいですか？\n[所持MGP：<kilo(IntegerParameter(4),,)>]"
+  },
+  {
+    "RowId": 9277,
+    "Text": "REWARD LIST"
+  },
+  {
+    "RowId": 9278,
+    "Text": "報酬一覧"
+  },
+  {
+    "RowId": 9279,
+    "Text": "当選番号"
+  },
+  {
+    "RowId": 9280,
+    "Text": "当選番号は毎週<If(NotEqual(PlayerParameter(83),0))><switch(PlayerParameter(83),<setresettime(21,6)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時,<setresettime(11,0)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時,<setresettime(4,0)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時,<setresettime(18,6)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時,,,<setresettime(11,0)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時)><Else/><setresettime(21,6)><switch(t_wday,日,月,火,水,木,金,土)>曜日の<If(GreaterThanOrEqualTo(t_hour,12))>午後<Else/>午前</If><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>時</If>に抽選で決定されます。"
+  },
+  {
+    "RowId": 9281,
+    "Text": "１等賞"
+  },
+  {
+    "RowId": 9282,
+    "Text": "針4本ヒット！"
+  },
+  {
+    "RowId": 9283,
+    "Text": "２等賞"
+  },
+  {
+    "RowId": 9284,
+    "Text": "針3本ヒット！"
+  },
+  {
+    "RowId": 9285,
+    "Text": "３等賞"
+  },
+  {
+    "RowId": 9286,
+    "Text": "針2本ヒット！"
+  },
+  {
+    "RowId": 9287,
+    "Text": "４等賞"
+  },
+  {
+    "RowId": 9288,
+    "Text": "針1本ヒット！"
+  },
+  {
+    "RowId": 9289,
+    "Text": "５等賞"
+  },
+  {
+    "RowId": 9290,
+    "Text": "針0本……"
+  },
+  {
+    "RowId": 9291,
+    "Text": "ジャンボ・くじテンダー"
+  },
+  {
+    "RowId": 9292,
+    "Text": "ジャンボ・くじテンダー"
+  },
+  {
+    "RowId": 9293,
+    "Text": "購入者ボーナス"
+  },
+  {
+    "RowId": 9294,
+    "Text": "現在の購入者数"
+  },
+  {
+    "RowId": 9295,
+    "Text": "購入者数"
+  },
+  {
+    "RowId": 9296,
+    "Text": "段階"
+  },
+  {
+    "RowId": 9297,
+    "Text": "必要購入者数"
+  },
+  {
+    "RowId": 9298,
+    "Text": "ボーナス効果"
+  },
+  {
+    "RowId": 9299,
+    "Text": "購入番号：[<digit(IntegerParameter(1),4)>]<If(GreaterThanOrEqualTo(IntegerParameter(2),0))><If(GreaterThanOrEqualTo(IntegerParameter(3),0))> [<digit(IntegerParameter(2),4)>] [<digit(IntegerParameter(3),4)>]<Else/> [<digit(IntegerParameter(2),4)>]</If><Else/> </If>"
+  },
+  {
+    "RowId": 9300,
+    "Text": "今週のくじも購入しますか？"
+  },
+  {
+    "RowId": 9301,
+    "Text": "WINNING HISTORY"
+  },
+  {
+    "RowId": 9302,
+    "Text": "当選履歴"
+  },
+  {
+    "RowId": 9303,
+    "Text": "第<Num>IntegerParameter(1)</Num>回 <SetTime>IntegerParameter(2)</SetTime><Num>t_year</Num>年<Num>t_mon</Num>月<Num>t_day</Num>日"
+  },
+  {
+    "RowId": 9304,
+    "Text": "当選番号：<digit(IntegerParameter(1),4)>"
+  },
+  {
+    "RowId": 9305,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9306,
+    "Text": "番号をランダムで入力する"
+  },
+  {
+    "RowId": 9307,
+    "Text": "<If(LessThanOrEqualTo(IntegerParameter(1),4294967295))> <Else/><If(LessThanOrEqualTo(IntegerParameter(2),4294967295))>購入番号：[<digit(IntegerParameter(1),4)>]<Else/>購入番号：[<digit(IntegerParameter(1),4)>] [<digit(IntegerParameter(2),4)>]</If></If>"
+  },
+  {
+    "RowId": 9308,
+    "Text": "データを取得しています。"
+  },
+  {
+    "RowId": 9309,
+    "Text": "データを取得できません。"
+  },
+  {
+    "RowId": 9310,
+    "Text": "<switch(IntegerParameter(1),<Num>IntegerParameter(2)</Num>等,<Num>IntegerParameter(2)</Num>・<Num>IntegerParameter(3)</Num>等,<Num>IntegerParameter(2)</Num>・<Num>IntegerParameter(3)</Num>・<Num>IntegerParameter(4)</Num>等,<Num>IntegerParameter(2)</Num>・<Num>IntegerParameter(3)</Num>・<Num>IntegerParameter(4)</Num>・<Num>IntegerParameter(5)</Num>等,全等)>"
+  },
+  {
+    "RowId": 9311,
+    "Text": "+<kilo(IntegerParameter(1),,)> MGP"
+  },
+  {
+    "RowId": 9312,
+    "Text": "+<Num>IntegerParameter(1)</Num>%"
+  },
+  {
+    "RowId": 9313,
+    "Text": "No. <digit(IntegerParameter(1),6)>"
+  },
+  {
+    "RowId": 9314,
+    "Text": "No. <digit(IntegerParameter(1),6)>"
+  },
+  {
+    "RowId": 9315,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9316,
+    "Text": "<If(IntegerParameter(1))><Num>IntegerParameter(1)</Num>段階まで開放<Else/>開放されていません</If>  "
+  },
+  {
+    "RowId": 9317,
+    "Text": "<kilo(IntegerParameter(1),,)>人"
+  },
+  {
+    "RowId": 9318,
+    "Text": "対象"
+  },
+  {
+    "RowId": 9319,
+    "Text": "第<Num>IntegerParameter(1)</Num>回"
+  },
+  {
+    "RowId": 9320,
+    "Text": "「<String>StringParameter(1)</String>」のプレイをやめますか？\n支払ったMGPは返却されません。"
+  },
+  {
+    "RowId": 9321,
+    "Text": "<span style=\"color: #ffff66;\"><String>StringParameter(1)</String></span>\n<switch(IntegerParameter(4),ゴールエリアを狙って時間内に多くシュートを打とう！,ゲージの中心を狙ってパンチしよう！,ゲージの最大を狙ってハンマーを振り下ろせ！,モーグリを操作して手足で球を挟もう！,難易度を決定したあと、ツルハシを振り下ろして\n採掘しよう！,難易度を決定したあと、手斧を打ち込んで伐採しよう！)>\n\nプレイしますか？\n参加料：<kilo(IntegerParameter(2),,)>MGP\n[所持MGP：<kilo(IntegerParameter(3),,)>]"
+  },
+  {
+    "RowId": 9322,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>(所持数<Num>IntegerParameter(2)</Num>)を1枚使う"
+  },
+  {
+    "RowId": 9323,
+    "Text": "SELECT A COUNT"
+  },
+  {
+    "RowId": 9324,
+    "Text": "SEARCH A HOTSPOT"
+  },
+  {
+    "RowId": 9325,
+    "Text": "DOUBLE UP CHANCE!"
+  },
+  {
+    "RowId": 9326,
+    "Text": "SELECT A COUNT"
+  },
+  {
+    "RowId": 9327,
+    "Text": "SEARCH A HOTSPOT"
+  },
+  {
+    "RowId": 9328,
+    "Text": "DOUBLE UP CHANCE!"
+  },
+  {
+    "RowId": 9329,
+    "Text": "<String>StringParameter(1)</String>に成功しました！\nダブルアップに挑戦して獲得MGPを増やすことができますが、失敗するとMGPを受け取ることができなくなります。\n\nダブルアップはあと<Num>IntegerParameter(2)</Num>回可能です。\n挑戦しますか？\n[ダブルアップ成功後の獲得MGP：<Num>IntegerParameter(3)</Num> ⇒ <Num>IntegerParameter(4)</Num>]"
+  },
+  {
+    "RowId": 9330,
+    "Text": "残り時間:<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9331,
+    "Text": "<If(PlayerParameter(7))><sheet(ObjStr,PlayerParameter(7),0)><Else/>ObjectParameter(2)</If>は狙いを定めてかまえた！"
+  },
+  {
+    "RowId": 9332,
+    "Text": "<If(PlayerParameter(7))><sheet(ObjStr,PlayerParameter(7),0)><Else/>ObjectParameter(2)</If>は狙いを定めてかまえた！"
+  },
+  {
+    "RowId": 9333,
+    "Text": "<String>StringParameter(1)</String>に成功しました！\nダブルアップに挑戦して獲得MGPを増やすことができますが、失敗するとMGPを受け取ることができなくなります。\n\nダブルアップはあと<Num>IntegerParameter(2)</Num>回可能です。\n残り時間：<Num>IntegerParameter(3)</Num>:<Sec>IntegerParameter(4)</Sec>\n挑戦しますか？\n[ダブルアップ成功後の獲得MGP：<Num>IntegerParameter(5)</Num> ⇒ <Num>IntegerParameter(6)</Num>] "
+  },
+  {
+    "RowId": 9335,
+    "Text": "GOLD SAUCER"
+  },
+  {
+    "RowId": 9336,
+    "Text": "ゴールドソーサー"
+  },
+  {
+    "RowId": 9337,
+    "Text": "General"
+  },
+  {
+    "RowId": 9338,
+    "Text": "Chocobo"
+  },
+  {
+    "RowId": 9339,
+    "Text": "Card List"
+  },
+  {
+    "RowId": 9340,
+    "Text": "Card Deck"
+  },
+  {
+    "RowId": 9341,
+    "Text": "Manderville Gold Saucer Points"
+  },
+  {
+    "RowId": 9342,
+    "Text": "<kilo(IntegerParameter(1),,)>"
+  },
+  {
+    "RowId": 9343,
+    "Text": "TripleTriad Tournament"
+  },
+  {
+    "RowId": 9344,
+    "Text": "<sheet(TripleTriadCompetition,IntegerParameter(1),0)>"
+  },
+  {
+    "RowId": 9345,
+    "Text": "開催中（開催期間：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>まで）"
+  },
+  {
+    "RowId": 9346,
+    "Text": "準備中（開催期間：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>から）"
+  },
+  {
+    "RowId": 9347,
+    "Text": "TripleTriad Tournament Result"
+  },
+  {
+    "RowId": 9348,
+    "Text": "<sheet(TripleTriadCompetition,IntegerParameter(1),0)>"
+  },
+  {
+    "RowId": 9349,
+    "Text": "対戦数："
+  },
+  {
+    "RowId": 9350,
+    "Text": "勝利数："
+  },
+  {
+    "RowId": 9351,
+    "Text": "勝ち点："
+  },
+  {
+    "RowId": 9352,
+    "Text": "Jumbo Cactpot"
+  },
+  {
+    "RowId": 9353,
+    "Text": "購入可能枚数：<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 9354,
+    "Text": "抽選結果待ち"
+  },
+  {
+    "RowId": 9355,
+    "Text": "引き換え可能"
+  },
+  {
+    "RowId": 9356,
+    "Text": "期限切れ"
+  },
+  {
+    "RowId": 9357,
+    "Text": "ジャンボ・くじテンダー番号：[<digit(IntegerParameter(1),4)>]<If(GreaterThanOrEqualTo(IntegerParameter(2),0))><If(GreaterThanOrEqualTo(IntegerParameter(3),0))> [<digit(IntegerParameter(2),4)>] [<digit(IntegerParameter(3),4)>]<Else/> [<digit(IntegerParameter(2),4)>]</If><Else/> </If>"
+  },
+  {
+    "RowId": 9358,
+    "Text": "Mini Cactpot"
+  },
+  {
+    "RowId": 9359,
+    "Text": "<If(Equal(IntegerParameter(1),0))>購入済み<Else/>購入可能枚数：<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 9360,
+    "Text": "未購入"
+  },
+  {
+    "RowId": 9361,
+    "Text": "マンダヴィル・ゴールドソーサーポイント"
+  },
+  {
+    "RowId": 9362,
+    "Text": "勝ち点"
+  },
+  {
+    "RowId": 9363,
+    "Text": "データを取得しています。"
+  },
+  {
+    "RowId": 9364,
+    "Text": "表示する戦績がありません。"
+  },
+  {
+    "RowId": 9365,
+    "Text": "対戦可能回数："
+  },
+  {
+    "RowId": 9366,
+    "Text": "コンテンツ中のため情報を取得できません。"
+  },
+  {
+    "RowId": 9367,
+    "Text": "LoVM"
+  },
+  {
+    "RowId": 9368,
+    "Text": "Mahjong"
+  },
+  {
+    "RowId": 9370,
+    "Text": "EXP <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num><Else/>--/--</If>"
+  },
+  {
+    "RowId": 9371,
+    "Text": "<span style=\"color: #3d657d;\"><switch(IntegerParameter(1),★★★,★★,★,)></span><span style=\"color: #30d6ff;\"><switch(IntegerParameter(1),★,★★,★★★,★★★★)></span>"
+  },
+  {
+    "RowId": 9372,
+    "Text": "<span style=\"color: #804a3b;\"><switch(IntegerParameter(1),★★★,★★,★,)></span><span style=\"color: #ff8261;\"><switch(IntegerParameter(1),★,★★,★★★,★★★★)></span>"
+  },
+  {
+    "RowId": 9373,
+    "Text": "パラメータ"
+  },
+  {
+    "RowId": 9374,
+    "Text": "血統情報"
+  },
+  {
+    "RowId": 9375,
+    "Text": "外見"
+  },
+  {
+    "RowId": 9376,
+    "Text": "RANK:"
+  },
+  {
+    "RowId": 9377,
+    "Text": "Attributes"
+  },
+  {
+    "RowId": 9378,
+    "Text": "最高速力"
+  },
+  {
+    "RowId": 9379,
+    "Text": "加速力"
+  },
+  {
+    "RowId": 9380,
+    "Text": "体力"
+  },
+  {
+    "RowId": 9381,
+    "Text": "持久力"
+  },
+  {
+    "RowId": 9382,
+    "Text": "適応力"
+  },
+  {
+    "RowId": 9383,
+    "Text": "Weather"
+  },
+  {
+    "RowId": 9384,
+    "Text": "好天候型"
+  },
+  {
+    "RowId": 9385,
+    "Text": "悪天候型"
+  },
+  {
+    "RowId": 9386,
+    "Text": "Race Ability"
+  },
+  {
+    "RowId": 9387,
+    "Text": "先天性"
+  },
+  {
+    "RowId": 9388,
+    "Text": "後天性"
+  },
+  {
+    "RowId": 9389,
+    "Text": "<If(IntegerParameter(1))><sheet(ChocoboRaceAbility,IntegerParameter(1),0)><Else/>アビリティがありません。</If>"
+  },
+  {
+    "RowId": 9390,
+    "Text": "Training"
+  },
+  {
+    "RowId": 9391,
+    "Text": "調教可能回数"
+  },
+  {
+    "RowId": 9392,
+    "Text": "Rating"
+  },
+  {
+    "RowId": 9393,
+    "Text": "総合力"
+  },
+  {
+    "RowId": 9394,
+    "Text": "血統レベル"
+  },
+  {
+    "RowId": 9395,
+    "Text": "Pedigree"
+  },
+  {
+    "RowId": 9396,
+    "Text": "Parentage"
+  },
+  {
+    "RowId": 9397,
+    "Text": "♂"
+  },
+  {
+    "RowId": 9398,
+    "Text": "♀"
+  },
+  {
+    "RowId": 9399,
+    "Text": "競走羽を所有していません。"
+  },
+  {
+    "RowId": 9400,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9401,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9402,
+    "Text": "Current"
+  },
+  {
+    "RowId": 9403,
+    "Text": "Grade"
+  },
+  {
+    "RowId": 9404,
+    "Text": "<switch(IntegerParameter(1),★★★★,★★★★,★★★★,★★★★)>"
+  },
+  {
+    "RowId": 9405,
+    "Text": "<span style=\"color: #3d657d;\">★★★</span><span style=\"color: #30d6ff;\">★</span>"
+  },
+  {
+    "RowId": 9406,
+    "Text": "<span style=\"color: #3d657d;\">★★</span><span style=\"color: #30d6ff;\">★★</span>"
+  },
+  {
+    "RowId": 9407,
+    "Text": "<span style=\"color: #3d657d;\">★</span><span style=\"color: #30d6ff;\">★★★</span>"
+  },
+  {
+    "RowId": 9408,
+    "Text": "<span style=\"color: #30d6ff;\">★★★★</span>"
+  },
+  {
+    "RowId": 9409,
+    "Text": "<span style=\"color: #804a3b;\">★★★</span><span style=\"color: #ff8261;\">★</span>"
+  },
+  {
+    "RowId": 9410,
+    "Text": "<span style=\"color: #804a3b;\">★★</span><span style=\"color: #ff8261;\">★★</span>"
+  },
+  {
+    "RowId": 9411,
+    "Text": "<span style=\"color: #804a3b;\">★</span><span style=\"color: #ff8261;\">★★★</span>"
+  },
+  {
+    "RowId": 9412,
+    "Text": "<span style=\"color: #ff8261;\">★★★★</span>"
+  },
+  {
+    "RowId": 9413,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9414,
+    "Text": "パラメータ："
+  },
+  {
+    "RowId": 9415,
+    "Text": "レアリティ："
+  },
+  {
+    "RowId": 9416,
+    "Text": "タイプ："
+  },
+  {
+    "RowId": 9417,
+    "Text": "TOTAL <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9418,
+    "Text": "デッキ <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9419,
+    "Text": "所持カードの表示方法を切り替える"
+  },
+  {
+    "RowId": 9420,
+    "Text": "名称変更"
+  },
+  {
+    "RowId": 9421,
+    "Text": "おまかせ"
+  },
+  {
+    "RowId": 9422,
+    "Text": "保存"
+  },
+  {
+    "RowId": 9423,
+    "Text": "保存せずに終了すると、変更内容が破棄されます。\nよろしいですか？"
+  },
+  {
+    "RowId": 9424,
+    "Text": "デッキ名を入力してください。"
+  },
+  {
+    "RowId": 9425,
+    "Text": "EDIT DECK"
+  },
+  {
+    "RowId": 9426,
+    "Text": "デッキ編集"
+  },
+  {
+    "RowId": 9427,
+    "Text": "<sheet(TripleTriadCardType,IntegerParameter(1),0)>"
+  },
+  {
+    "RowId": 9428,
+    "Text": "デッキを編集する"
+  },
+  {
+    "RowId": 9429,
+    "Text": "デッキ名称を変更する"
+  },
+  {
+    "RowId": 9430,
+    "Text": "<If(Equal(IntegerParameter(1),10))>A<Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 9431,
+    "Text": "<String>StringParameter(1)</String> <String>StringParameter(4)</String> <String>StringParameter(2)</String> <String>StringParameter(3)</String> "
+  },
+  {
+    "RowId": 9432,
+    "Text": "デッキから除外する"
+  },
+  {
+    "RowId": 9433,
+    "Text": "<Icon2>11</Icon2> 所持カード表示切り替え  <Icon2>10</Icon2> サブコマンド"
+  },
+  {
+    "RowId": 9434,
+    "Text": "デッキ内容をリセットする"
+  },
+  {
+    "RowId": 9435,
+    "Text": "デッキ内容をリセットします。\nよろしいですか？"
+  },
+  {
+    "RowId": 9436,
+    "Text": "<Icon2>10</Icon2> サブコマンド"
+  },
+  {
+    "RowId": 9437,
+    "Text": "このデッキは対戦に使用することができません。\n<span style=\"color: #ffff66;\">理由：<String>StringParameter(1)</String></span>\n本当に保存しますか？"
+  },
+  {
+    "RowId": 9438,
+    "Text": "カード枚数不足 "
+  },
+  {
+    "RowId": 9439,
+    "Text": "レアカード枚数オーバー "
+  },
+  {
+    "RowId": 9440,
+    "Text": "未所持カード内包"
+  },
+  {
+    "RowId": 9441,
+    "Text": "カード重複"
+  },
+  {
+    "RowId": 9442,
+    "Text": "不明なエラー"
+  },
+  {
+    "RowId": 9443,
+    "Text": "デッキ内のレアカード枚数がオーバーしています。"
+  },
+  {
+    "RowId": 9444,
+    "Text": "デッキ編成ルール\n・★5のレアリティカード：1枚のみ編成可\n・★4のレアリティカード：最大2枚(※)まで編成可\n<span style=\"color: #ffff66;\">※★5のレアリティカードを編成している場合は1枚のみ編成可</span>\n・★3以下のレアリティカード：編成制限なし"
+  },
+  {
+    "RowId": 9445,
+    "Text": "通常表示"
+  },
+  {
+    "RowId": 9446,
+    "Text": "パラメータ"
+  },
+  {
+    "RowId": 9447,
+    "Text": "レアリティ"
+  },
+  {
+    "RowId": 9448,
+    "Text": "タイプ"
+  },
+  {
+    "RowId": 9449,
+    "Text": "指定した条件に一致するカードはありません。"
+  },
+  {
+    "RowId": 9450,
+    "Text": "Player Rating"
+  },
+  {
+    "RowId": 9451,
+    "Text": "Rank Point："
+  },
+  {
+    "RowId": 9452,
+    "Text": "LORD of VERMINION Tournament"
+  },
+  {
+    "RowId": 9453,
+    "Text": "第<Num>IntegerParameter(1)</Num>回 ロード・オブ・ヴァーミニオン大会"
+  },
+  {
+    "RowId": 9454,
+    "Text": "開催中（対戦可能期間：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>まで）"
+  },
+  {
+    "RowId": 9455,
+    "Text": "準備中（開催期間：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>から）"
+  },
+  {
+    "RowId": 9456,
+    "Text": "LORD of VERMINION Tournament Result"
+  },
+  {
+    "RowId": 9457,
+    "Text": "第<Num>IntegerParameter(1)</Num>回 ロード・オブ・ヴァーミニオン大会"
+  },
+  {
+    "RowId": 9458,
+    "Text": "対戦数："
+  },
+  {
+    "RowId": 9459,
+    "Text": "勝利数："
+  },
+  {
+    "RowId": 9460,
+    "Text": "勝ち点："
+  },
+  {
+    "RowId": 9461,
+    "Text": "対戦可能回数："
+  },
+  {
+    "RowId": 9462,
+    "Text": "表示する戦績がありません。"
+  },
+  {
+    "RowId": 9463,
+    "Text": "ミニオンホットバー編集"
+  },
+  {
+    "RowId": 9464,
+    "Text": "<String>StringParameter(1)</String>[<Num>IntegerParameter(2)</Num>～<Num>IntegerParameter(3)</Num>]"
+  },
+  {
+    "RowId": 9465,
+    "Text": "カードの表示条件設定"
+  },
+  {
+    "RowId": 9466,
+    "Text": "絞り込み"
+  },
+  {
+    "RowId": 9467,
+    "Text": "レアリティ"
+  },
+  {
+    "RowId": 9468,
+    "Text": "タイプ"
+  },
+  {
+    "RowId": 9469,
+    "Text": "ALL"
+  },
+  {
+    "RowId": 9470,
+    "Text": "タイプなし"
+  },
+  {
+    "RowId": 9471,
+    "Text": "暁タイプ"
+  },
+  {
+    "RowId": 9472,
+    "Text": "帝国タイプ"
+  },
+  {
+    "RowId": 9473,
+    "Text": "蛮神タイプ"
+  },
+  {
+    "RowId": 9474,
+    "Text": "獣人タイプ"
+  },
+  {
+    "RowId": 9475,
+    "Text": "並び替えの優先度設定"
+  },
+  {
+    "RowId": 9476,
+    "Text": "上辺の数値"
+  },
+  {
+    "RowId": 9477,
+    "Text": "下辺の数値"
+  },
+  {
+    "RowId": 9478,
+    "Text": "左辺の数値"
+  },
+  {
+    "RowId": 9479,
+    "Text": "右辺の数値"
+  },
+  {
+    "RowId": 9480,
+    "Text": "優先度1"
+  },
+  {
+    "RowId": 9481,
+    "Text": "優先度2"
+  },
+  {
+    "RowId": 9482,
+    "Text": "優先度3"
+  },
+  {
+    "RowId": 9483,
+    "Text": "優先度4"
+  },
+  {
+    "RowId": 9484,
+    "Text": "未指定"
+  },
+  {
+    "RowId": 9485,
+    "Text": "昇順"
+  },
+  {
+    "RowId": 9486,
+    "Text": "降順"
+  },
+  {
+    "RowId": 9487,
+    "Text": "条件をリセット"
+  },
+  {
+    "RowId": 9488,
+    "Text": "決定"
+  },
+  {
+    "RowId": 9489,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 9490,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num> <SetTime>IntegerParameter(1)</SetTime><If(Equal(IntegerParameter(2),0))><Num>t_hour</Num>:<Sec>t_min</Sec> <Else/><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,0,1,2,3,4,5,6,7,8,9,10,11)><Else/>0</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If> </If>"
+  },
+  {
+    "RowId": 9491,
+    "Text": "<switch(IntegerParameter(1),ベーシックルール：\n<String>StringParameter(2)</String>,アドバンスルール：\n<String>StringParameter(2)</String>/<String>StringParameter(3)</String>,アドバンスルール：\n<String>StringParameter(2)</String>/<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>,アドバンスルール：\n<String>StringParameter(2)</String>/<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>/<String>StringParameter(5)</String>)>"
+  },
+  {
+    "RowId": 9492,
+    "Text": "開催時間をアラームに追加する"
+  },
+  {
+    "RowId": 9493,
+    "Text": "ルール説明を開く"
+  },
+  {
+    "RowId": 9494,
+    "Text": "日時"
+  },
+  {
+    "RowId": 9495,
+    "Text": "ルール"
+  },
+  {
+    "RowId": 9496,
+    "Text": "TOURNAMENT SCHEDULE"
+  },
+  {
+    "RowId": 9497,
+    "Text": "対戦者情報"
+  },
+  {
+    "RowId": 9498,
+    "Text": "トーナメントルール"
+  },
+  {
+    "RowId": 9499,
+    "Text": "<switch(IntegerParameter(1),<String>StringParameter(2)</String>,<String>StringParameter(2)</String>\n<String>StringParameter(3)</String>,<String>StringParameter(2)</String>\n<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>,<String>StringParameter(2)</String>\n<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>\n<String>StringParameter(5)</String>)>"
+  },
+  {
+    "RowId": 9500,
+    "Text": "MGP EXCHANGE"
+  },
+  {
+    "RowId": 9501,
+    "Text": "MGP交換"
+  },
+  {
+    "RowId": 9502,
+    "Text": "交換レート"
+  },
+  {
+    "RowId": 9503,
+    "Text": "1 MGP = <Num>IntegerParameter(1)</Num>\uE049"
+  },
+  {
+    "RowId": 9504,
+    "Text": "希望MGP"
+  },
+  {
+    "RowId": 9505,
+    "Text": "交換ギル"
+  },
+  {
+    "RowId": 9506,
+    "Text": "ご注意：ギルからMGPへ交換できますが、MGPをギルには交換できません。 交換後の所持MGPが<kilo(IntegerParameter(1),,)>を超えてしまう場合、交換はできません。"
+  },
+  {
+    "RowId": 9507,
+    "Text": "交換"
+  },
+  {
+    "RowId": 9508,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 9509,
+    "Text": "<kilo(IntegerParameter(1),,)>\uE049を<kilo(IntegerParameter(2),,)>MGPと交換します。よろしいですか？"
+  },
+  {
+    "RowId": 9510,
+    "Text": "CARD EXCHANGE"
+  },
+  {
+    "RowId": 9511,
+    "Text": "カード回収"
+  },
+  {
+    "RowId": 9512,
+    "Text": "カードアイテム名"
+  },
+  {
+    "RowId": 9513,
+    "Text": "回収時取得MGP"
+  },
+  {
+    "RowId": 9514,
+    "Text": "所持数"
+  },
+  {
+    "RowId": 9515,
+    "Text": "登録済"
+  },
+  {
+    "RowId": 9516,
+    "Text": "回収対象カードを持っていません。"
+  },
+  {
+    "RowId": 9517,
+    "Text": "回収枚数"
+  },
+  {
+    "RowId": 9518,
+    "Text": "回収時取得MGP"
+  },
+  {
+    "RowId": 9519,
+    "Text": "<span style=\"color: #ffff66;\">カードの回収によりMGPの所持上限を超える場合、回収は可能ですが上限を超えた分は取得できません。</span>"
+  },
+  {
+    "RowId": 9520,
+    "Text": "回収依頼"
+  },
+  {
+    "RowId": 9521,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 9522,
+    "Text": "MGP所持数/所持上限"
+  },
+  {
+    "RowId": 9523,
+    "Text": "<kilo(IntegerParameter(1),,)>\uE049"
+  },
+  {
+    "RowId": 9524,
+    "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
+  },
+  {
+    "RowId": 9525,
+    "Text": "<kilo(IntegerParameter(1),,)> MGP"
+  },
+  {
+    "RowId": 9526,
+    "Text": "参加登録中"
+  },
+  {
+    "RowId": 9527,
+    "Text": "ルーム内マッチングの参加登録状態の確認をします。"
+  },
+  {
+    "RowId": 9528,
+    "Text": "ルーム内マッチング：通常対戦"
+  },
+  {
+    "RowId": 9529,
+    "Text": "TRIPLE TRIAD"
+  },
+  {
+    "RowId": 9530,
+    "Text": "参加登録"
+  },
+  {
+    "RowId": 9531,
+    "Text": "参加登録中です。しばらくお待ちください。"
+  },
+  {
+    "RowId": 9532,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 9533,
+    "Text": "対戦準備が整いました！"
+  },
+  {
+    "RowId": 9534,
+    "Text": "所持MGP"
+  },
+  {
+    "RowId": 9535,
+    "Text": "参加料"
+  },
+  {
+    "RowId": 9536,
+    "Text": "参加"
+  },
+  {
+    "RowId": 9537,
+    "Text": "辞退"
+  },
+  {
+    "RowId": 9538,
+    "Text": "1日に3回以上「辞退」ボタンを押下、もしくは時間切れによる参加登録辞退を行うと、<span style=\"color: #ffff66;\">カードバトルルームから強制的に退出されます。</span>\n<span style=\"color: #ff7b1a;\">また、一定時間コンテンツファインダーおよび\nレイドファインダーでの参加申請ができなくなります。</span>\nよろしいですか？"
+  },
+  {
+    "RowId": 9539,
+    "Text": "対戦相手確認中！"
+  },
+  {
+    "RowId": 9540,
+    "Text": "対戦ルールを設定してください。"
+  },
+  {
+    "RowId": 9541,
+    "Text": "対戦相手のルール選択を待っています。"
+  },
+  {
+    "RowId": 9542,
+    "Text": "対戦相手が選択します。"
+  },
+  {
+    "RowId": 9543,
+    "Text": "申請"
+  },
+  {
+    "RowId": 9544,
+    "Text": "この対戦ルールで開始します。"
+  },
+  {
+    "RowId": 9545,
+    "Text": "対戦相手の開始を待っています。"
+  },
+  {
+    "RowId": 9546,
+    "Text": "対戦開始"
+  },
+  {
+    "RowId": 9547,
+    "Text": "「参加登録」を解除する"
+  },
+  {
+    "RowId": 9548,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9549,
+    "Text": "ルーム内マッチング：大会対戦"
+  },
+  {
+    "RowId": 9550,
+    "Text": "ロード・オブ・ヴァーミニオン"
+  },
+  {
+    "RowId": 9551,
+    "Text": "参加登録中"
+  },
+  {
+    "RowId": 9552,
+    "Text": "LORD of VERMINION"
+  },
+  {
+    "RowId": 9553,
+    "Text": "参加登録"
+  },
+  {
+    "RowId": 9554,
+    "Text": "参加登録中です。しばらくお待ちください。"
+  },
+  {
+    "RowId": 9555,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9556,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 9557,
+    "Text": "対戦準備が整いました！"
+  },
+  {
+    "RowId": 9558,
+    "Text": "所持MGP"
+  },
+  {
+    "RowId": 9559,
+    "Text": "参加料"
+  },
+  {
+    "RowId": 9560,
+    "Text": "参加"
+  },
+  {
+    "RowId": 9561,
+    "Text": "辞退"
+  },
+  {
+    "RowId": 9562,
+    "Text": "対戦への参加を辞退します。\nよろしいですか？"
+  },
+  {
+    "RowId": 9563,
+    "Text": "対戦相手確認中！"
+  },
+  {
+    "RowId": 9564,
+    "Text": "チャレンジ"
+  },
+  {
+    "RowId": 9565,
+    "Text": "プレイヤー対戦(RP変動あり)"
+  },
+  {
+    "RowId": 9566,
+    "Text": "CPU対戦：ミニオンクラス(Easy)"
+  },
+  {
+    "RowId": 9567,
+    "Text": "CPU対戦：真ミニオンクラス(Normal)"
+  },
+  {
+    "RowId": 9568,
+    "Text": "CPU対戦：極ミニオンクラス(Hard)"
+  },
+  {
+    "RowId": 9569,
+    "Text": "大会対戦"
+  },
+  {
+    "RowId": 9570,
+    "Text": "プレイヤー対戦(RP変動なし)"
+  },
+  {
+    "RowId": 9571,
+    "Text": "大会対戦 (CPU対戦)"
+  },
+  {
+    "RowId": 9572,
+    "Text": "なし"
+  },
+  {
+    "RowId": 9573,
+    "Text": "オフィシャルトーナメント日程"
+  },
+  {
+    "RowId": 9574,
+    "Text": "ルール設定なし"
+  },
+  {
+    "RowId": 9575,
+    "Text": "YOU WIN"
+  },
+  {
+    "RowId": 9576,
+    "Text": "YOU LOSE"
+  },
+  {
+    "RowId": 9577,
+    "Text": "DRAW"
+  },
+  {
+    "RowId": 9578,
+    "Text": "YOU WIN"
+  },
+  {
+    "RowId": 9579,
+    "Text": "YOU LOSE"
+  },
+  {
+    "RowId": 9580,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9581,
+    "Text": "対戦時間 <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9582,
+    "Text": "REWARD"
+  },
+  {
+    "RowId": 9583,
+    "Text": "RP"
+  },
+  {
+    "RowId": 9584,
+    "Text": "<If(Equal(IntegerParameter(2),0))><Num>IntegerParameter(1)</Num><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(1)</Num>（+<Num>IntegerParameter(2)</Num>）<Else/><Num>IntegerParameter(1)</Num>（<Num>IntegerParameter(2)</Num>）</If></If>"
+  },
+  {
+    "RowId": 9585,
+    "Text": "勝ち点"
+  },
+  {
+    "RowId": 9586,
+    "Text": "<If(Equal(IntegerParameter(2),0))><Num>IntegerParameter(1)</Num><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(1)</Num>（+<Num>IntegerParameter(2)</Num>）<Else/><Num>IntegerParameter(1)</Num>（<Num>IntegerParameter(2)</Num>）</If></If>"
+  },
+  {
+    "RowId": 9587,
+    "Text": "大会勝敗数"
+  },
+  {
+    "RowId": 9588,
+    "Text": "<Num>IntegerParameter(1)</Num>戦<Num>IntegerParameter(2)</Num>勝"
+  },
+  {
+    "RowId": 9589,
+    "Text": "残り時間：<Num>IntegerParameter(1)</Num>秒"
+  },
+  {
+    "RowId": 9590,
+    "Text": "終了"
+  },
+  {
+    "RowId": 9591,
+    "Text": "勝ち点"
+  },
+  {
+    "RowId": 9592,
+    "Text": "<Ordinal>IntegerParameter(1)</Ordinal>"
+  },
+  {
+    "RowId": 9593,
+    "Text": "SPD"
+  },
+  {
+    "RowId": 9594,
+    "Text": "MINION HOTBAR"
+  },
+  {
+    "RowId": 9595,
+    "Text": "対戦時に召喚したいミニオンを「ミニオンホットバー」に登録しましょう。"
+  },
+  {
+    "RowId": 9596,
+    "Text": "「シールド」に対し多くのダメージを与えます。"
+  },
+  {
+    "RowId": 9597,
+    "Text": "「ゲート」に対し多くのダメージを与えます。"
+  },
+  {
+    "RowId": 9598,
+    "Text": "「アルカナストーン」に対し多くのダメージを与えます。"
+  },
+  {
+    "RowId": 9599,
+    "Text": "「サーチ・アイ」に対し多くのダメージを与えます。"
+  },
+  {
+    "RowId": 9600,
+    "Text": "EDIT MINION HOTBAR"
+  },
+  {
+    "RowId": 9601,
+    "Text": "ミニオンホットバー編集"
+  },
+  {
+    "RowId": 9602,
+    "Text": "タイプ"
+  },
+  {
+    "RowId": 9603,
+    "Text": "コスト"
+  },
+  {
+    "RowId": 9604,
+    "Text": "HP"
+  },
+  {
+    "RowId": 9605,
+    "Text": "ATK"
+  },
+  {
+    "RowId": 9606,
+    "Text": "DEF"
+  },
+  {
+    "RowId": 9607,
+    "Text": "SPD"
+  },
+  {
+    "RowId": 9608,
+    "Text": "<span style=\"color: #ffae00;\"><switch(IntegerParameter(1),★,★★,★★★,★★★★)></span><span style=\"color: #8b5f00;\"><switch(IntegerParameter(1),★★★,★★,★,)></span>"
+  },
+  {
+    "RowId": 9609,
+    "Text": "オートアタック"
+  },
+  {
+    "RowId": 9610,
+    "Text": "単体"
+  },
+  {
+    "RowId": 9611,
+    "Text": "範囲"
+  },
+  {
+    "RowId": 9612,
+    "Text": "施設特効"
+  },
+  {
+    "RowId": 9613,
+    "Text": "特殊技"
+  },
+  {
+    "RowId": 9614,
+    "Text": "ミニオンリストを開きます。"
+  },
+  {
+    "RowId": 9615,
+    "Text": "ミニオンを指定順に並び替えます。"
+  },
+  {
+    "RowId": 9616,
+    "Text": "コスト"
+  },
+  {
+    "RowId": 9617,
+    "Text": "タイプ"
+  },
+  {
+    "RowId": 9618,
+    "Text": "ID"
+  },
+  {
+    "RowId": 9619,
+    "Text": "HP"
+  },
+  {
+    "RowId": 9620,
+    "Text": "ATK"
+  },
+  {
+    "RowId": 9621,
+    "Text": "DEF"
+  },
+  {
+    "RowId": 9622,
+    "Text": "特殊技カテゴリ"
+  },
+  {
+    "RowId": 9623,
+    "Text": "特殊技ポイント"
+  },
+  {
+    "RowId": 9624,
+    "Text": "ミニオンホットバーから除外する"
+  },
+  {
+    "RowId": 9625,
+    "Text": "データ取得中です。"
+  },
+  {
+    "RowId": 9626,
+    "Text": "LoVM LIST"
+  },
+  {
+    "RowId": 9627,
+    "Text": "LoVMリスト"
+  },
+  {
+    "RowId": 9628,
+    "Text": "??"
+  },
+  {
+    "RowId": 9629,
+    "Text": "--"
+  },
+  {
+    "RowId": 9630,
+    "Text": "コスト"
+  },
+  {
+    "RowId": 9631,
+    "Text": "アニマル"
+  },
+  {
+    "RowId": 9632,
+    "Text": "モンスター"
+  },
+  {
+    "RowId": 9633,
+    "Text": "ドール"
+  },
+  {
+    "RowId": 9634,
+    "Text": "ガジェット"
+  },
+  {
+    "RowId": 9635,
+    "Text": "HP"
+  },
+  {
+    "RowId": 9636,
+    "Text": "ATK"
+  },
+  {
+    "RowId": 9637,
+    "Text": "DEF"
+  },
+  {
+    "RowId": 9638,
+    "Text": "SPD"
+  },
+  {
+    "RowId": 9639,
+    "Text": "<span style=\"color: #ffae00;\"><switch(IntegerParameter(1),★,★★,★★★,★★★★)></span><span style=\"color: #8b5f00;\"><switch(IntegerParameter(1),★★★,★★,★,)></span>"
+  },
+  {
+    "RowId": 9640,
+    "Text": "オートアタック"
+  },
+  {
+    "RowId": 9641,
+    "Text": "単体"
+  },
+  {
+    "RowId": 9642,
+    "Text": "範囲"
+  },
+  {
+    "RowId": 9643,
+    "Text": "施設特効"
+  },
+  {
+    "RowId": 9644,
+    "Text": "特殊技"
+  },
+  {
+    "RowId": 9645,
+    "Text": "特殊技ポイント"
+  },
+  {
+    "RowId": 9646,
+    "Text": "Enemy"
+  },
+  {
+    "RowId": 9647,
+    "Text": "コスト<If(Equal(IntegerParameter(2),1))>??<Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 9648,
+    "Text": "RP"
+  },
+  {
+    "RowId": 9649,
+    "Text": "???/???"
+  },
+  {
+    "RowId": 9650,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 9651,
+    "Text": "LoVMリスト"
+  },
+  {
+    "RowId": 9652,
+    "Text": "リタイア"
+  },
+  {
+    "RowId": 9653,
+    "Text": "リタイアすると<span style=\"color: #ffff66;\">あなたが敗北し、対戦が終了します。</span>\n<span style=\"color: #ff7b1a;\">※プレイヤー同士の対戦でリタイアする場合、\n\u3000コンテンツファインダーの\n\u3000ペナルティのカウント対象になります。</span>\nよろしいですか？"
+  },
+  {
+    "RowId": 9654,
+    "Text": "メインコマンド"
+  },
+  {
+    "RowId": 9655,
+    "Text": "特殊技発動"
+  },
+  {
+    "RowId": 9656,
+    "Text": "トラップ発動"
+  },
+  {
+    "RowId": 9657,
+    "Text": "帰還"
+  },
+  {
+    "RowId": 9658,
+    "Text": "LoVMリスト"
+  },
+  {
+    "RowId": 9659,
+    "Text": "ロックを解除すると各HUDの固定が解除されて、\n移動や、拡大、縮小ができるようになります。"
+  },
+  {
+    "RowId": 9660,
+    "Text": "Minions"
+  },
+  {
+    "RowId": 9661,
+    "Text": "Player"
+  },
+  {
+    "RowId": 9662,
+    "Text": "Enemy"
+  },
+  {
+    "RowId": 9663,
+    "Text": "Queue"
+  },
+  {
+    "RowId": 9664,
+    "Text": "Sally Gate"
+  },
+  {
+    "RowId": 9665,
+    "Text": "Cost"
+  },
+  {
+    "RowId": 9666,
+    "Text": "A"
+  },
+  {
+    "RowId": 9667,
+    "Text": "B"
+  },
+  {
+    "RowId": 9668,
+    "Text": "C"
+  },
+  {
+    "RowId": 9669,
+    "Text": "ヘルプ"
+  },
+  {
+    "RowId": 9670,
+    "Text": "HELP"
+  },
+  {
+    "RowId": 9671,
+    "Text": "ヘルプ"
+  },
+  {
+    "RowId": 9673,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9674,
+    "Text": "タイプによる優劣の関係"
+  },
+  {
+    "RowId": 9675,
+    "Text": "<Num>IntegerParameter(1)</Num>%"
+  },
+  {
+    "RowId": 9676,
+    "Text": "<Icon2>15</Icon2>"
+  },
+  {
+    "RowId": 9677,
+    "Text": "<Icon>17</Icon>"
+  },
+  {
+    "RowId": 9678,
+    "Text": "タイプ相関図"
+  },
+  {
+    "RowId": 9680,
+    "Text": "RANKING"
+  },
+  {
+    "RowId": 9681,
+    "Text": "大会ランキング"
+  },
+  {
+    "RowId": 9682,
+    "Text": "第<Num>IntegerParameter(1)</Num>回 ロード・オブ・ヴァーミニオン大会"
+  },
+  {
+    "RowId": 9683,
+    "Text": "開催期間：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>から<SetTime>IntegerParameter(2)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>まで"
+  },
+  {
+    "RowId": 9684,
+    "Text": "順位"
+  },
+  {
+    "RowId": 9685,
+    "Text": "選手名"
+  },
+  {
+    "RowId": 9686,
+    "Text": "対戦数"
+  },
+  {
+    "RowId": 9687,
+    "Text": "勝利数"
+  },
+  {
+    "RowId": 9688,
+    "Text": "勝ち点"
+  },
+  {
+    "RowId": 9689,
+    "Text": "---"
+  },
+  {
+    "RowId": 9690,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9691,
+    "Text": "表示する項目がありません。"
+  },
+  {
+    "RowId": 9692,
+    "Text": "データ取得中です。"
+  },
+  {
+    "RowId": 9693,
+    "Text": "対戦者情報"
+  },
+  {
+    "RowId": 9694,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9695,
+    "Text": "勝ち点 <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9696,
+    "Text": "得失点差 <Num>IntegerParameter(1)</Num> "
+  },
+  {
+    "RowId": 9697,
+    "Text": "<If(Equal(PlayerParameter(78),99))>オンラインID<Else/>ゲーマータグ</If>：<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9698,
+    "Text": "VS"
+  },
+  {
+    "RowId": 9699,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 9700,
+    "Text": "アルカナストーンA"
+  },
+  {
+    "RowId": 9701,
+    "Text": "アルカナストーンB"
+  },
+  {
+    "RowId": 9702,
+    "Text": "アルカナストーンC"
+  },
+  {
+    "RowId": 9703,
+    "Text": "ゲートA"
+  },
+  {
+    "RowId": 9704,
+    "Text": "ゲートB"
+  },
+  {
+    "RowId": 9705,
+    "Text": "ゲートC"
+  },
+  {
+    "RowId": 9706,
+    "Text": "手応えを感じなかった。"
+  },
+  {
+    "RowId": 9707,
+    "Text": "手応えを感じた。"
+  },
+  {
+    "RowId": 9708,
+    "Text": "かなりの手応えを感じた。"
+  },
+  {
+    "RowId": 9709,
+    "Text": "確実な手応えを感じた。"
+  },
+  {
+    "RowId": 9710,
+    "Text": "手応えを感じなかった。"
+  },
+  {
+    "RowId": 9711,
+    "Text": "手応えを感じた。"
+  },
+  {
+    "RowId": 9712,
+    "Text": "かなりの手応えを感じた。"
+  },
+  {
+    "RowId": 9713,
+    "Text": "確実な手応えを感じた。"
+  },
+  {
+    "RowId": 9714,
+    "Text": "RESULTS"
+  },
+  {
+    "RowId": 9715,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9716,
+    "Text": "登頂報酬"
+  },
+  {
+    "RowId": 9717,
+    "Text": "サボテンダー取得報酬"
+  },
+  {
+    "RowId": 9718,
+    "Text": "金のサボテンダー"
+  },
+  {
+    "RowId": 9719,
+    "Text": "銀のサボテンダー"
+  },
+  {
+    "RowId": 9720,
+    "Text": "銅のサボテンダー"
+  },
+  {
+    "RowId": 9721,
+    "Text": "× <Num>IntegerParameter(1)</Num> "
+  },
+  {
+    "RowId": 9722,
+    "Text": "<kilo(IntegerParameter(1),,)>MGP"
+  },
+  {
+    "RowId": 9723,
+    "Text": "退出"
+  },
+  {
+    "RowId": 9724,
+    "Text": "コンテンツ退出まで <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9725,
+    "Text": "<Num>IntegerParameter(1)</Num> "
+  },
+  {
+    "RowId": 9726,
+    "Text": "合計獲得報酬"
+  },
+  {
+    "RowId": 9727,
+    "Text": "参加報酬"
+  },
+  {
+    "RowId": 9728,
+    "Text": "「<String>StringParameter(1)</String>」を終了します。\nよろしいですか？\n<span style=\"color: #ff8080;\">※ここまでに獲得したスコアは報酬に加算されます。</span>"
+  },
+  {
+    "RowId": 9729,
+    "Text": "SCORE"
+  },
+  {
+    "RowId": 9730,
+    "Text": "RESULTS"
+  },
+  {
+    "RowId": 9731,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9733,
+    "Text": "トータルスコア"
+  },
+  {
+    "RowId": 9735,
+    "Text": "<If(LessThan(IntegerParameter(1),0))><span style=\"color: #ff5151;\"><Num>IntegerParameter(2)</Num></span><Else/><Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 9736,
+    "Text": "<If(LessThan(IntegerParameter(1),0))><span style=\"color: #ff5151;\">×<Num>IntegerParameter(2)</Num></span><Else/>×<Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 9737,
+    "Text": "金のサボテンダー"
+  },
+  {
+    "RowId": 9738,
+    "Text": "銀のサボテンダー"
+  },
+  {
+    "RowId": 9739,
+    "Text": "銅のサボテンダー"
+  },
+  {
+    "RowId": 9740,
+    "Text": "紅のボム"
+  },
+  {
+    "RowId": 9742,
+    "Text": "退出"
+  },
+  {
+    "RowId": 9743,
+    "Text": "コンテンツ退出まで <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9744,
+    "Text": "REWARD"
+  },
+  {
+    "RowId": 9745,
+    "Text": "<If(LessThan(IntegerParameter(1),0))><span style=\"color: #ff5151;\"><Num>IntegerParameter(1)</Num></span><Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 9746,
+    "Text": "<If(Equal(PlayerParameter(80),0))>\uE050マウスカーソル：照準移動\u3000\u3000\uE051左クリック/ジャンプ：<String>StringParameter(1)</String><Else/><Icon2>20</Icon2>スティック：照準移動\u3000\u3000<Icon2>14</Icon2><Icon2>15</Icon2>押下中：照準移動の減速\u3000\u3000<Icon2>8</Icon2><Icon2>9</Icon2>ボタン：<String>StringParameter(1)</String></If>"
+  },
+  {
+    "RowId": 9747,
+    "Text": "<switch(IntegerParameter(1),<String>StringParameter(2)</String>,<String>StringParameter(2)</String>/<String>StringParameter(3)</String>,<String>StringParameter(2)</String>/<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>,<String>StringParameter(2)</String>/<String>StringParameter(3)</String>\n<String>StringParameter(4)</String>/<String>StringParameter(5)</String>)>"
+  },
+  {
+    "RowId": 9748,
+    "Text": "カードを選択し、デッキを作成してください。"
+  },
+  {
+    "RowId": 9749,
+    "Text": "カード選択１：３つの選択肢のうち、いずれかひとつを選んでください。"
+  },
+  {
+    "RowId": 9750,
+    "Text": "カード選択２：３つの選択肢のうち、いずれかひとつを選んでください。"
+  },
+  {
+    "RowId": 9751,
+    "Text": "カード選択３：３つの選択肢のうち、いずれかひとつを選んでください。"
+  },
+  {
+    "RowId": 9752,
+    "Text": "残り時間:<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9753,
+    "Text": "おすすめ選択"
+  },
+  {
+    "RowId": 9754,
+    "Text": "決定"
+  },
+  {
+    "RowId": 9755,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><String>StringParameter(2)</String>\n<String>StringParameter(3)</String><Else/><String>StringParameter(2)</String></If>"
+  },
+  {
+    "RowId": 9756,
+    "Text": "デッキ確認"
+  },
+  {
+    "RowId": 9757,
+    "Text": "上記のデッキで対戦を行います。\nよろしいですか？"
+  },
+  {
+    "RowId": 9758,
+    "Text": "残り時間:<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9759,
+    "Text": "はい"
+  },
+  {
+    "RowId": 9760,
+    "Text": "いいえ"
+  },
+  {
+    "RowId": 9761,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 9762,
+    "Text": "順位報酬"
+  },
+  {
+    "RowId": 9763,
+    "Text": "勝ち点報酬"
+  },
+  {
+    "RowId": 9764,
+    "Text": "<kilo(IntegerParameter(1),,)>MGP"
+  },
+  {
+    "RowId": 9765,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9766,
+    "Text": " × <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9767,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>"
+  },
+  {
+    "RowId": 9768,
+    "Text": "コンテンツ退出まで <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 9769,
+    "Text": "退出する"
+  },
+  {
+    "RowId": 9770,
+    "Text": "REWARD"
+  },
+  {
+    "RowId": 9771,
+    "Text": "TOTAL <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 9772,
+    "Text": "No.<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9773,
+    "Text": "Extra.<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 9774,
+    "Text": "？？？？"
+  },
+  {
+    "RowId": 9775,
+    "Text": "カード表示の絞り込み"
+  },
+  {
+    "RowId": 9776,
+    "Text": "全カード表示"
+  },
+  {
+    "RowId": 9777,
+    "Text": "入手済みカードのみ表示"
+  },
+  {
+    "RowId": 9778,
+    "Text": "未入手カードのみ表示"
+  },
+  {
+    "RowId": 9779,
+    "Text": "絞り込み条件に該当するカードはありません。"
+  },
+  {
+    "RowId": 9780,
+    "Text": "チュートリアルにて配布"
+  },
+  {
+    "RowId": 9781,
+    "Text": "<sheet(ContentFinderCondition,IntegerParameter(1),43)>"
+  }
+]

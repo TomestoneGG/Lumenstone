@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 16500,
+    "Description": "対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>620\n<span style=\"color: #00cc22;\">追加効果：</span><span style=\"color: #ff7b1a;\">「バッテリー」</span>を20上昇させる。\nこのウェポンスキルは固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16501,
+    "Description": "オートマトン・クイーンを起動する。\nオートマトン・クイーンが実行するアクションの威力は、このアクションの実行時に消費した<span style=\"color: #ff7b1a;\">「バッテリー」</span>の量により変動する。\n<span style=\"color: #00cc22;\">稼働時間：</span>12秒\nオートマトン・クイーンは稼働時間が経過するか、<span style=\"color: #ff7b1a;\">「オーバードライブ・クイーン」</span>を実行すると帰還する。\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「バッテリー」</span>50以上\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「オーバードライブ・クイーン」</span>と共有する。"
+  },
+  {
+    "RowId": 16502,
+    "Description": "呼び出しているオートマトン・クイーンに<span style=\"color: #ff7b1a;\">「クイーン・パイルバンカー」</span>を実行させる。\n\n対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>340～680\nこのアクションの威力はオートマトン・クイーンを起動した時点での<span style=\"color: #ff7b1a;\">「バッテリー」</span>の残量に依存する。\nオートマトン・クイーンは実行後に帰還する。\nマスターが<span style=\"color: #ff7b1a;\">「オーバードライブ・クイーン」</span>を実行するか、バッテリーが尽きる直前に自発的に実行する。\n<span style=\"color: #00cc22;\">発動条件：</span>オートマトン・クイーンが存在する\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「オートマトン・クイーン」</span>と共有する。"
+  },
+  {
+    "RowId": 16503,
+    "Description": "対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>340～680\nこのアクションの威力はオートマトン・クイーンを起動した時点での<span style=\"color: #ff7b1a;\">「バッテリー」</span>の残量に依存する。\n<If(Equal(PlayerParameter(68),31))><If(GreaterThanOrEqualTo(PlayerParameter(72),86))> <Else/>オートマトン・クイーンは実行後に帰還する。\n</If><Else/>オートマトン・クイーンは実行後に帰還する。\n</If>マスターが<span style=\"color: #ff7b1a;\">「オーバードライブ・クイーン」</span>を実行するか、バッテリーが尽きる直前に自発的に実行する。\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16504,
+    "Description": "対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>120～240\nこのアクションの威力はオートマトン・クイーンを起動した時点での<span style=\"color: #ff7b1a;\">「バッテリー」</span>の残量に依存する。\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16505,
+    "Description": "対象に火属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>350\n<span style=\"color: #00cc22;\">追加効果：</span>自身に最大スタック分の<span style=\"color: #ff7b1a;\">「アストラルファイア」</span>を付与する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>永続\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「アストラルファイア」</span>効果中"
+  },
+  {
+    "RowId": 16506,
+    "Description": "<If(Equal(PlayerParameter(68),25))><If(GreaterThanOrEqualTo(PlayerParameter(72),58))>自身に<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>を付与し、さらに<span style=\"color: #ff7b1a;\">「アンブラルハート」</span>を1つ付与する。\n<span style=\"color: #00cc22;\">アンブラルハート効果：</span>ファイア系魔法実行時の<span style=\"color: #ff7b1a;\">「アストラルファイア」</span>による消費ＭＰの増加効果を防ぐ。\nさらに、フレア実行時に<span style=\"color: #ff7b1a;\">「アンブラルハート」</span>を全て消費する代わりに、消費ＭＰを2/3にすることができる。\n<Else/>自身に<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>を付与する。\n</If><Else/>自身に<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>を付与する。\n</If><span style=\"color: #00cc22;\">追加効果：</span>自身のＭＰが100％未満の場合、付与されているアンブラルブリザードのスタック数に応じてＭＰを回復する。\n<span style=\"color: #00cc22;\">1/2/3スタック時の回復量：</span>2500/5000/10000\n<If(Equal(PlayerParameter(68),25))><If(GreaterThanOrEqualTo(PlayerParameter(72),58))>自身が非戦闘状態であれば、<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>と<span style=\"color: #ff7b1a;\">「アンブラルハート」</span>を最大スタック分付与し、さらに自身のＭＰが100％未満の場合にＭＰを10000回復する。\n<Else/>自身が非戦闘状態であれば<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>を最大スタック分付与し、さらに自身のＭＰが100％未満の場合にＭＰを10000回復する。\n</If><Else/>自身が非戦闘状態であれば<span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>を最大スタック分付与し、さらに自身のＭＰが100％未満の場合にＭＰを10000回復する。\n</If><span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「アンブラルブリザード」</span>効果中"
+  },
+  {
+    "RowId": 16507,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>890\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ポリグロット」</span>"
+  },
+  {
+    "RowId": 16508,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>200\n<span style=\"color: #00cc22;\">追加効果：</span>自身に2スタックの<span style=\"color: #ff7b1a;\">「エーテルフロー」</span>を付与する。<If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),62))>\n<span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「ルインジャ実行可」</span>を付与する。\n<span style=\"color: #00cc22;\">効果時間：</span>60秒<Else/> </If><Else/> </If><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),52))>\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「エナジーサイフォン」</span>と共有する。<Else/> </If><Else/> </If>"
+  },
+  {
+    "RowId": 16509,
+    "Description": "召喚しているペットに<span style=\"color: #ff7b1a;\">「エギアサルトI」</span>に対応したアクションを実行させる。\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつペットが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16510,
+    "Description": "対象とその周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>100\n<span style=\"color: #00cc22;\">追加効果：</span>自身に2スタックの<span style=\"color: #ff7b1a;\">「エーテルフロー」</span>を付与する。\n<If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),62))><span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「ルインジャ実行可」</span>を付与する。\n<span style=\"color: #00cc22;\">効果時間：</span>60秒\n<Else/> </If><Else/> </If>リキャストタイマーを<span style=\"color: #ff7b1a;\">「エナジードレイン」</span>と共有する。"
+  },
+  {
+    "RowId": 16511,
+    "Description": "対象とその周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>100"
+  },
+  {
+    "RowId": 16512,
+    "Description": "召喚しているペットに<span style=\"color: #ff7b1a;\">「エギアサルトII」</span>に対応したアクションを実行させる。\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつペットが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16513,
+    "Description": "一定時間、魔法の詠唱時間を2.5秒短縮する。\nさらに、ルインガとアウトバーストがそれぞれ<span style=\"color: #ff7b1a;\">「霊泉の炎」</span>と<span style=\"color: #ff7b1a;\">「煉獄の炎」</span>に変化する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>20秒\n<span style=\"color: #00cc22;\">追加効果：</span>実行時にトライディザスターのリキャストタイムをリセットする\n<span style=\"color: #00cc22;\">発動条件：</span>デミ・バハムートの顕現が終了したあと\n発動条件を満たすとトランス・バハムートがトランス・フェニックスに変化する。\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「トランス・バハムート」</span>と共有する。\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16514,
+    "Description": "対象に火属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>580<Else/>540</If><Else/>540</If>\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「トランス・フェニックス」</span>効果中\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすとルインガが霊泉の炎に変化する。</span>"
+  },
+  {
+    "RowId": 16515,
+    "Description": "対象とその周囲の敵に火属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>240\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「トランス・フェニックス」</span>効果中\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすとトライディザスターが煉獄の炎に変化する。</span>"
+  },
+  {
+    "RowId": 16516,
+    "Description": "顕現しているデミ・フェニックスに<span style=\"color: #ff7b1a;\">「リヴァレーション」</span>を実行させる。\n\n対象とその周囲の敵に火属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>1300\n2体目以降の対象への威力は50％減少する。\n<span style=\"color: #00cc22;\">発動条件：</span>デミ・フェニックスが顕現している\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすとエンキンドル・バハムートがエンキンドル・フェニックスに変化する。</span>"
+  },
+  {
+    "RowId": 16517,
+    "Description": "周囲のパーティメンバーのＨＰを継続回復する。\n<span style=\"color: #00cc22;\">回復力：</span>100\u3000<span style=\"color: #00cc22;\">効果時間：</span>21秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16518,
+    "Description": "対象とその周囲の敵に火属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>1300\n2体目以降の対象への威力は50％減少する。\n<span style=\"color: #00cc22;\">発動条件：</span>デミ・フェニックスが顕現している\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16519,
+    "Description": "対象に火属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>150\n<span style=\"color: #00cc22;\">発動条件：</span>デミ・フェニックスが顕現している\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16520,
+    "Description": "このペットを召喚している召喚士に一定量のダメージを防ぐバリアを張る。\nこのバリアは対象の最大ＨＰの30％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16521,
+    "Description": "対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>30\n<span style=\"color: #00cc22;\">追加効果：</span>対象を中心にダメージエリアを生成する。\n<span style=\"color: #00cc22;\">威力：</span>30\u3000<span style=\"color: #00cc22;\">効果時間：</span>9秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16522,
+    "Description": "このペットを召喚している召喚士に一定量のダメージを防ぐバリアを張る。\nこのバリアは対象の最大ＨＰの30％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16523,
+    "Description": "対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>50\n<span style=\"color: #00cc22;\">追加効果：</span>対象を中心にダメージエリアを生成する。\n<span style=\"color: #00cc22;\">威力：</span>50\u3000<span style=\"color: #00cc22;\">効果時間：</span>9秒\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16524,
+    "Description": "対象とその周囲の敵に雷属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>140<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If>\n<span style=\"color: #00cc22;\">追加効果：</span><span style=\"color: #ff7b1a;\">「ブラックマナ」</span>を7上昇させる。"
+  },
+  {
+    "RowId": 16525,
+    "Description": "対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>140<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If>\n<span style=\"color: #00cc22;\">追加効果：</span><span style=\"color: #ff7b1a;\">「ホワイトマナ」</span>を7上昇させる。"
+  },
+  {
+    "RowId": 16526,
+    "Description": "対象とその周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>210<Else/>200</If><Else/>200</If>\n<span style=\"color: #00cc22;\">アクセラレーション時威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>260<Else/>250</If><Else/>250</If>\n<span style=\"color: #00cc22;\">追加効果：</span><span style=\"color: #ff7b1a;\">「ブラックマナ」</span>と<span style=\"color: #ff7b1a;\">「ホワイトマナ」</span>を3上昇させる。"
+  },
+  {
+    "RowId": 16527,
+    "Description": "対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),72))>180<Else/>130</If><Else/>130</If>\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「デプラスマン」</span>と共有する。"
+  },
+  {
+    "RowId": 16528,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>420<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>340<Else/>290</If><Else/>290</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>340<Else/>290</If><Else/>290</If></If>\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ブラックマナ」</span>5と<span style=\"color: #ff7b1a;\">「ホワイトマナ」</span>5\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすとルプリーズがエンルプリーズに変化する。</span>"
+  },
+  {
+    "RowId": 16529,
+    "Description": "対象に物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>100\nバランスゲージの<span style=\"color: #ff7b1a;\">「ブラックマナ」</span>と<span style=\"color: #ff7b1a;\">「ホワイトマナ」</span>がともに5以上の場合、エンルプリーズに変化する。"
+  },
+  {
+    "RowId": 16530,
+    "Description": "対象とその周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>750<Else/>680</If><Else/>680</If>\n2体目以降の対象への威力は55％減少する。\n<span style=\"color: #00cc22;\">コンボ条件：</span>ヴァルフレアおよびヴァルホーリー\n<span style=\"color: #00cc22;\">追加効果：</span><span style=\"color: #ff7b1a;\">「ブラックマナ」</span>と<span style=\"color: #ff7b1a;\">「ホワイトマナ」</span>を4上昇させる。\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ヴァルフレア」</span>または<span style=\"color: #ff7b1a;\">「ヴァルホーリー」</span>成功時\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすと<If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>ジョルガ<Else/>ジョルラ</If><Else/>ジョルラ</If>とインパクトがスコーチに変化する。</span>"
+  },
+  {
+    "RowId": 16531,
+    "Description": "対象のＨＰを回復する。\u3000<span style=\"color: #00cc22;\">回復力：</span><If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>800<Else/>700</If><Else/>700</If>\n<If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))><span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「ブラッドリリー」</span>を付与する。\n<Else/> </If><Else/> </If><span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ヒーリングリリー」</span>"
+  },
+  {
+    "RowId": 16532,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>85<Else/>65</If><Else/>65</If>\n<span style=\"color: #00cc22;\">追加効果：</span>対象に無属性の継続ダメージを付与する。\n<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>85<Else/>65</If><Else/>65</If>\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒"
+  },
+  {
+    "RowId": 16533,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>290"
+  },
+  {
+    "RowId": 16534,
+    "Description": "自身と周囲のパーティメンバーのＨＰを回復する。\n<span style=\"color: #00cc22;\">回復力：</span><If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>400<Else/>300</If><Else/>300</If>\n<span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「ブラッドリリー」</span>を付与する。\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ヒーリングリリー」</span>"
+  },
+  {
+    "RowId": 16535,
+    "Description": "対象とその周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>1360<Else/>1240</If><Else/>1240</If>\n2体目以降の対象への威力は50％減少する。\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ブラッドリリー」</span>3"
+  },
+  {
+    "RowId": 16536,
+    "Description": "一定時間、自身の回復魔法の回復量を20％上昇させ、自身と周囲50m以内にいるパーティメンバーの被ダメージを10％軽減する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>20秒<If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),100))>\n<span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「ディヴァインカレス実行可」</span>を付与する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒<Else/> </If><Else/> </If>"
+  },
+  {
+    "RowId": 16537,
+    "Description": "召喚しているフェアリーに<span style=\"color: #ff7b1a;\">「光の囁き」</span>を実行させる。\n<If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>セラフィムを召喚している場合は<span style=\"color: #ff7b1a;\">「光輝の囁き」</span>を実行させる。\n<Else/> </If><Else/> </If>\n周囲のパーティメンバーのＨＰを継続回復する。\n<span style=\"color: #00cc22;\">回復力：</span>80\u3000<span style=\"color: #00cc22;\">効果時間：</span>21秒\n<span style=\"color: #00cc22;\">発動条件：</span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>フェアリーまたはセラフィム<Else/>フェアリー</If><Else/>フェアリー</If>が存在する"
+  },
+  {
+    "RowId": 16538,
+    "Description": "召喚しているフェアリーに<span style=\"color: #ff7b1a;\">「フェイイルミネーション」</span>を実行させる。\n<If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>セラフィムを召喚している場合は<span style=\"color: #ff7b1a;\">「セラフィックイルミネーション」</span>を実行させる。\n<Else/> </If><Else/> </If>\n一定時間、周囲のパーティメンバーの回復魔法の回復量を10％上昇させ、かつ被魔法ダメージを5％軽減させる。\n<span style=\"color: #00cc22;\">効果時間：</span>20秒\nフェアリーのフェイイルミネーションとセラフィムのセラフィックイルミネーションは同時に付与されない。\n<span style=\"color: #00cc22;\">発動条件：</span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>フェアリーまたはセラフィム<Else/>フェアリー</If><Else/>フェアリー</If>が存在する"
+  },
+  {
+    "RowId": 16539,
+    "Description": "自身の周囲の敵に無属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),54))>165<Else/>150</If><Else/>150</If>"
+  },
+  {
+    "RowId": 16540,
+    "Description": "対象に無属性の継続ダメージを付与する。\n<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>80<Else/>70</If><Else/>70</If>\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒"
+  },
+  {
+    "RowId": 16541,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>255"
+  },
+  {
+    "RowId": 16542,
+    "Description": "効果時間中に実行する1回の<span style=\"color: #ff7b1a;\">「鼓舞激励の策」「<If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))>意気軒昂の策<Else/>士気高揚の策</If><Else/>士気高揚の策</If>」「不撓不屈の策」「深謀遠慮の策」</span>について、ＭＰや<span style=\"color: #ff7b1a;\">「エーテルフロー」</span>を消費することなく実行することができ、かつ必ずクリティカルヒットする。\u3000<span style=\"color: #00cc22;\">効果時間：</span>15秒"
+  },
+  {
+    "RowId": 16543,
+    "Description": "召喚しているフェアリーに<span style=\"color: #ff7b1a;\">「フェイブレッシング」</span>を実行させる。\n\n周囲のパーティメンバーのＨＰを回復する。\u3000<span style=\"color: #00cc22;\">回復力：</span>320\n<span style=\"color: #00cc22;\">発動条件：</span>フェアリーが存在する"
+  },
+  {
+    "RowId": 16544,
+    "Description": "周囲のパーティメンバーのＨＰを回復する。\u3000<span style=\"color: #00cc22;\">回復力：</span>320\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16545,
+    "Description": "召喚しているフェアリーを帰還させるとともに、セラフィムを召喚する。\u3000<span style=\"color: #00cc22;\">召喚時間：</span>22秒\nセラフィムの状態が<span style=\"color: #ff7b1a;\">「インターセプト」</span>の場合、ＨＰが減少したパーティメンバーに対して<span style=\"color: #ff7b1a;\">「セラフィックヴェール」</span>を実行する。\nセラフィムが帰還するとフェアリーが再出現する。\n<span style=\"color: #00cc22;\">発動条件：</span>フェアリーが存在する"
+  },
+  {
+    "RowId": 16546,
+    "Description": "召喚しているセラフィムに<span style=\"color: #ff7b1a;\">「コンソレイション」</span>を実行させる。\n\n周囲のパーティメンバーのＨＰを回復する。\n<span style=\"color: #00cc22;\">回復力：</span>250\n<span style=\"color: #00cc22;\">追加効果：</span>対象に一定量のダメージを防ぐバリアを張る。\nこのバリアは回復量の100％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>セラフィムが存在する"
+  },
+  {
+    "RowId": 16547,
+    "Description": "周囲のパーティメンバーのＨＰを回復する。\n<span style=\"color: #00cc22;\">回復力：</span>250\n<span style=\"color: #00cc22;\">追加効果：</span>対象に一定量のダメージを防ぐバリアを張る。\nこのバリアは回復量の100％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16548,
+    "Description": "対象のＨＰを回復する。\u3000<span style=\"color: #00cc22;\">回復力：</span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>180<Else/>150</If><Else/>150</If>\n<span style=\"color: #00cc22;\">追加効果：</span>対象に一定量のダメージを防ぐバリアを張る。\nこのバリアは回復量の100％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16549,
+    "Description": "一定時間、魔法の詠唱時間を2.5秒短縮する。\nさらに、ルインガとアウトバーストがそれぞれ<span style=\"color: #ff7b1a;\">「霊泉の炎」</span>と<span style=\"color: #ff7b1a;\">「煉獄の炎」</span>に変化する。\n加えて、デミ・フェニックスを顕現させる。\u3000<span style=\"color: #00cc22;\">顕現時間：</span>20秒\nデミ・フェニックスは顕現時に<span style=\"color: #ff7b1a;\">「不死鳥の翼」</span>を実行する。\nまた、マスターが敵に対して攻撃魔法を実行すると、併せて<span style=\"color: #ff7b1a;\">「火焔」</span>を実行する。\n直前まで召喚していたエギは、デミ・フェニックスの顕現時に帰還するが、顕現時間が終了すると再出現する。\n<span style=\"color: #00cc22;\">追加効果：</span>実行時にトライディザスターのリキャストタイムをリセットする\n<span style=\"color: #00cc22;\">発動条件：</span>ペットが存在かつデミ・バハムートの顕現が終了したあと\n発動条件を満たすとトランス・バハムートがトランス・フェニックスに変化する。\nリキャストタイマーを<span style=\"color: #ff7b1a;\">「トランス・バハムート」</span>と共有する。\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16550,
+    "Description": "周囲のパーティメンバーのＨＰを継続回復する。\n<span style=\"color: #00cc22;\">回復力：</span>80\u3000<span style=\"color: #00cc22;\">効果時間：</span>21秒\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16551,
+    "Description": "一定時間、周囲のパーティメンバーの回復魔法の回復量を10％上昇させ、かつ被魔法ダメージを5％軽減させる。\n<span style=\"color: #00cc22;\">効果時間：</span>20秒\nフェアリーのフェイイルミネーションとは同時に付与されない。\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。</span>"
+  },
+  {
+    "RowId": 16552,
+    "Description": "自身と周囲のパーティメンバーの与ダメージを6％上昇させる。\n<span style=\"color: #00cc22;\">効果時間：</span>20秒<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),92))>\n<span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「オラクル実行可」</span>を付与する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒<Else/> </If><Else/> </If>"
+  },
+  {
+    "RowId": 16553,
+    "Description": "自身と周囲のパーティメンバーのＨＰを回復する。\n<span style=\"color: #00cc22;\">回復力：</span>200\n<span style=\"color: #00cc22;\">追加効果：</span>対象のＨＰを継続回復する。\n<span style=\"color: #00cc22;\">回復力：</span>100\u3000<span style=\"color: #00cc22;\">効果時間：</span>15秒"
+  },
+  {
+    "RowId": 16554,
+    "Description": "対象に無属性の継続ダメージを付与する。\n<span style=\"color: #00cc22;\">威力：</span><If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>70<Else/>65</If><Else/>65</If>\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒"
+  },
+  {
+    "RowId": 16555,
+    "Description": "対象に無属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>230"
+  },
+  {
+    "RowId": 16556,
+    "Description": "自身またはパーティメンバーひとりを対象とする。\n対象のＨＰを回復する。\u3000<span style=\"color: #00cc22;\">回復力：</span>200\n<span style=\"color: #00cc22;\">追加効果：</span>対象に一定量のダメージを防ぐバリアを張る。\nこのバリアは回復量の200％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),88))>\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2<Else/> </If><Else/> </If>"
+  },
+  {
+    "RowId": 16557,
+    "Description": "自身と周囲のパーティメンバーに<span style=\"color: #ff7b1a;\">「ホロスコープ」</span>を付与する。\n<span style=\"color: #00cc22;\">効果時間：</span>10秒\nホロスコープの効果時間中に、自身が実行するヘリオスおよび<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))>コンジャンクション・ヘリオス<Else/>アスペクト・ヘリオス</If><Else/>アスペクト・ヘリオス</If>を受けると、ホロスコープは<span style=\"color: #ff7b1a;\">「ホロスコープ・ヘリオス」</span>に変化する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒\nホロスコープおよびホロスコープ・ヘリオスの効果時間が経過するか、効果時間中に再使用すると、ホロスコープおよびホロスコープ・ヘリオスの効果を受けている自身と周囲のパーティメンバーを回復する。\n<span style=\"color: #00cc22;\">ホロスコープ効果中の回復力：</span>200\n<span style=\"color: #00cc22;\">ホロスコープ・ヘリオス効果中の回復力：</span>400"
+  },
+  {
+    "RowId": 16558,
+    "Description": "自身と周囲のパーティメンバーのＨＰを回復する。\nこのアクションの回復力は、対象に付与されているステータスにより変化する。\n<span style=\"color: #00cc22;\">ホロスコープ効果中の回復力：</span>200\n<span style=\"color: #00cc22;\">ホロスコープ・ヘリオス効果中の回復力：</span>400\nこのアクションの効果を受けると<span style=\"color: #ff7b1a;\">「ホロスコープ」</span>および<span style=\"color: #ff7b1a;\">「ホロスコープ・ヘリオス」</span>の効果が切れる。"
+  },
+  {
+    "RowId": 16559,
+    "Description": "一定時間、自身の回復魔法の回復量を20％増加させる。\n<span style=\"color: #00cc22;\">効果時間：</span>20秒\n<span style=\"color: #00cc22;\">追加効果：</span>アスペクト・ベネフィクおよび<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))>コンジャンクション・ヘリオス<Else/>アスペクト・ヘリオス</If><Else/>アスペクト・ヘリオス</If>の実行時に、対象に一定量のダメージを防ぐバリアを張る。\n<span style=\"color: #00cc22;\">アスペクト・ベネフィクの効果量：</span>回復量の250％分\n<span style=\"color: #00cc22;\"><If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))>コンジャンクション・ヘリオス<Else/>アスペクト・ヘリオス</If><Else/>アスペクト・ヘリオス</If>の効果量：</span>回復量の125％分\n<span style=\"color: #00cc22;\">効果時間：</span>30秒<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),100))>\n<span style=\"color: #00cc22;\">追加効果：</span>自身に<span style=\"color: #ff7b1a;\">「サンサイン実行可」</span>を付与する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒<Else/> </If><Else/> </If>"
+  },
+  {
+    "RowId": 16560,
+    "Description": "対象に睡眠を付与する。\u3000<span style=\"color: #00cc22;\">効果時間：</span>30秒\n実行後にオートアタックを停止する。"
+  },
+  {
+    "RowId": 16561,
+    "Description": ""
+  },
+  {
+    "RowId": 16562,
+    "Description": ""
+  },
+  {
+    "RowId": 16563,
+    "Description": ""
+  },
+  {
+    "RowId": 16564,
+    "Description": ""
+  },
+  {
+    "RowId": 16565,
+    "Description": ""
+  },
+  {
+    "RowId": 16566,
+    "Description": ""
+  },
+  {
+    "RowId": 16567,
+    "Description": ""
+  },
+  {
+    "RowId": 16568,
+    "Description": ""
+  },
+  {
+    "RowId": 16569,
+    "Description": ""
+  },
+  {
+    "RowId": 16570,
+    "Description": ""
+  },
+  {
+    "RowId": 16571,
+    "Description": ""
+  },
+  {
+    "RowId": 16572,
+    "Description": ""
+  },
+  {
+    "RowId": 16573,
+    "Description": ""
+  },
+  {
+    "RowId": 16574,
+    "Description": "対象に火属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>430"
+  },
+  {
+    "RowId": 16575,
+    "Description": "対象に氷属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>240\n<span style=\"color: #00cc22;\">追加効果：</span>自身のＭＰを回復する"
+  },
+  {
+    "RowId": 16576,
+    "Description": "対象に雷属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>200\n<span style=\"color: #00cc22;\">追加効果：</span>対象に雷属性の継続ダメージを付与する\n<span style=\"color: #00cc22;\">威力：</span>40\u3000<span style=\"color: #00cc22;\">効果時間：</span>24秒"
+  },
+  {
+    "RowId": 16577,
+    "Description": "対象とその周囲の敵に火属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>460"
+  },
+  {
+    "RowId": 16578,
+    "Description": "指定した地面の周囲に無属性の魔法攻撃。\u3000威力：1500"
+  },
+  {
+    "RowId": 16579,
+    "Description": ""
+  },
+  {
+    "RowId": 16580,
+    "Description": ""
+  },
+  {
+    "RowId": 16581,
+    "Description": ""
+  },
+  {
+    "RowId": 16582,
+    "Description": ""
+  },
+  {
+    "RowId": 16583,
+    "Description": ""
+  },
+  {
+    "RowId": 16584,
+    "Description": ""
+  },
+  {
+    "RowId": 16585,
+    "Description": ""
+  },
+  {
+    "RowId": 16586,
+    "Description": ""
+  },
+  {
+    "RowId": 16587,
+    "Description": ""
+  },
+  {
+    "RowId": 16588,
+    "Description": ""
+  },
+  {
+    "RowId": 16589,
+    "Description": ""
+  },
+  {
+    "RowId": 16590,
+    "Description": ""
+  },
+  {
+    "RowId": 16591,
+    "Description": ""
+  },
+  {
+    "RowId": 16592,
+    "Description": ""
+  },
+  {
+    "RowId": 16593,
+    "Description": ""
+  },
+  {
+    "RowId": 16594,
+    "Description": ""
+  },
+  {
+    "RowId": 16595,
+    "Description": ""
+  },
+  {
+    "RowId": 16596,
+    "Description": ""
+  },
+  {
+    "RowId": 16597,
+    "Description": ""
+  },
+  {
+    "RowId": 16598,
+    "Description": ""
+  },
+  {
+    "RowId": 16599,
+    "Description": ""
+  },
+  {
+    "RowId": 16600,
+    "Description": ""
+  },
+  {
+    "RowId": 16601,
+    "Description": ""
+  },
+  {
+    "RowId": 16602,
+    "Description": ""
+  },
+  {
+    "RowId": 16603,
+    "Description": ""
+  },
+  {
+    "RowId": 16604,
+    "Description": ""
+  },
+  {
+    "RowId": 16605,
+    "Description": ""
+  },
+  {
+    "RowId": 16606,
+    "Description": ""
+  },
+  {
+    "RowId": 16607,
+    "Description": ""
+  },
+  {
+    "RowId": 16608,
+    "Description": ""
+  },
+  {
+    "RowId": 16609,
+    "Description": ""
+  },
+  {
+    "RowId": 16610,
+    "Description": ""
+  },
+  {
+    "RowId": 16611,
+    "Description": ""
+  },
+  {
+    "RowId": 16612,
+    "Description": ""
+  },
+  {
+    "RowId": 16613,
+    "Description": ""
+  },
+  {
+    "RowId": 16614,
+    "Description": ""
+  },
+  {
+    "RowId": 16615,
+    "Description": ""
+  },
+  {
+    "RowId": 16616,
+    "Description": ""
+  },
+  {
+    "RowId": 16617,
+    "Description": ""
+  },
+  {
+    "RowId": 16618,
+    "Description": ""
+  },
+  {
+    "RowId": 16619,
+    "Description": ""
+  },
+  {
+    "RowId": 16620,
+    "Description": ""
+  },
+  {
+    "RowId": 16621,
+    "Description": ""
+  },
+  {
+    "RowId": 16622,
+    "Description": ""
+  },
+  {
+    "RowId": 16623,
+    "Description": ""
+  },
+  {
+    "RowId": 16624,
+    "Description": ""
+  },
+  {
+    "RowId": 16625,
+    "Description": ""
+  },
+  {
+    "RowId": 16626,
+    "Description": ""
+  },
+  {
+    "RowId": 16627,
+    "Description": ""
+  },
+  {
+    "RowId": 16628,
+    "Description": ""
+  },
+  {
+    "RowId": 16629,
+    "Description": ""
+  },
+  {
+    "RowId": 16630,
+    "Description": ""
+  },
+  {
+    "RowId": 16631,
+    "Description": ""
+  },
+  {
+    "RowId": 16632,
+    "Description": ""
+  },
+  {
+    "RowId": 16633,
+    "Description": ""
+  },
+  {
+    "RowId": 16634,
+    "Description": ""
+  },
+  {
+    "RowId": 16635,
+    "Description": ""
+  },
+  {
+    "RowId": 16636,
+    "Description": ""
+  },
+  {
+    "RowId": 16637,
+    "Description": ""
+  },
+  {
+    "RowId": 16638,
+    "Description": ""
+  },
+  {
+    "RowId": 16639,
+    "Description": ""
+  },
+  {
+    "RowId": 16640,
+    "Description": ""
+  },
+  {
+    "RowId": 16641,
+    "Description": ""
+  },
+  {
+    "RowId": 16642,
+    "Description": ""
+  },
+  {
+    "RowId": 16643,
+    "Description": ""
+  },
+  {
+    "RowId": 16644,
+    "Description": ""
+  },
+  {
+    "RowId": 16645,
+    "Description": ""
+  },
+  {
+    "RowId": 16646,
+    "Description": ""
+  },
+  {
+    "RowId": 16647,
+    "Description": ""
+  },
+  {
+    "RowId": 16648,
+    "Description": ""
+  },
+  {
+    "RowId": 16649,
+    "Description": ""
+  },
+  {
+    "RowId": 16650,
+    "Description": ""
+  },
+  {
+    "RowId": 16651,
+    "Description": ""
+  },
+  {
+    "RowId": 16652,
+    "Description": ""
+  },
+  {
+    "RowId": 16653,
+    "Description": ""
+  },
+  {
+    "RowId": 16654,
+    "Description": ""
+  },
+  {
+    "RowId": 16655,
+    "Description": ""
+  },
+  {
+    "RowId": 16656,
+    "Description": ""
+  },
+  {
+    "RowId": 16657,
+    "Description": ""
+  },
+  {
+    "RowId": 16658,
+    "Description": ""
+  },
+  {
+    "RowId": 16659,
+    "Description": ""
+  },
+  {
+    "RowId": 16660,
+    "Description": ""
+  },
+  {
+    "RowId": 16661,
+    "Description": ""
+  },
+  {
+    "RowId": 16662,
+    "Description": ""
+  },
+  {
+    "RowId": 16663,
+    "Description": ""
+  },
+  {
+    "RowId": 16664,
+    "Description": ""
+  },
+  {
+    "RowId": 16665,
+    "Description": ""
+  },
+  {
+    "RowId": 16666,
+    "Description": ""
+  },
+  {
+    "RowId": 16667,
+    "Description": ""
+  },
+  {
+    "RowId": 16668,
+    "Description": ""
+  },
+  {
+    "RowId": 16669,
+    "Description": ""
+  },
+  {
+    "RowId": 16670,
+    "Description": ""
+  },
+  {
+    "RowId": 16671,
+    "Description": ""
+  },
+  {
+    "RowId": 16672,
+    "Description": ""
+  },
+  {
+    "RowId": 16673,
+    "Description": ""
+  },
+  {
+    "RowId": 16674,
+    "Description": ""
+  },
+  {
+    "RowId": 16675,
+    "Description": ""
+  },
+  {
+    "RowId": 16676,
+    "Description": ""
+  },
+  {
+    "RowId": 16677,
+    "Description": ""
+  },
+  {
+    "RowId": 16678,
+    "Description": ""
+  },
+  {
+    "RowId": 16679,
+    "Description": ""
+  },
+  {
+    "RowId": 16680,
+    "Description": ""
+  },
+  {
+    "RowId": 16681,
+    "Description": ""
+  },
+  {
+    "RowId": 16682,
+    "Description": ""
+  },
+  {
+    "RowId": 16683,
+    "Description": ""
+  },
+  {
+    "RowId": 16684,
+    "Description": ""
+  },
+  {
+    "RowId": 16685,
+    "Description": ""
+  },
+  {
+    "RowId": 16686,
+    "Description": ""
+  },
+  {
+    "RowId": 16687,
+    "Description": ""
+  },
+  {
+    "RowId": 16688,
+    "Description": ""
+  },
+  {
+    "RowId": 16689,
+    "Description": ""
+  },
+  {
+    "RowId": 16690,
+    "Description": ""
+  },
+  {
+    "RowId": 16691,
+    "Description": ""
+  },
+  {
+    "RowId": 16692,
+    "Description": ""
+  },
+  {
+    "RowId": 16693,
+    "Description": ""
+  },
+  {
+    "RowId": 16694,
+    "Description": ""
+  },
+  {
+    "RowId": 16695,
+    "Description": ""
+  },
+  {
+    "RowId": 16696,
+    "Description": ""
+  },
+  {
+    "RowId": 16697,
+    "Description": ""
+  },
+  {
+    "RowId": 16698,
+    "Description": ""
+  },
+  {
+    "RowId": 16699,
+    "Description": ""
+  },
+  {
+    "RowId": 16700,
+    "Description": ""
+  },
+  {
+    "RowId": 16701,
+    "Description": ""
+  },
+  {
+    "RowId": 16702,
+    "Description": ""
+  },
+  {
+    "RowId": 16703,
+    "Description": ""
+  },
+  {
+    "RowId": 16704,
+    "Description": ""
+  },
+  {
+    "RowId": 16705,
+    "Description": ""
+  },
+  {
+    "RowId": 16706,
+    "Description": ""
+  },
+  {
+    "RowId": 16707,
+    "Description": ""
+  },
+  {
+    "RowId": 16708,
+    "Description": ""
+  },
+  {
+    "RowId": 16709,
+    "Description": ""
+  },
+  {
+    "RowId": 16710,
+    "Description": ""
+  },
+  {
+    "RowId": 16711,
+    "Description": ""
+  },
+  {
+    "RowId": 16712,
+    "Description": ""
+  },
+  {
+    "RowId": 16713,
+    "Description": ""
+  },
+  {
+    "RowId": 16714,
+    "Description": ""
+  },
+  {
+    "RowId": 16715,
+    "Description": ""
+  },
+  {
+    "RowId": 16716,
+    "Description": ""
+  },
+  {
+    "RowId": 16717,
+    "Description": ""
+  },
+  {
+    "RowId": 16718,
+    "Description": ""
+  },
+  {
+    "RowId": 16719,
+    "Description": ""
+  },
+  {
+    "RowId": 16720,
+    "Description": ""
+  },
+  {
+    "RowId": 16721,
+    "Description": ""
+  },
+  {
+    "RowId": 16722,
+    "Description": ""
+  },
+  {
+    "RowId": 16723,
+    "Description": ""
+  },
+  {
+    "RowId": 16724,
+    "Description": ""
+  },
+  {
+    "RowId": 16725,
+    "Description": ""
+  },
+  {
+    "RowId": 16726,
+    "Description": ""
+  },
+  {
+    "RowId": 16727,
+    "Description": ""
+  },
+  {
+    "RowId": 16728,
+    "Description": ""
+  },
+  {
+    "RowId": 16729,
+    "Description": ""
+  },
+  {
+    "RowId": 16730,
+    "Description": ""
+  },
+  {
+    "RowId": 16731,
+    "Description": ""
+  },
+  {
+    "RowId": 16732,
+    "Description": ""
+  },
+  {
+    "RowId": 16733,
+    "Description": ""
+  },
+  {
+    "RowId": 16734,
+    "Description": ""
+  },
+  {
+    "RowId": 16735,
+    "Description": ""
+  },
+  {
+    "RowId": 16736,
+    "Description": ""
+  },
+  {
+    "RowId": 16737,
+    "Description": ""
+  },
+  {
+    "RowId": 16738,
+    "Description": ""
+  },
+  {
+    "RowId": 16739,
+    "Description": ""
+  },
+  {
+    "RowId": 16740,
+    "Description": ""
+  },
+  {
+    "RowId": 16741,
+    "Description": ""
+  },
+  {
+    "RowId": 16742,
+    "Description": ""
+  },
+  {
+    "RowId": 16743,
+    "Description": ""
+  },
+  {
+    "RowId": 16744,
+    "Description": ""
+  },
+  {
+    "RowId": 16745,
+    "Description": ""
+  },
+  {
+    "RowId": 16746,
+    "Description": ""
+  },
+  {
+    "RowId": 16747,
+    "Description": ""
+  },
+  {
+    "RowId": 16748,
+    "Description": ""
+  },
+  {
+    "RowId": 16749,
+    "Description": ""
+  },
+  {
+    "RowId": 16750,
+    "Description": ""
+  },
+  {
+    "RowId": 16751,
+    "Description": ""
+  },
+  {
+    "RowId": 16752,
+    "Description": ""
+  },
+  {
+    "RowId": 16753,
+    "Description": ""
+  },
+  {
+    "RowId": 16754,
+    "Description": ""
+  },
+  {
+    "RowId": 16755,
+    "Description": ""
+  },
+  {
+    "RowId": 16756,
+    "Description": ""
+  },
+  {
+    "RowId": 16757,
+    "Description": ""
+  },
+  {
+    "RowId": 16758,
+    "Description": ""
+  },
+  {
+    "RowId": 16759,
+    "Description": ""
+  },
+  {
+    "RowId": 16760,
+    "Description": ""
+  },
+  {
+    "RowId": 16761,
+    "Description": ""
+  },
+  {
+    "RowId": 16762,
+    "Description": ""
+  },
+  {
+    "RowId": 16763,
+    "Description": ""
+  },
+  {
+    "RowId": 16764,
+    "Description": ""
+  },
+  {
+    "RowId": 16765,
+    "Description": ""
+  },
+  {
+    "RowId": 16766,
+    "Description": "敵に付与した<span style=\"color: #ff7b1a;\">「ワイルドファイア」</span>の効果を終了させてダメージを与える。\n<span style=\"color: #00cc22;\">発動条件：</span><span style=\"color: #ff7b1a;\">「ワイルドファイア」</span>効果中\n\n<span style=\"color: #ffff66;\">※このアクションはホットバーに登録することはできない。\n\u3000発動条件を満たすとワイルドファイアがデトネーターに変化する。</span>"
+  },
+  {
+    "RowId": 16767,
+    "Description": ""
+  },
+  {
+    "RowId": 16768,
+    "Description": ""
+  },
+  {
+    "RowId": 16769,
+    "Description": ""
+  },
+  {
+    "RowId": 16770,
+    "Description": ""
+  },
+  {
+    "RowId": 16771,
+    "Description": ""
+  },
+  {
+    "RowId": 16772,
+    "Description": ""
+  },
+  {
+    "RowId": 16773,
+    "Description": ""
+  },
+  {
+    "RowId": 16774,
+    "Description": ""
+  },
+  {
+    "RowId": 16775,
+    "Description": ""
+  },
+  {
+    "RowId": 16776,
+    "Description": ""
+  },
+  {
+    "RowId": 16777,
+    "Description": ""
+  },
+  {
+    "RowId": 16778,
+    "Description": ""
+  },
+  {
+    "RowId": 16779,
+    "Description": ""
+  },
+  {
+    "RowId": 16780,
+    "Description": ""
+  },
+  {
+    "RowId": 16781,
+    "Description": ""
+  },
+  {
+    "RowId": 16782,
+    "Description": ""
+  },
+  {
+    "RowId": 16783,
+    "Description": ""
+  },
+  {
+    "RowId": 16784,
+    "Description": ""
+  },
+  {
+    "RowId": 16785,
+    "Description": ""
+  },
+  {
+    "RowId": 16786,
+    "Description": ""
+  },
+  {
+    "RowId": 16787,
+    "Description": ""
+  },
+  {
+    "RowId": 16788,
+    "Description": ""
+  },
+  {
+    "RowId": 16789,
+    "Description": ""
+  },
+  {
+    "RowId": 16790,
+    "Description": ""
+  },
+  {
+    "RowId": 16791,
+    "Description": "召喚しているカーバンクル・トパーズに<span style=\"color: #ff7b1a;\">「トパーズの煌き」</span>を実行させる。\n\nこのペットを召喚している召喚士に一定量のダメージを防ぐバリアを張る。\nこのバリアは対象の最大ＨＰの30％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつカーバンクル・トパーズが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16792,
+    "Description": "召喚しているカーバンクル・トパーズに<span style=\"color: #ff7b1a;\">「トパーズの輝き」</span>を実行させる。\n\n自身の周囲の敵に土属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>200\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつカーバンクル・トパーズが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16793,
+    "Description": "召喚しているカーバンクル・エメラルドに<span style=\"color: #ff7b1a;\">「ダウンバースト」</span>を実行させる。\n\n対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>100\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつカーバンクル・エメラルドが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16794,
+    "Description": "召喚しているカーバンクル・エメラルドに<span style=\"color: #ff7b1a;\">「エメラルドの煌き」</span>を実行させる。\n\n対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>30\n<span style=\"color: #00cc22;\">追加効果：</span>対象を中心にダメージエリアを生成する。\n<span style=\"color: #00cc22;\">威力：</span>30\u3000<span style=\"color: #00cc22;\">効果時間：</span>9秒\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつカーバンクル・エメラルドが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16795,
+    "Description": "召喚しているタイタン・エギに<span style=\"color: #ff7b1a;\">「大地の鎧」</span>を実行させる。\n\nこのペットを召喚している召喚士に一定量のダメージを防ぐバリアを張る。\nこのバリアは対象の最大ＨＰの30％分のダメージを軽減する。\n<span style=\"color: #00cc22;\">効果時間：</span>30秒\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつタイタン・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16796,
+    "Description": "召喚しているタイタン・エギに<span style=\"color: #ff7b1a;\">「マウンテンバスター」</span>を実行させる。\n\n自身の周囲の敵に土属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>250\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつタイタン・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16797,
+    "Description": "召喚しているガルーダ・エギに<span style=\"color: #ff7b1a;\">「エリアルスラッシュ」</span>を実行させる。\n\n対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>150\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつガルーダ・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16798,
+    "Description": "召喚しているガルーダ・エギに<span style=\"color: #ff7b1a;\">「スリップストリーム」</span>を実行させる。\n\n対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>50\n<span style=\"color: #00cc22;\">追加効果：</span>対象を中心にダメージエリアを生成する。\n<span style=\"color: #00cc22;\">威力：</span>50\u3000<span style=\"color: #00cc22;\">効果時間：</span>9秒\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつガルーダ・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16799,
+    "Description": "召喚しているイフリート・エギに<span style=\"color: #ff7b1a;\">「クリムゾンサイクロン」</span>を実行させる。\n\n対象に火属性魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>250\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつイフリート・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16800,
+    "Description": "召喚しているイフリート・エギに<span style=\"color: #ff7b1a;\">「フレイミングクラッシュ」</span>を実行させる。\n\n自身の周囲の敵に火属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>250\n2体目以降の対象への威力は50％減少する。\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつイフリート・エギが存在する\nこの魔法は固有のリキャストタイマーを持つ。"
+  },
+  {
+    "RowId": 16801,
+    "Description": "召喚しているタイタン・エギに<span style=\"color: #ff7b1a;\">「大地の怒り」</span>を実行させる。\n\n自身の周囲の敵に土属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>300\n<span style=\"color: #00cc22;\">追加効果：</span>ダメージエリアを生成する。\n<span style=\"color: #00cc22;\">威力：</span>20\u3000<span style=\"color: #00cc22;\">効果時間：</span>15秒\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつタイタン・エギが存在する"
+  },
+  {
+    "RowId": 16802,
+    "Description": "召喚しているガルーダ・エギに<span style=\"color: #ff7b1a;\">「エリアルブラスト」</span>を実行させる。\n\n対象とその周囲の敵に風属性範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>350\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつガルーダ・エギが存在する"
+  },
+  {
+    "RowId": 16803,
+    "Description": "召喚しているイフリート・エギに<span style=\"color: #ff7b1a;\">「地獄の火炎」</span>を実行させる。\n\n対象に向かって火属性前方扇範囲魔法攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>300\n<span style=\"color: #00cc22;\">追加効果：</span>対象に火属性の継続ダメージを付与する\n<span style=\"color: #00cc22;\">威力：</span>20\u3000<span style=\"color: #00cc22;\">効果時間：</span>15秒\n<span style=\"color: #00cc22;\">発動条件：</span>自身が戦闘状態かつイフリート・エギが存在する"
+  },
+  {
+    "RowId": 16804,
+    "Description": "対象に飛び掛かりつつ物理攻撃。\u3000<span style=\"color: #00cc22;\">威力：</span>200\n<span style=\"color: #00cc22;\">最大チャージ数：</span>2\nバインド中は実行不可。"
+  },
+  {
+    "RowId": 16805,
+    "Description": ""
+  },
+  {
+    "RowId": 16806,
+    "Description": ""
+  },
+  {
+    "RowId": 16807,
+    "Description": ""
+  },
+  {
+    "RowId": 16808,
+    "Description": ""
+  },
+  {
+    "RowId": 16809,
+    "Description": ""
+  },
+  {
+    "RowId": 16810,
+    "Description": ""
+  },
+  {
+    "RowId": 16811,
+    "Description": ""
+  },
+  {
+    "RowId": 16812,
+    "Description": ""
+  },
+  {
+    "RowId": 16813,
+    "Description": ""
+  },
+  {
+    "RowId": 16814,
+    "Description": ""
+  },
+  {
+    "RowId": 16815,
+    "Description": ""
+  },
+  {
+    "RowId": 16816,
+    "Description": ""
+  },
+  {
+    "RowId": 16817,
+    "Description": ""
+  },
+  {
+    "RowId": 16818,
+    "Description": ""
+  },
+  {
+    "RowId": 16819,
+    "Description": ""
+  },
+  {
+    "RowId": 16820,
+    "Description": ""
+  },
+  {
+    "RowId": 16821,
+    "Description": ""
+  },
+  {
+    "RowId": 16822,
+    "Description": ""
+  },
+  {
+    "RowId": 16823,
+    "Description": ""
+  },
+  {
+    "RowId": 16824,
+    "Description": ""
+  },
+  {
+    "RowId": 16825,
+    "Description": ""
+  },
+  {
+    "RowId": 16826,
+    "Description": ""
+  },
+  {
+    "RowId": 16827,
+    "Description": ""
+  },
+  {
+    "RowId": 16828,
+    "Description": ""
+  },
+  {
+    "RowId": 16829,
+    "Description": ""
+  },
+  {
+    "RowId": 16830,
+    "Description": ""
+  },
+  {
+    "RowId": 16831,
+    "Description": ""
+  },
+  {
+    "RowId": 16832,
+    "Description": ""
+  },
+  {
+    "RowId": 16833,
+    "Description": ""
+  },
+  {
+    "RowId": 16834,
+    "Description": ""
+  },
+  {
+    "RowId": 16835,
+    "Description": ""
+  },
+  {
+    "RowId": 16836,
+    "Description": ""
+  },
+  {
+    "RowId": 16837,
+    "Description": ""
+  },
+  {
+    "RowId": 16838,
+    "Description": ""
+  },
+  {
+    "RowId": 16839,
+    "Description": ""
+  },
+  {
+    "RowId": 16840,
+    "Description": ""
+  },
+  {
+    "RowId": 16841,
+    "Description": ""
+  },
+  {
+    "RowId": 16842,
+    "Description": ""
+  },
+  {
+    "RowId": 16843,
+    "Description": ""
+  },
+  {
+    "RowId": 16844,
+    "Description": ""
+  },
+  {
+    "RowId": 16845,
+    "Description": ""
+  },
+  {
+    "RowId": 16846,
+    "Description": ""
+  },
+  {
+    "RowId": 16847,
+    "Description": ""
+  },
+  {
+    "RowId": 16848,
+    "Description": ""
+  },
+  {
+    "RowId": 16849,
+    "Description": ""
+  },
+  {
+    "RowId": 16850,
+    "Description": ""
+  },
+  {
+    "RowId": 16851,
+    "Description": ""
+  },
+  {
+    "RowId": 16852,
+    "Description": ""
+  },
+  {
+    "RowId": 16853,
+    "Description": ""
+  },
+  {
+    "RowId": 16854,
+    "Description": ""
+  },
+  {
+    "RowId": 16855,
+    "Description": ""
+  },
+  {
+    "RowId": 16856,
+    "Description": ""
+  },
+  {
+    "RowId": 16857,
+    "Description": ""
+  },
+  {
+    "RowId": 16858,
+    "Description": ""
+  },
+  {
+    "RowId": 16859,
+    "Description": ""
+  },
+  {
+    "RowId": 16860,
+    "Description": ""
+  },
+  {
+    "RowId": 16861,
+    "Description": ""
+  },
+  {
+    "RowId": 16862,
+    "Description": ""
+  },
+  {
+    "RowId": 16863,
+    "Description": ""
+  },
+  {
+    "RowId": 16864,
+    "Description": ""
+  },
+  {
+    "RowId": 16865,
+    "Description": ""
+  },
+  {
+    "RowId": 16866,
+    "Description": ""
+  },
+  {
+    "RowId": 16867,
+    "Description": ""
+  },
+  {
+    "RowId": 16868,
+    "Description": ""
+  },
+  {
+    "RowId": 16869,
+    "Description": ""
+  },
+  {
+    "RowId": 16870,
+    "Description": ""
+  },
+  {
+    "RowId": 16871,
+    "Description": ""
+  },
+  {
+    "RowId": 16872,
+    "Description": ""
+  },
+  {
+    "RowId": 16873,
+    "Description": ""
+  },
+  {
+    "RowId": 16874,
+    "Description": ""
+  },
+  {
+    "RowId": 16875,
+    "Description": ""
+  },
+  {
+    "RowId": 16876,
+    "Description": ""
+  },
+  {
+    "RowId": 16877,
+    "Description": ""
+  },
+  {
+    "RowId": 16878,
+    "Description": ""
+  },
+  {
+    "RowId": 16879,
+    "Description": ""
+  },
+  {
+    "RowId": 16880,
+    "Description": ""
+  },
+  {
+    "RowId": 16881,
+    "Description": ""
+  },
+  {
+    "RowId": 16882,
+    "Description": ""
+  },
+  {
+    "RowId": 16883,
+    "Description": ""
+  },
+  {
+    "RowId": 16884,
+    "Description": ""
+  },
+  {
+    "RowId": 16885,
+    "Description": ""
+  },
+  {
+    "RowId": 16886,
+    "Description": ""
+  },
+  {
+    "RowId": 16887,
+    "Description": ""
+  },
+  {
+    "RowId": 16888,
+    "Description": ""
+  },
+  {
+    "RowId": 16889,
+    "Description": "一定時間、自身と周囲のパーティメンバーの被ダメージを<If(Equal(PlayerParameter(68),31))><If(GreaterThanOrEqualTo(PlayerParameter(72),98))>15<Else/>10</If><Else/>10</If>％軽減させる。\u3000<span style=\"color: #00cc22;\">効果時間：</span>15秒\n吟遊詩人のトルバドゥール、踊り子の守りのサンバとは同時に付与されない。"
+  },
+  {
+    "RowId": 16890,
+    "Description": ""
+  },
+  {
+    "RowId": 16891,
+    "Description": ""
+  },
+  {
+    "RowId": 16892,
+    "Description": ""
+  },
+  {
+    "RowId": 16893,
+    "Description": ""
+  },
+  {
+    "RowId": 16894,
+    "Description": ""
+  },
+  {
+    "RowId": 16895,
+    "Description": ""
+  },
+  {
+    "RowId": 16896,
+    "Description": ""
+  },
+  {
+    "RowId": 16897,
+    "Description": ""
+  },
+  {
+    "RowId": 16898,
+    "Description": ""
+  },
+  {
+    "RowId": 16899,
+    "Description": ""
+  },
+  {
+    "RowId": 16900,
+    "Description": ""
+  },
+  {
+    "RowId": 16901,
+    "Description": ""
+  },
+  {
+    "RowId": 16902,
+    "Description": ""
+  },
+  {
+    "RowId": 16903,
+    "Description": ""
+  },
+  {
+    "RowId": 16904,
+    "Description": ""
+  },
+  {
+    "RowId": 16905,
+    "Description": ""
+  },
+  {
+    "RowId": 16906,
+    "Description": ""
+  },
+  {
+    "RowId": 16907,
+    "Description": ""
+  },
+  {
+    "RowId": 16908,
+    "Description": ""
+  },
+  {
+    "RowId": 16909,
+    "Description": ""
+  },
+  {
+    "RowId": 16910,
+    "Description": ""
+  },
+  {
+    "RowId": 16911,
+    "Description": ""
+  },
+  {
+    "RowId": 16912,
+    "Description": ""
+  },
+  {
+    "RowId": 16913,
+    "Description": ""
+  },
+  {
+    "RowId": 16914,
+    "Description": ""
+  },
+  {
+    "RowId": 16915,
+    "Description": ""
+  },
+  {
+    "RowId": 16916,
+    "Description": ""
+  },
+  {
+    "RowId": 16917,
+    "Description": ""
+  },
+  {
+    "RowId": 16918,
+    "Description": ""
+  },
+  {
+    "RowId": 16919,
+    "Description": ""
+  },
+  {
+    "RowId": 16920,
+    "Description": ""
+  },
+  {
+    "RowId": 16921,
+    "Description": ""
+  },
+  {
+    "RowId": 16922,
+    "Description": ""
+  },
+  {
+    "RowId": 16923,
+    "Description": ""
+  },
+  {
+    "RowId": 16924,
+    "Description": ""
+  },
+  {
+    "RowId": 16925,
+    "Description": ""
+  },
+  {
+    "RowId": 16926,
+    "Description": ""
+  },
+  {
+    "RowId": 16927,
+    "Description": ""
+  },
+  {
+    "RowId": 16928,
+    "Description": ""
+  },
+  {
+    "RowId": 16929,
+    "Description": ""
+  },
+  {
+    "RowId": 16930,
+    "Description": ""
+  },
+  {
+    "RowId": 16931,
+    "Description": ""
+  },
+  {
+    "RowId": 16932,
+    "Description": ""
+  },
+  {
+    "RowId": 16933,
+    "Description": ""
+  },
+  {
+    "RowId": 16934,
+    "Description": ""
+  },
+  {
+    "RowId": 16935,
+    "Description": ""
+  },
+  {
+    "RowId": 16936,
+    "Description": ""
+  },
+  {
+    "RowId": 16937,
+    "Description": ""
+  },
+  {
+    "RowId": 16938,
+    "Description": ""
+  },
+  {
+    "RowId": 16939,
+    "Description": ""
+  },
+  {
+    "RowId": 16940,
+    "Description": ""
+  },
+  {
+    "RowId": 16941,
+    "Description": ""
+  },
+  {
+    "RowId": 16942,
+    "Description": ""
+  },
+  {
+    "RowId": 16943,
+    "Description": ""
+  },
+  {
+    "RowId": 16944,
+    "Description": ""
+  },
+  {
+    "RowId": 16945,
+    "Description": ""
+  },
+  {
+    "RowId": 16946,
+    "Description": ""
+  },
+  {
+    "RowId": 16947,
+    "Description": ""
+  },
+  {
+    "RowId": 16948,
+    "Description": ""
+  },
+  {
+    "RowId": 16949,
+    "Description": ""
+  },
+  {
+    "RowId": 16950,
+    "Description": ""
+  },
+  {
+    "RowId": 16951,
+    "Description": ""
+  },
+  {
+    "RowId": 16952,
+    "Description": ""
+  },
+  {
+    "RowId": 16953,
+    "Description": ""
+  },
+  {
+    "RowId": 16954,
+    "Description": ""
+  },
+  {
+    "RowId": 16955,
+    "Description": ""
+  },
+  {
+    "RowId": 16956,
+    "Description": ""
+  },
+  {
+    "RowId": 16957,
+    "Description": ""
+  },
+  {
+    "RowId": 16958,
+    "Description": ""
+  },
+  {
+    "RowId": 16959,
+    "Description": ""
+  },
+  {
+    "RowId": 16960,
+    "Description": ""
+  },
+  {
+    "RowId": 16961,
+    "Description": ""
+  },
+  {
+    "RowId": 16962,
+    "Description": ""
+  },
+  {
+    "RowId": 16963,
+    "Description": ""
+  },
+  {
+    "RowId": 16964,
+    "Description": ""
+  },
+  {
+    "RowId": 16965,
+    "Description": ""
+  },
+  {
+    "RowId": 16966,
+    "Description": ""
+  },
+  {
+    "RowId": 16967,
+    "Description": ""
+  },
+  {
+    "RowId": 16968,
+    "Description": ""
+  },
+  {
+    "RowId": 16969,
+    "Description": ""
+  },
+  {
+    "RowId": 16970,
+    "Description": ""
+  },
+  {
+    "RowId": 16971,
+    "Description": ""
+  },
+  {
+    "RowId": 16972,
+    "Description": ""
+  },
+  {
+    "RowId": 16973,
+    "Description": ""
+  },
+  {
+    "RowId": 16974,
+    "Description": ""
+  },
+  {
+    "RowId": 16975,
+    "Description": ""
+  },
+  {
+    "RowId": 16976,
+    "Description": ""
+  },
+  {
+    "RowId": 16977,
+    "Description": ""
+  },
+  {
+    "RowId": 16978,
+    "Description": ""
+  },
+  {
+    "RowId": 16979,
+    "Description": ""
+  },
+  {
+    "RowId": 16980,
+    "Description": ""
+  },
+  {
+    "RowId": 16981,
+    "Description": ""
+  },
+  {
+    "RowId": 16982,
+    "Description": ""
+  },
+  {
+    "RowId": 16983,
+    "Description": ""
+  },
+  {
+    "RowId": 16984,
+    "Description": ""
+  },
+  {
+    "RowId": 16985,
+    "Description": ""
+  },
+  {
+    "RowId": 16986,
+    "Description": ""
+  },
+  {
+    "RowId": 16987,
+    "Description": ""
+  },
+  {
+    "RowId": 16988,
+    "Description": ""
+  },
+  {
+    "RowId": 16989,
+    "Description": ""
+  },
+  {
+    "RowId": 16990,
+    "Description": ""
+  },
+  {
+    "RowId": 16991,
+    "Description": ""
+  },
+  {
+    "RowId": 16992,
+    "Description": ""
+  },
+  {
+    "RowId": 16993,
+    "Description": ""
+  },
+  {
+    "RowId": 16994,
+    "Description": ""
+  },
+  {
+    "RowId": 16995,
+    "Description": ""
+  },
+  {
+    "RowId": 16996,
+    "Description": ""
+  },
+  {
+    "RowId": 16997,
+    "Description": ""
+  },
+  {
+    "RowId": 16998,
+    "Description": ""
+  },
+  {
+    "RowId": 16999,
+    "Description": ""
+  }
+]

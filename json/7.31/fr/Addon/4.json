@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 1528,
+    "Text": "En gondole 2"
+  },
+  {
+    "RowId": 1529,
+    "Text": "En gondole 3"
+  },
+  {
+    "RowId": 1530,
+    "Text": "Couleur des tentures"
+  },
+  {
+    "RowId": 1532,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1533,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1534,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1535,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1536,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1537,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1538,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1539,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1540,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1541,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1542,
+    "Text": "Vous pouvez choisir le style de cérémonie parmi les trois suivants.\n\nLe Baiser de Menphina\nPrésidée par un Mog, la cérémonie se déroule dans une atmosphère fantastique et se termine par un baiser entre les deux conjoints.\n\nLa Main de Nymeia\nUne prêtresse dirige le sacrement dans une ambiance paisible, que les partenaires nouvellement unis et leurs invités concluent une coupe à la main.\n\nLe Serment d'Azeyma\nConduite solennellement par un prêtre, la cérémonie connaît son apothéose lorsque les deux conjoints signent le registre du lien éternel devant leurs convives."
+  },
+  {
+    "RowId": 1543,
+    "Text": "Cette section concerne les décorations de la chapelle.\n<If(LessThan(IntegerParameter(1),2))> <Else/>Il s'agit d'un élément important de l'ambiance de la cérémonie.\n</If>\nLa chapelle baignera dans une lumière naturelle<If(LessThan(IntegerParameter(1),2))>.<Else/>, à moins que vous n'optiez pour l'éclairage romantique.</If>\n<If(GreaterThan(IntegerParameter(1),0))><switch(IntegerParameter(1),Nous déterminerons la couleur du tapis et des fleurs pour vous.,Vous pouvez choisir parmi trois couleurs pour le tapis et les fleurs.,Vous pouvez choisir parmi cinq couleurs pour le tapis et les fleurs.)><Else/> </If>\n<If(GreaterThan(IntegerParameter(1),0))><switch(IntegerParameter(1),Les murs seront nus, sans tentures.,Vous pouvez décorer les murs de tentures, et avez le choix entre trois couleurs différentes.,Vous pouvez décorer les murs de tentures, et avez le choix entre cinq couleurs différentes.)><Else/> </If>"
+  },
+  {
+    "RowId": 1544,
+    "Text": "Ici est déterminée la façon dont les deux partenaires font leur entrée.\n\n<If(LessThan(IntegerParameter(1),2))>Vous marcherez côte à côte, de la porte à l'autel<Else/>Vous pouvez choisir de marcher jusqu'à l'autel depuis la porte ou d'arriver <If(GreaterThan(IntegerParameter(1),2))>dans l'une des gondoles à votre disposition<Else/>en gondole</If>.</If>"
+  },
+  {
+    "RowId": 1545,
+    "Text": "C'est ici que se décide la manière dont les partenaires sortent de la chapelle.\n\n<If(LessThan(IntegerParameter(1),2))>Vous effectuerez une lente procession, le long du tapis, jusqu'à la porte.<Else/>Vous pouvez choisir de marcher côte à côte ou de partir ensemble sur le même chocobo.</If>"
+  },
+  {
+    "RowId": 1546,
+    "Text": "Ici, vous pouvez décider de qui tiendra le bouquet.\n\nCette personne sera à gauche de l'autre partenaire lors de la cérémonie."
+  },
+  {
+    "RowId": 1547,
+    "Text": "Cette partie concerne l'ambiance musicale de la cérémonie.\n<If(LessThan(IntegerParameter(1),2))> <Else/>Vous pouvez choisir les morceaux qui seront joués lors de l'attente avant la cérémonie et pendant la petite réception qui la suivra.\n</If>\n<If(LessThan(IntegerParameter(1),2))>Les musiques interprétées seront déterminées par nos soins.<Else/>Une sélection de <Num>IntegerParameter(2)</Num> musique<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> est à votre disposition pour chacun de ces instants.</If>"
+  },
+  {
+    "RowId": 1548,
+    "Text": "Sauvegarder ces paramètres?"
+  },
+  {
+    "RowId": 1549,
+    "Text": "Les changements ne seront pas sauvegardés. Confirmer?"
+  },
+  {
+    "RowId": 1550,
+    "Text": "Date du lien éternel"
+  },
+  {
+    "RowId": 1551,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num>"
+  },
+  {
+    "RowId": 1552,
+    "Text": "Cérémonie du lien éternel"
+  },
+  {
+    "RowId": 1553,
+    "Text": "Date et heure"
+  },
+  {
+    "RowId": 1554,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<If(Equal(t_min,0))> <Else/><Sec>t_min</Sec></If>"
+  },
+  {
+    "RowId": 1555,
+    "Text": "Invitation"
+  },
+  {
+    "RowId": 1556,
+    "Text": "Nombre"
+  },
+  {
+    "RowId": 1557,
+    "Text": "Encore <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1558,
+    "Text": "??.??.????"
+  },
+  {
+    "RowId": 1559,
+    "Text": "??.??.????"
+  },
+  {
+    "RowId": 1560,
+    "Text": "Encore?"
+  },
+  {
+    "RowId": 1561,
+    "Text": "Créer un faire-part?\nIl suffira de le remettre à un autre joueur pour qu'il puisse assister à votre cérémonie du lien éternel."
+  },
+  {
+    "RowId": 1562,
+    "Text": "Aucune"
+  },
+  {
+    "RowId": 1563,
+    "Text": "Blanc"
+  },
+  {
+    "RowId": 1564,
+    "Text": "Rose"
+  },
+  {
+    "RowId": 1565,
+    "Text": "Orange"
+  },
+  {
+    "RowId": 1566,
+    "Text": "Bleu"
+  },
+  {
+    "RowId": 1567,
+    "Text": "Rouge"
+  },
+  {
+    "RowId": 1570,
+    "Text": "world"
+  },
+  {
+    "RowId": 1571,
+    "Text": "monde"
+  },
+  {
+    "RowId": 1572,
+    "Text": "Limsa Lominsa"
+  },
+  {
+    "RowId": 1573,
+    "Text": "limsa"
+  },
+  {
+    "RowId": 1574,
+    "Text": "La Noscea"
+  },
+  {
+    "RowId": 1575,
+    "Text": "noscea"
+  },
+  {
+    "RowId": 1576,
+    "Text": "Gridania"
+  },
+  {
+    "RowId": 1577,
+    "Text": "gridania"
+  },
+  {
+    "RowId": 1578,
+    "Text": "The Black Shroud"
+  },
+  {
+    "RowId": 1579,
+    "Text": "sombrelinceul"
+  },
+  {
+    "RowId": 1580,
+    "Text": "Ul'dah"
+  },
+  {
+    "RowId": 1581,
+    "Text": "uldah"
+  },
+  {
+    "RowId": 1582,
+    "Text": "Thanalan"
+  },
+  {
+    "RowId": 1583,
+    "Text": "thanalan"
+  },
+  {
+    "RowId": 1584,
+    "Text": "Ishgard"
+  },
+  {
+    "RowId": 1585,
+    "Text": "ishgard"
+  },
+  {
+    "RowId": 1586,
+    "Text": "Coerthas"
+  },
+  {
+    "RowId": 1587,
+    "Text": "coerthas"
+  },
+  {
+    "RowId": 1588,
+    "Text": "Mor Dhona"
+  },
+  {
+    "RowId": 1589,
+    "Text": "mordhona"
+  },
+  {
+    "RowId": 1590,
+    "Text": "Abalathia's Spine"
+  },
+  {
+    "RowId": 1591,
+    "Text": "abalathia"
+  },
+  {
+    "RowId": 1592,
+    "Text": "Dravania"
+  },
+  {
+    "RowId": 1593,
+    "Text": "dravania"
+  },
+  {
+    "RowId": 1594,
+    "Text": "Kugane"
+  },
+  {
+    "RowId": 1595,
+    "Text": "kugane"
+  },
+  {
+    "RowId": 1596,
+    "Text": "Gyr Abania"
+  },
+  {
+    "RowId": 1597,
+    "Text": "gyrabania"
+  },
+  {
+    "RowId": 1598,
+    "Text": "Othard"
+  },
+  {
+    "RowId": 1599,
+    "Text": "othard"
+  },
+  {
+    "RowId": 1600,
+    "Text": "The Crystarium"
+  },
+  {
+    "RowId": 1601,
+    "Text": "cristarium"
+  },
+  {
+    "RowId": 1602,
+    "Text": "Eulmore"
+  },
+  {
+    "RowId": 1603,
+    "Text": "eulmore"
+  },
+  {
+    "RowId": 1604,
+    "Text": "Norvrandt"
+  },
+  {
+    "RowId": 1605,
+    "Text": "norvrandt"
+  },
+  {
+    "RowId": 1612,
+    "Text": "Votre anniversaire de lien éternel est enfin arrivé! Adressez-vous à Hawu Bajihri, au Sanctuaire des Douze, dans la Forêt de l'est pour organiser une nouvelle cérémonie."
+  },
+  {
+    "RowId": 1613,
+    "Text": "Ne plus afficher ce message"
+  },
+  {
+    "RowId": 1614,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1615,
+    "Text": "Cérémonie du lien éternel"
+  },
+  {
+    "RowId": 1616,
+    "Text": "Notification d'anniversaire"
+  },
+  {
+    "RowId": 1617,
+    "Text": "FOR/DEX/VIT/INT/ESP"
+  },
+  {
+    "RowId": 1618,
+    "Text": "+<Num>IntegerParameter(1)</Num>%"
+  },
+  {
+    "RowId": 1619,
+    "Text": "Tank"
+  },
+  {
+    "RowId": 1620,
+    "Text": "Soigneur"
+  },
+  {
+    "RowId": 1621,
+    "Text": "Mêlée"
+  },
+  {
+    "RowId": 1622,
+    "Text": "Phys. dist."
+  },
+  {
+    "RowId": 1623,
+    "Text": "Mag. dist."
+  },
+  {
+    "RowId": 1626,
+    "Text": "<Icon>105</Icon><String>StringParameter(1)</String> y"
+  },
+  {
+    "RowId": 1627,
+    "Text": "<Icon>106</Icon><String>StringParameter(1)</String> y"
+  },
+  {
+    "RowId": 1628,
+    "Text": "<Icon>105</Icon>[haut]"
+  },
+  {
+    "RowId": 1629,
+    "Text": "<Icon>106</Icon>[bas]"
+  },
+  {
+    "RowId": 1630,
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
+  },
+  {
+    "RowId": 1631,
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Z: <If(LessThan(IntegerParameter(7),0))>-<Else/> </If><Num>IntegerParameter(5)</Num>\uE03F<If(IntegerParameter(6))><switch(IntegerParameter(6),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
+  },
+  {
+    "RowId": 1632,
+    "Text": "X: <Num>IntegerParameter(1)</Num>\uE03F<If(IntegerParameter(2))><switch(IntegerParameter(2),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If> Y: <Num>IntegerParameter(3)</Num>\uE03F<If(IntegerParameter(4))><switch(IntegerParameter(4),₁,₂,₃,₄,₅,₆,₇,₈,₉)><Else/>₀</If>"
+  },
+  {
+    "RowId": 1635,
+    "Text": "<String>StringParameter(1)</String> (<float(IntegerParameter(2),10,.)>, <float(IntegerParameter(3),10,.)>)"
+  },
+  {
+    "RowId": 1636,
+    "Text": "<String>StringParameter(1)</String> (<float(IntegerParameter(2),10,.)>, <float(IntegerParameter(3),10,.)>, <If(LessThan(IntegerParameter(5),0))>-<Else/> </If><float(IntegerParameter(4),10,.)>)"
+  },
+  {
+    "RowId": 1637,
+    "Text": "<String>StringParameter(1)</String>\n (<float(IntegerParameter(2),10,.)>, <float(IntegerParameter(3),10,.)>)"
+  },
+  {
+    "RowId": 1640,
+    "Text": "<Head>StringParameter(1)</Head>"
+  },
+  {
+    "RowId": 1643,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_hour</Num>:<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 1644,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec><If(GreaterThanOrEqualTo(t_hour,12))>\uE06E<Else/>\uE06D</If>"
+  },
+  {
+    "RowId": 1652,
+    "Text": ", "
+  },
+  {
+    "RowId": 1653,
+    "Text": " ["
+  },
+  {
+    "RowId": 1654,
+    "Text": "]"
+  },
+  {
+    "RowId": 1655,
+    "Text": "Liste des tenues"
+  },
+  {
+    "RowId": 1656,
+    "Text": ""
+  },
+  {
+    "RowId": 1657,
+    "Text": "Inventaire (équipement/consommables)"
+  },
+  {
+    "RowId": 1658,
+    "Text": "Inventaire (extérieur/intérieur/mobilier)"
+  },
+  {
+    "RowId": 1659,
+    "Text": "Recyclage: <If(GreaterThan(IntegerParameter(1),0))>✓ [<Head><sheet(ClassJob,IntegerParameter(1),0)></Head>/<Num>IntegerParameter(2)</Num>,00]<Else/>×</If>"
+  },
+  {
+    "RowId": 1660,
+    "Text": ""
+  },
+  {
+    "RowId": 1661,
+    "Text": "★"
+  },
+  {
+    "RowId": 1662,
+    "Text": "●"
+  },
+  {
+    "RowId": 1663,
+    "Text": "▲"
+  },
+  {
+    "RowId": 1664,
+    "Text": "♦"
+  },
+  {
+    "RowId": 1665,
+    "Text": "♥"
+  },
+  {
+    "RowId": 1666,
+    "Text": "♠"
+  },
+  {
+    "RowId": 1667,
+    "Text": "♣"
+  },
+  {
+    "RowId": 1668,
+    "Text": "Groupe <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1669,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 1670,
+    "Text": "Tout afficher"
+  },
+  {
+    "RowId": 1671,
+    "Text": "Filtrer par groupe"
+  },
+  {
+    "RowId": 1672,
+    "Text": "Changer le nom du groupe"
+  },
+  {
+    "RowId": 1673,
+    "Text": "Chronologique"
+  },
+  {
+    "RowId": 1674,
+    "Text": "Antéchronologique"
+  },
+  {
+    "RowId": 1675,
+    "Text": "Alphabétique"
+  },
+  {
+    "RowId": 1676,
+    "Text": "Numéral"
+  },
+  {
+    "RowId": 1677,
+    "Text": "Changer l'ordre"
+  },
+  {
+    "RowId": 1678,
+    "Text": "Choisir un groupe d'amis"
+  },
+  {
+    "RowId": 1679,
+    "Text": "Groupe d'amis"
+  },
+  {
+    "RowId": 1680,
+    "Text": ""
+  },
+  {
+    "RowId": 1681,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1682,
+    "Text": "Durée de l'amitié"
+  },
+  {
+    "RowId": 1683,
+    "Text": "<kilo(IntegerParameter(1),)> jour<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If>"
+  },
+  {
+    "RowId": 1684,
+    "Text": "Modifier"
+  },
+  {
+    "RowId": 1685,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1686,
+    "Text": "Saisissez un nouveau nom pour <String>StringParameter(1)</String>Groupe <Num>IntegerParameter(2)</Num>."
+  },
+  {
+    "RowId": 1687,
+    "Text": "OK"
+  },
+  {
+    "RowId": 1688,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1689,
+    "Text": "Groupe"
+  },
+  {
+    "RowId": 1690,
+    "Text": "<Icon2>10</Icon2> Sous-menu"
+  },
+  {
+    "RowId": 1691,
+    "Text": "Éthérolyse: <If(GreaterThan(IntegerParameter(1),0))>oui<Else/>non</If>"
+  },
+  {
+    "RowId": 1692,
+    "Text": "Indisponible à l'achat chez les PNJ"
+  },
+  {
+    "RowId": 1693,
+    "Text": "Valeur d'achat <If(GreaterThan(IntegerParameter(2),0))> <Else/>(QN) </If>aux PNJ: <kilo(IntegerParameter(1),,)>\uE049"
+  },
+  {
+    "RowId": 1694,
+    "Text": "Valeur d'achat <If(GreaterThan(IntegerParameter(2),0))> <Else/>(QN) </If>aux PNJ: <kilo(IntegerParameter(1),,)>\uE049 (sous conditions)"
+  },
+  {
+    "RowId": 1695,
+    "Text": "Affiché: <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 1696,
+    "Text": "Nombre d'amis dans le groupe: <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1697,
+    "Text": "Les linkshells sont indisponibles pour les joueurs visitant d'autres Mondes ou centres de données. Il leur est donc impossible de communiquer avec les autres membres via ces canaux."
+  },
+  {
+    "RowId": 1700,
+    "Text": "Recherche de recettes"
+  },
+  {
+    "RowId": 1701,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1702,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 1703,
+    "Text": "Recettes recherchées"
+  },
+  {
+    "RowId": 1704,
+    "Text": "Recettes utilisées pour une recherche"
+  },
+  {
+    "RowId": 1705,
+    "Text": "Conditions de filtrage"
+  },
+  {
+    "RowId": 1706,
+    "Text": "Cacher les recettes déjà effectuées"
+  },
+  {
+    "RowId": 1707,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1708,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1709,
+    "Text": "Valeur de collection"
+  },
+  {
+    "RowId": 1710,
+    "Text": "Recettes normales"
+  },
+  {
+    "RowId": 1711,
+    "Text": "Recettes spéciales"
+  },
+  {
+    "RowId": 1712,
+    "Text": "Diagramme de la synthèse"
+  },
+  {
+    "RowId": 1713,
+    "Text": ""
+  },
+  {
+    "RowId": 1714,
+    "Text": "Liste des matériaux de base"
+  },
+  {
+    "RowId": 1715,
+    "Text": "Afficher la liste des emplacements de recherches"
+  },
+  {
+    "RowId": 1716,
+    "Text": "<If(GreaterThan(IntegerParameter(1),99))>99+<Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 1717,
+    "Text": "/\uE03C<If(GreaterThan(IntegerParameter(1),99))>99+<Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 1718,
+    "Text": "<If(GreaterThan(IntegerParameter(1),9999))>9 999+<Else/><kilo(IntegerParameter(1),)></If>"
+  },
+  {
+    "RowId": 1719,
+    "Text": "Liste des matériaux de base"
+  },
+  {
+    "RowId": 1720,
+    "Text": ""
+  },
+  {
+    "RowId": 1721,
+    "Text": "Emplacements de recherches"
+  },
+  {
+    "RowId": 1722,
+    "Text": ""
+  },
+  {
+    "RowId": 1723,
+    "Text": "Diagramme de la synthèse"
+  },
+  {
+    "RowId": 1724,
+    "Text": "Liste des matériaux de base"
+  },
+  {
+    "RowId": 1725,
+    "Text": "Rafraîchir le diagramme"
+  },
+  {
+    "RowId": 1726,
+    "Text": "Rafraîchir la liste"
+  },
+  {
+    "RowId": 1727,
+    "Text": "<If(GreaterThan(IntegerParameter(1),9999))>9999+<Else/><kilo(IntegerParameter(1),)></If>"
+  },
+  {
+    "RowId": 1728,
+    "Text": "/\uE03C<If(GreaterThan(IntegerParameter(1),9999))>9999+<Else/><kilo(IntegerParameter(1),)></If>"
+  },
+  {
+    "RowId": 1729,
+    "Text": "Chance accrue d'obtenir des objets rares."
+  },
+  {
+    "RowId": 1730,
+    "Text": "Ajouter aux favoris (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
+  },
+  {
+    "RowId": 1731,
+    "Text": "Retirer des favoris (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
+  },
+  {
+    "RowId": 1732,
+    "Text": "Recettes pouvant être notées uniquement"
+  },
+  {
+    "RowId": 1733,
+    "Text": "Jamais synthétisées uniquement"
+  },
+  {
+    "RowId": 1748,
+    "Text": "Vendre/Donner"
+  },
+  {
+    "RowId": 1749,
+    "Text": "Trier/Annuler le tri"
+  },
+  {
+    "RowId": 1750,
+    "Text": "Donner"
+  },
+  {
+    "RowId": 1751,
+    "Text": "Placer"
+  },
+  {
+    "RowId": 1752,
+    "Text": "Équiper (personnage/appareil)"
+  },
+  {
+    "RowId": 1753,
+    "Text": "Utiliser"
+  },
+  {
+    "RowId": 1754,
+    "Text": "Enlever"
+  },
+  {
+    "RowId": 1755,
+    "Text": "???"
+  },
+  {
+    "RowId": 1756,
+    "Text": "Cette option est utilisable en rapport avec l'artisanat."
+  },
+  {
+    "RowId": 1757,
+    "Text": "Cette option est utilisable en rapport avec la récolte."
+  },
+  {
+    "RowId": 1758,
+    "Text": "Cette option est utilisable lors de la teinture d'objets."
+  },
+  {
+    "RowId": 1759,
+    "Text": "Cette option est utilisable avec les prismes mirage."
+  },
+  {
+    "RowId": 1760,
+    "Text": "<If(GreaterThan(PlayerParameter(75),1))>Cette commande est utilisable uniquement lors du jeu à la manette.<Else/><If(Equal(PlayerParameter(75),1))>Cette commande est utilisable uniquement à partir de la croix de raccourcis.<Else/>Cette commande est utilisable uniquement lors du jeu à la manette.</If></If>"
+  },
+  {
+    "RowId": 1761,
+    "Text": "Quelle partie du sous-menu voulez-vous réinitialiser?"
+  },
+  {
+    "RowId": 1762,
+    "Text": "Ordre des éléments dans le niveau principal"
+  },
+  {
+    "RowId": 1763,
+    "Text": "Ordre des éléments dans le niveau “Autres”"
+  },
+  {
+    "RowId": 1764,
+    "Text": "Tout"
+  },
+  {
+    "RowId": 1765,
+    "Text": "Réinitialiser l'ordre des options dans le niveau principal?"
+  },
+  {
+    "RowId": 1766,
+    "Text": "Réinitialiser l'ordre des options dans le niveau “Autres”?"
+  },
+  {
+    "RowId": 1767,
+    "Text": "Cette option est utilisable lors des transactions dans les échoppes."
+  },
+  {
+    "RowId": 1768,
+    "Text": "Cette option est utilisable dans le cadre du courrier mog."
+  },
+  {
+    "RowId": 1769,
+    "Text": "Cette option est utilisable lors des échanges d'objets."
+  },
+  {
+    "RowId": 1770,
+    "Text": "Cette option est utilisable dans le cadre du logement."
+  },
+  {
+    "RowId": 1771,
+    "Text": "Cette option est utilisable avec les matérias."
+  },
+  {
+    "RowId": 1772,
+    "Text": "Cette option est utilisable dans le cadre des courses de chocobos."
+  },
+  {
+    "RowId": 1773,
+    "Text": "Cette option est utilisable avec les servants."
+  },
+  {
+    "RowId": 1774,
+    "Text": "Cette option est utilisable avec les cartes au trésor."
+  },
+  {
+    "RowId": 1775,
+    "Text": "Cette option est utilisable par défaut."
+  },
+  {
+    "RowId": 1776,
+    "Text": "Placer dans le niveau principal"
+  },
+  {
+    "RowId": 1777,
+    "Text": "Placer dans le niveau “Autres”"
+  },
+  {
+    "RowId": 1778,
+    "Text": "Déplacer vers le haut"
+  },
+  {
+    "RowId": 1779,
+    "Text": "Déplacer vers le bas"
+  },
+  {
+    "RowId": 1780,
+    "Text": "Paramètres du sous-menu"
+  },
+  {
+    "RowId": 1781,
+    "Text": ""
+  },
+  {
+    "RowId": 1782,
+    "Text": "Affichage"
+  },
+  {
+    "RowId": 1783,
+    "Text": "Options"
+  },
+  {
+    "RowId": 1784,
+    "Text": "Niveau principal"
+  },
+  {
+    "RowId": 1785,
+    "Text": "Niveau “Autres”"
+  },
+  {
+    "RowId": 1786,
+    "Text": "Réinitialiser"
+  },
+  {
+    "RowId": 1787,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1788,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1789,
+    "Text": "Réinitialiser les paramètres du sous-menu?"
+  },
+  {
+    "RowId": 1790,
+    "Text": "Appliquer les choix personnalisés au sous-menu?"
+  },
+  {
+    "RowId": 1791,
+    "Text": "Les changements seront perdus si vous ne les appliquez pas. Quitter la personnalisation des paramètres du sous-menu?"
+  },
+  {
+    "RowId": 1792,
+    "Text": "<span style=\"color: #ffff66;\">Sert à personnaliser le sous-menu pour les objets en votre possession.</span>"
+  },
+  {
+    "RowId": 1793,
+    "Text": "Les éléments placés ici apparaîtront\ndans un second niveau de menu hiérarchique\nà partir d'une option “Autres”\nqui sera alors ajoutée au sous-menu."
+  },
+  {
+    "RowId": 1794,
+    "Text": "Cette option apparaît uniquement si des éléments ont été placés dans le niveau “Autres” du sous-menu."
+  },
+  {
+    "RowId": 1795,
+    "Text": "Cette option permet d'ouvrir la présente fenêtre de personnalisation à partir du sous-menu."
+  },
+  {
+    "RowId": 1796,
+    "Text": "Cette option sert par exemple pour la livraison d'objets."
+  },
+  {
+    "RowId": 1797,
+    "Text": "Cette option permet de visualiser une peinture."
+  },
+  {
+    "RowId": 1798,
+    "Text": "Cette option est utilisable avec la sacoche chocobo."
+  },
+  {
+    "RowId": 1799,
+    "Text": "Cette option est utilisable dans la Félicité insulaire."
+  },
+  {
+    "RowId": 1800,
+    "Text": "Voulez-vous vous téléporter vers la destination <sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)>?"
+  },
+  {
+    "RowId": 1801,
+    "Text": "Accepter"
+  },
+  {
+    "RowId": 1802,
+    "Text": "Refuser"
+  },
+  {
+    "RowId": 1803,
+    "Text": "Réfléchir"
+  },
+  {
+    "RowId": 1804,
+    "Text": "Offre de téléportation"
+  },
+  {
+    "RowId": 1805,
+    "Text": "<Head><sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)></Head>"
+  },
+  {
+    "RowId": 1806,
+    "Text": "Se téléporter à une éthérite à proximité"
+  },
+  {
+    "RowId": 1807,
+    "Text": "Amis"
+  },
+  {
+    "RowId": 1808,
+    "Text": "Objets bonus et optionnels"
+  },
+  {
+    "RowId": 1809,
+    "Text": "Maîtres de jeu"
+  },
+  {
+    "RowId": 1810,
+    "Text": "Requête d'objets bonus et optionnels"
+  },
+  {
+    "RowId": 1811,
+    "Text": "Vous pouvez envoyer une requête afin d'obtenir les objets bonus qui vous ont été envoyés et les articles que vous avez achetés. Il faudra attendre un certain temps avant de pouvoir utiliser cette fonction à nouveau.\n<span style=\"color: #ffff66;\">Pour recevoir le nouveau courrier, il faut fermer puis rouvrir la fenêtre du Mog postier ou de la boîte à lettres mog.</span>"
+  },
+  {
+    "RowId": 1812,
+    "Text": "Envoyer"
+  },
+  {
+    "RowId": 1813,
+    "Text": "Retour"
+  },
+  {
+    "RowId": 1814,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 1815,
+    "Text": "Recycler"
+  },
+  {
+    "RowId": 1816,
+    "Text": "Recyclage"
+  },
+  {
+    "RowId": 1817,
+    "Text": ""
+  },
+  {
+    "RowId": 1818,
+    "Text": "Objet à recycler"
+  },
+  {
+    "RowId": 1819,
+    "Text": "Objet"
+  },
+  {
+    "RowId": 1820,
+    "Text": "Classe"
+  },
+  {
+    "RowId": 1821,
+    "Text": "Recyclage"
+  },
+  {
+    "RowId": 1822,
+    "Text": ""
+  },
+  {
+    "RowId": 1823,
+    "Text": "Objet d'origine"
+  },
+  {
+    "RowId": 1824,
+    "Text": "Classe / compétence actuelle"
+  },
+  {
+    "RowId": 1825,
+    "Text": "Chances de réussite"
+  },
+  {
+    "RowId": 1826,
+    "Text": "<Num>IntegerParameter(1)</Num>,<Sec>IntegerParameter(2)</Sec>%"
+  },
+  {
+    "RowId": 1827,
+    "Text": "La réussite du recyclage est garantie."
+  },
+  {
+    "RowId": 1828,
+    "Text": "Le recyclage a des chances d'échouer."
+  },
+  {
+    "RowId": 1829,
+    "Text": "Le recyclage a de grandes chances d'échouer."
+  },
+  {
+    "RowId": 1830,
+    "Text": "Le recyclage a de très grandes chances d'échouer."
+  },
+  {
+    "RowId": 1831,
+    "Text": "Recycler un objet unique/personnel"
+  },
+  {
+    "RowId": 1832,
+    "Text": "Recycler un objet serti"
+  },
+  {
+    "RowId": 1833,
+    "Text": "Recycler"
+  },
+  {
+    "RowId": 1834,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 1835,
+    "Text": "Le recyclage a réussi."
+  },
+  {
+    "RowId": 1836,
+    "Text": "Recyclé"
+  },
+  {
+    "RowId": 1837,
+    "Text": "Résultat"
+  },
+  {
+    "RowId": 1838,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1839,
+    "Text": "Cet objet est actuellement équipé. Voulez-vous vraiment le recycler?"
+  },
+  {
+    "RowId": 1840,
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head>"
+  },
+  {
+    "RowId": 1841,
+    "Text": "Nv <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1842,
+    "Text": "Compétence de recyclage "
+  },
+  {
+    "RowId": 1843,
+    "Text": "<Num>IntegerParameter(1)</Num>,<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 1844,
+    "Text": "Recyclage impossible: les chances de réussite sont nulles."
+  },
+  {
+    "RowId": 1845,
+    "Text": "Vous n'avez aucun objet recyclable."
+  },
+  {
+    "RowId": 1846,
+    "Text": "Êtes-vous sûr<If(PlayerParameter(4))>e<Else/> </If> de vouloir réinitialiser la compétence de recyclage pour la classe “<sheet(ClassJob,IntegerParameter(1),0)>”?"
+  },
+  {
+    "RowId": 1847,
+    "Text": "Recycler un objet collectionnable"
+  },
+  {
+    "RowId": 1848,
+    "Text": "[Compétence optimale: <Num>IntegerParameter(1)</Num>,00]"
+  },
+  {
+    "RowId": 1849,
+    "Text": "Afficher uniquement les lettres non lues, ainsi que les objets et les gils non récupérés"
+  },
+  {
+    "RowId": 1850,
+    "Text": "<Icon2>10</Icon2> Sous-menu"
+  },
+  {
+    "RowId": 1851,
+    "Text": "<Icon2>10</Icon2> Sous-menu  <Icon2>9</Icon2> Retour"
+  },
+  {
+    "RowId": 1852,
+    "Text": "<Icon2>10</Icon2> Sous-menu  <Icon2>9</Icon2> Retour"
+  },
+  {
+    "RowId": 1853,
+    "Text": "Cette catégorie est vide."
+  },
+  {
+    "RowId": 1854,
+    "Text": "Le maximum de lettres système est atteint. Effacez-en quelques-unes pour en recevoir de nouvelles."
+  },
+  {
+    "RowId": 1855,
+    "Text": "Le maximum de lettres avec objets bonus ou optionnels est atteint. Pour permettre de nouvelles livraisons, récupérez les objets présents dans cette catégorie, puis effacez les messages auxquels ils étaient joints."
+  },
+  {
+    "RowId": 1856,
+    "Text": "Le nombre maximum de 20 objets joints aux lettres d'amis est atteint. Transférez-en dans votre inventaire afin de pouvoir en recevoir de nouveaux. (Les gils ne comptent pas dans cette limite.)"
+  },
+  {
+    "RowId": 1857,
+    "Text": "Le maximum de lettres d'amis est atteint. Effacez-en quelques-unes pour en recevoir de nouvelles."
+  },
+  {
+    "RowId": 1858,
+    "Text": "Choix du destinataire"
+  },
+  {
+    "RowId": 1859,
+    "Text": ""
+  },
+  {
+    "RowId": 1860,
+    "Text": "<Icon2>8</Icon2> Accepter  <Icon2>11</Icon2> Ouvrir le journal  <Icon2>24</Icon2> Défiler"
+  },
+  {
+    "RowId": 1861,
+    "Text": "<Icon2>8</Icon2> Accepter  <Icon2>11</Icon2> Ouvrir le journal  <Icon2>24</Icon2> Défiler"
+  },
+  {
+    "RowId": 1862,
+    "Text": "Expéditeur d'une lettre reçue"
+  },
+  {
+    "RowId": 1863,
+    "Text": "Historique des destinataires"
+  },
+  {
+    "RowId": 1864,
+    "Text": "Afficher tous les amis"
+  },
+  {
+    "RowId": 1865,
+    "Text": "Ce groupe ne contient aucun ami."
+  },
+  {
+    "RowId": 1866,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1867,
+    "Text": "Cette catégorie est à plus de 80 % de sa capacité."
+  },
+  {
+    "RowId": 1868,
+    "Text": "Cette catégorie est pleine."
+  },
+  {
+    "RowId": 1869,
+    "Text": "Cette catégorie contient trop d'objets joints."
+  },
+  {
+    "RowId": 1870,
+    "Text": "%"
+  },
+  {
+    "RowId": 1871,
+    "Text": "Traitement du courrier en cours."
+  },
+  {
+    "RowId": 1872,
+    "Text": "<sheet(PlaceName,IntegerParameter(1),0)><If(IntegerParameter(2))> - <sheet(PlaceName,IntegerParameter(2),0)><Else/> </If>"
+  },
+  {
+    "RowId": 1873,
+    "Text": "Nombre d'objets joints (gils non compris)"
+  },
+  {
+    "RowId": 1874,
+    "Text": "Il n'y a rien à afficher"
+  },
+  {
+    "RowId": 1875,
+    "Text": "<switch(IntegerParameter(1),Tout afficher,Rubriques achevées,Rubriques inachevées)>"
+  },
+  {
+    "RowId": 1876,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 1877,
+    "Text": "Rang <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1878,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 1879,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1880,
+    "Text": "Bestiaire"
+  },
+  {
+    "RowId": 1881,
+    "Text": ""
+  },
+  {
+    "RowId": 1882,
+    "Text": "Classe"
+  },
+  {
+    "RowId": 1883,
+    "Text": "Rang"
+  },
+  {
+    "RowId": 1884,
+    "Text": "Achevé!"
+  },
+  {
+    "RowId": 1885,
+    "Text": "Récompense"
+  },
+  {
+    "RowId": 1886,
+    "Text": "Exp"
+  },
+  {
+    "RowId": 1887,
+    "Text": "Récompense"
+  },
+  {
+    "RowId": 1888,
+    "Text": "Bestiaire"
+  },
+  {
+    "RowId": 1889,
+    "Text": "Rubrique achevée"
+  },
+  {
+    "RowId": 1890,
+    "Text": "Rang achevé"
+  },
+  {
+    "RowId": 1891,
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head> rang <Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 1892,
+    "Text": "<sheet(GrandCompany,IntegerParameter(1),0)> rang <Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 1893,
+    "Text": "Conditions d'accès au rang <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1894,
+    "Text": "Achever le rang <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 1895,
+    "Text": "Niveau <Num>IntegerParameter(1)</Num>0 ou plus"
+  },
+  {
+    "RowId": 1896,
+    "Text": "Tous"
+  },
+  {
+    "RowId": 1897,
+    "Text": "Par défaut"
+  },
+  {
+    "RowId": 1898,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1899,
+    "Text": "Quantité"
+  },
+  {
+    "RowId": 1900,
+    "Text": "Couleurs du log"
+  },
+  {
+    "RowId": 1901,
+    "Text": ""
+  },
+  {
+    "RowId": 1902,
+    "Text": "Annonces"
+  },
+  {
+    "RowId": 1903,
+    "Text": "Combat"
+  },
+  {
+    "RowId": 1904,
+    "Text": "Réinitialiser"
+  },
+  {
+    "RowId": 1905,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 1906,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 1907,
+    "Text": "Dire"
+  },
+  {
+    "RowId": 1908,
+    "Text": "Hurler"
+  },
+  {
+    "RowId": 1909,
+    "Text": "Murmurer"
+  },
+  {
+    "RowId": 1910,
+    "Text": "Équipe"
+  },
+  {
+    "RowId": 1911,
+    "Text": "Emotes"
+  },
+  {
+    "RowId": 1912,
+    "Text": "Écho"
+  },
+  {
+    "RowId": 1913,
+    "Text": "Messages système"
+  },
+  {
+    "RowId": 1914,
+    "Text": "Messages système de combat"
+  },
+  {
+    "RowId": 1915,
+    "Text": "Messages système de récolte"
+  },
+  {
+    "RowId": 1916,
+    "Text": "Messages d'erreur"
+  },
+  {
+    "RowId": 1917,
+    "Text": "Dialogue des PNJ"
+  },
+  {
+    "RowId": 1918,
+    "Text": "Butin"
+  },
+  {
+    "RowId": 1919,
+    "Text": "Gain de niveau"
+  },
+  {
+    "RowId": 1920,
+    "Text": "Distribution du butin"
+  },
+  {
+    "RowId": 1921,
+    "Text": "Synthèse"
+  },
+  {
+    "RowId": 1922,
+    "Text": "Récolte"
+  },
+  {
+    "RowId": 1923,
+    "Text": "Dégâts infligés"
+  },
+  {
+    "RowId": 1924,
+    "Text": "Attaques manquées"
+  },
+  {
+    "RowId": 1925,
+    "Text": "Actions"
+  },
+  {
+    "RowId": 1926,
+    "Text": "Objets"
+  },
+  {
+    "RowId": 1927,
+    "Text": "Soins"
+  },
+  {
+    "RowId": 1928,
+    "Text": "Effets bénéfiques"
+  },
+  {
+    "RowId": 1929,
+    "Text": "Effets néfastes"
+  },
+  {
+    "RowId": 1930,
+    "Text": "Réinitialiser les couleurs du log?"
+  },
+  {
+    "RowId": 1931,
+    "Text": "Crier"
+  },
+  {
+    "RowId": 1932,
+    "Text": "Alliance"
+  },
+  {
+    "RowId": 1933,
+    "Text": "Compagnie libre"
+  },
+  {
+    "RowId": 1934,
+    "Text": "Annonces de compagnie libre"
+  },
+  {
+    "RowId": 1935,
+    "Text": "Discussion 1"
+  },
+  {
+    "RowId": 1936,
+    "Text": "Discussion 2"
+  },
+  {
+    "RowId": 1937,
+    "Text": "Matérias"
+  },
+  {
+    "RowId": 1938,
+    "Text": "<Icon2>11</Icon2> Rechercher"
+  },
+  {
+    "RowId": 1939,
+    "Text": "Vous ne pourrez jamais vous équiper de cet objet. Continuer?"
+  },
+  {
+    "RowId": 1940,
+    "Text": "Recherche d'objets"
+  },
+  {
+    "RowId": 1941,
+    "Text": ""
+  },
+  {
+    "RowId": 1942,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 1943,
+    "Text": "Catégories"
+  },
+  {
+    "RowId": 1944,
+    "Text": "Main directrice/non directrice"
+  },
+  {
+    "RowId": 1945,
+    "Text": "Renseignez un nom d'objet ou sélectionnez une catégorie."
+  },
+  {
+    "RowId": 1946,
+    "Text": "Aucun résultat"
+  },
+  {
+    "RowId": 1947,
+    "Text": "Trier selon le critère spécifié (100 résultats maximum)."
+  },
+  {
+    "RowId": 1948,
+    "Text": "Afficher <If(Equal(IntegerParameter(1),1))>le résultat suivant<Else/>les <Num>IntegerParameter(1)</Num> résultats suivants</If>."
+  },
+  {
+    "RowId": 1949,
+    "Text": "Afficher <If(Equal(IntegerParameter(1),1))>le résultat précédant<Else/>les <Num>IntegerParameter(1)</Num> résultats précédants</If>."
+  },
+  {
+    "RowId": 1950,
+    "Text": "Résultats"
+  },
+  {
+    "RowId": 1951,
+    "Text": ""
+  },
+  {
+    "RowId": 1952,
+    "Text": "Prix unitaire"
+  },
+  {
+    "RowId": 1953,
+    "Text": "Total"
+  },
+  {
+    "RowId": 1954,
+    "Text": "Qté"
+  },
+  {
+    "RowId": 1955,
+    "Text": "HQ"
+  },
+  {
+    "RowId": 1956,
+    "Text": "Servant"
+  },
+  {
+    "RowId": 1957,
+    "Text": "Prix le plus bas: <Num>IntegerParameter(1)</Num>\uE049"
+  },
+  {
+    "RowId": 1958,
+    "Text": "<Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>résultat<Else/>résultats</If>"
+  },
+  {
+    "RowId": 1959,
+    "Text": "Cet objet n'est pas en vente."
+  },
+  {
+    "RowId": 1960,
+    "Text": "Recherche avancée"
+  },
+  {
+    "RowId": 1961,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1962,
+    "Text": "Vous ne pouvez pas vous équiper de cet objet. Continuer?"
+  },
+  {
+    "RowId": 1963,
+    "Text": "Acheter <Num>IntegerParameter(2)</Num> <frnoun(Item,12,IntegerParameter(1),IntegerParameter(2),1)> pour <kilo(IntegerParameter(3),)> gil<If(LessThanOrEqualTo(IntegerParameter(3),1))> <Else/>s</If><If(GreaterThan(IntegerParameter(4),0))> (taxe de <kilo(IntegerParameter(4),,)>\uE049 incluse)<Else/> </If>?"
+  },
+  {
+    "RowId": 1964,
+    "Text": "Acheter <frnoun(Item,1,IntegerParameter(1),1,1)> pour <kilo(IntegerParameter(3),)> gil<If(LessThanOrEqualTo(IntegerParameter(3),1))> <Else/>s</If><If(GreaterThan(IntegerParameter(4),0))> (taxe de <kilo(IntegerParameter(4),,)>\uE049 incluse)<Else/> </If>?"
+  },
+  {
+    "RowId": 1965,
+    "Text": "Équipement"
+  },
+  {
+    "RowId": 1966,
+    "Text": "Objets"
+  },
+  {
+    "RowId": 1967,
+    "Text": "Rechercher"
+  },
+  {
+    "RowId": 1968,
+    "Text": "Nv"
+  },
+  {
+    "RowId": 1969,
+    "Text": "Nv 1"
+  },
+  {
+    "RowId": 1970,
+    "Text": "Historique"
+  },
+  {
+    "RowId": 1971,
+    "Text": ""
+  },
+  {
+    "RowId": 1972,
+    "Text": "Prix"
+  },
+  {
+    "RowId": 1973,
+    "Text": "Qté"
+  },
+  {
+    "RowId": 1974,
+    "Text": "HQ"
+  },
+  {
+    "RowId": 1975,
+    "Text": "Acheteur"
+  },
+  {
+    "RowId": 1976,
+    "Text": "Date"
+  },
+  {
+    "RowId": 1977,
+    "Text": "Dernières transactions"
+  },
+  {
+    "RowId": 1978,
+    "Text": "Il n'y a pas d'historique."
+  },
+  {
+    "RowId": 1979,
+    "Text": "Votre niveau de pêche n'est pas assez élevé pour utiliser cet appât. Acheter?"
+  },
+  {
+    "RowId": 1980,
+    "Text": "Recherche avancée"
+  },
+  {
+    "RowId": 1981,
+    "Text": ""
+  },
+  {
+    "RowId": 1982,
+    "Text": "Sélectionnez vos paramètres"
+  },
+  {
+    "RowId": 1983,
+    "Text": "Rechercher"
+  },
+  {
+    "RowId": 1984,
+    "Text": "Afficher uniquement les objets HQ"
+  },
+  {
+    "RowId": 1985,
+    "Text": "Cacher les objets vendus en tenue"
+  },
+  {
+    "RowId": 1986,
+    "Text": "Renseignez les premières lettres de l'objet recherché et appuyez sur le bouton Rechercher. Saisir une ou deux lettres listera les 20 premiers résultats, en saisir trois ou plus listera tous les résultats.\nUtilisez <Icon2>5</Icon2> ou les touches directionnelles vers le haut ou le bas pour voir l'historique de saisie."
+  },
+  {
+    "RowId": 1987,
+    "Text": "Sélectionnez le niveau d'équipement et appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1988,
+    "Text": "Sélectionnez la classe et le niveau d'équipement, puis appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1989,
+    "Text": "Appuyez sur le bouton Rechercher."
+  },
+  {
+    "RowId": 1990,
+    "Text": "Ne pas prendre en compte les matérias"
+  },
+  {
+    "RowId": 1991,
+    "Text": "<Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>sertie<Else/>serties</If>"
+  },
+  {
+    "RowId": 1992,
+    "Text": "<kilo(IntegerParameter(1),)>\uE049"
+  },
+  {
+    "RowId": 1993,
+    "Text": "<kilo(IntegerParameter(1),)>\uE049"
+  },
+  {
+    "RowId": 1994,
+    "Text": "<kilo(IntegerParameter(1),)>"
+  },
+  {
+    "RowId": 1995,
+    "Text": "<kilo(IntegerParameter(1),)>-<kilo(IntegerParameter(2),)>"
+  },
+  {
+    "RowId": 1996,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num> <Num>t_hour</Num>h<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 1997,
+    "Text": "Attendez un peu et retentez la recherche."
+  },
+  {
+    "RowId": 1998,
+    "Text": "Attendez un peu et retentez la recherche."
+  },
+  {
+    "RowId": 1999,
+    "Text": "Logement"
+  },
+  {
+    "RowId": 2001,
+    "Text": "Nv"
+  },
+  {
+    "RowId": 2002,
+    "Text": "PV"
+  },
+  {
+    "RowId": 2003,
+    "Text": "PM"
+  },
+  {
+    "RowId": 2004,
+    "Text": "PT"
+  },
+  {
+    "RowId": 2005,
+    "Text": "PR"
+  },
+  {
+    "RowId": 2006,
+    "Text": "PS"
+  },
+  {
+    "RowId": 2007,
+    "Text": "PF"
+  },
+  {
+    "RowId": 2008,
+    "Text": "+"
+  },
+  {
+    "RowId": 2009,
+    "Text": "-"
+  },
+  {
+    "RowId": 2011,
+    "Text": "Force"
+  },
+  {
+    "RowId": 2012,
+    "Text": "Vitalité"
+  },
+  {
+    "RowId": 2013,
+    "Text": "Dextérité"
+  },
+  {
+    "RowId": 2014,
+    "Text": "Intelligence"
+  },
+  {
+    "RowId": 2015,
+    "Text": "Esprit"
+  },
+  {
+    "RowId": 2020,
+    "Text": "<If(IntegerParameter(2))><span style=\"color: #f9e846;\"><i><sheet(Item,IntegerParameter(1),9)></i></span><Else/><sheet(Item,IntegerParameter(1),9)></If>"
+  },
+  {
+    "RowId": 2021,
+    "Text": "<sheet(Item,IntegerParameter(1),9)>"
+  },
+  {
+    "RowId": 2022,
+    "Text": "<Head><sheet(Item,IntegerParameter(1),9)></Head>"
+  },
+  {
+    "RowId": 2023,
+    "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head>"
+  },
+  {
+    "RowId": 2024,
+    "Text": "<Head><String>StringParameter(1)</String></Head>"
+  },
+  {
+    "RowId": 2025,
+    "Text": "<Head><sheet(ObjStr,IntegerParameter(1),0)></Head>"
+  },
+  {
+    "RowId": 2026,
+    "Text": "<Head><sheet(ActStr,IntegerParameter(1),0)></Head>"
+  },
+  {
+    "RowId": 2027,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 2028,
+    "Text": "\uE048"
+  },
+  {
+    "RowId": 2029,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 2030,
+    "Text": "<switch(IntegerParameter(1),\uE061,\uE062,\uE063,\uE064,\uE065,\uE066,\uE067)>"
+  },
+  {
+    "RowId": 2031,
+    "Text": "\uE048"
+  },
+  {
+    "RowId": 2032,
+    "Text": "<String>StringParameter(1)</String><String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 2033,
+    "Text": "<sheet(GrandCompany,IntegerParameter(1),0)>"
+  },
+  {
+    "RowId": 2034,
+    "Text": "\uE06C <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 2035,
+    "Text": "??"
+  },
+  {
+    "RowId": 2036,
+    "Text": " «<String>StringParameter(1)</String>»"
+  },
+  {
+    "RowId": 2037,
+    "Text": "\uE034"
+  },
+  {
+    "RowId": 2038,
+    "Text": "\uE035"
+  },
+  {
+    "RowId": 2039,
+    "Text": "\uE03A <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 2041,
+    "Text": "x <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 2042,
+    "Text": "x 10k+"
+  },
+  {
+    "RowId": 2043,
+    "Text": "Tout"
+  },
+  {
+    "RowId": 2044,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 2045,
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon>\uE06C <String>StringParameter(1)</String></i><Else/>\uE06C <String>StringParameter(1)</String></If>"
+  },
+  {
+    "RowId": 2046,
+    "Text": "NOUVEAU"
+  },
+  {
+    "RowId": 2047,
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon> <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num></i><Else/><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 2048,
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon><String>StringParameter(1)</String>%</i><Else/><String>StringParameter(1)</String>%</If>"
+  },
+  {
+    "RowId": 2049,
+    "Text": "<If(IntegerParameter(3))><i><Icon>62</Icon>\uE03A <String>StringParameter(1)</String></i><Else/>\uE03A <String>StringParameter(1)</String></If>"
+  },
+  {
+    "RowId": 2050,
+    "Text": "Alliance"
+  },
+  {
+    "RowId": 2051,
+    "Text": "Membres de l'alliance"
+  },
+  {
+    "RowId": 2052,
+    "Text": ""
+  },
+  {
+    "RowId": 2053,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 2054,
+    "Text": "Classe/Job"
+  },
+  {
+    "RowId": 2055,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 2056,
+    "Text": "???"
+  },
+  {
+    "RowId": 2057,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><digit(IntegerParameter(1),2)><Else/><Num>IntegerParameter(1)</Num></If>,<Num>IntegerParameter(2)</Num>%"
+  },
+  {
+    "RowId": 2058,
+    "Text": "<Num>IntegerParameter(1)</Num>-<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 2060,
+    "Text": "Achever le rang <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 2061,
+    "Text": "<Head><If(IntegerParameter(4))><switch(IntegerParameter(2),<sheet(GCRankLimsaFemaleText,IntegerParameter(3),0)>,<sheet(GCRankGridaniaFemaleText,IntegerParameter(3),0)>,<sheet(GCRankUldahFemaleText,IntegerParameter(3),0)>)><Else/><switch(IntegerParameter(2),<sheet(GCRankLimsaMaleText,IntegerParameter(3),0)>,<sheet(GCRankGridaniaMaleText,IntegerParameter(3),0)>,<sheet(GCRankUldahMaleText,IntegerParameter(3),0)>)></If></Head> ou plus"
+  },
+  {
+    "RowId": 2063,
+    "Text": "Dialogues lus automatiquement"
+  },
+  {
+    "RowId": 2064,
+    "Text": "Tous"
+  },
+  {
+    "RowId": 2065,
+    "Text": "Doublés seulement"
+  },
+  {
+    "RowId": 2066,
+    "Text": "Dialogues non doublés"
+  },
+  {
+    "RowId": 2067,
+    "Text": "Vitesse de lecture auto."
+  },
+  {
+    "RowId": 2068,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>+<Else/> </If><Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 2069,
+    "Text": "Paramètres"
+  },
+  {
+    "RowId": 2070,
+    "Text": "Liste d'envies"
+  },
+  {
+    "RowId": 2071,
+    "Text": "Liste d'envies"
+  },
+  {
+    "RowId": 2072,
+    "Text": "Vous pouvez enregistrer jusqu'à 10 objets dans votre liste d'envies. Les autres joueurs ne peuvent pas la consulter, mais le total des personnes de votre Monde désirant un objet est affiché dans les résultats de recherche.\n\n<span style=\"color: #ffff66;\">* Toutes les données des listes d'envie sont effacées lors des maintenances du serveur.</span>"
+  },
+  {
+    "RowId": 2073,
+    "Text": "<Icon2>10</Icon2> Sous-menu  <Icon2>8</Icon2> Voir les résultats  <Icon2>9</Icon2> Retour"
+  },
+  {
+    "RowId": 2074,
+    "Text": "Ajouter à la liste d'envies (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
+  },
+  {
+    "RowId": 2075,
+    "Text": "Retirer de la liste d'envies (<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>)"
+  },
+  {
+    "RowId": 2076,
+    "Text": "Demande"
+  }
+]
