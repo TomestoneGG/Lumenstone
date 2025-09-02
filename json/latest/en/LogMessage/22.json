@@ -3256,7 +3256,7 @@
   },
   {
     "RowId": 10786,
-    "Text": "<If(GreaterThan(IntegerParameter(1),0))>The entry “<sheetsub(WKSPioneeringTrail,IntegerParameter(2),IntegerParameter(3),3,WKSPioneeringTrailString,1)>” and <Num>IntegerParameter(1)</Num> others have been added to the Infrastructure Index.<Else/>The entry “<sheetsub(WKSPioneeringTrail,IntegerParameter(2),IntegerParameter(3),3,WKSPioneeringTrailString,1)>” has been added to the Infrastructure Index.</If>",
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>The entry “<sheetsub(WKSPioneeringTrail,IntegerParameter(2),IntegerParameter(3),3,WKSPioneeringTrailString,1)>” and <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>other<Else/>others</If> have been added to the Infrastructure Index.<Else/>The entry “<sheetsub(WKSPioneeringTrail,IntegerParameter(2),IntegerParameter(3),3,WKSPioneeringTrailString,1)>” has been added to the Infrastructure Index.</If>",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5074,27 +5074,36 @@
   },
   {
     "RowId": 10939,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Use chilly cartridges to cool the molten glass.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 17,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
   },
   {
     "RowId": 10940,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>you<Else/><If(PlayerParameter(7))><ennoun(ObjStr,2,PlayerParameter(7),1,1)><Else/>ObjectParameter(2)</If></If></Head> completed the task. Procure additional cartridges from refrigeration stations.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 65,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
   },
   {
     "RowId": 10941,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Use chilly cartridges to cool the molten glass.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 8,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
@@ -5113,7 +5122,7 @@
   },
   {
     "RowId": 10943,
-    "Text": "The time for critical mission supply delivery has expired.",
+    "Text": "The time limit for critical mission supply delivery has expired.",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
