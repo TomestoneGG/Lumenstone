@@ -2101,7 +2101,7 @@
   },
   {
     "RowId": 7205,
-    "Text": "Unable to execute command. Your gear does not meet minimum strength requirements.",
+    "Text": "Unable to execute command. Your gear does not meet the following strength requirements:\nAetherpool arm: <Num>IntegerParameter(1)</Num>\nAetherpool armor: <Num>IntegerParameter(2)</Num>",
     "LogKind": {
       "RowId": 60,
       "SheetName": "LogKind"
@@ -2521,7 +2521,7 @@
   },
   {
     "RowId": 7240,
-    "Text": "The gathering gloom appears to invigorate the floor's denizens.",
+    "Text": "The gathering gloom appears to invigorate the dungeon's denizens.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2701,7 +2701,7 @@
   },
   {
     "RowId": 7255,
-    "Text": "All the traps on this floor have disappeared!",
+    "Text": "All the traps <If(Equal(PlayerParameter(109),4))>in<Else/>on</If> this <switch(PlayerParameter(109),floor,floor,floor,area)> have disappeared!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2713,7 +2713,7 @@
   },
   {
     "RowId": 7256,
-    "Text": "The map for this floor has been revealed!",
+    "Text": "The map for this <switch(PlayerParameter(109),floor,floor,floor,area)> has been revealed!",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2821,7 +2821,7 @@
   },
   {
     "RowId": 7265,
-    "Text": "The enchantments fade from this floor.",
+    "Text": "The enchantments fade from this <switch(PlayerParameter(109),floor,floor,floor,area)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -2917,7 +2917,7 @@
   },
   {
     "RowId": 7273,
-    "Text": "You do not sense the call of the Accursed Hoard on this floor...",
+    "Text": "You do not sense the call of the Accursed Hoard <If(Equal(PlayerParameter(109),4))>in<Else/>on</If> this <switch(PlayerParameter(109),floor,floor,floor,area)>...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3121,27 +3121,36 @@
   },
   {
     "RowId": 7290,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "You pass traverse stone <Num>IntegerParameter(1)</Num>...",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 33,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
   },
   {
     "RowId": 7291,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "You have not offered enough sacramental offerings to summon Eminent Grief.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 9,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
   },
   {
     "RowId": 7292,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "You do not possess any more of this offering.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 8,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false

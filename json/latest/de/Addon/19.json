@@ -1,5 +1,9 @@
 [
   {
+    "RowId": 10392,
+    "Text": "Schließen"
+  },
+  {
     "RowId": 10393,
     "Text": "Eingesetzt"
   },
@@ -49,7 +53,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Möchtest du die Speicherdaten für eine bestehende Gruppe zu denen einer zufälligen Gruppe konvertieren?\n\nEs ist möglich, mit Freunden eine Gruppe zu bilden, die den gleichen Fortschritt im Tiefen Gewölbe haben wie du, und dann den Inhalt gemeinsam als zufällige Gruppe zu betreten. Die freien Plätze werden dann mit zufälligen Mitgliedern aufgefüllt.\n\n<span style=\"color: #ffff66;\">- Erworbene Spezialgegenstände (Tongefäße) gehen bei der Konvertierung verloren.</span>\n\n<span style=\"color: #ffff66;\">- In zufälligen Gruppen werden keine Punkte gezählt.</span>\n\n<span style=\"color: #ffff66;\">- Konvertierung von Speicherdaten von Fortschritt bis Ebenen, die nur bestehende Gruppen betreten können, die noch nie komplett kampfunfähig geworden sind, ist nicht möglich.</span>\n\n<span style=\"color: #ff8080;\">※ Achtung! Der Vorgang kann nicht rückgängig gemacht werden!</span>"
+    "Text": "Möchtest du die Speicherdaten für eine bestehende Gruppe zu denen einer zufälligen Gruppe konvertieren?\n\nEs ist möglich, mit Freunden eine Gruppe zu bilden, die den gleichen Fortschritt im Tiefen Gewölbe haben wie du, und dann den Inhalt gemeinsam als zufällige Gruppe zu betreten. Die freien Plätze werden dann mit zufälligen Mitgliedern aufgefüllt.\n\n<span style=\"color: #ffff66;\">- Erworbene Spezialgegenstände (Tongefäße) gehen bei der Konvertierung verloren.</span>\n\n<span style=\"color: #ffff66;\">- In zufälligen Gruppen werden keine Punkte gezählt.</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">- Konvertierung von Speicherdaten von Fortschritt bis Ebenen, die nur bestehende Gruppen betreten können, die noch nie komplett kampfunfähig geworden sind, ist nicht möglich.</span>\n</If>\n<span style=\"color: #ff8080;\">※ Achtung! Der Vorgang kann nicht rückgängig gemacht werden!</span>"
   },
   {
     "RowId": 10411,
@@ -276,6 +280,14 @@
     "Text": "Wertung ansehen"
   },
   {
+    "RowId": 10467,
+    "Text": "Ebenen"
+  },
+  {
+    "RowId": 10468,
+    "Text": "WEIHRAUCH"
+  },
+  {
     "RowId": 10469,
     "Text": "<sheet(ClassJob,IntegerParameter(1),0)><If(GreaterThan(IntegerParameter(2),0))> / <sheet(ClassJob,IntegerParameter(2),0)><Else/> </If>"
   },
@@ -290,6 +302,14 @@
   {
     "RowId": 10472,
     "Text": "<Head><String>StringParameter(1)</String></Head>"
+  },
+  {
+    "RowId": 10473,
+    "Text": "Leuchter"
+  },
+  {
+    "RowId": 10474,
+    "Text": "Vorschau:"
   },
   {
     "RowId": 10475,
@@ -358,6 +378,26 @@
   {
     "RowId": 10491,
     "Text": "Erklärung zu Tiefen Gewölben"
+  },
+  {
+    "RowId": 10492,
+    "Text": "Altar des Lebens"
+  },
+  {
+    "RowId": 10493,
+    "Text": "Zirkel des Weges"
+  },
+  {
+    "RowId": 10494,
+    "Text": "Aktivierungsstatus für Altar des Lebens"
+  },
+  {
+    "RowId": 10495,
+    "Text": "Aktivierungsstatus für Zirkel des Weges"
+  },
+  {
+    "RowId": 10496,
+    "Text": "?"
   },
   {
     "RowId": 10500,
@@ -1324,6 +1364,34 @@
     "Text": "Das PvP-System wird großflächig umgestaltet, daher ist dieser Inhalt momentan nicht verfügbar. Kommende Patchnotes werden darüber informieren, wann er wieder zugänglich ist."
   },
   {
+    "RowId": 10834,
+    "Text": "Opfergaben"
+  },
+  {
+    "RowId": 10835,
+    "Text": "Insgesamt"
+  },
+  {
+    "RowId": 10836,
+    "Text": "Schatzsegen"
+  },
+  {
+    "RowId": 10837,
+    "Text": "<If(LessThan(IntegerParameter(1),IntegerParameter(2)))><span style=\"color: #ff8080;\"><Num>IntegerParameter(1)</Num></span><Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 10838,
+    "Text": "Betreten"
+  },
+  {
+    "RowId": 10839,
+    "Text": "Zurück"
+  },
+  {
+    "RowId": 10840,
+    "Text": "Eminente Trauer (variabel)"
+  },
+  {
     "RowId": 10841,
     "Text": ""
   },
@@ -1930,73 +1998,5 @@
   {
     "RowId": 11011,
     "Text": "Keine entsprechenden Gegenstände vorhanden."
-  },
-  {
-    "RowId": 11013,
-    "Text": "Traumtafel"
-  },
-  {
-    "RowId": 11014,
-    "Text": "Nach Ablegen einer Traumprüfung erhält man genau einmal pro Woche die Gelegenheit, an der Traumtafel zu spielen.\nSprich nach Abschluss der Traumprüfung mit Großmeister Reineke, um Zugang zur Traumtafel zu erhalten.\n<span style=\"color: #ffff66;\">※ Das Suchkriterium „Abgeschlossen“ ist erst verfügbar, wenn der Inhalt einmal abgeschlossen wurde.\n※ Wenn du eine Extraprüfung erhalten hast, kannst du nach erneutem Ablegen der Traumprüfung ein weiteres Mal an der Traumtafel spielen.\n※ Durch die Wahl eines Übungsfokus werden keine Phasen übersprungen.</span>"
-  },
-  {
-    "RowId": 11015,
-    "Text": "Traumprüfung verfügbar"
-  },
-  {
-    "RowId": 11016,
-    "Text": "Traumtafel spielbar"
-  },
-  {
-    "RowId": 11017,
-    "Text": "<span style=\"color: #ff7b1a;\">Traumtafel abgeschlossen</span>"
-  },
-  {
-    "RowId": 11018,
-    "Text": "Stufen 1-50"
-  },
-  {
-    "RowId": 11019,
-    "Text": "Stufen 51-60"
-  },
-  {
-    "RowId": 11020,
-    "Text": "Stufen 61-70"
-  },
-  {
-    "RowId": 11021,
-    "Text": "Stufen 71-80"
-  },
-  {
-    "RowId": 11022,
-    "Text": "Stufen 81-90"
-  },
-  {
-    "RowId": 11025,
-    "Text": "Bericht: <sheet(Action,IntegerParameter(1),0)>"
-  },
-  {
-    "RowId": 11030,
-    "Text": "Hallo!<sound(1,96)>"
-  },
-  {
-    "RowId": 11031,
-    "Text": "Gutes Spiel!<sound(1,96)>"
-  },
-  {
-    "RowId": 11032,
-    "Text": "Danke!<sound(1,97)>"
-  },
-  {
-    "RowId": 11033,
-    "Text": "Gut gemacht!<sound(1,97)>"
-  },
-  {
-    "RowId": 11034,
-    "Text": "<sheet(Action,IntegerParameter(1),0)> <If(Equal(IntegerParameter(2),0))>bereit!<sound(1,98)><Else/>in <Num>IntegerParameter(2)</Num> <If(Equal(IntegerParameter(2),1))>Sekunde<Else/>Sekunden</If> bereit!<sound(1,99)></If>"
-  },
-  {
-    "RowId": 11035,
-    "Text": "<Head><sheet(ClassJob,IntegerParameter(2),0)></Head> Limitrausch <If(Equal(IntegerParameter(1),100))>bereit!<sound(1,98)><Else/>bei <Num>IntegerParameter(1)</Num> %!<sound(1,99)></If>"
   }
 ]

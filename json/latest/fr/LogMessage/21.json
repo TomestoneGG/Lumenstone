@@ -3229,7 +3229,7 @@
   },
   {
     "RowId": 10270,
-    "Text": "Les monstres peuplant cet étage sont temporairement ralentis.",
+    "Text": "Les monstres peuplant <switch(PlayerParameter(109),ce sous-sol,cet étage,ce sous-sol,cette zone)> sont temporairement ralentis.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3241,7 +3241,7 @@
   },
   {
     "RowId": 10271,
-    "Text": "Les monstres peuplant cet étage voient leurs PV fortement réduits.",
+    "Text": "Les monstres peuplant <switch(PlayerParameter(109),ce sous-sol,cet étage,ce sous-sol,cette zone)> voient leurs PV fortement réduits.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3397,7 +3397,7 @@
   },
   {
     "RowId": 10284,
-    "Text": "Cela n'a aucun effet à cet étage...",
+    "Text": "Cela n'a aucun effet dans <switch(PlayerParameter(109),ce sous-sol,cet étage,ce sous-sol,cette zone)>...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3613,7 +3613,7 @@
   },
   {
     "RowId": 10302,
-    "Text": "Cet étage est entouré d'une barrière magique désactivant l'utilisation des semi-clones.",
+    "Text": "Une barrière magique désactivant l'utilisation des semi-clones entoure <switch(PlayerParameter(109),ce sous-sol,cet étage,ce sous-sol,cette zone)>.",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5542,9 +5542,12 @@
   },
   {
     "RowId": 10476,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "<Icon>63</Icon>Vous vous êtes trop éloigné<If(PlayerParameter(4))>e<Else/> </If> du Felyne voyageur. Retournez le chercher.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 33,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
@@ -5578,9 +5581,12 @@
   },
   {
     "RowId": 10480,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Cette scène cinématique ne peut pas être visionnée avant d'avoir progressé dans la quête “<sheet(Quest,IntegerParameter(1),0)>”.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 9,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
@@ -5605,9 +5611,12 @@
   },
   {
     "RowId": 10483,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Action impossible. Les conditions ne sont pas remplies.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 9,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false

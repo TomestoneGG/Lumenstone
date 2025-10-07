@@ -1,5 +1,9 @@
 [
   {
+    "RowId": 10392,
+    "Text": "Close"
+  },
+  {
     "RowId": 10393,
     "Text": "Required"
   },
@@ -29,7 +33,7 @@
   },
   {
     "RowId": 10405,
-    "Text": "Floor <Num>IntegerParameter(1)</Num>"
+    "Text": "<switch(IntegerParameter(2),Floor <Num>IntegerParameter(1)</Num>,Floor <Num>IntegerParameter(1)</Num>,Stone <Num>IntegerParameter(1)</Num>)>"
   },
   {
     "RowId": 10406,
@@ -49,7 +53,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Proceed and your <span style=\"color: #ff7b1a;\">fixed party</span> save data will be converted to <span style=\"color: #ff7b1a;\">matched party</span> save data.\n\nMatched party save data still allows for the creation of preformed parties as long as the party is formed before returning to the deep dungeon, and the progression of all members is identical. Any open party slots will be filled automatically via the matching system.\n\n<span style=\"color: #ffff66;\">All special items (pomanders) will be lost upon data conversion.</span>\n\n<span style=\"color: #ffff66;\">Scores will not be recorded for matched parties.</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">Save data that has progressed to levels which require a fixed party cannot be converted to matched party save data.</span>\n\n</If><span style=\"color: #ff8080;\">※Converted data cannot be restored to its original state.</span>"
+    "Text": "Proceed and your <span style=\"color: #ff7b1a;\">fixed party</span> save data will be converted to <span style=\"color: #ff7b1a;\">matched party</span> save data.\n\nMatched party save data still allows for the creation of preformed parties as long as the party is formed before returning to the deep dungeon, and the progression of all members is identical. Any open party slots will be filled automatically via the matching system.\n\n<span style=\"color: #ffff66;\">All special items will be lost upon data conversion.</span>\n\n<span style=\"color: #ffff66;\">Scores will not be recorded for matched parties.</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">Save data that has progressed to <switch(IntegerParameter(2),floors,floors,areas)> which require a fixed party cannot be converted to matched party save data.</span>\n\n</If><span style=\"color: #ff8080;\">※Converted data cannot be restored to its original state.</span>"
   },
   {
     "RowId": 10411,
@@ -57,7 +61,7 @@
   },
   {
     "RowId": 10412,
-    "Text": "Proceed and your save data will be deleted, allowing you reentry to the deep dungeon from floor 1.\n\nFloor progression and character level will be reset, but aetherpool arm and gear strength will remain unchanged.\n\n<span style=\"color: #ff8080;\">※Data cannot be restored once deleted.</span>"
+    "Text": "Proceed and your save data will be deleted, allowing you reentry to the deep dungeon from <switch(IntegerParameter(3),floor,floor,traverse stone)> 1.\n\nDungeon progression and character level will be reset, but aetherpool arm and gear strength will remain unchanged.\n\n<span style=\"color: #ff8080;\">※Data cannot be restored once deleted.</span>"
   },
   {
     "RowId": 10413,
@@ -217,11 +221,11 @@
   },
   {
     "RowId": 10452,
-    "Text": "The floors beyond remain sealed."
+    "Text": "The <switch(IntegerParameter(1),floors,floors,areas)> beyond remain sealed."
   },
   {
     "RowId": 10453,
-    "Text": "These floors are only available when party KO count is at zero."
+    "Text": "These <switch(IntegerParameter(1),floors,floors,areas)> are only available when party KO count is at zero."
   },
   {
     "RowId": 10454,
@@ -276,6 +280,14 @@
     "Text": "Access Ranking"
   },
   {
+    "RowId": 10467,
+    "Text": "Stone"
+  },
+  {
+    "RowId": 10468,
+    "Text": "Incense"
+  },
+  {
     "RowId": 10469,
     "Text": "<HeadAll><sheet(ClassJob,IntegerParameter(1),0)></HeadAll><If(GreaterThan(IntegerParameter(2),0))> / <HeadAll><sheet(ClassJob,IntegerParameter(2),0)></HeadAll><Else/> </If>"
   },
@@ -292,12 +304,20 @@
     "Text": "<HeadAll><String>StringParameter(1)</String></HeadAll>"
   },
   {
+    "RowId": 10473,
+    "Text": "Votive Candelabra"
+  },
+  {
+    "RowId": 10474,
+    "Text": "Next Area"
+  },
+  {
     "RowId": 10475,
     "Text": "Magicite"
   },
   {
     "RowId": 10476,
-    "Text": "You detect the call of the Accursed Hoard on this floor."
+    "Text": "You detect the call of the Accursed Hoard."
   },
   {
     "RowId": 10477,
@@ -321,7 +341,7 @@
   },
   {
     "RowId": 10482,
-    "Text": "You are not starting from floor 1. \nProgress will not count towards solo completion achievements."
+    "Text": "You are not starting from <switch(IntegerParameter(1),floor 1,floor 1,traverse stone 1)>. \nProgress will not count towards solo completion achievements."
   },
   {
     "RowId": 10483,
@@ -358,6 +378,26 @@
   {
     "RowId": 10491,
     "Text": "View the deep dungeon guide."
+  },
+  {
+    "RowId": 10492,
+    "Text": "Altar of Return"
+  },
+  {
+    "RowId": 10493,
+    "Text": "Pylon of Passage"
+  },
+  {
+    "RowId": 10494,
+    "Text": "Progress toward Altar of Return activation."
+  },
+  {
+    "RowId": 10495,
+    "Text": "Progress toward Pylon of Passage activation."
+  },
+  {
+    "RowId": 10496,
+    "Text": "?"
   },
   {
     "RowId": 10500,
@@ -1324,6 +1364,34 @@
     "Text": "Due to revisions being made to the PvP system, this duty is temporarily unavailable. Further announcements will be made in upcoming patch notes or similar."
   },
   {
+    "RowId": 10834,
+    "Text": "Sacramental Offerings"
+  },
+  {
+    "RowId": 10835,
+    "Text": "Total"
+  },
+  {
+    "RowId": 10836,
+    "Text": "Reward Bonus"
+  },
+  {
+    "RowId": 10837,
+    "Text": "<If(LessThan(IntegerParameter(1),IntegerParameter(2)))><span style=\"color: #ff8080;\"><Num>IntegerParameter(1)</Num></span><Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 10838,
+    "Text": "Summon"
+  },
+  {
+    "RowId": 10839,
+    "Text": "Return"
+  },
+  {
+    "RowId": 10840,
+    "Text": "Summon Eminent Grief with the Final Verse (Quantum)."
+  },
+  {
     "RowId": 10841,
     "Text": ""
   },
@@ -1930,73 +1998,5 @@
   {
     "RowId": 11011,
     "Text": "There is nothing to display."
-  },
-  {
-    "RowId": 11013,
-    "Text": "Faux Hollows"
-  },
-  {
-    "RowId": 11014,
-    "Text": "Once per week, completion of an unreal trial grants access to Faux Hollows.\n<span style=\"color: #ffff66;\">※The “Duty Complete” option is only available for previously completed duties.\n※Earn a retelling while playing Faux Hollows to unlock one additional play per week.\n※Practice phase selection does not entail the actual skipping of phases.</span>"
-  },
-  {
-    "RowId": 11015,
-    "Text": "Faux Hollows Available"
-  },
-  {
-    "RowId": 11016,
-    "Text": "Faux Hollows Accessible"
-  },
-  {
-    "RowId": 11017,
-    "Text": "<span style=\"color: #ff7b1a;\">Faux Hollows Unavailable</span>"
-  },
-  {
-    "RowId": 11018,
-    "Text": "Lv.  1 - 50"
-  },
-  {
-    "RowId": 11019,
-    "Text": "Lv. 51 - 60"
-  },
-  {
-    "RowId": 11020,
-    "Text": "Lv. 61 - 70"
-  },
-  {
-    "RowId": 11021,
-    "Text": "Lv. 71 - 80"
-  },
-  {
-    "RowId": 11022,
-    "Text": "Lv. 81 - 90"
-  },
-  {
-    "RowId": 11025,
-    "Text": "<Head><sheet(Action,IntegerParameter(1),0)></Head>"
-  },
-  {
-    "RowId": 11030,
-    "Text": "Hello.<sound(1,96)>"
-  },
-  {
-    "RowId": 11031,
-    "Text": "Good match!<sound(1,96)>"
-  },
-  {
-    "RowId": 11032,
-    "Text": "Thank you.<sound(1,97)>"
-  },
-  {
-    "RowId": 11033,
-    "Text": "Nice job!<sound(1,97)>"
-  },
-  {
-    "RowId": 11034,
-    "Text": "<Head><sheet(Action,IntegerParameter(1),0)></Head> <If(Equal(IntegerParameter(2),0))>ready!<sound(1,98)><Else/>ready in <Num>IntegerParameter(2)</Num>s!<sound(1,99)></If>"
-  },
-  {
-    "RowId": 11035,
-    "Text": "<Head><sheet(ClassJob,IntegerParameter(2),0)></Head>: Limit break <If(Equal(IntegerParameter(1),100))>ready!<sound(1,98)><Else/>at <Num>IntegerParameter(1)</Num>%!<sound(1,99)></If>"
   }
 ]

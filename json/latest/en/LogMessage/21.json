@@ -3397,7 +3397,7 @@
   },
   {
     "RowId": 10284,
-    "Text": "That is ineffective on this floor...",
+    "Text": "That is ineffective <If(Equal(PlayerParameter(109),4))>in<Else/>on</If> this <switch(PlayerParameter(109),floor,floor,floor,area)>...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -3613,7 +3613,7 @@
   },
   {
     "RowId": 10302,
-    "Text": "This floor's powerful wards are preventing the use of the demiclone generator...",
+    "Text": "This <switch(PlayerParameter(109),floor,floor,floor,area)>'s powerful wards are preventing the use of the demiclone generator...",
     "LogKind": {
       "RowId": 57,
       "SheetName": "LogKind"
@@ -5542,9 +5542,12 @@
   },
   {
     "RowId": 10476,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "<Icon>63</Icon>You have lost sight of the stray Felyne. Speak with them again to reform your party.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 33,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
@@ -5578,9 +5581,12 @@
   },
   {
     "RowId": 10480,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Unable to play cutscene. You must progress further in the quest “<sheet(Quest,IntegerParameter(1),0)>.”",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 9,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false
@@ -5605,9 +5611,12 @@
   },
   {
     "RowId": 10483,
-    "Text": "",
-    "LogKind": null,
-    "Unknown0": 0,
+    "Text": "Unable to execute command.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "Unknown0": 9,
     "Unknown1": 0,
     "Unknown_70": 0,
     "Unknown2": false

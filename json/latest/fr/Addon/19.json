@@ -1,5 +1,9 @@
 [
   {
+    "RowId": 10392,
+    "Text": "Fermer"
+  },
+  {
     "RowId": 10393,
     "Text": "Objets consommés"
   },
@@ -49,7 +53,7 @@
   },
   {
     "RowId": 10410,
-    "Text": "Convertir la sauvegarde de la progression en équipe préformée pour le groupement automatique?\n\nUne sauvegarde en groupement automatique permet de former une équipe avec des joueurs ayant la même progression que soi et d'ajouter automatiquement des équipiers manquants.\n\n<span style=\"color: #ffff66;\">Les données relatives aux objets spéciaux possédés ne sont pas conservées lors de la conversion.</span>\n\n<span style=\"color: #ffff66;\">Aucun score n'est calculé pour les incursions en équipe formée par groupement automatique.</span>\n\n<span style=\"color: #ff8080;\">* Attention: la conversion d'une sauvegarde ne peut pas être annulée.</span>"
+    "Text": "Convertir la sauvegarde de la progression en équipe préformée pour le groupement automatique?\n\nUne sauvegarde en groupement automatique permet de former une équipe avec des joueurs ayant la même progression que soi et d'ajouter automatiquement des équipiers manquants.\n\n<span style=\"color: #ffff66;\">Les données relatives aux objets spéciaux possédés ne sont pas conservées lors de la conversion.</span>\n\n<span style=\"color: #ffff66;\">Aucun score n'est calculé pour les incursions en équipe formée par groupement automatique.</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">Les sauvegardes où la phase de défi a déjà été atteinte ne peuvent pas être converties.</span>\n\n</If><span style=\"color: #ff8080;\">* Attention: la conversion d'une sauvegarde ne peut pas être annulée.</span>"
   },
   {
     "RowId": 10411,
@@ -217,7 +221,7 @@
   },
   {
     "RowId": 10452,
-    "Text": "Il est nécessaire d'obtenir l'accès aux étages suivants pour progresser."
+    "Text": "Il est nécessaire d'obtenir l'accès aux <switch(IntegerParameter(1),sous-sols suivants,étages suivants,zones suivantes)> pour progresser."
   },
   {
     "RowId": 10453,
@@ -276,6 +280,14 @@
     "Text": "Voir les classements"
   },
   {
+    "RowId": 10467,
+    "Text": "Zone"
+  },
+  {
+    "RowId": 10468,
+    "Text": "Encens de genévrier"
+  },
+  {
     "RowId": 10469,
     "Text": "<Head><sheet(ClassJob,IntegerParameter(1),0)></Head><If(GreaterThan(IntegerParameter(2),0))>/<Head><sheet(ClassJob,IntegerParameter(2),0)></Head><Else/> </If>"
   },
@@ -292,12 +304,20 @@
     "Text": "<Head><String>StringParameter(1)</String></Head>"
   },
   {
+    "RowId": 10473,
+    "Text": "Candélabre de l'Aurore"
+  },
+  {
+    "RowId": 10474,
+    "Text": "Suivant"
+  },
+  {
     "RowId": 10475,
     "Text": "Magilithes"
   },
   {
     "RowId": 10476,
-    "Text": "Votre instinct vous dit qu'un coffre est enfoui à cet étage."
+    "Text": "Votre instinct vous dit qu'un coffre est enfoui dans les environs."
   },
   {
     "RowId": 10477,
@@ -321,7 +341,7 @@
   },
   {
     "RowId": 10482,
-    "Text": "L'incursion n'ayant pas été faite <If(Equal(IntegerParameter(1),0))>au sous-sol 1<Else/>à l'étage 1</If>, ce score n'est pas comptabilisé\npour l'obtention de hauts faits en solo."
+    "Text": "L'incursion n'ayant pas été faite <switch(IntegerParameter(1),au sous-sol 1,à l'étage 1,à la zone 1)>, ce score n'est pas comptabilisé\npour l'obtention de hauts faits en solo."
   },
   {
     "RowId": 10483,
@@ -358,6 +378,26 @@
   {
     "RowId": 10491,
     "Text": "En savoir plus sur les donjons sans fond"
+  },
+  {
+    "RowId": 10492,
+    "Text": "Autel de résurrection"
+  },
+  {
+    "RowId": 10493,
+    "Text": "Téléporteur"
+  },
+  {
+    "RowId": 10494,
+    "Text": "Indique l'état d'activation de l'autel de résurrection."
+  },
+  {
+    "RowId": 10495,
+    "Text": "Indique l'état d'activation du téléporteur."
+  },
+  {
+    "RowId": 10496,
+    "Text": "?"
   },
   {
     "RowId": 10500,
@@ -1324,6 +1364,34 @@
     "Text": "Les systèmes de jeu JcJ faisant l'objet d'une refonte, cette mission est temporairement indisponible.\nSa réouverture sera annoncée dans les notes d'une future mise à jour."
   },
   {
+    "RowId": 10834,
+    "Text": "Offrandes"
+  },
+  {
+    "RowId": 10835,
+    "Text": "Total"
+  },
+  {
+    "RowId": 10836,
+    "Text": "Bonus de récompenses"
+  },
+  {
+    "RowId": 10837,
+    "Text": "<If(LessThan(IntegerParameter(1),IntegerParameter(2)))><span style=\"color: #ff8080;\"><Num>IntegerParameter(1)</Num></span><Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 10838,
+    "Text": "Commencer"
+  },
+  {
+    "RowId": 10839,
+    "Text": "Retour"
+  },
+  {
+    "RowId": 10840,
+    "Text": "Pénétrer dans le Verset final (quantique)"
+  },
+  {
     "RowId": 10841,
     "Text": ""
   },
@@ -1930,73 +1998,5 @@
   {
     "RowId": 11011,
     "Text": "Vous ne possédez pas d'objet pouvant être déverrouillé."
-  },
-  {
-    "RowId": 11013,
-    "Text": "Touché-tourné"
-  },
-  {
-    "RowId": 11014,
-    "Text": "Accomplir un défi irréel permet de jouer à Touché-tourné une fois par semaine (temps réel).\nCe mini-jeu est disponible auprès du “président” une fois le défi terminé.\n<span style=\"color: #ffff66;\">* Lorsqu'un essai bonus est obtenu, il est possible de tenter sa chance à Touché-tourné une deuxième fois au cours de la même semaine après avoir à nouveau terminé le défi irréel.</span>\n<span style=\"color: #ffff66;\">* “Déjà terminé” n'est disponible que pour les missions préalablement réussies.</span>\n<span style=\"color: #ffff66;\">* Spécifier une phase ne permet pas de sauter celles précédentes.</span>"
-  },
-  {
-    "RowId": 11015,
-    "Text": "Défi irréel: non-accompli"
-  },
-  {
-    "RowId": 11016,
-    "Text": "Essai à Touché-tourné: non-accompli"
-  },
-  {
-    "RowId": 11017,
-    "Text": "<span style=\"color: #ff7b1a;\">Essai à Touché-tourné: accompli</span>"
-  },
-  {
-    "RowId": 11018,
-    "Text": "Nv 1 à 50"
-  },
-  {
-    "RowId": 11019,
-    "Text": "Nv 51 à 60"
-  },
-  {
-    "RowId": 11020,
-    "Text": "Nv 61 à 70"
-  },
-  {
-    "RowId": 11021,
-    "Text": "Nv 71 à 80"
-  },
-  {
-    "RowId": 11022,
-    "Text": "Nv 81 à 90"
-  },
-  {
-    "RowId": 11025,
-    "Text": "Disponibilité: <sheet(Action,IntegerParameter(1),0)>"
-  },
-  {
-    "RowId": 11030,
-    "Text": "Salut!<sound(1,96)>"
-  },
-  {
-    "RowId": 11031,
-    "Text": "C'était un beau combat!<sound(1,96)>"
-  },
-  {
-    "RowId": 11032,
-    "Text": "Merci!<sound(1,97)>"
-  },
-  {
-    "RowId": 11033,
-    "Text": "Bien joué!<sound(1,97)>"
-  },
-  {
-    "RowId": 11034,
-    "Text": "<sheet(Action,IntegerParameter(1),0)>: <If(Equal(IntegerParameter(2),0))>utilisable!<sound(1,98)><Else/>utilisable dans <Num>IntegerParameter(2)</Num>s!<sound(1,99)></If>"
-  },
-  {
-    "RowId": 11035,
-    "Text": "Transcendance du job “<sheet(ClassJob,IntegerParameter(2),0)>”: <If(Equal(IntegerParameter(1),100))>utilisable!<sound(1,98)><Else/><Num>IntegerParameter(1)</Num>%!<sound(1,99)></If>"
   }
 ]
