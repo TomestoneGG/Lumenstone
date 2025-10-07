@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 10392,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10393,
+    "Text": "消費アイテム数"
+  },
+  {
+    "RowId": 10394,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>を\n<Num>IntegerParameter(2)</Num>個使用して再分配します。\nよろしいですか？"
+  },
+  {
+    "RowId": 10400,
+    "Text": "DEEP DUNGEON"
+  },
+  {
+    "RowId": 10401,
+    "Text": "ディープダンジョン"
+  },
+  {
+    "RowId": 10402,
+    "Text": "Equipments"
+  },
+  {
+    "RowId": 10403,
+    "Text": "Save Data <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10404,
+    "Text": "はじめから"
+  },
+  {
+    "RowId": 10405,
+    "Text": "<switch(IntegerParameter(2),B<Num>IntegerParameter(1)</Num>,<Num>IntegerParameter(1)</Num>,T<Num>IntegerParameter(1)</Num>)>"
+  },
+  {
+    "RowId": 10406,
+    "Text": "<sheet(ClassJob,IntegerParameter(1),0)>\n<String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 10407,
+    "Text": "DEEP DUNGEON INFO"
+  },
+  {
+    "RowId": 10408,
+    "Text": "ディープダンジョン情報"
+  },
+  {
+    "RowId": 10409,
+    "Text": "Special Items"
+  },
+  {
+    "RowId": 10410,
+    "Text": "固定のメンバーで攻略中のセーブデータを、メンバーが固定されないマッチングパーティのセーブデータへと変換します。\n\nマッチングパーティのセーブデータでは、攻略中の<switch(IntegerParameter(2),階層,階層,巡礼路)>が同じメンバーでなら、あらかじめパーティを組んでおくことで、一緒に遊ぶことが可能となり、足りない分のメンバーは、自動的に補充されるようになります。\n\n<span style=\"color: #ffff66;\">セーブデータをコンバートした場合、特殊アイテムの所持状況は引き継がれません。</span>\n\n<span style=\"color: #ffff66;\">マッチングパーティでは攻略による「スコア」の算出は行われません。</span>\n\n<If(GreaterThan(IntegerParameter(1),0))> <Else/><span style=\"color: #ffff66;\">チャレンジコンテンツの<switch(IntegerParameter(2),階層,階層,巡礼路)>まで進行しているセーブデータはマッチングパーティのセーブデータに変換することはできません。</span>\n\n</If><span style=\"color: #ff8080;\">※一度コンバートしたセーブデータを元の状態に戻すことはできません。コンバートは慎重に行ってください。</span>"
+  },
+  {
+    "RowId": 10411,
+    "Text": "上記に同意してセーブデータをコンバートする"
+  },
+  {
+    "RowId": 10412,
+    "Text": "攻略中のセーブデータを削除し、ディープダンジョンを始めから遊ぶことができるようにします。\n\nセーブデータを削除すると、<switch(IntegerParameter(3),到達階層,到達階層,到達地点)>やレベルがリセットされますが、「<String>StringParameter(1)</String>」「<String>StringParameter(2)</String>」 の強化値はリセットされずに、継続して使用することができます。\n\n<span style=\"color: #ff8080;\">※一度削除したセーブデータを復帰することはできません。削除は慎重に行ってください。</span>"
+  },
+  {
+    "RowId": 10413,
+    "Text": "上記に同意してセーブデータを削除する"
+  },
+  {
+    "RowId": 10414,
+    "Text": "武器・防具強化：+ <Num>IntegerParameter(1)</Num>～"
+  },
+  {
+    "RowId": 10415,
+    "Text": "このキャラクターは存在しません。"
+  },
+  {
+    "RowId": 10416,
+    "Text": "強化値"
+  },
+  {
+    "RowId": 10417,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>+<Else/> </If><Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10418,
+    "Text": "再生の石塔"
+  },
+  {
+    "RowId": 10419,
+    "Text": "転移の石塔"
+  },
+  {
+    "RowId": 10420,
+    "Text": "宝箱(金)"
+  },
+  {
+    "RowId": 10421,
+    "Text": "宝箱(銀)"
+  },
+  {
+    "RowId": 10422,
+    "Text": "宝箱(銅)"
+  },
+  {
+    "RowId": 10423,
+    "Text": "マップをロックする"
+  },
+  {
+    "RowId": 10424,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10425,
+    "Text": "マップのロックを解除する"
+  },
+  {
+    "RowId": 10426,
+    "Text": "Item Effects"
+  },
+  {
+    "RowId": 10427,
+    "Text": "<If(IntegerParameter(3))><span style=\"color: #f9e846;\"><i><String>StringParameter(1)</String><If(Equal(IntegerParameter(2),0))> <Else/><If(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))><span style=\"color: #ff7b1a;\"> +<Num>IntegerParameter(2)</Num></span><Else/> +<Num>IntegerParameter(2)</Num></If></If></i></span><Else/><String>StringParameter(1)</String><If(Equal(IntegerParameter(2),0))> <Else/><If(GreaterThanOrEqualTo(IntegerParameter(2),IntegerParameter(4)))><span style=\"color: #ff7b1a;\"> +<Num>IntegerParameter(2)</Num></span><Else/> +<Num>IntegerParameter(2)</Num></If></If></If>"
+  },
+  {
+    "RowId": 10428,
+    "Text": "データが取得できません。"
+  },
+  {
+    "RowId": 10429,
+    "Text": "コンプリート済みのセーブデータのため、再開することができません。"
+  },
+  {
+    "RowId": 10430,
+    "Text": "つぎのレベルまで"
+  },
+  {
+    "RowId": 10431,
+    "Text": "ディープダンジョン情報"
+  },
+  {
+    "RowId": 10432,
+    "Text": "ディープダンジョン情報を開きます。"
+  },
+  {
+    "RowId": 10433,
+    "Text": "Escキー、<Icon2>9</Icon2>ボタン、およびメインコマンドの表示でディープダンジョン情報を閉じないロック機能のON/OFFを行います。"
+  },
+  {
+    "RowId": 10434,
+    "Text": "再生の石塔が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10435,
+    "Text": "転移の石塔が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10436,
+    "Text": "Escキー、<Icon2>9</Icon2>ボタン、<Icon>10</Icon>ボタン、メインコマンドの表示でマップを閉じないロック機能のON/OFFを行います。"
+  },
+  {
+    "RowId": 10437,
+    "Text": "ディープダンジョンにて発見された埋もれた財宝。\n魔力を帯びており、迂闊に扱うと呪いを帯びかねない。"
+  },
+  {
+    "RowId": 10438,
+    "Text": "SCORE RESULT"
+  },
+  {
+    "RowId": 10439,
+    "Text": "RESULT"
+  },
+  {
+    "RowId": 10440,
+    "Text": "到達階数"
+  },
+  {
+    "RowId": 10441,
+    "Text": "討伐モンスター数"
+  },
+  {
+    "RowId": 10442,
+    "Text": "スコア"
+  },
+  {
+    "RowId": 10443,
+    "Text": "コンテンツ退出まで <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 10444,
+    "Text": "退出"
+  },
+  {
+    "RowId": 10445,
+    "Text": "High Score!"
+  },
+  {
+    "RowId": 10446,
+    "Text": "DEEP DUNGEON SCORE"
+  },
+  {
+    "RowId": 10447,
+    "Text": "ディープダンジョン スコア"
+  },
+  {
+    "RowId": 10448,
+    "Text": "1人"
+  },
+  {
+    "RowId": 10449,
+    "Text": "パーティ"
+  },
+  {
+    "RowId": 10450,
+    "Text": "---"
+  },
+  {
+    "RowId": 10451,
+    "Text": "全滅回数：<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10452,
+    "Text": "この先の<switch(IntegerParameter(1),階層,階層,巡礼路)>を遊ぶには、コンテンツを開放する必要があります。"
+  },
+  {
+    "RowId": 10453,
+    "Text": "この<switch(IntegerParameter(1),階層,階層,巡礼路)>は、全滅回数が0のセーブデータでないと遊ぶことができません。"
+  },
+  {
+    "RowId": 10454,
+    "Text": "ITEM INSPECTION"
+  },
+  {
+    "RowId": 10455,
+    "Text": "アイテム鑑定"
+  },
+  {
+    "RowId": 10456,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>を使ってアイテム鑑定を行います。\nよろしいですか？"
+  },
+  {
+    "RowId": 10457,
+    "Text": "アイテム名"
+  },
+  {
+    "RowId": 10458,
+    "Text": "所持数"
+  },
+  {
+    "RowId": 10459,
+    "Text": "???????"
+  },
+  {
+    "RowId": 10460,
+    "Text": "IDENTIFICATION"
+  },
+  {
+    "RowId": 10461,
+    "Text": "Name"
+  },
+  {
+    "RowId": 10462,
+    "Text": "Commands"
+  },
+  {
+    "RowId": 10463,
+    "Text": "開始するセーブデータを選択してください。"
+  },
+  {
+    "RowId": 10464,
+    "Text": "リセットするセーブデータを選択してください。"
+  },
+  {
+    "RowId": 10465,
+    "Text": "固定パーティを解散するセーブデータを選択してください。"
+  },
+  {
+    "RowId": 10466,
+    "Text": "ランキングにアクセス"
+  },
+  {
+    "RowId": 10467,
+    "Text": "到達地点"
+  },
+  {
+    "RowId": 10468,
+    "Text": "JUNIPER INCENSE"
+  },
+  {
+    "RowId": 10469,
+    "Text": "<sheet(ClassJob,IntegerParameter(1),0)><If(GreaterThan(IntegerParameter(2),0))> / <sheet(ClassJob,IntegerParameter(2),0)><Else/> </If>"
+  },
+  {
+    "RowId": 10470,
+    "Text": "表示できる埋もれた財宝はありません。"
+  },
+  {
+    "RowId": 10471,
+    "Text": "公式プレイヤーズサイト「Lodestone」にてランキング公開中！\n<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10472,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10473,
+    "Text": "光耀の燭台"
+  },
+  {
+    "RowId": 10474,
+    "Text": "Next"
+  },
+  {
+    "RowId": 10475,
+    "Text": "MAGIC STONES"
+  },
+  {
+    "RowId": 10476,
+    "Text": "埋もれた財宝の気配を感知しました。"
+  },
+  {
+    "RowId": 10477,
+    "Text": "再生の灯篭"
+  },
+  {
+    "RowId": 10478,
+    "Text": "転移の灯篭"
+  },
+  {
+    "RowId": 10479,
+    "Text": "再生の灯篭が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10480,
+    "Text": "転移の灯篭が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10481,
+    "Text": "到達階数"
+  },
+  {
+    "RowId": 10482,
+    "Text": "<switch(IntegerParameter(1),突入階層が地下1階,突入階層が第1層,突入地点が第1巡礼路)>ではないため、ひとりで攻略して取得できる\nアチーブメントには反映されません。"
+  },
+  {
+    "RowId": 10483,
+    "Text": "このセーブデータは全滅回数が1以上のため、深層への\n挑戦はできませんが突入しますか？"
+  },
+  {
+    "RowId": 10484,
+    "Text": "このセーブデータで続ける。"
+  },
+  {
+    "RowId": 10485,
+    "Text": "再生装置"
+  },
+  {
+    "RowId": 10486,
+    "Text": "転移装置"
+  },
+  {
+    "RowId": 10487,
+    "Text": "再生装置が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10488,
+    "Text": "転移装置が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10489,
+    "Text": "DEMICLONE GENERATOR"
+  },
+  {
+    "RowId": 10490,
+    "Text": "プレイガイド(Lodestone)"
+  },
+  {
+    "RowId": 10491,
+    "Text": "ディープダンジョンの説明を見る"
+  },
+  {
+    "RowId": 10492,
+    "Text": "再生の祭壇"
+  },
+  {
+    "RowId": 10493,
+    "Text": "転移装置"
+  },
+  {
+    "RowId": 10494,
+    "Text": "再生の祭壇が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10495,
+    "Text": "転移装置が有効になるまでの進行状況を示します。"
+  },
+  {
+    "RowId": 10496,
+    "Text": "?"
+  },
+  {
+    "RowId": 10500,
+    "Text": "コンテンツサポーターで攻略"
+  },
+  {
+    "RowId": 10501,
+    "Text": "フェイスで攻略"
+  },
+  {
+    "RowId": 10507,
+    "Text": "/"
+  },
+  {
+    "RowId": 10508,
+    "Text": "ジンクス"
+  },
+  {
+    "RowId": 10509,
+    "Text": "<String>StringParameter(1)</String>: <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 10510,
+    "Text": "PLATOON DUTY"
+  },
+  {
+    "RowId": 10511,
+    "Text": "攻略任務一覧"
+  },
+  {
+    "RowId": 10512,
+    "Text": "参加条件"
+  },
+  {
+    "RowId": 10513,
+    "Text": "レベル <Num>IntegerParameter(1)</Num><If(GreaterThan(IntegerParameter(2),IntegerParameter(1)))>～<Num>IntegerParameter(2)</Num><Else/> </If> ※上限を越えた場合はレベルシンク<If(GreaterThan(IntegerParameter(3),0))>\n\uE033平均アイテムレベル <Num>IntegerParameter(3)</Num>～<Else/> </If><If(GreaterThan(IntegerParameter(4),0))>\u3000\n\uE0BDアイテムレベルシンク：<Num>IntegerParameter(4)</Num><Else/> </If>"
+  },
+  {
+    "RowId": 10514,
+    "Text": "変更したそれぞれの部位への武具投影を反映します。\nよろしいですか？"
+  },
+  {
+    "RowId": 10515,
+    "Text": "今回の武具投影開始前の状態に戻します。\nよろしいですか？"
+  },
+  {
+    "RowId": 10516,
+    "Text": "すべての武具投影・染色を解除して、\n小隊員の元の姿に戻します。\nよろしいですか？"
+  },
+  {
+    "RowId": 10517,
+    "Text": "現在の状態を反映せず、武具投影を終了します。\nよろしいですか？"
+  },
+  {
+    "RowId": 10518,
+    "Text": "<span style=\"color: #ff8080;\">触媒が不足しているため、選択した武具投影を反映することができません。</span>"
+  },
+  {
+    "RowId": 10519,
+    "Text": "現編制の能力"
+  },
+  {
+    "RowId": 10520,
+    "Text": "小隊員獲得経験値"
+  },
+  {
+    "RowId": 10521,
+    "Text": "任務開始"
+  },
+  {
+    "RowId": 10522,
+    "Text": "「<sheet(GcArmyExpedition,IntegerParameter(1),8)>」を開始します。\nよろしいですか？\n\n帰隊予定時刻: <SetTime>IntegerParameter(2)</SetTime><Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec> （<If(Equal(IntegerParameter(3),0))>即時<Else/><Num>IntegerParameter(3)</Num>時間後</If>）\n<If(GreaterThan(IntegerParameter(4),0))>\n<span style=\"color: #ffff66;\">※全隊員の保留中のジンクスは任務開始とともに消失します</span><Else/> </If><If(GreaterThan(IntegerParameter(5),0))>\n<span style=\"color: #ff7b1a;\">特殊任務はいずれかひとつを成功させると、一覧が更新される次週まで受けられません。</span><Else/> </If>"
+  },
+  {
+    "RowId": 10523,
+    "Text": "身体能力"
+  },
+  {
+    "RowId": 10524,
+    "Text": "精神力"
+  },
+  {
+    "RowId": 10525,
+    "Text": "戦術練度"
+  },
+  {
+    "RowId": 10526,
+    "Text": "ジンクス"
+  },
+  {
+    "RowId": 10528,
+    "Text": "小隊総合能力: <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>/<Num>IntegerParameter(3)</Num>"
+  },
+  {
+    "RowId": 10529,
+    "Text": "小隊ランク： <If(Equal(IntegerParameter(1),0))>0<Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 10530,
+    "Text": "冒険者小隊"
+  },
+  {
+    "RowId": 10531,
+    "Text": "\uE031 <If(Equal(IntegerParameter(1),0))><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分後<Else/>1分以内</If><Else/><Num>IntegerParameter(1)</Num>時間<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分<Else/> </If>後</If>\u3000<SetTime>IntegerParameter(3)</SetTime>[ <Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec> ]"
+  },
+  {
+    "RowId": 10532,
+    "Text": "小隊行動"
+  },
+  {
+    "RowId": 10533,
+    "Text": "<sheet(GcArmyExpedition,IntegerParameter(1),8)>"
+  },
+  {
+    "RowId": 10534,
+    "Text": "<sheet(GcArmyTraining,IntegerParameter(1),4)>"
+  },
+  {
+    "RowId": 10535,
+    "Text": "待機中"
+  },
+  {
+    "RowId": 10536,
+    "Text": "残り時間"
+  },
+  {
+    "RowId": 10537,
+    "Text": "新規志願兵"
+  },
+  {
+    "RowId": 10538,
+    "Text": "<If(Equal(IntegerParameter(1),0))>なし<Else/>あり\u3000《兵舎に移動して志願書を確認してください》</If>"
+  },
+  {
+    "RowId": 10539,
+    "Text": "<If(Equal(IntegerParameter(1),0))>小隊任務完了<Else/>訓練終了</If>\u3000《兵舎で確認可能です》"
+  },
+  {
+    "RowId": 10540,
+    "Text": "PLATOON MISSION RESULT"
+  },
+  {
+    "RowId": 10541,
+    "Text": "小隊任務成果報告"
+  },
+  {
+    "RowId": 10542,
+    "Text": "小隊任務: <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10543,
+    "Text": "小隊任務結果"
+  },
+  {
+    "RowId": 10544,
+    "Text": "必要数"
+  },
+  {
+    "RowId": 10545,
+    "Text": "所持数"
+  },
+  {
+    "RowId": 10546,
+    "Text": "投影する各装備品にはBIND属性が付加されます。"
+  },
+  {
+    "RowId": 10547,
+    "Text": "小隊員獲得経験値"
+  },
+  {
+    "RowId": 10548,
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num><Else/>--/--</If>"
+  },
+  {
+    "RowId": 10549,
+    "Text": "/"
+  },
+  {
+    "RowId": 10550,
+    "Text": "+<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10551,
+    "Text": "攻略任務結果"
+  },
+  {
+    "RowId": 10552,
+    "Text": "完了"
+  },
+  {
+    "RowId": 10553,
+    "Text": "<If(Equal(IntegerParameter(1),0))>小隊任務中<Else/>小隊任務完了</If>"
+  },
+  {
+    "RowId": 10554,
+    "Text": "<If(Equal(IntegerParameter(1),0))>訓練中<Else/>訓練終了</If>"
+  },
+  {
+    "RowId": 10555,
+    "Text": "戦費"
+  },
+  {
+    "RowId": 10556,
+    "Text": "基本報酬"
+  },
+  {
+    "RowId": 10557,
+    "Text": "適性能力"
+  },
+  {
+    "RowId": 10558,
+    "Text": "戦果"
+  },
+  {
+    "RowId": 10559,
+    "Text": "ランダムボーナスにより常に有効"
+  },
+  {
+    "RowId": 10560,
+    "Text": "PLATOON DUTY RESULT"
+  },
+  {
+    "RowId": 10561,
+    "Text": "攻略任務結果"
+  },
+  {
+    "RowId": 10562,
+    "Text": "作戦『<String>StringParameter(1)</String>』を修得"
+  },
+  {
+    "RowId": 10563,
+    "Text": "作戦『<String>StringParameter(1)</String>』の熟練度が<Num>IntegerParameter(2)</Num>にアップ"
+  },
+  {
+    "RowId": 10564,
+    "Text": "作戦指示"
+  },
+  {
+    "RowId": 10565,
+    "Text": "装備確認"
+  },
+  {
+    "RowId": 10566,
+    "Text": "ジンクス管理"
+  },
+  {
+    "RowId": 10567,
+    "Text": "クラス変更"
+  },
+  {
+    "RowId": 10568,
+    "Text": "志願書確認"
+  },
+  {
+    "RowId": 10569,
+    "Text": "なし"
+  },
+  {
+    "RowId": 10570,
+    "Text": "リミテッドジョブ"
+  },
+  {
+    "RowId": 10571,
+    "Text": "訓練種別"
+  },
+  {
+    "RowId": 10572,
+    "Text": "攻略任務の成功、見事でございます！"
+  },
+  {
+    "RowId": 10573,
+    "Text": "攻略任務の成功、見事でございます！"
+  },
+  {
+    "RowId": 10574,
+    "Text": "攻略任務の成功、見事でございます！"
+  },
+  {
+    "RowId": 10575,
+    "Text": "攻略任務の失敗、まことに残念でした。"
+  },
+  {
+    "RowId": 10576,
+    "Text": "攻略任務の失敗、まことに残念でした。"
+  },
+  {
+    "RowId": 10577,
+    "Text": "攻略任務の失敗、まことに残念でした。"
+  },
+  {
+    "RowId": 10578,
+    "Text": "小隊員が獲得する経験値： <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10579,
+    "Text": "『<String>StringParameter(1)</String>』を開始します。"
+  },
+  {
+    "RowId": 10580,
+    "Text": "『<String>StringParameter(1)</String>』を開始します。\n<span style=\"color: #ffff66;\">※小隊総合能力の合計値が現在の小隊ランクでの上限に達するため、一部の小隊総合能力は減少します。</span>"
+  },
+  {
+    "RowId": 10581,
+    "Text": "本日の訓練可能回数\nあと<Num>IntegerParameter(1)</Num>回"
+  },
+  {
+    "RowId": 10582,
+    "Text": "小隊員装備"
+  },
+  {
+    "RowId": 10583,
+    "Text": "武具投影編集"
+  },
+  {
+    "RowId": 10584,
+    "Text": "武具投影決定"
+  },
+  {
+    "RowId": 10585,
+    "Text": "最初からやり直す"
+  },
+  {
+    "RowId": 10586,
+    "Text": "小隊員の本来の装備に戻す"
+  },
+  {
+    "RowId": 10587,
+    "Text": "消費触媒"
+  },
+  {
+    "RowId": 10588,
+    "Text": "<span style=\"color: #ffff66;\">武具投影は小隊員レベル51以上で可能です。</span>"
+  },
+  {
+    "RowId": 10589,
+    "Text": "<span style=\"color: #ffff66;\">武具投影を行うには、小隊員に直接話しかけてください。</span>"
+  },
+  {
+    "RowId": 10590,
+    "Text": "装備不可部位"
+  },
+  {
+    "RowId": 10591,
+    "Text": "現在実行中の訓練"
+  },
+  {
+    "RowId": 10592,
+    "Text": "終了予定"
+  },
+  {
+    "RowId": 10593,
+    "Text": "\uE031 <If(Equal(IntegerParameter(1),0))><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分後<Else/>1分以内</If><Else/><Num>IntegerParameter(1)</Num>時間<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分<Else/> </If>後</If>\u3000<SetTime>IntegerParameter(3)</SetTime>[ <Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec> ]"
+  },
+  {
+    "RowId": 10594,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10595,
+    "Text": "武具投影可能部位"
+  },
+  {
+    "RowId": 10596,
+    "Text": "終了確認"
+  },
+  {
+    "RowId": 10597,
+    "Text": "終了した訓練"
+  },
+  {
+    "RowId": 10598,
+    "Text": "なし"
+  },
+  {
+    "RowId": 10599,
+    "Text": "小隊員が獲得した経験値： <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10600,
+    "Text": "<span style=\"color: #ffff66;\">武具投影が開放されていません。</span>"
+  },
+  {
+    "RowId": 10603,
+    "Text": "小隊総合能力： <Num>IntegerParameter(2)</Num>/<Num>IntegerParameter(3)</Num>"
+  },
+  {
+    "RowId": 10604,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 10609,
+    "Text": "部隊編制"
+  },
+  {
+    "RowId": 10610,
+    "Text": "報告します。今回の任務は成功であります！"
+  },
+  {
+    "RowId": 10611,
+    "Text": "報告します。今回の任務は成功であります！"
+  },
+  {
+    "RowId": 10612,
+    "Text": "報告します。今回の任務は成功であります！"
+  },
+  {
+    "RowId": 10613,
+    "Text": "遺憾ながら、今回の任務は失敗のようです。"
+  },
+  {
+    "RowId": 10614,
+    "Text": "遺憾ながら、今回の任務は失敗のようです。"
+  },
+  {
+    "RowId": 10615,
+    "Text": "遺憾ながら、今回の任務は失敗のようです。"
+  },
+  {
+    "RowId": 10620,
+    "Text": "PLATOON MISSION"
+  },
+  {
+    "RowId": 10621,
+    "Text": "小隊任務一覧"
+  },
+  {
+    "RowId": 10624,
+    "Text": ""
+  },
+  {
+    "RowId": 10625,
+    "Text": "ダンジョン攻略任務"
+  },
+  {
+    "RowId": 10630,
+    "Text": "ランダムボーナス"
+  },
+  {
+    "RowId": 10632,
+    "Text": "/"
+  },
+  {
+    "RowId": 10635,
+    "Text": "この任務は、到底成功しないでしょう。"
+  },
+  {
+    "RowId": 10636,
+    "Text": "この任務は、到底成功しないでしょう。"
+  },
+  {
+    "RowId": 10637,
+    "Text": "この任務は、到底成功しないでしょう。"
+  },
+  {
+    "RowId": 10638,
+    "Text": "結果は期待できそうにもありませんね。"
+  },
+  {
+    "RowId": 10639,
+    "Text": "結果は期待できそうにもありませんね。"
+  },
+  {
+    "RowId": 10640,
+    "Text": "結果は期待できそうにもありませんね。"
+  },
+  {
+    "RowId": 10641,
+    "Text": "厳しい任務ですが、それでも命じますか？"
+  },
+  {
+    "RowId": 10642,
+    "Text": "厳しい任務ですが、それでも命じますか？"
+  },
+  {
+    "RowId": 10643,
+    "Text": "厳しい任務ですが、それでも命じますか？"
+  },
+  {
+    "RowId": 10644,
+    "Text": "安心できませんが、試す価値はあるでしょう。"
+  },
+  {
+    "RowId": 10645,
+    "Text": "安心できませんが、試す価値はあるでしょう。"
+  },
+  {
+    "RowId": 10646,
+    "Text": "安心できませんが、試す価値はあるでしょう。"
+  },
+  {
+    "RowId": 10647,
+    "Text": "任務成功は、間違いないでしょう！"
+  },
+  {
+    "RowId": 10648,
+    "Text": "任務成功は、間違いないでしょう！"
+  },
+  {
+    "RowId": 10649,
+    "Text": "任務成功は、間違いないでしょう！"
+  },
+  {
+    "RowId": 10659,
+    "Text": "<sheet(Race,IntegerParameter(1),0)> <If(Equal(IntegerParameter(2),0))>♂<Else/>♀</If>"
+  },
+  {
+    "RowId": 10660,
+    "Text": "採用"
+  },
+  {
+    "RowId": 10661,
+    "Text": "不採用"
+  },
+  {
+    "RowId": 10662,
+    "Text": "本人と会う"
+  },
+  {
+    "RowId": 10663,
+    "Text": "判断保留"
+  },
+  {
+    "RowId": 10664,
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num><Else/>--/--</If>"
+  },
+  {
+    "RowId": 10665,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> 入隊"
+  },
+  {
+    "RowId": 10666,
+    "Text": "現在小隊は定員に達しているため、代わりに除隊させる小隊員を選んでください"
+  },
+  {
+    "RowId": 10667,
+    "Text": "小隊員一覧を開く"
+  },
+  {
+    "RowId": 10668,
+    "Text": "小隊員の新たなクラスを指定"
+  },
+  {
+    "RowId": 10669,
+    "Text": "タンク系"
+  },
+  {
+    "RowId": 10670,
+    "Text": "物理DPS系"
+  },
+  {
+    "RowId": 10671,
+    "Text": "ソーサラー系"
+  },
+  {
+    "RowId": 10672,
+    "Text": "<sheet(ClassJob,IntegerParameter(1),0)> Lv<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 10673,
+    "Text": "小隊員のジンクス変更を認める"
+  },
+  {
+    "RowId": 10674,
+    "Text": "<String>StringParameter(1)</String>の入隊を断りますか？"
+  },
+  {
+    "RowId": 10675,
+    "Text": "<String>StringParameter(1)</String>を除隊させ、代わりに<String>StringParameter(2)</String>を入隊させます。よろしいですか？"
+  },
+  {
+    "RowId": 10676,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>を使用し、<sheet(ClassJob,IntegerParameter(4),0)>へのクラス変更を命じます。<If(GreaterThan(IntegerParameter(2),0))>\n<span style=\"color: #ffff66;\">装備変更に伴い、武具投影はすべて投影解除されます。</span><Else/> </If>"
+  },
+  {
+    "RowId": 10677,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10678,
+    "Text": "除隊させる"
+  },
+  {
+    "RowId": 10679,
+    "Text": "戻る"
+  },
+  {
+    "RowId": 10680,
+    "Text": "小隊員の作戦を指示"
+  },
+  {
+    "RowId": 10681,
+    "Text": "熟練度"
+  },
+  {
+    "RowId": 10682,
+    "Text": "自由"
+  },
+  {
+    "RowId": 10683,
+    "Text": "攻勢"
+  },
+  {
+    "RowId": 10684,
+    "Text": "守勢"
+  },
+  {
+    "RowId": 10685,
+    "Text": "定石"
+  },
+  {
+    "RowId": 10686,
+    "Text": "HP"
+  },
+  {
+    "RowId": 10687,
+    "Text": "与ダメージ"
+  },
+  {
+    "RowId": 10688,
+    "Text": "被ダメージ"
+  },
+  {
+    "RowId": 10689,
+    "Text": "<Num>IntegerParameter(1)</Num>%増加"
+  },
+  {
+    "RowId": 10690,
+    "Text": "<Num>IntegerParameter(1)</Num>%軽減"
+  },
+  {
+    "RowId": 10691,
+    "Text": "<String>StringParameter(1)</String>\u3000熟練度: <Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 10692,
+    "Text": "未修得"
+  },
+  {
+    "RowId": 10697,
+    "Text": "ORDERS"
+  },
+  {
+    "RowId": 10698,
+    "Text": "号令コマンドを閉じないようにロックする機能のON/OFFを行います。"
+  },
+  {
+    "RowId": 10700,
+    "Text": "FORM CUSTOM MATCH"
+  },
+  {
+    "RowId": 10701,
+    "Text": "カスタムマッチ参加申請"
+  },
+  {
+    "RowId": 10702,
+    "Text": "チーム・クロウ"
+  },
+  {
+    "RowId": 10703,
+    "Text": "チーム・ファング"
+  },
+  {
+    "RowId": 10704,
+    "Text": "観戦"
+  },
+  {
+    "RowId": 10705,
+    "Text": "<String>StringParameter(1)</String> (勧誘中)"
+  },
+  {
+    "RowId": 10706,
+    "Text": "指定なし"
+  },
+  {
+    "RowId": 10707,
+    "Text": "カスタムマッチに参加するパーティを編成します。\nカスタムマッチへの参加には、対戦するライトパーティ×2もしくはフルパーティ×2が必要です。\n招待が完了したらチーム・クロウのパーティリーダーが「参加」ボタンで申請を行ってください。\n\n<span style=\"color: #ffff66;\">※観戦パーティは2人以上のパーティである必要があります。\n※観戦パーティは対戦パーティの勧誘が完了しないと、勧誘することができません。\n※カスタムマッチ参加申請時は対戦パーティ、観戦パーティの各リーダーが同一エリアにいる必要があります。\n※制限解除の設定はカスタムマッチでは無視されます。\n\n※以下の条件でカスタムマッチ参加申請は解除されます。\n\u3000・パーティリーダーのエリア移動\n\u3000・パーティリーダーの変更\n\u3000・パーティリーダーおよびパーティメンバーのログアウト\n\u3000・パーティへの新規メンバー参加\n\u3000・パーティメンバーのパーティからの離脱\n\u3000・パーティの解散\n\u3000・誘ったパーティがカスタムマッチ参加申請への参加を辞退\n\u3000・「全キャンセル」ボタンの使用\n</span>"
+  },
+  {
+    "RowId": 10708,
+    "Text": "全キャンセル"
+  },
+  {
+    "RowId": 10709,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10710,
+    "Text": "カスタムマッチ参加申請"
+  },
+  {
+    "RowId": 10711,
+    "Text": "カスタムマッチ参加申請 勧誘"
+  },
+  {
+    "RowId": 10712,
+    "Text": "<String>StringParameter(1)</String>のパーティを対戦チームとしてカスタムマッチに招待します。"
+  },
+  {
+    "RowId": 10713,
+    "Text": "<String>StringParameter(1)</String>のパーティを観戦者としてカスタムマッチに招待します。"
+  },
+  {
+    "RowId": 10714,
+    "Text": "招待"
+  },
+  {
+    "RowId": 10715,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10716,
+    "Text": "<String>StringParameter(1)</String>から、対戦チームとしてカスタムマッチ参加申請の誘いを受けました。\n参加しますか？"
+  },
+  {
+    "RowId": 10717,
+    "Text": "<String>StringParameter(1)</String>から、観戦者としてカスタムマッチ参加申請の誘いを受けました。\n参加しますか？"
+  },
+  {
+    "RowId": 10718,
+    "Text": "<String>StringParameter(1)</String>のカスタムマッチ参加申請の勧誘を断ります。\nよろしいですか？"
+  },
+  {
+    "RowId": 10719,
+    "Text": "カスタムマッチ参加申請をすべてキャンセルします。\nよろしいですか？"
+  },
+  {
+    "RowId": 10720,
+    "Text": "カスタムマッチ参加申請に誘う"
+  },
+  {
+    "RowId": 10721,
+    "Text": "再戦に参加する"
+  },
+  {
+    "RowId": 10722,
+    "Text": "再戦確認中 <Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 10723,
+    "Text": "退出"
+  },
+  {
+    "RowId": 10724,
+    "Text": "カスタムマッチの再戦に参加表明します。\n両チームが全員参加表明を行うことで、再戦が開始されます。\n対戦チームから1人でも退出すると、カスタムマッチは終了します。\n再戦へ参加表明しますか？"
+  },
+  {
+    "RowId": 10725,
+    "Text": "カスタムマッチから退出します。\n対戦チームから1人でも退出すると、カスタムマッチは終了します。\n<span style=\"color: #ffff66;\">※観戦者が退出しても再戦中止にはなりません。</span>\nカスタムマッチから退出しますか？"
+  },
+  {
+    "RowId": 10726,
+    "Text": "参加"
+  },
+  {
+    "RowId": 10727,
+    "Text": "SPECTATOR LIST "
+  },
+  {
+    "RowId": 10728,
+    "Text": "観戦者リスト"
+  },
+  {
+    "RowId": 10729,
+    "Text": "現在の試合を観戦中のキャラクターが表示されます。"
+  },
+  {
+    "RowId": 10730,
+    "Text": "表示するキャラクターがいません。"
+  },
+  {
+    "RowId": 10731,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10732,
+    "Text": "観戦者リスト"
+  },
+  {
+    "RowId": 10733,
+    "Text": "現在対戦を観戦中のキャラクターのリストを表示します。"
+  },
+  {
+    "RowId": 10734,
+    "Text": "再戦可能回数:<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10735,
+    "Text": "再戦不可"
+  },
+  {
+    "RowId": 10736,
+    "Text": "調べる"
+  },
+  {
+    "RowId": 10737,
+    "Text": "戦況確認を表示する"
+  },
+  {
+    "RowId": 10738,
+    "Text": "マップを表示する"
+  },
+  {
+    "RowId": 10739,
+    "Text": "観戦者リストを表示する"
+  },
+  {
+    "RowId": 10740,
+    "Text": "退出する"
+  },
+  {
+    "RowId": 10741,
+    "Text": "ロックを解除すると各HUDの固定が解除されて、\n移動や、拡大、縮小ができるようになります。"
+  },
+  {
+    "RowId": 10742,
+    "Text": "定点カメラ：<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10743,
+    "Text": "<Icon2>14</Icon2><Icon2>15</Icon2>定点カメラの切り替え <Icon2>18</Icon2>メニュー表示"
+  },
+  {
+    "RowId": 10744,
+    "Text": "観戦者をカスタムマッチ参加申請に誘う"
+  },
+  {
+    "RowId": 10745,
+    "Text": "観戦モードに関する機能のメニューを表示します。"
+  },
+  {
+    "RowId": 10746,
+    "Text": "マップ選択"
+  },
+  {
+    "RowId": 10800,
+    "Text": "トリプルトライアド"
+  },
+  {
+    "RowId": 10801,
+    "Text": "ロード・オブ・ヴァーミニオン"
+  },
+  {
+    "RowId": 10802,
+    "Text": "※規定人数の場合は自由なロール構成かつ、アイテムレベルに関わらず参加できます。"
+  },
+  {
+    "RowId": 10803,
+    "Text": "※アライアンス参加申請の場合は、自由なロール構成かつアイテムレベルに関わらず参加できます。"
+  },
+  {
+    "RowId": 10804,
+    "Text": "制限時間：<Num>IntegerParameter(1)</Num>～<Num>IntegerParameter(2)</Num>分"
+  },
+  {
+    "RowId": 10805,
+    "Text": "1～<Num>IntegerParameter(1)</Num>人用"
+  },
+  {
+    "RowId": 10806,
+    "Text": "1人用"
+  },
+  {
+    "RowId": 10807,
+    "Text": "対戦可能回数"
+  },
+  {
+    "RowId": 10808,
+    "Text": "大会エントリー"
+  },
+  {
+    "RowId": 10809,
+    "Text": "大会対戦受付期間"
+  },
+  {
+    "RowId": 10810,
+    "Text": "<sheet(ContentFinderCondition,IntegerParameter(1),43)>"
+  },
+  {
+    "RowId": 10811,
+    "Text": "<span style=\"color: #ffff66;\">※マッチング条件の「コンプリート済み」は該当コンテンツを過去に一度でもコンプリートしたことがある場合のみ選択可能。 \n※練習フェーズの指定は実際にフェーズをスキップするものではありません。</span>"
+  },
+  {
+    "RowId": 10812,
+    "Text": "複数コンテンツ選択不可"
+  },
+  {
+    "RowId": 10813,
+    "Text": "フロントラインのフリー枠参加"
+  },
+  {
+    "RowId": 10814,
+    "Text": "フロントライン参加時に、所属グランドカンパニーの制限なくマッチング\nされるようになります。\n\n<span style=\"color: #ff8080;\">※パーティでフロントラインに参加する場合は、この設定の状態に関わらず、\n自動的にフリー枠設定がパーティ全員に適用されます。</span>"
+  },
+  {
+    "RowId": 10815,
+    "Text": "<Icon>82</Icon>:<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num> <Icon>83</Icon>:<Num>IntegerParameter(3)</Num>/<Num>IntegerParameter(4)</Num> <Icon>84</Icon>:<Num>IntegerParameter(5)</Num>/<Num>IntegerParameter(6)</Num>"
+  },
+  {
+    "RowId": 10816,
+    "Text": "<Icon>87</Icon>:<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 10817,
+    "Text": "経過時間：<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>/平均待機時間：<String>StringParameter(3)</String>"
+  },
+  {
+    "RowId": 10818,
+    "Text": "申請時のロールでの待機順番：<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10819,
+    "Text": "経過時間：<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 10820,
+    "Text": "<sheet(ContentType,IntegerParameter(1),0)> (新生・蒼天・紅蓮・漆黒・暁月)"
+  },
+  {
+    "RowId": 10821,
+    "Text": "通常コンテンツ"
+  },
+  {
+    "RowId": 10822,
+    "Text": "高難易度コンテンツ"
+  },
+  {
+    "RowId": 10823,
+    "Text": "パーティ募集中はコンテンツ参加申請ができません。\n募集を取り下げますか？\n"
+  },
+  {
+    "RowId": 10824,
+    "Text": "<span style=\"color: #ffff66;\">※このコンテンツは8人でパーティ（ロール構成は自由）を組んでいるときのみ参加申請することができるため、マッチング条件などを設定することはできません。</span>"
+  },
+  {
+    "RowId": 10825,
+    "Text": "※制限解除時は各パーティ最低1人×3パーティ必要です。"
+  },
+  {
+    "RowId": 10826,
+    "Text": "アライアンス参加申請対応"
+  },
+  {
+    "RowId": 10827,
+    "Text": "対戦パーティ：<Num>IntegerParameter(1)</Num>人用×2パーティ\n観戦パーティ：1～8人用（観戦ありの場合）"
+  },
+  {
+    "RowId": 10828,
+    "Text": "出走可能な競走羽を登録済み"
+  },
+  {
+    "RowId": 10829,
+    "Text": "※リミテッドジョブは規定人数パーティもしくは「制限解除」状態かつ許可されているコンテンツに参加できます。"
+  },
+  {
+    "RowId": 10830,
+    "Text": "ホームワールドからの参加申請"
+  },
+  {
+    "RowId": 10831,
+    "Text": "段位初段以上"
+  },
+  {
+    "RowId": 10832,
+    "Text": "現在PvPコンテンツに大幅な調整を行っているため、\nこのコンテンツは一時的に封鎖されています。\nコンテンツ再開の際にはパッチノート等でお知らせ致します。"
+  },
+  {
+    "RowId": 10834,
+    "Text": "Sacramental Offerings"
+  },
+  {
+    "RowId": 10835,
+    "Text": "TOTAL"
+  },
+  {
+    "RowId": 10836,
+    "Text": "TREASURE UP"
+  },
+  {
+    "RowId": 10837,
+    "Text": "<If(LessThan(IntegerParameter(1),IntegerParameter(2)))><span style=\"color: #ff8080;\"><Num>IntegerParameter(1)</Num></span><Else/><Num>IntegerParameter(1)</Num></If>"
+  },
+  {
+    "RowId": 10838,
+    "Text": "挑戦する"
+  },
+  {
+    "RowId": 10839,
+    "Text": "戻る"
+  },
+  {
+    "RowId": 10840,
+    "Text": "「詩想エミネントグリーフ討滅戦」に挑戦する。"
+  },
+  {
+    "RowId": 10841,
+    "Text": ""
+  },
+  {
+    "RowId": 10842,
+    "Text": ""
+  },
+  {
+    "RowId": 10843,
+    "Text": ""
+  },
+  {
+    "RowId": 10844,
+    "Text": ""
+  },
+  {
+    "RowId": 10845,
+    "Text": ""
+  },
+  {
+    "RowId": 10846,
+    "Text": "※満たしていない参加条件の一部のみ表示されています。"
+  },
+  {
+    "RowId": 10847,
+    "Text": "Item Level <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10848,
+    "Text": "最新の認定条件で認定を受けたバトルメンター"
+  },
+  {
+    "RowId": 10849,
+    "Text": "「超える力無効での参加」非対応"
+  },
+  {
+    "RowId": 10850,
+    "Text": "DUEL"
+  },
+  {
+    "RowId": 10851,
+    "Text": "デュエル申請"
+  },
+  {
+    "RowId": 10852,
+    "Text": "デュエルの申請中です。"
+  },
+  {
+    "RowId": 10853,
+    "Text": "申請回答期限まで<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10854,
+    "Text": "申請"
+  },
+  {
+    "RowId": 10855,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10856,
+    "Text": "デュエルを申し込まれました。"
+  },
+  {
+    "RowId": 10857,
+    "Text": "受ける"
+  },
+  {
+    "RowId": 10858,
+    "Text": "断る"
+  },
+  {
+    "RowId": 10859,
+    "Text": "<String>StringParameter(1)</String>からのデュエル申し込みを断ります。よろしいですか？"
+  },
+  {
+    "RowId": 10860,
+    "Text": "\uE033<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10861,
+    "Text": "LEVEL <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 10862,
+    "Text": "デュエルに敗北しました。\n現在位置で復活します。"
+  },
+  {
+    "RowId": 10863,
+    "Text": "OK"
+  },
+  {
+    "RowId": 10864,
+    "Text": "デュエルを申し込む"
+  },
+  {
+    "RowId": 10870,
+    "Text": "報告"
+  },
+  {
+    "RowId": 10871,
+    "Text": "RMT宣伝をしている疑いがあるとして、\n<String>StringParameter(1)</String>を報告します。\n<span style=\"color: #ff8080;\">正当な理由なく報告を行った場合は、あなたが処罰対象になる可能性があります。</span>\nよろしいですか？"
+  },
+  {
+    "RowId": 10872,
+    "Text": "報告"
+  },
+  {
+    "RowId": 10873,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10874,
+    "Text": "RMT宣伝を報告する"
+  },
+  {
+    "RowId": 10875,
+    "Text": "上記に同意して報告を行う"
+  },
+  {
+    "RowId": 10890,
+    "Text": "すべて"
+  },
+  {
+    "RowId": 10891,
+    "Text": "ワールド内限定募集"
+  },
+  {
+    "RowId": 10892,
+    "Text": "プライベート"
+  },
+  {
+    "RowId": 10893,
+    "Text": "すべて"
+  },
+  {
+    "RowId": 10894,
+    "Text": "その他"
+  },
+  {
+    "RowId": 10895,
+    "Text": "ワールド間でパーティを募集する"
+  },
+  {
+    "RowId": 10896,
+    "Text": "プライベート募集に設定する"
+  },
+  {
+    "RowId": 10897,
+    "Text": "参加パスワード(4桁数字必須)"
+  },
+  {
+    "RowId": 10898,
+    "Text": "プライベート募集に参加するためのパスワードを入力してください。"
+  },
+  {
+    "RowId": 10899,
+    "Text": "参加パスワード(4桁数字必須)"
+  },
+  {
+    "RowId": 10900,
+    "Text": "参加"
+  },
+  {
+    "RowId": 10901,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10902,
+    "Text": "CROSS WORLD PARTY"
+  },
+  {
+    "RowId": 10903,
+    "Text": "現在、クロスワールドパーティを組んでいます。クロスワールドパーティは通常のパーティと異なり、パーティに対して影響するアクションの効果は得られません。"
+  },
+  {
+    "RowId": 10904,
+    "Text": "募集範囲"
+  },
+  {
+    "RowId": 10905,
+    "Text": "詳細検索を開きます。"
+  },
+  {
+    "RowId": 10906,
+    "Text": "---"
+  },
+  {
+    "RowId": 10907,
+    "Text": "RECRUITER NAME SEARCH"
+  },
+  {
+    "RowId": 10908,
+    "Text": "募集者名検索"
+  },
+  {
+    "RowId": 10909,
+    "Text": "募集者のキャラクター名でパーティ募集の検索を行います。\n募集者名検索の検索結果は10件まで表示されます"
+  },
+  {
+    "RowId": 10910,
+    "Text": "募集者名"
+  },
+  {
+    "RowId": 10911,
+    "Text": "検索"
+  },
+  {
+    "RowId": 10912,
+    "Text": "\uE06A<String>StringParameter(1)</String> <If(IntegerParameter(3))><Icon>88</Icon><Else/> </If> <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 10913,
+    "Text": "\uE06A?? <If(IntegerParameter(2))><Icon>88</Icon><Else/> </If> <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10914,
+    "Text": "募集者名検索を開きます。"
+  },
+  {
+    "RowId": 10915,
+    "Text": "募集範囲"
+  },
+  {
+    "RowId": 10916,
+    "Text": "すべて"
+  },
+  {
+    "RowId": 10917,
+    "Text": "ワールド内限定募集"
+  },
+  {
+    "RowId": 10918,
+    "Text": "「詳細検索」で設定した検索結果の件数を一定時間おきにログに通知します。プライベート募集の件数は含まれません。"
+  },
+  {
+    "RowId": 10919,
+    "Text": "募集に設定された「目的」「雰囲気」「募集参加条件」「コンテンツファインダー参加条件設定」「ロットルール」で絞り込みます。"
+  },
+  {
+    "RowId": 10920,
+    "Text": "募集を昇順・降順で並び替えます。\n（一度に表示されている最大50件が対象）"
+  },
+  {
+    "RowId": 10921,
+    "Text": "現在地：<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 10922,
+    "Text": "募集期限：<Num>IntegerParameter(1)</Num>分"
+  },
+  {
+    "RowId": 10923,
+    "Text": "目的"
+  },
+  {
+    "RowId": 10924,
+    "Text": "設定なし"
+  },
+  {
+    "RowId": 10925,
+    "Text": "コンプリート目的"
+  },
+  {
+    "RowId": 10926,
+    "Text": "練習"
+  },
+  {
+    "RowId": 10927,
+    "Text": "周回"
+  },
+  {
+    "RowId": 10928,
+    "Text": "雰囲気"
+  },
+  {
+    "RowId": 10929,
+    "Text": "<Icon>77</Icon>初見・初心者歓迎"
+  },
+  {
+    "RowId": 10930,
+    "Text": "他ワールドから募集の閲覧・参加ができなくなります。"
+  },
+  {
+    "RowId": 10931,
+    "Text": "ワールド内限定でパーティを募集する"
+  },
+  {
+    "RowId": 10932,
+    "Text": "募集参加条件"
+  },
+  {
+    "RowId": 10933,
+    "Text": "設定なし"
+  },
+  {
+    "RowId": 10934,
+    "Text": "コンプリート済み"
+  },
+  {
+    "RowId": 10935,
+    "Text": "コンテンツファインダー参加条件設定"
+  },
+  {
+    "RowId": 10936,
+    "Text": "制限解除"
+  },
+  {
+    "RowId": 10937,
+    "Text": "下限アイテムレベルでの参加"
+  },
+  {
+    "RowId": 10938,
+    "Text": "<span style=\"color: #ffff66;\">※ここで設定したコンテンツファインダー設定はパーティ募集表示用です。\n実際の設定はコンテンツファインダーで行ってください。</span>"
+  },
+  {
+    "RowId": 10939,
+    "Text": "指定されたコンプリート条件に該当するプレイヤーのみが募集に参加可能になります。"
+  },
+  {
+    "RowId": 10940,
+    "Text": "CONTACT LIST "
+  },
+  {
+    "RowId": 10941,
+    "Text": "コンタクトリスト"
+  },
+  {
+    "RowId": 10942,
+    "Text": "直近でパーティを組んだキャラクターが50人まで表示されます。\nジョブ・クラスはパーティを組んだ時点もしくはコンテンツ参加時のものが記録されます。"
+  },
+  {
+    "RowId": 10943,
+    "Text": "Name"
+  },
+  {
+    "RowId": 10944,
+    "Text": "Home World"
+  },
+  {
+    "RowId": 10945,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 10946,
+    "Text": "<String>StringParameter(1)</String>をブラックリストに登録します。\n<span style=\"color: #ffff66;\">※他ワールドのキャラクターの名称はクライアントに保存されます。</span>\n\nよろしいですか？"
+  },
+  {
+    "RowId": 10947,
+    "Text": "表示するキャラクターがいません。"
+  },
+  {
+    "RowId": 10948,
+    "Text": "---"
+  },
+  {
+    "RowId": 10949,
+    "Text": "コンプリート済み（今週の週制限報酬：未取得）"
+  },
+  {
+    "RowId": 10950,
+    "Text": "他ワールドでのオンライン状況を取得します。"
+  },
+  {
+    "RowId": 10951,
+    "Text": "<String>StringParameter(1)</String><Icon>88</Icon><String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 10952,
+    "Text": "\uE031"
+  },
+  {
+    "RowId": 10953,
+    "Text": "--"
+  },
+  {
+    "RowId": 10954,
+    "Text": "ホームワールド順"
+  },
+  {
+    "RowId": 10955,
+    "Text": "<span style=\"color: #ffff66;\">\n※他ワールドのキャラクターの名称はクライアントに保存されます。</span>"
+  },
+  {
+    "RowId": 10956,
+    "Text": "オンライン状況不明"
+  },
+  {
+    "RowId": 10957,
+    "Text": "<String>StringParameter(1)</String>をブラックリストに登録します。以後、このキャラクターの発言およびフィールド上の姿が非表示となります。また対象者のアカウント下のすべてのキャラクターも、同様にブラックリスト対象とされます。\n登録時のキャラクターの名前とホームワールドはクライアントのローカルセーブデータに保存されます。\n<span style=\"color: #ffff66;\">そのキャラクターの発言だけを表示したくない場合は、チャットのサブコマンドから登録できるミュートリスト機能をご利用ください。</span>"
+  },
+  {
+    "RowId": 10958,
+    "Text": "以上の登録内容を了承します"
+  },
+  {
+    "RowId": 10959,
+    "Text": "登録"
+  },
+  {
+    "RowId": 10960,
+    "Text": "<Icon>95</Icon>リターナーについて"
+  },
+  {
+    "RowId": 10961,
+    "Text": "冒険をお休みしていた期間が45日以上かつ、レベル50以上のいずれかのクラスを\nもつキャラクターが設定できるステータス。それが「<Icon>95</Icon>リターナー」です。\n\nリターナーになると、以下の機能が利用できるようになります。\n\u3000<span style=\"color: #ffff66;\">ビギナーチャンネルへの参加\n\u3000<Icon>78</Icon>メンターとパーティ結成で経験値ボーナス（各クラスレベル90まで）\n\u3000オンラインステータス「リターナー」の使用</span>\n\nリターナーは冒険に復帰してからの累積プレイ時間が72時間経過するか、\n以下のテキストコマンドを実行すると解除されます。\n「<sheet(TextCommand,238,8)>」\n"
+  },
+  {
+    "RowId": 10962,
+    "Text": "ビギナーチャンネル"
+  },
+  {
+    "RowId": 10963,
+    "Text": "リターナー状態を解除します。\n<span style=\"color: #ff7b1a;\">※一度解除すると、再度条件を満たすまでリターナーになることはできません。</span>\n\nよろしいですか？"
+  },
+  {
+    "RowId": 10964,
+    "Text": "解除"
+  },
+  {
+    "RowId": 10965,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10966,
+    "Text": "後で決める"
+  },
+  {
+    "RowId": 10967,
+    "Text": "リターナーとして支援を受けるかどうかを\n一旦保留します。\n<span style=\"color: #ffff66;\">次回ログインしたときに、再度確認が表示されます。</span>\n"
+  },
+  {
+    "RowId": 10968,
+    "Text": "保留"
+  },
+  {
+    "RowId": 10969,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10970,
+    "Text": "メンター認定状況"
+  },
+  {
+    "RowId": 10971,
+    "Text": "認定可能"
+  },
+  {
+    "RowId": 10972,
+    "Text": "認定不可"
+  },
+  {
+    "RowId": 10973,
+    "Text": "認定済み"
+  },
+  {
+    "RowId": 10974,
+    "Text": "<Icon>79</Icon>バトルメンター"
+  },
+  {
+    "RowId": 10975,
+    "Text": "条件1「ダンジョン、討伐・討滅戦を計1,000回攻略する」"
+  },
+  {
+    "RowId": 10976,
+    "Text": "<Icon>80</Icon>製作採集メンター"
+  },
+  {
+    "RowId": 10977,
+    "Text": "条件1「収集品を300回採集する」"
+  },
+  {
+    "RowId": 10978,
+    "Text": "認定手続きに進む"
+  },
+  {
+    "RowId": 10979,
+    "Text": "キャンセル"
+  },
+  {
+    "RowId": 10980,
+    "Text": "うむ……\n君はバトルメンターと認定するにふさわしい！"
+  },
+  {
+    "RowId": 10981,
+    "Text": "うむ……\n君は製作採集メンターと認定するにふさわしい！"
+  },
+  {
+    "RowId": 10982,
+    "Text": "素晴らしい！！\n君はバトルと製作採集、両方の素質があるようだ！"
+  },
+  {
+    "RowId": 10983,
+    "Text": "メンターと認定するには経験が足りていないな……\nより鍛錬を積んで、また来てくれたまえ！"
+  },
+  {
+    "RowId": 10984,
+    "Text": "条件2「MIP推薦を計1,500回獲得する」"
+  },
+  {
+    "RowId": 10985,
+    "Text": "条件3「いずれかのTANKジョブで、Lv<Num>IntegerParameter(1)</Num>のロールクエストを達成」"
+  },
+  {
+    "RowId": 10986,
+    "Text": "条件4「いずれかのHEALERジョブで、Lv<Num>IntegerParameter(1)</Num>のロールクエストを達成」"
+  },
+  {
+    "RowId": 10987,
+    "Text": "混雑のため、バトルコンテンツを待機中です"
+  },
+  {
+    "RowId": 10988,
+    "Text": "現在の待機順番"
+  },
+  {
+    "RowId": 10989,
+    "Text": "申請をキャンセルし、申請前の状態に戻ります。\nよろしいですか？"
+  },
+  {
+    "RowId": 10990,
+    "Text": "アイテムレベルシンクする（下限に合わせる）"
+  },
+  {
+    "RowId": 10991,
+    "Text": "アイテムレベルシンクする（\uE0BD150）"
+  },
+  {
+    "RowId": 10992,
+    "Text": "アイテムレベルシンクしない"
+  },
+  {
+    "RowId": 10993,
+    "Text": "アイテムレベルシンクする（下限に合わせる：\uE0BD<Num>IntegerParameter(1)</Num>）\n\u3000双方の装備品のうち、最もアイテムレベルの低い値「<Num>IntegerParameter(1)</Num>」に\n\u3000合わせて、すべての装備品の性能が調整されます。"
+  },
+  {
+    "RowId": 10994,
+    "Text": "アイテムレベルシンクする（\uE0BD150）\n\u3000双方のすべての装備品の性能が\n\u3000「アイテムレベル：150」以下になるように調整されます。"
+  },
+  {
+    "RowId": 10995,
+    "Text": "アイテムレベルシンクしない\n\u3000アイテムレベルシンクを行わず、本来のアイテムレベルで\n\u3000デュエルを行います。"
+  },
+  {
+    "RowId": 10996,
+    "Text": ""
+  },
+  {
+    "RowId": 10997,
+    "Text": "不足ロールボーナス：TANK"
+  },
+  {
+    "RowId": 10998,
+    "Text": "不足ロールボーナス：HEALER"
+  },
+  {
+    "RowId": 10999,
+    "Text": "不足ロールボーナス：DPS"
+  },
+  {
+    "RowId": 11000,
+    "Text": "ITEM INSPECTION"
+  },
+  {
+    "RowId": 11001,
+    "Text": "アイテム鑑定"
+  },
+  {
+    "RowId": 11002,
+    "Text": "アイテム名"
+  },
+  {
+    "RowId": 11003,
+    "Text": "必要数"
+  },
+  {
+    "RowId": 11004,
+    "Text": "所持数"
+  },
+  {
+    "RowId": 11005,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>の\nアイテム鑑定を行います。よろしいですか？\n\nあと<Num>IntegerParameter(2)</Num>回可能です。（所持数：<Num>IntegerParameter(3)</Num>）"
+  },
+  {
+    "RowId": 11006,
+    "Text": "<sheet(Item,IntegerParameter(1),0)>×<Num>IntegerParameter(4)</Num>を使用して\nアイテム鑑定を行います。よろしいですか？\n\nあと<Num>IntegerParameter(2)</Num>回可能です。（所持数：<Num>IntegerParameter(3)</Num>）"
+  },
+  {
+    "RowId": 11007,
+    "Text": "APPRAISAL RESULTS"
+  },
+  {
+    "RowId": 11008,
+    "Text": "アイテム鑑定結果"
+  },
+  {
+    "RowId": 11009,
+    "Text": "次を鑑定する"
+  },
+  {
+    "RowId": 11010,
+    "Text": "閉じる"
+  },
+  {
+    "RowId": 11011,
+    "Text": "鑑定可能なアイテムを持っていません。"
+  }
+]
