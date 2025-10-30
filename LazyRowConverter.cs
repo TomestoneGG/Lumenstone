@@ -18,7 +18,7 @@ public class LazyRowConverter : JsonConverter<RowRef>
         // Ensure thread-safe access to SerializationDepth
         lock (typeof(LazyRowConverter))
         {
-            if (value.RowId == null || value.RowId == 4294967295) // Check for invalid RowId
+            if (value.RowId == 0 || value.RowId == 4294967295) // Check for invalid RowId
             {
                 writer.WriteNullValue();
             }
@@ -68,7 +68,7 @@ public class LazyRowConverter<T> : JsonConverter<RowRef<T>> where T : struct, IE
         // Ensure thread-safe access to SerializationDepth
         lock (typeof(LazyRowConverter<T>))
         {
-            if (value.RowId == null || value.RowId == 4294967295) // Check for invalid RowId
+            if (value.RowId == 0 || value.RowId == 4294967295) // FIXME: WHy?
                 writer.WriteNullValue();
             else
             {

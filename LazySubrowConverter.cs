@@ -17,7 +17,7 @@ public class LazySubrowConverter<T> : JsonConverter<SubrowRef<T>> where T : stru
         // Ensure thread-safe access to SerializationDepth
         lock (typeof(LazySubrowConverter<T>))
         {
-            if (value.RowId == null || value.RowId == 4294967295) // FIXME: WHy?
+            if (value.RowId == 0 || value.RowId == 4294967295) // FIXME: WHy?
                 writer.WriteNullValue();
             else {
                 writer.WriteStartObject();
