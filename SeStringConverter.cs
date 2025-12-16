@@ -1,17 +1,11 @@
-using System;
-using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.RegularExpressions;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
-using Lumina.Text;
-using Lumina.Text.ReadOnly;
-using Lumina.Text.Payloads;
-using SixLabors.ImageSharp.Formats;
-using System.Xml.XPath;
 using Lumina.Text.Expressions;
-using Microsoft.VisualBasic;
+using Lumina.Text.Payloads;
+using Lumina.Text.ReadOnly;
 
 public class SeStringConverter : JsonConverter<ReadOnlySeString>
 {

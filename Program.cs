@@ -1,19 +1,13 @@
-﻿namespace Lumenstone;
-
-using System.IO;
-using System.Reflection;
-using System.Reflection.Metadata.Ecma335;
+﻿using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Lumina.Data.Files;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
-using Lumina.Text;
-using Lumina.Text.ReadOnly;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Processing.Processors.Normalization;
 
+namespace Lumenstone;
 class Program
 {
     static void Main(string[] args)
