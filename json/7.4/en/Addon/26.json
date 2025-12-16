@@ -1,2001 +1,2501 @@
 [
   {
+    "RowOffset": 607414,
     "RowId": 12500,
     "Text": "Time Remaining: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
   },
   {
+    "RowOffset": 607454,
     "RowId": 12501,
     "Text": "Fire"
   },
   {
+    "RowOffset": 607470,
     "RowId": 12502,
     "Text": "Ice"
   },
   {
+    "RowOffset": 607486,
     "RowId": 12503,
     "Text": "Wind"
   },
   {
+    "RowOffset": 607502,
     "RowId": 12504,
     "Text": "Earth"
   },
   {
+    "RowOffset": 607518,
     "RowId": 12505,
     "Text": "Lightning"
   },
   {
+    "RowOffset": 607538,
     "RowId": 12506,
     "Text": "Water"
   },
   {
+    "RowOffset": 607554,
     "RowId": 12507,
     "Text": "Slashing"
   },
   {
+    "RowOffset": 607574,
     "RowId": 12508,
     "Text": "Piercing"
   },
   {
+    "RowOffset": 607594,
     "RowId": 12509,
     "Text": "Blunt"
   },
   {
+    "RowOffset": 607610,
     "RowId": 12510,
     "Text": "World Visit"
   },
   {
+    "RowOffset": 607634,
     "RowId": 12511,
     "Text": ""
   },
   {
+    "RowOffset": 607646,
     "RowId": 12512,
     "Text": "Home World"
   },
   {
+    "RowOffset": 607670,
     "RowId": 12513,
     "Text": "Available Destinations"
   },
   {
+    "RowOffset": 607706,
     "RowId": 12514,
     "Text": "<If(Equal(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Data Center Travel System</span>\nThe Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Visiting Other Data Centers</span>\n\u3000・Until you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.\n\u3000・You may only travel to other data centers from your Home World. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home World and submit a Data Center Visit request from there.\n\u3000・When logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n<Else/> </If><If(LessThan(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">World Visit System</span>\nThe World Visit System allows you to travel from <If(Equal(IntegerParameter(1),0))>your Home World<Else/>the World you are currently visiting</If> to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Visiting Other Worlds</span>\n\u3000・Depending on the congestion of the target World, travel may take several minutes.\n\u3000・Once preparations have been completed, travel will occur automatically and cancel all current actions/duties.\n\u3000・When logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n<Else/> </If>\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Restrictions While Visiting <If(GreaterThan(IntegerParameter(1),0))>Other Data Centers<Else/>Other Worlds</If></span>\n<If(Equal(IntegerParameter(1),1))>You are currently outside your Home Data Center. <Else/> </If>The following restrictions apply when playing <If(GreaterThan(IntegerParameter(1),0))>in another data center<Else/>on other World servers</If>:\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Friend List</span>\n\u3000・Friends in different data centers cannot communicate\n\u3000・Parties cannot be formed with friends in different data centers\n\u3000・Login details for friends in different regions cannot be displayed\n\n<Else/> </If><span style=\"color: #e1c500;\">Free Companies</span>\n\u3000・Free companies cannot be formed or joined\n\u3000・Free company information cannot be viewed\n\u3000・Company credits cannot be earned\n\u3000・Should the company master spend 35 consecutive days away from their Home World, their rank will be automatically transferred to another member\n\u3000・Login details for members in different regions cannot be displayed\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Cross-world Linkshells</span>\n\u3000・Cross-world linkshells cannot be created\n\u3000・Cross-world linkshell master privileges cannot be attained\n\n<Else/> </If><span style=\"color: #e1c500;\">Linkshells</span>\n\u3000・Linkshells cannot be used\n\u3000・Linkshell information cannot be viewed\n\u3000・Linkshells cannot be created or joined\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">PvP Teams</span>\n\u3000・PvP teams cannot be used\n\u3000・PvP team information cannot be viewed\n\u3000・PvP teams cannot be created or joined\n\n<span style=\"color: #e1c500;\">Fellowships</span>\n\u3000・All functions for fellowships, excluding recruitment search, are inaccessible\n\n<Else/> </If><span style=\"color: #e1c500;\">Retainers</span>\n\u3000・Retainers cannot be summoned, hired, or released from service\n\u3000・Items cannot be put up to market (but can be purchased)\n\n<span style=\"color: #e1c500;\">Housing</span>\n\u3000・Land and apartments cannot be purchased\n\u3000・Residence sharing is unavailable\n\n<span style=\"color: #e1c500;\">Eternal Bonding</span>\n\u3000・Ceremonies of Eternal Bonding are unavailable\n\u3000・Eternal Bonding quests are unavailable\n\u3000・Others' ceremonies cannot be attended\n\n<span style=\"color: #e1c500;\">Duties/Features</span>\n<If(Equal(IntegerParameter(1),2))>\u3000・Crystalline Conflict ranked matches can be entered if:\n\u3000\u3000・Your Home World is in the same physical data center\n\u3000\u3000・You participate via the hosting data center\n<Else/> </If>\u3000・Lord of Verminion tournaments cannot be entered\n\u3000・Triple Triad tournaments cannot be entered\n\u3000・Cactpot tickets cannot be purchased\n\u3000・The Moogle Delivery Service is unavailable\n\u3000・Deep Dungeon results will not be saved to the leaderboards\n\u3000・Friendship circlet and eternal bonding teleportation is\n\u3000\u3000available only if both parties are on the same World\n\u3000・Legendary and unspoiled gathering nodes are inaccessible\n"
   },
   {
+    "RowOffset": 612390,
     "RowId": 12515,
     "Text": "Home World"
   },
   {
+    "RowOffset": 612414,
     "RowId": 12516,
     "Text": "Current World"
   },
   {
+    "RowOffset": 612438,
     "RowId": 12517,
     "Text": "Unavailable World"
   },
   {
+    "RowOffset": 612466,
     "RowId": 12518,
     "Text": "Retrieving World data..."
   },
   {
+    "RowOffset": 612502,
     "RowId": 12519,
     "Text": "Travel to <String>StringParameter(1)</String>?"
   },
   {
+    "RowOffset": 612530,
     "RowId": 12520,
     "Text": "World Visit"
   },
   {
+    "RowOffset": 612554,
     "RowId": 12521,
     "Text": "Destination: <String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 612586,
     "RowId": 12522,
     "Text": "Position in Queue: "
   },
   {
+    "RowOffset": 612618,
     "RowId": 12523,
     "Text": "Time Elapsed: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec> Average Wait Time: "
   },
   {
+    "RowOffset": 612678,
     "RowId": 12524,
     "Text": "World Visit"
   },
   {
+    "RowOffset": 612702,
     "RowId": 12525,
     "Text": ""
   },
   {
+    "RowOffset": 612714,
     "RowId": 12526,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 612734,
     "RowId": 12527,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 612754,
     "RowId": 12528,
     "Text": "Position in Queue"
   },
   {
+    "RowOffset": 612782,
     "RowId": 12529,
     "Text": "Time"
   },
   {
+    "RowOffset": 612798,
     "RowId": 12530,
     "Text": "Average Wait Time"
   },
   {
+    "RowOffset": 612826,
     "RowId": 12531,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 612846,
     "RowId": 12532,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 612866,
     "RowId": 12533,
     "Text": "More than <Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 612894,
     "RowId": 12534,
     "Text": "<Num>IntegerParameter(1)</Num>m"
   },
   {
+    "RowOffset": 612914,
     "RowId": 12535,
     "Text": "More than <Num>IntegerParameter(1)</Num>m"
   },
   {
+    "RowOffset": 612942,
     "RowId": 12536,
     "Text": "Less than <Num>IntegerParameter(1)</Num>m"
   },
   {
+    "RowOffset": 612970,
     "RowId": 12537,
     "Text": "World Visit"
   },
   {
+    "RowOffset": 612994,
     "RowId": 12538,
     "Text": "Ready for transport."
   },
   {
+    "RowOffset": 613026,
     "RowId": 12539,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 613046,
     "RowId": 12540,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 613066,
     "RowId": 12541,
     "Text": "Wanderer"
   },
   {
+    "RowOffset": 613086,
     "RowId": 12542,
     "Text": "Current World"
   },
   {
+    "RowOffset": 613110,
     "RowId": 12543,
     "Text": "World Info"
   },
   {
+    "RowOffset": 613134,
     "RowId": 12544,
     "Text": "World List"
   },
   {
+    "RowOffset": 613158,
     "RowId": 12545,
     "Text": "Blue Mage Log"
   },
   {
+    "RowOffset": 613182,
     "RowId": 12546,
     "Text": ""
   },
   {
+    "RowOffset": 613194,
     "RowId": 12547,
     "Text": "Recruit Members"
   },
   {
+    "RowOffset": 613222,
     "RowId": 12548,
     "Text": "Commence Duty"
   },
   {
+    "RowOffset": 613246,
     "RowId": 12549,
     "Text": "Complete"
   },
   {
+    "RowOffset": 613266,
     "RowId": 12550,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
+    "RowOffset": 613290,
     "RowId": 12551,
     "Text": "Prime Target"
   },
   {
+    "RowOffset": 613314,
     "RowId": 12552,
     "Text": "First-time Reward"
   },
   {
+    "RowOffset": 613342,
     "RowId": 12553,
     "Text": "Reward"
   },
   {
+    "RowOffset": 613362,
     "RowId": 12554,
     "Text": "Weekly Target Reward"
   },
   {
+    "RowOffset": 613394,
     "RowId": 12555,
     "Text": "Time Remaining: <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h <Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m <Else/><If(GreaterThan(IntegerParameter(1),0))> <Else/>less than 1 minute</If></If><SetTime>IntegerParameter(3)</SetTime>[<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
   },
   {
+    "RowOffset": 613522,
     "RowId": 12556,
     "Text": "<span style=\"color: #ff7b1a;\">Target Expired</span>"
   },
   {
+    "RowOffset": 613574,
     "RowId": 12557,
     "Text": "Information"
   },
   {
+    "RowOffset": 613598,
     "RowId": 12558,
     "Text": "Requirements"
   },
   {
+    "RowOffset": 613622,
     "RowId": 12559,
     "Text": "Display Crystarium Deliveries help."
   },
   {
+    "RowOffset": 613670,
     "RowId": 12560,
     "Text": "Esteem Level"
   },
   {
+    "RowOffset": 613694,
     "RowId": 12561,
     "Text": "Esteem"
   },
   {
+    "RowOffset": 613714,
     "RowId": 12562,
     "Text": "<switch(IntegerParameter(1),<Head><sheet(ClassJob,9,0)></Head> / <Head><sheet(ClassJob,10,0)></Head> / <Head><sheet(ClassJob,11,0)></Head>,<Head><sheet(ClassJob,8,0)></Head> / <Head><sheet(ClassJob,12,0)></Head> / <Head><sheet(ClassJob,13,0)></Head>,<Head><sheet(ClassJob,14,0)></Head> / <Head><sheet(ClassJob,15,0)></Head>,<Head><sheet(ClassJob,16,0)></Head> / <Head><sheet(ClassJob,17,0)></Head>,<Head><sheet(ClassJob,18,0)></Head>)>"
   },
   {
+    "RowOffset": 614006,
     "RowId": 12563,
     "Text": "Requested Item"
   },
   {
+    "RowOffset": 614034,
     "RowId": 12564,
     "Text": "Inventory"
   },
   {
+    "RowOffset": 614054,
     "RowId": 12565,
     "Text": "<Num>IntegerParameter(1)</Num>/\uE03C<Num>IntegerParameter(2)</Num>"
   },
   {
+    "RowOffset": 614082,
     "RowId": 12566,
     "Text": "Remuneration Details"
   },
   {
+    "RowOffset": 614114,
     "RowId": 12567,
     "Text": "Deliver"
   },
   {
+    "RowOffset": 614134,
     "RowId": 12568,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 614154,
     "RowId": 12569,
     "Text": "Enter delivery quantity."
   },
   {
+    "RowOffset": 614190,
     "RowId": 12570,
     "Text": "Experience"
   },
   {
+    "RowOffset": 614214,
     "RowId": 12571,
     "Text": "Crystarium Deliveries"
   },
   {
+    "RowOffset": 614246,
     "RowId": 12572,
     "Text": "<switch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)>: <String>StringParameter(2)</String>"
   },
   {
+    "RowOffset": 614370,
     "RowId": 12573,
     "Text": "Reward"
   },
   {
+    "RowOffset": 614390,
     "RowId": 12574,
     "Text": "Accept"
   },
   {
+    "RowOffset": 614410,
     "RowId": 12575,
     "Text": "Crystarium Deliveries"
   },
   {
+    "RowOffset": 614442,
     "RowId": 12576,
     "Text": ""
   },
   {
+    "RowOffset": 614454,
     "RowId": 12577,
     "Text": "<switch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)>: <String>StringParameter(2)</String>"
   },
   {
+    "RowOffset": 614578,
     "RowId": 12578,
     "Text": "Total"
   },
   {
+    "RowOffset": 614594,
     "RowId": 12579,
     "Text": "You are unable to carry any more <ennoun(Item,3,IntegerParameter(1),2,1)> and will not receive full compensation. Proceed with the transaction?"
   },
   {
+    "RowOffset": 614726,
     "RowId": 12580,
     "Text": "Retainer"
   },
   {
+    "RowOffset": 614746,
     "RowId": 12581,
     "Text": ""
   },
   {
+    "RowOffset": 614758,
     "RowId": 12582,
     "Text": "Name"
   },
   {
+    "RowOffset": 614774,
     "RowId": 12583,
     "Text": "Class/Job"
   },
   {
+    "RowOffset": 614794,
     "RowId": 12584,
     "Text": "Inventory"
   },
   {
+    "RowOffset": 614814,
     "RowId": 12585,
     "Text": "Gil"
   },
   {
+    "RowOffset": 614830,
     "RowId": 12586,
     "Text": "Items for Sale"
   },
   {
+    "RowOffset": 614858,
     "RowId": 12587,
     "Text": "Venture"
   },
   {
+    "RowOffset": 614878,
     "RowId": 12588,
     "Text": "None"
   },
   {
+    "RowOffset": 614894,
     "RowId": 12589,
     "Text": "Selling <Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>item<Else/>items</If>"
   },
   {
+    "RowOffset": 614942,
     "RowId": 12590,
     "Text": "None in progress"
   },
   {
+    "RowOffset": 614970,
     "RowId": 12591,
     "Text": "Complete in <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/>1m</If></If>"
   },
   {
+    "RowOffset": 615054,
     "RowId": 12592,
     "Text": "Complete"
   },
   {
+    "RowOffset": 615074,
     "RowId": 12593,
     "Text": "Sort Retainers"
   },
   {
+    "RowOffset": 615102,
     "RowId": 12594,
     "Text": ""
   },
   {
+    "RowOffset": 615114,
     "RowId": 12595,
     "Text": "Change the order of your retainers."
   },
   {
+    "RowOffset": 615162,
     "RowId": 12596,
     "Text": "Currently selling no items"
   },
   {
+    "RowOffset": 615202,
     "RowId": 12597,
     "Text": "Selling <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>item<Else/>items</If> until <SetTime>IntegerParameter(2)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If>"
   },
   {
+    "RowOffset": 615310,
     "RowId": 12598,
     "Text": "None in progress"
   },
   {
+    "RowOffset": 615338,
     "RowId": 12599,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>Lv. <Num>IntegerParameter(1)</Num> <Else/> </If><String>StringParameter(2)</String>"
   },
   {
+    "RowOffset": 615378,
     "RowId": 12600,
     "Text": "<String>StringParameter(1)</String> (complete in <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>h <If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/>1m</If></If>)"
   },
   {
+    "RowOffset": 615470,
     "RowId": 12601,
     "Text": "Complete"
   },
   {
+    "RowOffset": 615490,
     "RowId": 12602,
     "Text": "Contract Suspended"
   },
   {
+    "RowOffset": 615522,
     "RowId": 12603,
     "Text": "Items for Sale:"
   },
   {
+    "RowOffset": 615550,
     "RowId": 12604,
     "Text": "Venture:"
   },
   {
+    "RowOffset": 615570,
     "RowId": 12605,
     "Text": ""
   },
   {
+    "RowOffset": 615582,
     "RowId": 12606,
     "Text": "–"
   },
   {
+    "RowOffset": 615598,
     "RowId": 12607,
     "Text": "Retainer's Name"
   },
   {
+    "RowOffset": 615626,
     "RowId": 12608,
     "Text": "Hiring Order"
   },
   {
+    "RowOffset": 615650,
     "RowId": 12609,
     "Text": "Apply"
   },
   {
+    "RowOffset": 615666,
     "RowId": 12610,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 615686,
     "RowId": 12611,
     "Text": "Change Active Set Name"
   },
   {
+    "RowOffset": 615722,
     "RowId": 12612,
     "Text": "Active set names can be changed via the subcommand menu."
   },
   {
+    "RowOffset": 615790,
     "RowId": 12613,
     "Text": "Input a new name for <String>StringParameter(1)</String>. Leaving the entry field blank will restore the default set name."
   },
   {
+    "RowOffset": 615894,
     "RowId": 12614,
     "Text": ""
   },
   {
+    "RowOffset": 615906,
     "RowId": 12615,
     "Text": "Weekly Challenge"
   },
   {
+    "RowOffset": 615934,
     "RowId": 12616,
     "Text": "Standard Duty"
   },
   {
+    "RowOffset": 615958,
     "RowId": 12617,
     "Text": "Save"
   },
   {
+    "RowOffset": 615974,
     "RowId": 12618,
     "Text": "Load"
   },
   {
+    "RowOffset": 615990,
     "RowId": 12619,
     "Text": ""
   },
   {
+    "RowOffset": 616002,
     "RowId": 12620,
     "Text": ""
   },
   {
+    "RowOffset": 616014,
     "RowId": 12621,
     "Text": ""
   },
   {
+    "RowOffset": 616026,
     "RowId": 12622,
     "Text": ""
   },
   {
+    "RowOffset": 616038,
     "RowId": 12623,
     "Text": ""
   },
   {
+    "RowOffset": 616050,
     "RowId": 12624,
     "Text": "Travel to <String>StringParameter(1)</String>?\n<span style=\"color: #ffff66;\">Please be advised you must be playing solo or in a cross-world party for your transfer to be processed.</span>"
   },
   {
+    "RowOffset": 616210,
     "RowId": 12625,
     "Text": "Traveler"
   },
   {
+    "RowOffset": 616230,
     "RowId": 12626,
     "Text": "Letter notifications are unavailable outside of your Home Data Center."
   },
   {
+    "RowOffset": 616314,
     "RowId": 12627,
     "Text": "Voyager"
   },
   {
+    "RowOffset": 616334,
     "RowId": 12628,
     "Text": "Full details of the player who sent this friend request are unavailable. You can only choose to refuse the request, or leave it pending.\n<span style=\"color: #ffff66;\">※Once a certain amount of time elapses, pending friend requests will be rendered void and the sender removed from your friend list.</span>"
   },
   {
+    "RowOffset": 616642,
     "RowId": 12629,
     "Text": ""
   },
   {
+    "RowOffset": 616654,
     "RowId": 12630,
     "Text": "One-nut Clan Marks"
   },
   {
+    "RowOffset": 616686,
     "RowId": 12631,
     "Text": "Two-nut Clan Marks"
   },
   {
+    "RowOffset": 616718,
     "RowId": 12632,
     "Text": "Three-nut Clan Marks"
   },
   {
+    "RowOffset": 616750,
     "RowId": 12633,
     "Text": "Elite Clan Nutsy Marks"
   },
   {
+    "RowOffset": 616786,
     "RowId": 12634,
     "Text": "<If(GreaterThan(IntegerParameter(3),0))><kilo(IntegerParameter(1),,)> Gil / <kilo(IntegerParameter(2),,)> <If(Equal(IntegerParameter(2),1))>Sack<Else/>Sacks</If> of Nuts / <kilo(IntegerParameter(3),,)> EXP<Else/><kilo(IntegerParameter(1),,)> Gil / <kilo(IntegerParameter(2),,)> <If(Equal(IntegerParameter(2),1))>Sack<Else/>Sacks</If> of Nuts</If>"
   },
   {
+    "RowOffset": 616938,
     "RowId": 12635,
     "Text": "Clan Nutsy"
   },
   {
+    "RowOffset": 616962,
     "RowId": 12636,
     "Text": "<switch(IntegerParameter(1),One-nut Clan Marks,Two-nut Clan Marks,Three-nut Clan Marks,Elite Clan Nutsy Marks)>（<String>StringParameter(2)</String>）"
   },
   {
+    "RowOffset": 617078,
     "RowId": 12637,
     "Text": "<switch(IntegerParameter(1),Level 1 Clan Marks,Level 2 Clan Marks,Level 3 Clan Marks,Elite Clan Marks)>（<String>StringParameter(2)</String>）"
   },
   {
+    "RowOffset": 617186,
     "RowId": 12638,
     "Text": "<switch(IntegerParameter(1),Clan Marks,Elite Clan Marks)>（<String>StringParameter(2)</String>）"
   },
   {
+    "RowOffset": 617246,
     "RowId": 12639,
     "Text": "Junior Guildship Marks"
   },
   {
+    "RowOffset": 617282,
     "RowId": 12640,
     "Text": "Associate Guildship Marks"
   },
   {
+    "RowOffset": 617318,
     "RowId": 12641,
     "Text": "Senior Guildship Marks"
   },
   {
+    "RowOffset": 617354,
     "RowId": 12642,
     "Text": "Elite Guildship Marks"
   },
   {
+    "RowOffset": 617386,
     "RowId": 12643,
     "Text": "Gleaners' Guildship"
   },
   {
+    "RowOffset": 617418,
     "RowId": 12644,
     "Text": "<switch(IntegerParameter(1),Junior Guildship Marks,Associate Guildship Marks,Senior Guildship Marks,Elite Guildship Marks)> (<String>StringParameter(2)</String>)"
   },
   {
+    "RowOffset": 617542,
     "RowId": 12645,
     "Text": "Beginner Dawn Hunt Marks"
   },
   {
+    "RowOffset": 617578,
     "RowId": 12646,
     "Text": "Intermediate Dawn Hunt Marks"
   },
   {
+    "RowOffset": 617618,
     "RowId": 12647,
     "Text": "Advanced Dawn Hunt Marks"
   },
   {
+    "RowOffset": 617654,
     "RowId": 12648,
     "Text": "Elite Dawn Hunt Marks"
   },
   {
+    "RowOffset": 617686,
     "RowId": 12649,
     "Text": "Dawn Hunt"
   },
   {
+    "RowOffset": 617706,
     "RowId": 12650,
     "Text": "<switch(IntegerParameter(1),Beginner Dawn Hunt Marks,Intermediate Dawn Hunt Marks,Advanced Dawn Hunt Marks,Elite Dawn Hunt Marks)> (<String>StringParameter(2)</String>)"
   },
   {
+    "RowOffset": 617838,
     "RowId": 12651,
     "Text": ""
   },
   {
+    "RowOffset": 617850,
     "RowId": 12652,
     "Text": ""
   },
   {
+    "RowOffset": 617862,
     "RowId": 12653,
     "Text": ""
   },
   {
+    "RowOffset": 617874,
     "RowId": 12654,
     "Text": ""
   },
   {
+    "RowOffset": 617886,
     "RowId": 12655,
     "Text": ""
   },
   {
+    "RowOffset": 617898,
     "RowId": 12656,
     "Text": ""
   },
   {
+    "RowOffset": 617910,
     "RowId": 12657,
     "Text": ""
   },
   {
+    "RowOffset": 617922,
     "RowId": 12658,
     "Text": ""
   },
   {
+    "RowOffset": 617934,
     "RowId": 12659,
     "Text": ""
   },
   {
+    "RowOffset": 617946,
     "RowId": 12660,
     "Text": ""
   },
   {
+    "RowOffset": 617958,
     "RowId": 12661,
     "Text": ""
   },
   {
+    "RowOffset": 617970,
     "RowId": 12662,
     "Text": ""
   },
   {
+    "RowOffset": 617982,
     "RowId": 12663,
     "Text": ""
   },
   {
+    "RowOffset": 617994,
     "RowId": 12664,
     "Text": ""
   },
   {
+    "RowOffset": 618006,
     "RowId": 12665,
     "Text": ""
   },
   {
+    "RowOffset": 618018,
     "RowId": 12666,
     "Text": ""
   },
   {
+    "RowOffset": 618030,
     "RowId": 12667,
     "Text": ""
   },
   {
+    "RowOffset": 618042,
     "RowId": 12668,
     "Text": ""
   },
   {
+    "RowOffset": 618054,
     "RowId": 12669,
     "Text": ""
   },
   {
+    "RowOffset": 618066,
     "RowId": 12670,
     "Text": "Level"
   },
   {
+    "RowOffset": 618082,
     "RowId": 12671,
     "Text": "Special"
   },
   {
+    "RowOffset": 618102,
     "RowId": 12672,
     "Text": "<switch(IntegerParameter(1),Unspoiled Node,Legendary Node,Ephemeral Node)>\nTime of Appearance (Eorzea Time)"
   },
   {
+    "RowOffset": 618206,
     "RowId": 12673,
     "Text": "From <Sec>IntegerParameter(1)</Sec>:<Sec>IntegerParameter(2)</Sec> to <Sec>IntegerParameter(3)</Sec>:<Sec>IntegerParameter(4)</Sec>"
   },
   {
+    "RowOffset": 618254,
     "RowId": 12674,
     "Text": "Set timer for next occurrence."
   },
   {
+    "RowOffset": 618298,
     "RowId": 12675,
     "Text": "You have not read the relevant folklore."
   },
   {
+    "RowOffset": 618350,
     "RowId": 12676,
     "Text": "Enable Quick Gathering"
   },
   {
+    "RowOffset": 618386,
     "RowId": 12677,
     "Text": "<Num>IntegerParameter(1)</Num>+?"
   },
   {
+    "RowOffset": 618406,
     "RowId": 12678,
     "Text": "QUICK GATHERING"
   },
   {
+    "RowOffset": 618434,
     "RowId": 12679,
     "Text": "Abandon the gathering node?\nDoing so will cause the node to dissipate."
   },
   {
+    "RowOffset": 618518,
     "RowId": 12680,
     "Text": "Abandon node."
   },
   {
+    "RowOffset": 618542,
     "RowId": 12681,
     "Text": "Clouded gathering node\nCondition: umbral turbulence"
   },
   {
+    "RowOffset": 618610,
     "RowId": 12682,
     "Text": "Required <Head><String>StringParameter(1)</String></Head>: <Num>IntegerParameter(2)</Num>"
   },
   {
+    "RowOffset": 618650,
     "RowId": 12683,
     "Text": "Abandon the teeming waters?\n<span style=\"color: #ff8080;\">※Doing so will cause the teeming waters to dissipate.</span>"
   },
   {
+    "RowOffset": 618774,
     "RowId": 12684,
     "Text": ""
   },
   {
+    "RowOffset": 618786,
     "RowId": 12685,
     "Text": ""
   },
   {
+    "RowOffset": 618798,
     "RowId": 12686,
     "Text": ""
   },
   {
+    "RowOffset": 618810,
     "RowId": 12687,
     "Text": ""
   },
   {
+    "RowOffset": 618822,
     "RowId": 12688,
     "Text": ""
   },
   {
+    "RowOffset": 618834,
     "RowId": 12689,
     "Text": ""
   },
   {
+    "RowOffset": 618846,
     "RowId": 12690,
     "Text": ""
   },
   {
+    "RowOffset": 618858,
     "RowId": 12691,
     "Text": "Silence Echo"
   },
   {
+    "RowOffset": 618882,
     "RowId": 12692,
     "Text": "Enabling this setting will prevent Echo bonuses from being granted.\n<span style=\"color: #ffff66;\">※Can only be selected when using a preformed party meeting party size requirements or an unrestricted party.\n※Only the party leader's settings are applicable.\n</span>"
   },
   {
+    "RowOffset": 619158,
     "RowId": 12693,
     "Text": "Set the way in which loot is distributed.\n\n<span style=\"color: #ffff66;\">Normal\n</span>The Need, Greed, Pass system is employed for loot drops.\n\n<span style=\"color: #ffff66;\">Greed Only\n</span>All party members must select Greed or Pass.\n\n<span style=\"color: #ffff66;\">Lootmaster\n</span>The party leader determines individual loot distribution.\n\n<span style=\"color: #ff8080;\">※Greed Only and Lootmaster can only be selected when using a preformed party meeting party size requirements or an unrestricted party.\n※Loot rules may be restricted to Greed Only on certain duties.\n※Loot rules cannot be changed on certain duties.\n※Only the party leader can change loot rules.</span>"
   },
   {
+    "RowOffset": 619842,
     "RowId": 12694,
     "Text": "You will be matched with players who are using the selected languages.\n\n<span style=\"color: #ffff66;\">※Depending on the languages chosen, matching times may increase. If you are experiencing overlong wait times, you may want to consider different language settings.\n</span>\n<span style=\"color: #ff8080;\">※The _ indicates your current client language setting.\n※This setting is shared in all duty matching, though please be aware that it may not apply to certain Gold Saucer activities.</span>"
   },
   {
+    "RowOffset": 620342,
     "RowId": 12695,
     "Text": "Not available in New Game+ mode."
   },
   {
+    "RowOffset": 620386,
     "RowId": 12696,
     "Text": "Level Sync"
   },
   {
+    "RowOffset": 620410,
     "RowId": 12697,
     "Text": "Sync all participants to a duty's required level.\n<span style=\"color: #ffff66;\">※When using an unrestricted party, gear will still gain spiritbond.\n※When using an unrestricted party, enemies will still yield EXP and items.</span>\n<span style=\"color: #ff8080;\">※Can only be selected when using an unrestricted party.\n※Only the party leader's settings are applicable.</span>"
   },
   {
+    "RowOffset": 620790,
     "RowId": 12698,
     "Text": ""
   },
   {
+    "RowOffset": 620802,
     "RowId": 12699,
     "Text": ""
   },
   {
+    "RowOffset": 620814,
     "RowId": 12700,
     "Text": "Trust"
   },
   {
+    "RowOffset": 620830,
     "RowId": 12701,
     "Text": ""
   },
   {
+    "RowOffset": 620842,
     "RowId": 12702,
     "Text": "Current Party"
   },
   {
+    "RowOffset": 620866,
     "RowId": 12703,
     "Text": "Party Selection"
   },
   {
+    "RowOffset": 620894,
     "RowId": 12704,
     "Text": "EXP"
   },
   {
+    "RowOffset": 620910,
     "RowId": 12705,
     "Text": "/"
   },
   {
+    "RowOffset": 620922,
     "RowId": 12706,
     "Text": "Register for Duty"
   },
   {
+    "RowOffset": 620950,
     "RowId": 12707,
     "Text": "Glamours"
   },
   {
+    "RowOffset": 620970,
     "RowId": 12708,
     "Text": "Scenario"
   },
   {
+    "RowOffset": 620990,
     "RowId": 12709,
     "Text": "Scenario"
   },
   {
+    "RowOffset": 621010,
     "RowId": 12710,
     "Text": "Trust EXP"
   },
   {
+    "RowOffset": 621030,
     "RowId": 12711,
     "Text": "Display Trust help."
   },
   {
+    "RowOffset": 621062,
     "RowId": 12712,
     "Text": ""
   },
   {
+    "RowOffset": 621074,
     "RowId": 12713,
     "Text": ""
   },
   {
+    "RowOffset": 621086,
     "RowId": 12714,
     "Text": ""
   },
   {
+    "RowOffset": 621098,
     "RowId": 12715,
     "Text": ""
   },
   {
+    "RowOffset": 621110,
     "RowId": 12716,
     "Text": ""
   },
   {
+    "RowOffset": 621122,
     "RowId": 12717,
     "Text": ""
   },
   {
+    "RowOffset": 621134,
     "RowId": 12718,
     "Text": "Trust Help"
   },
   {
+    "RowOffset": 621158,
     "RowId": 12719,
     "Text": ""
   },
   {
+    "RowOffset": 621170,
     "RowId": 12720,
     "Text": "Insufficient Level"
   },
   {
+    "RowOffset": 621202,
     "RowId": 12721,
     "Text": "Not a Disciple of War or Magic"
   },
   {
+    "RowOffset": 621246,
     "RowId": 12722,
     "Text": "Limited Job"
   },
   {
+    "RowOffset": 621270,
     "RowId": 12723,
     "Text": "Quest"
   },
   {
+    "RowOffset": 621286,
     "RowId": 12724,
     "Text": ""
   },
   {
+    "RowOffset": 621298,
     "RowId": 12725,
     "Text": "Avatars"
   },
   {
+    "RowOffset": 621318,
     "RowId": 12726,
     "Text": "Avatars"
   },
   {
+    "RowOffset": 621338,
     "RowId": 12727,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>\uE033Avg. Item Level: <Num>IntegerParameter(1)</Num>\u3000<Else/> </If><If(GreaterThan(IntegerParameter(2),0))>\uE0BDItem Level Sync: <Num>IntegerParameter(2)</Num><Else/> </If>"
   },
   {
+    "RowOffset": 621430,
     "RowId": 12728,
     "Text": "Insufficient Item Level"
   },
   {
+    "RowOffset": 621466,
     "RowId": 12729,
     "Text": ""
   },
   {
+    "RowOffset": 621478,
     "RowId": 12730,
     "Text": "Channel Log Settings"
   },
   {
+    "RowOffset": 621510,
     "RowId": 12731,
     "Text": ""
   },
   {
+    "RowOffset": 621522,
     "RowId": 12732,
     "Text": "Log Text Colors"
   },
   {
+    "RowOffset": 621550,
     "RowId": 12733,
     "Text": "Notification Sound"
   },
   {
+    "RowOffset": 621582,
     "RowId": 12734,
     "Text": "Display Tab"
   },
   {
+    "RowOffset": 621606,
     "RowId": 12735,
     "Text": "Apply"
   },
   {
+    "RowOffset": 621622,
     "RowId": 12736,
     "Text": "Close"
   },
   {
+    "RowOffset": 621638,
     "RowId": 12737,
     "Text": "Text display color"
   },
   {
+    "RowOffset": 621670,
     "RowId": 12738,
     "Text": "Proceed without selecting a tab?"
   },
   {
+    "RowOffset": 621714,
     "RowId": 12739,
     "Text": "Channel Log Settings"
   },
   {
+    "RowOffset": 621746,
     "RowId": 12740,
     "Text": "<span style=\"color: #ffff66;\">\n※If you do not receive a response to a friend request while in the same data center as the player to whom you sent it, your friend status will remain pending for one week, after which time the request will be rendered void.</span>"
   },
   {
+    "RowOffset": 622010,
     "RowId": 12741,
     "Text": "<span style=\"color: #ffff66;\">\n※You are unable to view the login details of players on your friend list while they are in a different region.</span>"
   },
   {
+    "RowOffset": 622162,
     "RowId": 12742,
     "Text": "The Home World of <String>StringParameter(1)</String> is on a data center in a region different to you. Send friend request?"
   },
   {
+    "RowOffset": 622270,
     "RowId": 12743,
     "Text": ""
   },
   {
+    "RowOffset": 622282,
     "RowId": 12744,
     "Text": ""
   },
   {
+    "RowOffset": 622294,
     "RowId": 12745,
     "Text": ""
   },
   {
+    "RowOffset": 622306,
     "RowId": 12746,
     "Text": ""
   },
   {
+    "RowOffset": 622318,
     "RowId": 12747,
     "Text": ""
   },
   {
+    "RowOffset": 622330,
     "RowId": 12748,
     "Text": ""
   },
   {
+    "RowOffset": 622342,
     "RowId": 12749,
     "Text": ""
   },
   {
+    "RowOffset": 622354,
     "RowId": 12750,
     "Text": "Ishgardian Restoration"
   },
   {
+    "RowOffset": 622390,
     "RowId": 12751,
     "Text": ""
   },
   {
+    "RowOffset": 622402,
     "RowId": 12752,
     "Text": "Item"
   },
   {
+    "RowOffset": 622418,
     "RowId": 12753,
     "Text": "Collectability"
   },
   {
+    "RowOffset": 622446,
     "RowId": 12754,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 622466,
     "RowId": 12755,
     "Text": "Scrips"
   },
   {
+    "RowOffset": 622486,
     "RowId": 12756,
     "Text": "EXP"
   },
   {
+    "RowOffset": 622502,
     "RowId": 12757,
     "Text": "Bag"
   },
   {
+    "RowOffset": 622518,
     "RowId": 12758,
     "Text": "\uE03D<Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 622538,
     "RowId": 12759,
     "Text": "Reward"
   },
   {
+    "RowOffset": 622558,
     "RowId": 12760,
     "Text": "Collectability"
   },
   {
+    "RowOffset": 622586,
     "RowId": 12761,
     "Text": "<Num>IntegerParameter(1)</Num><If(Equal(IntegerParameter(2),0))> <Else/>-<Num>IntegerParameter(2)</Num></If>"
   },
   {
+    "RowOffset": 622622,
     "RowId": 12762,
     "Text": "<If(GreaterThan(IntegerParameter(2),0))>You are unable to carry any more kupo vouchers and will not receive any more stamps.\n<Else/> </If><If(GreaterThan(IntegerParameter(1),0))>You will not be able to receive all <ennoun(Item,3,IntegerParameter(1),2,1)>.\n<Else/> </If>Proceed with the transaction?"
   },
   {
+    "RowOffset": 622830,
     "RowId": 12763,
     "Text": "Total"
   },
   {
+    "RowOffset": 622846,
     "RowId": 12764,
     "Text": "Skyward Pt."
   },
   {
+    "RowOffset": 622870,
     "RowId": 12765,
     "Text": ""
   },
   {
+    "RowOffset": 622882,
     "RowId": 12766,
     "Text": "+"
   },
   {
+    "RowOffset": 622894,
     "RowId": 12767,
     "Text": "–"
   },
   {
+    "RowOffset": 622910,
     "RowId": 12768,
     "Text": "Kupo Stamps"
   },
   {
+    "RowOffset": 622934,
     "RowId": 12769,
     "Text": "Kupo Vouchers"
   },
   {
+    "RowOffset": 622958,
     "RowId": 12770,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
+    "RowOffset": 622982,
     "RowId": 12771,
     "Text": "You already possess the maximum number of vouchers and cannot receive any more stamps."
   },
   {
+    "RowOffset": 623082,
     "RowId": 12772,
     "Text": "Ranking season ending"
   },
   {
+    "RowOffset": 623114,
     "RowId": 12773,
     "Text": "<If(Equal(IntegerParameter(1),0))> <Else/><SetTime>IntegerParameter(1)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num> <Num>t_hour</Num>:<Sec>t_min</Sec><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <Num>t_hour</Num>:<Sec>t_min</Sec></If></If>"
   },
   {
+    "RowOffset": 623214,
     "RowId": 12774,
     "Text": "※No points will be awarded. You must be on your Home World."
   },
   {
+    "RowOffset": 623286,
     "RowId": 12775,
     "Text": "Seasonal Score"
   },
   {
+    "RowOffset": 623314,
     "RowId": 12776,
     "Text": "Accumulated Score"
   },
   {
+    "RowOffset": 623342,
     "RowId": 12777,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>+<Else/>0</If>"
   },
   {
+    "RowOffset": 623374,
     "RowId": 12778,
     "Text": "Ranking not in progress"
   },
   {
+    "RowOffset": 623410,
     "RowId": 12779,
     "Text": ""
   },
   {
+    "RowOffset": 623422,
     "RowId": 12780,
     "Text": "Kupo of Fortune"
   },
   {
+    "RowOffset": 623450,
     "RowId": 12781,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 623470,
     "RowId": 12782,
     "Text": "Close"
   },
   {
+    "RowOffset": 623486,
     "RowId": 12783,
     "Text": "Dedicated to <sheet(ClassJob,IntegerParameter(1),0)>s of surpassing skill, and to all who labored to raise this place from ruin that we might soar ever skyward."
   },
   {
+    "RowOffset": 623638,
     "RowId": 12784,
     "Text": "Close"
   },
   {
+    "RowOffset": 623654,
     "RowId": 12785,
     "Text": "For Our Skybuilders"
   },
   {
+    "RowOffset": 623686,
     "RowId": 12786,
     "Text": "With gratitude from all who set foot in the Firmament."
   },
   {
+    "RowOffset": 623754,
     "RowId": 12787,
     "Text": ""
   },
   {
+    "RowOffset": 623766,
     "RowId": 12788,
     "Text": ""
   },
   {
+    "RowOffset": 623778,
     "RowId": 12789,
     "Text": ""
   },
   {
+    "RowOffset": 623790,
     "RowId": 12790,
     "Text": "Collection"
   },
   {
+    "RowOffset": 623814,
     "RowId": 12791,
     "Text": ""
   },
   {
+    "RowOffset": 623826,
     "RowId": 12792,
     "Text": ""
   },
   {
+    "RowOffset": 623838,
     "RowId": 12793,
     "Text": ""
   },
   {
+    "RowOffset": 623850,
     "RowId": 12794,
     "Text": ""
   },
   {
+    "RowOffset": 623862,
     "RowId": 12795,
     "Text": ""
   },
   {
+    "RowOffset": 623874,
     "RowId": 12796,
     "Text": ""
   },
   {
+    "RowOffset": 623886,
     "RowId": 12797,
     "Text": ""
   },
   {
+    "RowOffset": 623898,
     "RowId": 12798,
     "Text": ""
   },
   {
+    "RowOffset": 623910,
     "RowId": 12799,
     "Text": ""
   },
   {
+    "RowOffset": 623922,
     "RowId": 12800,
     "Text": "Fellowships"
   },
   {
+    "RowOffset": 623946,
     "RowId": 12801,
     "Text": ""
   },
   {
+    "RowOffset": 623958,
     "RowId": 12802,
     "Text": "Create Fellowship"
   },
   {
+    "RowOffset": 623986,
     "RowId": 12803,
     "Text": "You do not belong to any fellowships."
   },
   {
+    "RowOffset": 624034,
     "RowId": 12804,
     "Text": "Searching..."
   },
   {
+    "RowOffset": 624058,
     "RowId": 12805,
     "Text": "<If(Equal(IntegerParameter(1),0))>Select a name for your fellowship<Else/>Select a new name for your fellowship</If>."
   },
   {
+    "RowOffset": 624154,
     "RowId": 12806,
     "Text": "The following punctuation marks are allowed:\n<span style=\"color: #ff8080;\">'. , : ; ! ? & - _</span>\n• Double spaces/underscores are not allowed.\n• A space cannot be used before or after the name.\n• Names consisting solely of punctuation marks are prohibited."
   },
   {
+    "RowOffset": 624434,
     "RowId": 12807,
     "Text": "Copy Fellowship Name"
   },
   {
+    "RowOffset": 624466,
     "RowId": 12808,
     "Text": "If you quit now, you will lose all changes. Proceed?"
   },
   {
+    "RowOffset": 624530,
     "RowId": 12809,
     "Text": "Fellowships"
   },
   {
+    "RowOffset": 624554,
     "RowId": 12810,
     "Text": ""
   },
   {
+    "RowOffset": 624566,
     "RowId": 12811,
     "Text": "General"
   },
   {
+    "RowOffset": 624586,
     "RowId": 12812,
     "Text": "Message Board"
   },
   {
+    "RowOffset": 624610,
     "RowId": 12813,
     "Text": "Members"
   },
   {
+    "RowOffset": 624630,
     "RowId": 12814,
     "Text": "Settings"
   },
   {
+    "RowOffset": 624650,
     "RowId": 12815,
     "Text": ""
   },
   {
+    "RowOffset": 624662,
     "RowId": 12816,
     "Text": "Fellowship Settings"
   },
   {
+    "RowOffset": 624694,
     "RowId": 12817,
     "Text": "Changes can only be made by the fellowship master."
   },
   {
+    "RowOffset": 624758,
     "RowId": 12818,
     "Text": "Fellowship Name"
   },
   {
+    "RowOffset": 624786,
     "RowId": 12819,
     "Text": "Change Fellowship Name"
   },
   {
+    "RowOffset": 624822,
     "RowId": 12820,
     "Text": "Activities"
   },
   {
+    "RowOffset": 624846,
     "RowId": 12821,
     "Text": "Main"
   },
   {
+    "RowOffset": 624862,
     "RowId": 12822,
     "Text": "Sub 1"
   },
   {
+    "RowOffset": 624878,
     "RowId": 12823,
     "Text": "Sub 2"
   },
   {
+    "RowOffset": 624894,
     "RowId": 12824,
     "Text": "Blacklist"
   },
   {
+    "RowOffset": 624914,
     "RowId": 12825,
     "Text": "Display"
   },
   {
+    "RowOffset": 624934,
     "RowId": 12826,
     "Text": "Disband Fellowship"
   },
   {
+    "RowOffset": 624966,
     "RowId": 12827,
     "Text": "Disband"
   },
   {
+    "RowOffset": 624986,
     "RowId": 12828,
     "Text": "Confirm"
   },
   {
+    "RowOffset": 625006,
     "RowId": 12829,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 625026,
     "RowId": 12830,
     "Text": "Fellowship Blacklist"
   },
   {
+    "RowOffset": 625058,
     "RowId": 12831,
     "Text": ""
   },
   {
+    "RowOffset": 625070,
     "RowId": 12832,
     "Text": "Name"
   },
   {
+    "RowOffset": 625086,
     "RowId": 12833,
     "Text": "Home World"
   },
   {
+    "RowOffset": 625110,
     "RowId": 12834,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
+    "RowOffset": 625134,
     "RowId": 12835,
     "Text": "Close"
   },
   {
+    "RowOffset": 625150,
     "RowId": 12836,
     "Text": "Remove from Blacklist"
   },
   {
+    "RowOffset": 625182,
     "RowId": 12837,
     "Text": "You are about to disband <String>StringParameter(1)</String>. Are you certain you wish to proceed?"
   },
   {
+    "RowOffset": 625262,
     "RowId": 12838,
     "Text": "Disband"
   },
   {
+    "RowOffset": 625282,
     "RowId": 12839,
     "Text": "Confirm"
   },
   {
+    "RowOffset": 625302,
     "RowId": 12840,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 625322,
     "RowId": 12841,
     "Text": "Message of the Day"
   },
   {
+    "RowOffset": 625354,
     "RowId": 12842,
     "Text": "Edit"
   },
   {
+    "RowOffset": 625370,
     "RowId": 12843,
     "Text": "Message of the Day"
   },
   {
+    "RowOffset": 625402,
     "RowId": 12844,
     "Text": ""
   },
   {
+    "RowOffset": 625414,
     "RowId": 12845,
     "Text": "Poll"
   },
   {
+    "RowOffset": 625430,
     "RowId": 12846,
     "Text": "Poll Settings"
   },
   {
+    "RowOffset": 625454,
     "RowId": 12847,
     "Text": "A poll is available."
   },
   {
+    "RowOffset": 625486,
     "RowId": 12848,
     "Text": "Not available."
   },
   {
+    "RowOffset": 625514,
     "RowId": 12849,
     "Text": "Deadline:  <SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
   },
   {
+    "RowOffset": 625622,
     "RowId": 12850,
     "Text": "Respond"
   },
   {
+    "RowOffset": 625642,
     "RowId": 12851,
     "Text": "Poll Settings"
   },
   {
+    "RowOffset": 625666,
     "RowId": 12852,
     "Text": ""
   },
   {
+    "RowOffset": 625678,
     "RowId": 12853,
     "Text": "Question"
   },
   {
+    "RowOffset": 625698,
     "RowId": 12854,
     "Text": "Response Options"
   },
   {
+    "RowOffset": 625726,
     "RowId": 12855,
     "Text": "1."
   },
   {
+    "RowOffset": 625742,
     "RowId": 12856,
     "Text": "2."
   },
   {
+    "RowOffset": 625758,
     "RowId": 12857,
     "Text": "3."
   },
   {
+    "RowOffset": 625774,
     "RowId": 12858,
     "Text": "4."
   },
   {
+    "RowOffset": 625790,
     "RowId": 12859,
     "Text": "5."
   },
   {
+    "RowOffset": 625806,
     "RowId": 12860,
     "Text": "Deadline"
   },
   {
+    "RowOffset": 625826,
     "RowId": 12861,
     "Text": "Days"
   },
   {
+    "RowOffset": 625842,
     "RowId": 12862,
     "Text": "Confirm"
   },
   {
+    "RowOffset": 625862,
     "RowId": 12863,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 625882,
     "RowId": 12864,
     "Text": "Release the poll to fellowship members?"
   },
   {
+    "RowOffset": 625934,
     "RowId": 12865,
     "Text": "<SetTime>IntegerParameter(1)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
   },
   {
+    "RowOffset": 626062,
     "RowId": 12866,
     "Text": "Delete"
   },
   {
+    "RowOffset": 626082,
     "RowId": 12867,
     "Text": "Do you really want to delete the poll?"
   },
   {
+    "RowOffset": 626134,
     "RowId": 12868,
     "Text": "Poll"
   },
   {
+    "RowOffset": 626150,
     "RowId": 12869,
     "Text": ""
   },
   {
+    "RowOffset": 626162,
     "RowId": 12870,
     "Text": "Vote"
   },
   {
+    "RowOffset": 626178,
     "RowId": 12871,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 626198,
     "RowId": 12872,
     "Text": "Notices"
   },
   {
+    "RowOffset": 626218,
     "RowId": 12873,
     "Text": "Edit Notice"
   },
   {
+    "RowOffset": 626242,
     "RowId": 12874,
     "Text": "Notice"
   },
   {
+    "RowOffset": 626262,
     "RowId": 12875,
     "Text": ""
   },
   {
+    "RowOffset": 626274,
     "RowId": 12876,
     "Text": "Recruitment"
   },
   {
+    "RowOffset": 626298,
     "RowId": 12877,
     "Text": "Recruitment Deadline: <SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
   },
   {
+    "RowOffset": 626418,
     "RowId": 12878,
     "Text": "Recruitment Settings"
   },
   {
+    "RowOffset": 626450,
     "RowId": 12879,
     "Text": ""
   },
   {
+    "RowOffset": 626462,
     "RowId": 12880,
     "Text": "Fellowship Name"
   },
   {
+    "RowOffset": 626490,
     "RowId": 12881,
     "Text": "Activities"
   },
   {
+    "RowOffset": 626514,
     "RowId": 12882,
     "Text": "1."
   },
   {
+    "RowOffset": 626530,
     "RowId": 12883,
     "Text": "2."
   },
   {
+    "RowOffset": 626546,
     "RowId": 12884,
     "Text": "3."
   },
   {
+    "RowOffset": 626562,
     "RowId": 12885,
     "Text": "Comment"
   },
   {
+    "RowOffset": 626582,
     "RowId": 12886,
     "Text": "Language"
   },
   {
+    "RowOffset": 626602,
     "RowId": 12887,
     "Text": "Register"
   },
   {
+    "RowOffset": 626622,
     "RowId": 12888,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 626642,
     "RowId": 12889,
     "Text": "End Recruitment"
   },
   {
+    "RowOffset": 626670,
     "RowId": 12890,
     "Text": "Up to 100 comments are displayed, with the oldest being deleted first."
   },
   {
+    "RowOffset": 626754,
     "RowId": 12891,
     "Text": "Post Comment"
   },
   {
+    "RowOffset": 626778,
     "RowId": 12892,
     "Text": "Delete Comment"
   },
   {
+    "RowOffset": 626806,
     "RowId": 12893,
     "Text": "This comment has been deleted."
   },
   {
+    "RowOffset": 626850,
     "RowId": 12894,
     "Text": "Loading comments..."
   },
   {
+    "RowOffset": 626882,
     "RowId": 12895,
     "Text": "<String>StringParameter(1)</String> <Icon>88</Icon> <String>StringParameter(2)</String>"
   },
   {
+    "RowOffset": 626914,
     "RowId": 12896,
     "Text": "Message Board"
   },
   {
+    "RowOffset": 626938,
     "RowId": 12897,
     "Text": ""
   },
   {
+    "RowOffset": 626950,
     "RowId": 12898,
     "Text": "Neutral"
   },
   {
+    "RowOffset": 626970,
     "RowId": 12899,
     "Text": "Smirking"
   },
   {
+    "RowOffset": 626990,
     "RowId": 12900,
     "Text": "Smiling"
   },
   {
+    "RowOffset": 627010,
     "RowId": 12901,
     "Text": "Grinning"
   },
   {
+    "RowOffset": 627030,
     "RowId": 12902,
     "Text": "Beaming"
   },
   {
+    "RowOffset": 627050,
     "RowId": 12903,
     "Text": "Thinking"
   },
   {
+    "RowOffset": 627070,
     "RowId": 12904,
     "Text": "Crying"
   },
   {
+    "RowOffset": 627090,
     "RowId": 12905,
     "Text": "Surprised"
   },
   {
+    "RowOffset": 627110,
     "RowId": 12906,
     "Text": "Members"
   },
   {
+    "RowOffset": 627130,
     "RowId": 12907,
     "Text": "Group"
   },
   {
+    "RowOffset": 627146,
     "RowId": 12908,
     "Text": "Home World"
   },
   {
+    "RowOffset": 627170,
     "RowId": 12909,
     "Text": ""
   },
   {
+    "RowOffset": 627182,
     "RowId": 12910,
     "Text": "Group Settings"
   },
   {
+    "RowOffset": 627210,
     "RowId": 12911,
     "Text": "Send Friend Request"
   },
   {
+    "RowOffset": 627242,
     "RowId": 12912,
     "Text": "Invite to Cross-world Linkshell"
   },
   {
+    "RowOffset": 627286,
     "RowId": 12913,
     "Text": "Kick from Fellowship"
   },
   {
+    "RowOffset": 627318,
     "RowId": 12914,
     "Text": "Transfer Master Privileges"
   },
   {
+    "RowOffset": 627358,
     "RowId": 12915,
     "Text": "Appoint Fellowship Admin"
   },
   {
+    "RowOffset": 627394,
     "RowId": 12916,
     "Text": "Add to Fellowship Blacklist"
   },
   {
+    "RowOffset": 627434,
     "RowId": 12917,
     "Text": "Quit Fellowship Admin"
   },
   {
+    "RowOffset": 627466,
     "RowId": 12918,
     "Text": "Leave Fellowship"
   },
   {
+    "RowOffset": 627494,
     "RowId": 12919,
     "Text": "Display All"
   },
   {
+    "RowOffset": 627518,
     "RowId": 12920,
     "Text": "Group Settings"
   },
   {
+    "RowOffset": 627546,
     "RowId": 12921,
     "Text": ""
   },
   {
+    "RowOffset": 627558,
     "RowId": 12922,
     "Text": "Name"
   },
   {
+    "RowOffset": 627574,
     "RowId": 12923,
     "Text": "Group"
   },
   {
+    "RowOffset": 627590,
     "RowId": 12924,
     "Text": "None"
   },
   {
+    "RowOffset": 627606,
     "RowId": 12925,
     "Text": "Group <Num>IntegerParameter(1)</Num>"
   },
   {
+    "RowOffset": 627630,
     "RowId": 12926,
     "Text": "Change"
   },
   {
+    "RowOffset": 627650,
     "RowId": 12927,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 627670,
     "RowId": 12928,
     "Text": "Rename Group"
   },
   {
+    "RowOffset": 627694,
     "RowId": 12929,
     "Text": "Input a new name for Group <Num>IntegerParameter(1)</Num>."
   },
   {
+    "RowOffset": 627742,
     "RowId": 12930,
     "Text": "Name"
   },
   {
+    "RowOffset": 627758,
     "RowId": 12931,
     "Text": "Confirm"
   },
   {
+    "RowOffset": 627778,
     "RowId": 12932,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 627798,
     "RowId": 12933,
     "Text": "Fellowship Finder"
   },
   {
+    "RowOffset": 627826,
     "RowId": 12934,
     "Text": ""
   },
   {
+    "RowOffset": 627838,
     "RowId": 12935,
     "Text": "Fellowship Name"
   },
   {
+    "RowOffset": 627866,
     "RowId": 12936,
     "Text": "Activities"
   },
   {
+    "RowOffset": 627890,
     "RowId": 12937,
     "Text": "Recruiter"
   },
   {
+    "RowOffset": 627910,
     "RowId": 12938,
     "Text": "Comment"
   },
   {
+    "RowOffset": 627930,
     "RowId": 12939,
     "Text": "Fellowship Name"
   },
   {
+    "RowOffset": 627958,
     "RowId": 12940,
     "Text": "Members"
   },
   {
+    "RowOffset": 627978,
     "RowId": 12941,
     "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
   },
   {
+    "RowOffset": 628010,
     "RowId": 12942,
     "Text": "Activities"
   },
   {
+    "RowOffset": 628034,
     "RowId": 12943,
     "Text": "Comment"
   },
   {
+    "RowOffset": 628054,
     "RowId": 12944,
     "Text": "Recruitment Deadline"
   },
   {
+    "RowOffset": 628086,
     "RowId": 12945,
     "Text": "Join the fellowship “<String>StringParameter(1)</String>”?"
   },
   {
+    "RowOffset": 628130,
     "RowId": 12946,
     "Text": "Fellowship Search"
   },
   {
+    "RowOffset": 628158,
     "RowId": 12947,
     "Text": ""
   },
   {
+    "RowOffset": 628170,
     "RowId": 12948,
     "Text": "Activities"
   },
   {
+    "RowOffset": 628194,
     "RowId": 12949,
     "Text": "Language"
   },
   {
+    "RowOffset": 628214,
     "RowId": 12950,
     "Text": "Confirm"
   },
   {
+    "RowOffset": 628234,
     "RowId": 12951,
     "Text": "Cancel"
   },
   {
+    "RowOffset": 628254,
     "RowId": 12952,
     "Text": "Master"
   },
   {
+    "RowOffset": 628274,
     "RowId": 12953,
     "Text": "Retrieving data..."
   },
   {
+    "RowOffset": 628306,
     "RowId": 12954,
     "Text": "Failed to retrieve data."
   },
   {
+    "RowOffset": 628342,
     "RowId": 12955,
     "Text": "Recruitment Target"
   },
   {
+    "RowOffset": 628374,
     "RowId": 12956,
     "Text": "Members  (Currently: <If(Equal(IntegerParameter(1),1000))><span style=\"color: #ff8080;\"><kilo(IntegerParameter(1),,)></span><Else/><kilo(IntegerParameter(1),,)></If>/1,000)"
   },
   {
+    "RowOffset": 628470,
     "RowId": 12957,
     "Text": "No comments to display."
   },
   {
+    "RowOffset": 628506,
     "RowId": 12958,
     "Text": "No members to display."
   },
   {
+    "RowOffset": 628542,
     "RowId": 12959,
     "Text": "Expired"
   },
   {
+    "RowOffset": 628562,
     "RowId": 12960,
     "Text": "Post comment to the message board?"
   },
   {
+    "RowOffset": 628610,
     "RowId": 12961,
     "Text": "Delete the following comment?\n\n“<String>StringParameter(1)</String>”"
   },
   {
+    "RowOffset": 628670,
     "RowId": 12962,
     "Text": "Target: <kilo(IntegerParameter(1),,)>"
   },
   {
+    "RowOffset": 628698,
     "RowId": 12963,
     "Text": "Invite to Fellowship"
   },
   {
+    "RowOffset": 628730,
     "RowId": 12964,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
+    "RowOffset": 628750,
     "RowId": 12965,
     "Text": "Fellowship Invitation"
   },
   {
+    "RowOffset": 628782,
     "RowId": 12966,
     "Text": "Fellowship Invitation"
   },
   {
+    "RowOffset": 628814,
     "RowId": 12967,
     "Text": ""
   },
   {
+    "RowOffset": 628826,
     "RowId": 12968,
     "Text": "Master"
   },
   {
+    "RowOffset": 628846,
     "RowId": 12969,
     "Text": "<kilo(IntegerParameter(1),,)>/1,000"
   },
   {
+    "RowOffset": 628874,
     "RowId": 12970,
     "Text": "Message of the Day"
   },
   {
+    "RowOffset": 628906,
     "RowId": 12971,
     "Text": "Accept"
   },
   {
+    "RowOffset": 628926,
     "RowId": 12972,
     "Text": "Decline"
   },
   {
+    "RowOffset": 628946,
     "RowId": 12973,
     "Text": "Accept fellowship invite to “<String>StringParameter(1)</String>”?"
   },
   {
+    "RowOffset": 628998,
     "RowId": 12974,
     "Text": "Decline fellowship invite to “<String>StringParameter(1)</String>”?"
   },
   {
+    "RowOffset": 629054,
     "RowId": 12975,
     "Text": "Leave the fellowship “<String>StringParameter(1)</String>”?"
   },
   {
+    "RowOffset": 629102,
     "RowId": 12976,
     "Text": "Leave the fellowship."
   },
   {
+    "RowOffset": 629134,
     "RowId": 12977,
     "Text": "Invitee"
   },
   {
+    "RowOffset": 629154,
     "RowId": 12978,
     "Text": "Cancel Invitation to Fellowship"
   },
   {
+    "RowOffset": 629198,
     "RowId": 12979,
     "Text": "Invitee"
   },
   {
+    "RowOffset": 629218,
     "RowId": 12980,
     "Text": "Membership"
   },
   {
+    "RowOffset": 629242,
     "RowId": 12981,
     "Text": "Activities"
   },
   {
+    "RowOffset": 629266,
     "RowId": 12982,
     "Text": "1."
   },
   {
+    "RowOffset": 629282,
     "RowId": 12983,
     "Text": "2."
   },
   {
+    "RowOffset": 629298,
     "RowId": 12984,
     "Text": "3."
   },
   {
+    "RowOffset": 629314,
     "RowId": 12985,
     "Text": "Master"
   },
   {
+    "RowOffset": 629334,
     "RowId": 12986,
     "Text": "Admin"
   },
   {
+    "RowOffset": 629350,
     "RowId": 12987,
     "Text": "Unable to retrieve data."
   },
   {
+    "RowOffset": 629386,
     "RowId": 12988,
     "Text": "No fellowships to display."
   },
   {
+    "RowOffset": 629426,
     "RowId": 12989,
     "Text": "Refresh List"
   },
   {
+    "RowOffset": 629450,
     "RowId": 12990,
     "Text": "Open Fellowship Search"
   },
   {
+    "RowOffset": 629486,
     "RowId": 12991,
     "Text": "Remove Admin Rights"
   },
   {
+    "RowOffset": 629518,
     "RowId": 12992,
     "Text": "Help"
   },
   {
+    "RowOffset": 629534,
     "RowId": 12993,
     "Text": "Fellowship Help"
   },
   {
+    "RowOffset": 629562,
     "RowId": 12994,
     "Text": ""
   },
   {
+    "RowOffset": 629574,
     "RowId": 12995,
     "Text": "Fellowship Help"
   },
   {
+    "RowOffset": 629602,
     "RowId": 12996,
     "Text": ""
   },
   {
+    "RowOffset": 629614,
     "RowId": 12997,
     "Text": "Fellowship Finder Help"
   },
   {
+    "RowOffset": 629650,
     "RowId": 12998,
     "Text": ""
   },
   {
+    "RowOffset": 629662,
     "RowId": 12999,
     "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
   }

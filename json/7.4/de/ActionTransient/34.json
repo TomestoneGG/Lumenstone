@@ -1,2001 +1,2501 @@
 [
   {
+    "RowOffset": 942702,
     "RowId": 16500,
     "Description": "Du führst eine physische Attacke aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),31))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>660<Else/>620</If><Else/>620</If>\nZusatzeffekt: Batteriebalken füllt sich um 20.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 942882,
     "RowId": 16501,
     "Description": "Du mobilisierst das Automaton DAME. Sein Attacke-Wert steigt je nach Stand des Batteriebalkens beim Herbeirufen.\nDauer: 12 Sekunden\nDas Automaton verschwindet durch Ausführung von <span style=\"color: #40bfff;\">DAME-Überhitzung</span> oder wenn die Wirkungsdauer endet.\nBedingung: Batteriebalken min. 50\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">DAME-Überhitzung</span>"
   },
   {
+    "RowOffset": 943278,
     "RowId": 16502,
     "Description": "Du lässt das Automaton DAME die physische Attacke <span style=\"color: #40bfff;\">Pressluftramme</span> ausführen.\nAttacke-Wert: 340 bis 680\nAttacke-Wert steigt je nach Stand des Batteriebalkens beim Herbeirufen des Automatons.\nAutomaton verschwindet nach der Ausführung.\nWird ausgelöst, sobald <span style=\"color: #40bfff;\">DAME-Überhitzung</span> ausgeführt wird oder der Batteriebalken leer ist.\nBedingung: Automaton DAME ist bereits gerufen.\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Automaton DAME</span>"
   },
   {
+    "RowOffset": 943806,
     "RowId": 16503,
     "Description": "Du lässt das gefechtsbereite Automaton DAME eine physische Attacke ausführen.\nAttacke-Wert: 340 bis 680\nAttacke-Wert steigt je nach Stand des Batteriebalkens beim Herbeirufen des Automatons.\n<If(Equal(PlayerParameter(68),31))><If(GreaterThanOrEqualTo(PlayerParameter(72),86))> <Else/>Automaton verschwindet nach der Ausführung.\n</If><Else/>Automaton verschwindet nach der Ausführung.\n</If>Wird ausgelöst, sobald <span style=\"color: #40bfff;\">DAME-Überhitzung</span> ausgeführt wird oder wenn die Wirkungsdauer endet.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 944306,
     "RowId": 16504,
     "Description": "Führt eine physische Attacke aus.\nAttacke-Wert: 120 bis 240\nAttacke-Wert steigt je nach Stand des Batteriebalkens beim Herbeirufen des Automatons.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 944518,
     "RowId": 16505,
     "Description": "Du führst eine feuerbasierte magische Attacke aus.\nAttacke-Wert: 350\nZusatzeffekt: Gewährt dir die Maximalstapelzahl von <span style=\"color: #ffff66;\">Lichtfeuer</span>.\nBedingung: <span style=\"color: #ffff66;\">Lichtfeuer</span> aktiv"
   },
   {
+    "RowOffset": 944770,
     "RowId": 16506,
     "Description": "<If(Equal(PlayerParameter(68),25))><If(GreaterThanOrEqualTo(PlayerParameter(72),58))>Du erhältst <span style=\"color: #ffff66;\">Schatteneis</span> sowie ein <span style=\"color: #ffff66;\">Schattenherz</span>.\nEffekt von <span style=\"color: #ffff66;\">Schattenherz</span>: Verhindert die Erhöhung der MP-Kosten für Feuer-Zauber bei <span style=\"color: #ffff66;\">Lichtfeuer</span>.\nAußerdem werden bei Ausführung von <span style=\"color: #40bfff;\">Flare</span> alle <span style=\"color: #ffff66;\">Schattenherzen</span> verbraucht, dafür aber die MP-Kosten um 1/3 reduziert.\n<Else/>Gewährt <span style=\"color: #ffff66;\">Schatteneis</span>.\n</If><Else/>Gewährt <span style=\"color: #ffff66;\">Schatteneis</span>.\n</If>Zusatzeffekt: Regeneriert pro gewährten Stapel <span style=\"color: #ffff66;\">Schattenherz</span> eigene MP.\n1 <span style=\"color: #ffff66;\">Schattenherz</span>: 2.500 MP\n2 <span style=\"color: #ffff66;\">Schattenherzen</span>: 5.000 MP\n3 <span style=\"color: #ffff66;\">Schattenherzen</span>: 10.000 MP\n<If(Equal(PlayerParameter(68),25))><If(GreaterThanOrEqualTo(PlayerParameter(72),58))>Verleiht außerhalb vom Kampf die maximale Stapelanzahl an <span style=\"color: #ffff66;\">Schatteneis</span> und <span style=\"color: #ffff66;\">Schattenherz</span> und regeneriert 10.000 MP.\n<Else/>Verleiht außerhalb vom Kampf die maximale Stapelanzahl an <span style=\"color: #ffff66;\">Schatteneis</span> und regeneriert 10.000 MP.\n</If><Else/>Verleiht außerhalb vom Kampf die maximale Stapelanzahl an <span style=\"color: #ffff66;\">Schatteneis</span> und regeneriert 10.000 MP.\n</If>Bedingung: <span style=\"color: #ffff66;\">Schatteneis</span> aktiv"
   },
   {
+    "RowOffset": 946090,
     "RowId": 16507,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: 890\nBedingung: <span style=\"color: #ffff66;\">Polyglott</span>"
   },
   {
+    "RowOffset": 946226,
     "RowId": 16508,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: 200\nZusatzeffekt: 2 Stapel <span style=\"color: #ffff66;\">Ätherfluss</span><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),62))>\nZusatzeffekt: <span style=\"color: #ffff66;\">Rand des Ruins</span>\nDauer: 60 Sekunden\n<Else/> </If><Else/> </If><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),52))>\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Energiesiphon</span><Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 946582,
     "RowId": 16509,
     "Description": "Du lässt dein Familiar seine <span style=\"color: #40bfff;\">Egi-Attacke I</span> ausführen.\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Familiar ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 946790,
     "RowId": 16510,
     "Description": "Du führst eine elementneutrale magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 100\nZusatzeffekt: 2 Stapel <span style=\"color: #ffff66;\">Ätherfluss</span><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),62))>\nZusatzeffekt: <span style=\"color: #ffff66;\">Rand des Ruins</span>\nDauer: 60 Sekunden\n<Else/> </If><Else/> </If><If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),52))>\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Energieentzug</span><Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 947190,
     "RowId": 16511,
     "Description": "Du führst eine elementneutrale magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 100"
   },
   {
+    "RowOffset": 947322,
     "RowId": 16512,
     "Description": "Du lässt dein Familiar seine <span style=\"color: #40bfff;\">Egi-Attacke II</span> ausführen.\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Familiar ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 947530,
     "RowId": 16513,
     "Description": "Du kannst Zauber um 2,5 Sekunden schneller wirken.\nZusatzeffekt: <span style=\"color: #40bfff;\">Ruinga</span> und <span style=\"color: #40bfff;\">Elementarkorona</span> werden zu <span style=\"color: #40bfff;\">Quell des Feuers</span> bzw. <span style=\"color: #40bfff;\">Zeichen der Läuterung</span>.\nDauer: 20 Sekunden\nZusatzeffekt: Reaktivierungszeit von <span style=\"color: #40bfff;\">Trisaster</span> wird zurückgesetzt\nBedingung: Demi-Bahamut nicht mehr anwesend.\nKann nicht im Kommandomenü angelegt werden.\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Bahamut-Trance</span>\nBahamut-Trance wird zu Phönix-Trance, wenn Demi-Bahamut nicht mehr anwesend ist."
   },
   {
+    "RowOffset": 948186,
     "RowId": 16514,
     "Description": "Du führst eine feuerbasierte magische Attacke aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),27))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>580<Else/>540</If><Else/>540</If>\nBedingung: <span style=\"color: #ffff66;\">Phönix-Trance</span> aktiv\nBei erfüllter Bedingung ändert sich <span style=\"color: #40bfff;\">Ruinga</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 948494,
     "RowId": 16515,
     "Description": "Du führst eine feuerbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 240\nBedingung: <span style=\"color: #ffff66;\">Phönix-Trance</span> aktiv\nBei erfüllter Bedingung ändert sich <span style=\"color: #40bfff;\">Trisaster</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 948826,
     "RowId": 16516,
     "Description": "Du lässt Demi-Phönix <span style=\"color: #40bfff;\">Offenbarung</span> ausführen.\nEffekt: Führt eine feuerbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 1.300\nAttacke-Wert verringert sich ab dem zweiten Gegner um 50%.\nBedingung: Demi-Phönix gerufen\nBei erfüllter Bedingung ändert sich <span style=\"color: #40bfff;\">Bahamut-Entflammung</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 949290,
     "RowId": 16517,
     "Description": "Regeneriert bei dir und den umstehenden Gruppenmitgliedern stetig LP.\nHeilpotenzial: 100\nDauer: 21 Sekunden\nBedingung: Demi-Phönix gerufen\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 949510,
     "RowId": 16518,
     "Description": "Führt eine feuerbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 1.300\nAttacke-Wert verringert sich ab dem zweiten Gegner um 50%.\nBedingung: Demi-Phönix anwesend.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 949786,
     "RowId": 16519,
     "Description": "Führt eine feuerbasierte magische Attacke aus.\nAttacke-Wert: 150\nBedingung: Demi-Phönix anwesend.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 949950,
     "RowId": 16520,
     "Description": "Errichtet eine Barriere um dich, die Schaden in der Höhe von 30% deiner Maximal-LP abwehrt.\nDauer: 30 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 950130,
     "RowId": 16521,
     "Description": "Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 30\nZusatzeffekt: Schafft eine Schadenszone um das Ziel\nAttacke-Wert: 30\nDauer: 9 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 950398,
     "RowId": 16522,
     "Description": "Errichtet eine Barriere um den Beschwörer dieses Familiars, die Schaden in der Höhe von 30% der Maximal-LP des Ziels abwehrt.\nDauer: 30 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 950610,
     "RowId": 16523,
     "Description": "Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 50\nZusatzeffekt: Schafft eine Schadenszone um das Ziel\nAttacke-Wert: 50\nDauer: 9 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 950878,
     "RowId": 16524,
     "Description": "Du führst eine blitzbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>140<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If>\nZusatzeffekt: +7 Schwarzes Mana"
   },
   {
+    "RowOffset": 951102,
     "RowId": 16525,
     "Description": "Du führst eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>140<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>120<Else/>100</If><Else/>100</If></If>\nZusatzeffekt: +7 Weißes Mana"
   },
   {
+    "RowOffset": 951326,
     "RowId": 16526,
     "Description": "Du führst eine elementneutrale magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>210<Else/>200</If><Else/>200</If>\nAttacke-Wert bei <span style=\"color: #ffff66;\">Präparation</span>: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>260<Else/>250</If><Else/>250</If>\nZusatzeffekt: Je +3 Schwarzes und Weißes Mana"
   },
   {
+    "RowOffset": 951610,
     "RowId": 16527,
     "Description": "Du führst eine physische Attacke aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),72))>180<Else/>130</If><Else/>130</If>\nMaximale Aufladungen: 2\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Körperparade</span>"
   },
   {
+    "RowOffset": 951806,
     "RowId": 16528,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>420<Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>340<Else/>290</If><Else/>290</If></If><Else/><If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))>340<Else/>290</If><Else/>290</If></If>\nBalancebalken-Kosten: Je 5 Weißes und Schwarzes Mana\nBei erfüllter Bedingung ändert sich <span style=\"color: #40bfff;\">Reprise</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 952166,
     "RowId": 16529,
     "Description": "Du führst eine physische Attacke aus.\nAttacke-Wert: 100\nKommando wird zu <span style=\"color: #40bfff;\">Magische Reprise</span>, wenn sowohl Schwarzes Mana als auch Weißes Mana 5 oder mehr betragen."
   },
   {
+    "RowOffset": 952370,
     "RowId": 16530,
     "Description": "Du führst eine elementneutrale magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>750<Else/>680</If><Else/>680</If>\nAttacke-Wert verringert sich ab dem zweiten Gegner um 55%.\nKombo-Bedingung: <span style=\"color: #40bfff;\">Erzflare</span> oder <span style=\"color: #40bfff;\">Erz-Sanctus</span>\nZusatzeffekt: Je +4 Schwarzes und Weißes Mana\nBei erfüllter Bedingung ändern sich <If(Equal(PlayerParameter(68),35))><If(GreaterThanOrEqualTo(PlayerParameter(72),84))><span style=\"color: #40bfff;\">Stoß III</span><Else/><span style=\"color: #40bfff;\">Stoß II</span></If><Else/><span style=\"color: #40bfff;\">Stoß II</span></If> und <span style=\"color: #40bfff;\">Impakt</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 953002,
     "RowId": 16531,
     "Description": "Du regenerierst beim Ziel LP.\nHeilpotenzial: <If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>800<Else/>700</If><Else/>700</If>\n<If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),74))>Zusatzeffekt: Öffnet die <span style=\"color: #ffff66;\">Blutlilie</span> um eine Stufe.\n<Else/> </If><Else/> </If>Bedingung: <span style=\"color: #ffff66;\">Lilie</span>"
   },
   {
+    "RowOffset": 953234,
     "RowId": 16532,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>85<Else/>65</If><Else/>65</If>\nZusatzeffekt: Elementneutraler Schaden über Zeit\nAttacke-Wert: <If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>85<Else/>65</If><Else/>65</If>\nDauer: 30 Sekunden"
   },
   {
+    "RowOffset": 953454,
     "RowId": 16533,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: 290"
   },
   {
+    "RowOffset": 953542,
     "RowId": 16534,
     "Description": "Du regenerierst eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: <If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>400<Else/>300</If><Else/>300</If>\nZusatzeffekt: Öffnet die <span style=\"color: #ffff66;\">Blutlilie</span> um eine Stufe.\nBedingung: <span style=\"color: #ffff66;\">Lilie</span>"
   },
   {
+    "RowOffset": 953802,
     "RowId": 16535,
     "Description": "Du führst eine elementneutrale magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: <If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>1.400<Else/>1.240</If><Else/>1.240</If>\nAttacke-Wert verringert sich ab dem zweiten Gegner um 50%.\nBedingung: <span style=\"color: #ffff66;\">Blutlilie</span> vollständig geöffnet"
   },
   {
+    "RowOffset": 954106,
     "RowId": 16536,
     "Description": "Du erhöhst die Wirkung deiner Heilmagie um 20% und verringerst den eigenen erlittenen Schaden sowie den von Gruppenmitgliedern im Umkreis von 50y um 10%.\nDauer: 20 Sekunden<If(Equal(PlayerParameter(68),24))><If(GreaterThanOrEqualTo(PlayerParameter(72),100))>\nZusatzeffekt: Gewährt dir <span style=\"color: #ffff66;\">Göttliche Gnade</span>.\nDauer: 30 Sekunden<Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 954434,
     "RowId": 16537,
     "Description": "Du lässt deine Fee <span style=\"color: #40bfff;\">Erhebendes Flüstern</span> ausführen.<If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>\nKommando wird als <span style=\"color: #40bfff;\">Hauch der Seraphim</span> ausgeführt, wenn Seraph anwesend ist.<Else/> </If><Else/> </If>\nRegeneriert schrittweise eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 80\nDauer: 21 Sekunden\nBedingung: <If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>Fee oder Seraph<Else/>Fee</If><Else/>Fee</If> ist bereits gerufen."
   },
   {
+    "RowOffset": 954866,
     "RowId": 16538,
     "Description": "Du lässt deine Fee <span style=\"color: #40bfff;\">Illumination</span> ausführen.<If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>\nKommando wird als <span style=\"color: #40bfff;\">Seraphische Illumination</span> ausgeführt, wenn Seraph anwesend ist.<Else/> </If><Else/> </If>\nErhöht die Wirkung deiner Heilmagie und die von umstehenden Gruppenmitgliedern um 10% und verringert deinen erlittenen Magieschaden und den von umstehenden Gruppenmitgliedern um 5%.\nDauer: 20 Sekunden\nKann nicht zugleich mit der <span style=\"color: #40bfff;\">Seraphischen Illumination</span> des Seraphen aktiv sein.\nBedingung: <If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),80))>Fee oder Seraph<Else/>Fee</If><Else/>Fee</If> ist bereits gerufen."
   },
   {
+    "RowOffset": 955506,
     "RowId": 16539,
     "Description": "Du führst eine elementneutrale magische Attacke auf alle umstehenden Gegner aus.\nAttacke-Wert: </span><If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),54))>165<Else/>150</If><Else/>150</If>"
   },
   {
+    "RowOffset": 955650,
     "RowId": 16540,
     "Description": "Du fügst dem Ziel elementneutralen Schaden über Zeit zu.\nAttacke-Wert: <If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>85<Else/>70</If><Else/>70</If>\nDauer: 30 Sekunden"
   },
   {
+    "RowOffset": 955782,
     "RowId": 16541,
     "Description": "Du führst eine elementneutrale magische Attacke aus.\nAttacke-Wert: 255"
   },
   {
+    "RowOffset": 955870,
     "RowId": 16542,
     "Description": "Du kannst das nächste <span style=\"color: #40bfff;\">Adloquium</span>, <If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))><span style=\"color: #40bfff;\">Übermut</span><Else/><span style=\"color: #40bfff;\">Kurieren</span></If><Else/><span style=\"color: #40bfff;\">Kurieren</span></If>, <span style=\"color: #40bfff;\">Unbezwingbarkeit</span> oder <span style=\"color: #40bfff;\">Weise Voraussicht</span> ohne MP-Kosten und Verbrauch von <span style=\"color: #ffff66;\">Ätherfluss</span> ausführen, wobei es kritisch trifft.\nDauer: 15 Sekunden"
   },
   {
+    "RowOffset": 956278,
     "RowId": 16543,
     "Description": "Du lässt deine Fee <span style=\"color: #40bfff;\">Gunst der Feen</span> ausführen.\nRegeneriert eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 320\nBedingung: Fee ist bereits gerufen."
   },
   {
+    "RowOffset": 956502,
     "RowId": 16544,
     "Description": "Du regenerierst eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 320\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 956666,
     "RowId": 16545,
     "Description": "Du schickst deine Fee weg und rufst stattdessen deinen Seraph herbei, der in der Haltung <span style=\"color: #ffff66;\">Schütz</span> mit <span style=\"color: #40bfff;\">Schleier der Seraphim</span> automatisch bei einem Gruppenmitglied LP regeneriert.\nDauer: 22 Sekunden\nDanach kehrt die Fee wieder zu dir zurück.\nBedingung: Fee ist bereits gerufen."
   },
   {
+    "RowOffset": 957022,
     "RowId": 16546,
     "Description": "Du lässt deinen Seraphen <span style=\"color: #40bfff;\">Seelentrost</span> ausführen.\nRegeneriert eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 250\nZusatzeffekt: Errichtet eine Barriere um die Ziele, die Schaden in der Höhe von 100% der Heilwirkung absorbiert.\nDauer: 30 Sekunden\nMaximale Aufladungen: 2\nBedingung: Seraph ist bereits gerufen."
   },
   {
+    "RowOffset": 957422,
     "RowId": 16547,
     "Description": "Du regenerierst eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 250\nZusatzeffekt: Errichtet eine Barriere um die Ziele, die Schaden in der Höhe der Heilwirkung absorbiert.\nDauer: 30 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 957714,
     "RowId": 16548,
     "Description": "Du regenerierst LP des Ziels.\nHeilpotenzial: <If(Equal(PlayerParameter(68),28))><If(GreaterThanOrEqualTo(PlayerParameter(72),85))>180<Else/>150</If><Else/>150</If>\nZusatzeffekt: Gewährt <span style=\"color: #ffff66;\">Schleier der Seraphim</span> und errichtet damit eine Barriere um das Ziel, die Schaden in der Höhe der Heilwirkung absorbiert.\nDauer: 30 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 958038,
     "RowId": 16549,
     "Description": "Du kannst Zauber um 2,5 Sekunden schneller wirken.\nZusatzeffekt: <span style=\"color: #40bfff;\">Ruinga</span> und <span style=\"color: #40bfff;\">Elementarkorona</span> werden zu <span style=\"color: #40bfff;\">Quell des Feuers</span> bzw. <span style=\"color: #40bfff;\">Zeichen der Läuterung</span>.\nZusatzeffekt: Demi-Phönix erscheint, führt <span style=\"color: #40bfff;\">Schwingen der Unsterblichkeit</span> aus und unterstützt deine Attacken auf Gegner mit <span style=\"color: #40bfff;\">Scharlachflamme</span>.\nDauer: 20 Sekunden\nDas bis dahin anwesende Familiar verschwindet und erscheint nach Rückkehr von Demi-Phönix wieder.\nZusatzeffekt: Reaktivierungszeit von <span style=\"color: #40bfff;\">Trisaster</span> wird zurückgesetzt\nBedingung: Demi-Bahamut nicht mehr anwesend.\nKann nicht im Kommandomenü angelegt werden.\nGemeinsamer Reaktivierungs-Timer mit <span style=\"color: #40bfff;\">Bahamut-Trance</span>\nBahamut-Trance wird zu Phönix-Trance, wenn Demi-Bahamut nicht mehr anwesend ist."
   },
   {
+    "RowOffset": 958990,
     "RowId": 16550,
     "Description": "Du regenerierst schrittweise eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 80\nDauer: 21 Sekunden\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 959186,
     "RowId": 16551,
     "Description": "Du erhöhst die Wirkung deiner Heilmagie und die von Gruppenmitgliedern in deiner Nähe um 10% und verringerst deinen erlittenen Magieschaden und den von Gruppenmitgliedern in deiner Nähe um 5%.\nDauer: 20 Sekunden\nKann nicht zugleich mit der <span style=\"color: #ffff66;\">Illumination</span> einer Fee aktiv sein.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 959586,
     "RowId": 16552,
     "Description": "Du erhöhst den ausgeteilten Schaden von dir und umstehenden Gruppenmitgliedern um 6%\nDauer: 20 Sekunden<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),92))>\nZusatzeffekt: Gewährt dir <span style=\"color: #ffff66;\">Auge des Orakels</span>.\nDauer: 30 Sekunden<Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 959838,
     "RowId": 16553,
     "Description": "Du regenerierst eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial: 200\nZusatzeffekt: Regeneriert stetig LP der Ziele.\nHeilpotenzial: 100\nDauer: 15 Sekunden"
   },
   {
+    "RowOffset": 960046,
     "RowId": 16554,
     "Description": "Du fügst dem Ziel elementneutralen Schaden über Zeit zu.\nAttacke-Wert: <If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),94))>70<Else/>65</If><Else/>65</If>\nDauer: 30 Sekunden"
   },
   {
+    "RowOffset": 960178,
     "RowId": 16555,
     "Description": "Du fügst dem Ziel elementneutralen magischen Schaden zu.\nAttacke-Wert: 230"
   },
   {
+    "RowOffset": 960270,
     "RowId": 16556,
     "Description": "Du regenerierst bei dir oder bei einem Gruppenmitglied LP.\nHeilpotenzial: 200\nZusatzeffekt: Errichtet eine Barriere um das Ziel, die Schaden in der Höhe von 200% der Heilwirkung absorbiert.\nDauer: 30 Sekunden<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),88))>\nMaximale Aufladungen: 2<Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 960566,
     "RowId": 16557,
     "Description": "Du gewährst dir und den Gruppenmitgliedern in der Nähe <span style=\"color: #ffff66;\">Horoskop</span>.\nDauer: 10 Sekunden\nEffekt von Horoskop: <span style=\"color: #40bfff;\">Horoskop</span> wird zu <span style=\"color: #40bfff;\">Helios-Horoskop</span>, sobald du den Effekt des selbst ausgeführten <span style=\"color: #40bfff;\">Helios</span> oder <If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))><span style=\"color: #40bfff;\">Helios in Konjunktion</span><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If> erhältst.\nDauer: 30 Sekunden\nBei erneuter Ausführung während der Wirkungsdauer oder nach Ende der Wirkung von Horoskop oder Helios-Horoskop werden du und die Gruppenmitglieder in der Nähe, bei denen der Effekt von Horoskop oder Helios-Horoskop aktiv ist, geheilt.\nHeilpotenzial bei Horoskop: 200\nHeilpotenzial bei Helios-Horoskop: 400"
   },
   {
+    "RowOffset": 961410,
     "RowId": 16558,
     "Description": "Du regenerierst eigene LP und die von umstehenden Gruppenmitgliedern.\nHeilpotenzial, wenn beim Ziel <span style=\"color: #ffff66;\">Horoskop</span> aktiv ist: 200\nWenn beim Ziel <span style=\"color: #ffff66;\">Helios-Horoskop</span> aktiv ist: 400\nHoroskop bzw. Helios-Horoskop wird bei Erhalt des Effekts beendet."
   },
   {
+    "RowOffset": 961726,
     "RowId": 16559,
     "Description": "Du erhöhst die Wirkung deiner Heilmagie um 20%.\nDauer: 20 Sekunden\nZusatzeffekt: Beim Ausführen von <span style=\"color: #40bfff;\">Harmonischer Orbis</span> oder <If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))><span style=\"color: #40bfff;\">Helios in Konjunktion</span><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If> wird eine Barriere um das Ziel beziehungsweise die Ziele errichtet.\nBarriere-Effekt bei <span style=\"color: #40bfff;\">Harmonischer Orbis</span>: 250% der Heilwirkung\nBarriere-Effekt bei <If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),96))><span style=\"color: #40bfff;\">Helios in Konjunktion</span><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If><Else/><span style=\"color: #40bfff;\">Aspektierter Helios</span></If>: 125% der Heilwirkung\nDauer: 30 Sekunden<If(Equal(PlayerParameter(68),33))><If(GreaterThanOrEqualTo(PlayerParameter(72),100))>\nZusatzeffekt: Gewährt dir <span style=\"color: #ffff66;\">Stand der Sonne</span>.\nDauer: 30 Sekunden<Else/> </If><Else/> </If>"
   },
   {
+    "RowOffset": 962566,
     "RowId": 16560,
     "Description": "Du versetzt das Ziel in <span style=\"color: #ffff66;\">Schlaf</span>.\nDauer: 30 Sekunden\nUnterbindet Auto-Attacke."
   },
   {
+    "RowOffset": 962686,
     "RowId": 16561,
     "Description": ""
   },
   {
+    "RowOffset": 962698,
     "RowId": 16562,
     "Description": ""
   },
   {
+    "RowOffset": 962710,
     "RowId": 16563,
     "Description": ""
   },
   {
+    "RowOffset": 962722,
     "RowId": 16564,
     "Description": ""
   },
   {
+    "RowOffset": 962734,
     "RowId": 16565,
     "Description": ""
   },
   {
+    "RowOffset": 962746,
     "RowId": 16566,
     "Description": ""
   },
   {
+    "RowOffset": 962758,
     "RowId": 16567,
     "Description": ""
   },
   {
+    "RowOffset": 962770,
     "RowId": 16568,
     "Description": ""
   },
   {
+    "RowOffset": 962782,
     "RowId": 16569,
     "Description": ""
   },
   {
+    "RowOffset": 962794,
     "RowId": 16570,
     "Description": ""
   },
   {
+    "RowOffset": 962806,
     "RowId": 16571,
     "Description": ""
   },
   {
+    "RowOffset": 962818,
     "RowId": 16572,
     "Description": ""
   },
   {
+    "RowOffset": 962830,
     "RowId": 16573,
     "Description": ""
   },
   {
+    "RowOffset": 962842,
     "RowId": 16574,
     "Description": "Du führst eine feuerbasierte magische Attacke aus.\nAttacke-Wert: 430"
   },
   {
+    "RowOffset": 962926,
     "RowId": 16575,
     "Description": "Du führst eine eisbasierte magische Attacke aus.\nAttacke-Wert: 240\nZusatzeffekt: Regeneriert eigene MP."
   },
   {
+    "RowOffset": 963050,
     "RowId": 16576,
     "Description": "Du führst eine blitzbasierte magische Attacke aus.\nAttacke-Wert: 200\nZusatzeffekt: Blitzschaden über Zeit\nAttacke-Wert: 40\nDauer: 24 Sekunden"
   },
   {
+    "RowOffset": 963218,
     "RowId": 16577,
     "Description": "Du führst eine feuerbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 460"
   },
   {
+    "RowOffset": 963346,
     "RowId": 16578,
     "Description": "Du führst eine elementneutrale magische Attacke auf alle Gegner um den Einschlagsort aus.\nAttacke-Wert: 1.500"
   },
   {
+    "RowOffset": 963470,
     "RowId": 16579,
     "Description": ""
   },
   {
+    "RowOffset": 963482,
     "RowId": 16580,
     "Description": ""
   },
   {
+    "RowOffset": 963494,
     "RowId": 16581,
     "Description": ""
   },
   {
+    "RowOffset": 963506,
     "RowId": 16582,
     "Description": ""
   },
   {
+    "RowOffset": 963518,
     "RowId": 16583,
     "Description": ""
   },
   {
+    "RowOffset": 963530,
     "RowId": 16584,
     "Description": ""
   },
   {
+    "RowOffset": 963542,
     "RowId": 16585,
     "Description": ""
   },
   {
+    "RowOffset": 963554,
     "RowId": 16586,
     "Description": ""
   },
   {
+    "RowOffset": 963566,
     "RowId": 16587,
     "Description": ""
   },
   {
+    "RowOffset": 963578,
     "RowId": 16588,
     "Description": ""
   },
   {
+    "RowOffset": 963590,
     "RowId": 16589,
     "Description": ""
   },
   {
+    "RowOffset": 963602,
     "RowId": 16590,
     "Description": ""
   },
   {
+    "RowOffset": 963614,
     "RowId": 16591,
     "Description": ""
   },
   {
+    "RowOffset": 963626,
     "RowId": 16592,
     "Description": ""
   },
   {
+    "RowOffset": 963638,
     "RowId": 16593,
     "Description": ""
   },
   {
+    "RowOffset": 963650,
     "RowId": 16594,
     "Description": ""
   },
   {
+    "RowOffset": 963662,
     "RowId": 16595,
     "Description": ""
   },
   {
+    "RowOffset": 963674,
     "RowId": 16596,
     "Description": ""
   },
   {
+    "RowOffset": 963686,
     "RowId": 16597,
     "Description": ""
   },
   {
+    "RowOffset": 963698,
     "RowId": 16598,
     "Description": ""
   },
   {
+    "RowOffset": 963710,
     "RowId": 16599,
     "Description": ""
   },
   {
+    "RowOffset": 963722,
     "RowId": 16600,
     "Description": ""
   },
   {
+    "RowOffset": 963734,
     "RowId": 16601,
     "Description": ""
   },
   {
+    "RowOffset": 963746,
     "RowId": 16602,
     "Description": ""
   },
   {
+    "RowOffset": 963758,
     "RowId": 16603,
     "Description": ""
   },
   {
+    "RowOffset": 963770,
     "RowId": 16604,
     "Description": ""
   },
   {
+    "RowOffset": 963782,
     "RowId": 16605,
     "Description": ""
   },
   {
+    "RowOffset": 963794,
     "RowId": 16606,
     "Description": ""
   },
   {
+    "RowOffset": 963806,
     "RowId": 16607,
     "Description": ""
   },
   {
+    "RowOffset": 963818,
     "RowId": 16608,
     "Description": ""
   },
   {
+    "RowOffset": 963830,
     "RowId": 16609,
     "Description": ""
   },
   {
+    "RowOffset": 963842,
     "RowId": 16610,
     "Description": ""
   },
   {
+    "RowOffset": 963854,
     "RowId": 16611,
     "Description": ""
   },
   {
+    "RowOffset": 963866,
     "RowId": 16612,
     "Description": ""
   },
   {
+    "RowOffset": 963878,
     "RowId": 16613,
     "Description": ""
   },
   {
+    "RowOffset": 963890,
     "RowId": 16614,
     "Description": ""
   },
   {
+    "RowOffset": 963902,
     "RowId": 16615,
     "Description": ""
   },
   {
+    "RowOffset": 963914,
     "RowId": 16616,
     "Description": ""
   },
   {
+    "RowOffset": 963926,
     "RowId": 16617,
     "Description": ""
   },
   {
+    "RowOffset": 963938,
     "RowId": 16618,
     "Description": ""
   },
   {
+    "RowOffset": 963950,
     "RowId": 16619,
     "Description": ""
   },
   {
+    "RowOffset": 963962,
     "RowId": 16620,
     "Description": ""
   },
   {
+    "RowOffset": 963974,
     "RowId": 16621,
     "Description": ""
   },
   {
+    "RowOffset": 963986,
     "RowId": 16622,
     "Description": ""
   },
   {
+    "RowOffset": 963998,
     "RowId": 16623,
     "Description": ""
   },
   {
+    "RowOffset": 964010,
     "RowId": 16624,
     "Description": ""
   },
   {
+    "RowOffset": 964022,
     "RowId": 16625,
     "Description": ""
   },
   {
+    "RowOffset": 964034,
     "RowId": 16626,
     "Description": ""
   },
   {
+    "RowOffset": 964046,
     "RowId": 16627,
     "Description": ""
   },
   {
+    "RowOffset": 964058,
     "RowId": 16628,
     "Description": ""
   },
   {
+    "RowOffset": 964070,
     "RowId": 16629,
     "Description": ""
   },
   {
+    "RowOffset": 964082,
     "RowId": 16630,
     "Description": ""
   },
   {
+    "RowOffset": 964094,
     "RowId": 16631,
     "Description": ""
   },
   {
+    "RowOffset": 964106,
     "RowId": 16632,
     "Description": ""
   },
   {
+    "RowOffset": 964118,
     "RowId": 16633,
     "Description": ""
   },
   {
+    "RowOffset": 964130,
     "RowId": 16634,
     "Description": ""
   },
   {
+    "RowOffset": 964142,
     "RowId": 16635,
     "Description": ""
   },
   {
+    "RowOffset": 964154,
     "RowId": 16636,
     "Description": ""
   },
   {
+    "RowOffset": 964166,
     "RowId": 16637,
     "Description": ""
   },
   {
+    "RowOffset": 964178,
     "RowId": 16638,
     "Description": ""
   },
   {
+    "RowOffset": 964190,
     "RowId": 16639,
     "Description": ""
   },
   {
+    "RowOffset": 964202,
     "RowId": 16640,
     "Description": ""
   },
   {
+    "RowOffset": 964214,
     "RowId": 16641,
     "Description": ""
   },
   {
+    "RowOffset": 964226,
     "RowId": 16642,
     "Description": ""
   },
   {
+    "RowOffset": 964238,
     "RowId": 16643,
     "Description": ""
   },
   {
+    "RowOffset": 964250,
     "RowId": 16644,
     "Description": ""
   },
   {
+    "RowOffset": 964262,
     "RowId": 16645,
     "Description": ""
   },
   {
+    "RowOffset": 964274,
     "RowId": 16646,
     "Description": ""
   },
   {
+    "RowOffset": 964286,
     "RowId": 16647,
     "Description": ""
   },
   {
+    "RowOffset": 964298,
     "RowId": 16648,
     "Description": ""
   },
   {
+    "RowOffset": 964310,
     "RowId": 16649,
     "Description": ""
   },
   {
+    "RowOffset": 964322,
     "RowId": 16650,
     "Description": ""
   },
   {
+    "RowOffset": 964334,
     "RowId": 16651,
     "Description": ""
   },
   {
+    "RowOffset": 964346,
     "RowId": 16652,
     "Description": ""
   },
   {
+    "RowOffset": 964358,
     "RowId": 16653,
     "Description": ""
   },
   {
+    "RowOffset": 964370,
     "RowId": 16654,
     "Description": ""
   },
   {
+    "RowOffset": 964382,
     "RowId": 16655,
     "Description": ""
   },
   {
+    "RowOffset": 964394,
     "RowId": 16656,
     "Description": ""
   },
   {
+    "RowOffset": 964406,
     "RowId": 16657,
     "Description": ""
   },
   {
+    "RowOffset": 964418,
     "RowId": 16658,
     "Description": ""
   },
   {
+    "RowOffset": 964430,
     "RowId": 16659,
     "Description": ""
   },
   {
+    "RowOffset": 964442,
     "RowId": 16660,
     "Description": ""
   },
   {
+    "RowOffset": 964454,
     "RowId": 16661,
     "Description": ""
   },
   {
+    "RowOffset": 964466,
     "RowId": 16662,
     "Description": ""
   },
   {
+    "RowOffset": 964478,
     "RowId": 16663,
     "Description": ""
   },
   {
+    "RowOffset": 964490,
     "RowId": 16664,
     "Description": ""
   },
   {
+    "RowOffset": 964502,
     "RowId": 16665,
     "Description": ""
   },
   {
+    "RowOffset": 964514,
     "RowId": 16666,
     "Description": ""
   },
   {
+    "RowOffset": 964526,
     "RowId": 16667,
     "Description": ""
   },
   {
+    "RowOffset": 964538,
     "RowId": 16668,
     "Description": ""
   },
   {
+    "RowOffset": 964550,
     "RowId": 16669,
     "Description": ""
   },
   {
+    "RowOffset": 964562,
     "RowId": 16670,
     "Description": ""
   },
   {
+    "RowOffset": 964574,
     "RowId": 16671,
     "Description": ""
   },
   {
+    "RowOffset": 964586,
     "RowId": 16672,
     "Description": ""
   },
   {
+    "RowOffset": 964598,
     "RowId": 16673,
     "Description": ""
   },
   {
+    "RowOffset": 964610,
     "RowId": 16674,
     "Description": ""
   },
   {
+    "RowOffset": 964622,
     "RowId": 16675,
     "Description": ""
   },
   {
+    "RowOffset": 964634,
     "RowId": 16676,
     "Description": ""
   },
   {
+    "RowOffset": 964646,
     "RowId": 16677,
     "Description": ""
   },
   {
+    "RowOffset": 964658,
     "RowId": 16678,
     "Description": ""
   },
   {
+    "RowOffset": 964670,
     "RowId": 16679,
     "Description": ""
   },
   {
+    "RowOffset": 964682,
     "RowId": 16680,
     "Description": ""
   },
   {
+    "RowOffset": 964694,
     "RowId": 16681,
     "Description": ""
   },
   {
+    "RowOffset": 964706,
     "RowId": 16682,
     "Description": ""
   },
   {
+    "RowOffset": 964718,
     "RowId": 16683,
     "Description": ""
   },
   {
+    "RowOffset": 964730,
     "RowId": 16684,
     "Description": ""
   },
   {
+    "RowOffset": 964742,
     "RowId": 16685,
     "Description": ""
   },
   {
+    "RowOffset": 964754,
     "RowId": 16686,
     "Description": ""
   },
   {
+    "RowOffset": 964766,
     "RowId": 16687,
     "Description": ""
   },
   {
+    "RowOffset": 964778,
     "RowId": 16688,
     "Description": ""
   },
   {
+    "RowOffset": 964790,
     "RowId": 16689,
     "Description": ""
   },
   {
+    "RowOffset": 964802,
     "RowId": 16690,
     "Description": ""
   },
   {
+    "RowOffset": 964814,
     "RowId": 16691,
     "Description": ""
   },
   {
+    "RowOffset": 964826,
     "RowId": 16692,
     "Description": ""
   },
   {
+    "RowOffset": 964838,
     "RowId": 16693,
     "Description": ""
   },
   {
+    "RowOffset": 964850,
     "RowId": 16694,
     "Description": ""
   },
   {
+    "RowOffset": 964862,
     "RowId": 16695,
     "Description": ""
   },
   {
+    "RowOffset": 964874,
     "RowId": 16696,
     "Description": ""
   },
   {
+    "RowOffset": 964886,
     "RowId": 16697,
     "Description": ""
   },
   {
+    "RowOffset": 964898,
     "RowId": 16698,
     "Description": ""
   },
   {
+    "RowOffset": 964910,
     "RowId": 16699,
     "Description": ""
   },
   {
+    "RowOffset": 964922,
     "RowId": 16700,
     "Description": ""
   },
   {
+    "RowOffset": 964934,
     "RowId": 16701,
     "Description": ""
   },
   {
+    "RowOffset": 964946,
     "RowId": 16702,
     "Description": ""
   },
   {
+    "RowOffset": 964958,
     "RowId": 16703,
     "Description": ""
   },
   {
+    "RowOffset": 964970,
     "RowId": 16704,
     "Description": ""
   },
   {
+    "RowOffset": 964982,
     "RowId": 16705,
     "Description": ""
   },
   {
+    "RowOffset": 964994,
     "RowId": 16706,
     "Description": ""
   },
   {
+    "RowOffset": 965006,
     "RowId": 16707,
     "Description": ""
   },
   {
+    "RowOffset": 965018,
     "RowId": 16708,
     "Description": ""
   },
   {
+    "RowOffset": 965030,
     "RowId": 16709,
     "Description": ""
   },
   {
+    "RowOffset": 965042,
     "RowId": 16710,
     "Description": ""
   },
   {
+    "RowOffset": 965054,
     "RowId": 16711,
     "Description": ""
   },
   {
+    "RowOffset": 965066,
     "RowId": 16712,
     "Description": ""
   },
   {
+    "RowOffset": 965078,
     "RowId": 16713,
     "Description": ""
   },
   {
+    "RowOffset": 965090,
     "RowId": 16714,
     "Description": ""
   },
   {
+    "RowOffset": 965102,
     "RowId": 16715,
     "Description": ""
   },
   {
+    "RowOffset": 965114,
     "RowId": 16716,
     "Description": ""
   },
   {
+    "RowOffset": 965126,
     "RowId": 16717,
     "Description": ""
   },
   {
+    "RowOffset": 965138,
     "RowId": 16718,
     "Description": ""
   },
   {
+    "RowOffset": 965150,
     "RowId": 16719,
     "Description": ""
   },
   {
+    "RowOffset": 965162,
     "RowId": 16720,
     "Description": ""
   },
   {
+    "RowOffset": 965174,
     "RowId": 16721,
     "Description": ""
   },
   {
+    "RowOffset": 965186,
     "RowId": 16722,
     "Description": ""
   },
   {
+    "RowOffset": 965198,
     "RowId": 16723,
     "Description": ""
   },
   {
+    "RowOffset": 965210,
     "RowId": 16724,
     "Description": ""
   },
   {
+    "RowOffset": 965222,
     "RowId": 16725,
     "Description": ""
   },
   {
+    "RowOffset": 965234,
     "RowId": 16726,
     "Description": ""
   },
   {
+    "RowOffset": 965246,
     "RowId": 16727,
     "Description": ""
   },
   {
+    "RowOffset": 965258,
     "RowId": 16728,
     "Description": ""
   },
   {
+    "RowOffset": 965270,
     "RowId": 16729,
     "Description": ""
   },
   {
+    "RowOffset": 965282,
     "RowId": 16730,
     "Description": ""
   },
   {
+    "RowOffset": 965294,
     "RowId": 16731,
     "Description": ""
   },
   {
+    "RowOffset": 965306,
     "RowId": 16732,
     "Description": ""
   },
   {
+    "RowOffset": 965318,
     "RowId": 16733,
     "Description": ""
   },
   {
+    "RowOffset": 965330,
     "RowId": 16734,
     "Description": ""
   },
   {
+    "RowOffset": 965342,
     "RowId": 16735,
     "Description": ""
   },
   {
+    "RowOffset": 965354,
     "RowId": 16736,
     "Description": ""
   },
   {
+    "RowOffset": 965366,
     "RowId": 16737,
     "Description": ""
   },
   {
+    "RowOffset": 965378,
     "RowId": 16738,
     "Description": ""
   },
   {
+    "RowOffset": 965390,
     "RowId": 16739,
     "Description": ""
   },
   {
+    "RowOffset": 965402,
     "RowId": 16740,
     "Description": ""
   },
   {
+    "RowOffset": 965414,
     "RowId": 16741,
     "Description": ""
   },
   {
+    "RowOffset": 965426,
     "RowId": 16742,
     "Description": ""
   },
   {
+    "RowOffset": 965438,
     "RowId": 16743,
     "Description": ""
   },
   {
+    "RowOffset": 965450,
     "RowId": 16744,
     "Description": ""
   },
   {
+    "RowOffset": 965462,
     "RowId": 16745,
     "Description": ""
   },
   {
+    "RowOffset": 965474,
     "RowId": 16746,
     "Description": ""
   },
   {
+    "RowOffset": 965486,
     "RowId": 16747,
     "Description": ""
   },
   {
+    "RowOffset": 965498,
     "RowId": 16748,
     "Description": ""
   },
   {
+    "RowOffset": 965510,
     "RowId": 16749,
     "Description": ""
   },
   {
+    "RowOffset": 965522,
     "RowId": 16750,
     "Description": ""
   },
   {
+    "RowOffset": 965534,
     "RowId": 16751,
     "Description": ""
   },
   {
+    "RowOffset": 965546,
     "RowId": 16752,
     "Description": ""
   },
   {
+    "RowOffset": 965558,
     "RowId": 16753,
     "Description": ""
   },
   {
+    "RowOffset": 965570,
     "RowId": 16754,
     "Description": ""
   },
   {
+    "RowOffset": 965582,
     "RowId": 16755,
     "Description": ""
   },
   {
+    "RowOffset": 965594,
     "RowId": 16756,
     "Description": ""
   },
   {
+    "RowOffset": 965606,
     "RowId": 16757,
     "Description": ""
   },
   {
+    "RowOffset": 965618,
     "RowId": 16758,
     "Description": ""
   },
   {
+    "RowOffset": 965630,
     "RowId": 16759,
     "Description": ""
   },
   {
+    "RowOffset": 965642,
     "RowId": 16760,
     "Description": ""
   },
   {
+    "RowOffset": 965654,
     "RowId": 16761,
     "Description": ""
   },
   {
+    "RowOffset": 965666,
     "RowId": 16762,
     "Description": ""
   },
   {
+    "RowOffset": 965678,
     "RowId": 16763,
     "Description": ""
   },
   {
+    "RowOffset": 965690,
     "RowId": 16764,
     "Description": ""
   },
   {
+    "RowOffset": 965702,
     "RowId": 16765,
     "Description": ""
   },
   {
+    "RowOffset": 965714,
     "RowId": 16766,
     "Description": "Du beendest den Effekt von <span style=\"color: #ffff66;\">Wildfeuer</span> beim Gegner und fügst ihm den dadurch angesammelten Schaden zu.\nBedingung: <span style=\"color: #ffff66;\">Wildfeuer</span> aktiv\nBei erfüllter Bedingung ändert sich <span style=\"color: #40bfff;\">Wildfeuer</span> zu diesem Kommando.\nKann nicht im Kommandomenü angelegt werden."
   },
   {
+    "RowOffset": 966050,
     "RowId": 16767,
     "Description": ""
   },
   {
+    "RowOffset": 966062,
     "RowId": 16768,
     "Description": ""
   },
   {
+    "RowOffset": 966074,
     "RowId": 16769,
     "Description": ""
   },
   {
+    "RowOffset": 966086,
     "RowId": 16770,
     "Description": ""
   },
   {
+    "RowOffset": 966098,
     "RowId": 16771,
     "Description": ""
   },
   {
+    "RowOffset": 966110,
     "RowId": 16772,
     "Description": ""
   },
   {
+    "RowOffset": 966122,
     "RowId": 16773,
     "Description": ""
   },
   {
+    "RowOffset": 966134,
     "RowId": 16774,
     "Description": ""
   },
   {
+    "RowOffset": 966146,
     "RowId": 16775,
     "Description": ""
   },
   {
+    "RowOffset": 966158,
     "RowId": 16776,
     "Description": ""
   },
   {
+    "RowOffset": 966170,
     "RowId": 16777,
     "Description": ""
   },
   {
+    "RowOffset": 966182,
     "RowId": 16778,
     "Description": ""
   },
   {
+    "RowOffset": 966194,
     "RowId": 16779,
     "Description": ""
   },
   {
+    "RowOffset": 966206,
     "RowId": 16780,
     "Description": ""
   },
   {
+    "RowOffset": 966218,
     "RowId": 16781,
     "Description": ""
   },
   {
+    "RowOffset": 966230,
     "RowId": 16782,
     "Description": ""
   },
   {
+    "RowOffset": 966242,
     "RowId": 16783,
     "Description": ""
   },
   {
+    "RowOffset": 966254,
     "RowId": 16784,
     "Description": ""
   },
   {
+    "RowOffset": 966266,
     "RowId": 16785,
     "Description": ""
   },
   {
+    "RowOffset": 966278,
     "RowId": 16786,
     "Description": ""
   },
   {
+    "RowOffset": 966290,
     "RowId": 16787,
     "Description": ""
   },
   {
+    "RowOffset": 966302,
     "RowId": 16788,
     "Description": ""
   },
   {
+    "RowOffset": 966314,
     "RowId": 16789,
     "Description": ""
   },
   {
+    "RowOffset": 966326,
     "RowId": 16790,
     "Description": ""
   },
   {
+    "RowOffset": 966338,
     "RowId": 16791,
     "Description": "Du lässt dein Topas-Karfunkel <span style=\"color: #40bfff;\">Glimmertopas</span> ausführen.\nEffekt: Errichtet eine Barriere um dich, die Schaden in der Höhe von 30 % deiner Maximal-LP absorbiert.\nDauer: 30 Sekunden\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Topas-Karfunkel ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 966682,
     "RowId": 16792,
     "Description": "Du lässt dein Topas-Karfunkel <span style=\"color: #40bfff;\">Glanztopas</span> ausführen.\nEffekt: Führt eine erdbasierte magische Attacke auf alle umstehenden Gegner aus.\nAttacke-Wert: 200\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Topas-Karfunkel ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 967002,
     "RowId": 16793,
     "Description": "Du lässt dein Smaragd-Karfunkel <span style=\"color: #40bfff;\">Fallböe</span> ausführen.\nEffekt: Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 100\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Smaragd-Karfunkel ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 967338,
     "RowId": 16794,
     "Description": "Du lässt dein Smaragd-Karfunkel <span style=\"color: #40bfff;\">Glimmersmaragd</span> ausführen.\nEffekt: Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 30\nZusatzeffekt: Errichtet eine Schadenszone um das Ziel.\nAttacke-Wert: 30\nDauer: 9 Sekunden\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Smaragd-Karfunkel ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 967778,
     "RowId": 16795,
     "Description": "Du lässt deinen Titan-Egi <span style=\"color: #40bfff;\">Gaia-Panzer</span> ausführen.\nEffekt: Errichtet eine Barriere um dich, die Schaden in der Höhe von 30 % deiner Maximal-LP absorbiert.\nDauer: 30 Sekunden\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Titan-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 968110,
     "RowId": 16796,
     "Description": "Du lässt deinen Titan-Egi <span style=\"color: #40bfff;\">Bergsprenger</span> ausführen.\nEffekt: Führt eine erdbasierte magische Attacke auf alle umstehenden Gegner aus.\nAttacke-Wert: 250\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Titan-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 968422,
     "RowId": 16797,
     "Description": "Du lässt deinen Garuda-Egi <span style=\"color: #40bfff;\">Lufthieb</span> ausführen.\nEffekt: Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 150\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Garuda-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 968746,
     "RowId": 16798,
     "Description": "Du lässt deinen Garuda-Egi <span style=\"color: #40bfff;\">Wirbelströmung</span> ausführen.\nEffekt: Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 50\nZusatzeffekt: Errichtet eine Schadenszone um das Ziel.\nAttacke-Wert: 50\nDauer: 9 Sekunden\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Garuda-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 969178,
     "RowId": 16799,
     "Description": "Du lässt deinen Ifrit-Egi <span style=\"color: #40bfff;\">Zinnober-Zyklon</span> ausführen.\nEffekt: Führt eine feuerbasierte magische Attacke auf das Ziel aus.\nAttacke-Wert: 250\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Ifrit-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 969478,
     "RowId": 16800,
     "Description": "Du lässt deinen Ifrit-Egi <span style=\"color: #40bfff;\">Flammenstoß</span> ausführen.\nEffekt: Führt eine feuerbasierte magische Attacke auf alle umstehenden Gegner aus.\nAttacke-Wert: 250\nMaximale Aufladungen: 2\nBedingung: Im Kampf und Ifrit-Egi ist bereits gerufen.\nEigener Reaktivierungs-Timer"
   },
   {
+    "RowOffset": 969790,
     "RowId": 16801,
     "Description": "Du lässt deinen Titan-Egi <span style=\"color: #40bfff;\">Gaias Zorn</span> ausführen.\nEffekt: Führt eine erdbasierte magische Attacke auf alle umstehenden Gegner aus.\nAttacke-Wert: 300\nZusatzeffekt: Errichtet eine Schadenszone.\nAttacke-Wert: 20\nDauer: 15 Sekunden\nBedingung: Im Kampf und Titan-Egi ist bereits gerufen."
   },
   {
+    "RowOffset": 970126,
     "RowId": 16802,
     "Description": "Du lässt deinen Garuda-Egi <span style=\"color: #40bfff;\">Windschlag</span> ausführen.\nEffekt: Führt eine windbasierte magische Attacke auf das Ziel und die Gegner in seiner Nähe aus.\nAttacke-Wert: 350\nBedingung: Im Kampf und Garuda-Egi ist bereits gerufen."
   },
   {
+    "RowOffset": 970394,
     "RowId": 16803,
     "Description": "Du lässt deinen Ifrit-Egi <span style=\"color: #40bfff;\">Inferno</span> ausführen.\nEffekt: Führt eine feuerbasierte magische Attacke auf die fächerförmig vor ihm stehenden Gegner aus.\nAttacke-Wert: 300\nZusatzeffekt: Feuerschaden über Zeit\nAttacke-Wert: 20\nDauer: 15 Sekunden\nBedingung: Im Kampf und Ifrit-Egi ist bereits gerufen."
   },
   {
+    "RowOffset": 970746,
     "RowId": 16804,
     "Description": "Du führst eine Sprung-Attacke auf das Ziel aus.\nAttacke-Wert: 200\nMaximale Aufladungen: 2\nKann nicht während <span style=\"color: #ff7b1a;\">Fessel</span> ausgeführt werden."
   },
   {
+    "RowOffset": 970930,
     "RowId": 16805,
     "Description": ""
   },
   {
+    "RowOffset": 970942,
     "RowId": 16806,
     "Description": ""
   },
   {
+    "RowOffset": 970954,
     "RowId": 16807,
     "Description": ""
   },
   {
+    "RowOffset": 970966,
     "RowId": 16808,
     "Description": ""
   },
   {
+    "RowOffset": 970978,
     "RowId": 16809,
     "Description": ""
   },
   {
+    "RowOffset": 970990,
     "RowId": 16810,
     "Description": ""
   },
   {
+    "RowOffset": 971002,
     "RowId": 16811,
     "Description": ""
   },
   {
+    "RowOffset": 971014,
     "RowId": 16812,
     "Description": ""
   },
   {
+    "RowOffset": 971026,
     "RowId": 16813,
     "Description": ""
   },
   {
+    "RowOffset": 971038,
     "RowId": 16814,
     "Description": ""
   },
   {
+    "RowOffset": 971050,
     "RowId": 16815,
     "Description": ""
   },
   {
+    "RowOffset": 971062,
     "RowId": 16816,
     "Description": ""
   },
   {
+    "RowOffset": 971074,
     "RowId": 16817,
     "Description": ""
   },
   {
+    "RowOffset": 971086,
     "RowId": 16818,
     "Description": ""
   },
   {
+    "RowOffset": 971098,
     "RowId": 16819,
     "Description": ""
   },
   {
+    "RowOffset": 971110,
     "RowId": 16820,
     "Description": ""
   },
   {
+    "RowOffset": 971122,
     "RowId": 16821,
     "Description": ""
   },
   {
+    "RowOffset": 971134,
     "RowId": 16822,
     "Description": ""
   },
   {
+    "RowOffset": 971146,
     "RowId": 16823,
     "Description": ""
   },
   {
+    "RowOffset": 971158,
     "RowId": 16824,
     "Description": ""
   },
   {
+    "RowOffset": 971170,
     "RowId": 16825,
     "Description": ""
   },
   {
+    "RowOffset": 971182,
     "RowId": 16826,
     "Description": ""
   },
   {
+    "RowOffset": 971194,
     "RowId": 16827,
     "Description": ""
   },
   {
+    "RowOffset": 971206,
     "RowId": 16828,
     "Description": ""
   },
   {
+    "RowOffset": 971218,
     "RowId": 16829,
     "Description": ""
   },
   {
+    "RowOffset": 971230,
     "RowId": 16830,
     "Description": ""
   },
   {
+    "RowOffset": 971242,
     "RowId": 16831,
     "Description": ""
   },
   {
+    "RowOffset": 971254,
     "RowId": 16832,
     "Description": ""
   },
   {
+    "RowOffset": 971266,
     "RowId": 16833,
     "Description": ""
   },
   {
+    "RowOffset": 971278,
     "RowId": 16834,
     "Description": ""
   },
   {
+    "RowOffset": 971290,
     "RowId": 16835,
     "Description": ""
   },
   {
+    "RowOffset": 971302,
     "RowId": 16836,
     "Description": ""
   },
   {
+    "RowOffset": 971314,
     "RowId": 16837,
     "Description": ""
   },
   {
+    "RowOffset": 971326,
     "RowId": 16838,
     "Description": ""
   },
   {
+    "RowOffset": 971338,
     "RowId": 16839,
     "Description": ""
   },
   {
+    "RowOffset": 971350,
     "RowId": 16840,
     "Description": ""
   },
   {
+    "RowOffset": 971362,
     "RowId": 16841,
     "Description": ""
   },
   {
+    "RowOffset": 971374,
     "RowId": 16842,
     "Description": ""
   },
   {
+    "RowOffset": 971386,
     "RowId": 16843,
     "Description": ""
   },
   {
+    "RowOffset": 971398,
     "RowId": 16844,
     "Description": ""
   },
   {
+    "RowOffset": 971410,
     "RowId": 16845,
     "Description": ""
   },
   {
+    "RowOffset": 971422,
     "RowId": 16846,
     "Description": ""
   },
   {
+    "RowOffset": 971434,
     "RowId": 16847,
     "Description": ""
   },
   {
+    "RowOffset": 971446,
     "RowId": 16848,
     "Description": ""
   },
   {
+    "RowOffset": 971458,
     "RowId": 16849,
     "Description": ""
   },
   {
+    "RowOffset": 971470,
     "RowId": 16850,
     "Description": ""
   },
   {
+    "RowOffset": 971482,
     "RowId": 16851,
     "Description": ""
   },
   {
+    "RowOffset": 971494,
     "RowId": 16852,
     "Description": ""
   },
   {
+    "RowOffset": 971506,
     "RowId": 16853,
     "Description": ""
   },
   {
+    "RowOffset": 971518,
     "RowId": 16854,
     "Description": ""
   },
   {
+    "RowOffset": 971530,
     "RowId": 16855,
     "Description": ""
   },
   {
+    "RowOffset": 971542,
     "RowId": 16856,
     "Description": ""
   },
   {
+    "RowOffset": 971554,
     "RowId": 16857,
     "Description": ""
   },
   {
+    "RowOffset": 971566,
     "RowId": 16858,
     "Description": ""
   },
   {
+    "RowOffset": 971578,
     "RowId": 16859,
     "Description": ""
   },
   {
+    "RowOffset": 971590,
     "RowId": 16860,
     "Description": ""
   },
   {
+    "RowOffset": 971602,
     "RowId": 16861,
     "Description": ""
   },
   {
+    "RowOffset": 971614,
     "RowId": 16862,
     "Description": ""
   },
   {
+    "RowOffset": 971626,
     "RowId": 16863,
     "Description": ""
   },
   {
+    "RowOffset": 971638,
     "RowId": 16864,
     "Description": ""
   },
   {
+    "RowOffset": 971650,
     "RowId": 16865,
     "Description": ""
   },
   {
+    "RowOffset": 971662,
     "RowId": 16866,
     "Description": ""
   },
   {
+    "RowOffset": 971674,
     "RowId": 16867,
     "Description": ""
   },
   {
+    "RowOffset": 971686,
     "RowId": 16868,
     "Description": ""
   },
   {
+    "RowOffset": 971698,
     "RowId": 16869,
     "Description": ""
   },
   {
+    "RowOffset": 971710,
     "RowId": 16870,
     "Description": ""
   },
   {
+    "RowOffset": 971722,
     "RowId": 16871,
     "Description": ""
   },
   {
+    "RowOffset": 971734,
     "RowId": 16872,
     "Description": ""
   },
   {
+    "RowOffset": 971746,
     "RowId": 16873,
     "Description": ""
   },
   {
+    "RowOffset": 971758,
     "RowId": 16874,
     "Description": ""
   },
   {
+    "RowOffset": 971770,
     "RowId": 16875,
     "Description": ""
   },
   {
+    "RowOffset": 971782,
     "RowId": 16876,
     "Description": ""
   },
   {
+    "RowOffset": 971794,
     "RowId": 16877,
     "Description": ""
   },
   {
+    "RowOffset": 971806,
     "RowId": 16878,
     "Description": ""
   },
   {
+    "RowOffset": 971818,
     "RowId": 16879,
     "Description": ""
   },
   {
+    "RowOffset": 971830,
     "RowId": 16880,
     "Description": ""
   },
   {
+    "RowOffset": 971842,
     "RowId": 16881,
     "Description": ""
   },
   {
+    "RowOffset": 971854,
     "RowId": 16882,
     "Description": ""
   },
   {
+    "RowOffset": 971866,
     "RowId": 16883,
     "Description": ""
   },
   {
+    "RowOffset": 971878,
     "RowId": 16884,
     "Description": ""
   },
   {
+    "RowOffset": 971890,
     "RowId": 16885,
     "Description": ""
   },
   {
+    "RowOffset": 971902,
     "RowId": 16886,
     "Description": ""
   },
   {
+    "RowOffset": 971914,
     "RowId": 16887,
     "Description": ""
   },
   {
+    "RowOffset": 971926,
     "RowId": 16888,
     "Description": ""
   },
   {
+    "RowOffset": 971938,
     "RowId": 16889,
     "Description": "Du verringerst erlittenen Schaden bei dir und den Gruppenmitgliedern in der Nähe um <If(Equal(PlayerParameter(68),31))><If(GreaterThanOrEqualTo(PlayerParameter(72),98))>15<Else/>10</If><Else/>10</If>%.\nDauer: 15 Sekunden\nKann nicht gleichzeitig mit <span style=\"color: #ff7b1a;\">Troubadour</span> des Barden oder <span style=\"color: #ff7b1a;\">Schildsamba</span> des Tänzers aktiv sein."
   },
   {
+    "RowOffset": 972238,
     "RowId": 16890,
     "Description": ""
   },
   {
+    "RowOffset": 972250,
     "RowId": 16891,
     "Description": ""
   },
   {
+    "RowOffset": 972262,
     "RowId": 16892,
     "Description": ""
   },
   {
+    "RowOffset": 972274,
     "RowId": 16893,
     "Description": ""
   },
   {
+    "RowOffset": 972286,
     "RowId": 16894,
     "Description": ""
   },
   {
+    "RowOffset": 972298,
     "RowId": 16895,
     "Description": ""
   },
   {
+    "RowOffset": 972310,
     "RowId": 16896,
     "Description": ""
   },
   {
+    "RowOffset": 972322,
     "RowId": 16897,
     "Description": ""
   },
   {
+    "RowOffset": 972334,
     "RowId": 16898,
     "Description": ""
   },
   {
+    "RowOffset": 972346,
     "RowId": 16899,
     "Description": ""
   },
   {
+    "RowOffset": 972358,
     "RowId": 16900,
     "Description": ""
   },
   {
+    "RowOffset": 972370,
     "RowId": 16901,
     "Description": ""
   },
   {
+    "RowOffset": 972382,
     "RowId": 16902,
     "Description": ""
   },
   {
+    "RowOffset": 972394,
     "RowId": 16903,
     "Description": ""
   },
   {
+    "RowOffset": 972406,
     "RowId": 16904,
     "Description": ""
   },
   {
+    "RowOffset": 972418,
     "RowId": 16905,
     "Description": ""
   },
   {
+    "RowOffset": 972430,
     "RowId": 16906,
     "Description": ""
   },
   {
+    "RowOffset": 972442,
     "RowId": 16907,
     "Description": ""
   },
   {
+    "RowOffset": 972454,
     "RowId": 16908,
     "Description": ""
   },
   {
+    "RowOffset": 972466,
     "RowId": 16909,
     "Description": ""
   },
   {
+    "RowOffset": 972478,
     "RowId": 16910,
     "Description": ""
   },
   {
+    "RowOffset": 972490,
     "RowId": 16911,
     "Description": ""
   },
   {
+    "RowOffset": 972502,
     "RowId": 16912,
     "Description": ""
   },
   {
+    "RowOffset": 972514,
     "RowId": 16913,
     "Description": ""
   },
   {
+    "RowOffset": 972526,
     "RowId": 16914,
     "Description": ""
   },
   {
+    "RowOffset": 972538,
     "RowId": 16915,
     "Description": ""
   },
   {
+    "RowOffset": 972550,
     "RowId": 16916,
     "Description": ""
   },
   {
+    "RowOffset": 972562,
     "RowId": 16917,
     "Description": ""
   },
   {
+    "RowOffset": 972574,
     "RowId": 16918,
     "Description": ""
   },
   {
+    "RowOffset": 972586,
     "RowId": 16919,
     "Description": ""
   },
   {
+    "RowOffset": 972598,
     "RowId": 16920,
     "Description": ""
   },
   {
+    "RowOffset": 972610,
     "RowId": 16921,
     "Description": ""
   },
   {
+    "RowOffset": 972622,
     "RowId": 16922,
     "Description": ""
   },
   {
+    "RowOffset": 972634,
     "RowId": 16923,
     "Description": ""
   },
   {
+    "RowOffset": 972646,
     "RowId": 16924,
     "Description": ""
   },
   {
+    "RowOffset": 972658,
     "RowId": 16925,
     "Description": ""
   },
   {
+    "RowOffset": 972670,
     "RowId": 16926,
     "Description": ""
   },
   {
+    "RowOffset": 972682,
     "RowId": 16927,
     "Description": ""
   },
   {
+    "RowOffset": 972694,
     "RowId": 16928,
     "Description": ""
   },
   {
+    "RowOffset": 972706,
     "RowId": 16929,
     "Description": ""
   },
   {
+    "RowOffset": 972718,
     "RowId": 16930,
     "Description": ""
   },
   {
+    "RowOffset": 972730,
     "RowId": 16931,
     "Description": ""
   },
   {
+    "RowOffset": 972742,
     "RowId": 16932,
     "Description": ""
   },
   {
+    "RowOffset": 972754,
     "RowId": 16933,
     "Description": ""
   },
   {
+    "RowOffset": 972766,
     "RowId": 16934,
     "Description": ""
   },
   {
+    "RowOffset": 972778,
     "RowId": 16935,
     "Description": ""
   },
   {
+    "RowOffset": 972790,
     "RowId": 16936,
     "Description": ""
   },
   {
+    "RowOffset": 972802,
     "RowId": 16937,
     "Description": ""
   },
   {
+    "RowOffset": 972814,
     "RowId": 16938,
     "Description": ""
   },
   {
+    "RowOffset": 972826,
     "RowId": 16939,
     "Description": ""
   },
   {
+    "RowOffset": 972838,
     "RowId": 16940,
     "Description": ""
   },
   {
+    "RowOffset": 972850,
     "RowId": 16941,
     "Description": ""
   },
   {
+    "RowOffset": 972862,
     "RowId": 16942,
     "Description": ""
   },
   {
+    "RowOffset": 972874,
     "RowId": 16943,
     "Description": ""
   },
   {
+    "RowOffset": 972886,
     "RowId": 16944,
     "Description": ""
   },
   {
+    "RowOffset": 972898,
     "RowId": 16945,
     "Description": ""
   },
   {
+    "RowOffset": 972910,
     "RowId": 16946,
     "Description": ""
   },
   {
+    "RowOffset": 972922,
     "RowId": 16947,
     "Description": ""
   },
   {
+    "RowOffset": 972934,
     "RowId": 16948,
     "Description": ""
   },
   {
+    "RowOffset": 972946,
     "RowId": 16949,
     "Description": ""
   },
   {
+    "RowOffset": 972958,
     "RowId": 16950,
     "Description": ""
   },
   {
+    "RowOffset": 972970,
     "RowId": 16951,
     "Description": ""
   },
   {
+    "RowOffset": 972982,
     "RowId": 16952,
     "Description": ""
   },
   {
+    "RowOffset": 972994,
     "RowId": 16953,
     "Description": ""
   },
   {
+    "RowOffset": 973006,
     "RowId": 16954,
     "Description": ""
   },
   {
+    "RowOffset": 973018,
     "RowId": 16955,
     "Description": ""
   },
   {
+    "RowOffset": 973030,
     "RowId": 16956,
     "Description": ""
   },
   {
+    "RowOffset": 973042,
     "RowId": 16957,
     "Description": ""
   },
   {
+    "RowOffset": 973054,
     "RowId": 16958,
     "Description": ""
   },
   {
+    "RowOffset": 973066,
     "RowId": 16959,
     "Description": ""
   },
   {
+    "RowOffset": 973078,
     "RowId": 16960,
     "Description": ""
   },
   {
+    "RowOffset": 973090,
     "RowId": 16961,
     "Description": ""
   },
   {
+    "RowOffset": 973102,
     "RowId": 16962,
     "Description": ""
   },
   {
+    "RowOffset": 973114,
     "RowId": 16963,
     "Description": ""
   },
   {
+    "RowOffset": 973126,
     "RowId": 16964,
     "Description": ""
   },
   {
+    "RowOffset": 973138,
     "RowId": 16965,
     "Description": ""
   },
   {
+    "RowOffset": 973150,
     "RowId": 16966,
     "Description": ""
   },
   {
+    "RowOffset": 973162,
     "RowId": 16967,
     "Description": ""
   },
   {
+    "RowOffset": 973174,
     "RowId": 16968,
     "Description": ""
   },
   {
+    "RowOffset": 973186,
     "RowId": 16969,
     "Description": ""
   },
   {
+    "RowOffset": 973198,
     "RowId": 16970,
     "Description": ""
   },
   {
+    "RowOffset": 973210,
     "RowId": 16971,
     "Description": ""
   },
   {
+    "RowOffset": 973222,
     "RowId": 16972,
     "Description": ""
   },
   {
+    "RowOffset": 973234,
     "RowId": 16973,
     "Description": ""
   },
   {
+    "RowOffset": 973246,
     "RowId": 16974,
     "Description": ""
   },
   {
+    "RowOffset": 973258,
     "RowId": 16975,
     "Description": ""
   },
   {
+    "RowOffset": 973270,
     "RowId": 16976,
     "Description": ""
   },
   {
+    "RowOffset": 973282,
     "RowId": 16977,
     "Description": ""
   },
   {
+    "RowOffset": 973294,
     "RowId": 16978,
     "Description": ""
   },
   {
+    "RowOffset": 973306,
     "RowId": 16979,
     "Description": ""
   },
   {
+    "RowOffset": 973318,
     "RowId": 16980,
     "Description": ""
   },
   {
+    "RowOffset": 973330,
     "RowId": 16981,
     "Description": ""
   },
   {
+    "RowOffset": 973342,
     "RowId": 16982,
     "Description": ""
   },
   {
+    "RowOffset": 973354,
     "RowId": 16983,
     "Description": ""
   },
   {
+    "RowOffset": 973366,
     "RowId": 16984,
     "Description": ""
   },
   {
+    "RowOffset": 973378,
     "RowId": 16985,
     "Description": ""
   },
   {
+    "RowOffset": 973390,
     "RowId": 16986,
     "Description": ""
   },
   {
+    "RowOffset": 973402,
     "RowId": 16987,
     "Description": ""
   },
   {
+    "RowOffset": 973414,
     "RowId": 16988,
     "Description": ""
   },
   {
+    "RowOffset": 973426,
     "RowId": 16989,
     "Description": ""
   },
   {
+    "RowOffset": 973438,
     "RowId": 16990,
     "Description": ""
   },
   {
+    "RowOffset": 973450,
     "RowId": 16991,
     "Description": ""
   },
   {
+    "RowOffset": 973462,
     "RowId": 16992,
     "Description": ""
   },
   {
+    "RowOffset": 973474,
     "RowId": 16993,
     "Description": ""
   },
   {
+    "RowOffset": 973486,
     "RowId": 16994,
     "Description": ""
   },
   {
+    "RowOffset": 973498,
     "RowId": 16995,
     "Description": ""
   },
   {
+    "RowOffset": 973510,
     "RowId": 16996,
     "Description": ""
   },
   {
+    "RowOffset": 973522,
     "RowId": 16997,
     "Description": ""
   },
   {
+    "RowOffset": 973534,
     "RowId": 16998,
     "Description": ""
   },
   {
+    "RowOffset": 973546,
     "RowId": 16999,
     "Description": ""
   }

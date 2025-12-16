@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.Json.Serialization.Metadata;
 using Lumina.Data.Files;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
@@ -11,6 +12,37 @@ using SixLabors.ImageSharp.PixelFormats;
 namespace Lumenstone;
 class Program
 {
+    static IJsonTypeInfoResolver CreateLuminaIgnoreExcelPageResolver()
+    {
+        var resolver = new DefaultJsonTypeInfoResolver();
+
+        resolver.Modifiers.Add(static typeInfo =>
+        {
+            if (typeInfo.Kind != JsonTypeInfoKind.Object)
+                return;
+
+            // Only touch Lumina Excel row/subrow structs (Action, Item, etc.)
+            var t = typeInfo.Type;
+            bool isLuminaRow =
+                t.GetInterfaces().Any(i =>
+                    i.IsGenericType &&
+                    (i.GetGenericTypeDefinition() == typeof(IExcelRow<>) ||
+                    i.GetGenericTypeDefinition() == typeof(IExcelSubrow<>)));
+
+            if (!isLuminaRow)
+                return;
+
+            // Remove ExcelPage if present
+            for (int i = typeInfo.Properties.Count - 1; i >= 0; i--)
+            {
+                if (typeInfo.Properties[i].Name == "ExcelPage")
+                    typeInfo.Properties.RemoveAt(i);
+            }
+        });
+
+        return resolver;
+    }
+
     static void Main(string[] args)
      {
         if (args.Length < 2)
@@ -33,7 +65,8 @@ class Program
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             WriteIndented = true,
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() }
+            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() },
+            TypeInfoResolver = CreateLuminaIgnoreExcelPageResolver(),
         };
        
         var patch = args[1];
