@@ -4,6 +4,7 @@ using System.Text.Json.Serialization;
 using Lumina.Data.Files;
 using Lumina.Excel;
 using Lumina.Excel.Sheets;
+using Lumina.Text.ReadOnly;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 
