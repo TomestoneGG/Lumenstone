@@ -32,10 +32,10 @@ class Program
             if (!isLuminaRow)
                 return;
 
-            // Remove ExcelPage if present
+            // Remove ExcelPage and RowOffset if present
             for (int i = typeInfo.Properties.Count - 1; i >= 0; i--)
             {
-                if (typeInfo.Properties[i].Name == "ExcelPage")
+                if (typeInfo.Properties[i].Name == "ExcelPage" || typeInfo.Properties[i].Name == "RowOffset")
                     typeInfo.Properties.RemoveAt(i);
             }
         });

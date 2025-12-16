@@ -1,2501 +1,2001 @@
 [
   {
-    "RowOffset": 674038,
     "RowId": 12500,
     "Text": "Temps restant: <Num>IntegerParameter(1)</Num>m <Sec>IntegerParameter(2)</Sec>s"
   },
   {
-    "RowOffset": 674086,
     "RowId": 12501,
     "Text": "Feu"
   },
   {
-    "RowOffset": 674102,
     "RowId": 12502,
     "Text": "Glace"
   },
   {
-    "RowOffset": 674118,
     "RowId": 12503,
     "Text": "Vent"
   },
   {
-    "RowOffset": 674134,
     "RowId": 12504,
     "Text": "Terre"
   },
   {
-    "RowOffset": 674150,
     "RowId": 12505,
     "Text": "Foudre"
   },
   {
-    "RowOffset": 674170,
     "RowId": 12506,
     "Text": "Eau"
   },
   {
-    "RowOffset": 674186,
     "RowId": 12507,
     "Text": "Tranchant"
   },
   {
-    "RowOffset": 674206,
     "RowId": 12508,
     "Text": "Perforant"
   },
   {
-    "RowOffset": 674226,
     "RowId": 12509,
     "Text": "Contondant"
   },
   {
-    "RowOffset": 674250,
     "RowId": 12510,
     "Text": "Voyage inter-Monde"
   },
   {
-    "RowOffset": 674282,
     "RowId": 12511,
     "Text": ""
   },
   {
-    "RowOffset": 674294,
     "RowId": 12512,
     "Text": "Monde d'origine"
   },
   {
-    "RowOffset": 674322,
     "RowId": 12513,
     "Text": "Mondes disponibles"
   },
   {
-    "RowOffset": 674354,
     "RowId": 12514,
     "Text": "<If(Equal(IntegerParameter(1),2))><span style=\"color: #e1c500;\">Les voyages entre centres de traitement de données</span>\nCette fonctionnalité va plus loin que le voyage inter-Monde. Elle permet à vos personnages de visiter des Mondes hébergés sur d'autres centres de traitement de données pour peu que ces derniers appartiennent à la même région. Toutefois, des restrictions supplémentaires s'appliquent.\n\n<span style=\"color: #e1c500;\">Limitations du voyage entre centres de traitement de données</span>\n- Le transfert peut prendre environ 30 minutes suivant la congestion des serveurs.\n- La procédure ne peut être annulée une fois lancée. Vous ne pourrez pas vous connecter avec un personnage différent ou faire quoi que ce soit d'autre qu'attendre.\n- La procédure vous renverra à l'écran-titre, d'où vous devrez ensuite rejoindre le centre de traitement de données où vous souhaitiez vous rendre.\n- Vous ne pourrez pas jouer sur votre Monde d'origine avec d'autres personnages tant que celui avec lequel vous voyagez ne sera pas rentré.\n- Un personnage visitant déjà un autre centre de traitement de données ne peut pas directement voyager vers un autre. Il doit d'abord rentrer dans son Monde d'origine.\n\n<Else/> </If><If(LessThan(IntegerParameter(1),2))><span style=\"color: #e1c500;\">Les voyages inter-Monde</span>\nVous pouvez quitter <If(Equal(IntegerParameter(1),0))>votre Monde d'origine<Else/>le Monde où vous vous trouvez</If> pour en visiter d'autres appartenant au même centre de traitement de données.\nFormez une équipe prête pour l'aventure, partez à l'assaut de donjons ou faites des emplettes sur ces marchés exotiques; le choix est vôtre!\n\n<span style=\"color: #e1c500;\">Avertissement</span>\nLe niveau de fréquentation du Monde choisi au moment de confirmer votre demande peut considérablement augmenter le temps nécessaire à la procédure pour aboutir. Une fois celle-ci achevée, vous serez automatiquement transporté<If(PlayerParameter(4))>e<Else/> </If> vers votre destination, annulant par la même occasion toutes les activités en cours.\n\n<Else/> </If><span style=\"color: #e1c500;\">Limitations dans les <If(GreaterThan(IntegerParameter(1),0))>centres de traitement de données<Else/>Mondes</If> visités</span>\n<If(Equal(IntegerParameter(1),1))>Votre personnage ne se trouve actuellement pas dans son centre de traitement de données d'origine.\n<Else/> </If>Certaines fonctionnalités sont indisponibles à l'extérieur de votre <If(GreaterThan(IntegerParameter(1),0))>centre de traitement de données<Else/>Monde</If> d'origine.\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Liste d'amis</span>\n- Impossible de communiquer avec des amis se trouvant dans un autre centre de traitement de données\n- Impossible de former une équipe avec des amis se trouvant dans un autre centre de traitement de données\n- Impossible d'afficher les activités des amis se trouvant dans un autre centre de traitement de données\n\n<Else/> </If><span style=\"color: #e1c500;\">Compagnies libres</span>\n- Impossible d'en créer ou d'en rejoindre\n- Impossible de consulter les informations de sa compagnie libre\n- Impossible d'augmenter le nombre des crédits de compagnie grâce aux activités dans les Mondes visités\n- Statut de chef automatiquement cédé à un autre membre après 35 jours d'absence\n- Impossible d'afficher les activités des membres se trouvant dans un autre centre de traitement de données\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Linkshells inter-Monde</span>\n- Impossible d'en créer de nouvelles\n- Impossible d'en devenir le chef\n\n<Else/> </If><span style=\"color: #e1c500;\">Linkshells</span>\n- Impossible de les utiliser\n- Impossible de consulter les informations de ses linkshells\n- Impossible d'en créer ou d'en rejoindre\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Équipe JcJ</span>\n- Impossible d'utiliser les fonctionnalités liées aux équipes JcJ, y compris les canaux de discussion\n- Impossible de consulter les informations relatives aux équipes JcJ\n- Impossible de former ou de rejoindre une équipe JcJ\n\n<span style=\"color: #e1c500;\">Communautés</span>\n- Aucune fonctionnalité disponible, à l'exception de la recherche de communauté\n\n<Else/> </If><span style=\"color: #e1c500;\">Servant</span>\n- Impossible d'en engager ou d'en renvoyer définitivement\n- Impossible de vendre des objets sur les marchés, bien qu'il reste possible d'en acheter\n\n<span style=\"color: #e1c500;\">Logement</span>\n- Impossible d'acheter des terrains et des appartements\n- Impossible de partager une maison\n\n<span style=\"color: #e1c500;\">Lien éternel</span>\n- Impossible d'organiser une cérémonie du lien éternel\n- Impossible d'accepter la quête du lien éternel\n- Impossible d'inviter à une cérémonie des joueurs habitant un autre Monde\n\n<span style=\"color: #e1c500;\">Fonctionnalités et éléments divers</span>\n<If(Equal(IntegerParameter(1),2))>- Afin de participer à une partie classée de Crystalline Conflict, il est nécessaire de respecter les conditions suivantes:\n\u3000- Le Monde d'origine du personnage doit se trouver dans un centre de données physique accueillant des parties classées\n\u3000- La participation doit être enregistrée depuis le centre de données logique hôte\n<Else/> </If>- Impossible de participer à un tournoi du Choc des mascottes\n- Impossible de participer à un tournoi de Triple Triade\n- Impossible de participer ou de retirer un lot au Méga Cactpot\n- Impossible d'utiliser le service de courrier Mog\n- Scores obtenus dans les donjons sans fond non pris en compte dans les tableaux des classements\n- Impossible de se téléporter vers un ami ou un partenaire de lien éternel si celui-ci ne se trouve pas dans le même Monde\n- Impossible pour les mineurs et les botanistes de localiser les légendes locales et les points de récolte intacts"
   },
   {
-    "RowOffset": 679886,
     "RowId": 12515,
     "Text": "Monde d'origine"
   },
   {
-    "RowOffset": 679914,
     "RowId": 12516,
     "Text": "Monde actuel"
   },
   {
-    "RowOffset": 679938,
     "RowId": 12517,
     "Text": "Impossible de sélectionner ce Monde."
   },
   {
-    "RowOffset": 679986,
     "RowId": 12518,
     "Text": "Obtention des informations du Monde..."
   },
   {
-    "RowOffset": 680050,
     "RowId": 12519,
     "Text": "Voulez-vous vraiment visiter “<String>StringParameter(1)</String>”?"
   },
   {
-    "RowOffset": 680110,
     "RowId": 12520,
     "Text": "Enregistrement de l'inscription pour le voyage inter-Monde en cours..."
   },
   {
-    "RowOffset": 680194,
     "RowId": 12521,
     "Text": "Destination: <String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 680230,
     "RowId": 12522,
     "Text": "Place dans la file: "
   },
   {
-    "RowOffset": 680266,
     "RowId": 12523,
     "Text": "Temps écoulé: <Num>IntegerParameter(1)</Num>m<Sec>IntegerParameter(2)</Sec>s/Temps d'attente moyen: "
   },
   {
-    "RowOffset": 680342,
     "RowId": 12524,
     "Text": "Voyage inter-Monde"
   },
   {
-    "RowOffset": 680374,
     "RowId": 12525,
     "Text": ""
   },
   {
-    "RowOffset": 680386,
     "RowId": 12526,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 680406,
     "RowId": 12527,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 680426,
     "RowId": 12528,
     "Text": "Place dans la file"
   },
   {
-    "RowOffset": 680458,
     "RowId": 12529,
     "Text": "Temps écoulé"
   },
   {
-    "RowOffset": 680486,
     "RowId": 12530,
     "Text": "Temps d'attente moyen"
   },
   {
-    "RowOffset": 680518,
     "RowId": 12531,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 680538,
     "RowId": 12532,
     "Text": "<Num>IntegerParameter(1)</Num><If(LessThanOrEqualTo(IntegerParameter(1),1))>er<Else/>e</If>"
   },
   {
-    "RowOffset": 680570,
     "RowId": 12533,
     "Text": "Au moins <Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>personne<Else/>personnes</If> en attente"
   },
   {
-    "RowOffset": 680638,
     "RowId": 12534,
     "Text": "<Num>IntegerParameter(1)</Num>m"
   },
   {
-    "RowOffset": 680658,
     "RowId": 12535,
     "Text": "<Num>IntegerParameter(1)</Num>m et plus"
   },
   {
-    "RowOffset": 680686,
     "RowId": 12536,
     "Text": "Moins de <Num>IntegerParameter(1)</Num>m"
   },
   {
-    "RowOffset": 680714,
     "RowId": 12537,
     "Text": "Voyage inter-Monde"
   },
   {
-    "RowOffset": 680746,
     "RowId": 12538,
     "Text": "En route!"
   },
   {
-    "RowOffset": 680770,
     "RowId": 12539,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 680790,
     "RowId": 12540,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 680810,
     "RowId": 12541,
     "Text": "<If(Equal(IntegerParameter(1),1))>Baroudeuse<Else/>Baroudeur</If>"
   },
   {
-    "RowOffset": 680854,
     "RowId": 12542,
     "Text": "Monde actuel"
   },
   {
-    "RowOffset": 680878,
     "RowId": 12543,
     "Text": "Informations générales"
   },
   {
-    "RowOffset": 680914,
     "RowId": 12544,
     "Text": "Liste des Mondes"
   },
   {
-    "RowOffset": 680942,
     "RowId": 12545,
     "Text": "Palmarès bleu"
   },
   {
-    "RowOffset": 680970,
     "RowId": 12546,
     "Text": ""
   },
   {
-    "RowOffset": 680982,
     "RowId": 12547,
     "Text": "Recruter"
   },
   {
-    "RowOffset": 681002,
     "RowId": 12548,
     "Text": "S'inscrire"
   },
   {
-    "RowOffset": 681026,
     "RowId": 12549,
     "Text": "Missions accomplies"
   },
   {
-    "RowOffset": 681058,
     "RowId": 12550,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 681082,
     "RowId": 12551,
     "Text": "Missions spéciales"
   },
   {
-    "RowOffset": 681114,
     "RowId": 12552,
     "Text": "Récompense de première victoire"
   },
   {
-    "RowOffset": 681158,
     "RowId": 12553,
     "Text": "Récompense"
   },
   {
-    "RowOffset": 681182,
     "RowId": 12554,
     "Text": "Récompense hebdomadaire"
   },
   {
-    "RowOffset": 681218,
     "RowId": 12555,
     "Text": "Fin dans<If(GreaterThan(IntegerParameter(1),0))> <Num>IntegerParameter(1)</Num> heure<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If><Else/> </If><If(GreaterThan(IntegerParameter(2),0))> <Num>IntegerParameter(2)</Num> minute<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If><Else/> </If><SetTime>IntegerParameter(3)</SetTime> (<Num>t_day</Num>.<Num>t_mon</Num> à <Num>t_hour</Num>:<Sec>t_min</Sec>)"
   },
   {
-    "RowOffset": 681350,
     "RowId": 12556,
     "Text": "<span style=\"color: #ff7b1a;\">Délai expiré</span>"
   },
   {
-    "RowOffset": 681402,
     "RowId": 12557,
     "Text": "Informations"
   },
   {
-    "RowOffset": 681426,
     "RowId": 12558,
     "Text": "Conditions de participation"
   },
   {
-    "RowOffset": 681482,
     "RowId": 12559,
     "Text": "Afficher l'aide des livraisons de la halle du Juste"
   },
   {
-    "RowOffset": 681546,
     "RowId": 12560,
     "Text": "Rang de contribution"
   },
   {
-    "RowOffset": 681590,
     "RowId": 12561,
     "Text": "Nv de contribution"
   },
   {
-    "RowOffset": 681634,
     "RowId": 12562,
     "Text": "<switch(IntegerParameter(1),<Head><sheet(ClassJob,9,0)></Head> / <Head><sheet(ClassJob,10,0)></Head> / <Head><sheet(ClassJob,11,0)></Head>,<Head><sheet(ClassJob,8,0)></Head> / <Head><sheet(ClassJob,12,0)></Head> / <Head><sheet(ClassJob,13,0)></Head>,<Head><sheet(ClassJob,14,0)></Head> / <Head><sheet(ClassJob,15,0)></Head>,<Head><sheet(ClassJob,16,0)></Head> / <Head><sheet(ClassJob,17,0)></Head>,<Head><sheet(ClassJob,18,0)></Head>)>"
   },
   {
-    "RowOffset": 681926,
     "RowId": 12563,
     "Text": "Objets requis"
   },
   {
-    "RowOffset": 681950,
     "RowId": 12564,
     "Text": "Possédés"
   },
   {
-    "RowOffset": 681974,
     "RowId": 12565,
     "Text": "<Num>IntegerParameter(1)</Num>/\uE03C<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 682002,
     "RowId": 12566,
     "Text": "Rémunération"
   },
   {
-    "RowOffset": 682030,
     "RowId": 12567,
     "Text": "Livrer"
   },
   {
-    "RowOffset": 682050,
     "RowId": 12568,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 682070,
     "RowId": 12569,
     "Text": "Sélectionnez le nombre d'objets à livrer."
   },
   {
-    "RowOffset": 682126,
     "RowId": 12570,
     "Text": "Expérience"
   },
   {
-    "RowOffset": 682150,
     "RowId": 12571,
     "Text": "Livraisons de la halle du Juste"
   },
   {
-    "RowOffset": 682194,
     "RowId": 12572,
     "Text": "<switch(IntegerParameter(1),Métallurgistes,Façonniers,Préparateurs,Naturalistes,Pêcheurs)>: <String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 682294,
     "RowId": 12573,
     "Text": "Récompense"
   },
   {
-    "RowOffset": 682318,
     "RowId": 12574,
     "Text": "Accepter"
   },
   {
-    "RowOffset": 682338,
     "RowId": 12575,
     "Text": "Livraisons de Cristarium"
   },
   {
-    "RowOffset": 682374,
     "RowId": 12576,
     "Text": ""
   },
   {
-    "RowOffset": 682386,
     "RowId": 12577,
     "Text": "<switch(IntegerParameter(1),Métallurgistes,Façonniers,Préparateurs,Naturalistes,Pêcheurs)>: <String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 682486,
     "RowId": 12578,
     "Text": "Total"
   },
   {
-    "RowOffset": 682502,
     "RowId": 12579,
     "Text": "La limite ayant été atteinte, vous ne pourrez pas recevoir tous <frnoun(Item,2,IntegerParameter(1),2,1)>. Continuer?"
   },
   {
-    "RowOffset": 682610,
     "RowId": 12580,
     "Text": "Servants"
   },
   {
-    "RowOffset": 682630,
     "RowId": 12581,
     "Text": ""
   },
   {
-    "RowOffset": 682642,
     "RowId": 12582,
     "Text": "Nom"
   },
   {
-    "RowOffset": 682658,
     "RowId": 12583,
     "Text": "Classe/Job"
   },
   {
-    "RowOffset": 682682,
     "RowId": 12584,
     "Text": "Objets"
   },
   {
-    "RowOffset": 682702,
     "RowId": 12585,
     "Text": "Gils"
   },
   {
-    "RowOffset": 682718,
     "RowId": 12586,
     "Text": "Objets en vente"
   },
   {
-    "RowOffset": 682746,
     "RowId": 12587,
     "Text": "Tâche en cours"
   },
   {
-    "RowOffset": 682774,
     "RowId": 12588,
     "Text": "Aucun objet en vente"
   },
   {
-    "RowOffset": 682806,
     "RowId": 12589,
     "Text": "<Num>IntegerParameter(1)</Num> objet<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> en vente"
   },
   {
-    "RowOffset": 682854,
     "RowId": 12590,
     "Text": "Aucune"
   },
   {
-    "RowOffset": 682874,
     "RowId": 12591,
     "Text": "Fin dans <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/>moins d'une minute</If></If>"
   },
   {
-    "RowOffset": 682970,
     "RowId": 12592,
     "Text": "Terminée"
   },
   {
-    "RowOffset": 682990,
     "RowId": 12593,
     "Text": "Ordre des servants"
   },
   {
-    "RowOffset": 683022,
     "RowId": 12594,
     "Text": ""
   },
   {
-    "RowOffset": 683034,
     "RowId": 12595,
     "Text": "Modifier l'ordre des servants"
   },
   {
-    "RowOffset": 683074,
     "RowId": 12596,
     "Text": "Aucun"
   },
   {
-    "RowOffset": 683090,
     "RowId": 12597,
     "Text": "<Num>IntegerParameter(1)</Num> objet<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> en vente jusqu'au <SetTime>IntegerParameter(2)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
   },
   {
-    "RowOffset": 683186,
     "RowId": 12598,
     "Text": "Aucune"
   },
   {
-    "RowOffset": 683206,
     "RowId": 12599,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>Nv <Num>IntegerParameter(1)</Num> <Else/> </If><String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 683246,
     "RowId": 12600,
     "Text": "Retour de <String>StringParameter(1)</String> dans <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>h<If(GreaterThan(IntegerParameter(3),0))> <Num>IntegerParameter(3)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/>moins d'une minute</If></If>"
   },
   {
-    "RowOffset": 683358,
     "RowId": 12601,
     "Text": "Terminée"
   },
   {
-    "RowOffset": 683378,
     "RowId": 12602,
     "Text": "Abonnement du servant terminé"
   },
   {
-    "RowOffset": 683422,
     "RowId": 12603,
     "Text": "Objets en vente:"
   },
   {
-    "RowOffset": 683454,
     "RowId": 12604,
     "Text": "Tâche en cours:"
   },
   {
-    "RowOffset": 683486,
     "RowId": 12605,
     "Text": ""
   },
   {
-    "RowOffset": 683498,
     "RowId": 12606,
     "Text": "--"
   },
   {
-    "RowOffset": 683514,
     "RowId": 12607,
     "Text": "Nom du servant"
   },
   {
-    "RowOffset": 683542,
     "RowId": 12608,
     "Text": "Numéro d'employé"
   },
   {
-    "RowOffset": 683574,
     "RowId": 12609,
     "Text": "Modifier"
   },
   {
-    "RowOffset": 683594,
     "RowId": 12610,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 683614,
     "RowId": 12611,
     "Text": "Renommer le set"
   },
   {
-    "RowOffset": 683642,
     "RowId": 12612,
     "Text": "Les sets peuvent être renommés à partir de leur sous-menu respectif."
   },
   {
-    "RowOffset": 683726,
     "RowId": 12613,
     "Text": "Entrez un nouveau nom pour le set “<String>StringParameter(1)</String>”. Laissez la zone de saisie vierge pour utiliser le nom par défaut."
   },
   {
-    "RowOffset": 683854,
     "RowId": 12614,
     "Text": ""
   },
   {
-    "RowOffset": 683866,
     "RowId": 12615,
     "Text": "Défis hebdomadaires"
   },
   {
-    "RowOffset": 683898,
     "RowId": 12616,
     "Text": "Missions normales"
   },
   {
-    "RowOffset": 683926,
     "RowId": 12617,
     "Text": "Sauvegarder"
   },
   {
-    "RowOffset": 683950,
     "RowId": 12618,
     "Text": "Charger"
   },
   {
-    "RowOffset": 683970,
     "RowId": 12619,
     "Text": ""
   },
   {
-    "RowOffset": 683982,
     "RowId": 12620,
     "Text": ""
   },
   {
-    "RowOffset": 683994,
     "RowId": 12621,
     "Text": ""
   },
   {
-    "RowOffset": 684006,
     "RowId": 12622,
     "Text": ""
   },
   {
-    "RowOffset": 684018,
     "RowId": 12623,
     "Text": ""
   },
   {
-    "RowOffset": 684030,
     "RowId": 12624,
     "Text": "Voulez-vous vraiment visiter “<String>StringParameter(1)</String>”?\n<span style=\"color: #ffff66;\">Vous ne pouvez pas utiliser le voyage inter-Monde en faisant partie d'une équipe standard.\nVous pouvez néanmoins faire partie d'une équipe inter-Monde ou être en cours de recherche d'équipe.</span>"
   },
   {
-    "RowOffset": 684314,
     "RowId": 12625,
     "Text": "<If(Equal(IntegerParameter(1),1))>Exploratrice<Else/>Explorateur</If>"
   },
   {
-    "RowOffset": 684362,
     "RowId": 12626,
     "Text": "Vous ne pourrez pas recevoir de notification de nouveau courrier si votre Monde d'origine et celui vers lequel vous voyagez ne partagent pas le même centre de traitement de données."
   },
   {
-    "RowOffset": 684558,
     "RowId": 12627,
     "Text": "<If(Equal(IntegerParameter(1),1))>Voyageuse<Else/>Voyageur</If>"
   },
   {
-    "RowOffset": 684598,
     "RowId": 12628,
     "Text": "Il est actuellement impossible d'obtenir les données du joueur ayant envoyé la requête d'ami. Vous pouvez choisir que de réfléchir ou de la refuser.\n* Les requêtes d'ami non traitées expirent au bout d'un certain temps. En pareil cas, le nom de l'expéditeur disparaîtra de la liste quelle que soit votre réponse."
   },
   {
-    "RowOffset": 684950,
     "RowId": 12629,
     "Text": ""
   },
   {
-    "RowOffset": 684962,
     "RowId": 12630,
     "Text": "Contrats du clan Kupo (débutant)"
   },
   {
-    "RowOffset": 685006,
     "RowId": 12631,
     "Text": "Contrats du clan Kupo (intermédiaire)"
   },
   {
-    "RowOffset": 685058,
     "RowId": 12632,
     "Text": "Contrats du clan Kupo (avancé)"
   },
   {
-    "RowOffset": 685102,
     "RowId": 12633,
     "Text": "Contrats d'élite du clan Kupo"
   },
   {
-    "RowOffset": 685146,
     "RowId": 12634,
     "Text": "<If(GreaterThan(IntegerParameter(3),0))><kilo(IntegerParameter(1),)> gil<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> / <kilo(IntegerParameter(2),)> insigne<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> de chasse / <kilo(IntegerParameter(3),)> Exp<Else/><kilo(IntegerParameter(1),)> gil<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> / <kilo(IntegerParameter(2),)> insigne<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> de chasse</If>"
   },
   {
-    "RowOffset": 685338,
     "RowId": 12635,
     "Text": "Clan Kupo"
   },
   {
-    "RowOffset": 685358,
     "RowId": 12636,
     "Text": "<switch(IntegerParameter(1),Contrat du clan Kupo (débutant),Contrat du clan Kupo (intermédiaire),Contrat du clan Kupo (avancé),Contrat d'élite du clan Kupo)> (<String>StringParameter(2)</String>)"
   },
   {
-    "RowOffset": 685522,
     "RowId": 12637,
     "Text": "<switch(IntegerParameter(1),Contrat du clan (débutant),Contrat du clan (intermédiaire),Contrat du clan (avancé),Contrat d'élite du clan)> (<String>StringParameter(2)</String>)"
   },
   {
-    "RowOffset": 685666,
     "RowId": 12638,
     "Text": "<switch(IntegerParameter(1),Contrat de chasse,Contrat d'élite)> (<String>StringParameter(2)</String>)"
   },
   {
-    "RowOffset": 685730,
     "RowId": 12639,
     "Text": "Contrats des glaneurs (débutant)"
   },
   {
-    "RowOffset": 685774,
     "RowId": 12640,
     "Text": "Contrats des glaneurs (intermédiaire)"
   },
   {
-    "RowOffset": 685826,
     "RowId": 12641,
     "Text": "Contrats des glaneurs (avancé)"
   },
   {
-    "RowOffset": 685870,
     "RowId": 12642,
     "Text": "Contrats d'élite des glaneurs"
   },
   {
-    "RowOffset": 685914,
     "RowId": 12643,
     "Text": "Collège des glaneurs"
   },
   {
-    "RowOffset": 685946,
     "RowId": 12644,
     "Text": "<switch(IntegerParameter(1),Contrat du collège des glaneurs (débutant),Contrat du collège des glaneurs (intermédiaire),Contrat du collège des glaneurs (avancé),Contrat d'élite du collège des glaneurs)> (<String>StringParameter(2)</String>)"
   },
   {
-    "RowOffset": 686158,
     "RowId": 12645,
     "Text": "Contrats de chasse (débutant)"
   },
   {
-    "RowOffset": 686202,
     "RowId": 12646,
     "Text": "Contrats de chasse (intermédiaire)"
   },
   {
-    "RowOffset": 686250,
     "RowId": 12647,
     "Text": "Contrats de chasse (avancé)"
   },
   {
-    "RowOffset": 686290,
     "RowId": 12648,
     "Text": "Contrats d'élite de la coopérative turalienne"
   },
   {
-    "RowOffset": 686350,
     "RowId": 12649,
     "Text": "Coopérative de chasse turalienne"
   },
   {
-    "RowOffset": 686394,
     "RowId": 12650,
     "Text": "<switch(IntegerParameter(1),Contrat de la coopérative turalienne (débutant),Contrat de la coopérative turalienne (intermédiaire),Contrat de la coopérative turalienne (avancé),Contrat d'élite de la coopérative turalienne)> (<String>StringParameter(2)</String>)"
   },
   {
-    "RowOffset": 686626,
     "RowId": 12651,
     "Text": ""
   },
   {
-    "RowOffset": 686638,
     "RowId": 12652,
     "Text": ""
   },
   {
-    "RowOffset": 686650,
     "RowId": 12653,
     "Text": ""
   },
   {
-    "RowOffset": 686662,
     "RowId": 12654,
     "Text": ""
   },
   {
-    "RowOffset": 686674,
     "RowId": 12655,
     "Text": ""
   },
   {
-    "RowOffset": 686686,
     "RowId": 12656,
     "Text": ""
   },
   {
-    "RowOffset": 686698,
     "RowId": 12657,
     "Text": ""
   },
   {
-    "RowOffset": 686710,
     "RowId": 12658,
     "Text": ""
   },
   {
-    "RowOffset": 686722,
     "RowId": 12659,
     "Text": ""
   },
   {
-    "RowOffset": 686734,
     "RowId": 12660,
     "Text": ""
   },
   {
-    "RowOffset": 686746,
     "RowId": 12661,
     "Text": ""
   },
   {
-    "RowOffset": 686758,
     "RowId": 12662,
     "Text": ""
   },
   {
-    "RowOffset": 686770,
     "RowId": 12663,
     "Text": ""
   },
   {
-    "RowOffset": 686782,
     "RowId": 12664,
     "Text": ""
   },
   {
-    "RowOffset": 686794,
     "RowId": 12665,
     "Text": ""
   },
   {
-    "RowOffset": 686806,
     "RowId": 12666,
     "Text": ""
   },
   {
-    "RowOffset": 686818,
     "RowId": 12667,
     "Text": ""
   },
   {
-    "RowOffset": 686830,
     "RowId": 12668,
     "Text": ""
   },
   {
-    "RowOffset": 686842,
     "RowId": 12669,
     "Text": ""
   },
   {
-    "RowOffset": 686854,
     "RowId": 12670,
     "Text": "Normal"
   },
   {
-    "RowOffset": 686874,
     "RowId": 12671,
     "Text": "Spécial"
   },
   {
-    "RowOffset": 686894,
     "RowId": 12672,
     "Text": "<switch(IntegerParameter(1),Point de récolte intact,Légende locale,Points de récolte éphémères)>\nHoraire(s) d'apparition (Heure éorzéenne)"
   },
   {
-    "RowOffset": 687034,
     "RowId": 12673,
     "Text": "Entre <Num>IntegerParameter(1)</Num>h<Sec>IntegerParameter(2)</Sec> et <Num>IntegerParameter(3)</Num>h<Sec>IntegerParameter(4)</Sec>"
   },
   {
-    "RowOffset": 687082,
     "RowId": 12674,
     "Text": "Ajouter une alerte juste avant cet horaire"
   },
   {
-    "RowOffset": 687138,
     "RowId": 12675,
     "Text": "Vous ne possédez pas l'exemplaire de <i>Légendes locales</i> relatif à cette zone."
   },
   {
-    "RowOffset": 687238,
     "RowId": 12676,
     "Text": "Récolter automatiquement l'objet sélectionné"
   },
   {
-    "RowOffset": 687318,
     "RowId": 12677,
     "Text": "<Num>IntegerParameter(1)</Num>+?"
   },
   {
-    "RowOffset": 687338,
     "RowId": 12678,
     "Text": "Récolte automatique"
   },
   {
-    "RowOffset": 687370,
     "RowId": 12679,
     "Text": "Arrêter la récolte?\n<span style=\"color: #ff8080;\">Ce point de récolte disparaîtra même s'il n'était pas vide.</span>"
   },
   {
-    "RowOffset": 687498,
     "RowId": 12680,
     "Text": "Arrêter"
   },
   {
-    "RowOffset": 687518,
     "RowId": 12681,
     "Text": "Point de récolte évanescent\nCondition: turbulences ombrales"
   },
   {
-    "RowOffset": 687598,
     "RowId": 12682,
     "Text": "<String>StringParameter(1)</String> ≧ <Num>IntegerParameter(2)</Num> nécessaire"
   },
   {
-    "RowOffset": 687638,
     "RowId": 12683,
     "Text": "Mettre fin à la pêche au harpon?\n<span style=\"color: #ff8080;\">Ce point de pêche disparaîtra même s'il n'était pas vide.</span></span>"
   },
   {
-    "RowOffset": 687786,
     "RowId": 12684,
     "Text": ""
   },
   {
-    "RowOffset": 687798,
     "RowId": 12685,
     "Text": ""
   },
   {
-    "RowOffset": 687810,
     "RowId": 12686,
     "Text": ""
   },
   {
-    "RowOffset": 687822,
     "RowId": 12687,
     "Text": ""
   },
   {
-    "RowOffset": 687834,
     "RowId": 12688,
     "Text": ""
   },
   {
-    "RowOffset": 687846,
     "RowId": 12689,
     "Text": ""
   },
   {
-    "RowOffset": 687858,
     "RowId": 12690,
     "Text": ""
   },
   {
-    "RowOffset": 687870,
     "RowId": 12691,
     "Text": "Participer sans le pouvoir de l'Écho"
   },
   {
-    "RowOffset": 687918,
     "RowId": 12692,
     "Text": "Permet de désactiver le pouvoir de l'écho.\n\n<span style=\"color: #ff8080;\">* Disponible uniquement lorsqu'une équipe compte le nombre de participants requis ou que l'option “Sans restriction” est activée.\n* Seul le chef d'équipe peut activer cette option.</span>"
   },
   {
-    "RowOffset": 688210,
     "RowId": 12693,
     "Text": "Définit la règle du butin appliquée pendant la mission.\n\n<span style=\"color: #ffff66;\">Normale</span>\nLes options “besoin”, “cupidité” et “passer” peuvent être choisies.\n\n<span style=\"color: #ffff66;\">Juste cupidité</span>\nSeules les options “cupidité” et “passer” sont disponibles.\n\n<span style=\"color: #ffff66;\">Maître du butin</span>\nLa distribution du butin est opérée par le chef d'équipe.\n\n<span style=\"color: #ff8080;\">* “Maître du butin” et “Juste cupidité” sont disponibles uniquement lorsqu'une équipe compte le nombre de participants requis ou que l'option “Sans restriction” est activée.\n* Certaines missions limitent les règles disponibles.\n* La règle du butin ne peut être changée pour certaines missions.\n* Seul le chef d'équipe peut changer la règle du butin.</span>"
   },
   {
-    "RowOffset": 689070,
     "RowId": 12694,
     "Text": "Définit la ou les langues utilisées lors des missions.\nLe groupement se fera avec des joueurs partageant tous une de ces langues.\n\n<span style=\"color: #ffff66;\">Le temps d'attente lors des groupements peut grandement varier en fonction des langues choisies et de celles utilisées dans les Mondes du centre de traitement de données.\nIl est recommandé d'essayer d'autres langues si les délais d'accès aux missions deviennent anormalement longs après changement.</span>\n\n<span style=\"color: #ff8080;\">* La langue du jeu est soulignée.\n* Ce choix est valable pour toutes les missions avec groupement, sauf certains jeux du Gold Saucer.</span>"
   },
   {
-    "RowOffset": 689726,
     "RowId": 12695,
     "Text": "Enregistrement impossible en mode Nouvelle partie +"
   },
   {
-    "RowOffset": 689790,
     "RowId": 12696,
     "Text": "Niveau synchronisé"
   },
   {
-    "RowOffset": 689822,
     "RowId": 12697,
     "Text": "Permet de synchroniser le niveau du personnage à celui de la mission.\n\n - Le taux de symbiose des objets augmente, même avec l'option “Sans restriction”.\n - Les ennemis octroient des points d'expérience et des objets, même avec l'option “Sans restriction”.\n\n<span style=\"color: #ff8080;\">* Disponible uniquement lorsque l'option “Sans restriction” est activée.\n* Seul le chef d'équipe peut activer cette option.</span>"
   },
   {
-    "RowOffset": 690274,
     "RowId": 12698,
     "Text": ""
   },
   {
-    "RowOffset": 690286,
     "RowId": 12699,
     "Text": ""
   },
   {
-    "RowOffset": 690298,
     "RowId": 12700,
     "Text": "Adjuration"
   },
   {
-    "RowOffset": 690322,
     "RowId": 12701,
     "Text": ""
   },
   {
-    "RowOffset": 690334,
     "RowId": 12702,
     "Text": "Équipe"
   },
   {
-    "RowOffset": 690354,
     "RowId": 12703,
     "Text": "Choix des équipiers"
   },
   {
-    "RowOffset": 690386,
     "RowId": 12704,
     "Text": "Exp"
   },
   {
-    "RowOffset": 690402,
     "RowId": 12705,
     "Text": "/"
   },
   {
-    "RowOffset": 690414,
     "RowId": 12706,
     "Text": "Participer"
   },
   {
-    "RowOffset": 690438,
     "RowId": 12707,
     "Text": "Mirages"
   },
   {
-    "RowOffset": 690458,
     "RowId": 12708,
     "Text": "Épopée"
   },
   {
-    "RowOffset": 690478,
     "RowId": 12709,
     "Text": "Épopée"
   },
   {
-    "RowOffset": 690498,
     "RowId": 12710,
     "Text": "Expérience (adjuration)"
   },
   {
-    "RowOffset": 690534,
     "RowId": 12711,
     "Text": "Afficher l'aide"
   },
   {
-    "RowOffset": 690562,
     "RowId": 12712,
     "Text": ""
   },
   {
-    "RowOffset": 690574,
     "RowId": 12713,
     "Text": ""
   },
   {
-    "RowOffset": 690586,
     "RowId": 12714,
     "Text": ""
   },
   {
-    "RowOffset": 690598,
     "RowId": 12715,
     "Text": ""
   },
   {
-    "RowOffset": 690610,
     "RowId": 12716,
     "Text": ""
   },
   {
-    "RowOffset": 690622,
     "RowId": 12717,
     "Text": ""
   },
   {
-    "RowOffset": 690634,
     "RowId": 12718,
     "Text": "Aide du système d'adjuration"
   },
   {
-    "RowOffset": 690674,
     "RowId": 12719,
     "Text": ""
   },
   {
-    "RowOffset": 690686,
     "RowId": 12720,
     "Text": "Niveau insuffisant"
   },
   {
-    "RowOffset": 690718,
     "RowId": 12721,
     "Text": "Classe non combattante"
   },
   {
-    "RowOffset": 690754,
     "RowId": 12722,
     "Text": "Job restreint"
   },
   {
-    "RowOffset": 690778,
     "RowId": 12723,
     "Text": "Épopée"
   },
   {
-    "RowOffset": 690798,
     "RowId": 12724,
     "Text": ""
   },
   {
-    "RowOffset": 690810,
     "RowId": 12725,
     "Text": "Alter ego"
   },
   {
-    "RowOffset": 690830,
     "RowId": 12726,
     "Text": "Alter ego"
   },
   {
-    "RowOffset": 690850,
     "RowId": 12727,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>\uE033Nv. d'objet moyen: <Num>IntegerParameter(1)</Num> ou plus<Else/> </If><If(GreaterThan(IntegerParameter(2),0))>     \uE0BDNv. d'objet synchronisé: <Num>IntegerParameter(2)</Num><Else/> </If>"
   },
   {
-    "RowOffset": 690970,
     "RowId": 12728,
     "Text": "Niveau d'objet moyen insuffisant"
   },
   {
-    "RowOffset": 691014,
     "RowId": 12729,
     "Text": ""
   },
   {
-    "RowOffset": 691026,
     "RowId": 12730,
     "Text": "Paramètres de la fenêtre de log"
   },
   {
-    "RowOffset": 691070,
     "RowId": 12731,
     "Text": ""
   },
   {
-    "RowOffset": 691082,
     "RowId": 12732,
     "Text": "Couleur du texte"
   },
   {
-    "RowOffset": 691110,
     "RowId": 12733,
     "Text": "Effet sonore"
   },
   {
-    "RowOffset": 691134,
     "RowId": 12734,
     "Text": "Onglets d'affichage"
   },
   {
-    "RowOffset": 691166,
     "RowId": 12735,
     "Text": "Appliquer"
   },
   {
-    "RowOffset": 691186,
     "RowId": 12736,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 691206,
     "RowId": 12737,
     "Text": "Aperçu"
   },
   {
-    "RowOffset": 691226,
     "RowId": 12738,
     "Text": "Les messages ne s'afficheront dans aucun des onglets du log. Enregistrer ces paramètres?"
   },
   {
-    "RowOffset": 691330,
     "RowId": 12739,
     "Text": "Paramètres de la fenêtre de log"
   },
   {
-    "RowOffset": 691374,
     "RowId": 12740,
     "Text": "<span style=\"color: #ffff66;\">\n* Si la requête d'ami n'est pas acceptée lorsque vous êtes dans le même centre de données, vous serez considérés temporairement amis le temps d'une semaine. Passé ce délai, elle sera automatiquement refusée.</span>"
   },
   {
-    "RowOffset": 691650,
     "RowId": 12741,
     "Text": "<span style=\"color: #ffff66;\">\n* Même après ajout dans votre liste d'amis, vous ne pourrez pas voir les activités des personnages jouant dans d'autres régions que celle où vous vous trouvez.</span>"
   },
   {
-    "RowOffset": 691854,
     "RowId": 12742,
     "Text": "Vous êtes sur le point de d'envoyer une requête d'ami à <String>StringParameter(1)</String>, dont le Monde d'origine se trouve dans un centre de donnée d'une autre région. Confirmer?"
   },
   {
-    "RowOffset": 692030,
     "RowId": 12743,
     "Text": ""
   },
   {
-    "RowOffset": 692042,
     "RowId": 12744,
     "Text": ""
   },
   {
-    "RowOffset": 692054,
     "RowId": 12745,
     "Text": ""
   },
   {
-    "RowOffset": 692066,
     "RowId": 12746,
     "Text": ""
   },
   {
-    "RowOffset": 692078,
     "RowId": 12747,
     "Text": ""
   },
   {
-    "RowOffset": 692090,
     "RowId": 12748,
     "Text": ""
   },
   {
-    "RowOffset": 692102,
     "RowId": 12749,
     "Text": ""
   },
   {
-    "RowOffset": 692114,
     "RowId": 12750,
     "Text": "Reconstruction d'Ishgard"
   },
   {
-    "RowOffset": 692158,
     "RowId": 12751,
     "Text": ""
   },
   {
-    "RowOffset": 692170,
     "RowId": 12752,
     "Text": "Objet"
   },
   {
-    "RowOffset": 692186,
     "RowId": 12753,
     "Text": "Val. collection min."
   },
   {
-    "RowOffset": 692218,
     "RowId": 12754,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 692238,
     "RowId": 12755,
     "Text": "Assignats"
   },
   {
-    "RowOffset": 692258,
     "RowId": 12756,
     "Text": "Expérience"
   },
   {
-    "RowOffset": 692282,
     "RowId": 12757,
     "Text": "Possédés"
   },
   {
-    "RowOffset": 692306,
     "RowId": 12758,
     "Text": "\uE03D <Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 692330,
     "RowId": 12759,
     "Text": "Récompense"
   },
   {
-    "RowOffset": 692354,
     "RowId": 12760,
     "Text": "Valeur de collection"
   },
   {
-    "RowOffset": 692386,
     "RowId": 12761,
     "Text": "<Num>IntegerParameter(1)</Num><If(Equal(IntegerParameter(2),0))> <Else/> à <Num>IntegerParameter(2)</Num></If>"
   },
   {
-    "RowOffset": 692426,
     "RowId": 12762,
     "Text": "<If(GreaterThan(IntegerParameter(2),0))>La limite de koupons de la fortune ayant été atteinte, vous ne pourrez pas recevoir de tampons.\n<Else/> </If><If(GreaterThan(IntegerParameter(1),0))>La limite ayant été atteinte, vous ne pourrez pas recevoir tous <frnoun(Item,2,IntegerParameter(1),2,1)>.\n<Else/> </If>Continuer?"
   },
   {
-    "RowOffset": 692662,
     "RowId": 12763,
     "Text": "Total"
   },
   {
-    "RowOffset": 692678,
     "RowId": 12764,
     "Text": "Pts d'azur"
   },
   {
-    "RowOffset": 692702,
     "RowId": 12765,
     "Text": ""
   },
   {
-    "RowOffset": 692714,
     "RowId": 12766,
     "Text": "+"
   },
   {
-    "RowOffset": 692726,
     "RowId": 12767,
     "Text": "--"
   },
   {
-    "RowOffset": 692742,
     "RowId": 12768,
     "Text": "Tampons de la fortune"
   },
   {
-    "RowOffset": 692774,
     "RowId": 12769,
     "Text": "Koupons de la fortune"
   },
   {
-    "RowOffset": 692806,
     "RowId": 12770,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 692830,
     "RowId": 12771,
     "Text": "La limite de koupons de la fortune ayant été atteinte, vous ne pourrez pas recevoir de tampons."
   },
   {
-    "RowOffset": 692938,
     "RowId": 12772,
     "Text": "Fin du classement"
   },
   {
-    "RowOffset": 692966,
     "RowId": 12773,
     "Text": "<If(Equal(IntegerParameter(1),0))> <Else/>le <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec></If>"
   },
   {
-    "RowOffset": 693030,
     "RowId": 12774,
     "Text": "* Les points de classement ne peuvent pas être accumulés hors du Monde d'origine."
   },
   {
-    "RowOffset": 693126,
     "RowId": 12775,
     "Text": "Pts de classement"
   },
   {
-    "RowOffset": 693154,
     "RowId": 12776,
     "Text": "Pts cumulés"
   },
   {
-    "RowOffset": 693178,
     "RowId": 12777,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>+<Else/>0</If>"
   },
   {
-    "RowOffset": 693210,
     "RowId": 12778,
     "Text": "Période hors classement"
   },
   {
-    "RowOffset": 693246,
     "RowId": 12779,
     "Text": ""
   },
   {
-    "RowOffset": 693258,
     "RowId": 12780,
     "Text": "Kupo de la fortune"
   },
   {
-    "RowOffset": 693290,
     "RowId": 12781,
     "Text": "<Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 693310,
     "RowId": 12782,
     "Text": "Fermer"
   },
   {
-    "RowOffset": 693330,
     "RowId": 12783,
     "Text": "Ce monument est dédié aux prodigieux <Lower><sheet(ClassJob,IntegerParameter(1),0)></Lower>s et à tous les autres ouvriers qui ont aidé Azurée à renaître de ses cendres."
   },
   {
-    "RowOffset": 693486,
     "RowId": 12784,
     "Text": "Fermer"
   },
   {
-    "RowOffset": 693506,
     "RowId": 12785,
     "Text": "Leurs mains\nnous ont offert le ciel"
   },
   {
-    "RowOffset": 693558,
     "RowId": 12786,
     "Text": "Monument offert par les habitants d'Azurée "
   },
   {
-    "RowOffset": 693614,
     "RowId": 12787,
     "Text": ""
   },
   {
-    "RowOffset": 693626,
     "RowId": 12788,
     "Text": ""
   },
   {
-    "RowOffset": 693638,
     "RowId": 12789,
     "Text": ""
   },
   {
-    "RowOffset": 693650,
     "RowId": 12790,
     "Text": "Objets précieux"
   },
   {
-    "RowOffset": 693678,
     "RowId": 12791,
     "Text": ""
   },
   {
-    "RowOffset": 693690,
     "RowId": 12792,
     "Text": ""
   },
   {
-    "RowOffset": 693702,
     "RowId": 12793,
     "Text": ""
   },
   {
-    "RowOffset": 693714,
     "RowId": 12794,
     "Text": ""
   },
   {
-    "RowOffset": 693726,
     "RowId": 12795,
     "Text": ""
   },
   {
-    "RowOffset": 693738,
     "RowId": 12796,
     "Text": ""
   },
   {
-    "RowOffset": 693750,
     "RowId": 12797,
     "Text": ""
   },
   {
-    "RowOffset": 693762,
     "RowId": 12798,
     "Text": ""
   },
   {
-    "RowOffset": 693774,
     "RowId": 12799,
     "Text": ""
   },
   {
-    "RowOffset": 693786,
     "RowId": 12800,
     "Text": "Liste de vos communautés"
   },
   {
-    "RowOffset": 693822,
     "RowId": 12801,
     "Text": ""
   },
   {
-    "RowOffset": 693834,
     "RowId": 12802,
     "Text": "Fonder une communauté"
   },
   {
-    "RowOffset": 693870,
     "RowId": 12803,
     "Text": "Vous n'appartenez à aucune communauté."
   },
   {
-    "RowOffset": 693922,
     "RowId": 12804,
     "Text": "Chargement de la liste..."
   },
   {
-    "RowOffset": 693958,
     "RowId": 12805,
     "Text": "<If(Equal(IntegerParameter(1),0))>Nommez votre communauté.<Else/>Donnez un nouveau nom à votre communauté.</If>"
   },
   {
-    "RowOffset": 694050,
     "RowId": 12806,
     "Text": "Les espaces et les symboles suivants sont autorisés:\n<span style=\"color: #ff7b1a;\">'. ,:;!? & - _</span>\n\n- Deux espaces ou deux tirets bas ne peuvent pas se suivre.\n- Le nom ne peut pas commencer ou se terminer par une espace.\n- Le nom ne peut pas être composé uniquement de signes."
   },
   {
-    "RowOffset": 694374,
     "RowId": 12807,
     "Text": "Copier le nom de la communauté"
   },
   {
-    "RowOffset": 694418,
     "RowId": 12808,
     "Text": "Les modifications seront perdues. Fermer?"
   },
   {
-    "RowOffset": 694490,
     "RowId": 12809,
     "Text": "Communauté"
   },
   {
-    "RowOffset": 694514,
     "RowId": 12810,
     "Text": ""
   },
   {
-    "RowOffset": 694526,
     "RowId": 12811,
     "Text": "Général"
   },
   {
-    "RowOffset": 694546,
     "RowId": 12812,
     "Text": "Panneau d'affichage"
   },
   {
-    "RowOffset": 694578,
     "RowId": 12813,
     "Text": "Membres"
   },
   {
-    "RowOffset": 694598,
     "RowId": 12814,
     "Text": "Modifier le profil de la communauté"
   },
   {
-    "RowOffset": 694646,
     "RowId": 12815,
     "Text": "Profil de la communauté"
   },
   {
-    "RowOffset": 694682,
     "RowId": 12816,
     "Text": ""
   },
   {
-    "RowOffset": 694694,
     "RowId": 12817,
     "Text": "Seul le président de la communauté peut modifier le profil."
   },
   {
-    "RowOffset": 694766,
     "RowId": 12818,
     "Text": "Nom de la communauté"
   },
   {
-    "RowOffset": 694798,
     "RowId": 12819,
     "Text": "Renommer la communauté"
   },
   {
-    "RowOffset": 694834,
     "RowId": 12820,
     "Text": "Activités"
   },
   {
-    "RowOffset": 694858,
     "RowId": 12821,
     "Text": "1."
   },
   {
-    "RowOffset": 694874,
     "RowId": 12822,
     "Text": "2."
   },
   {
-    "RowOffset": 694890,
     "RowId": 12823,
     "Text": "3."
   },
   {
-    "RowOffset": 694906,
     "RowId": 12824,
     "Text": "Liste noire"
   },
   {
-    "RowOffset": 694930,
     "RowId": 12825,
     "Text": "Afficher"
   },
   {
-    "RowOffset": 694950,
     "RowId": 12826,
     "Text": "Dissolution de la communauté"
   },
   {
-    "RowOffset": 694990,
     "RowId": 12827,
     "Text": "Dissoudre"
   },
   {
-    "RowOffset": 695010,
     "RowId": 12828,
     "Text": "Valider"
   },
   {
-    "RowOffset": 695030,
     "RowId": 12829,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 695050,
     "RowId": 12830,
     "Text": "Liste noire de la communauté"
   },
   {
-    "RowOffset": 695090,
     "RowId": 12831,
     "Text": ""
   },
   {
-    "RowOffset": 695102,
     "RowId": 12832,
     "Text": "Nom"
   },
   {
-    "RowOffset": 695118,
     "RowId": 12833,
     "Text": "Monde d'origine"
   },
   {
-    "RowOffset": 695146,
     "RowId": 12834,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 695170,
     "RowId": 12835,
     "Text": "Fermer"
   },
   {
-    "RowOffset": 695190,
     "RowId": 12836,
     "Text": "Retirer de la liste noire de la communauté"
   },
   {
-    "RowOffset": 695246,
     "RowId": 12837,
     "Text": "Dissoudre la communauté “<String>StringParameter(1)</String>”?"
   },
   {
-    "RowOffset": 695302,
     "RowId": 12838,
     "Text": "Dissoudre"
   },
   {
-    "RowOffset": 695322,
     "RowId": 12839,
     "Text": "Confirmer"
   },
   {
-    "RowOffset": 695342,
     "RowId": 12840,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 695362,
     "RowId": 12841,
     "Text": "Annonce de la communauté"
   },
   {
-    "RowOffset": 695398,
     "RowId": 12842,
     "Text": "Modifier l'annonce"
   },
   {
-    "RowOffset": 695430,
     "RowId": 12843,
     "Text": "Annonce de la communauté"
   },
   {
-    "RowOffset": 695466,
     "RowId": 12844,
     "Text": ""
   },
   {
-    "RowOffset": 695478,
     "RowId": 12845,
     "Text": "Sondage"
   },
   {
-    "RowOffset": 695498,
     "RowId": 12846,
     "Text": "Paramètres du sondage"
   },
   {
-    "RowOffset": 695534,
     "RowId": 12847,
     "Text": "Un sondage est disponible."
   },
   {
-    "RowOffset": 695574,
     "RowId": 12848,
     "Text": "Aucun sondage en cours."
   },
   {
-    "RowOffset": 695610,
     "RowId": 12849,
     "Text": "Fin du sondage: <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
   },
   {
-    "RowOffset": 695682,
     "RowId": 12850,
     "Text": "Voir le sondage"
   },
   {
-    "RowOffset": 695710,
     "RowId": 12851,
     "Text": "Paramètres du sondage"
   },
   {
-    "RowOffset": 695746,
     "RowId": 12852,
     "Text": ""
   },
   {
-    "RowOffset": 695758,
     "RowId": 12853,
     "Text": "Description du sondage"
   },
   {
-    "RowOffset": 695794,
     "RowId": 12854,
     "Text": "Choix de réponse"
   },
   {
-    "RowOffset": 695822,
     "RowId": 12855,
     "Text": "1."
   },
   {
-    "RowOffset": 695838,
     "RowId": 12856,
     "Text": "2."
   },
   {
-    "RowOffset": 695854,
     "RowId": 12857,
     "Text": "3."
   },
   {
-    "RowOffset": 695870,
     "RowId": 12858,
     "Text": "4."
   },
   {
-    "RowOffset": 695886,
     "RowId": 12859,
     "Text": "5."
   },
   {
-    "RowOffset": 695902,
     "RowId": 12860,
     "Text": "Durée du sondage"
   },
   {
-    "RowOffset": 695930,
     "RowId": 12861,
     "Text": "jour(s)"
   },
   {
-    "RowOffset": 695950,
     "RowId": 12862,
     "Text": "Poster"
   },
   {
-    "RowOffset": 695970,
     "RowId": 12863,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 695990,
     "RowId": 12864,
     "Text": "Tous les membres de la communauté pourront voir ce sondage et voter. Confirmer?"
   },
   {
-    "RowOffset": 696086,
     "RowId": 12865,
     "Text": "Jusqu'au <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
   },
   {
-    "RowOffset": 696146,
     "RowId": 12866,
     "Text": "Supprimer"
   },
   {
-    "RowOffset": 696166,
     "RowId": 12867,
     "Text": "Le sondage va être supprimé. Confirmer?"
   },
   {
-    "RowOffset": 696222,
     "RowId": 12868,
     "Text": "Sondage"
   },
   {
-    "RowOffset": 696242,
     "RowId": 12869,
     "Text": ""
   },
   {
-    "RowOffset": 696254,
     "RowId": 12870,
     "Text": "Voter"
   },
   {
-    "RowOffset": 696270,
     "RowId": 12871,
     "Text": "<Num>IntegerParameter(1)</Num> voix"
   },
   {
-    "RowOffset": 696294,
     "RowId": 12872,
     "Text": "Bloc-notes"
   },
   {
-    "RowOffset": 696318,
     "RowId": 12873,
     "Text": ""
   },
   {
-    "RowOffset": 696330,
     "RowId": 12874,
     "Text": "Note"
   },
   {
-    "RowOffset": 696346,
     "RowId": 12875,
     "Text": ""
   },
   {
-    "RowOffset": 696358,
     "RowId": 12876,
     "Text": "Recrutement"
   },
   {
-    "RowOffset": 696382,
     "RowId": 12877,
     "Text": "Date limite du recrutement: <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
   },
   {
-    "RowOffset": 696466,
     "RowId": 12878,
     "Text": "Profil de recrutement"
   },
   {
-    "RowOffset": 696498,
     "RowId": 12879,
     "Text": ""
   },
   {
-    "RowOffset": 696510,
     "RowId": 12880,
     "Text": "Nom de la communauté"
   },
   {
-    "RowOffset": 696542,
     "RowId": 12881,
     "Text": "Activités"
   },
   {
-    "RowOffset": 696566,
     "RowId": 12882,
     "Text": "1."
   },
   {
-    "RowOffset": 696582,
     "RowId": 12883,
     "Text": "2."
   },
   {
-    "RowOffset": 696598,
     "RowId": 12884,
     "Text": "3."
   },
   {
-    "RowOffset": 696614,
     "RowId": 12885,
     "Text": "Message de recrutement"
   },
   {
-    "RowOffset": 696650,
     "RowId": 12886,
     "Text": "Langues acceptées"
   },
   {
-    "RowOffset": 696682,
     "RowId": 12887,
     "Text": "Publier"
   },
   {
-    "RowOffset": 696702,
     "RowId": 12888,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 696722,
     "RowId": 12889,
     "Text": "Cesser de recruter"
   },
   {
-    "RowOffset": 696754,
     "RowId": 12890,
     "Text": "Les 100 derniers messages laissés par les membres de la communauté sont affichés sur ce panneau, du plus récent au plus ancien."
   },
   {
-    "RowOffset": 696898,
     "RowId": 12891,
     "Text": "Laisser un message"
   },
   {
-    "RowOffset": 696930,
     "RowId": 12892,
     "Text": "Supprimer le message"
   },
   {
-    "RowOffset": 696962,
     "RowId": 12893,
     "Text": "Le message a été supprimé."
   },
   {
-    "RowOffset": 697002,
     "RowId": 12894,
     "Text": "Chargement des messages..."
   },
   {
-    "RowOffset": 697042,
     "RowId": 12895,
     "Text": "<String>StringParameter(1)</String> <Icon>88</Icon> <String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 697074,
     "RowId": 12896,
     "Text": "Rédaction d'un message"
   },
   {
-    "RowOffset": 697110,
     "RowId": 12897,
     "Text": ""
   },
   {
-    "RowOffset": 697122,
     "RowId": 12898,
     "Text": "Visage neutre"
   },
   {
-    "RowOffset": 697146,
     "RowId": 12899,
     "Text": "Visage arrogant"
   },
   {
-    "RowOffset": 697174,
     "RowId": 12900,
     "Text": "Visage heureux"
   },
   {
-    "RowOffset": 697202,
     "RowId": 12901,
     "Text": "Visage rieur"
   },
   {
-    "RowOffset": 697226,
     "RowId": 12902,
     "Text": "Visage radieux"
   },
   {
-    "RowOffset": 697254,
     "RowId": 12903,
     "Text": "Visage songeur"
   },
   {
-    "RowOffset": 697282,
     "RowId": 12904,
     "Text": "Visage larmoyant"
   },
   {
-    "RowOffset": 697310,
     "RowId": 12905,
     "Text": "Visage stupéfait"
   },
   {
-    "RowOffset": 697338,
     "RowId": 12906,
     "Text": "Nom"
   },
   {
-    "RowOffset": 697354,
     "RowId": 12907,
     "Text": "Groupe"
   },
   {
-    "RowOffset": 697374,
     "RowId": 12908,
     "Text": "Monde d'origine"
   },
   {
-    "RowOffset": 697402,
     "RowId": 12909,
     "Text": ""
   },
   {
-    "RowOffset": 697414,
     "RowId": 12910,
     "Text": "Attribuer un groupe"
   },
   {
-    "RowOffset": 697446,
     "RowId": 12911,
     "Text": "Envoyer une requête d'ami"
   },
   {
-    "RowOffset": 697486,
     "RowId": 12912,
     "Text": "Inviter dans une linkshell inter-Monde"
   },
   {
-    "RowOffset": 697538,
     "RowId": 12913,
     "Text": "Exclure de la communauté"
   },
   {
-    "RowOffset": 697574,
     "RowId": 12914,
     "Text": "Nommer président(e) de la communauté"
   },
   {
-    "RowOffset": 697626,
     "RowId": 12915,
     "Text": "Nommer représentant(e) de la communauté"
   },
   {
-    "RowOffset": 697690,
     "RowId": 12916,
     "Text": "Ajouter à la liste noire de la communauté"
   },
   {
-    "RowOffset": 697746,
     "RowId": 12917,
     "Text": "Renoncer au titre de représentant<If(PlayerParameter(4))>e<Else/> </If>"
   },
   {
-    "RowOffset": 697814,
     "RowId": 12918,
     "Text": "Quitter la communauté"
   },
   {
-    "RowOffset": 697850,
     "RowId": 12919,
     "Text": "Tout afficher"
   },
   {
-    "RowOffset": 697874,
     "RowId": 12920,
     "Text": "Attribution de groupe"
   },
   {
-    "RowOffset": 697906,
     "RowId": 12921,
     "Text": ""
   },
   {
-    "RowOffset": 697918,
     "RowId": 12922,
     "Text": "NOM"
   },
   {
-    "RowOffset": 697934,
     "RowId": 12923,
     "Text": "Groupe"
   },
   {
-    "RowOffset": 697954,
     "RowId": 12924,
     "Text": "Aucun"
   },
   {
-    "RowOffset": 697970,
     "RowId": 12925,
     "Text": "Groupe <Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 697994,
     "RowId": 12926,
     "Text": "Modifier"
   },
   {
-    "RowOffset": 698014,
     "RowId": 12927,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 698034,
     "RowId": 12928,
     "Text": "Changer le nom du groupe"
   },
   {
-    "RowOffset": 698070,
     "RowId": 12929,
     "Text": "Saisissez un nouveau nom pour le groupe <Num>IntegerParameter(1)</Num>."
   },
   {
-    "RowOffset": 698130,
     "RowId": 12930,
     "Text": "Nom"
   },
   {
-    "RowOffset": 698146,
     "RowId": 12931,
     "Text": "Confirmer"
   },
   {
-    "RowOffset": 698166,
     "RowId": 12932,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 698186,
     "RowId": 12933,
     "Text": "Recherche de communautés"
   },
   {
-    "RowOffset": 698222,
     "RowId": 12934,
     "Text": ""
   },
   {
-    "RowOffset": 698234,
     "RowId": 12935,
     "Text": "Nom de la communauté"
   },
   {
-    "RowOffset": 698266,
     "RowId": 12936,
     "Text": "Activités"
   },
   {
-    "RowOffset": 698290,
     "RowId": 12937,
     "Text": "Recruteur"
   },
   {
-    "RowOffset": 698310,
     "RowId": 12938,
     "Text": "Message de recrutement"
   },
   {
-    "RowOffset": 698346,
     "RowId": 12939,
     "Text": "Nom de la communauté"
   },
   {
-    "RowOffset": 698378,
     "RowId": 12940,
     "Text": "Nombre de membres"
   },
   {
-    "RowOffset": 698406,
     "RowId": 12941,
     "Text": "<kilo(IntegerParameter(1),)>/<kilo(IntegerParameter(2),)>"
   },
   {
-    "RowOffset": 698442,
     "RowId": 12942,
     "Text": "Activités"
   },
   {
-    "RowOffset": 698466,
     "RowId": 12943,
     "Text": "Message de recrutement"
   },
   {
-    "RowOffset": 698502,
     "RowId": 12944,
     "Text": "Date limite du recrutement"
   },
   {
-    "RowOffset": 698542,
     "RowId": 12945,
     "Text": "Vous allez rejoindre la communauté “<String>StringParameter(1)</String>”. Confirmer?"
   },
   {
-    "RowOffset": 698618,
     "RowId": 12946,
     "Text": "Critères de recherche"
   },
   {
-    "RowOffset": 698654,
     "RowId": 12947,
     "Text": ""
   },
   {
-    "RowOffset": 698666,
     "RowId": 12948,
     "Text": "Activités"
   },
   {
-    "RowOffset": 698690,
     "RowId": 12949,
     "Text": "Langues acceptées"
   },
   {
-    "RowOffset": 698722,
     "RowId": 12950,
     "Text": "Rechercher"
   },
   {
-    "RowOffset": 698746,
     "RowId": 12951,
     "Text": "Annuler"
   },
   {
-    "RowOffset": 698766,
     "RowId": 12952,
     "Text": "Président(e)"
   },
   {
-    "RowOffset": 698790,
     "RowId": 12953,
     "Text": "Obtention des données..."
   },
   {
-    "RowOffset": 698826,
     "RowId": 12954,
     "Text": "Les données n'ont pas pu être obtenues."
   },
   {
-    "RowOffset": 698878,
     "RowId": 12955,
     "Text": "Recruter jusqu'à atteindre"
   },
   {
-    "RowOffset": 698918,
     "RowId": 12956,
     "Text": "membres. (Nombre de membres actuel: <If(Equal(IntegerParameter(1),1000))><span style=\"color: #ff8080;\"><kilo(IntegerParameter(1),)></span><Else/><kilo(IntegerParameter(1),)></If>/1 000)"
   },
   {
-    "RowOffset": 699038,
     "RowId": 12957,
     "Text": "Aucun message."
   },
   {
-    "RowOffset": 699066,
     "RowId": 12958,
     "Text": "Aucun membre à part vous."
   },
   {
-    "RowOffset": 699106,
     "RowId": 12959,
     "Text": "Le recrutement a dépassé sa date limite."
   },
   {
-    "RowOffset": 699162,
     "RowId": 12960,
     "Text": "Votre message va être accroché sur le panneau d'affichage. Confirmer?"
   },
   {
-    "RowOffset": 699250,
     "RowId": 12961,
     "Text": "Le message que vous avez sélectionné va être supprimé. Confirmer?"
   },
   {
-    "RowOffset": 699334,
     "RowId": 12962,
     "Text": "Objectif: <kilo(IntegerParameter(1),)> membres"
   },
   {
-    "RowOffset": 699382,
     "RowId": 12963,
     "Text": "Inviter dans une communauté"
   },
   {
-    "RowOffset": 699422,
     "RowId": 12964,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 699442,
     "RowId": 12965,
     "Text": "Invitation (communauté)"
   },
   {
-    "RowOffset": 699478,
     "RowId": 12966,
     "Text": ""
   },
   {
-    "RowOffset": 699490,
     "RowId": 12967,
     "Text": "Invitation (communauté)"
   },
   {
-    "RowOffset": 699526,
     "RowId": 12968,
     "Text": "Président(e)"
   },
   {
-    "RowOffset": 699550,
     "RowId": 12969,
     "Text": "<kilo(IntegerParameter(1),)>/1 000"
   },
   {
-    "RowOffset": 699582,
     "RowId": 12970,
     "Text": "Annonce de la communauté"
   },
   {
-    "RowOffset": 699618,
     "RowId": 12971,
     "Text": "Accepter"
   },
   {
-    "RowOffset": 699638,
     "RowId": 12972,
     "Text": "Refuser"
   },
   {
-    "RowOffset": 699658,
     "RowId": 12973,
     "Text": "Vous allez rejoindre la communauté “<String>StringParameter(1)</String>”. Confirmer?"
   },
   {
-    "RowOffset": 699734,
     "RowId": 12974,
     "Text": "Refuser l'invitation à rejoindre la communauté “<String>StringParameter(1)</String>”?"
   },
   {
-    "RowOffset": 699814,
     "RowId": 12975,
     "Text": "Quitter la communauté “<String>StringParameter(1)</String>”?"
   },
   {
-    "RowOffset": 699866,
     "RowId": 12976,
     "Text": "Confirmer"
   },
   {
-    "RowOffset": 699886,
     "RowId": 12977,
     "Text": "Invité(e)"
   },
   {
-    "RowOffset": 699910,
     "RowId": 12978,
     "Text": "Annuler l'invitation"
   },
   {
-    "RowOffset": 699942,
     "RowId": 12979,
     "Text": "Invité(e)"
   },
   {
-    "RowOffset": 699966,
     "RowId": 12980,
     "Text": "Nombre de membres"
   },
   {
-    "RowOffset": 699994,
     "RowId": 12981,
     "Text": "Activités"
   },
   {
-    "RowOffset": 700018,
     "RowId": 12982,
     "Text": "1."
   },
   {
-    "RowOffset": 700034,
     "RowId": 12983,
     "Text": "2."
   },
   {
-    "RowOffset": 700050,
     "RowId": 12984,
     "Text": "3."
   },
   {
-    "RowOffset": 700066,
     "RowId": 12985,
     "Text": "Président<If(PlayerParameter(4))>e<Else/> </If>"
   },
   {
-    "RowOffset": 700098,
     "RowId": 12986,
     "Text": "Représentant(e)"
   },
   {
-    "RowOffset": 700126,
     "RowId": 12987,
     "Text": "Les données n'ont pas pu être obtenues."
   },
   {
-    "RowOffset": 700178,
     "RowId": 12988,
     "Text": "Aucune communauté ne recrute à présent."
   },
   {
-    "RowOffset": 700234,
     "RowId": 12989,
     "Text": "Mettre à jour la liste"
   },
   {
-    "RowOffset": 700270,
     "RowId": 12990,
     "Text": "Ouvrir la fenêtre de critère de recherche"
   },
   {
-    "RowOffset": 700326,
     "RowId": 12991,
     "Text": "Retirer le statut de représentant(e)"
   },
   {
-    "RowOffset": 700386,
     "RowId": 12992,
     "Text": "Afficher l'aide"
   },
   {
-    "RowOffset": 700414,
     "RowId": 12993,
     "Text": "Aide de la liste des communautés"
   },
   {
-    "RowOffset": 700458,
     "RowId": 12994,
     "Text": ""
   },
   {
-    "RowOffset": 700470,
     "RowId": 12995,
     "Text": "Aide de la fenêtre de communauté"
   },
   {
-    "RowOffset": 700518,
     "RowId": 12996,
     "Text": ""
   },
   {
-    "RowOffset": 700530,
     "RowId": 12997,
     "Text": "Aide de la recherche de communautés"
   },
   {
-    "RowOffset": 700578,
     "RowId": 12998,
     "Text": ""
   },
   {
-    "RowOffset": 700590,
     "RowId": 12999,
     "Text": "<kilo(IntegerParameter(1),)>/<kilo(IntegerParameter(2),)>"
   }

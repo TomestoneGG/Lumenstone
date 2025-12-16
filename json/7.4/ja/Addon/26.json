@@ -1,2501 +1,2001 @@
 [
   {
-    "RowOffset": 737042,
     "RowId": 12500,
     "Text": "コンテンツ退出まで <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
   },
   {
-    "RowOffset": 737094,
     "RowId": 12501,
     "Text": "火"
   },
   {
-    "RowOffset": 737110,
     "RowId": 12502,
     "Text": "氷"
   },
   {
-    "RowOffset": 737126,
     "RowId": 12503,
     "Text": "風"
   },
   {
-    "RowOffset": 737142,
     "RowId": 12504,
     "Text": "土"
   },
   {
-    "RowOffset": 737158,
     "RowId": 12505,
     "Text": "雷"
   },
   {
-    "RowOffset": 737174,
     "RowId": 12506,
     "Text": "水"
   },
   {
-    "RowOffset": 737190,
     "RowId": 12507,
     "Text": "斬"
   },
   {
-    "RowOffset": 737206,
     "RowId": 12508,
     "Text": "突"
   },
   {
-    "RowOffset": 737222,
     "RowId": 12509,
     "Text": "打"
   },
   {
-    "RowOffset": 737238,
     "RowId": 12510,
     "Text": "WORLD VISIT"
   },
   {
-    "RowOffset": 737262,
     "RowId": 12511,
     "Text": "ワールド間テレポ"
   },
   {
-    "RowOffset": 737298,
     "RowId": 12512,
     "Text": "あなたのホームワールド"
   },
   {
-    "RowOffset": 737342,
     "RowId": 12513,
     "Text": "他のワールド"
   },
   {
-    "RowOffset": 737374,
     "RowId": 12514,
     "Text": "<If(Equal(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">《データセンタートラベルについて》</span>\n「データセンタートラベル」は、キャラクターを作成したワールドとは異なるワールドへ一時的に移動して遊べる「ワールド間テレポ」を、データセンターを超えて実現する機能です。通常のワールド間テレポ中の制約事項に加えて、更にいくつか固有の制限があります。\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">《他のデータセンターへ遊びに行く際の注意》</span>\n\u3000・元のワールドに表示されているキャラクターは、データセンタートラベル\n\u3000  から戻ってくるまで、ログイン・その他の操作はできません。\n\u3000・データセンタートラベル中のキャラクターは、移動先のデータセンターから\n\u3000  更に別のデータセンターへ直接移動することはできません。\n\u3000  ホームワールドに戻ってから改めて移動先を選んでください。\n\u3000・他のワールドに移動してログアウトしたまま30日が経過すると、\n\u3000  自動的にホームワールドへ帰還します。\n\u3000  ただし、最後にログアウトしたタイミングによっては、\n\u3000  30日を数日超えてから帰還する場合があります。\n\n<Else/> </If><If(LessThan(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">《ワールド間テレポについて》</span>\n<If(Equal(IntegerParameter(1),0))>あなたのいるホームワールド<Else/>あなたが現在いるワールド</If>から、同じデータセンターに属する他のワールドに遊びにいくことができます。移動先のワールドでも、フレンドとパーティを組んだり、買い物をしたり、自由にコンテンツを楽しむことができます。\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">《ワールド移動申請時の注意》</span>\n\u3000・移動にあたっては、選んだワールドの混み具合によって移動完了まで時間が\n\u3000  かかることがあります。\n\u3000・選んだワールドへの移動準備が完了すると自動的に移動処理が行われます\n\u3000  ので、行っていた行動はすべてキャンセルされます。\n\u3000・他のワールドに移動してログアウトしたまま30日が経過すると、\n\u3000  自動的にホームワールドへ帰還します。\n\u3000  ただし、最後にログアウトしたタイミングによっては、\n\u3000  30日を数日超えてから帰還する場合があります。\n\n\n<Else/> </If>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\"><If(GreaterThan(IntegerParameter(1),0))>《他のデータセンター<Else/>\u3000\u3000《他のワールド</If>での制限》</span>\n<If(Equal(IntegerParameter(1),1))>あなたは現在ホームワールドのあるデータセンターとは異なるデータセンターにいます。<Else/> </If><If(GreaterThan(IntegerParameter(1),0))>他のデータセンター<Else/>他のワールド</If>で遊ぶにあたって、以下の制限にご注意ください。\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">「フレンドリスト」</span>に以下の制限が加わります。\n\u3000・異なるデータセンターにいるフレンドとはコミュニケーションを取れません。\n\u3000・異なるデータセンターにいるフレンドとパーティを結成できません。\n\u3000・異なる地域のデータセンターにいるフレンドのログイン状況を\n\u3000  表示できません。\n\n<Else/> </If><span style=\"color: #e1c500;\">「フリーカンパニー」</span>に以下の制限が加わります。\n\u3000・フリーカンパニーの結成や加入はできません。\n\u3000・加入しているフリーカンパニーの情報を確認することができません。\n\u3000・カンパニークレジットは、他のワールドでの活動では増えません。\n\u3000・フリーカンパニーのマスターがホームワールドから移動したまま\n\u3000  35日が経過すると、マスターの権限が他のメンバーに委譲されます。\n\u3000・異なる地域のデータセンターにいるメンバーのログイン状況を\n\u3000  表示できません。\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">「クロスワールドリンクシェル」</span>に以下の制限が加わります。\n\u3000・クロスワールドリンクシェルの新規作成ができません。\n\u3000・クロスワールドリンクシェルのマスターになれません。\n\n<Else/> </If><span style=\"color: #e1c500;\">「リンクシェル」</span>に以下の制限が加わります。\n\u3000・リンクシェルを利用することができません。\n\u3000・リンクシェルの情報を確認することができません。\n\u3000・リンクシェルの結成や加入はできません。\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">「PvPチーム」</span>に以下の制限が加わります。\n\u3000・PvPチームを利用することができません。\n\u3000・PvPチームの情報を確認することができません。\n\u3000・PvPチームの結成や加入はできません。\n\n<span style=\"color: #e1c500;\">「フェローシップ」</span>に以下の制限が加わります。\n\u3000・フェローシップ募集の検索以外の機能を利用できません。\n\n<Else/> </If><span style=\"color: #e1c500;\">「リテイナー」</span>に以下の制限が加わります。\n\u3000・リテイナーの呼び出し、雇用や解雇はできません。\n\u3000・マーケットへの出品はできません。(マーケットでの購入は可能です)\n\n<span style=\"color: #e1c500;\">「ハウジング」</span>に以下の制限が加わります。\n\u3000・土地、アパルトメントの部屋を購入することはできません。\n\u3000・ハウスシェアリングはできません。\n\n<span style=\"color: #e1c500;\">「エターナルバンド」</span>に一部制限が加わります。\n\u3000・エターナルセレモニーはホームワールドでのみ開催できます。\n\u3000・エターナルバンドのクエストはホームワールドでのみ受注できます。\n\u3000・セレモニー招待状を他のワールドのプレイヤーに渡すことはできません。\n\n<span style=\"color: #e1c500;\">「コンテンツ・機能」</span>に一部制限が加わります。\n<If(Equal(IntegerParameter(1),2))>\u3000・「クリスタルコンフリクト」のランクマッチは、\n\u3000\u3000・ホームワールドがランクマッチを開催中のデータセンターと同じ地域\n\u3000\u3000・ランクマッチを開催中のデータセンターから直接参加\n\u3000\u3000の条件を満たす必要があります。\n<Else/> </If>\u3000・「ロード・オブ・ヴァーミニオン」の大会に参加できません。\n\u3000・「トリプルトライアド」の大会に参加できません。\n\u3000・「ジャンボくじテンダー」の購入や引き換えができません。\n\u3000・「モグレター」を利用することができません。\n\u3000・「ディープダンジョン」のスコアはランキング対象とはなりません。\n\u3000・「エターナルバンドテレポ」「フレンドシップテレポ」はお互いが同じ\n\u3000  ワールドにいるときのみ実行できます。\n\u3000・採掘師、園芸師で未知や伝説の採集場所が見つけられなくなります。\n"
   },
   {
-    "RowOffset": 744614,
     "RowId": 12515,
     "Text": "ホームワールド"
   },
   {
-    "RowOffset": 744646,
     "RowId": 12516,
     "Text": "現在のワールド"
   },
   {
-    "RowOffset": 744678,
     "RowId": 12517,
     "Text": "このワールドは選べません"
   },
   {
-    "RowOffset": 744726,
     "RowId": 12518,
     "Text": "ワールド情報取得中"
   },
   {
-    "RowOffset": 744766,
     "RowId": 12519,
     "Text": "「<String>StringParameter(1)</String>」へ移動します、よろしいですか？"
   },
   {
-    "RowOffset": 744834,
     "RowId": 12520,
     "Text": "ワールド間テレポ予約申請中"
   },
   {
-    "RowOffset": 744886,
     "RowId": 12521,
     "Text": "転送先：<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 744918,
     "RowId": 12522,
     "Text": "転送予約順番："
   },
   {
-    "RowOffset": 744950,
     "RowId": 12523,
     "Text": "経過時間：<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>/平均待機時間："
   },
   {
-    "RowOffset": 745014,
     "RowId": 12524,
     "Text": "WORLD VISIT"
   },
   {
-    "RowOffset": 745038,
     "RowId": 12525,
     "Text": "転送予約状態"
   },
   {
-    "RowOffset": 745070,
     "RowId": 12526,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 745090,
     "RowId": 12527,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 745110,
     "RowId": 12528,
     "Text": "転送予約順番"
   },
   {
-    "RowOffset": 745142,
     "RowId": 12529,
     "Text": "経過時間"
   },
   {
-    "RowOffset": 745166,
     "RowId": 12530,
     "Text": "平均待機時間"
   },
   {
-    "RowOffset": 745198,
     "RowId": 12531,
     "Text": "取り消し"
   },
   {
-    "RowOffset": 745222,
     "RowId": 12532,
     "Text": "<Num>IntegerParameter(1)</Num>番目"
   },
   {
-    "RowOffset": 745246,
     "RowId": 12533,
     "Text": "<Num>IntegerParameter(1)</Num>番目以降"
   },
   {
-    "RowOffset": 745278,
     "RowId": 12534,
     "Text": "<Num>IntegerParameter(1)</Num>分"
   },
   {
-    "RowOffset": 745298,
     "RowId": 12535,
     "Text": "<Num>IntegerParameter(1)</Num>分以上"
   },
   {
-    "RowOffset": 745326,
     "RowId": 12536,
     "Text": "<Num>IntegerParameter(1)</Num>分未満"
   },
   {
-    "RowOffset": 745354,
     "RowId": 12537,
     "Text": "ワールド間テレポ"
   },
   {
-    "RowOffset": 745390,
     "RowId": 12538,
     "Text": "転送準備が整いました！"
   },
   {
-    "RowOffset": 745434,
     "RowId": 12539,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 745454,
     "RowId": 12540,
     "Text": "<String>StringParameter(1)</String>"
   },
   {
-    "RowOffset": 745474,
     "RowId": 12541,
     "Text": "Wanderer"
   },
   {
-    "RowOffset": 745494,
     "RowId": 12542,
     "Text": "現在のワールド"
   },
   {
-    "RowOffset": 745526,
     "RowId": 12543,
     "Text": "World Info"
   },
   {
-    "RowOffset": 745550,
     "RowId": 12544,
     "Text": "World List"
   },
   {
-    "RowOffset": 745574,
     "RowId": 12545,
     "Text": "BLUE MAGE‘S LOG"
   },
   {
-    "RowOffset": 745602,
     "RowId": 12546,
     "Text": "青魔道士ログ"
   },
   {
-    "RowOffset": 745634,
     "RowId": 12547,
     "Text": "パーティを募集する"
   },
   {
-    "RowOffset": 745674,
     "RowId": 12548,
     "Text": "コンテンツに挑戦"
   },
   {
-    "RowOffset": 745710,
     "RowId": 12549,
     "Text": "攻略済み"
   },
   {
-    "RowOffset": 745734,
     "RowId": 12550,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 745758,
     "RowId": 12551,
     "Text": "特別任務"
   },
   {
-    "RowOffset": 745782,
     "RowId": 12552,
     "Text": "初回報酬"
   },
   {
-    "RowOffset": 745806,
     "RowId": 12553,
     "Text": "報酬"
   },
   {
-    "RowOffset": 745826,
     "RowId": 12554,
     "Text": "ウィークリー報酬"
   },
   {
-    "RowOffset": 745862,
     "RowId": 12555,
     "Text": "攻略期限 : <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>時間<Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分後<Else/><If(GreaterThan(IntegerParameter(1),0))>後<Else/>1分以内</If></If><SetTime>IntegerParameter(3)</SetTime>[<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
   },
   {
-    "RowOffset": 745994,
     "RowId": 12556,
     "Text": "<span style=\"color: #ff7b1a;\">攻略期限切れ</span>"
   },
   {
-    "RowOffset": 746050,
     "RowId": 12557,
     "Text": "INFORMATION"
   },
   {
-    "RowOffset": 746074,
     "RowId": 12558,
     "Text": "参加条件"
   },
   {
-    "RowOffset": 746098,
     "RowId": 12559,
     "Text": "ミーン工芸館取引のヘルプを表示"
   },
   {
-    "RowOffset": 746154,
     "RowId": 12560,
     "Text": "貢献ランク"
   },
   {
-    "RowOffset": 746182,
     "RowId": 12561,
     "Text": "貢献度"
   },
   {
-    "RowOffset": 746202,
     "RowId": 12562,
     "Text": "<switch(IntegerParameter(1),<sheet(ClassJob,9,0)> / <sheet(ClassJob,10,0)> / <sheet(ClassJob,11,0)>,<sheet(ClassJob,8,0)> / <sheet(ClassJob,12,0)> / <sheet(ClassJob,13,0)>,<sheet(ClassJob,14,0)> / <sheet(ClassJob,15,0)>,<sheet(ClassJob,16,0)> / <sheet(ClassJob,17,0)>,<sheet(ClassJob,18,0)>)>"
   },
   {
-    "RowOffset": 746426,
     "RowId": 12563,
     "Text": "TARGET ITEM"
   },
   {
-    "RowOffset": 746450,
     "RowId": 12564,
     "Text": "所持数"
   },
   {
-    "RowOffset": 746470,
     "RowId": 12565,
     "Text": "<Num>IntegerParameter(1)</Num>/\uE03C<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 746498,
     "RowId": 12566,
     "Text": "Remuneration Details"
   },
   {
-    "RowOffset": 746530,
     "RowId": 12567,
     "Text": "選択アイテムを納品"
   },
   {
-    "RowOffset": 746570,
     "RowId": 12568,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 746598,
     "RowId": 12569,
     "Text": "納品数を選択してください。"
   },
   {
-    "RowOffset": 746650,
     "RowId": 12570,
     "Text": "経験値"
   },
   {
-    "RowOffset": 746670,
     "RowId": 12571,
     "Text": "ミーン工芸館取引"
   },
   {
-    "RowOffset": 746706,
     "RowId": 12572,
     "Text": "<switch(IntegerParameter(1),錬鉄科,手工科,食薬科,調達科,漁業科)>：<String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 746790,
     "RowId": 12573,
     "Text": "報酬"
   },
   {
-    "RowOffset": 746810,
     "RowId": 12574,
     "Text": "受け取る"
   },
   {
-    "RowOffset": 746834,
     "RowId": 12575,
     "Text": "CRYSTARIUM DELIVERIES"
   },
   {
-    "RowOffset": 746866,
     "RowId": 12576,
     "Text": "ミーン工芸館取引"
   },
   {
-    "RowOffset": 746902,
     "RowId": 12577,
     "Text": "<switch(IntegerParameter(1),錬鉄科,手工科,食薬科,調達科,漁業科)>：<String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 746986,
     "RowId": 12578,
     "Text": "Total"
   },
   {
-    "RowOffset": 747002,
     "RowId": 12579,
     "Text": "<sheet(Item,IntegerParameter(1),0)>の所持数が上限に達するため、すべての<sheet(Item,IntegerParameter(1),0)>は受け取れません。\nよろしいですか？"
   },
   {
-    "RowOffset": 747150,
     "RowId": 12580,
     "Text": "RETAINER"
   },
   {
-    "RowOffset": 747170,
     "RowId": 12581,
     "Text": "リテイナー"
   },
   {
-    "RowOffset": 747198,
     "RowId": 12582,
     "Text": "Name"
   },
   {
-    "RowOffset": 747214,
     "RowId": 12583,
     "Text": "Class/Job"
   },
   {
-    "RowOffset": 747234,
     "RowId": 12584,
     "Text": "Item"
   },
   {
-    "RowOffset": 747250,
     "RowId": 12585,
     "Text": "Gil"
   },
   {
-    "RowOffset": 747266,
     "RowId": 12586,
     "Text": "Market"
   },
   {
-    "RowOffset": 747286,
     "RowId": 12587,
     "Text": "Venture"
   },
   {
-    "RowOffset": 747306,
     "RowId": 12588,
     "Text": "出品なし"
   },
   {
-    "RowOffset": 747330,
     "RowId": 12589,
     "Text": "出品中（<Num>IntegerParameter(1)</Num>件）"
   },
   {
-    "RowOffset": 747366,
     "RowId": 12590,
     "Text": "依頼なし"
   },
   {
-    "RowOffset": 747390,
     "RowId": 12591,
     "Text": "残り時間<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>時間<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分<Else/> </If><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>分<Else/>1分以内</If></If>"
   },
   {
-    "RowOffset": 747490,
     "RowId": 12592,
     "Text": "完了"
   },
   {
-    "RowOffset": 747510,
     "RowId": 12593,
     "Text": "RETAINER SORT"
   },
   {
-    "RowOffset": 747534,
     "RowId": 12594,
     "Text": "リテイナー並び替え"
   },
   {
-    "RowOffset": 747574,
     "RowId": 12595,
     "Text": "リテイナーの並びを変更する"
   },
   {
-    "RowOffset": 747626,
     "RowId": 12596,
     "Text": "出品なし"
   },
   {
-    "RowOffset": 747650,
     "RowId": 12597,
     "Text": "出品中（<Num>IntegerParameter(1)</Num>件）期限：～<SetTime>IntegerParameter(2)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num>"
   },
   {
-    "RowOffset": 747722,
     "RowId": 12598,
     "Text": "依頼なし"
   },
   {
-    "RowOffset": 747746,
     "RowId": 12599,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>Lv<Num>IntegerParameter(1)</Num> <Else/> </If><String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 747786,
     "RowId": 12600,
     "Text": "<String>StringParameter(1)</String> 残り時間<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>時間<If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>分<Else/> </If><Else/><If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>分<Else/>1分以内</If></If>"
   },
   {
-    "RowOffset": 747894,
     "RowId": 12601,
     "Text": "完了"
   },
   {
-    "RowOffset": 747914,
     "RowId": 12602,
     "Text": "契約切れ"
   },
   {
-    "RowOffset": 747938,
     "RowId": 12603,
     "Text": "マーケット"
   },
   {
-    "RowOffset": 747966,
     "RowId": 12604,
     "Text": "ベンチャー"
   },
   {
-    "RowOffset": 747994,
     "RowId": 12605,
     "Text": "/"
   },
   {
-    "RowOffset": 748006,
     "RowId": 12606,
     "Text": "--"
   },
   {
-    "RowOffset": 748022,
     "RowId": 12607,
     "Text": "リテイナー名"
   },
   {
-    "RowOffset": 748054,
     "RowId": 12608,
     "Text": "雇用順"
   },
   {
-    "RowOffset": 748074,
     "RowId": 12609,
     "Text": "変更する"
   },
   {
-    "RowOffset": 748098,
     "RowId": 12610,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 748126,
     "RowId": 12611,
     "Text": "アクティブセット名称変更"
   },
   {
-    "RowOffset": 748174,
     "RowId": 12612,
     "Text": "サブコマンドからアクティブセットの名称を変更できます。"
   },
   {
-    "RowOffset": 748266,
     "RowId": 12613,
     "Text": "<String>StringParameter(1)</String>の名称を入力してください。文字をすべて削除して決定すると初期名称に戻ります。"
   },
   {
-    "RowOffset": 748398,
     "RowId": 12614,
     "Text": "Name"
   },
   {
-    "RowOffset": 748414,
     "RowId": 12615,
     "Text": "ウィークリー"
   },
   {
-    "RowOffset": 748446,
     "RowId": 12616,
     "Text": "通常任務"
   },
   {
-    "RowOffset": 748470,
     "RowId": 12617,
     "Text": "保存"
   },
   {
-    "RowOffset": 748490,
     "RowId": 12618,
     "Text": "読み込み"
   },
   {
-    "RowOffset": 748514,
     "RowId": 12619,
     "Text": ""
   },
   {
-    "RowOffset": 748526,
     "RowId": 12620,
     "Text": ""
   },
   {
-    "RowOffset": 748538,
     "RowId": 12621,
     "Text": ""
   },
   {
-    "RowOffset": 748550,
     "RowId": 12622,
     "Text": ""
   },
   {
-    "RowOffset": 748562,
     "RowId": 12623,
     "Text": ""
   },
   {
-    "RowOffset": 748574,
     "RowId": 12624,
     "Text": "「<String>StringParameter(1)</String>」へ移動します、よろしいですか？\n<span style=\"color: #ffff66;\">パーティ状態ではこの機能を利用できません。\nパーティ募集や、他ワールドのプレイヤーと結成された\nクロスワールドパーティ状態では利用可能になります。</span>"
   },
   {
-    "RowOffset": 748894,
     "RowId": 12625,
     "Text": "Traveler"
   },
   {
-    "RowOffset": 748914,
     "RowId": 12626,
     "Text": "ホームワールドのあるデータセンターにいない間はレターの通知を表示できません。"
   },
   {
-    "RowOffset": 749042,
     "RowId": 12627,
     "Text": "Voyager"
   },
   {
-    "RowOffset": 749062,
     "RowId": 12628,
     "Text": "このフレンド申請をしてきた相手の名前などの情報が取得できない状態となっています。このまま申請を保留するか、断ることしかできません。\n※保留のまま一定期間が過ぎると、自動的に相手からの申請が取り下げられ、フレンドリストから消去されます。"
   },
   {
-    "RowOffset": 749426,
     "RowId": 12629,
     "Text": ""
   },
   {
-    "RowOffset": 749438,
     "RowId": 12630,
     "Text": "ナッツ・モブ手配書：初級"
   },
   {
-    "RowOffset": 749486,
     "RowId": 12631,
     "Text": "ナッツ・モブ手配書：中級"
   },
   {
-    "RowOffset": 749534,
     "RowId": 12632,
     "Text": "ナッツ・モブ手配書：上級"
   },
   {
-    "RowOffset": 749582,
     "RowId": 12633,
     "Text": "ナッツ・リスキーモブ手配書"
   },
   {
-    "RowOffset": 749634,
     "RowId": 12634,
     "Text": "<If(GreaterThan(IntegerParameter(3),0))>ギル:<kilo(IntegerParameter(1),,)> モブハントの戦利品:<kilo(IntegerParameter(2),,)> 経験値:<kilo(IntegerParameter(3),,)><Else/>ギル:<kilo(IntegerParameter(1),,)> モブハントの戦利品:<kilo(IntegerParameter(2),,)> </If>"
   },
   {
-    "RowOffset": 749786,
     "RowId": 12635,
     "Text": "ナッツクラン"
   },
   {
-    "RowOffset": 749818,
     "RowId": 12636,
     "Text": "<switch(IntegerParameter(1),ナッツ・モブ手配書：初級,ナッツ・モブ手配書：中級,ナッツ・モブ手配書：上級,ナッツ・リスキーモブ手配書)>（<String>StringParameter(2)</String>）"
   },
   {
-    "RowOffset": 750002,
     "RowId": 12637,
     "Text": "<switch(IntegerParameter(1),クラン・モブ手配書：初級,クラン・モブ手配書：中級,クラン・モブ手配書：上級,クラン・リスキーモブ手配書)>（<String>StringParameter(2)</String>）"
   },
   {
-    "RowOffset": 750186,
     "RowId": 12638,
     "Text": "<switch(IntegerParameter(1),モブ手配書,リスキーモブ手配書)>（<String>StringParameter(2)</String>）"
   },
   {
-    "RowOffset": 750262,
     "RowId": 12639,
     "Text": "ギルドシップ・モブ手配書：初級"
   },
   {
-    "RowOffset": 750318,
     "RowId": 12640,
     "Text": "ギルドシップ・モブ手配書：中級"
   },
   {
-    "RowOffset": 750374,
     "RowId": 12641,
     "Text": "ギルドシップ・モブ手配書：上級"
   },
   {
-    "RowOffset": 750430,
     "RowId": 12642,
     "Text": "ギルドシップ・リスキーモブ手配書"
   },
   {
-    "RowOffset": 750490,
     "RowId": 12643,
     "Text": "グリーナーズ・ギルドシップ"
   },
   {
-    "RowOffset": 750542,
     "RowId": 12644,
     "Text": "<switch(IntegerParameter(1),ギルドシップ・モブ手配書：初級,ギルドシップ・モブ手配書：中級,ギルドシップ・モブ手配書：上級,ギルドシップ・リスキーモブ手配書)>（<String>StringParameter(2)</String>）"
   },
   {
-    "RowOffset": 750762,
     "RowId": 12645,
     "Text": "トラルモブ手配書：初級"
   },
   {
-    "RowOffset": 750806,
     "RowId": 12646,
     "Text": "トラルモブ手配書：中級"
   },
   {
-    "RowOffset": 750850,
     "RowId": 12647,
     "Text": "トラルモブ手配書：上級"
   },
   {
-    "RowOffset": 750894,
     "RowId": 12648,
     "Text": "トラル・リスキーモブ手配書"
   },
   {
-    "RowOffset": 750946,
     "RowId": 12649,
     "Text": "トラルモブハント組合"
   },
   {
-    "RowOffset": 750990,
     "RowId": 12650,
     "Text": "<switch(IntegerParameter(1),トラルモブ手配書：初級,トラルモブ手配書：中級,トラルモブ手配書：上級,トラル・リスキーモブ手配書)>（<String>StringParameter(2)</String>）"
   },
   {
-    "RowOffset": 751166,
     "RowId": 12651,
     "Text": ""
   },
   {
-    "RowOffset": 751178,
     "RowId": 12652,
     "Text": ""
   },
   {
-    "RowOffset": 751190,
     "RowId": 12653,
     "Text": ""
   },
   {
-    "RowOffset": 751202,
     "RowId": 12654,
     "Text": ""
   },
   {
-    "RowOffset": 751214,
     "RowId": 12655,
     "Text": ""
   },
   {
-    "RowOffset": 751226,
     "RowId": 12656,
     "Text": ""
   },
   {
-    "RowOffset": 751238,
     "RowId": 12657,
     "Text": ""
   },
   {
-    "RowOffset": 751250,
     "RowId": 12658,
     "Text": ""
   },
   {
-    "RowOffset": 751262,
     "RowId": 12659,
     "Text": ""
   },
   {
-    "RowOffset": 751274,
     "RowId": 12660,
     "Text": ""
   },
   {
-    "RowOffset": 751286,
     "RowId": 12661,
     "Text": ""
   },
   {
-    "RowOffset": 751298,
     "RowId": 12662,
     "Text": ""
   },
   {
-    "RowOffset": 751310,
     "RowId": 12663,
     "Text": ""
   },
   {
-    "RowOffset": 751322,
     "RowId": 12664,
     "Text": ""
   },
   {
-    "RowOffset": 751334,
     "RowId": 12665,
     "Text": ""
   },
   {
-    "RowOffset": 751346,
     "RowId": 12666,
     "Text": ""
   },
   {
-    "RowOffset": 751358,
     "RowId": 12667,
     "Text": ""
   },
   {
-    "RowOffset": 751370,
     "RowId": 12668,
     "Text": ""
   },
   {
-    "RowOffset": 751382,
     "RowId": 12669,
     "Text": ""
   },
   {
-    "RowOffset": 751394,
     "RowId": 12670,
     "Text": "レベル"
   },
   {
-    "RowOffset": 751414,
     "RowId": 12671,
     "Text": "スペシャル"
   },
   {
-    "RowOffset": 751442,
     "RowId": 12672,
     "Text": "<switch(IntegerParameter(1),未知の採集場所,伝説の採集場所,刻限の採集場所)>\n・発生時間（エオルゼア時間）"
   },
   {
-    "RowOffset": 751574,
     "RowId": 12673,
     "Text": "\u3000<Sec>IntegerParameter(1)</Sec>:<Sec>IntegerParameter(2)</Sec>～<Sec>IntegerParameter(3)</Sec>:<Sec>IntegerParameter(4)</Sec>"
   },
   {
-    "RowOffset": 751618,
     "RowId": 12674,
     "Text": "最も近い時間をアラームに追加する"
   },
   {
-    "RowOffset": 751678,
     "RowId": 12675,
     "Text": "伝承録を入手していません。"
   },
   {
-    "RowOffset": 751730,
     "RowId": 12676,
     "Text": "選択したアイテムを簡易採集する"
   },
   {
-    "RowOffset": 751786,
     "RowId": 12677,
     "Text": "<Num>IntegerParameter(1)</Num>+?"
   },
   {
-    "RowOffset": 751806,
     "RowId": 12678,
     "Text": "QUICK GATHERING"
   },
   {
-    "RowOffset": 751834,
     "RowId": 12679,
     "Text": "採集を中止しますか？\n<span style=\"color: #ff8080;\">※この採集場所は消えてしまいます。</span>"
   },
   {
-    "RowOffset": 751954,
     "RowId": 12680,
     "Text": "本当に中止する"
   },
   {
-    "RowOffset": 751986,
     "RowId": 12681,
     "Text": "幻の採集場所\n・発生条件：天候"
   },
   {
-    "RowOffset": 752046,
     "RowId": 12682,
     "Text": "採集条件：<String>StringParameter(1)</String><Num>IntegerParameter(2)</Num>以上"
   },
   {
-    "RowOffset": 752090,
     "RowId": 12683,
     "Text": "刺突漁を中止しますか？\n<span style=\"color: #ff8080;\">※実行中のこの漁場は消えてしまいます。</span>"
   },
   {
-    "RowOffset": 752222,
     "RowId": 12684,
     "Text": ""
   },
   {
-    "RowOffset": 752234,
     "RowId": 12685,
     "Text": ""
   },
   {
-    "RowOffset": 752246,
     "RowId": 12686,
     "Text": ""
   },
   {
-    "RowOffset": 752258,
     "RowId": 12687,
     "Text": ""
   },
   {
-    "RowOffset": 752270,
     "RowId": 12688,
     "Text": ""
   },
   {
-    "RowOffset": 752282,
     "RowId": 12689,
     "Text": ""
   },
   {
-    "RowOffset": 752294,
     "RowId": 12690,
     "Text": ""
   },
   {
-    "RowOffset": 752306,
     "RowId": 12691,
     "Text": "超える力無効での参加"
   },
   {
-    "RowOffset": 752350,
     "RowId": 12692,
     "Text": "コンテンツに設定された「超える力」が得られなくなります。\n\n<span style=\"color: #ff8080;\">※規定人数もしくは「制限解除」時のみ使用可能です。\n※パーティを組んでいる際はパーティリーダーの設定のみが有効になります。</span>"
   },
   {
-    "RowOffset": 752662,
     "RowId": 12693,
     "Text": "コンテンツ内で獲得した戦利品のロットルールを選択します。\n\n<span style=\"color: #ffff66;\">通常ロット\n</span>「NEED」「GREED」「PASS」で分配先が決定されます。\n\n<span style=\"color: #ffff66;\">GREED限定\n</span>「GREED」と「PASS」で分配先が決定されます。\n\n<span style=\"color: #ffff66;\">マスタールート\n</span>パーティリーダーがアイテムの分配先を決定します。\n\n<span style=\"color: #ff8080;\">※「通常ロット」以外のロットルールは、規定人数もしくは\n「制限解除」時のみ使用可能です。\n※コンテンツによって「GREED限定」などのロットルールが\n指定されている場合があります。\n※ロットルール変更が許可されたコンテンツでのみ使用可能です。\n※ロットルールはパーティリーダーの設定のみが有効になります。</span>"
   },
   {
-    "RowOffset": 753594,
     "RowId": 12694,
     "Text": "コンテンツ内で使用する言語を設定します。\n\n・選択した言語を含んだ言語設定にしているプレイヤーとマッチングされます。\n\n<span style=\"color: #ffff66;\">データセンター内での使用言語状況によって、マッチング時間が長くなる\n可能性があります。設定変更後にマッチング時間が通常より長くなったなどの\n問題が発生した場合、異なる言語設定に変更してから再度お試しください。\n</span>\n<span style=\"color: #ff8080;\">※ _ が付いている言語はランチャーで選択している表示言語です。\n※言語設定はマッチングコンテンツ共有の設定です。\n\u3000ただし、ゴールドソーサーの一部のコンテンツでは、言語設定が無効となる\n\u3000場合があります。</span>"
   },
   {
-    "RowOffset": 754466,
     "RowId": 12695,
     "Text": "「つよくてニューゲーム」中申請不可"
   },
   {
-    "RowOffset": 754530,
     "RowId": 12696,
     "Text": "レベルシンク状態での参加"
   },
   {
-    "RowOffset": 754578,
     "RowId": 12697,
     "Text": "コンテンツに設定されたレベルがシンク適用されます。\n\n・「制限解除」状態でも錬精度が上昇されるようになります。\n・「制限解除」状態でもモンスターから報酬や経験値が\n得られるようになります。\n\n<span style=\"color: #ff8080;\">※この設定は「制限解除」時のみ適用されます。\n※パーティを組んでいる際はパーティリーダーの設定のみが有効になります。</span>"
   },
   {
-    "RowOffset": 755082,
     "RowId": 12698,
     "Text": ""
   },
   {
-    "RowOffset": 755094,
     "RowId": 12699,
     "Text": ""
   },
   {
-    "RowOffset": 755106,
     "RowId": 12700,
     "Text": "TRUST"
   },
   {
-    "RowOffset": 755122,
     "RowId": 12701,
     "Text": "フェイス"
   },
   {
-    "RowOffset": 755146,
     "RowId": 12702,
     "Text": "PARTY MEMBER"
   },
   {
-    "RowOffset": 755170,
     "RowId": 12703,
     "Text": "MEMBER SELECTION"
   },
   {
-    "RowOffset": 755198,
     "RowId": 12704,
     "Text": "EXP"
   },
   {
-    "RowOffset": 755214,
     "RowId": 12705,
     "Text": "/"
   },
   {
-    "RowOffset": 755226,
     "RowId": 12706,
     "Text": "突入"
   },
   {
-    "RowOffset": 755246,
     "RowId": 12707,
     "Text": "ミラージュプリズム"
   },
   {
-    "RowOffset": 755286,
     "RowId": 12708,
     "Text": "Scenario"
   },
   {
-    "RowOffset": 755306,
     "RowId": 12709,
     "Text": "シナリオ"
   },
   {
-    "RowOffset": 755330,
     "RowId": 12710,
     "Text": "フェイス経験値"
   },
   {
-    "RowOffset": 755362,
     "RowId": 12711,
     "Text": "フェイス解説を表示"
   },
   {
-    "RowOffset": 755402,
     "RowId": 12712,
     "Text": ""
   },
   {
-    "RowOffset": 755414,
     "RowId": 12713,
     "Text": ""
   },
   {
-    "RowOffset": 755426,
     "RowId": 12714,
     "Text": ""
   },
   {
-    "RowOffset": 755438,
     "RowId": 12715,
     "Text": ""
   },
   {
-    "RowOffset": 755450,
     "RowId": 12716,
     "Text": ""
   },
   {
-    "RowOffset": 755462,
     "RowId": 12717,
     "Text": ""
   },
   {
-    "RowOffset": 755474,
     "RowId": 12718,
     "Text": "TRUST HELP"
   },
   {
-    "RowOffset": 755498,
     "RowId": 12719,
     "Text": "フェイス解説"
   },
   {
-    "RowOffset": 755530,
     "RowId": 12720,
     "Text": "必要レベルに達していない"
   },
   {
-    "RowOffset": 755578,
     "RowId": 12721,
     "Text": "非バトルクラス"
   },
   {
-    "RowOffset": 755610,
     "RowId": 12722,
     "Text": "リミテッドジョブ"
   },
   {
-    "RowOffset": 755646,
     "RowId": 12723,
     "Text": "Quest"
   },
   {
-    "RowOffset": 755662,
     "RowId": 12724,
     "Text": "クエスト"
   },
   {
-    "RowOffset": 755686,
     "RowId": 12725,
     "Text": "Avatars"
   },
   {
-    "RowOffset": 755706,
     "RowId": 12726,
     "Text": "幻体"
   },
   {
-    "RowOffset": 755726,
     "RowId": 12727,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))>\uE033平均アイテムレベル <Num>IntegerParameter(1)</Num>～\u3000<Else/> </If><If(GreaterThan(IntegerParameter(2),0))>\uE0BDアイテムレベルシンク：<Num>IntegerParameter(2)</Num><Else/> </If>"
   },
   {
-    "RowOffset": 755846,
     "RowId": 12728,
     "Text": "必要平均アイテムレベルに達していない"
   },
   {
-    "RowOffset": 755914,
     "RowId": 12729,
     "Text": ""
   },
   {
-    "RowOffset": 755926,
     "RowId": 12730,
     "Text": "CHANNEL LOG SETTINGS"
   },
   {
-    "RowOffset": 755958,
     "RowId": 12731,
     "Text": "チャンネルログ設定"
   },
   {
-    "RowOffset": 755998,
     "RowId": 12732,
     "Text": "ログカラー"
   },
   {
-    "RowOffset": 756026,
     "RowId": 12733,
     "Text": "チャット着信時のSE"
   },
   {
-    "RowOffset": 756066,
     "RowId": 12734,
     "Text": "ログ表示先"
   },
   {
-    "RowOffset": 756094,
     "RowId": 12735,
     "Text": "適用"
   },
   {
-    "RowOffset": 756114,
     "RowId": 12736,
     "Text": "閉じる"
   },
   {
-    "RowOffset": 756134,
     "RowId": 12737,
     "Text": "この色で表示されます。"
   },
   {
-    "RowOffset": 756178,
     "RowId": 12738,
     "Text": "ログの表示先がありませんが、この設定でよろしいですか？"
   },
   {
-    "RowOffset": 756270,
     "RowId": 12739,
     "Text": "チャンネルログ設定"
   },
   {
-    "RowOffset": 756310,
     "RowId": 12740,
     "Text": "<span style=\"color: #ffff66;\">\n※相手と同じデータセンターにいる間に申請の回答をしてもらえなかった場合、仮フレンド状態のままとなり、1週間が経過すると申請が自動的に取り下げられます。</span>"
   },
   {
-    "RowOffset": 756574,
     "RowId": 12741,
     "Text": "<span style=\"color: #ffff66;\">\n※フレンド登録後も、お互いが別々の地域にいる間はログイン状況が取得できません。</span>"
   },
   {
-    "RowOffset": 756730,
     "RowId": 12742,
     "Text": "あなたとは異なる地域のデータセンターにホームワールドがある<String>StringParameter(1)</String>にフレンド申請を出そうとしています。よろしいですか？"
   },
   {
-    "RowOffset": 756914,
     "RowId": 12743,
     "Text": ""
   },
   {
-    "RowOffset": 756926,
     "RowId": 12744,
     "Text": ""
   },
   {
-    "RowOffset": 756938,
     "RowId": 12745,
     "Text": ""
   },
   {
-    "RowOffset": 756950,
     "RowId": 12746,
     "Text": ""
   },
   {
-    "RowOffset": 756962,
     "RowId": 12747,
     "Text": ""
   },
   {
-    "RowOffset": 756974,
     "RowId": 12748,
     "Text": ""
   },
   {
-    "RowOffset": 756986,
     "RowId": 12749,
     "Text": ""
   },
   {
-    "RowOffset": 756998,
     "RowId": 12750,
     "Text": "ISHGARDIAN RESTORATION"
   },
   {
-    "RowOffset": 757034,
     "RowId": 12751,
     "Text": "イシュガルド復興"
   },
   {
-    "RowOffset": 757070,
     "RowId": 12752,
     "Text": "アイテム名"
   },
   {
-    "RowOffset": 757098,
     "RowId": 12753,
     "Text": "必要収集価値"
   },
   {
-    "RowOffset": 757130,
     "RowId": 12754,
     "Text": "<Num>IntegerParameter(1)</Num>～"
   },
   {
-    "RowOffset": 757150,
     "RowId": 12755,
     "Text": "蒼天街振興券"
   },
   {
-    "RowOffset": 757182,
     "RowId": 12756,
     "Text": "報酬経験値"
   },
   {
-    "RowOffset": 757210,
     "RowId": 12757,
     "Text": "所持数"
   },
   {
-    "RowOffset": 757230,
     "RowId": 12758,
     "Text": "\uE03D<Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 757250,
     "RowId": 12759,
     "Text": "REWARD"
   },
   {
-    "RowOffset": 757270,
     "RowId": 12760,
     "Text": "必要収集価値"
   },
   {
-    "RowOffset": 757302,
     "RowId": 12761,
     "Text": "<Num>IntegerParameter(1)</Num>～<If(Equal(IntegerParameter(2),0))> <Else/><Num>IntegerParameter(2)</Num></If>"
   },
   {
-    "RowOffset": 757342,
     "RowId": 12762,
     "Text": "<If(GreaterThan(IntegerParameter(2),0))>クポフォーチュン引換券の所持数が上限に達しているため、このアイテムを納品してもスタンプを押せません。\n<Else/> </If><If(GreaterThan(IntegerParameter(1),0))><sheet(Item,IntegerParameter(1),0)>の所持数が上限に達するため、すべての<sheet(Item,IntegerParameter(1),0)>は受け取れません。\n<Else/> </If>よろしいですか？"
   },
   {
-    "RowOffset": 757666,
     "RowId": 12763,
     "Text": "Total"
   },
   {
-    "RowOffset": 757682,
     "RowId": 12764,
     "Text": "技巧点"
   },
   {
-    "RowOffset": 757702,
     "RowId": 12765,
     "Text": ""
   },
   {
-    "RowOffset": 757714,
     "RowId": 12766,
     "Text": "～"
   },
   {
-    "RowOffset": 757730,
     "RowId": 12767,
     "Text": "--"
   },
   {
-    "RowOffset": 757746,
     "RowId": 12768,
     "Text": "SEALS OF FORTUNE"
   },
   {
-    "RowOffset": 757774,
     "RowId": 12769,
     "Text": "クポフォーチュン引換券"
   },
   {
-    "RowOffset": 757818,
     "RowId": 12770,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 757842,
     "RowId": 12771,
     "Text": "クポフォーチュン引換券の所持数が上限に達しているため、スタンプを押せません。"
   },
   {
-    "RowOffset": 757970,
     "RowId": 12772,
     "Text": "ランキング集計期間"
   },
   {
-    "RowOffset": 758010,
     "RowId": 12773,
     "Text": "<If(Equal(IntegerParameter(1),0))> <Else/><SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>終了</If>"
   },
   {
-    "RowOffset": 758074,
     "RowId": 12774,
     "Text": "※自分のホームワールドではないため、ランキング技巧点は加算されません。"
   },
   {
-    "RowOffset": 758190,
     "RowId": 12775,
     "Text": "ランキング技巧点"
   },
   {
-    "RowOffset": 758226,
     "RowId": 12776,
     "Text": "累積技巧点"
   },
   {
-    "RowOffset": 758254,
     "RowId": 12777,
     "Text": "<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>～<Else/>0</If>"
   },
   {
-    "RowOffset": 758286,
     "RowId": 12778,
     "Text": "ランキング集計期間外"
   },
   {
-    "RowOffset": 758330,
     "RowId": 12779,
     "Text": ""
   },
   {
-    "RowOffset": 758342,
     "RowId": 12780,
     "Text": "KUPO of FORTUNE"
   },
   {
-    "RowOffset": 758370,
     "RowId": 12781,
     "Text": "<Num>IntegerParameter(1)</Num>等"
   },
   {
-    "RowOffset": 758390,
     "RowId": 12782,
     "Text": "閉じる"
   },
   {
-    "RowOffset": 758410,
     "RowId": 12783,
     "Text": "蒼天街復興に尽力した\n多くの名も無き者たちと\n偉大なる<sheet(ClassJob,IntegerParameter(1),0)>を讃う"
   },
   {
-    "RowOffset": 758530,
     "RowId": 12784,
     "Text": "閉じる"
   },
   {
-    "RowOffset": 758550,
     "RowId": 12785,
     "Text": "For Our Skybuilders"
   },
   {
-    "RowOffset": 758582,
     "RowId": 12786,
     "Text": "寄贈\u3000蒼天街住民有志一同"
   },
   {
-    "RowOffset": 758630,
     "RowId": 12787,
     "Text": ""
   },
   {
-    "RowOffset": 758642,
     "RowId": 12788,
     "Text": ""
   },
   {
-    "RowOffset": 758654,
     "RowId": 12789,
     "Text": ""
   },
   {
-    "RowOffset": 758666,
     "RowId": 12790,
     "Text": "COLLECTION"
   },
   {
-    "RowOffset": 758690,
     "RowId": 12791,
     "Text": "だいじなもの"
   },
   {
-    "RowOffset": 758722,
     "RowId": 12792,
     "Text": ""
   },
   {
-    "RowOffset": 758734,
     "RowId": 12793,
     "Text": ""
   },
   {
-    "RowOffset": 758746,
     "RowId": 12794,
     "Text": ""
   },
   {
-    "RowOffset": 758758,
     "RowId": 12795,
     "Text": ""
   },
   {
-    "RowOffset": 758770,
     "RowId": 12796,
     "Text": ""
   },
   {
-    "RowOffset": 758782,
     "RowId": 12797,
     "Text": ""
   },
   {
-    "RowOffset": 758794,
     "RowId": 12798,
     "Text": ""
   },
   {
-    "RowOffset": 758806,
     "RowId": 12799,
     "Text": ""
   },
   {
-    "RowOffset": 758818,
     "RowId": 12800,
     "Text": "FELLOWSHIPS"
   },
   {
-    "RowOffset": 758842,
     "RowId": 12801,
     "Text": "フェローシップ一覧"
   },
   {
-    "RowOffset": 758882,
     "RowId": 12802,
     "Text": "フェローシップを作る"
   },
   {
-    "RowOffset": 758926,
     "RowId": 12803,
     "Text": "所属しているフェローシップがありません。"
   },
   {
-    "RowOffset": 758998,
     "RowId": 12804,
     "Text": "フェローシップ読み込み中"
   },
   {
-    "RowOffset": 759046,
     "RowId": 12805,
     "Text": "<If(Equal(IntegerParameter(1),0))>フェローシップの名前を決めてください。<Else/>変更したいフェローシップの名前を入力してください。</If>"
   },
   {
-    "RowOffset": 759202,
     "RowId": 12806,
     "Text": "フェローシップ名は日本語入力を含めた文字列と以下の記号が設定可能です。\n<span style=\"color: #ff7b1a;\">‘ . , : ; ! ? & - _</span>\n\n•全角の記号や半角カタカナは使えません。\n•半角スペースや_は2文字以上続けて使えません。\n•先頭や末尾に半角スペースがある名称は使えません。\n•記号だけの名前は使えません。"
   },
   {
-    "RowOffset": 759638,
     "RowId": 12807,
     "Text": "フェローシップ名をコピーする"
   },
   {
-    "RowOffset": 759694,
     "RowId": 12808,
     "Text": "このまま閉じると設定中の内容が破棄されます。\nよろしいですか？"
   },
   {
-    "RowOffset": 759802,
     "RowId": 12809,
     "Text": "FELLOWSHIP"
   },
   {
-    "RowOffset": 759826,
     "RowId": 12810,
     "Text": "フェローシップ"
   },
   {
-    "RowOffset": 759858,
     "RowId": 12811,
     "Text": "全般"
   },
   {
-    "RowOffset": 759878,
     "RowId": 12812,
     "Text": "掲示板"
   },
   {
-    "RowOffset": 759898,
     "RowId": 12813,
     "Text": "メンバー"
   },
   {
-    "RowOffset": 759922,
     "RowId": 12814,
     "Text": "フェローシップ設定変更"
   },
   {
-    "RowOffset": 759966,
     "RowId": 12815,
     "Text": "FELLOWSHIP SETTINGS"
   },
   {
-    "RowOffset": 759998,
     "RowId": 12816,
     "Text": "フェローシップ設定"
   },
   {
-    "RowOffset": 760038,
     "RowId": 12817,
     "Text": "フェローシップ設定はマスターのみ利用できます。"
   },
   {
-    "RowOffset": 760118,
     "RowId": 12818,
     "Text": "フェローシップ名変更"
   },
   {
-    "RowOffset": 760162,
     "RowId": 12819,
     "Text": "フェローシップ名編集を開く"
   },
   {
-    "RowOffset": 760214,
     "RowId": 12820,
     "Text": "フェローシップの主な活動"
   },
   {
-    "RowOffset": 760262,
     "RowId": 12821,
     "Text": "Main"
   },
   {
-    "RowOffset": 760278,
     "RowId": 12822,
     "Text": "Sub1"
   },
   {
-    "RowOffset": 760294,
     "RowId": 12823,
     "Text": "Sub2"
   },
   {
-    "RowOffset": 760310,
     "RowId": 12824,
     "Text": "フェローシップブラックリスト確認"
   },
   {
-    "RowOffset": 760370,
     "RowId": 12825,
     "Text": "確認する"
   },
   {
-    "RowOffset": 760394,
     "RowId": 12826,
     "Text": "フェローシップの解散"
   },
   {
-    "RowOffset": 760438,
     "RowId": 12827,
     "Text": "解散する"
   },
   {
-    "RowOffset": 760462,
     "RowId": 12828,
     "Text": "決定"
   },
   {
-    "RowOffset": 760482,
     "RowId": 12829,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 760510,
     "RowId": 12830,
     "Text": "FELLOWSHIP BLACKLIST"
   },
   {
-    "RowOffset": 760542,
     "RowId": 12831,
     "Text": "フェローシップブラックリスト"
   },
   {
-    "RowOffset": 760598,
     "RowId": 12832,
     "Text": "Name"
   },
   {
-    "RowOffset": 760614,
     "RowId": 12833,
     "Text": "Home World"
   },
   {
-    "RowOffset": 760638,
     "RowId": 12834,
     "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
   },
   {
-    "RowOffset": 760662,
     "RowId": 12835,
     "Text": "閉じる"
   },
   {
-    "RowOffset": 760682,
     "RowId": 12836,
     "Text": "フェローシップブラックリストから外す"
   },
   {
-    "RowOffset": 760750,
     "RowId": 12837,
     "Text": "<String>StringParameter(1)</String>\nを解散します。本当によろしいですか？\n"
   },
   {
-    "RowOffset": 760830,
     "RowId": 12838,
     "Text": "解散する"
   },
   {
-    "RowOffset": 760854,
     "RowId": 12839,
     "Text": "決定"
   },
   {
-    "RowOffset": 760874,
     "RowId": 12840,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 760902,
     "RowId": 12841,
     "Text": "Fellowship Board"
   },
   {
-    "RowOffset": 760930,
     "RowId": 12842,
     "Text": "フェローシップボード編集"
   },
   {
-    "RowOffset": 760978,
     "RowId": 12843,
     "Text": "FELLOWSHIP BOARD"
   },
   {
-    "RowOffset": 761006,
     "RowId": 12844,
     "Text": "フェローシップボード編集"
   },
   {
-    "RowOffset": 761054,
     "RowId": 12845,
     "Text": "Questionnaire"
   },
   {
-    "RowOffset": 761078,
     "RowId": 12846,
     "Text": "アンケート設定"
   },
   {
-    "RowOffset": 761110,
     "RowId": 12847,
     "Text": "アンケートがあります。"
   },
   {
-    "RowOffset": 761154,
     "RowId": 12848,
     "Text": "現在、アンケートはありません。"
   },
   {
-    "RowOffset": 761210,
     "RowId": 12849,
     "Text": "回答期限：<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>"
   },
   {
-    "RowOffset": 761274,
     "RowId": 12850,
     "Text": "確認する"
   },
   {
-    "RowOffset": 761298,
     "RowId": 12851,
     "Text": "QUESTIONNAIRE SETTINGS"
   },
   {
-    "RowOffset": 761334,
     "RowId": 12852,
     "Text": "アンケート設定"
   },
   {
-    "RowOffset": 761366,
     "RowId": 12853,
     "Text": "アンケート内容"
   },
   {
-    "RowOffset": 761398,
     "RowId": 12854,
     "Text": "回答項目"
   },
   {
-    "RowOffset": 761422,
     "RowId": 12855,
     "Text": "1."
   },
   {
-    "RowOffset": 761438,
     "RowId": 12856,
     "Text": "2."
   },
   {
-    "RowOffset": 761454,
     "RowId": 12857,
     "Text": "3."
   },
   {
-    "RowOffset": 761470,
     "RowId": 12858,
     "Text": "4."
   },
   {
-    "RowOffset": 761486,
     "RowId": 12859,
     "Text": "5."
   },
   {
-    "RowOffset": 761502,
     "RowId": 12860,
     "Text": "回答期限"
   },
   {
-    "RowOffset": 761526,
     "RowId": 12861,
     "Text": "日間"
   },
   {
-    "RowOffset": 761546,
     "RowId": 12862,
     "Text": "決定"
   },
   {
-    "RowOffset": 761566,
     "RowId": 12863,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 761594,
     "RowId": 12864,
     "Text": "設定した内容でメンバーに対して\nアンケートを公開します。よろしいですか？\n"
   },
   {
-    "RowOffset": 761718,
     "RowId": 12865,
     "Text": "<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec> まで"
   },
   {
-    "RowOffset": 761774,
     "RowId": 12866,
     "Text": "削除する"
   },
   {
-    "RowOffset": 761798,
     "RowId": 12867,
     "Text": "アンケートを削除します。\nよろしいですか？"
   },
   {
-    "RowOffset": 761874,
     "RowId": 12868,
     "Text": "QUESTIONNAIRE"
   },
   {
-    "RowOffset": 761898,
     "RowId": 12869,
     "Text": "アンケート"
   },
   {
-    "RowOffset": 761926,
     "RowId": 12870,
     "Text": "回答する"
   },
   {
-    "RowOffset": 761950,
     "RowId": 12871,
     "Text": "<Num>IntegerParameter(1)</Num>人"
   },
   {
-    "RowOffset": 761970,
     "RowId": 12872,
     "Text": "NOTICES"
   },
   {
-    "RowOffset": 761990,
     "RowId": 12873,
     "Text": "メモ編集"
   },
   {
-    "RowOffset": 762014,
     "RowId": 12874,
     "Text": "NOTICE"
   },
   {
-    "RowOffset": 762034,
     "RowId": 12875,
     "Text": "メモ編集"
   },
   {
-    "RowOffset": 762058,
     "RowId": 12876,
     "Text": "メンバーを募集する"
   },
   {
-    "RowOffset": 762098,
     "RowId": 12877,
     "Text": "掲載期限：[<SetTime>IntegerParameter(1)</SetTime><Num>t_year</Num>/<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
   },
   {
-    "RowOffset": 762162,
     "RowId": 12878,
     "Text": "RECRUITMENT SETTINGS"
   },
   {
-    "RowOffset": 762194,
     "RowId": 12879,
     "Text": "メンバー募集設定"
   },
   {
-    "RowOffset": 762230,
     "RowId": 12880,
     "Text": "募集フェローシップ名"
   },
   {
-    "RowOffset": 762274,
     "RowId": 12881,
     "Text": "フェローシップの主な活動"
   },
   {
-    "RowOffset": 762322,
     "RowId": 12882,
     "Text": "Main"
   },
   {
-    "RowOffset": 762338,
     "RowId": 12883,
     "Text": "Sub1"
   },
   {
-    "RowOffset": 762354,
     "RowId": 12884,
     "Text": "Sub2"
   },
   {
-    "RowOffset": 762370,
     "RowId": 12885,
     "Text": "自由コメント（省略可）"
   },
   {
-    "RowOffset": 762414,
     "RowId": 12886,
     "Text": "募集言語設定"
   },
   {
-    "RowOffset": 762446,
     "RowId": 12887,
     "Text": "登録する"
   },
   {
-    "RowOffset": 762470,
     "RowId": 12888,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 762498,
     "RowId": 12889,
     "Text": "募集をやめる"
   },
   {
-    "RowOffset": 762530,
     "RowId": 12890,
     "Text": "フェローシップメンバーが書き込んだコメントが表示されます。\n最大100件まで保存され、古いものから消えていきます。"
   },
   {
-    "RowOffset": 762710,
     "RowId": 12891,
     "Text": "コメントを書き込む"
   },
   {
-    "RowOffset": 762750,
     "RowId": 12892,
     "Text": "コメントを削除する"
   },
   {
-    "RowOffset": 762790,
     "RowId": 12893,
     "Text": "このコメントは削除されました。"
   },
   {
-    "RowOffset": 762846,
     "RowId": 12894,
     "Text": "コメント読み込み中"
   },
   {
-    "RowOffset": 762886,
     "RowId": 12895,
     "Text": "<String>StringParameter(1)</String> <Icon>88</Icon> <String>StringParameter(2)</String>"
   },
   {
-    "RowOffset": 762918,
     "RowId": 12896,
     "Text": "MESSAGE BOARD"
   },
   {
-    "RowOffset": 762942,
     "RowId": 12897,
     "Text": "フェローシップ掲示板の書き込み"
   },
   {
-    "RowOffset": 762998,
     "RowId": 12898,
     "Text": "表情「素顔」"
   },
   {
-    "RowOffset": 763030,
     "RowId": 12899,
     "Text": "表情「不敵な笑み」"
   },
   {
-    "RowOffset": 763070,
     "RowId": 12900,
     "Text": "表情「喜ぶ」"
   },
   {
-    "RowOffset": 763102,
     "RowId": 12901,
     "Text": "表情「楽しい」"
   },
   {
-    "RowOffset": 763134,
     "RowId": 12902,
     "Text": "表情「笑う」"
   },
   {
-    "RowOffset": 763166,
     "RowId": 12903,
     "Text": "表情「悩む」"
   },
   {
-    "RowOffset": 763198,
     "RowId": 12904,
     "Text": "表情「哀しむ」"
   },
   {
-    "RowOffset": 763230,
     "RowId": 12905,
     "Text": "表情「驚く」"
   },
   {
-    "RowOffset": 763262,
     "RowId": 12906,
     "Text": "Members"
   },
   {
-    "RowOffset": 763282,
     "RowId": 12907,
     "Text": "Group"
   },
   {
-    "RowOffset": 763298,
     "RowId": 12908,
     "Text": "Home World"
   },
   {
-    "RowOffset": 763322,
     "RowId": 12909,
     "Text": "PLAYER"
   },
   {
-    "RowOffset": 763342,
     "RowId": 12910,
     "Text": "グループ設定"
   },
   {
-    "RowOffset": 763374,
     "RowId": 12911,
     "Text": "フレンド申請をする"
   },
   {
-    "RowOffset": 763414,
     "RowId": 12912,
     "Text": "クロスワールドリンクシェルに勧誘する"
   },
   {
-    "RowOffset": 763482,
     "RowId": 12913,
     "Text": "フェローシップから除名する"
   },
   {
-    "RowOffset": 763534,
     "RowId": 12914,
     "Text": "マスターを委譲する"
   },
   {
-    "RowOffset": 763574,
     "RowId": 12915,
     "Text": "運営に任命する"
   },
   {
-    "RowOffset": 763606,
     "RowId": 12916,
     "Text": "フェローシップブラックリストに登録"
   },
   {
-    "RowOffset": 763670,
     "RowId": 12917,
     "Text": "運営をやめる"
   },
   {
-    "RowOffset": 763702,
     "RowId": 12918,
     "Text": "脱退する"
   },
   {
-    "RowOffset": 763726,
     "RowId": 12919,
     "Text": "全員表示"
   },
   {
-    "RowOffset": 763750,
     "RowId": 12920,
     "Text": "EDIT GROUP"
   },
   {
-    "RowOffset": 763774,
     "RowId": 12921,
     "Text": "グループ設定"
   },
   {
-    "RowOffset": 763806,
     "RowId": 12922,
     "Text": "NAME"
   },
   {
-    "RowOffset": 763822,
     "RowId": 12923,
     "Text": "Group Name"
   },
   {
-    "RowOffset": 763846,
     "RowId": 12924,
     "Text": "グループなし"
   },
   {
-    "RowOffset": 763878,
     "RowId": 12925,
     "Text": "グループ<Num>IntegerParameter(1)</Num>"
   },
   {
-    "RowOffset": 763910,
     "RowId": 12926,
     "Text": "変更する"
   },
   {
-    "RowOffset": 763934,
     "RowId": 12927,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 763962,
     "RowId": 12928,
     "Text": "グループ名変更"
   },
   {
-    "RowOffset": 763994,
     "RowId": 12929,
     "Text": "グループ<Num>IntegerParameter(1)</Num>の名称を入力してください。"
   },
   {
-    "RowOffset": 764062,
     "RowId": 12930,
     "Text": "Name"
   },
   {
-    "RowOffset": 764078,
     "RowId": 12931,
     "Text": "OK"
   },
   {
-    "RowOffset": 764094,
     "RowId": 12932,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 764122,
     "RowId": 12933,
     "Text": "FELLOWSHIP FINDER"
   },
   {
-    "RowOffset": 764150,
     "RowId": 12934,
     "Text": "フェローシップ募集"
   },
   {
-    "RowOffset": 764190,
     "RowId": 12935,
     "Text": "フェローシップ名"
   },
   {
-    "RowOffset": 764226,
     "RowId": 12936,
     "Text": "主な活動"
   },
   {
-    "RowOffset": 764250,
     "RowId": 12937,
     "Text": "募集者名"
   },
   {
-    "RowOffset": 764274,
     "RowId": 12938,
     "Text": "コメント"
   },
   {
-    "RowOffset": 764298,
     "RowId": 12939,
     "Text": "フェローシップ名"
   },
   {
-    "RowOffset": 764334,
     "RowId": 12940,
     "Text": "所属人数"
   },
   {
-    "RowOffset": 764358,
     "RowId": 12941,
     "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
   },
   {
-    "RowOffset": 764390,
     "RowId": 12942,
     "Text": "主な活動"
   },
   {
-    "RowOffset": 764414,
     "RowId": 12943,
     "Text": "コメント"
   },
   {
-    "RowOffset": 764438,
     "RowId": 12944,
     "Text": "掲載期限"
   },
   {
-    "RowOffset": 764462,
     "RowId": 12945,
     "Text": "<String>StringParameter(1)</String>\nに入ります。よろしいですか？"
   },
   {
-    "RowOffset": 764526,
     "RowId": 12946,
     "Text": "SEARCH FELLOWSHIPS"
   },
   {
-    "RowOffset": 764558,
     "RowId": 12947,
     "Text": "フェローシップ募集検索"
   },
   {
-    "RowOffset": 764602,
     "RowId": 12948,
     "Text": "フェローシップの主な活動"
   },
   {
-    "RowOffset": 764650,
     "RowId": 12949,
     "Text": "募集言語設定"
   },
   {
-    "RowOffset": 764682,
     "RowId": 12950,
     "Text": "決定"
   },
   {
-    "RowOffset": 764702,
     "RowId": 12951,
     "Text": "キャンセル"
   },
   {
-    "RowOffset": 764730,
     "RowId": 12952,
     "Text": "Master"
   },
   {
-    "RowOffset": 764750,
     "RowId": 12953,
     "Text": "データを取得しています。"
   },
   {
-    "RowOffset": 764798,
     "RowId": 12954,
     "Text": "データの取得に失敗しました。"
   },
   {
-    "RowOffset": 764854,
     "RowId": 12955,
     "Text": "募集人数設定"
   },
   {
-    "RowOffset": 764886,
     "RowId": 12956,
     "Text": "人になるまで募集する（現在：<If(Equal(IntegerParameter(1),1000))><span style=\"color: #ff8080;\"><kilo(IntegerParameter(1),,)></span><Else/><kilo(IntegerParameter(1),,)></If>/1,000人）"
   },
   {
-    "RowOffset": 765010,
     "RowId": 12957,
     "Text": "コメントがありません。"
   },
   {
-    "RowOffset": 765054,
     "RowId": 12958,
     "Text": "メンバーがいません。"
   },
   {
-    "RowOffset": 765098,
     "RowId": 12959,
     "Text": "期限切れ"
   },
   {
-    "RowOffset": 765122,
     "RowId": 12960,
     "Text": "掲示板に書き込みます。\nよろしいですか？\n"
   },
   {
-    "RowOffset": 765198,
     "RowId": 12961,
     "Text": "選択した以下のコメントを削除します。\nよろしいですか？\n\n《削除するコメント》\n<String>StringParameter(1)</String>\n"
   },
   {
-    "RowOffset": 765346,
     "RowId": 12962,
     "Text": "<kilo(IntegerParameter(1),,)>人になるまで募集"
   },
   {
-    "RowOffset": 765390,
     "RowId": 12963,
     "Text": "フェローシップに勧誘する"
   },
   {
-    "RowOffset": 765438,
     "RowId": 12964,
     "Text": "<String>StringParameter(1)</String>に勧誘する"
   },
   {
-    "RowOffset": 765470,
     "RowId": 12965,
     "Text": "フェローシップ勧誘"
   },
   {
-    "RowOffset": 765510,
     "RowId": 12966,
     "Text": "FELLOWSHIP INVITATION"
   },
   {
-    "RowOffset": 765542,
     "RowId": 12967,
     "Text": "フェローシップ勧誘"
   },
   {
-    "RowOffset": 765582,
     "RowId": 12968,
     "Text": "Master"
   },
   {
-    "RowOffset": 765602,
     "RowId": 12969,
     "Text": "<kilo(IntegerParameter(1),,)>/1,000"
   },
   {
-    "RowOffset": 765630,
     "RowId": 12970,
     "Text": "FELLOWSHIP BOARD"
   },
   {
-    "RowOffset": 765658,
     "RowId": 12971,
     "Text": "加入する"
   },
   {
-    "RowOffset": 765682,
     "RowId": 12972,
     "Text": "断る"
   },
   {
-    "RowOffset": 765702,
     "RowId": 12973,
     "Text": "「<String>StringParameter(1)</String>」\nに加入します。よろしいですか？"
   },
   {
-    "RowOffset": 765774,
     "RowId": 12974,
     "Text": "「<String>StringParameter(1)</String>」\nの勧誘を断ります。よろしいですか？"
   },
   {
-    "RowOffset": 765854,
     "RowId": 12975,
     "Text": "<String>StringParameter(1)</String>\nを脱退します。よろしいですか？"
   },
   {
-    "RowOffset": 765922,
     "RowId": 12976,
     "Text": "脱退する"
   },
   {
-    "RowOffset": 765946,
     "RowId": 12977,
     "Text": "仮加入"
   },
   {
-    "RowOffset": 765966,
     "RowId": 12978,
     "Text": "フェローシップへの勧誘を取りやめる"
   },
   {
-    "RowOffset": 766030,
     "RowId": 12979,
     "Text": "仮加入"
   },
   {
-    "RowOffset": 766050,
     "RowId": 12980,
     "Text": "フェローシップ人数"
   },
   {
-    "RowOffset": 766090,
     "RowId": 12981,
     "Text": "フェローシップの主な活動"
   },
   {
-    "RowOffset": 766138,
     "RowId": 12982,
     "Text": "Main"
   },
   {
-    "RowOffset": 766154,
     "RowId": 12983,
     "Text": "Sub1"
   },
   {
-    "RowOffset": 766170,
     "RowId": 12984,
     "Text": "Sub2"
   },
   {
-    "RowOffset": 766186,
     "RowId": 12985,
     "Text": "マスター"
   },
   {
-    "RowOffset": 766210,
     "RowId": 12986,
     "Text": "運営"
   },
   {
-    "RowOffset": 766230,
     "RowId": 12987,
     "Text": "データを取得できませんでした。"
   },
   {
-    "RowOffset": 766286,
     "RowId": 12988,
     "Text": "募集しているフェローシップは現在ありません。"
   },
   {
-    "RowOffset": 766366,
     "RowId": 12989,
     "Text": "フェローシップ募集のリストを更新します。"
   },
   {
-    "RowOffset": 766438,
     "RowId": 12990,
     "Text": "募集検索を開きます。"
   },
   {
-    "RowOffset": 766482,
     "RowId": 12991,
     "Text": "運営から外す"
   },
   {
-    "RowOffset": 766514,
     "RowId": 12992,
     "Text": "ヘルプを確認する"
   },
   {
-    "RowOffset": 766550,
     "RowId": 12993,
     "Text": "FELLOWSHIP HELP"
   },
   {
-    "RowOffset": 766578,
     "RowId": 12994,
     "Text": "フェローシップ一覧ヘルプ"
   },
   {
-    "RowOffset": 766626,
     "RowId": 12995,
     "Text": "FELLOWSHIP HELP"
   },
   {
-    "RowOffset": 766654,
     "RowId": 12996,
     "Text": "フェローシップヘルプ"
   },
   {
-    "RowOffset": 766698,
     "RowId": 12997,
     "Text": "FELLOWSHIP FINDER HELP"
   },
   {
-    "RowOffset": 766734,
     "RowId": 12998,
     "Text": "フェローシップ募集ヘルプ"
   },
   {
-    "RowOffset": 766782,
     "RowId": 12999,
     "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
   }
