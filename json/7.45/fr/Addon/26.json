@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 12500,
+    "Text": "Temps restant: <Num>IntegerParameter(1)</Num>m <Sec>IntegerParameter(2)</Sec>s"
+  },
+  {
+    "RowId": 12501,
+    "Text": "Feu"
+  },
+  {
+    "RowId": 12502,
+    "Text": "Glace"
+  },
+  {
+    "RowId": 12503,
+    "Text": "Vent"
+  },
+  {
+    "RowId": 12504,
+    "Text": "Terre"
+  },
+  {
+    "RowId": 12505,
+    "Text": "Foudre"
+  },
+  {
+    "RowId": 12506,
+    "Text": "Eau"
+  },
+  {
+    "RowId": 12507,
+    "Text": "Tranchant"
+  },
+  {
+    "RowId": 12508,
+    "Text": "Perforant"
+  },
+  {
+    "RowId": 12509,
+    "Text": "Contondant"
+  },
+  {
+    "RowId": 12510,
+    "Text": "Voyage inter-Monde"
+  },
+  {
+    "RowId": 12511,
+    "Text": ""
+  },
+  {
+    "RowId": 12512,
+    "Text": "Monde d'origine"
+  },
+  {
+    "RowId": 12513,
+    "Text": "Mondes disponibles"
+  },
+  {
+    "RowId": 12514,
+    "Text": "<If(Equal(IntegerParameter(1),2))><span style=\"color: #e1c500;\">Les voyages entre centres de traitement de données</span>\nCette fonctionnalité va plus loin que le voyage inter-Monde. Elle permet à vos personnages de visiter des Mondes hébergés sur d'autres centres de traitement de données pour peu que ces derniers appartiennent à la même région. Toutefois, des restrictions supplémentaires s'appliquent.\n\n<span style=\"color: #e1c500;\">Limitations du voyage entre centres de traitement de données</span>\n- Le transfert peut prendre environ 30 minutes suivant la congestion des serveurs.\n- La procédure ne peut être annulée une fois lancée. Vous ne pourrez pas vous connecter avec un personnage différent ou faire quoi que ce soit d'autre qu'attendre.\n- La procédure vous renverra à l'écran-titre, d'où vous devrez ensuite rejoindre le centre de traitement de données où vous souhaitiez vous rendre.\n- Vous ne pourrez pas jouer sur votre Monde d'origine avec d'autres personnages tant que celui avec lequel vous voyagez ne sera pas rentré.\n- Un personnage visitant déjà un autre centre de traitement de données ne peut pas directement voyager vers un autre. Il doit d'abord rentrer dans son Monde d'origine.\n\n<Else/> </If><If(LessThan(IntegerParameter(1),2))><span style=\"color: #e1c500;\">Les voyages inter-Monde</span>\nVous pouvez quitter <If(Equal(IntegerParameter(1),0))>votre Monde d'origine<Else/>le Monde où vous vous trouvez</If> pour en visiter d'autres appartenant au même centre de traitement de données.\nFormez une équipe prête pour l'aventure, partez à l'assaut de donjons ou faites des emplettes sur ces marchés exotiques; le choix est vôtre!\n\n<span style=\"color: #e1c500;\">Avertissement</span>\nLe niveau de fréquentation du Monde choisi au moment de confirmer votre demande peut considérablement augmenter le temps nécessaire à la procédure pour aboutir. Une fois celle-ci achevée, vous serez automatiquement transporté<If(PlayerParameter(4))>e<Else/> </If> vers votre destination, annulant par la même occasion toutes les activités en cours.\n\n<Else/> </If><span style=\"color: #e1c500;\">Limitations dans les <If(GreaterThan(IntegerParameter(1),0))>centres de traitement de données<Else/>Mondes</If> visités</span>\n<If(Equal(IntegerParameter(1),1))>Votre personnage ne se trouve actuellement pas dans son centre de traitement de données d'origine.\n<Else/> </If>Certaines fonctionnalités sont indisponibles à l'extérieur de votre <If(GreaterThan(IntegerParameter(1),0))>centre de traitement de données<Else/>Monde</If> d'origine.\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Liste d'amis</span>\n- Impossible de communiquer avec des amis se trouvant dans un autre centre de traitement de données\n- Impossible de former une équipe avec des amis se trouvant dans un autre centre de traitement de données\n- Impossible d'afficher les activités des amis se trouvant dans un autre centre de traitement de données\n\n<Else/> </If><span style=\"color: #e1c500;\">Compagnies libres</span>\n- Impossible d'en créer ou d'en rejoindre\n- Impossible de consulter les informations de sa compagnie libre\n- Impossible d'augmenter le nombre des crédits de compagnie grâce aux activités dans les Mondes visités\n- Statut de chef automatiquement cédé à un autre membre après 35 jours d'absence\n- Impossible d'afficher les activités des membres se trouvant dans un autre centre de traitement de données\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Linkshells inter-Monde</span>\n- Impossible d'en créer de nouvelles\n- Impossible d'en devenir le chef\n\n<Else/> </If><span style=\"color: #e1c500;\">Linkshells</span>\n- Impossible de les utiliser\n- Impossible de consulter les informations de ses linkshells\n- Impossible d'en créer ou d'en rejoindre\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Équipe JcJ</span>\n- Impossible d'utiliser les fonctionnalités liées aux équipes JcJ, y compris les canaux de discussion\n- Impossible de consulter les informations relatives aux équipes JcJ\n- Impossible de former ou de rejoindre une équipe JcJ\n\n<span style=\"color: #e1c500;\">Communautés</span>\n- Aucune fonctionnalité disponible, à l'exception de la recherche de communauté\n\n<Else/> </If><span style=\"color: #e1c500;\">Servant</span>\n- Impossible d'en engager ou d'en renvoyer définitivement\n- Impossible de vendre des objets sur les marchés, bien qu'il reste possible d'en acheter\n\n<span style=\"color: #e1c500;\">Logement</span>\n- Impossible d'acheter des terrains et des appartements\n- Impossible de partager une maison\n\n<span style=\"color: #e1c500;\">Lien éternel</span>\n- Impossible d'organiser une cérémonie du lien éternel\n- Impossible d'accepter la quête du lien éternel\n- Impossible d'inviter à une cérémonie des joueurs habitant un autre Monde\n\n<span style=\"color: #e1c500;\">Fonctionnalités et éléments divers</span>\n<If(Equal(IntegerParameter(1),2))>- Afin de participer à une partie classée de Crystalline Conflict, il est nécessaire de respecter les conditions suivantes:\n\u3000- Le Monde d'origine du personnage doit se trouver dans un centre de données physique accueillant des parties classées\n\u3000- La participation doit être enregistrée depuis le centre de données logique hôte\n<Else/> </If>- Impossible de participer à un tournoi du Choc des mascottes\n- Impossible de participer à un tournoi de Triple Triade\n- Impossible de participer ou de retirer un lot au Méga Cactpot\n- Impossible d'utiliser le service de courrier Mog\n- Scores obtenus dans les donjons sans fond non pris en compte dans les tableaux des classements\n- Impossible de se téléporter vers un ami ou un partenaire de lien éternel si celui-ci ne se trouve pas dans le même Monde\n- Impossible pour les mineurs et les botanistes de localiser les légendes locales et les points de récolte intacts"
+  },
+  {
+    "RowId": 12515,
+    "Text": "Monde d'origine"
+  },
+  {
+    "RowId": 12516,
+    "Text": "Monde actuel"
+  },
+  {
+    "RowId": 12517,
+    "Text": "Impossible de sélectionner ce Monde."
+  },
+  {
+    "RowId": 12518,
+    "Text": "Obtention des informations du Monde..."
+  },
+  {
+    "RowId": 12519,
+    "Text": "Voulez-vous vraiment visiter “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12520,
+    "Text": "Enregistrement de l'inscription pour le voyage inter-Monde en cours..."
+  },
+  {
+    "RowId": 12521,
+    "Text": "Destination: <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12522,
+    "Text": "Place dans la file: "
+  },
+  {
+    "RowId": 12523,
+    "Text": "Temps écoulé: <Num>IntegerParameter(1)</Num>m<Sec>IntegerParameter(2)</Sec>s/Temps d'attente moyen: "
+  },
+  {
+    "RowId": 12524,
+    "Text": "Voyage inter-Monde"
+  },
+  {
+    "RowId": 12525,
+    "Text": ""
+  },
+  {
+    "RowId": 12526,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12527,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12528,
+    "Text": "Place dans la file"
+  },
+  {
+    "RowId": 12529,
+    "Text": "Temps écoulé"
+  },
+  {
+    "RowId": 12530,
+    "Text": "Temps d'attente moyen"
+  },
+  {
+    "RowId": 12531,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12532,
+    "Text": "<Num>IntegerParameter(1)</Num><If(LessThanOrEqualTo(IntegerParameter(1),1))>er<Else/>e</If>"
+  },
+  {
+    "RowId": 12533,
+    "Text": "Au moins <Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>personne<Else/>personnes</If> en attente"
+  },
+  {
+    "RowId": 12534,
+    "Text": "<Num>IntegerParameter(1)</Num>m"
+  },
+  {
+    "RowId": 12535,
+    "Text": "<Num>IntegerParameter(1)</Num>m et plus"
+  },
+  {
+    "RowId": 12536,
+    "Text": "Moins de <Num>IntegerParameter(1)</Num>m"
+  },
+  {
+    "RowId": 12537,
+    "Text": "Voyage inter-Monde"
+  },
+  {
+    "RowId": 12538,
+    "Text": "En route!"
+  },
+  {
+    "RowId": 12539,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12540,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12541,
+    "Text": "<If(Equal(IntegerParameter(1),1))>Baroudeuse<Else/>Baroudeur</If>"
+  },
+  {
+    "RowId": 12542,
+    "Text": "Monde actuel"
+  },
+  {
+    "RowId": 12543,
+    "Text": "Informations générales"
+  },
+  {
+    "RowId": 12544,
+    "Text": "Liste des Mondes"
+  },
+  {
+    "RowId": 12545,
+    "Text": "Palmarès bleu"
+  },
+  {
+    "RowId": 12546,
+    "Text": ""
+  },
+  {
+    "RowId": 12547,
+    "Text": "Recruter"
+  },
+  {
+    "RowId": 12548,
+    "Text": "S'inscrire"
+  },
+  {
+    "RowId": 12549,
+    "Text": "Missions accomplies"
+  },
+  {
+    "RowId": 12550,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12551,
+    "Text": "Missions spéciales"
+  },
+  {
+    "RowId": 12552,
+    "Text": "Récompense de première victoire"
+  },
+  {
+    "RowId": 12553,
+    "Text": "Récompense"
+  },
+  {
+    "RowId": 12554,
+    "Text": "Récompense hebdomadaire"
+  },
+  {
+    "RowId": 12555,
+    "Text": "Fin dans<If(GreaterThan(IntegerParameter(1),0))> <Num>IntegerParameter(1)</Num> heure<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If><Else/> </If><If(GreaterThan(IntegerParameter(2),0))> <Num>IntegerParameter(2)</Num> minute<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If><Else/> </If><SetTime>IntegerParameter(3)</SetTime> (<Num>t_day</Num>.<Num>t_mon</Num> à <Num>t_hour</Num>:<Sec>t_min</Sec>)"
+  },
+  {
+    "RowId": 12556,
+    "Text": "<span style=\"color: #ff7b1a;\">Délai expiré</span>"
+  },
+  {
+    "RowId": 12557,
+    "Text": "Informations"
+  },
+  {
+    "RowId": 12558,
+    "Text": "Conditions de participation"
+  },
+  {
+    "RowId": 12559,
+    "Text": "Afficher l'aide des livraisons de la halle du Juste"
+  },
+  {
+    "RowId": 12560,
+    "Text": "Rang de contribution"
+  },
+  {
+    "RowId": 12561,
+    "Text": "Nv de contribution"
+  },
+  {
+    "RowId": 12562,
+    "Text": "<switch(IntegerParameter(1),<Head><sheet(ClassJob,9,0)></Head> / <Head><sheet(ClassJob,10,0)></Head> / <Head><sheet(ClassJob,11,0)></Head>,<Head><sheet(ClassJob,8,0)></Head> / <Head><sheet(ClassJob,12,0)></Head> / <Head><sheet(ClassJob,13,0)></Head>,<Head><sheet(ClassJob,14,0)></Head> / <Head><sheet(ClassJob,15,0)></Head>,<Head><sheet(ClassJob,16,0)></Head> / <Head><sheet(ClassJob,17,0)></Head>,<Head><sheet(ClassJob,18,0)></Head>)>"
+  },
+  {
+    "RowId": 12563,
+    "Text": "Objets requis"
+  },
+  {
+    "RowId": 12564,
+    "Text": "Possédés"
+  },
+  {
+    "RowId": 12565,
+    "Text": "<Num>IntegerParameter(1)</Num>/\uE03C<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12566,
+    "Text": "Rémunération"
+  },
+  {
+    "RowId": 12567,
+    "Text": "Livrer"
+  },
+  {
+    "RowId": 12568,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12569,
+    "Text": "Sélectionnez le nombre d'objets à livrer."
+  },
+  {
+    "RowId": 12570,
+    "Text": "Expérience"
+  },
+  {
+    "RowId": 12571,
+    "Text": "Livraisons de la halle du Juste"
+  },
+  {
+    "RowId": 12572,
+    "Text": "<switch(IntegerParameter(1),Métallurgistes,Façonniers,Préparateurs,Naturalistes,Pêcheurs)>: <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12573,
+    "Text": "Récompense"
+  },
+  {
+    "RowId": 12574,
+    "Text": "Accepter"
+  },
+  {
+    "RowId": 12575,
+    "Text": "Livraisons de Cristarium"
+  },
+  {
+    "RowId": 12576,
+    "Text": ""
+  },
+  {
+    "RowId": 12577,
+    "Text": "<switch(IntegerParameter(1),Métallurgistes,Façonniers,Préparateurs,Naturalistes,Pêcheurs)>: <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12578,
+    "Text": "Total"
+  },
+  {
+    "RowId": 12579,
+    "Text": "La limite ayant été atteinte, vous ne pourrez pas recevoir tous <frnoun(Item,2,IntegerParameter(1),2,1)>. Continuer?"
+  },
+  {
+    "RowId": 12580,
+    "Text": "Servants"
+  },
+  {
+    "RowId": 12581,
+    "Text": ""
+  },
+  {
+    "RowId": 12582,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 12583,
+    "Text": "Classe/Job"
+  },
+  {
+    "RowId": 12584,
+    "Text": "Objets"
+  },
+  {
+    "RowId": 12585,
+    "Text": "Gils"
+  },
+  {
+    "RowId": 12586,
+    "Text": "Objets en vente"
+  },
+  {
+    "RowId": 12587,
+    "Text": "Tâche en cours"
+  },
+  {
+    "RowId": 12588,
+    "Text": "Aucun objet en vente"
+  },
+  {
+    "RowId": 12589,
+    "Text": "<Num>IntegerParameter(1)</Num> objet<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> en vente"
+  },
+  {
+    "RowId": 12590,
+    "Text": "Aucune"
+  },
+  {
+    "RowId": 12591,
+    "Text": "Fin dans <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/>moins d'une minute</If></If>"
+  },
+  {
+    "RowId": 12592,
+    "Text": "Terminée"
+  },
+  {
+    "RowId": 12593,
+    "Text": "Ordre des servants"
+  },
+  {
+    "RowId": 12594,
+    "Text": ""
+  },
+  {
+    "RowId": 12595,
+    "Text": "Modifier l'ordre des servants"
+  },
+  {
+    "RowId": 12596,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 12597,
+    "Text": "<Num>IntegerParameter(1)</Num> objet<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> en vente jusqu'au <SetTime>IntegerParameter(2)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 12598,
+    "Text": "Aucune"
+  },
+  {
+    "RowId": 12599,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>Nv <Num>IntegerParameter(1)</Num> <Else/> </If><String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12600,
+    "Text": "Retour de <String>StringParameter(1)</String> dans <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>h<If(GreaterThan(IntegerParameter(3),0))> <Num>IntegerParameter(3)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/>moins d'une minute</If></If>"
+  },
+  {
+    "RowId": 12601,
+    "Text": "Terminée"
+  },
+  {
+    "RowId": 12602,
+    "Text": "Abonnement du servant terminé"
+  },
+  {
+    "RowId": 12603,
+    "Text": "Objets en vente:"
+  },
+  {
+    "RowId": 12604,
+    "Text": "Tâche en cours:"
+  },
+  {
+    "RowId": 12605,
+    "Text": ""
+  },
+  {
+    "RowId": 12606,
+    "Text": "--"
+  },
+  {
+    "RowId": 12607,
+    "Text": "Nom du servant"
+  },
+  {
+    "RowId": 12608,
+    "Text": "Numéro d'employé"
+  },
+  {
+    "RowId": 12609,
+    "Text": "Modifier"
+  },
+  {
+    "RowId": 12610,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12611,
+    "Text": "Renommer le set"
+  },
+  {
+    "RowId": 12612,
+    "Text": "Les sets peuvent être renommés à partir de leur sous-menu respectif."
+  },
+  {
+    "RowId": 12613,
+    "Text": "Entrez un nouveau nom pour le set “<String>StringParameter(1)</String>”. Laissez la zone de saisie vierge pour utiliser le nom par défaut."
+  },
+  {
+    "RowId": 12614,
+    "Text": ""
+  },
+  {
+    "RowId": 12615,
+    "Text": "Défis hebdomadaires"
+  },
+  {
+    "RowId": 12616,
+    "Text": "Missions normales"
+  },
+  {
+    "RowId": 12617,
+    "Text": "Sauvegarder"
+  },
+  {
+    "RowId": 12618,
+    "Text": "Charger"
+  },
+  {
+    "RowId": 12619,
+    "Text": ""
+  },
+  {
+    "RowId": 12620,
+    "Text": ""
+  },
+  {
+    "RowId": 12621,
+    "Text": ""
+  },
+  {
+    "RowId": 12622,
+    "Text": ""
+  },
+  {
+    "RowId": 12623,
+    "Text": ""
+  },
+  {
+    "RowId": 12624,
+    "Text": "Voulez-vous vraiment visiter “<String>StringParameter(1)</String>”?\n<span style=\"color: #ffff66;\">Vous ne pouvez pas utiliser le voyage inter-Monde en faisant partie d'une équipe standard.\nVous pouvez néanmoins faire partie d'une équipe inter-Monde ou être en cours de recherche d'équipe.</span>"
+  },
+  {
+    "RowId": 12625,
+    "Text": "<If(Equal(IntegerParameter(1),1))>Exploratrice<Else/>Explorateur</If>"
+  },
+  {
+    "RowId": 12626,
+    "Text": "Vous ne pourrez pas recevoir de notification de nouveau courrier si votre Monde d'origine et celui vers lequel vous voyagez ne partagent pas le même centre de traitement de données."
+  },
+  {
+    "RowId": 12627,
+    "Text": "<If(Equal(IntegerParameter(1),1))>Voyageuse<Else/>Voyageur</If>"
+  },
+  {
+    "RowId": 12628,
+    "Text": "Il est actuellement impossible d'obtenir les données du joueur ayant envoyé la requête d'ami. Vous pouvez choisir que de réfléchir ou de la refuser.\n* Les requêtes d'ami non traitées expirent au bout d'un certain temps. En pareil cas, le nom de l'expéditeur disparaîtra de la liste quelle que soit votre réponse."
+  },
+  {
+    "RowId": 12629,
+    "Text": ""
+  },
+  {
+    "RowId": 12630,
+    "Text": "Contrats du clan Kupo (débutant)"
+  },
+  {
+    "RowId": 12631,
+    "Text": "Contrats du clan Kupo (intermédiaire)"
+  },
+  {
+    "RowId": 12632,
+    "Text": "Contrats du clan Kupo (avancé)"
+  },
+  {
+    "RowId": 12633,
+    "Text": "Contrats d'élite du clan Kupo"
+  },
+  {
+    "RowId": 12634,
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><kilo(IntegerParameter(1),)> gil<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> / <kilo(IntegerParameter(2),)> insigne<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> de chasse / <kilo(IntegerParameter(3),)> Exp<Else/><kilo(IntegerParameter(1),)> gil<If(LessThanOrEqualTo(IntegerParameter(1),1))> <Else/>s</If> / <kilo(IntegerParameter(2),)> insigne<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> de chasse</If>"
+  },
+  {
+    "RowId": 12635,
+    "Text": "Clan Kupo"
+  },
+  {
+    "RowId": 12636,
+    "Text": "<switch(IntegerParameter(1),Contrat du clan Kupo (débutant),Contrat du clan Kupo (intermédiaire),Contrat du clan Kupo (avancé),Contrat d'élite du clan Kupo)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12637,
+    "Text": "<switch(IntegerParameter(1),Contrat du clan (débutant),Contrat du clan (intermédiaire),Contrat du clan (avancé),Contrat d'élite du clan)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12638,
+    "Text": "<switch(IntegerParameter(1),Contrat de chasse,Contrat d'élite)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12639,
+    "Text": "Contrats des glaneurs (débutant)"
+  },
+  {
+    "RowId": 12640,
+    "Text": "Contrats des glaneurs (intermédiaire)"
+  },
+  {
+    "RowId": 12641,
+    "Text": "Contrats des glaneurs (avancé)"
+  },
+  {
+    "RowId": 12642,
+    "Text": "Contrats d'élite des glaneurs"
+  },
+  {
+    "RowId": 12643,
+    "Text": "Collège des glaneurs"
+  },
+  {
+    "RowId": 12644,
+    "Text": "<switch(IntegerParameter(1),Contrat du collège des glaneurs (débutant),Contrat du collège des glaneurs (intermédiaire),Contrat du collège des glaneurs (avancé),Contrat d'élite du collège des glaneurs)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12645,
+    "Text": "Contrats de chasse (débutant)"
+  },
+  {
+    "RowId": 12646,
+    "Text": "Contrats de chasse (intermédiaire)"
+  },
+  {
+    "RowId": 12647,
+    "Text": "Contrats de chasse (avancé)"
+  },
+  {
+    "RowId": 12648,
+    "Text": "Contrats d'élite de la coopérative turalienne"
+  },
+  {
+    "RowId": 12649,
+    "Text": "Coopérative de chasse turalienne"
+  },
+  {
+    "RowId": 12650,
+    "Text": "<switch(IntegerParameter(1),Contrat de la coopérative turalienne (débutant),Contrat de la coopérative turalienne (intermédiaire),Contrat de la coopérative turalienne (avancé),Contrat d'élite de la coopérative turalienne)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12651,
+    "Text": ""
+  },
+  {
+    "RowId": 12652,
+    "Text": ""
+  },
+  {
+    "RowId": 12653,
+    "Text": ""
+  },
+  {
+    "RowId": 12654,
+    "Text": ""
+  },
+  {
+    "RowId": 12655,
+    "Text": ""
+  },
+  {
+    "RowId": 12656,
+    "Text": ""
+  },
+  {
+    "RowId": 12657,
+    "Text": ""
+  },
+  {
+    "RowId": 12658,
+    "Text": ""
+  },
+  {
+    "RowId": 12659,
+    "Text": ""
+  },
+  {
+    "RowId": 12660,
+    "Text": ""
+  },
+  {
+    "RowId": 12661,
+    "Text": ""
+  },
+  {
+    "RowId": 12662,
+    "Text": ""
+  },
+  {
+    "RowId": 12663,
+    "Text": ""
+  },
+  {
+    "RowId": 12664,
+    "Text": ""
+  },
+  {
+    "RowId": 12665,
+    "Text": ""
+  },
+  {
+    "RowId": 12666,
+    "Text": ""
+  },
+  {
+    "RowId": 12667,
+    "Text": ""
+  },
+  {
+    "RowId": 12668,
+    "Text": ""
+  },
+  {
+    "RowId": 12669,
+    "Text": ""
+  },
+  {
+    "RowId": 12670,
+    "Text": "Normal"
+  },
+  {
+    "RowId": 12671,
+    "Text": "Spécial"
+  },
+  {
+    "RowId": 12672,
+    "Text": "<switch(IntegerParameter(1),Point de récolte intact,Légende locale,Points de récolte éphémères)>\nHoraire(s) d'apparition (Heure éorzéenne)"
+  },
+  {
+    "RowId": 12673,
+    "Text": "Entre <Num>IntegerParameter(1)</Num>h<Sec>IntegerParameter(2)</Sec> et <Num>IntegerParameter(3)</Num>h<Sec>IntegerParameter(4)</Sec>"
+  },
+  {
+    "RowId": 12674,
+    "Text": "Ajouter une alerte juste avant cet horaire"
+  },
+  {
+    "RowId": 12675,
+    "Text": "Vous ne possédez pas l'exemplaire de <i>Légendes locales</i> relatif à cette zone."
+  },
+  {
+    "RowId": 12676,
+    "Text": "Récolter automatiquement l'objet sélectionné"
+  },
+  {
+    "RowId": 12677,
+    "Text": "<Num>IntegerParameter(1)</Num>+?"
+  },
+  {
+    "RowId": 12678,
+    "Text": "Récolte automatique"
+  },
+  {
+    "RowId": 12679,
+    "Text": "Arrêter la récolte?\n<span style=\"color: #ff8080;\">Ce point de récolte disparaîtra même s'il n'était pas vide.</span>"
+  },
+  {
+    "RowId": 12680,
+    "Text": "Arrêter"
+  },
+  {
+    "RowId": 12681,
+    "Text": "Point de récolte évanescent\nCondition: turbulences ombrales"
+  },
+  {
+    "RowId": 12682,
+    "Text": "<String>StringParameter(1)</String> ≧ <Num>IntegerParameter(2)</Num> nécessaire"
+  },
+  {
+    "RowId": 12683,
+    "Text": "Mettre fin à la pêche au harpon?\n<span style=\"color: #ff8080;\">Ce point de pêche disparaîtra même s'il n'était pas vide.</span></span>"
+  },
+  {
+    "RowId": 12684,
+    "Text": ""
+  },
+  {
+    "RowId": 12685,
+    "Text": ""
+  },
+  {
+    "RowId": 12686,
+    "Text": ""
+  },
+  {
+    "RowId": 12687,
+    "Text": ""
+  },
+  {
+    "RowId": 12688,
+    "Text": ""
+  },
+  {
+    "RowId": 12689,
+    "Text": ""
+  },
+  {
+    "RowId": 12690,
+    "Text": ""
+  },
+  {
+    "RowId": 12691,
+    "Text": "Participer sans le pouvoir de l'Écho"
+  },
+  {
+    "RowId": 12692,
+    "Text": "Permet de désactiver le pouvoir de l'écho.\n\n<span style=\"color: #ff8080;\">* Disponible uniquement lorsqu'une équipe compte le nombre de participants requis ou que l'option “Sans restriction” est activée.\n* Seul le chef d'équipe peut activer cette option.</span>"
+  },
+  {
+    "RowId": 12693,
+    "Text": "Définit la règle du butin appliquée pendant la mission.\n\n<span style=\"color: #ffff66;\">Normale</span>\nLes options “besoin”, “cupidité” et “passer” peuvent être choisies.\n\n<span style=\"color: #ffff66;\">Juste cupidité</span>\nSeules les options “cupidité” et “passer” sont disponibles.\n\n<span style=\"color: #ffff66;\">Maître du butin</span>\nLa distribution du butin est opérée par le chef d'équipe.\n\n<span style=\"color: #ff8080;\">* “Maître du butin” et “Juste cupidité” sont disponibles uniquement lorsqu'une équipe compte le nombre de participants requis ou que l'option “Sans restriction” est activée.\n* Certaines missions limitent les règles disponibles.\n* La règle du butin ne peut être changée pour certaines missions.\n* Seul le chef d'équipe peut changer la règle du butin.</span>"
+  },
+  {
+    "RowId": 12694,
+    "Text": "Définit la ou les langues utilisées lors des missions.\nLe groupement se fera avec des joueurs partageant tous une de ces langues.\n\n<span style=\"color: #ffff66;\">Le temps d'attente lors des groupements peut grandement varier en fonction des langues choisies et de celles utilisées dans les Mondes du centre de traitement de données.\nIl est recommandé d'essayer d'autres langues si les délais d'accès aux missions deviennent anormalement longs après changement.</span>\n\n<span style=\"color: #ff8080;\">* La langue du jeu est soulignée.\n* Ce choix est valable pour toutes les missions avec groupement, sauf certains jeux du Gold Saucer.</span>"
+  },
+  {
+    "RowId": 12695,
+    "Text": "Enregistrement impossible en mode Nouvelle partie +"
+  },
+  {
+    "RowId": 12696,
+    "Text": "Niveau synchronisé"
+  },
+  {
+    "RowId": 12697,
+    "Text": "Permet de synchroniser le niveau du personnage à celui de la mission.\n\n - Le taux de symbiose des objets augmente, même avec l'option “Sans restriction”.\n - Les ennemis octroient des points d'expérience et des objets, même avec l'option “Sans restriction”.\n\n<span style=\"color: #ff8080;\">* Disponible uniquement lorsque l'option “Sans restriction” est activée.\n* Seul le chef d'équipe peut activer cette option.</span>"
+  },
+  {
+    "RowId": 12698,
+    "Text": ""
+  },
+  {
+    "RowId": 12699,
+    "Text": ""
+  },
+  {
+    "RowId": 12700,
+    "Text": "Adjuration"
+  },
+  {
+    "RowId": 12701,
+    "Text": ""
+  },
+  {
+    "RowId": 12702,
+    "Text": "Équipe"
+  },
+  {
+    "RowId": 12703,
+    "Text": "Choix des équipiers"
+  },
+  {
+    "RowId": 12704,
+    "Text": "Exp"
+  },
+  {
+    "RowId": 12705,
+    "Text": "/"
+  },
+  {
+    "RowId": 12706,
+    "Text": "Participer"
+  },
+  {
+    "RowId": 12707,
+    "Text": "Mirages"
+  },
+  {
+    "RowId": 12708,
+    "Text": "Épopée"
+  },
+  {
+    "RowId": 12709,
+    "Text": "Épopée"
+  },
+  {
+    "RowId": 12710,
+    "Text": "Expérience (adjuration)"
+  },
+  {
+    "RowId": 12711,
+    "Text": "Afficher l'aide"
+  },
+  {
+    "RowId": 12712,
+    "Text": ""
+  },
+  {
+    "RowId": 12713,
+    "Text": ""
+  },
+  {
+    "RowId": 12714,
+    "Text": ""
+  },
+  {
+    "RowId": 12715,
+    "Text": ""
+  },
+  {
+    "RowId": 12716,
+    "Text": ""
+  },
+  {
+    "RowId": 12717,
+    "Text": ""
+  },
+  {
+    "RowId": 12718,
+    "Text": "Aide du système d'adjuration"
+  },
+  {
+    "RowId": 12719,
+    "Text": ""
+  },
+  {
+    "RowId": 12720,
+    "Text": "Niveau insuffisant"
+  },
+  {
+    "RowId": 12721,
+    "Text": "Classe non combattante"
+  },
+  {
+    "RowId": 12722,
+    "Text": "Job restreint"
+  },
+  {
+    "RowId": 12723,
+    "Text": "Épopée"
+  },
+  {
+    "RowId": 12724,
+    "Text": ""
+  },
+  {
+    "RowId": 12725,
+    "Text": "Alter ego"
+  },
+  {
+    "RowId": 12726,
+    "Text": "Alter ego"
+  },
+  {
+    "RowId": 12727,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>\uE033Nv. d'objet moyen: <Num>IntegerParameter(1)</Num> ou plus<Else/> </If><If(GreaterThan(IntegerParameter(2),0))>     \uE0BDNv. d'objet synchronisé: <Num>IntegerParameter(2)</Num><Else/> </If>"
+  },
+  {
+    "RowId": 12728,
+    "Text": "Niveau d'objet moyen insuffisant"
+  },
+  {
+    "RowId": 12729,
+    "Text": ""
+  },
+  {
+    "RowId": 12730,
+    "Text": "Paramètres de la fenêtre de log"
+  },
+  {
+    "RowId": 12731,
+    "Text": ""
+  },
+  {
+    "RowId": 12732,
+    "Text": "Couleur du texte"
+  },
+  {
+    "RowId": 12733,
+    "Text": "Effet sonore"
+  },
+  {
+    "RowId": 12734,
+    "Text": "Onglets d'affichage"
+  },
+  {
+    "RowId": 12735,
+    "Text": "Appliquer"
+  },
+  {
+    "RowId": 12736,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12737,
+    "Text": "Aperçu"
+  },
+  {
+    "RowId": 12738,
+    "Text": "Les messages ne s'afficheront dans aucun des onglets du log. Enregistrer ces paramètres?"
+  },
+  {
+    "RowId": 12739,
+    "Text": "Paramètres de la fenêtre de log"
+  },
+  {
+    "RowId": 12740,
+    "Text": "<span style=\"color: #ffff66;\">\n* Si la requête d'ami n'est pas acceptée lorsque vous êtes dans le même centre de données, vous serez considérés temporairement amis le temps d'une semaine. Passé ce délai, elle sera automatiquement refusée.</span>"
+  },
+  {
+    "RowId": 12741,
+    "Text": "<span style=\"color: #ffff66;\">\n* Même après ajout dans votre liste d'amis, vous ne pourrez pas voir les activités des personnages jouant dans d'autres régions que celle où vous vous trouvez.</span>"
+  },
+  {
+    "RowId": 12742,
+    "Text": "Vous êtes sur le point de d'envoyer une requête d'ami à <String>StringParameter(1)</String>, dont le Monde d'origine se trouve dans un centre de donnée d'une autre région. Confirmer?"
+  },
+  {
+    "RowId": 12743,
+    "Text": ""
+  },
+  {
+    "RowId": 12744,
+    "Text": ""
+  },
+  {
+    "RowId": 12745,
+    "Text": ""
+  },
+  {
+    "RowId": 12746,
+    "Text": ""
+  },
+  {
+    "RowId": 12747,
+    "Text": ""
+  },
+  {
+    "RowId": 12748,
+    "Text": ""
+  },
+  {
+    "RowId": 12749,
+    "Text": ""
+  },
+  {
+    "RowId": 12750,
+    "Text": "Reconstruction d'Ishgard"
+  },
+  {
+    "RowId": 12751,
+    "Text": ""
+  },
+  {
+    "RowId": 12752,
+    "Text": "Objet"
+  },
+  {
+    "RowId": 12753,
+    "Text": "Val. collection min."
+  },
+  {
+    "RowId": 12754,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12755,
+    "Text": "Assignats"
+  },
+  {
+    "RowId": 12756,
+    "Text": "Expérience"
+  },
+  {
+    "RowId": 12757,
+    "Text": "Possédés"
+  },
+  {
+    "RowId": 12758,
+    "Text": "\uE03D <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12759,
+    "Text": "Récompense"
+  },
+  {
+    "RowId": 12760,
+    "Text": "Valeur de collection"
+  },
+  {
+    "RowId": 12761,
+    "Text": "<Num>IntegerParameter(1)</Num><If(Equal(IntegerParameter(2),0))> <Else/> à <Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 12762,
+    "Text": "<If(GreaterThan(IntegerParameter(2),0))>La limite de koupons de la fortune ayant été atteinte, vous ne pourrez pas recevoir de tampons.\n<Else/> </If><If(GreaterThan(IntegerParameter(1),0))>La limite ayant été atteinte, vous ne pourrez pas recevoir tous <frnoun(Item,2,IntegerParameter(1),2,1)>.\n<Else/> </If>Continuer?"
+  },
+  {
+    "RowId": 12763,
+    "Text": "Total"
+  },
+  {
+    "RowId": 12764,
+    "Text": "Pts d'azur"
+  },
+  {
+    "RowId": 12765,
+    "Text": ""
+  },
+  {
+    "RowId": 12766,
+    "Text": "+"
+  },
+  {
+    "RowId": 12767,
+    "Text": "--"
+  },
+  {
+    "RowId": 12768,
+    "Text": "Tampons de la fortune"
+  },
+  {
+    "RowId": 12769,
+    "Text": "Koupons de la fortune"
+  },
+  {
+    "RowId": 12770,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12771,
+    "Text": "La limite de koupons de la fortune ayant été atteinte, vous ne pourrez pas recevoir de tampons."
+  },
+  {
+    "RowId": 12772,
+    "Text": "Fin du classement"
+  },
+  {
+    "RowId": 12773,
+    "Text": "<If(Equal(IntegerParameter(1),0))> <Else/>le <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec></If>"
+  },
+  {
+    "RowId": 12774,
+    "Text": "* Les points de classement ne peuvent pas être accumulés hors du Monde d'origine."
+  },
+  {
+    "RowId": 12775,
+    "Text": "Pts de classement"
+  },
+  {
+    "RowId": 12776,
+    "Text": "Pts cumulés"
+  },
+  {
+    "RowId": 12777,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>+<Else/>0</If>"
+  },
+  {
+    "RowId": 12778,
+    "Text": "Période hors classement"
+  },
+  {
+    "RowId": 12779,
+    "Text": ""
+  },
+  {
+    "RowId": 12780,
+    "Text": "Kupo de la fortune"
+  },
+  {
+    "RowId": 12781,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12782,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 12783,
+    "Text": "Ce monument est dédié aux prodigieux <Lower><sheet(ClassJob,IntegerParameter(1),0)></Lower>s et à tous les autres ouvriers qui ont aidé Azurée à renaître de ses cendres."
+  },
+  {
+    "RowId": 12784,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 12785,
+    "Text": "Leurs mains\nnous ont offert le ciel"
+  },
+  {
+    "RowId": 12786,
+    "Text": "Monument offert par les habitants d'Azurée "
+  },
+  {
+    "RowId": 12787,
+    "Text": ""
+  },
+  {
+    "RowId": 12788,
+    "Text": ""
+  },
+  {
+    "RowId": 12789,
+    "Text": ""
+  },
+  {
+    "RowId": 12790,
+    "Text": "Objets précieux"
+  },
+  {
+    "RowId": 12791,
+    "Text": ""
+  },
+  {
+    "RowId": 12792,
+    "Text": ""
+  },
+  {
+    "RowId": 12793,
+    "Text": ""
+  },
+  {
+    "RowId": 12794,
+    "Text": ""
+  },
+  {
+    "RowId": 12795,
+    "Text": ""
+  },
+  {
+    "RowId": 12796,
+    "Text": ""
+  },
+  {
+    "RowId": 12797,
+    "Text": ""
+  },
+  {
+    "RowId": 12798,
+    "Text": ""
+  },
+  {
+    "RowId": 12799,
+    "Text": ""
+  },
+  {
+    "RowId": 12800,
+    "Text": "Liste de vos communautés"
+  },
+  {
+    "RowId": 12801,
+    "Text": ""
+  },
+  {
+    "RowId": 12802,
+    "Text": "Fonder une communauté"
+  },
+  {
+    "RowId": 12803,
+    "Text": "Vous n'appartenez à aucune communauté."
+  },
+  {
+    "RowId": 12804,
+    "Text": "Chargement de la liste..."
+  },
+  {
+    "RowId": 12805,
+    "Text": "<If(Equal(IntegerParameter(1),0))>Nommez votre communauté.<Else/>Donnez un nouveau nom à votre communauté.</If>"
+  },
+  {
+    "RowId": 12806,
+    "Text": "Les espaces et les symboles suivants sont autorisés:\n<span style=\"color: #ff7b1a;\">'. ,:;!? & - _</span>\n\n- Deux espaces ou deux tirets bas ne peuvent pas se suivre.\n- Le nom ne peut pas commencer ou se terminer par une espace.\n- Le nom ne peut pas être composé uniquement de signes."
+  },
+  {
+    "RowId": 12807,
+    "Text": "Copier le nom de la communauté"
+  },
+  {
+    "RowId": 12808,
+    "Text": "Les modifications seront perdues. Fermer?"
+  },
+  {
+    "RowId": 12809,
+    "Text": "Communauté"
+  },
+  {
+    "RowId": 12810,
+    "Text": ""
+  },
+  {
+    "RowId": 12811,
+    "Text": "Général"
+  },
+  {
+    "RowId": 12812,
+    "Text": "Panneau d'affichage"
+  },
+  {
+    "RowId": 12813,
+    "Text": "Membres"
+  },
+  {
+    "RowId": 12814,
+    "Text": "Modifier le profil de la communauté"
+  },
+  {
+    "RowId": 12815,
+    "Text": "Profil de la communauté"
+  },
+  {
+    "RowId": 12816,
+    "Text": ""
+  },
+  {
+    "RowId": 12817,
+    "Text": "Seul le président de la communauté peut modifier le profil."
+  },
+  {
+    "RowId": 12818,
+    "Text": "Nom de la communauté"
+  },
+  {
+    "RowId": 12819,
+    "Text": "Renommer la communauté"
+  },
+  {
+    "RowId": 12820,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12821,
+    "Text": "1."
+  },
+  {
+    "RowId": 12822,
+    "Text": "2."
+  },
+  {
+    "RowId": 12823,
+    "Text": "3."
+  },
+  {
+    "RowId": 12824,
+    "Text": "Liste noire"
+  },
+  {
+    "RowId": 12825,
+    "Text": "Afficher"
+  },
+  {
+    "RowId": 12826,
+    "Text": "Dissolution de la communauté"
+  },
+  {
+    "RowId": 12827,
+    "Text": "Dissoudre"
+  },
+  {
+    "RowId": 12828,
+    "Text": "Valider"
+  },
+  {
+    "RowId": 12829,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12830,
+    "Text": "Liste noire de la communauté"
+  },
+  {
+    "RowId": 12831,
+    "Text": ""
+  },
+  {
+    "RowId": 12832,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 12833,
+    "Text": "Monde d'origine"
+  },
+  {
+    "RowId": 12834,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12835,
+    "Text": "Fermer"
+  },
+  {
+    "RowId": 12836,
+    "Text": "Retirer de la liste noire de la communauté"
+  },
+  {
+    "RowId": 12837,
+    "Text": "Dissoudre la communauté “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12838,
+    "Text": "Dissoudre"
+  },
+  {
+    "RowId": 12839,
+    "Text": "Confirmer"
+  },
+  {
+    "RowId": 12840,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12841,
+    "Text": "Annonce de la communauté"
+  },
+  {
+    "RowId": 12842,
+    "Text": "Modifier l'annonce"
+  },
+  {
+    "RowId": 12843,
+    "Text": "Annonce de la communauté"
+  },
+  {
+    "RowId": 12844,
+    "Text": ""
+  },
+  {
+    "RowId": 12845,
+    "Text": "Sondage"
+  },
+  {
+    "RowId": 12846,
+    "Text": "Paramètres du sondage"
+  },
+  {
+    "RowId": 12847,
+    "Text": "Un sondage est disponible."
+  },
+  {
+    "RowId": 12848,
+    "Text": "Aucun sondage en cours."
+  },
+  {
+    "RowId": 12849,
+    "Text": "Fin du sondage: <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 12850,
+    "Text": "Voir le sondage"
+  },
+  {
+    "RowId": 12851,
+    "Text": "Paramètres du sondage"
+  },
+  {
+    "RowId": 12852,
+    "Text": ""
+  },
+  {
+    "RowId": 12853,
+    "Text": "Description du sondage"
+  },
+  {
+    "RowId": 12854,
+    "Text": "Choix de réponse"
+  },
+  {
+    "RowId": 12855,
+    "Text": "1."
+  },
+  {
+    "RowId": 12856,
+    "Text": "2."
+  },
+  {
+    "RowId": 12857,
+    "Text": "3."
+  },
+  {
+    "RowId": 12858,
+    "Text": "4."
+  },
+  {
+    "RowId": 12859,
+    "Text": "5."
+  },
+  {
+    "RowId": 12860,
+    "Text": "Durée du sondage"
+  },
+  {
+    "RowId": 12861,
+    "Text": "jour(s)"
+  },
+  {
+    "RowId": 12862,
+    "Text": "Poster"
+  },
+  {
+    "RowId": 12863,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12864,
+    "Text": "Tous les membres de la communauté pourront voir ce sondage et voter. Confirmer?"
+  },
+  {
+    "RowId": 12865,
+    "Text": "Jusqu'au <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 12866,
+    "Text": "Supprimer"
+  },
+  {
+    "RowId": 12867,
+    "Text": "Le sondage va être supprimé. Confirmer?"
+  },
+  {
+    "RowId": 12868,
+    "Text": "Sondage"
+  },
+  {
+    "RowId": 12869,
+    "Text": ""
+  },
+  {
+    "RowId": 12870,
+    "Text": "Voter"
+  },
+  {
+    "RowId": 12871,
+    "Text": "<Num>IntegerParameter(1)</Num> voix"
+  },
+  {
+    "RowId": 12872,
+    "Text": "Bloc-notes"
+  },
+  {
+    "RowId": 12873,
+    "Text": ""
+  },
+  {
+    "RowId": 12874,
+    "Text": "Note"
+  },
+  {
+    "RowId": 12875,
+    "Text": ""
+  },
+  {
+    "RowId": 12876,
+    "Text": "Recrutement"
+  },
+  {
+    "RowId": 12877,
+    "Text": "Date limite du recrutement: <SetTime>IntegerParameter(1)</SetTime><Num>t_day</Num>.<Num>t_mon</Num>.<Num>t_year</Num> à <Num>t_hour</Num>h<Sec>t_min</Sec>"
+  },
+  {
+    "RowId": 12878,
+    "Text": "Profil de recrutement"
+  },
+  {
+    "RowId": 12879,
+    "Text": ""
+  },
+  {
+    "RowId": 12880,
+    "Text": "Nom de la communauté"
+  },
+  {
+    "RowId": 12881,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12882,
+    "Text": "1."
+  },
+  {
+    "RowId": 12883,
+    "Text": "2."
+  },
+  {
+    "RowId": 12884,
+    "Text": "3."
+  },
+  {
+    "RowId": 12885,
+    "Text": "Message de recrutement"
+  },
+  {
+    "RowId": 12886,
+    "Text": "Langues acceptées"
+  },
+  {
+    "RowId": 12887,
+    "Text": "Publier"
+  },
+  {
+    "RowId": 12888,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12889,
+    "Text": "Cesser de recruter"
+  },
+  {
+    "RowId": 12890,
+    "Text": "Les 100 derniers messages laissés par les membres de la communauté sont affichés sur ce panneau, du plus récent au plus ancien."
+  },
+  {
+    "RowId": 12891,
+    "Text": "Laisser un message"
+  },
+  {
+    "RowId": 12892,
+    "Text": "Supprimer le message"
+  },
+  {
+    "RowId": 12893,
+    "Text": "Le message a été supprimé."
+  },
+  {
+    "RowId": 12894,
+    "Text": "Chargement des messages..."
+  },
+  {
+    "RowId": 12895,
+    "Text": "<String>StringParameter(1)</String> <Icon>88</Icon> <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12896,
+    "Text": "Rédaction d'un message"
+  },
+  {
+    "RowId": 12897,
+    "Text": ""
+  },
+  {
+    "RowId": 12898,
+    "Text": "Visage neutre"
+  },
+  {
+    "RowId": 12899,
+    "Text": "Visage arrogant"
+  },
+  {
+    "RowId": 12900,
+    "Text": "Visage heureux"
+  },
+  {
+    "RowId": 12901,
+    "Text": "Visage rieur"
+  },
+  {
+    "RowId": 12902,
+    "Text": "Visage radieux"
+  },
+  {
+    "RowId": 12903,
+    "Text": "Visage songeur"
+  },
+  {
+    "RowId": 12904,
+    "Text": "Visage larmoyant"
+  },
+  {
+    "RowId": 12905,
+    "Text": "Visage stupéfait"
+  },
+  {
+    "RowId": 12906,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 12907,
+    "Text": "Groupe"
+  },
+  {
+    "RowId": 12908,
+    "Text": "Monde d'origine"
+  },
+  {
+    "RowId": 12909,
+    "Text": ""
+  },
+  {
+    "RowId": 12910,
+    "Text": "Attribuer un groupe"
+  },
+  {
+    "RowId": 12911,
+    "Text": "Envoyer une requête d'ami"
+  },
+  {
+    "RowId": 12912,
+    "Text": "Inviter dans une linkshell inter-Monde"
+  },
+  {
+    "RowId": 12913,
+    "Text": "Exclure de la communauté"
+  },
+  {
+    "RowId": 12914,
+    "Text": "Nommer président(e) de la communauté"
+  },
+  {
+    "RowId": 12915,
+    "Text": "Nommer représentant(e) de la communauté"
+  },
+  {
+    "RowId": 12916,
+    "Text": "Ajouter à la liste noire de la communauté"
+  },
+  {
+    "RowId": 12917,
+    "Text": "Renoncer au titre de représentant<If(PlayerParameter(4))>e<Else/> </If>"
+  },
+  {
+    "RowId": 12918,
+    "Text": "Quitter la communauté"
+  },
+  {
+    "RowId": 12919,
+    "Text": "Tout afficher"
+  },
+  {
+    "RowId": 12920,
+    "Text": "Attribution de groupe"
+  },
+  {
+    "RowId": 12921,
+    "Text": ""
+  },
+  {
+    "RowId": 12922,
+    "Text": "NOM"
+  },
+  {
+    "RowId": 12923,
+    "Text": "Groupe"
+  },
+  {
+    "RowId": 12924,
+    "Text": "Aucun"
+  },
+  {
+    "RowId": 12925,
+    "Text": "Groupe <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12926,
+    "Text": "Modifier"
+  },
+  {
+    "RowId": 12927,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12928,
+    "Text": "Changer le nom du groupe"
+  },
+  {
+    "RowId": 12929,
+    "Text": "Saisissez un nouveau nom pour le groupe <Num>IntegerParameter(1)</Num>."
+  },
+  {
+    "RowId": 12930,
+    "Text": "Nom"
+  },
+  {
+    "RowId": 12931,
+    "Text": "Confirmer"
+  },
+  {
+    "RowId": 12932,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12933,
+    "Text": "Recherche de communautés"
+  },
+  {
+    "RowId": 12934,
+    "Text": ""
+  },
+  {
+    "RowId": 12935,
+    "Text": "Nom de la communauté"
+  },
+  {
+    "RowId": 12936,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12937,
+    "Text": "Recruteur"
+  },
+  {
+    "RowId": 12938,
+    "Text": "Message de recrutement"
+  },
+  {
+    "RowId": 12939,
+    "Text": "Nom de la communauté"
+  },
+  {
+    "RowId": 12940,
+    "Text": "Nombre de membres"
+  },
+  {
+    "RowId": 12941,
+    "Text": "<kilo(IntegerParameter(1),)>/<kilo(IntegerParameter(2),)>"
+  },
+  {
+    "RowId": 12942,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12943,
+    "Text": "Message de recrutement"
+  },
+  {
+    "RowId": 12944,
+    "Text": "Date limite du recrutement"
+  },
+  {
+    "RowId": 12945,
+    "Text": "Vous allez rejoindre la communauté “<String>StringParameter(1)</String>”. Confirmer?"
+  },
+  {
+    "RowId": 12946,
+    "Text": "Critères de recherche"
+  },
+  {
+    "RowId": 12947,
+    "Text": ""
+  },
+  {
+    "RowId": 12948,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12949,
+    "Text": "Langues acceptées"
+  },
+  {
+    "RowId": 12950,
+    "Text": "Rechercher"
+  },
+  {
+    "RowId": 12951,
+    "Text": "Annuler"
+  },
+  {
+    "RowId": 12952,
+    "Text": "Président(e)"
+  },
+  {
+    "RowId": 12953,
+    "Text": "Obtention des données..."
+  },
+  {
+    "RowId": 12954,
+    "Text": "Les données n'ont pas pu être obtenues."
+  },
+  {
+    "RowId": 12955,
+    "Text": "Recruter jusqu'à atteindre"
+  },
+  {
+    "RowId": 12956,
+    "Text": "membres. (Nombre de membres actuel: <If(Equal(IntegerParameter(1),1000))><span style=\"color: #ff8080;\"><kilo(IntegerParameter(1),)></span><Else/><kilo(IntegerParameter(1),)></If>/1 000)"
+  },
+  {
+    "RowId": 12957,
+    "Text": "Aucun message."
+  },
+  {
+    "RowId": 12958,
+    "Text": "Aucun membre à part vous."
+  },
+  {
+    "RowId": 12959,
+    "Text": "Le recrutement a dépassé sa date limite."
+  },
+  {
+    "RowId": 12960,
+    "Text": "Votre message va être accroché sur le panneau d'affichage. Confirmer?"
+  },
+  {
+    "RowId": 12961,
+    "Text": "Le message que vous avez sélectionné va être supprimé. Confirmer?"
+  },
+  {
+    "RowId": 12962,
+    "Text": "Objectif: <kilo(IntegerParameter(1),)> membres"
+  },
+  {
+    "RowId": 12963,
+    "Text": "Inviter dans une communauté"
+  },
+  {
+    "RowId": 12964,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12965,
+    "Text": "Invitation (communauté)"
+  },
+  {
+    "RowId": 12966,
+    "Text": ""
+  },
+  {
+    "RowId": 12967,
+    "Text": "Invitation (communauté)"
+  },
+  {
+    "RowId": 12968,
+    "Text": "Président(e)"
+  },
+  {
+    "RowId": 12969,
+    "Text": "<kilo(IntegerParameter(1),)>/1 000"
+  },
+  {
+    "RowId": 12970,
+    "Text": "Annonce de la communauté"
+  },
+  {
+    "RowId": 12971,
+    "Text": "Accepter"
+  },
+  {
+    "RowId": 12972,
+    "Text": "Refuser"
+  },
+  {
+    "RowId": 12973,
+    "Text": "Vous allez rejoindre la communauté “<String>StringParameter(1)</String>”. Confirmer?"
+  },
+  {
+    "RowId": 12974,
+    "Text": "Refuser l'invitation à rejoindre la communauté “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12975,
+    "Text": "Quitter la communauté “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12976,
+    "Text": "Confirmer"
+  },
+  {
+    "RowId": 12977,
+    "Text": "Invité(e)"
+  },
+  {
+    "RowId": 12978,
+    "Text": "Annuler l'invitation"
+  },
+  {
+    "RowId": 12979,
+    "Text": "Invité(e)"
+  },
+  {
+    "RowId": 12980,
+    "Text": "Nombre de membres"
+  },
+  {
+    "RowId": 12981,
+    "Text": "Activités"
+  },
+  {
+    "RowId": 12982,
+    "Text": "1."
+  },
+  {
+    "RowId": 12983,
+    "Text": "2."
+  },
+  {
+    "RowId": 12984,
+    "Text": "3."
+  },
+  {
+    "RowId": 12985,
+    "Text": "Président<If(PlayerParameter(4))>e<Else/> </If>"
+  },
+  {
+    "RowId": 12986,
+    "Text": "Représentant(e)"
+  },
+  {
+    "RowId": 12987,
+    "Text": "Les données n'ont pas pu être obtenues."
+  },
+  {
+    "RowId": 12988,
+    "Text": "Aucune communauté ne recrute à présent."
+  },
+  {
+    "RowId": 12989,
+    "Text": "Mettre à jour la liste"
+  },
+  {
+    "RowId": 12990,
+    "Text": "Ouvrir la fenêtre de critère de recherche"
+  },
+  {
+    "RowId": 12991,
+    "Text": "Retirer le statut de représentant(e)"
+  },
+  {
+    "RowId": 12992,
+    "Text": "Afficher l'aide"
+  },
+  {
+    "RowId": 12993,
+    "Text": "Aide de la liste des communautés"
+  },
+  {
+    "RowId": 12994,
+    "Text": ""
+  },
+  {
+    "RowId": 12995,
+    "Text": "Aide de la fenêtre de communauté"
+  },
+  {
+    "RowId": 12996,
+    "Text": ""
+  },
+  {
+    "RowId": 12997,
+    "Text": "Aide de la recherche de communautés"
+  },
+  {
+    "RowId": 12998,
+    "Text": ""
+  },
+  {
+    "RowId": 12999,
+    "Text": "<kilo(IntegerParameter(1),)>/<kilo(IntegerParameter(2),)>"
+  }
+]

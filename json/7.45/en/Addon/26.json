@@ -1,0 +1,2002 @@
+[
+  {
+    "RowId": 12500,
+    "Text": "Time Remaining: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>"
+  },
+  {
+    "RowId": 12501,
+    "Text": "Fire"
+  },
+  {
+    "RowId": 12502,
+    "Text": "Ice"
+  },
+  {
+    "RowId": 12503,
+    "Text": "Wind"
+  },
+  {
+    "RowId": 12504,
+    "Text": "Earth"
+  },
+  {
+    "RowId": 12505,
+    "Text": "Lightning"
+  },
+  {
+    "RowId": 12506,
+    "Text": "Water"
+  },
+  {
+    "RowId": 12507,
+    "Text": "Slashing"
+  },
+  {
+    "RowId": 12508,
+    "Text": "Piercing"
+  },
+  {
+    "RowId": 12509,
+    "Text": "Blunt"
+  },
+  {
+    "RowId": 12510,
+    "Text": "World Visit"
+  },
+  {
+    "RowId": 12511,
+    "Text": ""
+  },
+  {
+    "RowId": 12512,
+    "Text": "Home World"
+  },
+  {
+    "RowId": 12513,
+    "Text": "Available Destinations"
+  },
+  {
+    "RowId": 12514,
+    "Text": "<If(Equal(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Data Center Travel System</span>\nThe Data Center Travel system is an extension of the World Visit system, and allows you to temporarily visit Worlds in other data centers. Certain restrictions apply to data center travel, including those dictated by the World Visit system.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Visiting Other Data Centers</span>\n\u3000・Until you have returned from visiting another data center, you may not log in or perform other actions with characters in your Home World.\n\u3000・You may only travel to other data centers from your Home World. If you wish to travel to a data center different from the one you are currently visiting, you must first return to your Home World and submit a Data Center Visit request from there.\n\u3000・When logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n<Else/> </If><If(LessThan(IntegerParameter(1),2))>\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">World Visit System</span>\nThe World Visit System allows you to travel from <If(Equal(IntegerParameter(1),0))>your Home World<Else/>the World you are currently visiting</If> to different World servers within the same data center. While visiting different Worlds, you may party with friends, purchase items, tackle duties, and more.\n\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Visiting Other Worlds</span>\n\u3000・Depending on the congestion of the target World, travel may take several minutes.\n\u3000・Once preparations have been completed, travel will occur automatically and cancel all current actions/duties.\n\u3000・When logging out from another World, you will automatically be returned to your Home World if you do not log in again within 30 days. Depending on the timing of your last logout, you may be returned after more than 30 days have passed.\n\n<Else/> </If>\u3000\u3000\u3000\u3000\u3000\u3000\u3000<span style=\"color: #e1c500;\">Restrictions While Visiting <If(GreaterThan(IntegerParameter(1),0))>Other Data Centers<Else/>Other Worlds</If></span>\n<If(Equal(IntegerParameter(1),1))>You are currently outside your Home Data Center. <Else/> </If>The following restrictions apply when playing <If(GreaterThan(IntegerParameter(1),0))>in another data center<Else/>on other World servers</If>:\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Friend List</span>\n\u3000・Friends in different data centers cannot communicate\n\u3000・Parties cannot be formed with friends in different data centers\n\u3000・Login details for friends in different regions cannot be displayed\n\n<Else/> </If><span style=\"color: #e1c500;\">Free Companies</span>\n\u3000・Free companies cannot be formed or joined\n\u3000・Free company information cannot be viewed\n\u3000・Company credits cannot be earned\n\u3000・Should the company master spend 35 consecutive days away from their Home World, their rank will be automatically transferred to another member\n\u3000・Login details for members in different regions cannot be displayed\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">Cross-world Linkshells</span>\n\u3000・Cross-world linkshells cannot be created\n\u3000・Cross-world linkshell master privileges cannot be attained\n\n<Else/> </If><span style=\"color: #e1c500;\">Linkshells</span>\n\u3000・Linkshells cannot be used\n\u3000・Linkshell information cannot be viewed\n\u3000・Linkshells cannot be created or joined\n\n<If(GreaterThan(IntegerParameter(1),0))><span style=\"color: #e1c500;\">PvP Teams</span>\n\u3000・PvP teams cannot be used\n\u3000・PvP team information cannot be viewed\n\u3000・PvP teams cannot be created or joined\n\n<span style=\"color: #e1c500;\">Fellowships</span>\n\u3000・All functions for fellowships, excluding recruitment search, are inaccessible\n\n<Else/> </If><span style=\"color: #e1c500;\">Retainers</span>\n\u3000・Retainers cannot be summoned, hired, or released from service\n\u3000・Items cannot be put up to market (but can be purchased)\n\n<span style=\"color: #e1c500;\">Housing</span>\n\u3000・Land and apartments cannot be purchased\n\u3000・Residence sharing is unavailable\n\n<span style=\"color: #e1c500;\">Eternal Bonding</span>\n\u3000・Ceremonies of Eternal Bonding are unavailable\n\u3000・Eternal Bonding quests are unavailable\n\u3000・Others' ceremonies cannot be attended\n\n<span style=\"color: #e1c500;\">Duties/Features</span>\n<If(Equal(IntegerParameter(1),2))>\u3000・Crystalline Conflict ranked matches can be entered if:\n\u3000\u3000・Your Home World is in the same physical data center\n\u3000\u3000・You participate via the hosting data center\n<Else/> </If>\u3000・Lord of Verminion tournaments cannot be entered\n\u3000・Triple Triad tournaments cannot be entered\n\u3000・Cactpot tickets cannot be purchased\n\u3000・The Moogle Delivery Service is unavailable\n\u3000・Deep Dungeon results will not be saved to the leaderboards\n\u3000・Friendship circlet and eternal bonding teleportation is\n\u3000\u3000available only if both parties are on the same World\n\u3000・Legendary and unspoiled gathering nodes are inaccessible\n"
+  },
+  {
+    "RowId": 12515,
+    "Text": "Home World"
+  },
+  {
+    "RowId": 12516,
+    "Text": "Current World"
+  },
+  {
+    "RowId": 12517,
+    "Text": "Unavailable World"
+  },
+  {
+    "RowId": 12518,
+    "Text": "Retrieving World data..."
+  },
+  {
+    "RowId": 12519,
+    "Text": "Travel to <String>StringParameter(1)</String>?"
+  },
+  {
+    "RowId": 12520,
+    "Text": "World Visit"
+  },
+  {
+    "RowId": 12521,
+    "Text": "Destination: <String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12522,
+    "Text": "Position in Queue: "
+  },
+  {
+    "RowId": 12523,
+    "Text": "Time Elapsed: <Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec> Average Wait Time: "
+  },
+  {
+    "RowId": 12524,
+    "Text": "World Visit"
+  },
+  {
+    "RowId": 12525,
+    "Text": ""
+  },
+  {
+    "RowId": 12526,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12527,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12528,
+    "Text": "Position in Queue"
+  },
+  {
+    "RowId": 12529,
+    "Text": "Time"
+  },
+  {
+    "RowId": 12530,
+    "Text": "Average Wait Time"
+  },
+  {
+    "RowId": 12531,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12532,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12533,
+    "Text": "More than <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12534,
+    "Text": "<Num>IntegerParameter(1)</Num>m"
+  },
+  {
+    "RowId": 12535,
+    "Text": "More than <Num>IntegerParameter(1)</Num>m"
+  },
+  {
+    "RowId": 12536,
+    "Text": "Less than <Num>IntegerParameter(1)</Num>m"
+  },
+  {
+    "RowId": 12537,
+    "Text": "World Visit"
+  },
+  {
+    "RowId": 12538,
+    "Text": "Ready for transport."
+  },
+  {
+    "RowId": 12539,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12540,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12541,
+    "Text": "Wanderer"
+  },
+  {
+    "RowId": 12542,
+    "Text": "Current World"
+  },
+  {
+    "RowId": 12543,
+    "Text": "World Info"
+  },
+  {
+    "RowId": 12544,
+    "Text": "World List"
+  },
+  {
+    "RowId": 12545,
+    "Text": "Blue Mage Log"
+  },
+  {
+    "RowId": 12546,
+    "Text": ""
+  },
+  {
+    "RowId": 12547,
+    "Text": "Recruit Members"
+  },
+  {
+    "RowId": 12548,
+    "Text": "Commence Duty"
+  },
+  {
+    "RowId": 12549,
+    "Text": "Complete"
+  },
+  {
+    "RowId": 12550,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12551,
+    "Text": "Prime Target"
+  },
+  {
+    "RowId": 12552,
+    "Text": "First-time Reward"
+  },
+  {
+    "RowId": 12553,
+    "Text": "Reward"
+  },
+  {
+    "RowId": 12554,
+    "Text": "Weekly Target Reward"
+  },
+  {
+    "RowId": 12555,
+    "Text": "Time Remaining: <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h <Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m <Else/><If(GreaterThan(IntegerParameter(1),0))> <Else/>less than 1 minute</If></If><SetTime>IntegerParameter(3)</SetTime>[<Num>t_mon</Num>/<Num>t_day</Num> <Num>t_hour</Num>:<Sec>t_min</Sec>]"
+  },
+  {
+    "RowId": 12556,
+    "Text": "<span style=\"color: #ff7b1a;\">Target Expired</span>"
+  },
+  {
+    "RowId": 12557,
+    "Text": "Information"
+  },
+  {
+    "RowId": 12558,
+    "Text": "Requirements"
+  },
+  {
+    "RowId": 12559,
+    "Text": "Display Crystarium Deliveries help."
+  },
+  {
+    "RowId": 12560,
+    "Text": "Esteem Level"
+  },
+  {
+    "RowId": 12561,
+    "Text": "Esteem"
+  },
+  {
+    "RowId": 12562,
+    "Text": "<switch(IntegerParameter(1),<Head><sheet(ClassJob,9,0)></Head> / <Head><sheet(ClassJob,10,0)></Head> / <Head><sheet(ClassJob,11,0)></Head>,<Head><sheet(ClassJob,8,0)></Head> / <Head><sheet(ClassJob,12,0)></Head> / <Head><sheet(ClassJob,13,0)></Head>,<Head><sheet(ClassJob,14,0)></Head> / <Head><sheet(ClassJob,15,0)></Head>,<Head><sheet(ClassJob,16,0)></Head> / <Head><sheet(ClassJob,17,0)></Head>,<Head><sheet(ClassJob,18,0)></Head>)>"
+  },
+  {
+    "RowId": 12563,
+    "Text": "Requested Item"
+  },
+  {
+    "RowId": 12564,
+    "Text": "Inventory"
+  },
+  {
+    "RowId": 12565,
+    "Text": "<Num>IntegerParameter(1)</Num>/\uE03C<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12566,
+    "Text": "Remuneration Details"
+  },
+  {
+    "RowId": 12567,
+    "Text": "Deliver"
+  },
+  {
+    "RowId": 12568,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12569,
+    "Text": "Enter delivery quantity."
+  },
+  {
+    "RowId": 12570,
+    "Text": "Experience"
+  },
+  {
+    "RowId": 12571,
+    "Text": "Crystarium Deliveries"
+  },
+  {
+    "RowId": 12572,
+    "Text": "<switch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)>: <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12573,
+    "Text": "Reward"
+  },
+  {
+    "RowId": 12574,
+    "Text": "Accept"
+  },
+  {
+    "RowId": 12575,
+    "Text": "Crystarium Deliveries"
+  },
+  {
+    "RowId": 12576,
+    "Text": ""
+  },
+  {
+    "RowId": 12577,
+    "Text": "<switch(IntegerParameter(1),Facet of Forging,Facet of Crafting,Facet of Nourishing,Facet of Gathering,Facet of Fishing)>: <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12578,
+    "Text": "Total"
+  },
+  {
+    "RowId": 12579,
+    "Text": "You are unable to carry any more <ennoun(Item,3,IntegerParameter(1),2,1)> and will not receive full compensation. Proceed with the transaction?"
+  },
+  {
+    "RowId": 12580,
+    "Text": "Retainer"
+  },
+  {
+    "RowId": 12581,
+    "Text": ""
+  },
+  {
+    "RowId": 12582,
+    "Text": "Name"
+  },
+  {
+    "RowId": 12583,
+    "Text": "Class/Job"
+  },
+  {
+    "RowId": 12584,
+    "Text": "Inventory"
+  },
+  {
+    "RowId": 12585,
+    "Text": "Gil"
+  },
+  {
+    "RowId": 12586,
+    "Text": "Items for Sale"
+  },
+  {
+    "RowId": 12587,
+    "Text": "Venture"
+  },
+  {
+    "RowId": 12588,
+    "Text": "None"
+  },
+  {
+    "RowId": 12589,
+    "Text": "Selling <Num>IntegerParameter(1)</Num> <If(LessThanOrEqualTo(IntegerParameter(1),1))>item<Else/>items</If>"
+  },
+  {
+    "RowId": 12590,
+    "Text": "None in progress"
+  },
+  {
+    "RowId": 12591,
+    "Text": "Complete in <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>h <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>m<Else/>1m</If></If>"
+  },
+  {
+    "RowId": 12592,
+    "Text": "Complete"
+  },
+  {
+    "RowId": 12593,
+    "Text": "Sort Retainers"
+  },
+  {
+    "RowId": 12594,
+    "Text": ""
+  },
+  {
+    "RowId": 12595,
+    "Text": "Change the order of your retainers."
+  },
+  {
+    "RowId": 12596,
+    "Text": "Currently selling no items"
+  },
+  {
+    "RowId": 12597,
+    "Text": "Selling <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>item<Else/>items</If> until <SetTime>IntegerParameter(2)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If>"
+  },
+  {
+    "RowId": 12598,
+    "Text": "None in progress"
+  },
+  {
+    "RowId": 12599,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>Lv. <Num>IntegerParameter(1)</Num> <Else/> </If><String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12600,
+    "Text": "<String>StringParameter(1)</String> (complete in <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>h <If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/> </If><Else/><If(GreaterThan(IntegerParameter(3),0))><Num>IntegerParameter(3)</Num>m<Else/>1m</If></If>)"
+  },
+  {
+    "RowId": 12601,
+    "Text": "Complete"
+  },
+  {
+    "RowId": 12602,
+    "Text": "Contract Suspended"
+  },
+  {
+    "RowId": 12603,
+    "Text": "Items for Sale:"
+  },
+  {
+    "RowId": 12604,
+    "Text": "Venture:"
+  },
+  {
+    "RowId": 12605,
+    "Text": ""
+  },
+  {
+    "RowId": 12606,
+    "Text": "–"
+  },
+  {
+    "RowId": 12607,
+    "Text": "Retainer's Name"
+  },
+  {
+    "RowId": 12608,
+    "Text": "Hiring Order"
+  },
+  {
+    "RowId": 12609,
+    "Text": "Apply"
+  },
+  {
+    "RowId": 12610,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12611,
+    "Text": "Change Active Set Name"
+  },
+  {
+    "RowId": 12612,
+    "Text": "Active set names can be changed via the subcommand menu."
+  },
+  {
+    "RowId": 12613,
+    "Text": "Input a new name for <String>StringParameter(1)</String>. Leaving the entry field blank will restore the default set name."
+  },
+  {
+    "RowId": 12614,
+    "Text": ""
+  },
+  {
+    "RowId": 12615,
+    "Text": "Weekly Challenge"
+  },
+  {
+    "RowId": 12616,
+    "Text": "Standard Duty"
+  },
+  {
+    "RowId": 12617,
+    "Text": "Save"
+  },
+  {
+    "RowId": 12618,
+    "Text": "Load"
+  },
+  {
+    "RowId": 12619,
+    "Text": ""
+  },
+  {
+    "RowId": 12620,
+    "Text": ""
+  },
+  {
+    "RowId": 12621,
+    "Text": ""
+  },
+  {
+    "RowId": 12622,
+    "Text": ""
+  },
+  {
+    "RowId": 12623,
+    "Text": ""
+  },
+  {
+    "RowId": 12624,
+    "Text": "Travel to <String>StringParameter(1)</String>?\n<span style=\"color: #ffff66;\">Please be advised you must be playing solo or in a cross-world party for your transfer to be processed.</span>"
+  },
+  {
+    "RowId": 12625,
+    "Text": "Traveler"
+  },
+  {
+    "RowId": 12626,
+    "Text": "Letter notifications are unavailable outside of your Home Data Center."
+  },
+  {
+    "RowId": 12627,
+    "Text": "Voyager"
+  },
+  {
+    "RowId": 12628,
+    "Text": "Full details of the player who sent this friend request are unavailable. You can only choose to refuse the request, or leave it pending.\n<span style=\"color: #ffff66;\">※Once a certain amount of time elapses, pending friend requests will be rendered void and the sender removed from your friend list.</span>"
+  },
+  {
+    "RowId": 12629,
+    "Text": ""
+  },
+  {
+    "RowId": 12630,
+    "Text": "One-nut Clan Marks"
+  },
+  {
+    "RowId": 12631,
+    "Text": "Two-nut Clan Marks"
+  },
+  {
+    "RowId": 12632,
+    "Text": "Three-nut Clan Marks"
+  },
+  {
+    "RowId": 12633,
+    "Text": "Elite Clan Nutsy Marks"
+  },
+  {
+    "RowId": 12634,
+    "Text": "<If(GreaterThan(IntegerParameter(3),0))><kilo(IntegerParameter(1),,)> Gil / <kilo(IntegerParameter(2),,)> <If(Equal(IntegerParameter(2),1))>Sack<Else/>Sacks</If> of Nuts / <kilo(IntegerParameter(3),,)> EXP<Else/><kilo(IntegerParameter(1),,)> Gil / <kilo(IntegerParameter(2),,)> <If(Equal(IntegerParameter(2),1))>Sack<Else/>Sacks</If> of Nuts</If>"
+  },
+  {
+    "RowId": 12635,
+    "Text": "Clan Nutsy"
+  },
+  {
+    "RowId": 12636,
+    "Text": "<switch(IntegerParameter(1),One-nut Clan Marks,Two-nut Clan Marks,Three-nut Clan Marks,Elite Clan Nutsy Marks)>（<String>StringParameter(2)</String>）"
+  },
+  {
+    "RowId": 12637,
+    "Text": "<switch(IntegerParameter(1),Level 1 Clan Marks,Level 2 Clan Marks,Level 3 Clan Marks,Elite Clan Marks)>（<String>StringParameter(2)</String>）"
+  },
+  {
+    "RowId": 12638,
+    "Text": "<switch(IntegerParameter(1),Clan Marks,Elite Clan Marks)>（<String>StringParameter(2)</String>）"
+  },
+  {
+    "RowId": 12639,
+    "Text": "Junior Guildship Marks"
+  },
+  {
+    "RowId": 12640,
+    "Text": "Associate Guildship Marks"
+  },
+  {
+    "RowId": 12641,
+    "Text": "Senior Guildship Marks"
+  },
+  {
+    "RowId": 12642,
+    "Text": "Elite Guildship Marks"
+  },
+  {
+    "RowId": 12643,
+    "Text": "Gleaners' Guildship"
+  },
+  {
+    "RowId": 12644,
+    "Text": "<switch(IntegerParameter(1),Junior Guildship Marks,Associate Guildship Marks,Senior Guildship Marks,Elite Guildship Marks)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12645,
+    "Text": "Beginner Dawn Hunt Marks"
+  },
+  {
+    "RowId": 12646,
+    "Text": "Intermediate Dawn Hunt Marks"
+  },
+  {
+    "RowId": 12647,
+    "Text": "Advanced Dawn Hunt Marks"
+  },
+  {
+    "RowId": 12648,
+    "Text": "Elite Dawn Hunt Marks"
+  },
+  {
+    "RowId": 12649,
+    "Text": "Dawn Hunt"
+  },
+  {
+    "RowId": 12650,
+    "Text": "<switch(IntegerParameter(1),Beginner Dawn Hunt Marks,Intermediate Dawn Hunt Marks,Advanced Dawn Hunt Marks,Elite Dawn Hunt Marks)> (<String>StringParameter(2)</String>)"
+  },
+  {
+    "RowId": 12651,
+    "Text": ""
+  },
+  {
+    "RowId": 12652,
+    "Text": ""
+  },
+  {
+    "RowId": 12653,
+    "Text": ""
+  },
+  {
+    "RowId": 12654,
+    "Text": ""
+  },
+  {
+    "RowId": 12655,
+    "Text": ""
+  },
+  {
+    "RowId": 12656,
+    "Text": ""
+  },
+  {
+    "RowId": 12657,
+    "Text": ""
+  },
+  {
+    "RowId": 12658,
+    "Text": ""
+  },
+  {
+    "RowId": 12659,
+    "Text": ""
+  },
+  {
+    "RowId": 12660,
+    "Text": ""
+  },
+  {
+    "RowId": 12661,
+    "Text": ""
+  },
+  {
+    "RowId": 12662,
+    "Text": ""
+  },
+  {
+    "RowId": 12663,
+    "Text": ""
+  },
+  {
+    "RowId": 12664,
+    "Text": ""
+  },
+  {
+    "RowId": 12665,
+    "Text": ""
+  },
+  {
+    "RowId": 12666,
+    "Text": ""
+  },
+  {
+    "RowId": 12667,
+    "Text": ""
+  },
+  {
+    "RowId": 12668,
+    "Text": ""
+  },
+  {
+    "RowId": 12669,
+    "Text": ""
+  },
+  {
+    "RowId": 12670,
+    "Text": "Level"
+  },
+  {
+    "RowId": 12671,
+    "Text": "Special"
+  },
+  {
+    "RowId": 12672,
+    "Text": "<switch(IntegerParameter(1),Unspoiled Node,Legendary Node,Ephemeral Node)>\nTime of Appearance (Eorzea Time)"
+  },
+  {
+    "RowId": 12673,
+    "Text": "From <Sec>IntegerParameter(1)</Sec>:<Sec>IntegerParameter(2)</Sec> to <Sec>IntegerParameter(3)</Sec>:<Sec>IntegerParameter(4)</Sec>"
+  },
+  {
+    "RowId": 12674,
+    "Text": "Set timer for next occurrence."
+  },
+  {
+    "RowId": 12675,
+    "Text": "You have not read the relevant folklore."
+  },
+  {
+    "RowId": 12676,
+    "Text": "Enable Quick Gathering"
+  },
+  {
+    "RowId": 12677,
+    "Text": "<Num>IntegerParameter(1)</Num>+?"
+  },
+  {
+    "RowId": 12678,
+    "Text": "QUICK GATHERING"
+  },
+  {
+    "RowId": 12679,
+    "Text": "Abandon the gathering node?\nDoing so will cause the node to dissipate."
+  },
+  {
+    "RowId": 12680,
+    "Text": "Abandon node."
+  },
+  {
+    "RowId": 12681,
+    "Text": "Clouded gathering node\nCondition: umbral turbulence"
+  },
+  {
+    "RowId": 12682,
+    "Text": "Required <Head><String>StringParameter(1)</String></Head>: <Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12683,
+    "Text": "Abandon the teeming waters?\n<span style=\"color: #ff8080;\">※Doing so will cause the teeming waters to dissipate.</span>"
+  },
+  {
+    "RowId": 12684,
+    "Text": ""
+  },
+  {
+    "RowId": 12685,
+    "Text": ""
+  },
+  {
+    "RowId": 12686,
+    "Text": ""
+  },
+  {
+    "RowId": 12687,
+    "Text": ""
+  },
+  {
+    "RowId": 12688,
+    "Text": ""
+  },
+  {
+    "RowId": 12689,
+    "Text": ""
+  },
+  {
+    "RowId": 12690,
+    "Text": ""
+  },
+  {
+    "RowId": 12691,
+    "Text": "Silence Echo"
+  },
+  {
+    "RowId": 12692,
+    "Text": "Enabling this setting will prevent Echo bonuses from being granted.\n<span style=\"color: #ffff66;\">※Can only be selected when using a preformed party meeting party size requirements or an unrestricted party.\n※Only the party leader's settings are applicable.\n</span>"
+  },
+  {
+    "RowId": 12693,
+    "Text": "Set the way in which loot is distributed.\n\n<span style=\"color: #ffff66;\">Normal\n</span>The Need, Greed, Pass system is employed for loot drops.\n\n<span style=\"color: #ffff66;\">Greed Only\n</span>All party members must select Greed or Pass.\n\n<span style=\"color: #ffff66;\">Lootmaster\n</span>The party leader determines individual loot distribution.\n\n<span style=\"color: #ff8080;\">※Greed Only and Lootmaster can only be selected when using a preformed party meeting party size requirements or an unrestricted party.\n※Loot rules may be restricted to Greed Only on certain duties.\n※Loot rules cannot be changed on certain duties.\n※Only the party leader can change loot rules.</span>"
+  },
+  {
+    "RowId": 12694,
+    "Text": "You will be matched with players who are using the selected languages.\n\n<span style=\"color: #ffff66;\">※Depending on the languages chosen, matching times may increase. If you are experiencing overlong wait times, you may want to consider different language settings.\n</span>\n<span style=\"color: #ff8080;\">※The _ indicates your current client language setting.\n※This setting is shared in all duty matching, though please be aware that it may not apply to certain Gold Saucer activities.</span>"
+  },
+  {
+    "RowId": 12695,
+    "Text": "Not available in New Game+ mode."
+  },
+  {
+    "RowId": 12696,
+    "Text": "Level Sync"
+  },
+  {
+    "RowId": 12697,
+    "Text": "Sync all participants to a duty's required level.\n<span style=\"color: #ffff66;\">※When using an unrestricted party, gear will still gain spiritbond.\n※When using an unrestricted party, enemies will still yield EXP and items.</span>\n<span style=\"color: #ff8080;\">※Can only be selected when using an unrestricted party.\n※Only the party leader's settings are applicable.</span>"
+  },
+  {
+    "RowId": 12698,
+    "Text": ""
+  },
+  {
+    "RowId": 12699,
+    "Text": ""
+  },
+  {
+    "RowId": 12700,
+    "Text": "Trust"
+  },
+  {
+    "RowId": 12701,
+    "Text": ""
+  },
+  {
+    "RowId": 12702,
+    "Text": "Current Party"
+  },
+  {
+    "RowId": 12703,
+    "Text": "Party Selection"
+  },
+  {
+    "RowId": 12704,
+    "Text": "EXP"
+  },
+  {
+    "RowId": 12705,
+    "Text": "/"
+  },
+  {
+    "RowId": 12706,
+    "Text": "Register for Duty"
+  },
+  {
+    "RowId": 12707,
+    "Text": "Glamours"
+  },
+  {
+    "RowId": 12708,
+    "Text": "Scenario"
+  },
+  {
+    "RowId": 12709,
+    "Text": "Scenario"
+  },
+  {
+    "RowId": 12710,
+    "Text": "Trust EXP"
+  },
+  {
+    "RowId": 12711,
+    "Text": "Display Trust help."
+  },
+  {
+    "RowId": 12712,
+    "Text": ""
+  },
+  {
+    "RowId": 12713,
+    "Text": ""
+  },
+  {
+    "RowId": 12714,
+    "Text": ""
+  },
+  {
+    "RowId": 12715,
+    "Text": ""
+  },
+  {
+    "RowId": 12716,
+    "Text": ""
+  },
+  {
+    "RowId": 12717,
+    "Text": ""
+  },
+  {
+    "RowId": 12718,
+    "Text": "Trust Help"
+  },
+  {
+    "RowId": 12719,
+    "Text": ""
+  },
+  {
+    "RowId": 12720,
+    "Text": "Insufficient Level"
+  },
+  {
+    "RowId": 12721,
+    "Text": "Not a Disciple of War or Magic"
+  },
+  {
+    "RowId": 12722,
+    "Text": "Limited Job"
+  },
+  {
+    "RowId": 12723,
+    "Text": "Quest"
+  },
+  {
+    "RowId": 12724,
+    "Text": ""
+  },
+  {
+    "RowId": 12725,
+    "Text": "Avatars"
+  },
+  {
+    "RowId": 12726,
+    "Text": "Avatars"
+  },
+  {
+    "RowId": 12727,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>\uE033Avg. Item Level: <Num>IntegerParameter(1)</Num>\u3000<Else/> </If><If(GreaterThan(IntegerParameter(2),0))>\uE0BDItem Level Sync: <Num>IntegerParameter(2)</Num><Else/> </If>"
+  },
+  {
+    "RowId": 12728,
+    "Text": "Insufficient Item Level"
+  },
+  {
+    "RowId": 12729,
+    "Text": ""
+  },
+  {
+    "RowId": 12730,
+    "Text": "Channel Log Settings"
+  },
+  {
+    "RowId": 12731,
+    "Text": ""
+  },
+  {
+    "RowId": 12732,
+    "Text": "Log Text Colors"
+  },
+  {
+    "RowId": 12733,
+    "Text": "Notification Sound"
+  },
+  {
+    "RowId": 12734,
+    "Text": "Display Tab"
+  },
+  {
+    "RowId": 12735,
+    "Text": "Apply"
+  },
+  {
+    "RowId": 12736,
+    "Text": "Close"
+  },
+  {
+    "RowId": 12737,
+    "Text": "Text display color"
+  },
+  {
+    "RowId": 12738,
+    "Text": "Proceed without selecting a tab?"
+  },
+  {
+    "RowId": 12739,
+    "Text": "Channel Log Settings"
+  },
+  {
+    "RowId": 12740,
+    "Text": "<span style=\"color: #ffff66;\">\n※If you do not receive a response to a friend request while in the same data center as the player to whom you sent it, your friend status will remain pending for one week, after which time the request will be rendered void.</span>"
+  },
+  {
+    "RowId": 12741,
+    "Text": "<span style=\"color: #ffff66;\">\n※You are unable to view the login details of players on your friend list while they are in a different region.</span>"
+  },
+  {
+    "RowId": 12742,
+    "Text": "The Home World of <String>StringParameter(1)</String> is on a data center in a region different to you. Send friend request?"
+  },
+  {
+    "RowId": 12743,
+    "Text": ""
+  },
+  {
+    "RowId": 12744,
+    "Text": ""
+  },
+  {
+    "RowId": 12745,
+    "Text": ""
+  },
+  {
+    "RowId": 12746,
+    "Text": ""
+  },
+  {
+    "RowId": 12747,
+    "Text": ""
+  },
+  {
+    "RowId": 12748,
+    "Text": ""
+  },
+  {
+    "RowId": 12749,
+    "Text": ""
+  },
+  {
+    "RowId": 12750,
+    "Text": "Ishgardian Restoration"
+  },
+  {
+    "RowId": 12751,
+    "Text": ""
+  },
+  {
+    "RowId": 12752,
+    "Text": "Item"
+  },
+  {
+    "RowId": 12753,
+    "Text": "Collectability"
+  },
+  {
+    "RowId": 12754,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12755,
+    "Text": "Scrips"
+  },
+  {
+    "RowId": 12756,
+    "Text": "EXP"
+  },
+  {
+    "RowId": 12757,
+    "Text": "Bag"
+  },
+  {
+    "RowId": 12758,
+    "Text": "\uE03D<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12759,
+    "Text": "Reward"
+  },
+  {
+    "RowId": 12760,
+    "Text": "Collectability"
+  },
+  {
+    "RowId": 12761,
+    "Text": "<Num>IntegerParameter(1)</Num><If(Equal(IntegerParameter(2),0))> <Else/>-<Num>IntegerParameter(2)</Num></If>"
+  },
+  {
+    "RowId": 12762,
+    "Text": "<If(GreaterThan(IntegerParameter(2),0))>You are unable to carry any more kupo vouchers and will not receive any more stamps.\n<Else/> </If><If(GreaterThan(IntegerParameter(1),0))>You will not be able to receive all <ennoun(Item,3,IntegerParameter(1),2,1)>.\n<Else/> </If>Proceed with the transaction?"
+  },
+  {
+    "RowId": 12763,
+    "Text": "Total"
+  },
+  {
+    "RowId": 12764,
+    "Text": "Skyward Pt."
+  },
+  {
+    "RowId": 12765,
+    "Text": ""
+  },
+  {
+    "RowId": 12766,
+    "Text": "+"
+  },
+  {
+    "RowId": 12767,
+    "Text": "–"
+  },
+  {
+    "RowId": 12768,
+    "Text": "Kupo Stamps"
+  },
+  {
+    "RowId": 12769,
+    "Text": "Kupo Vouchers"
+  },
+  {
+    "RowId": 12770,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12771,
+    "Text": "You already possess the maximum number of vouchers and cannot receive any more stamps."
+  },
+  {
+    "RowId": 12772,
+    "Text": "Ranking season ending"
+  },
+  {
+    "RowId": 12773,
+    "Text": "<If(Equal(IntegerParameter(1),0))> <Else/><SetTime>IntegerParameter(1)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num> <Num>t_hour</Num>:<Sec>t_min</Sec><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <Num>t_hour</Num>:<Sec>t_min</Sec></If></If>"
+  },
+  {
+    "RowId": 12774,
+    "Text": "※No points will be awarded. You must be on your Home World."
+  },
+  {
+    "RowId": 12775,
+    "Text": "Seasonal Score"
+  },
+  {
+    "RowId": 12776,
+    "Text": "Accumulated Score"
+  },
+  {
+    "RowId": 12777,
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>+<Else/>0</If>"
+  },
+  {
+    "RowId": 12778,
+    "Text": "Ranking not in progress"
+  },
+  {
+    "RowId": 12779,
+    "Text": ""
+  },
+  {
+    "RowId": 12780,
+    "Text": "Kupo of Fortune"
+  },
+  {
+    "RowId": 12781,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12782,
+    "Text": "Close"
+  },
+  {
+    "RowId": 12783,
+    "Text": "Dedicated to <sheet(ClassJob,IntegerParameter(1),0)>s of surpassing skill, and to all who labored to raise this place from ruin that we might soar ever skyward."
+  },
+  {
+    "RowId": 12784,
+    "Text": "Close"
+  },
+  {
+    "RowId": 12785,
+    "Text": "For Our Skybuilders"
+  },
+  {
+    "RowId": 12786,
+    "Text": "With gratitude from all who set foot in the Firmament."
+  },
+  {
+    "RowId": 12787,
+    "Text": ""
+  },
+  {
+    "RowId": 12788,
+    "Text": ""
+  },
+  {
+    "RowId": 12789,
+    "Text": ""
+  },
+  {
+    "RowId": 12790,
+    "Text": "Collection"
+  },
+  {
+    "RowId": 12791,
+    "Text": ""
+  },
+  {
+    "RowId": 12792,
+    "Text": ""
+  },
+  {
+    "RowId": 12793,
+    "Text": ""
+  },
+  {
+    "RowId": 12794,
+    "Text": ""
+  },
+  {
+    "RowId": 12795,
+    "Text": ""
+  },
+  {
+    "RowId": 12796,
+    "Text": ""
+  },
+  {
+    "RowId": 12797,
+    "Text": ""
+  },
+  {
+    "RowId": 12798,
+    "Text": ""
+  },
+  {
+    "RowId": 12799,
+    "Text": ""
+  },
+  {
+    "RowId": 12800,
+    "Text": "Fellowships"
+  },
+  {
+    "RowId": 12801,
+    "Text": ""
+  },
+  {
+    "RowId": 12802,
+    "Text": "Create Fellowship"
+  },
+  {
+    "RowId": 12803,
+    "Text": "You do not belong to any fellowships."
+  },
+  {
+    "RowId": 12804,
+    "Text": "Searching..."
+  },
+  {
+    "RowId": 12805,
+    "Text": "<If(Equal(IntegerParameter(1),0))>Select a name for your fellowship<Else/>Select a new name for your fellowship</If>."
+  },
+  {
+    "RowId": 12806,
+    "Text": "The following punctuation marks are allowed:\n<span style=\"color: #ff8080;\">'. , : ; ! ? & - _</span>\n• Double spaces/underscores are not allowed.\n• A space cannot be used before or after the name.\n• Names consisting solely of punctuation marks are prohibited."
+  },
+  {
+    "RowId": 12807,
+    "Text": "Copy Fellowship Name"
+  },
+  {
+    "RowId": 12808,
+    "Text": "If you quit now, you will lose all changes. Proceed?"
+  },
+  {
+    "RowId": 12809,
+    "Text": "Fellowships"
+  },
+  {
+    "RowId": 12810,
+    "Text": ""
+  },
+  {
+    "RowId": 12811,
+    "Text": "General"
+  },
+  {
+    "RowId": 12812,
+    "Text": "Message Board"
+  },
+  {
+    "RowId": 12813,
+    "Text": "Members"
+  },
+  {
+    "RowId": 12814,
+    "Text": "Settings"
+  },
+  {
+    "RowId": 12815,
+    "Text": ""
+  },
+  {
+    "RowId": 12816,
+    "Text": "Fellowship Settings"
+  },
+  {
+    "RowId": 12817,
+    "Text": "Changes can only be made by the fellowship master."
+  },
+  {
+    "RowId": 12818,
+    "Text": "Fellowship Name"
+  },
+  {
+    "RowId": 12819,
+    "Text": "Change Fellowship Name"
+  },
+  {
+    "RowId": 12820,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12821,
+    "Text": "Main"
+  },
+  {
+    "RowId": 12822,
+    "Text": "Sub 1"
+  },
+  {
+    "RowId": 12823,
+    "Text": "Sub 2"
+  },
+  {
+    "RowId": 12824,
+    "Text": "Blacklist"
+  },
+  {
+    "RowId": 12825,
+    "Text": "Display"
+  },
+  {
+    "RowId": 12826,
+    "Text": "Disband Fellowship"
+  },
+  {
+    "RowId": 12827,
+    "Text": "Disband"
+  },
+  {
+    "RowId": 12828,
+    "Text": "Confirm"
+  },
+  {
+    "RowId": 12829,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12830,
+    "Text": "Fellowship Blacklist"
+  },
+  {
+    "RowId": 12831,
+    "Text": ""
+  },
+  {
+    "RowId": 12832,
+    "Text": "Name"
+  },
+  {
+    "RowId": 12833,
+    "Text": "Home World"
+  },
+  {
+    "RowId": 12834,
+    "Text": "<Num>IntegerParameter(1)</Num>/<Num>IntegerParameter(2)</Num>"
+  },
+  {
+    "RowId": 12835,
+    "Text": "Close"
+  },
+  {
+    "RowId": 12836,
+    "Text": "Remove from Blacklist"
+  },
+  {
+    "RowId": 12837,
+    "Text": "You are about to disband <String>StringParameter(1)</String>. Are you certain you wish to proceed?"
+  },
+  {
+    "RowId": 12838,
+    "Text": "Disband"
+  },
+  {
+    "RowId": 12839,
+    "Text": "Confirm"
+  },
+  {
+    "RowId": 12840,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12841,
+    "Text": "Message of the Day"
+  },
+  {
+    "RowId": 12842,
+    "Text": "Edit"
+  },
+  {
+    "RowId": 12843,
+    "Text": "Message of the Day"
+  },
+  {
+    "RowId": 12844,
+    "Text": ""
+  },
+  {
+    "RowId": 12845,
+    "Text": "Poll"
+  },
+  {
+    "RowId": 12846,
+    "Text": "Poll Settings"
+  },
+  {
+    "RowId": 12847,
+    "Text": "A poll is available."
+  },
+  {
+    "RowId": 12848,
+    "Text": "Not available."
+  },
+  {
+    "RowId": 12849,
+    "Text": "Deadline:  <SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
+  },
+  {
+    "RowId": 12850,
+    "Text": "Respond"
+  },
+  {
+    "RowId": 12851,
+    "Text": "Poll Settings"
+  },
+  {
+    "RowId": 12852,
+    "Text": ""
+  },
+  {
+    "RowId": 12853,
+    "Text": "Question"
+  },
+  {
+    "RowId": 12854,
+    "Text": "Response Options"
+  },
+  {
+    "RowId": 12855,
+    "Text": "1."
+  },
+  {
+    "RowId": 12856,
+    "Text": "2."
+  },
+  {
+    "RowId": 12857,
+    "Text": "3."
+  },
+  {
+    "RowId": 12858,
+    "Text": "4."
+  },
+  {
+    "RowId": 12859,
+    "Text": "5."
+  },
+  {
+    "RowId": 12860,
+    "Text": "Deadline"
+  },
+  {
+    "RowId": 12861,
+    "Text": "Days"
+  },
+  {
+    "RowId": 12862,
+    "Text": "Confirm"
+  },
+  {
+    "RowId": 12863,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12864,
+    "Text": "Release the poll to fellowship members?"
+  },
+  {
+    "RowId": 12865,
+    "Text": "<SetTime>IntegerParameter(1)</SetTime><If(Equal(PlayerParameter(77),3))><Num>t_day</Num>/<Num>t_mon</Num>/<Num>t_year</Num><Else/><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num></If> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
+  },
+  {
+    "RowId": 12866,
+    "Text": "Delete"
+  },
+  {
+    "RowId": 12867,
+    "Text": "Do you really want to delete the poll?"
+  },
+  {
+    "RowId": 12868,
+    "Text": "Poll"
+  },
+  {
+    "RowId": 12869,
+    "Text": ""
+  },
+  {
+    "RowId": 12870,
+    "Text": "Vote"
+  },
+  {
+    "RowId": 12871,
+    "Text": "<Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12872,
+    "Text": "Notices"
+  },
+  {
+    "RowId": 12873,
+    "Text": "Edit Notice"
+  },
+  {
+    "RowId": 12874,
+    "Text": "Notice"
+  },
+  {
+    "RowId": 12875,
+    "Text": ""
+  },
+  {
+    "RowId": 12876,
+    "Text": "Recruitment"
+  },
+  {
+    "RowId": 12877,
+    "Text": "Recruitment Deadline: <SetTime>IntegerParameter(1)</SetTime><Num>t_mon</Num>/<Num>t_day</Num>/<Num>t_year</Num> <If(t_hour)><switch(t_hour,1,2,3,4,5,6,7,8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11)><Else/>12</If>:<Sec>t_min</Sec> <If(GreaterThanOrEqualTo(t_hour,12))>p.m.<Else/>a.m.</If>"
+  },
+  {
+    "RowId": 12878,
+    "Text": "Recruitment Settings"
+  },
+  {
+    "RowId": 12879,
+    "Text": ""
+  },
+  {
+    "RowId": 12880,
+    "Text": "Fellowship Name"
+  },
+  {
+    "RowId": 12881,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12882,
+    "Text": "1."
+  },
+  {
+    "RowId": 12883,
+    "Text": "2."
+  },
+  {
+    "RowId": 12884,
+    "Text": "3."
+  },
+  {
+    "RowId": 12885,
+    "Text": "Comment"
+  },
+  {
+    "RowId": 12886,
+    "Text": "Language"
+  },
+  {
+    "RowId": 12887,
+    "Text": "Register"
+  },
+  {
+    "RowId": 12888,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12889,
+    "Text": "End Recruitment"
+  },
+  {
+    "RowId": 12890,
+    "Text": "Up to 100 comments are displayed, with the oldest being deleted first."
+  },
+  {
+    "RowId": 12891,
+    "Text": "Post Comment"
+  },
+  {
+    "RowId": 12892,
+    "Text": "Delete Comment"
+  },
+  {
+    "RowId": 12893,
+    "Text": "This comment has been deleted."
+  },
+  {
+    "RowId": 12894,
+    "Text": "Loading comments..."
+  },
+  {
+    "RowId": 12895,
+    "Text": "<String>StringParameter(1)</String> <Icon>88</Icon> <String>StringParameter(2)</String>"
+  },
+  {
+    "RowId": 12896,
+    "Text": "Message Board"
+  },
+  {
+    "RowId": 12897,
+    "Text": ""
+  },
+  {
+    "RowId": 12898,
+    "Text": "Neutral"
+  },
+  {
+    "RowId": 12899,
+    "Text": "Smirking"
+  },
+  {
+    "RowId": 12900,
+    "Text": "Smiling"
+  },
+  {
+    "RowId": 12901,
+    "Text": "Grinning"
+  },
+  {
+    "RowId": 12902,
+    "Text": "Beaming"
+  },
+  {
+    "RowId": 12903,
+    "Text": "Thinking"
+  },
+  {
+    "RowId": 12904,
+    "Text": "Crying"
+  },
+  {
+    "RowId": 12905,
+    "Text": "Surprised"
+  },
+  {
+    "RowId": 12906,
+    "Text": "Members"
+  },
+  {
+    "RowId": 12907,
+    "Text": "Group"
+  },
+  {
+    "RowId": 12908,
+    "Text": "Home World"
+  },
+  {
+    "RowId": 12909,
+    "Text": ""
+  },
+  {
+    "RowId": 12910,
+    "Text": "Group Settings"
+  },
+  {
+    "RowId": 12911,
+    "Text": "Send Friend Request"
+  },
+  {
+    "RowId": 12912,
+    "Text": "Invite to Cross-world Linkshell"
+  },
+  {
+    "RowId": 12913,
+    "Text": "Kick from Fellowship"
+  },
+  {
+    "RowId": 12914,
+    "Text": "Transfer Master Privileges"
+  },
+  {
+    "RowId": 12915,
+    "Text": "Appoint Fellowship Admin"
+  },
+  {
+    "RowId": 12916,
+    "Text": "Add to Fellowship Blacklist"
+  },
+  {
+    "RowId": 12917,
+    "Text": "Quit Fellowship Admin"
+  },
+  {
+    "RowId": 12918,
+    "Text": "Leave Fellowship"
+  },
+  {
+    "RowId": 12919,
+    "Text": "Display All"
+  },
+  {
+    "RowId": 12920,
+    "Text": "Group Settings"
+  },
+  {
+    "RowId": 12921,
+    "Text": ""
+  },
+  {
+    "RowId": 12922,
+    "Text": "Name"
+  },
+  {
+    "RowId": 12923,
+    "Text": "Group"
+  },
+  {
+    "RowId": 12924,
+    "Text": "None"
+  },
+  {
+    "RowId": 12925,
+    "Text": "Group <Num>IntegerParameter(1)</Num>"
+  },
+  {
+    "RowId": 12926,
+    "Text": "Change"
+  },
+  {
+    "RowId": 12927,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12928,
+    "Text": "Rename Group"
+  },
+  {
+    "RowId": 12929,
+    "Text": "Input a new name for Group <Num>IntegerParameter(1)</Num>."
+  },
+  {
+    "RowId": 12930,
+    "Text": "Name"
+  },
+  {
+    "RowId": 12931,
+    "Text": "Confirm"
+  },
+  {
+    "RowId": 12932,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12933,
+    "Text": "Fellowship Finder"
+  },
+  {
+    "RowId": 12934,
+    "Text": ""
+  },
+  {
+    "RowId": 12935,
+    "Text": "Fellowship Name"
+  },
+  {
+    "RowId": 12936,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12937,
+    "Text": "Recruiter"
+  },
+  {
+    "RowId": 12938,
+    "Text": "Comment"
+  },
+  {
+    "RowId": 12939,
+    "Text": "Fellowship Name"
+  },
+  {
+    "RowId": 12940,
+    "Text": "Members"
+  },
+  {
+    "RowId": 12941,
+    "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
+  },
+  {
+    "RowId": 12942,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12943,
+    "Text": "Comment"
+  },
+  {
+    "RowId": 12944,
+    "Text": "Recruitment Deadline"
+  },
+  {
+    "RowId": 12945,
+    "Text": "Join the fellowship “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12946,
+    "Text": "Fellowship Search"
+  },
+  {
+    "RowId": 12947,
+    "Text": ""
+  },
+  {
+    "RowId": 12948,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12949,
+    "Text": "Language"
+  },
+  {
+    "RowId": 12950,
+    "Text": "Confirm"
+  },
+  {
+    "RowId": 12951,
+    "Text": "Cancel"
+  },
+  {
+    "RowId": 12952,
+    "Text": "Master"
+  },
+  {
+    "RowId": 12953,
+    "Text": "Retrieving data..."
+  },
+  {
+    "RowId": 12954,
+    "Text": "Failed to retrieve data."
+  },
+  {
+    "RowId": 12955,
+    "Text": "Recruitment Target"
+  },
+  {
+    "RowId": 12956,
+    "Text": "Members  (Currently: <If(Equal(IntegerParameter(1),1000))><span style=\"color: #ff8080;\"><kilo(IntegerParameter(1),,)></span><Else/><kilo(IntegerParameter(1),,)></If>/1,000)"
+  },
+  {
+    "RowId": 12957,
+    "Text": "No comments to display."
+  },
+  {
+    "RowId": 12958,
+    "Text": "No members to display."
+  },
+  {
+    "RowId": 12959,
+    "Text": "Expired"
+  },
+  {
+    "RowId": 12960,
+    "Text": "Post comment to the message board?"
+  },
+  {
+    "RowId": 12961,
+    "Text": "Delete the following comment?\n\n“<String>StringParameter(1)</String>”"
+  },
+  {
+    "RowId": 12962,
+    "Text": "Target: <kilo(IntegerParameter(1),,)>"
+  },
+  {
+    "RowId": 12963,
+    "Text": "Invite to Fellowship"
+  },
+  {
+    "RowId": 12964,
+    "Text": "<String>StringParameter(1)</String>"
+  },
+  {
+    "RowId": 12965,
+    "Text": "Fellowship Invitation"
+  },
+  {
+    "RowId": 12966,
+    "Text": "Fellowship Invitation"
+  },
+  {
+    "RowId": 12967,
+    "Text": ""
+  },
+  {
+    "RowId": 12968,
+    "Text": "Master"
+  },
+  {
+    "RowId": 12969,
+    "Text": "<kilo(IntegerParameter(1),,)>/1,000"
+  },
+  {
+    "RowId": 12970,
+    "Text": "Message of the Day"
+  },
+  {
+    "RowId": 12971,
+    "Text": "Accept"
+  },
+  {
+    "RowId": 12972,
+    "Text": "Decline"
+  },
+  {
+    "RowId": 12973,
+    "Text": "Accept fellowship invite to “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12974,
+    "Text": "Decline fellowship invite to “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12975,
+    "Text": "Leave the fellowship “<String>StringParameter(1)</String>”?"
+  },
+  {
+    "RowId": 12976,
+    "Text": "Leave the fellowship."
+  },
+  {
+    "RowId": 12977,
+    "Text": "Invitee"
+  },
+  {
+    "RowId": 12978,
+    "Text": "Cancel Invitation to Fellowship"
+  },
+  {
+    "RowId": 12979,
+    "Text": "Invitee"
+  },
+  {
+    "RowId": 12980,
+    "Text": "Membership"
+  },
+  {
+    "RowId": 12981,
+    "Text": "Activities"
+  },
+  {
+    "RowId": 12982,
+    "Text": "1."
+  },
+  {
+    "RowId": 12983,
+    "Text": "2."
+  },
+  {
+    "RowId": 12984,
+    "Text": "3."
+  },
+  {
+    "RowId": 12985,
+    "Text": "Master"
+  },
+  {
+    "RowId": 12986,
+    "Text": "Admin"
+  },
+  {
+    "RowId": 12987,
+    "Text": "Unable to retrieve data."
+  },
+  {
+    "RowId": 12988,
+    "Text": "No fellowships to display."
+  },
+  {
+    "RowId": 12989,
+    "Text": "Refresh List"
+  },
+  {
+    "RowId": 12990,
+    "Text": "Open Fellowship Search"
+  },
+  {
+    "RowId": 12991,
+    "Text": "Remove Admin Rights"
+  },
+  {
+    "RowId": 12992,
+    "Text": "Help"
+  },
+  {
+    "RowId": 12993,
+    "Text": "Fellowship Help"
+  },
+  {
+    "RowId": 12994,
+    "Text": ""
+  },
+  {
+    "RowId": 12995,
+    "Text": "Fellowship Help"
+  },
+  {
+    "RowId": 12996,
+    "Text": ""
+  },
+  {
+    "RowId": 12997,
+    "Text": "Fellowship Finder Help"
+  },
+  {
+    "RowId": 12998,
+    "Text": ""
+  },
+  {
+    "RowId": 12999,
+    "Text": "<kilo(IntegerParameter(1),,)>/<kilo(IntegerParameter(2),,)>"
+  }
+]
