@@ -12,6 +12,9 @@ using SixLabors.ImageSharp.PixelFormats;
 namespace Lumenstone;
 class Program
 {
+    private const int DefaultIconStart = 1;
+    private const int DefaultIconEnd = 250000;
+
     static IJsonTypeInfoResolver CreateLuminaIgnoreExcelPageResolver()
     {
         var resolver = new DefaultJsonTypeInfoResolver();
@@ -47,14 +50,90 @@ class Program
      {
         if (args.Length < 2)
         {
-            Console.WriteLine("Please provide the path to the sqpack directory as a command-line argument as well as the patch name.");
+            Console.WriteLine("Usage: dotnet run <sqpackPath> <patch> [full] [options]");
+            Console.WriteLine("Options:");
+            Console.WriteLine("  --full                    Force re-export for icons/maps/loading images.");
+            Console.WriteLine("  --icons-only              Skip JSON/maps/loading and export icons only.");
+            Console.WriteLine($"  --icon-start <id>         First icon id to export (default: {DefaultIconStart}).");
+            Console.WriteLine($"  --icon-end <id>           Last icon id to export (default: {DefaultIconEnd}).");
+            Console.WriteLine("  --icon-range <start-end>  Export a contiguous icon range.");
+            Console.WriteLine("  --icon-chunk-size <n>     Chunk size for icon range generation.");
+            Console.WriteLine("  --icon-chunk-index <n>    Zero-based chunk index when using --icon-chunk-size.");
+            Console.WriteLine("  --icons-full              Force overwrite icons in selected range/chunk.");
             return;
         }
 
          // Initialize Lumina with the sqpack path
         
         string sqpackPath = args[0]; // Assuming the first argument is the sqpack path
-        bool full = args.Length >= 3 ? args[2] == "full" : false;
+        var patch = args[1];
+
+        var optionArgs = args.Skip(2).ToArray();
+        bool full = HasFlag(optionArgs, "full") || HasFlag(optionArgs, "--full");
+        bool iconsOnly = HasFlag(optionArgs, "--icons-only");
+        bool hasIconRangeOption = HasFlag(optionArgs, "--icon-start")
+            || HasFlag(optionArgs, "--icon-end")
+            || HasFlag(optionArgs, "--icon-range")
+            || HasFlag(optionArgs, "--icon-chunk-size")
+            || HasFlag(optionArgs, "--icon-chunk-index");
+        bool iconsFull = full || HasFlag(optionArgs, "--icons-full");
+
+        int iconStart = DefaultIconStart;
+        int iconEnd = DefaultIconEnd;
+
+        if (TryGetOptionValue(optionArgs, "--icon-range", out var iconRange))
+        {
+            if (!TryParseRange(iconRange, out iconStart, out iconEnd))
+            {
+                Console.WriteLine($"Invalid --icon-range value '{iconRange}'. Expected format: <start-end>.");
+                return;
+            }
+        }
+
+        if (TryGetIntOption(optionArgs, "--icon-start", out var iconStartOverride))
+            iconStart = iconStartOverride;
+
+        if (TryGetIntOption(optionArgs, "--icon-end", out var iconEndOverride))
+            iconEnd = iconEndOverride;
+
+        if (TryGetIntOption(optionArgs, "--icon-chunk-size", out var chunkSize))
+        {
+            if (!TryGetIntOption(optionArgs, "--icon-chunk-index", out var chunkIndex))
+            {
+                Console.WriteLine("--icon-chunk-index is required when --icon-chunk-size is provided.");
+                return;
+            }
+
+            if (chunkSize <= 0 || chunkIndex < 0)
+            {
+                Console.WriteLine("--icon-chunk-size must be > 0 and --icon-chunk-index must be >= 0.");
+                return;
+            }
+
+            var chunkStart = iconStart + (chunkSize * chunkIndex);
+            var chunkEnd = Math.Min(iconEnd, chunkStart + chunkSize - 1);
+            if (chunkStart > iconEnd)
+            {
+                Console.WriteLine($"Chunk index {chunkIndex} is outside the requested icon range {iconStart}-{iconEnd}.");
+                return;
+            }
+
+            iconStart = chunkStart;
+            iconEnd = chunkEnd;
+        }
+
+        if (hasIconRangeOption)
+        {
+            // Explicit icon selection means "regenerate this icon slice only".
+            iconsOnly = true;
+            iconsFull = true;
+        }
+
+        if (iconStart < 1 || iconEnd < iconStart)
+        {
+            Console.WriteLine($"Invalid icon range {iconStart}-{iconEnd}. Ensure start >= 1 and end >= start.");
+            return;
+        }
 
         var luminaEN = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.English });
         var luminaDE = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.German });
@@ -68,55 +147,103 @@ class Program
             Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() },
             TypeInfoResolver = CreateLuminaIgnoreExcelPageResolver(),
         };
-       
-        var patch = args[1];
 
-        // Get all types in the Lumina.Excel.GeneratedSheets namespace
-       var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Action)).GetTypes()
-         .Where(t => t.Namespace == "Lumina.Excel.Sheets" 
-                 && !t.IsAbstract 
-                 && t.GetInterfaces()
-                     .Any(i => i.IsGenericType 
-                               && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelRow<>)
-                               && i.GenericTypeArguments[0] == t));
-
-        MethodInfo generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
-        if (generic == null)
-            return;
-
-        // Call ExtractSheetForAllLanguages for each type
-        foreach (var type in types)
+        if (!iconsOnly)
         {
-            Console.WriteLine(type.Name);
-            
-            MethodInfo constructed = generic.MakeGenericMethod(type);
-            constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+            // Get all types in the Lumina.Excel.GeneratedSheets namespace
+           var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Action)).GetTypes()
+             .Where(t => t.Namespace == "Lumina.Excel.Sheets"
+                     && !t.IsAbstract
+                     && t.GetInterfaces()
+                         .Any(i => i.IsGenericType
+                                   && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelRow<>)
+                                   && i.GenericTypeArguments[0] == t));
+
+            MethodInfo generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
+            if (generic == null)
+                return;
+
+            // Call ExtractSheetForAllLanguages for each type
+            foreach (var type in types)
+            {
+                Console.WriteLine(type.Name);
+
+                MethodInfo constructed = generic.MakeGenericMethod(type);
+                constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+            }
+
+            var subrowTypes = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.GilShopItem)).GetTypes()
+             .Where(t => t.Namespace == "Lumina.Excel.Sheets"
+                     && !t.IsAbstract
+                     && t.GetInterfaces()
+                         .Any(i => i.IsGenericType
+                                   && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelSubrow<>)
+                                   && i.GenericTypeArguments[0] == t));
+
+            generic = typeof(Program).GetMethod(nameof(ExtractSubrowSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
+            if (generic == null)
+                return;
+
+            // Call ExtractSheetForAllLanguages for each type
+            foreach (var type in subrowTypes)
+            {
+                Console.WriteLine(type.Name);
+
+                MethodInfo constructed = generic.MakeGenericMethod(type);
+                constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+            }
+
+            ExtractMaps(luminaEN, full);
+            ExtractLoadingImages(luminaEN, full);
         }
 
-        var subrowTypes = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.GilShopItem)).GetTypes()
-         .Where(t => t.Namespace == "Lumina.Excel.Sheets" 
-                 && !t.IsAbstract 
-                 && t.GetInterfaces()
-                     .Any(i => i.IsGenericType 
-                               && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelSubrow<>)
-                               && i.GenericTypeArguments[0] == t));
+        Console.WriteLine($"Extracting icons from {iconStart} to {iconEnd} (full={iconsFull}).");
+        ExtractIcons(iconStart, iconEnd, luminaEN, iconsFull);
+    }
 
-        generic = typeof(Program).GetMethod(nameof(ExtractSubrowSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
-        if (generic == null)
-            return;
+    private static bool HasFlag(string[] args, string name) =>
+        args.Any(a => string.Equals(a, name, StringComparison.OrdinalIgnoreCase));
 
-        // Call ExtractSheetForAllLanguages for each type
-        foreach (var type in subrowTypes)
+    private static bool TryGetOptionValue(string[] args, string optionName, out string value)
+    {
+        value = string.Empty;
+        for (int i = 0; i < args.Length - 1; i++)
         {
-            Console.WriteLine(type.Name);
-            
-            MethodInfo constructed = generic.MakeGenericMethod(type);
-            constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
+            if (!string.Equals(args[i], optionName, StringComparison.OrdinalIgnoreCase))
+                continue;
+
+            value = args[i + 1];
+            return true;
         }
-        
-        ExtractIcons(1, 250000, luminaEN, full);
-        ExtractMaps(luminaEN, full);
-        ExtractLoadingImages(luminaEN, full);
+
+        return false;
+    }
+
+    private static bool TryGetIntOption(string[] args, string optionName, out int value)
+    {
+        value = 0;
+        if (!TryGetOptionValue(args, optionName, out var rawValue))
+            return false;
+
+        if (!int.TryParse(rawValue, out value))
+        {
+            Console.WriteLine($"Invalid integer for {optionName}: '{rawValue}'.");
+            return false;
+        }
+
+        return true;
+    }
+
+    private static bool TryParseRange(string range, out int start, out int end)
+    {
+        start = 0;
+        end = 0;
+
+        var parts = range.Split('-', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+        if (parts.Length != 2)
+            return false;
+
+        return int.TryParse(parts[0], out start) && int.TryParse(parts[1], out end);
     }
 
     static void ExtractSheetForAllLanguages<T>(string patch, Lumina.GameData luminaEN, Lumina.GameData luminaDE, Lumina.GameData luminaFR, Lumina.GameData luminaJA, 
@@ -321,6 +448,7 @@ class Program
 
     private static void ExtractMaps(Lumina.GameData lumina, bool fullImport)
     {
+        fullImport = true;
         var sheet = lumina.GetExcelSheet<Map>();
         if (sheet == null)
             return;
@@ -346,18 +474,18 @@ class Program
             if (parts.Length != 2)
                 continue; // Ensure idString is in the expected format
 
-           
             var outputFilePath = Path.Combine(directoryPath, parts[0] + "/" + parts[0] + "." + parts[1] + ".jpg");
         
             if (fullImport || !File.Exists(outputFilePath)) {
-
                  // Directly concatenate "ui" and "maps" with the rest of the path
                 string filePath = "ui/map/" + idString + "/" + parts[0] + parts[1] + "_m.tex";
                 
                 if (!lumina.FileExists(filePath))
                     filePath = "ui/map/" + idString + "/" + parts[0] + parts[1] + "m_m.tex";
-                if (!lumina.FileExists(filePath))
+                if (!lumina.FileExists(filePath)) {
+                    Console.WriteLine("Failed to extract map for " + idString);
                     continue;
+                }
 
                 Console.WriteLine("Extracting data for map: " + idString);
                 
@@ -420,4 +548,3 @@ class Program
         }
     }
 }
-
