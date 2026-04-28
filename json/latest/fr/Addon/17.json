@@ -805,7 +805,7 @@
   },
   {
     "RowId": 8201,
-    "Text": "Haut-parleur <If(Equal(PlayerParameter(75),0))>de la manette<Else/><If(Equal(PlayerParameter(78),99))>de la manette sans fil<Else/>de la manette sans fil Xbox</If></If>"
+    "Text": "Haut-parleur de la <SwitchPlatform>21</SwitchPlatform>"
   },
   {
     "RowId": 8202,
@@ -1457,7 +1457,7 @@
   },
   {
     "RowId": 8364,
-    "Text": "Couleur: <Lower><If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),3)><Else/>?</If></Lower>"
+    "Text": "Couleur: <Lower><If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),5)><Else/>?</If></Lower>"
   },
   {
     "RowId": 8365,
@@ -1645,19 +1645,19 @@
   },
   {
     "RowId": 8411,
-    "Text": ""
+    "Text": "Nombre de personnages (logement)"
   },
   {
     "RowId": 8412,
-    "Text": ""
+    "Text": "Maximum"
   },
   {
     "RowId": 8413,
-    "Text": ""
+    "Text": "Moyen"
   },
   {
     "RowId": 8414,
-    "Text": ""
+    "Text": "Minimum"
   },
   {
     "RowId": 8415,
@@ -1969,7 +1969,7 @@
   },
   {
     "RowId": 8492,
-    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,)>"
+    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,<Icon>184</Icon>,)>"
   },
   {
     "RowId": 8493,
@@ -1977,7 +1977,7 @@
   },
   {
     "RowId": 8494,
-    "Text": "Retirer le favori<switch(IntegerParameter(2), gratuit (Identificateur), gratuit (PlayStation®Plus),)>: <sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)>?"
+    "Text": "Retirer le favori<switch(IntegerParameter(2), gratuit (Identificateur),<If(Equal(PlayerParameter(78),99))> gratuit (PlayStation®Plus)<Else/> gratuit (autre plateforme)</If>,<If(Equal(PlayerParameter(75),7))> gratuit (Nintendo Switch Online)<Else/> gratuit (autre plateforme)</If>,)>: <sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)>?"
   },
   {
     "RowId": 8495,

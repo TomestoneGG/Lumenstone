@@ -805,7 +805,7 @@
   },
   {
     "RowId": 8201,
-    "Text": "<If(Equal(PlayerParameter(75),0))>Gamepad<Else/><If(Equal(PlayerParameter(78),99))>Wireless Controller<Else/>Controller</If></If> Speaker Settings"
+    "Text": "<SwitchPlatform>21</SwitchPlatform> Speaker Settings"
   },
   {
     "RowId": 8202,
@@ -1457,7 +1457,7 @@
   },
   {
     "RowId": 8364,
-    "Text": "Color: <If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),3)><Else/>???</If>"
+    "Text": "Color: <If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),5)><Else/>???</If>"
   },
   {
     "RowId": 8365,
@@ -1645,19 +1645,19 @@
   },
   {
     "RowId": 8411,
-    "Text": ""
+    "Text": "Characters Displayed in Housing Areas"
   },
   {
     "RowId": 8412,
-    "Text": ""
+    "Text": "Maximum"
   },
   {
     "RowId": 8413,
-    "Text": ""
+    "Text": "Normal"
   },
   {
     "RowId": 8414,
-    "Text": ""
+    "Text": "Minimum"
   },
   {
     "RowId": 8415,
@@ -1969,7 +1969,7 @@
   },
   {
     "RowId": 8492,
-    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,)>"
+    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,<Icon>184</Icon>,)>"
   },
   {
     "RowId": 8493,
@@ -1977,7 +1977,7 @@
   },
   {
     "RowId": 8494,
-    "Text": "Remove <sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)> as your <switch(IntegerParameter(2),security token free,PlayStation®Plus free,favored)> destination?"
+    "Text": "Remove <ennoun(PlaceName,2,<sheet(Aetheryte,IntegerParameter(1),8)>,2,1)> as your <switch(IntegerParameter(2),security token free,<If(Equal(PlayerParameter(78),99))>PlayStation®Plus free<Else/>platform-based free</If>,<If(Equal(PlayerParameter(75),7))>Nintendo Switch Online free<Else/>platform-based free</If>,favored)> destination?"
   },
   {
     "RowId": 8495,

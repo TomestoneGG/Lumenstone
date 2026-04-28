@@ -1072,7 +1072,7 @@
   },
   {
     "RowId": 619,
-    "Text": "You have <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>day<Else/>days</If> left on your free trial. Proceed to <If(Equal(PlayerParameter(75),0))>the Square Enix Online Store (https://sqex.to/Msp)<Else/><If(Equal(PlayerParameter(78),99))>PlayStation™Store<Else/>Microsoft Store</If></If> to purchase the full version of FINAL FANTASY XIV and unlock all the game's features.",
+    "Text": "You have <Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>day<Else/>days</If> left on your free trial. Proceed to <If(Equal(PlayerParameter(75),0))>the Square Enix Online Store (https://sqex.to/Msp)<Else/><SwitchPlatform>421</SwitchPlatform></If> to purchase the full version of FINAL FANTASY XIV and unlock all the game's features.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3331,7 +3331,7 @@
   },
   {
     "RowId": 870,
-    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox)>]",
+    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox,Switch 2)>]",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3619,7 +3619,7 @@
   },
   {
     "RowId": 902,
-    "Text": "Saves <If(Equal(PlayerParameter(75),0))>mouse and gamepad<Else/><If(Equal(PlayerParameter(78),99))>wireless controller<Else/>controller</If> and mouse</If> settings.\n※Input device information will not be saved.",
+    "Text": "Saves <Lower><SwitchPlatform>21</SwitchPlatform></Lower> and mouse settings.\n※Input device information will not be saved.",
     "Unknown0": "Input Device",
     "Unknown1": "",
     "TYPE": 0,
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 905,
-    "Text": "Saves visual alert and color filtering settings.<If(Equal(PlayerParameter(75),0))> <Else/>\n※Not applicable to <If(GreaterThan(PlayerParameter(75),0))><switch(PlayerParameter(75),PlayStation®3,PlayStation®4,PlayStation®4,PlayStation®5,Xbox Series X,Xbox Series S)><Else/> </If>.</If>",
+    "Text": "Saves visual alert and color filtering settings.",
     "Unknown0": "Accessibility",
     "Unknown1": "",
     "TYPE": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 920,
-    "Text": "Saves <If(GreaterThan(PlayerParameter(75),0))>controller and mouse<Else/>gamepad and mouse</If> mode settings.",
+    "Text": "Saves <Lower><If(GreaterThan(PlayerParameter(75),0))><SwitchPlatform>1</SwitchPlatform> and mouse<Else/><SwitchPlatform>1</SwitchPlatform> and mouse</If></Lower> mode settings.",
     "Unknown0": "Character Config",
     "Unknown1": "",
     "TYPE": 0,
@@ -4159,7 +4159,7 @@
   },
   {
     "RowId": 962,
-    "Text": "This feature allows you to save backups of your Client and Character Configuration Settings to the FINAL FANTASY XIV servers, as well as import these backups to your <If(Equal(PlayerParameter(75),0))>hardware<Else/>system</If>, thereby allowing you to easily carry over your preferences to a different play environment.\n\nIt is strongly recommended that you save your data locally before attempting a backup or download.<If(Equal(PlayerParameter(75),0))> In addition to manually backing up your data, please select the Config option found in the launcher and use the Backup Tool.<Else/> </If>",
+    "Text": "This feature allows you to save backups of your Client and Character Configuration Settings to the FINAL FANTASY XIV servers, as well as import these backups to your <If(Equal(PlayerParameter(75),0))>hardware<Else/><SwitchPlatform>481</SwitchPlatform></If>, thereby allowing you to easily carry over your preferences to a different play environment.\n\nIt is strongly recommended that you save your data locally before attempting a backup or download.<If(Equal(PlayerParameter(75),0))> In addition to manually backing up your data, please select the Config option found in the launcher and use the Backup Tool.<Else/> </If>",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

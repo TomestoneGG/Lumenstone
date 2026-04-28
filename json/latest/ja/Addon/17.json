@@ -805,7 +805,7 @@
   },
   {
     "RowId": 8201,
-    "Text": "<If(Equal(PlayerParameter(75),0))>ゲームパッド<Else/><If(Equal(PlayerParameter(78),99))>ワイヤレスコントローラー<Else/>コントローラー</If></If>設定"
+    "Text": "<SwitchPlatform>21</SwitchPlatform>設定"
   },
   {
     "RowId": 8202,
@@ -1457,7 +1457,7 @@
   },
   {
     "RowId": 8364,
-    "Text": "カラー：<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),3)><Else/>?</If>"
+    "Text": "カラー：<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),5)><Else/>?</If>"
   },
   {
     "RowId": 8365,
@@ -1645,19 +1645,19 @@
   },
   {
     "RowId": 8411,
-    "Text": ""
+    "Text": "ハウジング屋内のキャラクター表示数"
   },
   {
     "RowId": 8412,
-    "Text": ""
+    "Text": "最大"
   },
   {
     "RowId": 8413,
-    "Text": ""
+    "Text": "標準"
   },
   {
     "RowId": 8414,
-    "Text": ""
+    "Text": "少なめ"
   },
   {
     "RowId": 8415,
@@ -1969,7 +1969,7 @@
   },
   {
     "RowId": 8492,
-    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,)>"
+    "Text": "<switch(IntegerParameter(1),<Icon>68</Icon>,<Icon>67</Icon>,<Icon>120</Icon>,<Icon>123</Icon>,<Icon>63</Icon>,<Icon>121</Icon>,<Icon>122</Icon>,<Icon>184</Icon>,)>"
   },
   {
     "RowId": 8493,
@@ -1977,7 +1977,7 @@
   },
   {
     "RowId": 8494,
-    "Text": "お気に入り登録<switch(IntegerParameter(2),（ワンタイムパスワード特典無料枠）,（PlayStation®Plus特典無料枠）,)>されている<sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)>の登録を解除します。\nよろしいですか？"
+    "Text": "お気に入り登録<switch(IntegerParameter(2),（ワンタイムパスワード特典無料枠）,（<If(Equal(PlayerParameter(78),99))>PlayStation®Plus特典無料枠）<Else/>他プラットフォーム特典枠）</If>,（<If(Equal(PlayerParameter(75),7))>Nintendo Switch Online特典無料枠）<Else/>他プラットフォーム特典枠）</If>,)>されている<sheet(PlaceName,<sheet(Aetheryte,IntegerParameter(1),8)>,0)>の登録を解除します。\nよろしいですか？"
   },
   {
     "RowId": 8495,

@@ -1072,7 +1072,7 @@
   },
   {
     "RowId": 619,
-    "Text": "Deine restliche kostenlose Testspielzeit beträgt\n<Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>Tag<Else/>Tage</If>. Wenn du FINAL FANTASY XIV nach Ablauf der Testspielzeit weiterspielen möchtest, kannst du <If(Equal(PlayerParameter(75),0))>in der Mogry-Station (https://sqex.to/Msp)<Else/><If(Equal(PlayerParameter(78),99))>im PlayStation™Store<Else/>im Microsoft Store</If></If> die Vollversion erwerben und alle Funktionen des Spiels freischalten.",
+    "Text": "Deine restliche kostenlose Testspielzeit beträgt\n<Num>IntegerParameter(1)</Num> <If(Equal(IntegerParameter(1),1))>Tag<Else/>Tage</If>. Wenn du FINAL FANTASY XIV nach Ablauf der Testspielzeit weiterspielen möchtest, kannst du in der Mogry-Station (https://sqex.to/Msp) oder im <SwitchPlatform>421</SwitchPlatform> die Vollversion erwerben und alle Funktionen des Spiels freischalten.",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3331,7 +3331,7 @@
   },
   {
     "RowId": 870,
-    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox)>]",
+    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox,Switch2)>]",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3619,7 +3619,7 @@
   },
   {
     "RowId": 902,
-    "Text": "Speichert Einstellungen für <If(Equal(PlayerParameter(75),0))>Gamepad und Maus<Else/><If(Equal(PlayerParameter(78),99))>Wireless Controller<Else/>Controller</If> und Maus</If>.\n※ Informationen zum Eingabegerät werden nicht gespeichert.",
+    "Text": "Speichert Einstellungen für <SwitchPlatform>21</SwitchPlatform> und Maus.\n※ Informationen zum Eingabegerät werden nicht gespeichert.",
     "Unknown0": "Eingabegerät",
     "Unknown1": "",
     "TYPE": 0,
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 905,
-    "Text": "Speichert Einstellungen für visuelle Tondarstellung und Farbkorrekturen.<If(Equal(PlayerParameter(75),0))> <Else/>\n※ Nicht zutreffend für <If(GreaterThan(PlayerParameter(75),0))><switch(PlayerParameter(75),PlayStation®3,PlayStation®4,PlayStation®4,PlayStation®5,Xbox Series X,Xbox Series S)><Else/> </If>.</If>",
+    "Text": "Speichert Einstellungen für visuelle Tondarstellung und Farbkorrekturen.",
     "Unknown0": "Barrierefreiheit",
     "Unknown1": "",
     "TYPE": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 920,
-    "Text": "Speichert die Einstellungen für <If(GreaterThan(PlayerParameter(75),0))>Controller und Maus<Else/>Gamepad und Maus</If>.",
+    "Text": "Speichert die Einstellungen für <If(GreaterThan(PlayerParameter(75),0))><SwitchPlatform>1</SwitchPlatform> und Maus<Else/>Maus und <SwitchPlatform>1</SwitchPlatform></If>.",
     "Unknown0": "Charakterkonfig.",
     "Unknown1": "",
     "TYPE": 0,
@@ -4159,7 +4159,7 @@
   },
   {
     "RowId": 962,
-    "Text": "Diese Funktion lässt dich Backups von deinen Charakter- und Client-Einstellungen auf den Servern von FINAL FANTASY XIV erstellen. Sie erlaubt dir, nahtlos weiterzuspielen, auch wenn sich deine Spielumgebung ändert.\n\nWir empfehlen eine lokale Sicherheitskopie deiner Einstellungsdaten zu erstellen, bevor du diese Funktion nutzt.<If(Equal(PlayerParameter(75),0))> Dies kann manuell oder über die KONFIGURATION im Launcher vorgenommen werden.<Else/> </If>",
+    "Text": "Mit dieser Funktion kannst du deine lokalen Konfigurationen (z. B. HUD- und Kommandomenü-Einstellungen) auf den Servern von FINAL FANTASY XIV erstellen und herunterladen. So kannst du schnell und einfach deine Einstellungen übernehmen, wenn du auf anderer Hardware spielst.\nWir empfehlen, zusätzlich eine lokale Sicherheitskopie deiner Einstellungen zu erstellen.<If(Equal(PlayerParameter(75),0))> Dies kann manuell oder im Launcher über „Konfiguration“ → „Backup/Import von Speicherdaten“ vorgenommen werden.<Else/> </If>",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

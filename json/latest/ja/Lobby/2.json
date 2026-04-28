@@ -1072,7 +1072,7 @@
   },
   {
     "RowId": 619,
-    "Text": "無料プレイ期間が、残り<Num>IntegerParameter(1)</Num>日間になりました。\n期間終了後、引き続きゲームをプレイしたい場合は、<If(Equal(PlayerParameter(75),0))>モグステーションで「製品版への引き継ぎ」の手続きを\n行ってください。\nモグステーション： https://sqex.to/Msp<Else/>製品版パッケージをご購入いただくか、\n<If(Equal(PlayerParameter(78),99))>PlayStation™Store<Else/>Microsoft Store</If>で「製品版」をご購入ください。</If>",
+    "Text": "無料プレイ期間が、残り<Num>IntegerParameter(1)</Num>日間になりました。\n期間終了後、引き続きゲームをプレイしたい場合は、<If(Equal(PlayerParameter(75),0))>モグステーションで「製品版への引き継ぎ」の手続きを\n行ってください。\nモグステーション： https://sqex.to/Msp<Else/>製品版パッケージをご購入いただくか、\n<SwitchPlatform>421</SwitchPlatform>で「製品版」をご購入ください。</If>",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3331,7 +3331,7 @@
   },
   {
     "RowId": 870,
-    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox)>]",
+    "Text": "[<switch(IntegerParameter(1),Win,PS4,Mac,PS5,Xbox,Switch2)>]",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,
@@ -3619,7 +3619,7 @@
   },
   {
     "RowId": 902,
-    "Text": "<If(Equal(PlayerParameter(75),0))>マウスやゲームパッド<Else/><If(Equal(PlayerParameter(78),99))>ワイヤレスコントローラー<Else/>コントローラー</If>やマウス</If>の各種設定が保存されます。\n※入力デバイスに依存する情報は保存されません。",
+    "Text": "<SwitchPlatform>21</SwitchPlatform>やマウスの各種設定が保存されます。\n※入力デバイスに依存する情報は保存されません。",
     "Unknown0": "入力デバイス設定",
     "Unknown1": "",
     "TYPE": 0,
@@ -3646,7 +3646,7 @@
   },
   {
     "RowId": 905,
-    "Text": "サウンドの視覚表現、色覚多様性の設定情報が保存されます。<If(Equal(PlayerParameter(75),0))> <Else/>\n※<If(GreaterThan(PlayerParameter(75),0))><switch(PlayerParameter(75),PlayStation®3,PlayStation®4,PlayStation®4,PlayStation®5,Xbox Series X,Xbox Series S)><Else/> </If>版では適用されません。</If>",
+    "Text": "サウンドの視覚表現、色覚多様性の設定情報が保存されます。",
     "Unknown0": "アクセシビリティ設定",
     "Unknown1": "",
     "TYPE": 0,
@@ -3781,7 +3781,7 @@
   },
   {
     "RowId": 920,
-    "Text": "<If(GreaterThan(PlayerParameter(75),0))>コントローラー・マウス<Else/>マウス・ゲームパッド</If>操作モード別の設定情報が保存されます。",
+    "Text": "<If(GreaterThan(PlayerParameter(75),0))><SwitchPlatform>1</SwitchPlatform>・マウス<Else/>マウス・<SwitchPlatform>1</SwitchPlatform></If>操作モード別の設定情報が保存されます。",
     "Unknown0": "キャラクターコンフィグ",
     "Unknown1": "",
     "TYPE": 0,
@@ -4159,7 +4159,7 @@
   },
   {
     "RowId": 962,
-    "Text": "本機能は、ご利用の<If(Equal(PlayerParameter(75),0))>ハードウェア<Else/><If(GreaterThan(PlayerParameter(75),0))><switch(PlayerParameter(75),PS3,PS4™,PS4™,PS5™,Xbox,Xbox)><Else/> </If></If>に保存されているHUDやホットバー設定などのコンフィグ情報を、サーバー上にバックアップ／ダウンロードする機能です。\n本機能を利用することで、プレイ環境が変わった際にも、多くの設定を引き継いで遊ぶことができます。\n\nなお、 サーバーへのバックアップおよびダウンロード機能をご使用になる際には、<If(Equal(PlayerParameter(75),0))>ハードウェア<Else/><If(GreaterThan(PlayerParameter(75),0))><switch(PlayerParameter(75),PS3,PS4™,PS4™,PS5™,Xbox,Xbox)><Else/> </If></If>に保存されている<If(Equal(PlayerParameter(75),0))>設定ファイル<Else/>セーブデータ</If>を、ご自身にて保存しておくことをおすすめします。<If(Equal(PlayerParameter(75),0))>手動によるバックアップの他、ランチャー画面にある「コンフィグ」を起動し、「保存データのバックアップ／復元」をご使用ください。<Else/> </If>",
+    "Text": "本機能は、ご利用の<If(Equal(PlayerParameter(75),0))>ハードウェア<Else/><SwitchPlatform>481</SwitchPlatform></If>に保存されているHUDやホットバー設定などのコンフィグ情報を、サーバー上にバックアップ／ダウンロードする機能です。\n本機能を利用することで、プレイ環境が変わった際にも、多くの設定を引き継いで遊ぶことができます。\n\nなお、 サーバーへのバックアップおよびダウンロード機能をご使用になる際には、<If(Equal(PlayerParameter(75),0))>ハードウェア<Else/><SwitchPlatform>481</SwitchPlatform></If>に保存されている<If(Equal(PlayerParameter(75),0))>設定ファイル<Else/>セーブデータ</If>を、ご自身にて保存しておくことをおすすめします。<If(Equal(PlayerParameter(75),0))>手動によるバックアップの他、ランチャー画面にある「コンフィグ」を起動し、「保存データのバックアップ／復元」をご使用ください。<Else/> </If>",
     "Unknown0": "",
     "Unknown1": "",
     "TYPE": 0,

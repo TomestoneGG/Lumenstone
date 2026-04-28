@@ -245,7 +245,7 @@
   },
   {
     "RowId": 15561,
-    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),4)><Else/>染色を解除する</If>"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),6)><Else/>染色を解除する</If>"
   },
   {
     "RowId": 15562,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 15626,
-    "Text": "まとめて幻影化されているアイテムです。\n元のアイテムに戻す場合、まとめて幻影化した\n装備すべてが元のアイテムに戻ります。\nよろしいですか？"
+    "Text": "まとめて幻影化されているアイテムです。\n以下で選択した装備のみが、元のアイテムに戻ります。\n元のアイテムに戻したい装備を選択してください。"
   },
   {
     "RowId": 15627,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 15662,
-    "Text": ""
+    "Text": "選択した装備を元のアイテムに戻します。\nよろしいですか？"
   },
   {
     "RowId": 15663,
@@ -669,27 +669,27 @@
   },
   {
     "RowId": 15667,
-    "Text": ""
+    "Text": "RESTORE ITEM"
   },
   {
     "RowId": 15668,
-    "Text": ""
+    "Text": "幻影化した装備をアイテムに戻す"
   },
   {
     "RowId": 15669,
-    "Text": ""
+    "Text": "すべてON"
   },
   {
     "RowId": 15670,
-    "Text": ""
+    "Text": "すべてOFF"
   },
   {
     "RowId": 15671,
-    "Text": ""
+    "Text": "決定"
   },
   {
     "RowId": 15672,
-    "Text": ""
+    "Text": "キャンセル"
   },
   {
     "RowId": 15673,
@@ -1117,11 +1117,11 @@
   },
   {
     "RowId": 15779,
-    "Text": ""
+    "Text": "<String>StringParameter(1)</String>@<String>StringParameter(2)</String>"
   },
   {
     "RowId": 15780,
-    "Text": "<If(Equal(PlayerParameter(78),99))>PlayStation™Network<Else/>Xbox ネットワーク</If>のプロフィールを見る"
+    "Text": "<SwitchPlatform>441</SwitchPlatform>を見る"
   },
   {
     "RowId": 15781,
@@ -1525,11 +1525,11 @@
   },
   {
     "RowId": 15881,
-    "Text": "開催期間中、何度でも達成できるコンテンツです。\n希少トームストーンは、達成時に自動で受け取ることができます。"
+    "Text": "開催期間中、何度でも達成できるコンテンツです。\nモグモグ★コレクションの報酬は、達成時に自動で受け取ることができます。"
   },
   {
     "RowId": 15882,
-    "Text": "週に1度だけ達成できる、ボーナスコンテンツです。\nプレイヤーごとに1つ選ばれます。\n希少トームストーンは、モグモグガイドブックから受け取れます。"
+    "Text": "週に1度だけ達成できる、ボーナスコンテンツです。\nプレイヤーごとに1つ選ばれます。\nモグモグ★コレクションの報酬は、モグモグガイドブックから受け取れます。"
   },
   {
     "RowId": 15883,
@@ -1537,11 +1537,11 @@
   },
   {
     "RowId": 15884,
-    "Text": "週に1度だけ達成できる、チャレンジコンテンツです。\n2つのうち、どちらか1つの目標を達成することで、\nモグモグガイドブックから希少トームストーンを受け取れます。"
+    "Text": "週に1度だけ達成できる、チャレンジコンテンツです。\n2つのうち、どちらか1つの目標を達成することで、\nモグモグガイドブックからモグモグ★コレクションの報酬を受け取れます。"
   },
   {
     "RowId": 15885,
-    "Text": "開催期間中1度だけ達成できる、チャレンジコンテンツです。\n希少トームストーンは、モグモグガイドブックから受け取れます。"
+    "Text": "開催期間中1度だけ達成できる、チャレンジコンテンツです。\nモグモグ★コレクションの報酬は、モグモグガイドブックから受け取れます。"
   },
   {
     "RowId": 15886,
@@ -1573,7 +1573,7 @@
   },
   {
     "RowId": 15893,
-    "Text": "希少トームストーン受け取り可能"
+    "Text": "報酬受け取り可能"
   },
   {
     "RowId": 15894,
@@ -1653,7 +1653,7 @@
   },
   {
     "RowId": 15913,
-    "Text": "クリスタルコンフリクトのカジュアルマッチに参戦し戦績を残す"
+    "Text": "クリスタルコンフリクトのカジュアルマッチに参戦し、\n戦績を残す。"
   },
   {
     "RowId": 15914,
@@ -1677,7 +1677,7 @@
   },
   {
     "RowId": 15919,
-    "Text": "<sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),10)>,0)><sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),11)>,0)>終了まで"
+    "Text": "<sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),15)>,0)><sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),16)>,0)>終了まで"
   },
   {
     "RowId": 15920,
@@ -1773,7 +1773,7 @@
   },
   {
     "RowId": 15943,
-    "Text": "トレジャーハントの転送魔紋から突入できる宝物庫に<Num>IntegerParameter(8)</Num>回挑戦する\n※コンテンツを途中退出した場合はカウント対象になりません"
+    "Text": "トレジャーハントの転送魔紋から突入できる宝物庫に\n<Num>IntegerParameter(8)</Num>回挑戦する。\n※途中退出した場合はカウント対象になりません。"
   },
   {
     "RowId": 15944,
@@ -1797,7 +1797,7 @@
   },
   {
     "RowId": 15949,
-    "Text": "<sheet(PublicContent,IntegerParameter(5),3)>のクリティカルエンゲージメントを<Num>IntegerParameter(8)</Num>回達成する。"
+    "Text": "<If(Equal(IntegerParameter(20),8))><sheet(PublicContent,IntegerParameter(5),3)>のクリティカルエンゲージメント<Else/>「<sheet(DynamicEvent,IntegerParameter(5),11)>」</If>を<Num>IntegerParameter(8)</Num>回コンプリートする。"
   },
   {
     "RowId": 15950,
@@ -1821,7 +1821,7 @@
   },
   {
     "RowId": 15955,
-    "Text": "<String>StringParameter(1)</String>の<If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),地下<Num>IntegerParameter(3)</Num>階,第<Num>IntegerParameter(3)</Num>層,第<Num>IntegerParameter(3)</Num>巡礼路)>を攻略する。<sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))><Else/>いずれかの<If(Equal(IntegerParameter(2),3))>巡礼路<Else/>階層</If>を攻略する。<sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))></If>"
+    "Text": "<String>StringParameter(1)</String>の<If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),地下<Num>IntegerParameter(3)</Num>階,第<Num>IntegerParameter(3)</Num>層,第<Num>IntegerParameter(3)</Num>巡礼路)>を攻略する。<sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))><Else/>いずれかの<If(Equal(IntegerParameter(2),3))>巡礼路<Else/>階層</If>を<Num>IntegerParameter(5)</Num>回攻略する。<sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))></If>"
   },
   {
     "RowId": 15956,
@@ -1833,7 +1833,7 @@
   },
   {
     "RowId": 15958,
-    "Text": "<sheet(Addon,15955,0,<sheet(PlaceName,IntegerParameter(18),0)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16))>"
+    "Text": "<sheet(Addon,15955,0,<sheet(PlaceName,IntegerParameter(18),0)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16),IntegerParameter(8))>"
   },
   {
     "RowId": 15959,

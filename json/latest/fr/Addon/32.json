@@ -245,7 +245,7 @@
   },
   {
     "RowId": 15561,
-    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),4)><Else/>Défaire la teinture</If>"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),6)><Else/>Défaire la teinture</If>"
   },
   {
     "RowId": 15562,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 15626,
-    "Text": "Les mirages suivants font partie d'un mirage d'ensemble. En procédant, vous retransformerez chacun d'entre eux en objets. Souhaitez-vous continuer?"
+    "Text": "Les mirages suivants font partie d'un mirage d'ensemble. Sélectionnez les équipements que vous souhaitez retransformer en objets."
   },
   {
     "RowId": 15627,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 15662,
-    "Text": ""
+    "Text": "Les équipements sélectionnés seront retransformés en objets. Continuer?"
   },
   {
     "RowId": 15663,
@@ -669,7 +669,7 @@
   },
   {
     "RowId": 15667,
-    "Text": ""
+    "Text": "Réinitialisation d'objet"
   },
   {
     "RowId": 15668,
@@ -677,19 +677,19 @@
   },
   {
     "RowId": 15669,
-    "Text": ""
+    "Text": "Tout activer"
   },
   {
     "RowId": 15670,
-    "Text": ""
+    "Text": "Tout désactiver"
   },
   {
     "RowId": 15671,
-    "Text": ""
+    "Text": "Confirmer"
   },
   {
     "RowId": 15672,
-    "Text": ""
+    "Text": "Annuler"
   },
   {
     "RowId": 15673,
@@ -1117,11 +1117,11 @@
   },
   {
     "RowId": 15779,
-    "Text": ""
+    "Text": "<String>StringParameter(1)</String>@<String>StringParameter(2)</String>"
   },
   {
     "RowId": 15780,
-    "Text": "Voir le profil <If(Equal(PlayerParameter(78),99))>PlayStation™Network<Else/>Xbox</If>"
+    "Text": "Voir <If(Equal(PlayerParameter(78),6))>la<Else/>le</If> <SwitchPlatform>441</SwitchPlatform>"
   },
   {
     "RowId": 15781,
@@ -1525,11 +1525,11 @@
   },
   {
     "RowId": 15881,
-    "Text": "Contenu qui peut être répété plusieurs fois pendant toute la durée de l'événement.\nLes mémoquartz inhabituels sont reçus automatiquement à l'accomplissement de la mission."
+    "Text": "Contenu qui peut être répété plusieurs fois pendant toute la durée de l'événement.\nLes récompenses de la Collection Mog Mog sont reçues automatiquement à l'accomplissement de la mission."
   },
   {
     "RowId": 15882,
-    "Text": "Contenu bonus qui ne peut être effectué qu'une fois par semaine.\nChaque joueur se voit attribué un objectif différent.\nLes mémoquartz inhabituels doivent être récupérés depuis le Guide Mog Mog."
+    "Text": "Contenu bonus qui ne peut être effectué qu'une fois par semaine.\nChaque joueur se voit attribué un objectif différent.\nLes récompenses de la Collection Mog Mog doivent être récupérées depuis le Guide Mog Mog."
   },
   {
     "RowId": 15883,
@@ -1537,11 +1537,11 @@
   },
   {
     "RowId": 15884,
-    "Text": "Challenge qui ne peut être effectué qu'une fois par semaine.\nIl n'est nécessaire d'accomplir qu'un des deux objectifs.\nLes mémoquartz inhabituels doivent être récupérés depuis le Guide Mog Mog."
+    "Text": "Challenge qui ne peut être effectué qu'une fois par semaine.\nIl n'est nécessaire d'accomplir qu'un des deux objectifs.\nLes récompenses de la Collection Mog Mog doivent être récupérées depuis le Guide Mog Mog."
   },
   {
     "RowId": 15885,
-    "Text": "Challenge qui ne peut être effectué qu'une fois pendant la durée de l'événement.\nLes mémoquartz allagois inhabituels doivent être récupérés depuis le Guide Mog Mog."
+    "Text": "Challenge qui ne peut être effectué qu'une fois pendant la durée de l'événement.\nLes récompenses de la Collection Mog Mog doivent être récupérées depuis le Guide Mog Mog."
   },
   {
     "RowId": 15886,
@@ -1573,7 +1573,7 @@
   },
   {
     "RowId": 15893,
-    "Text": "Mémoquartz inhabituels disponibles"
+    "Text": "Récompenses disponibles"
   },
   {
     "RowId": 15894,
@@ -1677,7 +1677,7 @@
   },
   {
     "RowId": 15919,
-    "Text": "Jusqu'à la fin de la <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),10)>,0)>, <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),11)>,0)>."
+    "Text": "Jusqu'à la fin de la <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),15)>,0)>, <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),16)>,0)>."
   },
   {
     "RowId": 15920,
@@ -1777,7 +1777,7 @@
   },
   {
     "RowId": 15944,
-    "Text": "Chasse aux trésors: cache au trésor"
+    "Text": "Chasse aux trésors:\ncache au trésor"
   },
   {
     "RowId": 15945,
@@ -1797,7 +1797,7 @@
   },
   {
     "RowId": 15949,
-    "Text": "Remporter <Num>IntegerParameter(8)</Num> <If(Equal(IntegerParameter(8),1))>affrontement crucial<Else/>affrontements cruciaux</If> <If(Equal(IntegerParameter(5),735))>sur le Front sud de Bozja<Else/>sur les Hauts plateaux de Zadnor</If>."
+    "Text": "Remporter 8 fois <If(Equal(IntegerParameter(20),8))>un affrontement crucial dans la mission “<sheet(PublicContent,IntegerParameter(5),3)>”<Else/>l'affrontement crucial “<sheet(DynamicEvent,IntegerParameter(5),11)>”</If>."
   },
   {
     "RowId": 15950,
@@ -1821,7 +1821,7 @@
   },
   {
     "RowId": 15955,
-    "Text": "Conquérir <If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),le <Num>IntegerParameter(3)</Num>e sous-sol,le <Num>IntegerParameter(3)</Num>e étage,la <Num>IntegerParameter(3)</Num>e zone)> du <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))><Else/><If(Equal(IntegerParameter(2),3))>un étage<Else/>une zone</If> du <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))></If>"
+    "Text": "Conquérir <Num>IntegerParameter(5)</Num> fois <If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),le <Num>IntegerParameter(3)</Num>e sous-sol,le <Num>IntegerParameter(3)</Num>e étage,la <Num>IntegerParameter(3)</Num>e zone)> du <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))><Else/><If(Equal(IntegerParameter(2),3))>un étage<Else/>une zone</If> du <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))></If>"
   },
   {
     "RowId": 15956,
@@ -1833,7 +1833,7 @@
   },
   {
     "RowId": 15958,
-    "Text": "<sheet(Addon,15955,0,<sheet(PlaceName,IntegerParameter(18),0)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16))>"
+    "Text": "<sheet(Addon,15955,0,<sheet(PlaceName,IntegerParameter(18),0)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16),IntegerParameter(8))>"
   },
   {
     "RowId": 15959,

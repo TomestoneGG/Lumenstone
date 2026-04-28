@@ -49,7 +49,7 @@
   },
   {
     "RowId": 16512,
-    "Text": "●廃止"
+    "Text": ""
   },
   {
     "RowId": 16513,
@@ -93,7 +93,7 @@
   },
   {
     "RowId": 16523,
-    "Text": "●廃止"
+    "Text": ""
   },
   {
     "RowId": 16524,
@@ -177,11 +177,11 @@
   },
   {
     "RowId": 16544,
-    "Text": "●廃止"
+    "Text": ""
   },
   {
     "RowId": 16545,
-    "Text": "●廃止"
+    "Text": ""
   },
   {
     "RowId": 16546,
@@ -641,7 +641,7 @@
   },
   {
     "RowId": 16660,
-    "Text": "Lv. <Num>IntegerParameter(1)</Num><sheet(Action,IntegerParameter(2),0)>"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))>Lv. <Num>IntegerParameter(1)</Num><Else/> </If><sheet(Action,IntegerParameter(2),0)>"
   },
   {
     "RowId": 16661,
@@ -733,7 +733,7 @@
   },
   {
     "RowId": 16683,
-    "Text": "<If(GreaterThan(PlayerParameter(75),0))>Controller<Else/>Gamepad</If> Input"
+    "Text": "<SwitchPlatform>1</SwitchPlatform> Input"
   },
   {
     "RowId": 16684,
@@ -769,7 +769,7 @@
   },
   {
     "RowId": 16692,
-    "Text": "<If(GreaterThan(PlayerParameter(75),0))>Controller<Else/>Gamepad</If> Settings"
+    "Text": "<SwitchPlatform>1</SwitchPlatform> Settings"
   },
   {
     "RowId": 16693,
@@ -781,7 +781,7 @@
   },
   {
     "RowId": 16695,
-    "Text": "Select which combination of inputs on your <If(GreaterThan(PlayerParameter(75),0))>controller<Else/>gamepad</If> are used to select and execute phantom actions.\n※If you have only learned a single phantom action, using either combination will execute the action."
+    "Text": "Select which combination of inputs on your <Lower><SwitchPlatform>1</SwitchPlatform></Lower> is used to select and execute phantom actions.\n※If you have only learned a single phantom action, using either combination will execute the action."
   },
   {
     "RowId": 16696,
@@ -1065,7 +1065,7 @@
   },
   {
     "RowId": 16766,
-    "Text": "Time Limit: <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>m<If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>s<Else/> </If><Else/>None</If>"
+    "Text": "Time Limit: <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>m <If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>s<Else/> </If><Else/>None</If><If(GreaterThan(IntegerParameter(3),0))> - <Num>IntegerParameter(3)</Num>m <If(GreaterThan(IntegerParameter(4),0))><Num>IntegerParameter(4)</Num>s<Else/> </If><Else/> </If>"
   },
   {
     "RowId": 16767,

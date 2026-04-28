@@ -245,7 +245,7 @@
   },
   {
     "RowId": 15561,
-    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),4)><Else/>Undo dyeing</If>"
+    "Text": "<If(GreaterThan(IntegerParameter(1),0))><sheet(Stain,IntegerParameter(1),6)><Else/>Undo dyeing</If>"
   },
   {
     "RowId": 15562,
@@ -505,7 +505,7 @@
   },
   {
     "RowId": 15626,
-    "Text": "Together, these items form an outfit glamour. Restoring them will return each item to its original form. Proceed?"
+    "Text": "Together, these items form an outfit glamour. Please select the items from this outfit glamour you wish to restore."
   },
   {
     "RowId": 15627,
@@ -649,7 +649,7 @@
   },
   {
     "RowId": 15662,
-    "Text": ""
+    "Text": "The selected items will be restored. Proceed?"
   },
   {
     "RowId": 15663,
@@ -669,7 +669,7 @@
   },
   {
     "RowId": 15667,
-    "Text": ""
+    "Text": "Item Restoration"
   },
   {
     "RowId": 15668,
@@ -677,19 +677,19 @@
   },
   {
     "RowId": 15669,
-    "Text": ""
+    "Text": "Select All"
   },
   {
     "RowId": 15670,
-    "Text": ""
+    "Text": "Deselect All"
   },
   {
     "RowId": 15671,
-    "Text": ""
+    "Text": "Confirm"
   },
   {
     "RowId": 15672,
-    "Text": ""
+    "Text": "Cancel"
   },
   {
     "RowId": 15673,
@@ -1117,11 +1117,11 @@
   },
   {
     "RowId": 15779,
-    "Text": ""
+    "Text": "<String>StringParameter(1)</String>@<String>StringParameter(2)</String>"
   },
   {
     "RowId": 15780,
-    "Text": "View <If(Equal(PlayerParameter(78),99))>PlayStation™Network<Else/>Xbox Network</If> Profile"
+    "Text": "View <SwitchPlatform>441</SwitchPlatform> Profile"
   },
   {
     "RowId": 15781,
@@ -1525,11 +1525,11 @@
   },
   {
     "RowId": 15881,
-    "Text": "These objectives can be completed repeatedly during the event period. Irregular tomestones will be claimed automatically upon completion."
+    "Text": "These objectives can be completed repeatedly during the event period. Moogle Treasure Trove rewards will be claimed automatically upon completion."
   },
   {
     "RowId": 15882,
-    "Text": "These bonus objectives can be completed once per week, and each player will be assigned their own objective. Irregular tomestones can be claimed from the Mogpendium upon completion."
+    "Text": "These bonus objectives can be completed once per week, and each player will be assigned their own objective. Moogle Treasure Trove rewards can be claimed from the Mogpendium upon completion."
   },
   {
     "RowId": 15883,
@@ -1537,11 +1537,11 @@
   },
   {
     "RowId": 15884,
-    "Text": "These challenges can be completed once per week by completing one of the two objectives. Irregular tomestones can be claimed from the Mogpendium upon completion."
+    "Text": "These challenges can be completed once per week by completing one of the two objectives. Moogle Treasure Trove rewards can be claimed from the Mogpendium upon completion."
   },
   {
     "RowId": 15885,
-    "Text": "This challenge can be completed once per event period. Irregular tomestones can be claimed from the Mogpendium upon completion."
+    "Text": "This challenge can be completed once per event period. Moogle Treasure Trove rewards can be claimed from the Mogpendium upon completion."
   },
   {
     "RowId": 15886,
@@ -1573,7 +1573,7 @@
   },
   {
     "RowId": 15893,
-    "Text": "Tomestones Available"
+    "Text": "Rewards Available"
   },
   {
     "RowId": 15894,
@@ -1677,7 +1677,7 @@
   },
   {
     "RowId": 15919,
-    "Text": "Until the end of the <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),10)>,0)>: <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),11)>,0)>."
+    "Text": "Until the end of the <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),15)>,0)>: <sheet(CSBonusTextData,<sheet(CSBonusSeason,IntegerParameter(1),16)>,0)>."
   },
   {
     "RowId": 15920,
@@ -1797,7 +1797,7 @@
   },
   {
     "RowId": 15949,
-    "Text": "Complete <Num>IntegerParameter(8)</Num> critical <If(Equal(IntegerParameter(8),1))>engagement<Else/>engagements</If> <If(Equal(IntegerParameter(5),27))>on the Bozjan southern front<Else/>in Zadnor</If>."
+    "Text": "<If(Equal(IntegerParameter(20),8))>Complete <Num>IntegerParameter(8)</Num> critical <If(Equal(IntegerParameter(8),1))>engagement<Else/>engagements</If> <If(Equal(IntegerParameter(5),27))>on the Bozjan southern front<Else/>in Zadnor</If><Else/>Complete the critical engagement “<sheet(DynamicEvent,IntegerParameter(5),11)>” <Num>IntegerParameter(8)</Num> <If(Equal(IntegerParameter(8),1))>time<Else/>times</If></If>."
   },
   {
     "RowId": 15950,
@@ -1821,7 +1821,7 @@
   },
   {
     "RowId": 15955,
-    "Text": "Clear <If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),floor <Num>IntegerParameter(3)</Num>,floor <Num>IntegerParameter(3)</Num>,area <Num>IntegerParameter(3)</Num>)><Else/>any <If(Equal(IntegerParameter(2),3))>area<Else/>floor</If></If> of <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))>"
+    "Text": "Clear <If(GreaterThan(IntegerParameter(3),0))><switch(IntegerParameter(2),floor <Num>IntegerParameter(3)</Num>,floor <Num>IntegerParameter(3)</Num>,area <Num>IntegerParameter(3)</Num>)> of <String>StringParameter(1)</String>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))><Else/>any <If(Equal(IntegerParameter(2),3))>area<Else/>floor</If> of <String>StringParameter(1)</String> <Num>IntegerParameter(5)</Num> <If(Equal(IntegerParameter(5),1))>time<Else/>times</If>. <sheet(Addon,15957,0,IntegerParameter(4),IntegerParameter(3))></If>"
   },
   {
     "RowId": 15956,
@@ -1833,7 +1833,7 @@
   },
   {
     "RowId": 15958,
-    "Text": "<sheet(Addon,15955,0,<sheet(PlaceName,IntegerParameter(18),0)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16))>"
+    "Text": "<sheet(Addon,15955,0,<ennoun(PlaceName,2,IntegerParameter(18),2,1)>,IntegerParameter(14),IntegerParameter(12),IntegerParameter(16),IntegerParameter(8))>"
   },
   {
     "RowId": 15959,
@@ -1905,7 +1905,7 @@
   },
   {
     "RowId": 15976,
-    "Text": "Dye Selected"
+    "Text": "Dye Required"
   },
   {
     "RowId": 15977,
