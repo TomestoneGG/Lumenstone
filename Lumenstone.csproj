@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="external/**/*.cs" />
     <PackageReference Include="Lumina" Version="7.4.0" />
-    <PackageReference Include="Lumina.Excel" Version="7.4.3" />
     <PackageReference Include="SixLabors.ImageSharp" Version="3.1.12" />
     <PackageReference Include="SkiaSharp" Version="3.119.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="external/Lumina.Excel/src/Lumina.Excel/Lumina.Excel.csproj" />
   </ItemGroup>
 
 </Project>
