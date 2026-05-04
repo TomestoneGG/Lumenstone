@@ -9,7 +9,7 @@ using Lumina.Text.ReadOnly;
 
 public class SeStringConverter : JsonConverter<ReadOnlySeString>
 {
-    private ExcelSheet<UIColor> _uiColors;
+    private readonly ExcelSheet<UIColor> _uiColors;
 
     public SeStringConverter(ExcelSheet<UIColor> uiColors)
     {
@@ -66,7 +66,7 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
                 
                 var colorProperty = typeof(UIColor).GetProperty("Dark");
                 if (colorProperty != null && colorProperty.PropertyType == typeof(uint)) {
-                    uint colorValue = (uint)colorProperty.GetValue(row);
+                    uint colorValue = (uint)(colorProperty.GetValue(row) ?? 0U);
                     string hexValue = colorValue.ToString("x");
                     string paddedHexValue = hexValue.PadLeft(8, '0');
                     string firstSixChars = paddedHexValue.Substring(0, 6);
@@ -96,10 +96,10 @@ public class SeStringConverter : JsonConverter<ReadOnlySeString>
     {
         return type switch
         {
-            Lumina.Text.Expressions.ExpressionType.IntegerParameter => $"IntegerParameter({ConvertExpression(expression)})",
-            Lumina.Text.Expressions.ExpressionType.PlayerParameter => $"PlayerParameter({ConvertExpression(expression)})",
-            Lumina.Text.Expressions.ExpressionType.StringParameter => $"StringParameter({ConvertExpression(expression)})",
-            Lumina.Text.Expressions.ExpressionType.ObjectParameter => $"ObjectParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.LocalNumber => $"IntegerParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.GlobalNumber => $"PlayerParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.LocalString => $"StringParameter({ConvertExpression(expression)})",
+            Lumina.Text.Expressions.ExpressionType.GlobalString => $"ObjectParameter({ConvertExpression(expression)})",
             _ => throw new NotImplementedException() // cannot reach, as this instance is immutable and this field is filtered from constructor
         };
     }

@@ -29,11 +29,11 @@ public class LazyRowConverter : JsonConverter<RowRef>
 
                 // Use reflection to get the private Type field
                 var actualType = value.GetType();
-                FieldInfo typeField = actualType.GetField("<rowType>P", BindingFlags.NonPublic | BindingFlags.Instance);
+                FieldInfo? typeField = actualType.GetField("<rowType>P", BindingFlags.NonPublic | BindingFlags.Instance);
 
                 if (typeField != null)
                 {
-                    Type rowType = typeField.GetValue(value) as Type;
+                    Type? rowType = typeField.GetValue(value) as Type;
 
                     if (rowType != null)
                     {

@@ -15,7 +15,7 @@ public class LazySubrowConverterFactory : JsonConverterFactory
 
             // Check if T is a struct and implements IExcelRow<T>
             return argumentType.IsValueType && 
-                argumentType.GetInterface(typeof(IExcelSubrow<>).FullName) != null;
+                typeof(IExcelSubrow<>).MakeGenericType(argumentType).IsAssignableFrom(argumentType);
         }
 
         return false;
@@ -25,6 +25,6 @@ public class LazySubrowConverterFactory : JsonConverterFactory
     {
         // Create a converter for the specific type
         Type converterType = typeof(LazySubrowConverter<>).MakeGenericType(typeToConvert.GetGenericArguments()[0]);
-        return (JsonConverter)Activator.CreateInstance(converterType);
+        return (JsonConverter)Activator.CreateInstance(converterType)!;
     }
 }

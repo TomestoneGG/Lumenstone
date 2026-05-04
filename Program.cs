@@ -140,18 +140,22 @@ class Program
         var luminaFR = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.French });
         var luminaJA = new Lumina.GameData(sqpackPath, new() { DefaultExcelLanguage = Lumina.Data.Language.Japanese });
         
+        var uiColors = luminaEN.GetExcelSheet<UIColor>();
+        if (uiColors == null)
+            throw new InvalidOperationException("Could not load UIColor sheet.");
+
         JsonSerializerOptions options = new() {
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             WriteIndented = true,
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-            Converters = { new SeStringConverter(luminaEN.GetExcelSheet<UIColor>()), new LazyRowConverterFactory(), new LazySubrowConverterFactory() },
+            Converters = { new SeStringConverter(uiColors), new LazyRowConverterFactory(), new LazySubrowConverterFactory() },
             TypeInfoResolver = CreateLuminaIgnoreExcelPageResolver(),
         };
 
         if (!iconsOnly)
         {
             // Get all types in the Lumina.Excel.GeneratedSheets namespace
-           var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Action)).GetTypes()
+           var types = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.Action))!.GetTypes()
              .Where(t => t.Namespace == "Lumina.Excel.Sheets"
                      && !t.IsAbstract
                      && t.GetInterfaces()
@@ -159,7 +163,7 @@ class Program
                                    && i.GetGenericTypeDefinition() == typeof(Lumina.Excel.IExcelRow<>)
                                    && i.GenericTypeArguments[0] == t));
 
-            MethodInfo generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
+            MethodInfo? generic = typeof(Program).GetMethod(nameof(ExtractSheetForAllLanguages), BindingFlags.Static | BindingFlags.NonPublic);
             if (generic == null)
                 return;
 
@@ -172,7 +176,7 @@ class Program
                 constructed.Invoke(null, new object[] { patch, luminaEN, luminaDE, luminaFR, luminaJA, options });
             }
 
-            var subrowTypes = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.GilShopItem)).GetTypes()
+            var subrowTypes = Assembly.GetAssembly(typeof(Lumina.Excel.Sheets.GilShopItem))!.GetTypes()
              .Where(t => t.Namespace == "Lumina.Excel.Sheets"
                      && !t.IsAbstract
                      && t.GetInterfaces()
@@ -432,7 +436,7 @@ class Program
         }
     }
 
-    private static Image<Bgra32> GetImage(TexFile tex)
+    private static Image<Bgra32>? GetImage(TexFile tex)
     {
         // Create a new image from the raw pixel data
         try
@@ -440,7 +444,7 @@ class Program
             var image = Image.LoadPixelData<Bgra32>(tex.ImageData, tex.Header.Width, tex.Header.Height);
             return image;
         }
-        catch (System.NotSupportedException e)
+        catch (System.NotSupportedException)
         {
             Console.WriteLine("Failed to extract image!");
             return null;
@@ -498,6 +502,9 @@ class Program
                     Directory.CreateDirectory(folderPath);
                 }
 
+                if (file == null)
+                    continue;
+
                 var image = GetImage(file);
                 if (image != null)
                     image.SaveAsJpeg(outputFilePath);
@@ -540,6 +547,9 @@ class Program
                 
                 // Access the lumina data
                 var file = lumina.GetFile<TexFile>(filePath);
+
+                if (file == null)
+                    continue;
 
                 var image = GetImage(file);
                 if (image != null)

@@ -40,6 +40,6 @@ public class LazyRowConverterFactory : JsonConverterFactory
         }
 
         var converterType = typeof(LazyRowConverter<>).MakeGenericType(genericType);
-        return (JsonConverter)Activator.CreateInstance(converterType);
+        return (JsonConverter)Activator.CreateInstance(converterType)!;
     }
 }
