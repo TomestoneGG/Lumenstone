@@ -475,38 +475,50 @@
   },
   {
     "RowId": 11543,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez désormais accès aux missions de maîtrise pour la classe “<If(Equal(PlayerParameter(4),0))><sheet(ClassJob,IntegerParameter(1),0)><Else/><sheet(ClassJob,IntegerParameter(1),2)></If>”.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 1,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11544,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Objectif accompli, vous pouvez terminer la mission à tout moment.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11545,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Nouveau record!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11546,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Objectif accompli!\nTemps imparti: +<Num>IntegerParameter(1)</Num>:<Sec>IntegerParameter(2)</Sec>\nMultiplicateur d'évaluation: +<Num>IntegerParameter(3)</Num>%",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 2048,
     "Unknown1": 0,
-    "Duration": 0,
+    "Duration": 60,
     "Unknown2": false
   },
   {
@@ -520,108 +532,144 @@
   },
   {
     "RowId": 11548,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>vous<Else/><If(PlayerParameter(7))><frnoun(ObjStr,2,PlayerParameter(7),1,1)><Else/><If(Equal(2,9))><If(PlayerParameter(66))>d'<Else/>de</If><String>ObjectParameter(2)</String><Else/><If(PlayerParameter(5))><sheet(Attributive,2,36)><String>ObjectParameter(2)</String><Else/><sheet(Attributive,2,28)><String>ObjectParameter(2)</String></If></If></If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>avez<Else/>a</If> accompli la mission “<sheet(WKSMissionUnit,IntegerParameter(1),0)>”\u00A0!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11549,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez obtenu <Num>IntegerParameter(2)</Num> <If(GreaterThan(IntegerParameter(3),0))>(+<Num>IntegerParameter(3)</Num>) <Else/> </If>point<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If> de maîtrise pour la classe “<If(Equal(PlayerParameter(4),0))><sheet(ClassJob,IntegerParameter(1),0)><Else/><sheet(ClassJob,IntegerParameter(1),2)></If>”.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 1,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11550,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Arrosez trois <frnoun(EObj,12,IntegerParameter(1),2,1)> <frnoun(EventItem,8,IntegerParameter(2),1,1)> pour les revitaliser.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11551,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>vous<Else/><If(PlayerParameter(7))><frnoun(ObjStr,2,PlayerParameter(7),1,1)><Else/><If(Equal(2,9))><If(PlayerParameter(66))>d'<Else/>de</If><String>ObjectParameter(2)</String><Else/><If(PlayerParameter(5))><sheet(Attributive,2,36)><String>ObjectParameter(2)</String><Else/><sheet(Attributive,2,28)><String>ObjectParameter(2)</String></If></If></If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>êtes<Else/>est</If> à court <frnoun(EventItem,8,IntegerParameter(2),1,1)>!\nFaites le plein à <frnoun(EObj,1,IntegerParameter(1),1,1)>.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11552,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Arrosez <frnoun(EObj,2,IntegerParameter(1),2,1)> <frnoun(EventItem,8,IntegerParameter(2),1,1)> pour les revitaliser.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 8,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11553,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Remplacez trois <frnoun(EObj,12,IntegerParameter(1),2,1)> par <frnoun(EventItem,1,IntegerParameter(2),2,1)>.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11554,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "<Head><If(Equal(ObjectParameter(1),ObjectParameter(2)))>vous<Else/><If(PlayerParameter(7))><frnoun(ObjStr,2,PlayerParameter(7),1,1)><Else/><If(Equal(2,9))><If(PlayerParameter(66))>d'<Else/>de</If><String>ObjectParameter(2)</String><Else/><If(PlayerParameter(5))><sheet(Attributive,2,36)><String>ObjectParameter(2)</String><Else/><sheet(Attributive,2,28)><String>ObjectParameter(2)</String></If></If></If></If></Head> <If(Equal(ObjectParameter(1),ObjectParameter(2)))>avez<Else/>a</If> remplacé tous les composants endommagés!\nRetournez à <frnoun(EObj,1,IntegerParameter(1),1,1)> chercher de nouvelles <frnoun(EventItem,12,IntegerParameter(2),2,1)>.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11555,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Remplacez <frnoun(EObj,2,IntegerParameter(1),2,1)> par <frnoun(EventItem,2,IntegerParameter(2),2,1)>.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 8,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11556,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez ramassé <frnoun(EObj,1,IntegerParameter(1),1,1)>! Placez-le dans <frnoun(EObj,1,IntegerParameter(2),1,1)> pour absorber son énergie!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11557,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "<Head><frnoun(EObj,2,IntegerParameter(2),1,1)></Head> a été complètement absorbé par <frnoun(EObj,2,IntegerParameter(3),1,1)>!\nRetournez à <frnoun(EObj,1,IntegerParameter(1),1,1)> pour extraire un autre <frnoun(EObj,12,IntegerParameter(2),1,1)>.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 64,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11558,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous devez d'abord creuser <frnoun(EObj,1,IntegerParameter(1),1,1)>!",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 8,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11559,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Récupérez l'énergie <frnoun(EObj,9,IntegerParameter(1),1,1)> en le plaçant dans <frnoun(EObj,1,IntegerParameter(2),1,1)>!",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 8,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -637,27 +685,36 @@
   },
   {
     "RowId": 11561,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous pouvez utiliser <sheet(Action,IntegerParameter(1),0)> <Num>IntegerParameter(2)</Num> fois supplémentaire<If(LessThanOrEqualTo(IntegerParameter(2),1))> <Else/>s</If>!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 1,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11562,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous récupérez <Num>IntegerParameter(1)</Num> PR!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 1,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11563,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Votre nouveau record de <Num>IntegerParameter(2)</Num> pour la mission “<sheet(WKSMissionUnit,IntegerParameter(1),0)>” a été enregistré.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -721,81 +778,108 @@
   },
   {
     "RowId": 11570,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez abattu une plante à pollen toxique!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11571,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez incinéré une plante à pollen toxique!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11572,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez exterminé une plante agressive!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11573,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Les assistants peuvent désormais utiliser les analyseurs de terrain pour neutraliser les plantes agressives.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11574,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez stimulé la sublimation d'un épis de maïs sirène!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11575,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez stimulé la sublimation d'un petit épis de maïs sirène!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11576,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez stimulé la sublimation d'un grand épis de maïs sirène!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 16,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11577,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Ravitaillement effectué,\nvous pouvez désormais utiliser l'action Cosmoformule bêta!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11578,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Ravitaillement effectué,\nvous pouvez désormais utiliser l'action Laser diffuseur!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -835,9 +919,12 @@
   },
   {
     "RowId": 11582,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Approchez-vous d'un réservoir pour vous ravitailler en formule!",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -886,27 +973,36 @@
   },
   {
     "RowId": 11587,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Objectif accompli! Le temps imparti a été allongé de <If(GreaterThan(IntegerParameter(1),0))><Num>IntegerParameter(1)</Num>m<Else/> </If><If(GreaterThan(IntegerParameter(2),0))><Num>IntegerParameter(2)</Num>s<Else/> </If> et le multiplicateur d'évaluation est augmenté de +<Num>IntegerParameter(3)</Num>%.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 1,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11588,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez appris les emotes <i><sheet(Emote,330,0)></i> et <i><sheet(Emote,331,0)></i>!",
+    "LogKind": {
+      "RowId": 64,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
   },
   {
     "RowId": 11589,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Vous avez désormais accès aux missions de maîtrise.\nPour plus de détails, veuillez consulter “<sheet(DescriptionString,1665,0,24)>” à partir de votre tablette cosmique.",
+    "LogKind": {
+      "RowId": 57,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 33,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -949,9 +1045,12 @@
   },
   {
     "RowId": 11593,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Utilisez l'action Aspergeur de formule.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 8,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
@@ -1399,9 +1498,12 @@
   },
   {
     "RowId": 11640,
-    "Text": "",
-    "LogKind": null,
-    "DisplayFlags": 0,
+    "Text": "Impossible d'obtenir de meuble. Les conditions ne sont pas remplies.",
+    "LogKind": {
+      "RowId": 60,
+      "SheetName": "LogKind"
+    },
+    "DisplayFlags": 9,
     "Unknown1": 0,
     "Duration": 0,
     "Unknown2": false
