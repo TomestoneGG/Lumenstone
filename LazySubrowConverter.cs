@@ -1,7 +1,5 @@
-using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Lumina.Data;
 using Lumina.Excel;
 
 public class LazySubrowConverter<T> : JsonConverter<SubrowRef<T>> where T : struct, IExcelSubrow<T>
