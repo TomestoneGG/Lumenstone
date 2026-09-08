@@ -583,7 +583,7 @@
   },
   {
     "RowId": 34,
-    "Description": "/petsize ペットの名前 サイズ\n特定のペットの表示サイズを変更する。\nただし、PvPコンテンツ内では無効。\nまた、自分のみ対象で他人には反映されない。\n\n>>ペットの名前\nデミ・バハムート\nデミ・フェニックス\nイフリート・ルビー\nタイタン・トパーズ\nガルーダ・エメラルド\nソルバハムート\nall\n\n>>サイズ\nlarge\n\u3000…表示サイズを『大』に変更する。\nmedium\n\u3000…表示サイズを『中』に変更する。\nsmall\n\u3000…表示サイズを『小』に変更する。\n※サイズ省略\n\u3000…設定を『小・中・大』の順に切り替える。対象がallの場合はエラーを返す。\n\n\uE070実行例\n/petsize デミ・バハムート medium\n\u3000…デミ・バハムートの表示サイズを『中』に変更する。\n/petsize all small\n\u3000…すべてのペットの表示サイズを『小』に変更する。",
+    "Description": "/petsize ペットの名前 サイズ\n特定のペットの表示サイズを変更する。\nただし、PvPコンテンツ内では無効。\nまた、自分のみ対象で他人には反映されない。\n※魔獣使いのペットの変更は/beastsizeをご利用ください。\n\n>>ペットの名前\nデミ・バハムート\nデミ・フェニックス\nイフリート・ルビー\nタイタン・トパーズ\nガルーダ・エメラルド\nソルバハムート\nall\n\n>>サイズ\nlarge\n\u3000…表示サイズを『大』に変更する。\nmedium\n\u3000…表示サイズを『中』に変更する。\nsmall\n\u3000…表示サイズを『小』に変更する。\n※サイズ省略\n\u3000…設定を『小・中・大』の順に切り替える。対象がallの場合はエラーを返す。\n\n\uE070実行例\n/petsize デミ・バハムート medium\n\u3000…デミ・バハムートの表示サイズを『中』に変更する。\n/petsize all small\n\u3000…すべてのペットの表示サイズを『小』に変更する。",
     "Alias": "",
     "ShortAlias": "",
     "Command": "/petsize",
@@ -907,17 +907,20 @@
   },
   {
     "RowId": 52,
-    "Description": "",
+    "Description": "/beastsize(/beastpetsize) ペットの名前 サイズ\n魔獣使いのペット（使役獣）の表示サイズを変更する。\nまた、自分のみ対象で他人には反映されない。\n\n>>サイズ\nlarge\n\u3000…表示サイズを『大』に変更する。\nmedium\n\u3000…表示サイズを『中』に変更する。\nsmall\n\u3000…表示サイズを『小』に変更する。\n※サイズ省略\n\u3000…設定を『小・中・大』の順に切り替える。対象がallの場合はエラーを返す。\n\n\uE070実行例\n/beastsize クーシー medium\n\u3000…クーシーの表示サイズを『中』に変更する。\n/beastsize all small\n\u3000…すべてのペットの表示サイズを『小』に変更する。",
     "Alias": "",
     "ShortAlias": "",
-    "Command": "",
-    "ShortCommand": "",
+    "Command": "/beastsize",
+    "ShortCommand": "/beastpetsize",
     "Unknown0": 0,
-    "Param": null,
-    "Unknown1": 0,
-    "Unknown2": 0,
-    "Unknown3": 0,
-    "Unknown4": 0,
+    "Param": {
+      "RowId": 36,
+      "SheetName": "TextCommandParam"
+    },
+    "Unknown1": 3,
+    "Unknown2": 2,
+    "Unknown3": 7,
+    "Unknown4": 2,
     "Unknown5": 0
   },
   {
@@ -937,14 +940,17 @@
   },
   {
     "RowId": 54,
-    "Description": "",
+    "Description": "/bestiary(/bstbook)\n魔獣図鑑のメニューを開く。",
     "Alias": "",
     "ShortAlias": "",
-    "Command": "",
-    "ShortCommand": "",
+    "Command": "/bestiary",
+    "ShortCommand": "/bstbook",
     "Unknown0": 0,
-    "Param": null,
-    "Unknown1": 0,
+    "Param": {
+      "RowId": 32,
+      "SheetName": "TextCommandParam"
+    },
+    "Unknown1": 1,
     "Unknown2": 0,
     "Unknown3": 0,
     "Unknown4": 0,
@@ -3937,7 +3943,7 @@
   },
   {
     "RowId": 233,
-    "Description": "/lookingforparty(/lfp) サブコマンド クラス・ジョブ\n指定したクラス・ジョブで、オンラインステータスを「パーティ希望」に設定する。\n>>サブコマンド\non \n\u3000…「パーティ希望」にする\noff \n\u3000…「オンライン」にする\n※サブコマンド省略\n\u3000…「パーティ希望」と「オンライン」のスイッチ切り替え。\n>>クラス・ジョブ（※順不同で複数指定可能）\nナイト(PLD)\u3000剣術士(GLA)\u3000戦士(WAR)\u3000斧術士(MRD)\u3000暗黒騎士(DRK)\u3000ガンブレイカー(GNB)\u3000白魔道士(WHM)\u3000幻術士(CNJ)\u3000学者(SCH)\u3000占星術師(AST)\u3000賢者(SGE)\u3000モンク(MNK)\u3000格闘士(PGL)\u3000竜騎士(DRG)\u3000槍術士(LNC)\u3000忍者(NIN)\u3000双剣士(ROG)\u3000侍(SAM)\u3000リーパー(RPR)\u3000ヴァイパー(VPR)\u3000吟遊詩人(BRD)\u3000弓術士(ARC)\u3000機工士(MCH)\u3000踊り子(DNC)\u3000黒魔道士(BLM)\u3000呪術士(THM)\u3000召喚士(SMN)\u3000巴術士(ACN)\u3000赤魔道士(RDM)\u3000ピクトマンサー(PCT)\u3000青魔道士(BLU)\u3000木工師(CRP)\u3000鍛冶師(BSM)\u3000甲冑師(ARM)\u3000彫金師(GSM)\u3000革細工師(LTW)\u3000裁縫師(WVR)\u3000錬金術師(ALC)\u3000調理師(CUL)\u3000採掘師(MIN)\u3000園芸師(BTN)\u3000漁師(FSH)\n※省略した場合は、現在のクラス・ジョブを指定。",
+    "Description": "/lookingforparty(/lfp) サブコマンド クラス・ジョブ\n指定したクラス・ジョブで、オンラインステータスを「パーティ希望」に設定する。\n>>サブコマンド\non \n\u3000…「パーティ希望」にする\noff \n\u3000…「オンライン」にする\n※サブコマンド省略\n\u3000…「パーティ希望」と「オンライン」のスイッチ切り替え。\n>>クラス・ジョブ（※順不同で複数指定可能）\nナイト(PLD)\u3000剣術士(GLA)\u3000戦士(WAR)\u3000斧術士(MRD)\u3000暗黒騎士(DRK)\u3000ガンブレイカー(GNB)\u3000白魔道士(WHM)\u3000幻術士(CNJ)\u3000学者(SCH)\u3000占星術師(AST)\u3000賢者(SGE)\u3000モンク(MNK)\u3000格闘士(PGL)\u3000竜騎士(DRG)\u3000槍術士(LNC)\u3000忍者(NIN)\u3000双剣士(ROG)\u3000侍(SAM)\u3000リーパー(RPR)\u3000ヴァイパー(VPR)\u3000魔獣使い(BST)\u3000吟遊詩人(BRD)\u3000弓術士(ARC)\u3000機工士(MCH)\u3000踊り子(DNC)\u3000黒魔道士(BLM)\u3000呪術士(THM)\u3000召喚士(SMN)\u3000巴術士(ACN)\u3000赤魔道士(RDM)\u3000ピクトマンサー(PCT)\u3000青魔道士(BLU)\u3000木工師(CRP)\u3000鍛冶師(BSM)\u3000甲冑師(ARM)\u3000彫金師(GSM)\u3000革細工師(LTW)\u3000裁縫師(WVR)\u3000錬金術師(ALC)\u3000調理師(CUL)\u3000採掘師(MIN)\u3000園芸師(BTN)\u3000漁師(FSH)\n※省略した場合は、現在のクラス・ジョブを指定。",
     "Alias": "",
     "ShortAlias": "",
     "Command": "/lookingforparty",
