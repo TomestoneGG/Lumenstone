@@ -60,6 +60,7 @@ class Program
             Console.WriteLine("  --icon-chunk-size <n>     Chunk size for icon range generation.");
             Console.WriteLine("  --icon-chunk-index <n>    Zero-based chunk index when using --icon-chunk-size.");
             Console.WriteLine("  --icons-full              Force overwrite icons in selected range/chunk.");
+            Console.WriteLine("  --icon-quality <sd|hd>    Extract only SD or HD (_hr1) icons. Omit to extract all.");
             return;
         }
 
@@ -77,6 +78,19 @@ class Program
             || HasFlag(optionArgs, "--icon-chunk-size")
             || HasFlag(optionArgs, "--icon-chunk-index");
         bool iconsFull = full || HasFlag(optionArgs, "--icons-full");
+
+        bool extractSd = true;
+        bool extractHd = true;
+        if (TryGetOptionValue(optionArgs, "--icon-quality", out var iconQuality))
+        {
+            extractSd = string.Equals(iconQuality, "sd", StringComparison.OrdinalIgnoreCase);
+            extractHd = string.Equals(iconQuality, "hd", StringComparison.OrdinalIgnoreCase);
+            if (!extractSd && !extractHd)
+            {
+                Console.WriteLine($"Invalid --icon-quality value '{iconQuality}'. Expected: sd or hd.");
+                return;
+            }
+        }
 
         int iconStart = DefaultIconStart;
         int iconEnd = DefaultIconEnd;
@@ -201,8 +215,9 @@ class Program
             ExtractLoadingImages(luminaEN, full);
         }
 
-        Console.WriteLine($"Extracting icons from {iconStart} to {iconEnd} (full={iconsFull}).");
-        ExtractIcons(iconStart, iconEnd, luminaEN, iconsFull);
+        var qualityLabel = extractSd && extractHd ? "SD/HD" : extractHd ? "HD" : "SD";
+        Console.WriteLine($"Extracting icons from {iconStart} to {iconEnd} (full={iconsFull}, quality={qualityLabel}).");
+        ExtractIcons(iconStart, iconEnd, luminaEN, iconsFull, extractSd, extractHd);
     }
 
     private static bool HasFlag(string[] args, string name) =>
@@ -390,7 +405,7 @@ class Program
         }
     }
 
-    static void ExtractIcons(int first, int last, Lumina.GameData lumina, bool fullImport)
+    static void ExtractIcons(int first, int last, Lumina.GameData lumina, bool fullImport, bool extractSd = true, bool extractHd = true)
     {
         string directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "icons");
 
@@ -400,40 +415,30 @@ class Program
         }
 
         for (int i = first; i <= last; ++i) {
-            var iconFilePath = Path.Combine(directoryPath, $"{i / 1000:D3}000", $"{i:D6}.png");
-            if (fullImport || !File.Exists(iconFilePath)) {
-                var icon = GetIcon(lumina, "en/", i, false);
-                if (icon != null && icon != default(TexFile)) {
-                    Console.WriteLine($"-> {i:D6}");
-                    var folderPath = Path.Combine(directoryPath, $"{i / 1000:D3}000");
-                    if (!Directory.Exists(folderPath))
-                    {
-                        Directory.CreateDirectory(folderPath);
-                    }
-
-                    var image = GetImage(icon);
-                    if (image != null)
-                        image.Save(iconFilePath);
-                }
-            }
-
-            var iconHDFilePath = Path.Combine(directoryPath, $"{i / 1000:D3}000", $"{i:D6}_hr1.png");
-            if (fullImport || !File.Exists(iconHDFilePath)) {
-                var iconHD = GetIcon(lumina, "en/", i,  true);
-                if (iconHD != null && iconHD != default(TexFile)) {
-                    Console.WriteLine($"-> HD {i:D6}");
-                    var folderPath = Path.Combine(directoryPath, $"{i / 1000:D3}000");
-                    if (!Directory.Exists(folderPath))
-                    {
-                        Directory.CreateDirectory(folderPath);
-                    }
-
-                    var image = GetImage(iconHD);
-                    if (image != null)
-                        image.Save(iconHDFilePath);
-                }
-            }
+            if (extractSd)
+                ExtractIcon(lumina, i, false, directoryPath, fullImport);
+            if (extractHd)
+                ExtractIcon(lumina, i, true, directoryPath, fullImport);
         }
+    }
+
+    private static void ExtractIcon(Lumina.GameData lumina, int iconId, bool hd, string directoryPath, bool fullImport)
+    {
+        var folderPath = Path.Combine(directoryPath, $"{iconId / 1000:D3}000");
+        var iconFilePath = Path.Combine(folderPath, $"{iconId:D6}{(hd ? "_hr1" : "")}.png");
+        if (!fullImport && File.Exists(iconFilePath))
+            return;
+
+        var icon = GetIcon(lumina, "en/", iconId, hd);
+        if (icon == null || icon == default(TexFile))
+            return;
+
+        Console.WriteLine($"-> {(hd ? "HD " : "")}{iconId:D6}");
+        Directory.CreateDirectory(folderPath);
+
+        var image = GetImage(icon);
+        if (image != null)
+            image.Save(iconFilePath);
     }
 
     private static Image<Bgra32>? GetImage(TexFile tex)
